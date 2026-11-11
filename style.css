@@ -583,31 +583,54 @@ body.mobile #disclaimer {
   top: 0;
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 10px 22px 10px 16px;
-  border-radius: 8px;
-  background: rgba(96, 108, 132, 0.92);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-  color: #fff;
+  gap: 8px;
+  padding: 5px 14px 5px 5px;
+  border-radius: 999px;
+  background: rgba(255, 251, 245, 0.95);
+  box-shadow: 0 3px 12px rgba(20, 30, 50, 0.28);
+  color: #1f2a44;
   cursor: pointer;
   transform: translate(-50%, -50%);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
 }
 
 .info-hotspot:hover {
-  background: rgba(78, 90, 114, 0.96);
+  transform: translate(-50%, -50%) scale(1.06);
+  background: #ffffff;
+  box-shadow: 0 5px 16px rgba(20, 30, 50, 0.34);
 }
 
 .info-hotspot-icon {
   flex: none;
-  font: italic bold 26px/1 Georgia, "Times New Roman", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffe4cf;
+  font-size: 17px;
+  line-height: 1;
+}
+
+.info-hotspot-icon.letter {
+  color: #e0763a;
+  font: italic bold 19px/1 Georgia, "Times New Roman", serif;
 }
 
 .info-hotspot-label {
-  font-size: 17px;
+  font-size: 14px;
+  font-weight: bold;
   white-space: nowrap;
 }
 
 body.mobile .info-hotspot-label {
+  font-size: 13px;
+}
+
+body.mobile .info-hotspot-icon {
+  width: 28px;
+  height: 28px;
   font-size: 15px;
 }
 
@@ -622,9 +645,10 @@ body.mobile .info-hotspot-label {
   top: 0;
   right: 0;
   bottom: 0;
-  width: min(400px, 100%);
-  padding: calc(16px + var(--safe-top)) 20px calc(20px + var(--safe-bottom));
-  background: var(--card-bg);
+  width: min(420px, 100%);
+  padding: calc(18px + var(--safe-top)) 22px calc(24px + var(--safe-bottom));
+  background: #fffaf3;
+  box-shadow: -8px 0 24px rgba(20, 30, 50, 0.18);
   color: var(--card-text);
   overflow-y: auto;
   overscroll-behavior: contain;
@@ -639,6 +663,11 @@ body.mobile .info-hotspot-label {
 body.info-open #infoPanel {
   transform: none;
   visibility: visible;
+}
+
+body.desktop.info-open #infoBackdrop {
+  pointer-events: none;
+  background: transparent;
 }
 
 body.info-open #infoBackdrop {
@@ -672,6 +701,7 @@ body.info-open #infoBackdrop {
   font-size: 22px;
   font-weight: bold;
   line-height: 1.4;
+  color: #1f2a44;
 }
 
 .info-section {
@@ -749,10 +779,11 @@ body.info-open #infoBackdrop {
 
 .info-link {
   display: block;
-  padding: 12px 14px;
-  border-radius: 8px;
-  background: #eef3fb;
-  color: #1e5fb8;
+  padding: 11px 16px;
+  border-radius: 999px;
+  background: #1f2a44;
+  color: #fff;
+  font-size: 14px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -1048,12 +1079,12 @@ body.mobile .spot-info-label {
 }
 
 .activity-card {
-  margin: 0 0 12px;
-  padding: 14px 16px;
-  border: 1px solid #e3e6eb;
-  border-left: 4px solid var(--accent);
-  border-radius: 8px;
-  background: #fafbfc;
+  margin: 0 0 14px;
+  padding: 18px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(31, 42, 68, 0.08);
+  color: #1f2a44;
 }
 
 .activity-name {
@@ -1141,11 +1172,11 @@ body.mobile .spot-info-label {
 
 .activity-link {
   display: block;
-  margin-top: 6px;
-  padding: 10px 12px;
-  border-radius: 8px;
-  background: #eef3fb;
-  color: #1e5fb8;
+  margin-top: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #1f2a44;
+  color: #fff;
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
@@ -1162,4 +1193,156 @@ body.mobile #lifeButton .label-long {
 
 body.mobile #controlBar .control-button {
   padding: 0 8px;
+}
+
+
+/* ---------- ガイドブック風の情報パネル ---------- */
+
+.guide-intro {
+  margin: 0 0 16px;
+  padding: 18px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ffe9d6, #fff4e8);
+  color: #1f2a44;
+}
+
+.guide-intro-heading {
+  margin: 4px 0 6px;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.guide-tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #c25e22;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.guide-card .guide-tag {
+  background: #e3f6ef;
+  color: #23795c;
+}
+
+.guide-card {
+  margin: 0 0 14px;
+  padding: 18px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(31, 42, 68, 0.08);
+  color: #1f2a44;
+}
+
+.guide-card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 8px;
+}
+
+.guide-icon {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #ffe4cf;
+  font-size: 21px;
+  line-height: 1;
+}
+
+.guide-icon.mint {
+  background: #dff4ec;
+}
+
+.guide-card-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.circle-names .guide-tag {
+  margin-bottom: 2px;
+}
+
+.guide-text {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #3b4660;
+}
+
+.guide-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+}
+
+.guide-chip {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f3f5f9;
+  color: #3b4660;
+  font-size: 12px;
+}
+
+.guide-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.guide-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #1f2a44;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.guide-button:hover {
+  background: #33416a;
+}
+
+.guide-button.secondary {
+  background: #ff9a62;
+}
+
+.guide-button.secondary:hover,
+.guide-button.secondary[aria-expanded="true"] {
+  background: #f07f42;
+}
+
+.guide-button.outline {
+  background: #fff;
+  color: #1f2a44;
+  box-shadow: inset 0 0 0 1.5px #c9d0dd;
+}
+
+.circle-player:not(:empty) {
+  margin-top: 12px;
+}
+
+.circle-player .info-video {
+  border-radius: 14px;
+}
+
+body.mobile .info-title {
+  font-size: 19px;
 }

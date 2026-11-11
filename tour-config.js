@@ -76,7 +76,11 @@ window.TOUR_CONFIG = {
     { id: "p13", name: "体育館", map: { x: 0.3597, y: 0.5577 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p14", name: "バスロータリー", map: { x: 0.3758, y: 0.4356 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -3.029, pitch: 0.044, facility: "bus" } ], facility: "bus" },
     { id: "p15", name: "ビズカフェ", map: { x: 0.3937, y: 0.4255 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p16", name: "コモンズ前", map: { x: 0.3865, y: 0.4848 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: 1.621, pitch: 0.025, facility: "shingetsusai" } ], facility: "shingetsusai" },
+    { id: "p16", name: "コモンズ前", map: { x: 0.3865, y: 0.4848 }, photo: null, view: null, northOffset: null, links: [], info: [
+      // 位置は yaw（左右）・pitch（上下、プラスが下）で調整できます。URL に ?edit を付けると画面中央の値が出ます
+      { yaw: 1.62, pitch: -0.07, facility: "shingetsusai" },
+      { yaw: 1.62, pitch: 0.11, facility: "circles" }
+    ] },
     { id: "p17", name: "アカデミックコモンズ", map: { x: 0.4251, y: 0.4729 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p18", name: "6号館前", map: { x: 0.4088, y: 0.5707 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p19", name: "601号室", map: { x: 0.4179, y: 0.6102 }, photo: null, view: null, northOffset: null, links: [], info: [] },
@@ -97,10 +101,37 @@ window.TOUR_CONFIG = {
       description: "バスの時刻表は、大学公式サイトのバスのページで確認できます。ダイヤは変わることがあるので、お出かけ前に最新の情報をご覧ください。",
       links: [ { label: "バスのページ（大学公式サイト）", url: "https://www.kwansei.ac.jp/ksc/access/bus" } ]
     },
-    // コモンズ前（p16）に置く新月祭とサークルの案内
+    // コモンズ前（p16）の「新月祭をのぞいてみよう！」パネル
     "shingetsusai": {
-      name: "新月祭・サークル紹介",
-      activities: ["shingetsusai", "enryu"]
+      name: "新月祭をのぞいてみよう！",
+      icon: "🎪",
+      intro: {
+        tag: "大学祭",
+        heading: "大学祭「新月祭」",
+        text: "学生が主体となって企画・運営する大学祭。模擬店や学生団体による企画などが行われています。"
+      },
+      cards: [
+        {
+          icon: "🎤",
+          title: "どんな企画があるの？",
+          text: "2026年の神戸三田キャンパスで開催された企画を紹介しています。",
+          chips: ["軽音サークル Deep Stream の芝生ライブ", "ダンスサークル Ney-Kid の公演", "よさこいサークル 炎流 の演舞", "フラダンスサークル Mahalo のステージ"],
+          buttons: [ { label: "2026年の企画を見る", url: "https://www.kgfes-shingetsusai.com/ksc%E4%B8%80%E8%88%AC%E4%BC%81%E7%94%BB" } ]
+        },
+        {
+          icon: "📸",
+          title: "実際の雰囲気を見てみよう！",
+          text: "新月祭の開催風景を紹介しています。",
+          buttons: [ { label: "開催の様子を見る", url: "https://kgpress.jp/kgnews/8557/" } ]
+        }
+      ]
+    },
+    // コモンズ前（p16）の「サークル活動をのぞいてみよう！」パネル（中身は下の circles）
+    "circles": {
+      name: "サークル活動をのぞいてみよう！",
+      icon: "✨",
+      lead: "KSCではさまざまな学生団体が活動しています。気になるサークルの活動をチェックしてみよう！",
+      showCircles: true
     },
     // 施設概要（overview）は確認できた内容だけを書き足してください。空のあいだは表示されません。
     "building2": {
@@ -118,49 +149,36 @@ window.TOUR_CONFIG = {
 
   // 「KSCでの学生生活」に表示する活動（紹介文は公式情報をもとにした独自の短い説明）
   studentLifeLead: "神戸三田キャンパスで行われている活動の一部を紹介します。くわしくは各公式情報をご覧ください。",
-  studentLife: ["shingetsusai", "enryu", "researchFair"],
+  studentLife: ["shingetsusai", "researchFair"],
+
+  // 「サークル活動をのぞいてみよう！」に表示するサークル。上から順にカードになります。
+  // 公式に確認できた情報・URLだけを書いてください。使わない項目は省略できます。
+  //   name      : サークル名            icon    : カードのアイコン（絵文字）
+  //   category  : 小さな見出し（例：よさこい）
+  //   summary   : 紹介文
+  //   website   : 公式サイト { label, url }
+  //   sns       : 公式SNS [ { label: "Instagram", url } ]
+  //   videos    : 活動動画 [ { label: "演舞動画を見る", youtube: "動画ID", caption: "説明" } ]
+  //   eventVideos: 大会・イベント動画（videos と同じ形）
+  //   links     : その他の関連リンク [ { label, url } ]
+  circles: [
+    {
+      name: "関学よさこい連「炎流」",
+      icon: "🔥",
+      category: "よさこい",
+      summary: "神戸三田キャンパスを拠点に活動するよさこいサークル。学外のイベントや新月祭などで演舞を披露しています。",
+      videos: [
+        { label: "演舞動画を見る", youtube: "TMLVl2Rt3as", caption: "2025年3月「劇場版どまつり」での演舞です（新月祭の映像ではありません）。" }
+      ]
+    }
+  ],
 
   activities: {
     "shingetsusai": {
       tag: "大学祭",
       name: "大学祭「新月祭」",
       summary: "学生が主体となって企画・運営する大学祭です。模擬店や学生団体による企画などが行われます。",
-      sections: [
-        {
-          title: "2026年の神戸三田キャンパスの企画",
-          text: "2026年10月24日・25日に開かれた新月祭では、神戸三田キャンパスの企画として次のようなステージが新月祭の公式サイトに掲載されていました。",
-          items: [
-            "軽音サークル Deep Stream の芝生ライブ",
-            "ダンスサークル Ney-Kid の公演",
-            "よさこいサークル 炎流 の演舞",
-            "フラダンスサークル Mahalo のステージ"
-          ],
-          links: [ { label: "神戸三田キャンパスの企画一覧（新月祭公式サイト）", url: "https://www.kgfes-shingetsusai.com/ksc%E4%B8%80%E8%88%AC%E4%BC%81%E7%94%BB" } ]
-        },
-        {
-          title: "開催の様子を知る",
-          text: "実際の新月祭のようすは、学生新聞の取材記事や公式Instagramで見ることができます。",
-          links: [
-            { label: "神戸三田キャンパス新月祭2026の記事（関西学院大学新聞）", url: "https://kgpress.jp/kgnews/8557/" },
-            { label: "新月祭 公式Instagram", url: "https://www.instagram.com/shingetsusai/" }
-          ]
-        }
-      ],
       links: [ { label: "KSCのイベント（大学公式サイト）", url: "https://www.kwansei.ac.jp/ksc/campuslife/event/" } ]
-    },
-    "enryu": {
-      tag: "サークル活動をのぞいてみよう",
-      name: "関学よさこい連「炎流」",
-      summary: "神戸三田キャンパスを拠点に活動するよさこいサークルです。学外のイベントや新月祭などで演舞を披露しています。",
-      sections: [
-        {
-          title: "実際の演舞を動画で見る ▶",
-          video: { youtube: "TMLVl2Rt3as", title: "関学よさこい連 炎流 2025年の演舞" },
-          caption: "2025年3月「劇場版どまつり」での演舞です（新月祭の映像ではありません）。",
-          links: [ { label: "動画をYouTubeで見る", url: "https://www.youtube.com/watch?v=TMLVl2Rt3as" } ]
-        }
-      ],
-      links: [ { label: "新月祭2026の神戸三田キャンパスの企画一覧（新月祭公式サイト）", url: "https://www.kgfes-shingetsusai.com/ksc%E4%B8%80%E8%88%AC%E4%BC%81%E7%94%BB" } ]
     },
     "researchFair": {
       name: "リサーチ・フェア",

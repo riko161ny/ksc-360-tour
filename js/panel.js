@@ -32,6 +32,23 @@
     title.id = 'infoTitle';
     bodyElement.appendChild(title);
 
+    // Guide-style panels: lead, intro, small cards, and the circle list.
+    if (facility.lead) {
+      bodyElement.appendChild(el('p', 'info-lead', facility.lead));
+    }
+    if (facility.intro) {
+      bodyElement.appendChild(createIntro(facility.intro));
+    }
+    (facility.cards || []).forEach(function(card) {
+      bodyElement.appendChild(createGuideCard(card));
+    });
+    if (facility.showCircles) {
+      var circles = (window.TOUR_CONFIG && window.TOUR_CONFIG.circles) || [];
+      circles.forEach(function(circle) {
+        bodyElement.appendChild(createCircleCard(circle));
+      });
+    }
+
     if (facility.images && facility.images.length) {
       bodyElement.appendChild(createGallery(facility.images));
     }
@@ -102,6 +119,122 @@
       bodyElement.appendChild(createActivityCard(activity));
     });
     show();
+  }
+
+  function createIntro(intro) {
+    var box = el('div', 'guide-intro');
+    if (intro.tag) {
+      box.appendChild(el('span', 'guide-tag', intro.tag));
+    }
+    if (intro.heading) {
+      box.appendChild(el('h3', 'guide-intro-heading', intro.heading));
+    }
+    if (intro.text) {
+      box.appendChild(el('p', 'guide-text', intro.text));
+    }
+    return box;
+  }
+
+  function createGuideCard(card) {
+    var box = el('section', 'guide-card');
+    var head = el('div', 'guide-card-head');
+    if (card.icon) {
+      head.appendChild(el('span', 'guide-icon', card.icon));
+    }
+    head.appendChild(el('h3', 'guide-card-title', card.title || ''));
+    box.appendChild(head);
+    if (card.text) {
+      box.appendChild(el('p', 'guide-text', card.text));
+    }
+    if (card.chips && card.chips.length) {
+      var chips = el('ul', 'guide-chips');
+      card.chips.forEach(function(chip) {
+        chips.appendChild(el('li', 'guide-chip', chip));
+      });
+      box.appendChild(chips);
+    }
+    appendButtons(box, card.buttons);
+    return box;
+  }
+
+  // One small card per circle; every field except name is optional.
+  function createCircleCard(circle) {
+    var box = el('section', 'guide-card circle-card');
+    var head = el('div', 'guide-card-head');
+    head.appendChild(el('span', 'guide-icon mint', circle.icon || '✨'));
+    var names = el('div', 'circle-names');
+    if (circle.category) {
+      names.appendChild(el('span', 'guide-tag', circle.category));
+    }
+    names.appendChild(el('h3', 'guide-card-title', circle.name || ''));
+    head.appendChild(names);
+    box.appendChild(head);
+    if (circle.summary) {
+      box.appendChild(el('p', 'guide-text', circle.summary));
+    }
+    var actions = el('div', 'guide-actions');
+    var player = el('div', 'circle-player');
+    (circle.videos || []).concat(circle.eventVideos || []).forEach(function(video) {
+      actions.appendChild(createVideoToggle(video, player));
+    });
+    var links = [];
+    if (circle.website) {
+      links.push({ label: circle.website.label || '公式サイトを見る', url: circle.website.url });
+    }
+    (circle.sns || []).forEach(function(link) { links.push(link); });
+    (circle.links || []).forEach(function(link) { links.push(link); });
+    links.forEach(function(link) {
+      actions.appendChild(createLinkButton(link, true));
+    });
+    if (actions.childNodes.length) {
+      box.appendChild(actions);
+    }
+    box.appendChild(player);
+    return box;
+  }
+
+  // Opens the video inside the card (the player is created only when asked for).
+  function createVideoToggle(video, player) {
+    var button = el('button', 'guide-button secondary', (video.label || '動画を見る') + ' ▶');
+    button.type = 'button';
+    button.setAttribute('aria-expanded', 'false');
+    button.addEventListener('click', function() {
+      var opening = button.getAttribute('aria-expanded') !== 'true';
+      player.innerHTML = '';
+      Array.prototype.forEach.call(player.parentNode.querySelectorAll('.guide-button.secondary'), function(other) {
+        other.setAttribute('aria-expanded', 'false');
+      });
+      if (opening) {
+        var frame = createVideo({ youtube: video.youtube, src: video.src, title: video.label });
+        if (frame) {
+          player.appendChild(frame);
+          if (video.caption) {
+            player.appendChild(el('p', 'activity-caption', video.caption));
+          }
+        }
+        button.setAttribute('aria-expanded', 'true');
+      }
+    });
+    return button;
+  }
+
+  function appendButtons(parent, buttons) {
+    if (!buttons || !buttons.length) {
+      return;
+    }
+    var actions = el('div', 'guide-actions');
+    buttons.forEach(function(link) {
+      actions.appendChild(createLinkButton(link));
+    });
+    parent.appendChild(actions);
+  }
+
+  function createLinkButton(link, secondary) {
+    var a = el('a', 'guide-button' + (secondary ? ' outline' : ''), (link.label || link.url) + ' ↗');
+    a.href = link.url;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    return a;
   }
 
   function show() {

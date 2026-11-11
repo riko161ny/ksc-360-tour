@@ -257,7 +257,7 @@
         console.warn('施設情報が見つかりません: ' + hotspot.facility);
         return;
       }
-      container.createHotspot(createInfoHotspotElement(facility.name, facility), { yaw: hotspot.yaw, pitch: hotspot.pitch || 0 });
+      container.createHotspot(createInfoHotspotElement(facility.name, facility, facility.icon), { yaw: hotspot.yaw, pitch: hotspot.pitch || 0 });
     });
 
     view.addEventListener('change', function() {
@@ -485,7 +485,7 @@
     return wrapper;
   }
 
-  function createInfoHotspotElement(title, facility) {
+  function createInfoHotspotElement(title, facility, iconText) {
     var wrapper = document.createElement('div');
     wrapper.classList.add('hotspot');
     var inner = document.createElement('div');
@@ -496,7 +496,10 @@
 
     var icon = document.createElement('span');
     icon.classList.add('info-hotspot-icon');
-    icon.textContent = 'i';
+    icon.textContent = iconText || 'i';
+    if (!iconText) {
+      icon.classList.add('letter');
+    }
 
     var label = document.createElement('span');
     label.classList.add('info-hotspot-label');
