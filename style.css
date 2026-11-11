@@ -985,3 +985,72 @@ body.mobile .info-grip {
   transform: translateX(-50%);
   font-size: 22px;
 }
+
+/* ---------- KSCでの学生生活 / 関連する活動 ---------- */
+
+#spotInfoButton {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  color: var(--accent);
+}
+
+.info-lead {
+  margin: 0 0 16px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--card-muted);
+}
+
+.activity-card {
+  margin: 0 0 12px;
+  padding: 14px 16px;
+  border: 1px solid #e3e6eb;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  background: #fafbfc;
+}
+
+.activity-name {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.activity-text,
+.activity-note {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.activity-note {
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: #fff6e0;
+}
+
+.activity-link {
+  display: block;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #eef3fb;
+  color: #1e5fb8;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#controlBar .control-label {
+  white-space: nowrap;
+}
+
+/* スマートフォンでは「学生生活」と短く表示して、ボタンが折り返さないようにする */
+body.mobile #lifeButton .label-long {
+  display: none;
+}
+
+body.mobile #controlBar .control-button {
+  padding: 0 8px;
+}

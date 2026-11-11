@@ -157,6 +157,18 @@
   controls.registerMethod('inElement',    new Marzipano.ElementPressControlMethod(document.querySelector('#viewIn'),  'zoom', -velocity, friction), true);
   controls.registerMethod('outElement',   new Marzipano.ElementPressControlMethod(document.querySelector('#viewOut'), 'zoom',  velocity, friction), true);
 
+  // "KSCでの学生生活" button and the per-spot facility button.
+  var spotInfoButton = document.querySelector('#spotInfoButton');
+  document.querySelector('#lifeButton').addEventListener('click', function() {
+    window.TourPanel.openActivities('KSCでの学生生活', config.studentLifeLead || '', config.studentLife || []);
+  });
+  spotInfoButton.addEventListener('click', function() {
+    var facility = currentSpot && facilities[currentSpot.config.facility];
+    if (facility) {
+      window.TourPanel.open(facility);
+    }
+  });
+
   // Help dialog: shown automatically on the first visit.
   document.querySelector('#helpButton').addEventListener('click', showHelp);
   document.querySelector('#helpClose').addEventListener('click', hideHelp);
@@ -263,6 +275,7 @@
     currentSpot = spot;
     window.TourPanel.close();
     sceneNameElement.textContent = spot.number + '. ' + spot.name;
+    spotInfoButton.hidden = !facilities[spot.config.facility];
     updateThumbnails(spot);
     map.setCurrent(spot.id);
     if (spotIdFromHash() !== spot.id) {

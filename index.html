@@ -28,6 +28,7 @@
     <h1 id="siteTitle"></h1>
     <p id="sceneName" aria-live="polite"></p>
   </div>
+  <button type="button" id="spotInfoButton" class="top-button" aria-label="この地点の施設情報" hidden>i</button>
   <button type="button" id="helpButton" class="top-button" aria-label="操作方法">?</button>
 </header>
 
@@ -62,6 +63,7 @@
   <div id="controlBar">
     <button type="button" id="thumbToggle" class="control-button" aria-pressed="true"><span class="control-icon">▤</span><span class="control-label">地点一覧</span></button>
     <button type="button" id="mapToggle" class="control-button" aria-pressed="true"><span class="control-icon">⌖</span><span class="control-label">マップ</span></button>
+    <button type="button" id="lifeButton" class="control-button"><span class="control-icon">✦</span><span class="control-label"><span class="label-long">KSCでの</span>学生生活</span></button>
     <span class="control-spacer"></span>
     <button type="button" id="viewLeft" class="control-button view-control" aria-label="左を向く"><img src="img/left.png" alt=""></button>
     <button type="button" id="viewRight" class="control-button view-control" aria-label="右を向く"><img src="img/right.png" alt=""></button>
@@ -91,6 +93,7 @@
       <li><b>拡大・縮小</b>　マウスホイール、またはピンチ操作</li>
       <li><b><span class="help-arrow"></span>移動</b>　矢印をタップすると、その方向の地点へ進みます</li>
       <li><b><span class="help-info">i</span>施設情報</b>　アイコンをタップすると説明や写真を表示します</li>
+      <li><b>KSCでの学生生活</b>　画面下のボタンから、キャンパスで行われている活動を紹介します</li>
       <li><b>マップ</b>　ピンをタップするとその地点へ移動します。扇形は今見ている方向です</li>
       <li><b>地点一覧</b>　画面下のサムネイルから行きたい地点を選べます</li>
     </ul>

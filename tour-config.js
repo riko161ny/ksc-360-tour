@@ -16,18 +16,27 @@
  *   northOffset : 写真の中で「マップの上方向」を向いたときの yaw。設定するとマップに視線の扇形を出します
  *   links       : 写真の中に出す移動矢印 [ { target: "p02", yaw: 0, pitch: 0 } ]
  *   info        : 施設情報アイコン [ { yaw: 0, pitch: 0, facility: "facilities のキー" } ]
+ *   facility    : （任意）この地点の施設情報。設定すると画面右上に「i」ボタンが出て、写真内の位置を決めなくても開けます
  *   yaw / pitch は URL の末尾に ?edit を付けて開くと、画面中央の値を表示します。
  *
  * ■ facilities（施設情報。確認できた情報だけを書き、空の項目は表示されません）
  *   "example": {
  *     name: "施設名",
+ *     overview: "施設概要",
  *     description: "施設の説明",
  *     purpose: "利用目的",
  *     images: [ { src: "assets/media/example-1.jpg", caption: "説明" } ],
  *     video: { youtube: "動画ID" } または { src: "assets/media/example.mp4" },
+ *     activities: [ "activities のキー" ] または
+ *                 [ { activity: "activities のキー", note: "この施設との関係", url: "関係が分かる記事", label: "リンク名" } ]
+ *                 （活動と施設の関係を公式情報で確認できたときだけ書きます）
  *     links: [ { label: "大学公式サイト", url: "https://..." } ],
  *     source: "情報の出典（例：大学公式サイト 2026年10月確認）"
  *   }
+ *
+ * ■ activities（「KSCでの学生生活」と施設情報の「関連する活動」で使う活動紹介）
+ *   "example": { name: "活動名", summary: "独自の短い紹介文", links: [ { label: "公式情報", url: "https://..." } ] }
+ *   studentLife に並べたキーの順に、「KSCでの学生生活」のカードとして表示します。
  */
 window.TOUR_CONFIG = {
   title: "関西学院大学 神戸三田キャンパス 360°バーチャルキャンパスツアー",
@@ -55,7 +64,7 @@ window.TOUR_CONFIG = {
     { id: "p02", name: "2号館横庭園", map: { x: 0.1065, y: 0.7633 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p03", name: "チャペル", map: { x: 0.088, y: 0.6807 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p04", name: "1号館前", map: { x: 0.1503, y: 0.6348 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p05", name: "2号館前", map: { x: 0.1996, y: 0.7179 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p05", name: "2号館前", map: { x: 0.1996, y: 0.7179 }, photo: null, view: null, northOffset: null, links: [], info: [], facility: "building2" },
     { id: "p06", name: "3号館", map: { x: 0.296, y: 0.6834 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p07", name: "食堂", map: { x: 0.2649, y: 0.5984 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p08", name: "生協", map: { x: 0.2472, y: 0.5882 }, photo: null, view: null, northOffset: null, links: [], info: [] },
@@ -81,5 +90,34 @@ window.TOUR_CONFIG = {
   ],
 
   facilities: {
+    // 施設概要（overview）は確認できた内容だけを書き足してください。空のあいだは表示されません。
+    "building2": {
+      name: "II号館",
+      activities: [
+        {
+          activity: "researchFair",
+          note: "2024年度のリサーチ・フェアはII号館で開催されました。",
+          url: "https://www.kwansei.ac.jp/s_policy/news/03574.html",
+          label: "2024年度 リサーチ・フェアの記事"
+        }
+      ]
+    }
+  },
+
+  // 「KSCでの学生生活」に表示する活動（紹介文は公式情報をもとにした独自の短い説明）
+  studentLifeLead: "神戸三田キャンパスで行われている活動の一部を紹介します。くわしくは各公式情報をご覧ください。",
+  studentLife: ["shingetsusai", "researchFair"],
+
+  activities: {
+    "shingetsusai": {
+      name: "大学祭「新月祭」",
+      summary: "学生が主体となって企画・運営する大学祭です。模擬店や学生団体による企画などが行われます。",
+      links: [ { label: "KSCのイベント（大学公式サイト）", url: "https://www.kwansei.ac.jp/ksc/campuslife/event/" } ]
+    },
+    "researchFair": {
+      name: "リサーチ・フェア",
+      summary: "総合政策学部の学生や大学院生などが、研究の成果を発表するイベントです。",
+      links: [ { label: "KSCのイベント（大学公式サイト）", url: "https://www.kwansei.ac.jp/ksc/campuslife/event/" } ]
+    }
   }
 };
