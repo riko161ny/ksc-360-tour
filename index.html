@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>神戸三田キャンパス 360°バーチャルツアー（卒業制作）</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+<meta name="description" content="関西学院大学 神戸三田キャンパスを360°写真で歩いて見学できるバーチャルツアー（個人の卒業制作）">
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="pano"></div>
+
+<!-- 写真がまだない地点 -->
+<div id="noPhoto" hidden>
+  <p class="no-photo-name"></p>
+  <p class="no-photo-text">この地点の360°写真は準備中です</p>
+  <p class="no-photo-hint">マップや地点一覧からほかの地点へ移動できます</p>
+</div>
+
+<!-- 制作用：URL に ?edit を付けたときだけ、画面中央の向きを表示 -->
+<div id="editReadout" hidden></div>
+
+<!-- 画面上部：タイトル・現在地・操作方法 -->
+<header id="topBar">
+  <div class="top-titles">
+    <h1 id="siteTitle"></h1>
+    <p id="sceneName" aria-live="polite"></p>
+  </div>
+  <button type="button" id="helpButton" class="top-button" aria-label="操作方法">?</button>
+</header>
+
+<!-- 画面右上：キャンパスマップ -->
+<div id="mapBackdrop"></div>
+<section id="mapPanel" aria-label="キャンパスマップ">
+  <div class="map-header">
+    <span>キャンパスマップ</span>
+    <button type="button" id="mapSizeButton" class="map-header-button" aria-label="マップを拡大">＋</button>
+    <button type="button" id="mapCloseButton" class="map-header-button" aria-label="マップを閉じる">×</button>
+  </div>
+  <div id="mapViewport">
+    <div id="mapCanvas">
+      <img id="mapImage" alt="神戸三田キャンパスのマップ">
+      <div id="mapPins"></div>
+    </div>
+  </div>
+  <p id="mapEmpty">キャンパスマップは準備中です</p>
+  <div class="map-legend">
+    <span><i class="legend-dot current"></i>現在地</span>
+    <span><i class="legend-dot unvisited"></i>未訪問</span>
+    <span><i class="legend-dot visited"></i>訪問済み</span>
+  </div>
+</section>
+
+<!-- 画面下部：撮影地点のサムネイル一覧と操作ボタン -->
+<footer id="bottomBar">
+  <div id="thumbDrawer">
+    <div id="areaTabs" role="tablist"></div>
+    <div id="thumbStrip" role="list"></div>
+  </div>
+  <div id="controlBar">
+    <button type="button" id="thumbToggle" class="control-button" aria-pressed="true"><span class="control-icon">▤</span><span class="control-label">地点一覧</span></button>
+    <button type="button" id="mapToggle" class="control-button" aria-pressed="true"><span class="control-icon">⌖</span><span class="control-label">マップ</span></button>
+    <span class="control-spacer"></span>
+    <button type="button" id="viewLeft" class="control-button view-control" aria-label="左を向く"><img src="img/left.png" alt=""></button>
+    <button type="button" id="viewRight" class="control-button view-control" aria-label="右を向く"><img src="img/right.png" alt=""></button>
+    <button type="button" id="viewUp" class="control-button view-control" aria-label="上を向く"><img src="img/up.png" alt=""></button>
+    <button type="button" id="viewDown" class="control-button view-control" aria-label="下を向く"><img src="img/down.png" alt=""></button>
+    <button type="button" id="viewIn" class="control-button view-control" aria-label="拡大"><img src="img/plus.png" alt=""></button>
+    <button type="button" id="viewOut" class="control-button view-control" aria-label="縮小"><img src="img/minus.png" alt=""></button>
+    <button type="button" id="fullscreenToggle" class="control-button" aria-label="全画面表示"><img class="icon off" src="img/fullscreen.png" alt=""><img class="icon on" src="img/windowed.png" alt=""></button>
+  </div>
+  <p id="disclaimer"></p>
+</footer>
+
+<!-- 施設情報パネル -->
+<div id="infoBackdrop"></div>
+<aside id="infoPanel" aria-hidden="true" role="dialog" aria-labelledby="infoTitle">
+  <div class="info-grip"></div>
+  <button type="button" id="infoClose" aria-label="閉じる">×</button>
+  <div id="infoBody"></div>
+</aside>
+
+<!-- 操作方法 -->
+<div id="helpModal" aria-hidden="true" role="dialog" aria-labelledby="helpTitle">
+  <div class="help-card">
+    <h2 id="helpTitle">操作方法</h2>
+    <ul class="help-list">
+      <li><b>見回す</b>　画面をドラッグ（スマートフォンはスワイプ）</li>
+      <li><b>拡大・縮小</b>　マウスホイール、またはピンチ操作</li>
+      <li><b><span class="help-arrow"></span>移動</b>　矢印をタップすると、その方向の地点へ進みます</li>
+      <li><b><span class="help-info">i</span>施設情報</b>　アイコンをタップすると説明や写真を表示します</li>
+      <li><b>マップ</b>　ピンをタップするとその地点へ移動します。扇形は今見ている方向です</li>
+      <li><b>地点一覧</b>　画面下のサムネイルから行きたい地点を選べます</li>
+    </ul>
+    <p class="help-note"></p>
+    <button type="button" id="helpClose" class="primary-button">ツアーをはじめる</button>
+  </div>
+</div>
+
+<!-- 読み込み表示 -->
+<div id="loading" aria-live="polite">
+  <div class="loading-card">
+    <p id="loadingText">360°写真を読み込んでいます</p>
+    <div class="loading-bar"><div id="loadingProgress"></div></div>
+  </div>
+</div>
+
+<script src="vendor/screenfull.min.js"></script>
+<script src="vendor/marzipano.js"></script>
+
+<script src="tour-config.js"></script>
+<script src="js/map.js"></script>
+<script src="js/panel.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
