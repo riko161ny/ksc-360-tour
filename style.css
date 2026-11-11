@@ -1074,6 +1074,65 @@ body.mobile .spot-info-label {
   margin: 0 0 10px;
 }
 
+.activity-tag {
+  display: inline-block;
+  margin: 0 0 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #fff2cc;
+  color: #8a5a00;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.activity-more {
+  margin: 0 0 8px;
+  border: 1px solid #e3e6eb;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.activity-more-title {
+  padding: 11px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+}
+
+.activity-more-title::-webkit-details-marker {
+  display: none;
+}
+
+.activity-more-title::before {
+  content: "＋";
+  display: inline-block;
+  width: 1.4em;
+  color: #8a5a00;
+}
+
+.activity-more[open] > .activity-more-title::before {
+  content: "－";
+}
+
+.activity-more-body {
+  padding: 0 12px 12px;
+}
+
+.activity-items {
+  margin: 0 0 10px;
+  padding-left: 1.3em;
+  list-style: disc;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.activity-caption {
+  margin: 0 0 6px;
+  font-size: 12px;
+  color: var(--card-muted);
+}
+
 .activity-note {
   padding: 8px 10px;
   border-radius: 6px;

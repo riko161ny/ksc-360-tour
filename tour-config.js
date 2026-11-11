@@ -36,6 +36,7 @@
  *
  * ■ activities（「KSCでの学生生活」と施設情報の「関連する活動」で使う活動紹介）
  *   "example": { name: "活動名", summary: "独自の短い紹介文", video: { youtube: "動画ID" }（任意）, links: [ { label: "公式情報", url: "https://..." } ] }
+ *   tag（小見出し）、video、sections（タップで開く詳細 { title, text, items, video, caption, links }）も使えます。
  *   studentLife に並べたキーの順に、「KSCでの学生生活」のカードとして表示します。
  */
 window.TOUR_CONFIG = {
@@ -96,10 +97,10 @@ window.TOUR_CONFIG = {
       description: "バスの時刻表は、大学公式サイトのバスのページで確認できます。ダイヤは変わることがあるので、お出かけ前に最新の情報をご覧ください。",
       links: [ { label: "バスのページ（大学公式サイト）", url: "https://www.kwansei.ac.jp/ksc/access/bus" } ]
     },
-    // コモンズ前（p16）に置く新月祭の案内
+    // コモンズ前（p16）に置く新月祭とサークルの案内
     "shingetsusai": {
-      name: "大学祭「新月祭」",
-      activities: ["shingetsusai"]
+      name: "新月祭・サークル紹介",
+      activities: ["shingetsusai", "enryu"]
     },
     // 施設概要（overview）は確認できた内容だけを書き足してください。空のあいだは表示されません。
     "building2": {
@@ -117,13 +118,49 @@ window.TOUR_CONFIG = {
 
   // 「KSCでの学生生活」に表示する活動（紹介文は公式情報をもとにした独自の短い説明）
   studentLifeLead: "神戸三田キャンパスで行われている活動の一部を紹介します。くわしくは各公式情報をご覧ください。",
-  studentLife: ["shingetsusai", "researchFair"],
+  studentLife: ["shingetsusai", "enryu", "researchFair"],
 
   activities: {
     "shingetsusai": {
+      tag: "大学祭",
       name: "大学祭「新月祭」",
       summary: "学生が主体となって企画・運営する大学祭です。模擬店や学生団体による企画などが行われます。",
+      sections: [
+        {
+          title: "2026年の神戸三田キャンパスの企画",
+          text: "2026年10月24日・25日に開かれた新月祭では、神戸三田キャンパスの企画として次のようなステージが新月祭の公式サイトに掲載されていました。",
+          items: [
+            "軽音サークル Deep Stream の芝生ライブ",
+            "ダンスサークル Ney-Kid の公演",
+            "よさこいサークル 炎流 の演舞",
+            "フラダンスサークル Mahalo のステージ"
+          ],
+          links: [ { label: "神戸三田キャンパスの企画一覧（新月祭公式サイト）", url: "https://www.kgfes-shingetsusai.com/ksc%E4%B8%80%E8%88%AC%E4%BC%81%E7%94%BB" } ]
+        },
+        {
+          title: "開催の様子を知る",
+          text: "実際の新月祭のようすは、学生新聞の取材記事や公式Instagramで見ることができます。",
+          links: [
+            { label: "神戸三田キャンパス新月祭2026の記事（関西学院大学新聞）", url: "https://kgpress.jp/kgnews/8557/" },
+            { label: "新月祭 公式Instagram", url: "https://www.instagram.com/shingetsusai/" }
+          ]
+        }
+      ],
       links: [ { label: "KSCのイベント（大学公式サイト）", url: "https://www.kwansei.ac.jp/ksc/campuslife/event/" } ]
+    },
+    "enryu": {
+      tag: "サークル活動をのぞいてみよう",
+      name: "関学よさこい連「炎流」",
+      summary: "神戸三田キャンパスを拠点に活動するよさこいサークルです。学外のイベントや新月祭などで演舞を披露しています。",
+      sections: [
+        {
+          title: "実際の演舞を動画で見る ▶",
+          video: { youtube: "TMLVl2Rt3as", title: "関学よさこい連 炎流 2025年の演舞" },
+          caption: "2025年3月「劇場版どまつり」での演舞です（新月祭の映像ではありません）。",
+          links: [ { label: "動画をYouTubeで見る", url: "https://www.youtube.com/watch?v=TMLVl2Rt3as" } ]
+        }
+      ],
+      links: [ { label: "新月祭2026の神戸三田キャンパスの企画一覧（新月祭公式サイト）", url: "https://www.kgfes-shingetsusai.com/ksc%E4%B8%80%E8%88%AC%E4%BC%81%E7%94%BB" } ]
     },
     "researchFair": {
       name: "リサーチ・フェア",

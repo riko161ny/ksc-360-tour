@@ -126,7 +126,9 @@
     return {
       name: base.name,
       summary: base.summary,
+      tag: base.tag,
       video: base.video,
+      sections: base.sections,
       note: entry.note,
       links: (entry.url ? [{ label: entry.label || '関連記事', url: entry.url }] : []).concat(base.links || [])
     };
@@ -134,6 +136,9 @@
 
   function createActivityCard(activity) {
     var card = el('article', 'activity-card');
+    if (activity.tag) {
+      card.appendChild(el('span', 'activity-tag', activity.tag));
+    }
     card.appendChild(el('h3', 'activity-name', activity.name));
     if (activity.summary) {
       card.appendChild(el('p', 'activity-text', activity.summary));
@@ -148,14 +153,47 @@
     if (activity.note) {
       card.appendChild(el('p', 'activity-note', activity.note));
     }
-    (activity.links || []).forEach(function(link) {
+    // Fold-out details: tap a heading to open it (videos inside load only when opened).
+    (activity.sections || []).forEach(function(section) {
+      var details = el('details', 'activity-more');
+      details.appendChild(el('summary', 'activity-more-title', section.title));
+      var inner = el('div', 'activity-more-body');
+      if (section.text) {
+        inner.appendChild(el('p', 'activity-text', section.text));
+      }
+      if (section.items && section.items.length) {
+        var list = el('ul', 'activity-items');
+        section.items.forEach(function(item) {
+          list.appendChild(el('li', '', item));
+        });
+        inner.appendChild(list);
+      }
+      if (section.video) {
+        var sectionVideo = createVideo(section.video);
+        if (sectionVideo) {
+          sectionVideo.classList.add('activity-video');
+          inner.appendChild(sectionVideo);
+        }
+      }
+      if (section.caption) {
+        inner.appendChild(el('p', 'activity-caption', section.caption));
+      }
+      appendLinks(inner, section.links);
+      details.appendChild(inner);
+      card.appendChild(details);
+    });
+    appendLinks(card, activity.links);
+    return card;
+  }
+
+  function appendLinks(parent, links) {
+    (links || []).forEach(function(link) {
       var a = el('a', 'activity-link', (link.label || link.url) + ' ↗');
       a.href = link.url;
       a.target = '_blank';
       a.rel = 'noopener noreferrer';
-      card.appendChild(a);
+      parent.appendChild(a);
     });
-    return card;
   }
 
   function close() {
