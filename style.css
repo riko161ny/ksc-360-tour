@@ -583,29 +583,32 @@ body.mobile #disclaimer {
   top: 0;
   display: flex;
   align-items: center;
-  gap: 6px;
-  transform: translate(-22px, -50%);
+  gap: 14px;
+  padding: 10px 22px 10px 16px;
+  border-radius: 8px;
+  background: rgba(96, 108, 132, 0.92);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.info-hotspot:hover {
+  background: rgba(78, 90, 114, 0.96);
 }
 
 .info-hotspot-icon {
   flex: none;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: #1e6fd9;
-  border: 3px solid #fff;
-  color: #fff;
-  font: bold 22px/38px Georgia, "Times New Roman", serif;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  font: italic bold 26px/1 Georgia, "Times New Roman", serif;
 }
 
 .info-hotspot-label {
-  padding: 4px 10px;
-  border-radius: 6px;
-  background: var(--ui-bg-strong);
-  font-size: 13px;
+  font-size: 17px;
   white-space: nowrap;
+}
+
+body.mobile .info-hotspot-label {
+  font-size: 15px;
 }
 
 /* ---------- Info panel ---------- */

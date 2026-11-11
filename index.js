@@ -276,7 +276,8 @@
     window.TourPanel.close();
     sceneNameElement.textContent = spot.number + '. ' + spot.name;
     var spotFacility = facilities[spot.config.facility];
-    spotInfoButton.hidden = !spotFacility;
+    // A facility mark placed in the photo (info with yaw/pitch) replaces the centre label.
+    spotInfoButton.hidden = !spotFacility || (spot.config.info || []).length > 0;
     spotInfoButton.querySelector('.spot-info-name').textContent = spotFacility ? spotFacility.name : '';
     spotInfoButton.setAttribute('aria-label', spotFacility ? spotFacility.name + 'の施設情報' : '');
     updateThumbnails(spot);
