@@ -64,7 +64,7 @@ window.TOUR_CONFIG = {
     { id: "p02", name: "2号館横庭園", map: { x: 0.1065, y: 0.7633 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p03", name: "チャペル", map: { x: 0.088, y: 0.6807 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p04", name: "1号館前", map: { x: 0.1503, y: 0.6348 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p05", name: "2号館前", map: { x: 0.1996, y: 0.7179 }, photo: null, view: null, northOffset: null, links: [], info: [], facility: "building2" },
+    { id: "p05", name: "2号館前", map: { x: 0.1996, y: 0.7179 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -1.964, pitch: -0.005, facility: "building2" } ], facility: "building2" },
     { id: "p06", name: "3号館", map: { x: 0.296, y: 0.6834 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p07", name: "食堂", map: { x: 0.2649, y: 0.5984 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p08", name: "生協", map: { x: 0.2472, y: 0.5882 }, photo: null, view: null, northOffset: null, links: [], info: [] },
