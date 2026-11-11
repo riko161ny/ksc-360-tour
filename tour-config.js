@@ -75,7 +75,7 @@ window.TOUR_CONFIG = {
     { id: "p13", name: "体育館", map: { x: 0.3597, y: 0.5577 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p14", name: "バスロータリー", map: { x: 0.3758, y: 0.4356 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p15", name: "ビズカフェ", map: { x: 0.3937, y: 0.4255 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p16", name: "コモンズ前", map: { x: 0.3865, y: 0.4848 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p16", name: "コモンズ前", map: { x: 0.3865, y: 0.4848 }, photo: null, view: null, northOffset: null, links: [], info: [], facility: "shingetsusai" },
     { id: "p17", name: "アカデミックコモンズ", map: { x: 0.4251, y: 0.4729 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p18", name: "6号館前", map: { x: 0.4088, y: 0.5707 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p19", name: "601号室", map: { x: 0.4179, y: 0.6102 }, photo: null, view: null, northOffset: null, links: [], info: [] },
@@ -90,6 +90,11 @@ window.TOUR_CONFIG = {
   ],
 
   facilities: {
+    // コモンズ前（p16）に置く新月祭の案内
+    "shingetsusai": {
+      name: "大学祭「新月祭」",
+      activities: ["shingetsusai"]
+    },
     // 施設概要（overview）は確認できた内容だけを書き足してください。空のあいだは表示されません。
     "building2": {
       name: "II号館",
