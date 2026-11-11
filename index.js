@@ -275,7 +275,10 @@
     currentSpot = spot;
     window.TourPanel.close();
     sceneNameElement.textContent = spot.number + '. ' + spot.name;
-    spotInfoButton.hidden = !facilities[spot.config.facility];
+    var spotFacility = facilities[spot.config.facility];
+    spotInfoButton.hidden = !spotFacility;
+    spotInfoButton.querySelector('.spot-info-name').textContent = spotFacility ? spotFacility.name : '';
+    spotInfoButton.setAttribute('aria-label', spotFacility ? spotFacility.name + 'の施設情報' : '');
     updateThumbnails(spot);
     map.setCurrent(spot.id);
     if (spotIdFromHash() !== spot.id) {

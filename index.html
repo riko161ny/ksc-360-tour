@@ -22,13 +22,15 @@
 <!-- 制作用：URL に ?edit を付けたときだけ、画面中央の向きを表示 -->
 <div id="editReadout" hidden></div>
 
+<!-- 施設情報がある地点だけ、画面中央に施設名のラベルを出す（押すと施設情報パネル） -->
+<button type="button" id="spotInfoButton" class="spot-info-label" hidden><span class="spot-info-icon">i</span><span class="spot-info-name"></span></button>
+
 <!-- 画面上部：タイトル・現在地・操作方法 -->
 <header id="topBar">
   <div class="top-titles">
     <h1 id="siteTitle"></h1>
     <p id="sceneName" aria-live="polite"></p>
   </div>
-  <button type="button" id="spotInfoButton" class="top-button" aria-label="この地点の施設情報" hidden>i</button>
   <button type="button" id="helpButton" class="top-button" aria-label="操作方法">?</button>
 </header>
 
@@ -92,7 +94,7 @@
       <li><b>見回す</b>　画面をドラッグ（スマートフォンはスワイプ）</li>
       <li><b>拡大・縮小</b>　マウスホイール、またはピンチ操作</li>
       <li><b><span class="help-arrow"></span>移動</b>　矢印をタップすると、その方向の地点へ進みます</li>
-      <li><b><span class="help-info">i</span>施設情報</b>　アイコンをタップすると説明や写真を表示します</li>
+      <li><b><span class="help-info">i</span>施設情報</b>　画面中央の施設名やアイコンをタップすると、説明や関連する活動を表示します</li>
       <li><b>KSCでの学生生活</b>　画面下のボタンから、キャンパスで行われている活動を紹介します</li>
       <li><b>マップ</b>　ピンをタップするとその地点へ移動します。扇形は今見ている方向です</li>
       <li><b>地点一覧</b>　画面下のサムネイルから行きたい地点を選べます</li>
