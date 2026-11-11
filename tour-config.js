@@ -73,7 +73,7 @@ window.TOUR_CONFIG = {
     { id: "p11", name: "Colorful Box（生協売店）", map: { x: 0.2971, y: 0.5051 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p12", name: "第二厚生棟", map: { x: 0.3092, y: 0.425 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p13", name: "体育館", map: { x: 0.3597, y: 0.5577 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p14", name: "バスロータリー", map: { x: 0.3758, y: 0.4356 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p14", name: "バスロータリー", map: { x: 0.3758, y: 0.4356 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -3.029, pitch: 0.044, facility: "bus" } ], facility: "bus" },
     { id: "p15", name: "ビズカフェ", map: { x: 0.3937, y: 0.4255 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p16", name: "コモンズ前", map: { x: 0.3865, y: 0.4848 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: 1.621, pitch: 0.025, facility: "shingetsusai" } ], facility: "shingetsusai" },
     { id: "p17", name: "アカデミックコモンズ", map: { x: 0.4251, y: 0.4729 }, photo: null, view: null, northOffset: null, links: [], info: [] },
@@ -90,6 +90,12 @@ window.TOUR_CONFIG = {
   ],
 
   facilities: {
+    // バスロータリー（p14）：時刻表は書き写さず、大学公式サイトのバスのページへリンクする
+    "bus": {
+      name: "バスの時刻表",
+      description: "バスの時刻表は、大学公式サイトのバスのページで確認できます。ダイヤは変わることがあるので、お出かけ前に最新の情報をご覧ください。",
+      links: [ { label: "バスのページ（大学公式サイト）", url: "https://www.kwansei.ac.jp/ksc/access/bus" } ]
+    },
     // コモンズ前（p16）に置く新月祭の案内
     "shingetsusai": {
       name: "大学祭「新月祭」",
