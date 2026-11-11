@@ -35,7 +35,7 @@
  *   }
  *
  * ■ activities（「KSCでの学生生活」と施設情報の「関連する活動」で使う活動紹介）
- *   "example": { name: "活動名", summary: "独自の短い紹介文", links: [ { label: "公式情報", url: "https://..." } ] }
+ *   "example": { name: "活動名", summary: "独自の短い紹介文", video: { youtube: "動画ID" }（任意）, links: [ { label: "公式情報", url: "https://..." } ] }
  *   studentLife に並べたキーの順に、「KSCでの学生生活」のカードとして表示します。
  */
 window.TOUR_CONFIG = {
@@ -128,7 +128,11 @@ window.TOUR_CONFIG = {
     "researchFair": {
       name: "リサーチ・フェア",
       summary: "総合政策学部の学生や大学院生などが、研究の成果を発表するイベントです。",
-      links: [ { label: "KSCのイベント（大学公式サイト）", url: "https://www.kwansei.ac.jp/ksc/campuslife/event/" } ]
+      video: { youtube: "Wj_iboTgMT0", title: "リサーチ・フェアの動画" },
+      links: [
+        { label: "KSCのイベント（大学公式サイト）", url: "https://www.kwansei.ac.jp/ksc/campuslife/event/" },
+        { label: "動画をYouTubeで見る", url: "https://www.youtube.com/watch?v=Wj_iboTgMT0" }
+      ]
     }
   }
 };

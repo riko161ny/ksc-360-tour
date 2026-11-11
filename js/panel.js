@@ -126,6 +126,7 @@
     return {
       name: base.name,
       summary: base.summary,
+      video: base.video,
       note: entry.note,
       links: (entry.url ? [{ label: entry.label || '関連記事', url: entry.url }] : []).concat(base.links || [])
     };
@@ -136,6 +137,13 @@
     card.appendChild(el('h3', 'activity-name', activity.name));
     if (activity.summary) {
       card.appendChild(el('p', 'activity-text', activity.summary));
+    }
+    if (activity.video) {
+      var video = createVideo(activity.video);
+      if (video) {
+        video.classList.add('activity-video');
+        card.appendChild(video);
+      }
     }
     if (activity.note) {
       card.appendChild(el('p', 'activity-note', activity.note));

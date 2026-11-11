@@ -1070,6 +1070,10 @@ body.mobile .spot-info-label {
   line-height: 1.7;
 }
 
+.activity-video {
+  margin: 0 0 10px;
+}
+
 .activity-note {
   padding: 8px 10px;
   border-radius: 6px;
