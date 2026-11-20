@@ -35,7 +35,7 @@
  *     links: [ { label: "大学公式サイト", url: "https://..." } ],
  *     source: "情報の出典（例：大学公式サイト 2026年10月確認）"
  *     facts: [ "📚 約25万冊", ... ]（数字などを小さなラベルで並べる）
- *     sections: [ { title: "見出し", text: ["段落", ...], items: [ { name, text, note } ], rows: [ ["曜日", "時間"] ], note, links } ]
+ *     sections: [ { title: "見出し", text: ["段落", ...], items: [ { name, text, note, videos, links } ], rows: [ ["曜日", "時間"] ], note, links } ]
  *     overview / description は文字列のほか、段落ごとの配列でも書けます
  *   }
  *
@@ -271,17 +271,11 @@ window.TOUR_CONFIG = {
           "items": [
             {
               "name": "リサーチ・フェア",
-              "text": "総合政策学部・総合政策研究科の学生などが、日頃の研究成果を発表するイベント。Ⅱ号館で開催された実績があります。"
+              "text": "総合政策学部・総合政策研究科の学生などが、日頃の研究成果を発表するイベント。Ⅱ号館で開催された実績があります。",
+              "videos": [ { "label": "リサーチ・フェアの動画を見る", "youtube": "Wj_iboTgMT0" } ],
+              "links": [ { "label": "2024年度 リサーチ・フェアの記事", "url": "https://www.kwansei.ac.jp/s_policy/news/03574.html" } ]
             }
           ]
-        }
-      ],
-      "activities": [
-        {
-          "activity": "researchFair",
-          "note": "2024年度のリサーチ・フェアはⅡ号館で開催されました。",
-          "url": "https://www.kwansei.ac.jp/s_policy/news/03574.html",
-          "label": "2024年度 リサーチ・フェアの記事"
         }
       ]
     },

@@ -190,6 +190,14 @@
         li.appendChild(el('span', 'info-item-name', it.name || ''));
         if (it.text) { li.appendChild(el('span', 'info-item-text', it.text)); }
         if (it.note) { li.appendChild(el('span', 'info-item-note', it.note)); }
+        if ((it.videos && it.videos.length) || (it.links && it.links.length)) {
+          var actions = el('div', 'guide-actions');
+          var player = el('div', 'circle-player');
+          (it.videos || []).forEach(function(video) { actions.appendChild(createVideoToggle(video, player)); });
+          (it.links || []).forEach(function(link) { actions.appendChild(createLinkButton(link, true)); });
+          li.appendChild(actions);
+          li.appendChild(player);
+        }
         list.appendChild(li);
       });
       box.appendChild(list);
