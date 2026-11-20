@@ -101,7 +101,8 @@ window.TOUR_CONFIG = {
     { id: "p19", name: "Ⅵ-101号室", map: { x: 0.4179, y: 0.6102 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p20", name: "図書室", map: { x: 0.4362, y: 0.6323 }, photo: null, view: { yaw: -2.685, pitch: -0.039, fov: 1.5708 }, northOffset: null,
       links: [
-        { target: "p20-4", yaw: 2.69, pitch: 0.125 }
+        { target: "p20-DVD", yaw: -1.976, pitch: 0.11 },
+        { target: "p20-3", yaw: 2.69, pitch: 0.125 }
       ],
       info: [
         { yaw: -2.201, pitch: 0.777, facility: "libraryEating" },
