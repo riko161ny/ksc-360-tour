@@ -62,11 +62,11 @@ window.TOUR_CONFIG = {
 
   spots: [
     { id: "p01", name: "正門前", map: { x: 0.045, y: 0.7501 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p02", name: "2号館横庭園", map: { x: 0.1065, y: 0.7633 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p02", name: "Ⅱ号館横庭園", map: { x: 0.1065, y: 0.7633 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p03", name: "チャペル", map: { x: 0.088, y: 0.6807 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p04", name: "1号館前", map: { x: 0.1503, y: 0.6348 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p05", name: "2号館前", map: { x: 0.1996, y: 0.7179 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -1.964, pitch: -0.005, facility: "building2" } ], facility: "building2" },
-    { id: "p06", name: "3号館", map: { x: 0.296, y: 0.6834 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p04", name: "Ⅰ号館前", map: { x: 0.1503, y: 0.6348 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p05", name: "Ⅱ号館前", map: { x: 0.1996, y: 0.7179 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -1.964, pitch: -0.005, facility: "building2" } ], facility: "building2" },
+    { id: "p06", name: "Ⅲ号館", map: { x: 0.296, y: 0.6834 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p07", name: "食堂", map: { x: 0.2649, y: 0.5984 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p08", name: "生協", map: { x: 0.2472, y: 0.5882 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p09", name: "食堂前テラス席", map: { x: 0.2496, y: 0.5441 }, photo: null, view: null, northOffset: null, links: [], info: [] },
@@ -86,7 +86,7 @@ window.TOUR_CONFIG = {
       { yaw: 1.01, pitch: 0.08, facility: "circles" }
     ] },
     { id: "p17", name: "アカデミックコモンズ", map: { x: 0.4251, y: 0.4729 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p18", name: "6号館前", map: { x: 0.4088, y: 0.5707 }, photo: null, view: null, northOffset: null,
+    { id: "p18", name: "Ⅵ号館前", map: { x: 0.4088, y: 0.5707 }, photo: null, view: null, northOffset: null,
       links: [
         { target: "p19", yaw: 3, pitch: -0.02 },
         { target: "p20", yaw: -3.07, pitch: -0.02 }
@@ -95,11 +95,11 @@ window.TOUR_CONFIG = {
         { yaw: -2.791, pitch: 0.001, facility: "building6" }
       ] },
     { id: "p19", name: "Ⅵ-101号室", map: { x: 0.4179, y: 0.6102 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p20", name: "図書館", map: { x: 0.4362, y: 0.6323 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p21", name: "4号館", map: { x: 0.4837, y: 0.5187 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p22", name: "5号館", map: { x: 0.5395, y: 0.4661 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p23", name: "7号館", map: { x: 0.4549, y: 0.4255 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p24", name: "8号館", map: { x: 0.3959, y: 0.3475 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p20", name: "図書室", map: { x: 0.4362, y: 0.6323 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p21", name: "Ⅳ号館", map: { x: 0.4837, y: 0.5187 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p22", name: "Ⅴ号館", map: { x: 0.5395, y: 0.4661 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p23", name: "Ⅶ号館", map: { x: 0.4549, y: 0.4255 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p24", name: "Ⅷ号館", map: { x: 0.3959, y: 0.3475 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p25", name: "来場者用駐車場", map: { x: 0.4855, y: 0.3678 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p26", name: "陸上競技場", map: { x: 0.5316, y: 0.2944 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p27", name: "テニスコート", map: { x: 0.7464, y: 0.5076 }, photo: null, view: null, northOffset: null, links: [], info: [] }
@@ -147,17 +147,17 @@ window.TOUR_CONFIG = {
       lead: "KSCではさまざまな学生団体が活動しています。気になるサークルの活動をチェックしてみよう！",
       showCircles: true
     },
-    // 6号館前（p18）のマーク。施設概要などは確認できた内容だけを書き足してください
+    // Ⅵ号館前（p18）のマーク。施設概要などは確認できた内容だけを書き足してください
     "building6": {
       name: "Ⅵ号館"
     },
     // 施設概要（overview）は確認できた内容だけを書き足してください。空のあいだは表示されません。
     "building2": {
-      name: "II号館",
+      name: "Ⅱ号館",
       activities: [
         {
           activity: "researchFair",
-          note: "2024年度のリサーチ・フェアはII号館で開催されました。",
+          note: "2024年度のリサーチ・フェアはⅡ号館で開催されました。",
           url: "https://www.kwansei.ac.jp/s_policy/news/03574.html",
           label: "2024年度 リサーチ・フェアの記事"
         }
