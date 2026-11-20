@@ -567,6 +567,18 @@ body.mobile #disclaimer {
   transform: scale(1.12);
 }
 
+/* PC: 行き先の名前はカーソルを合わせたときだけ出す（スマホは常に表示） */
+.no-touch .link-hotspot-label {
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.no-touch .link-hotspot:hover .link-hotspot-label {
+  opacity: 1;
+  transform: none;
+}
+
 .link-hotspot-label {
   margin-top: 2px;
   padding: 3px 10px;

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>位置決めツール（制作用）</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+  body { background: #0f1626; }
+  #pano { position: absolute; top: 0; left: 0; right: 340px; bottom: 0; }
+  #cross {
+    position: absolute; left: calc((100% - 340px) / 2); top: 50%;
+    width: 28px; height: 28px; margin: -14px 0 0 -14px; pointer-events: none; z-index: 5;
+  }
+  #cross::before, #cross::after { content: ""; position: absolute; background: #fff; box-shadow: 0 0 3px #000; }
+  #cross::before { left: 13px; top: 0; width: 2px; height: 28px; }
+  #cross::after { top: 13px; left: 0; height: 2px; width: 28px; }
+  #readout {
+    position: absolute; left: 12px; bottom: 12px; z-index: 5; padding: 6px 10px; border-radius: 8px;
+    background: rgba(0,0,0,0.7); color: #fff; font: 14px/1.4 ui-monospace, Menlo, monospace;
+  }
+  #side {
+    position: absolute; top: 0; right: 0; bottom: 0; width: 340px; overflow-y: auto;
+    padding: 14px; background: #fffaf3; color: #1f2a44; font-size: 14px;
+  }
+  #side h1 { font-size: 17px; font-weight: bold; margin: 0 0 4px; }
+  #side .note { color: #5b6474; font-size: 12px; line-height: 1.6; margin: 0 0 12px; }
+  #side label { display: block; font-weight: bold; margin: 10px 0 4px; font-size: 13px; }
+  #side select, #side input[type=number], #side textarea {
+    width: 100%; padding: 6px 8px; border: 1px solid #c9d0dd; border-radius: 8px; background: #fff; color: #1f2a44; font-size: 14px;
+  }
+  .row { display: flex; gap: 6px; align-items: center; }
+  .row > * { flex: 1; }
+  .btn {
+    display: inline-block; padding: 8px 12px; border-radius: 999px; background: #1f2a44; color: #fff;
+    font-size: 13px; font-weight: bold; cursor: pointer; text-align: center;
+  }
+  .btn.light { background: #fff; color: #1f2a44; box-shadow: inset 0 0 0 1.5px #c9d0dd; }
+  .btn.small { padding: 4px 10px; font-size: 12px; white-space: nowrap; }
+  .item { margin: 8px 0; padding: 10px; border-radius: 12px; background: #fff; box-shadow: 0 2px 8px rgba(31,42,68,0.08); }
+  .item.selected { box-shadow: 0 0 0 2px #f07a3a; }
+  .item-title { font-weight: bold; margin-bottom: 6px; display: flex; justify-content: space-between; gap: 6px; }
+  .item .row input { font-size: 13px; }
+  .item .mini { font-size: 11px; color: #5b6474; }
+  #code { height: 180px; font: 12px/1.5 ui-monospace, Menlo, monospace; }
+  .editor-mark { cursor: grab; }
+  .editor-mark.selected .link-hotspot-icon, .editor-mark.selected .info-hotspot, .editor-mark.selected .float-body { outline: 2px dashed #f07a3a; outline-offset: 4px; }
+  .no-touch .editor-mark .link-hotspot-label { opacity: 1; }
+  #noPhotoMsg { position: absolute; left: 0; right: 340px; top: 45%; text-align: center; color: #c5cbd6; z-index: 4; }
+</style>
+</head>
+<body class="no-touch">
+<div id="pano"></div>
+<div id="cross"></div>
+<div id="readout"></div>
+<p id="noPhotoMsg" hidden>この地点の写真はまだありません</p>
+
+<aside id="side">
+  <h1>位置決めツール（制作用）</h1>
+  <p class="note">
+    写真をドラッグして向きを合わせ、マークを置きます。マークはドラッグで動かせます。写真をダブルクリックすると、その場所に追加します。
+    ここでの変更はこのブラウザだけに保存されます。下の「設定に貼る文字」をコピーして送るか、tour-config.js に貼ってください。
+  </p>
+
+  <label for="spotSelect">地点</label>
+  <select id="spotSelect"></select>
+
+  <label>追加するもの</label>
+  <div class="row">
+    <select id="kindSelect">
+      <option value="link">移動の矢印</option>
+      <option value="info">情報マーク</option>
+    </select>
+    <select id="targetSelect"></select>
+  </div>
+  <div class="row" style="margin-top:8px">
+    <span class="btn" id="addCenter">画面中央に追加</span>
+  </div>
+
+  <label>この地点のマーク</label>
+  <div id="items"></div>
+
+  <label for="code">設定に貼る文字（この地点の links と info）</label>
+  <textarea id="code" readonly></textarea>
+  <div class="row" style="margin-top:8px">
+    <span class="btn" id="copyCode">コピー</span>
+    <span class="btn light" id="resetSpot">この地点を設定ファイルの状態に戻す</span>
+  </div>
+  <p class="note" style="margin-top:12px">yaw：左右の向き（ラジアン）／pitch：上下（プラスが下）／rotation：矢印の向き（ラジアン、0で上向き）</p>
+</aside>
+
+<script src="vendor/marzipano.js"></script>
+<script src="tour-config.js"></script>
+<script src="js/editor.js"></script>
+</body>
+</html>
