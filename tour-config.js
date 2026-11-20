@@ -119,7 +119,7 @@ window.TOUR_CONFIG = {
     { id: "p20-3", name: "3階｜参考図書・メディアフォーラムエリア", map: null, photo: null, view: { yaw: -1.189, pitch: 0.065, fov: 1.5708 }, northOffset: null, links: [ { target: "p20-4", yaw: 2.218, pitch: 0.096 } ], info: [ { yaw: -1.189, pitch: 0.065, facility: "libraryFloor3" } ] , backButton: { target: "p20", label: "図書館入口に戻る" } },
     { id: "p20-4", name: "4階｜一般図書エリア", map: null, photo: null, view: { yaw: -0.748, pitch: 0.02, fov: 1.5708 }, northOffset: null, links: [ { target: "p20-book", yaw: 0.862, pitch: 0.06, label: false } ], info: [ { yaw: -0.748, pitch: 0.02, facility: "libraryFloor4" } ] , backButton: { target: "p20", label: "図書館入口に戻る" } },
     { id: "p20-book", name: "図書室（本棚）", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p20-DVD", name: "視聴覚コーナー", map: null, photo: null, view: { yaw: -0.24, pitch: 0.3, fov: 1.5708 }, northOffset: null, links: [ { target: "p20-3", yaw: 1.249, pitch: 0.171 } ], info: [ { yaw: -0.24, pitch: 0.707, facility: "avCorner" } ] },
+    { id: "p20-DVD", name: "視聴覚コーナー", map: null, photo: null, view: { yaw: -0.24, pitch: 0.3, fov: 1.5708 }, northOffset: null, links: [ { target: "p20", yaw: 1.25, pitch: 0.17 } ], info: [ { yaw: -0.24, pitch: 0.707, facility: "avCorner" } ] },
     { id: "board", name: "掲示板", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "zemi", name: "ゼミ", map: null, photo: null, view: { yaw: -1.13, pitch: 0.03, fov: 1.5708 }, northOffset: null, links: [], info: [ { yaw: -1.13, pitch: 0.03, facility: "zemi" } ] }
   ],
