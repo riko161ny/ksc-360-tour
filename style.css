@@ -1562,3 +1562,86 @@ body.mobile #controlBar .control-button {
 body.mobile #controlBar .control-label {
   font-size: 12px;
 }
+
+/* ---------- 施設情報：数字ラベル・設備リスト・時間の表 ---------- */
+.info-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 14px;
+}
+
+.info-fact {
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #ffe9d6;
+  color: #1f2a44;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.info-section .info-text + .info-text {
+  margin-top: 8px;
+}
+
+.info-items {
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(31, 42, 68, 0.1);
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-item-name {
+  font-weight: bold;
+  color: #1f2a44;
+}
+
+.info-item-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3b4558;
+}
+
+.info-item-note {
+  font-size: 13px;
+  color: #b4561f;
+}
+
+.info-table {
+  width: 100%;
+  margin: 6px 0 0;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.info-table th,
+.info-table td {
+  padding: 7px 8px;
+  border-bottom: 1px solid rgba(31, 42, 68, 0.1);
+  text-align: left;
+  vertical-align: top;
+}
+
+.info-table th {
+  width: 38%;
+  font-weight: bold;
+  color: #1f2a44;
+  white-space: nowrap;
+}
+
+.info-note {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: #5b6474;
+}

@@ -32,6 +32,12 @@
     title.id = 'infoTitle';
     bodyElement.appendChild(title);
 
+    if (facility.facts && facility.facts.length) {
+      var facts = el('div', 'info-facts');
+      facility.facts.forEach(function(fact) { facts.appendChild(el('span', 'info-fact', fact)); });
+      bodyElement.appendChild(facts);
+    }
+
     // Guide-style panels: lead, intro, small cards, and the circle list.
     if (facility.lead) {
       bodyElement.appendChild(el('p', 'info-lead', facility.lead));
@@ -61,7 +67,7 @@
     if (facility.overview) {
       var overview = el('div', 'info-section');
       overview.appendChild(el('h3', 'info-heading', '施設概要'));
-      overview.appendChild(el('p', 'info-text', facility.overview));
+      appendParagraphs(overview, facility.overview);
       bodyElement.appendChild(overview);
     }
     if (facility.purpose) {
@@ -73,9 +79,12 @@
     if (facility.description) {
       var description = el('div', 'info-section');
       description.appendChild(el('h3', 'info-heading', '説明'));
-      description.appendChild(el('p', 'info-text', facility.description));
+      appendParagraphs(description, facility.description);
       bodyElement.appendChild(description);
     }
+    (facility.sections || []).forEach(function(section) {
+      bodyElement.appendChild(createSection(section));
+    });
     if (facility.video) {
       var video = createVideo(facility.video);
       if (video) {
@@ -160,6 +169,44 @@
     wrap.appendChild(content);
     select(0);
     return wrap;
+  }
+
+  // Text that may be one string or a list of paragraphs.
+  function appendParagraphs(parent, text) {
+    (Array.isArray(text) ? text : [text]).forEach(function(t) {
+      parent.appendChild(el('p', 'info-text', t));
+    });
+  }
+
+  // A headed block: paragraphs, a list of { name, text, note }, a two-column table, a note and links.
+  function createSection(section) {
+    var box = el('div', 'info-section');
+    if (section.title) { box.appendChild(el('h3', 'info-heading', section.title)); }
+    if (section.text) { appendParagraphs(box, section.text); }
+    if (section.items && section.items.length) {
+      var list = el('ul', 'info-items');
+      section.items.forEach(function(it) {
+        var li = el('li', 'info-item');
+        li.appendChild(el('span', 'info-item-name', it.name || ''));
+        if (it.text) { li.appendChild(el('span', 'info-item-text', it.text)); }
+        if (it.note) { li.appendChild(el('span', 'info-item-note', it.note)); }
+        list.appendChild(li);
+      });
+      box.appendChild(list);
+    }
+    if (section.rows && section.rows.length) {
+      var table = el('table', 'info-table');
+      section.rows.forEach(function(row) {
+        var tr = el('tr', '');
+        tr.appendChild(el('th', '', row[0] || ''));
+        tr.appendChild(el('td', '', row[1] || ''));
+        table.appendChild(tr);
+      });
+      box.appendChild(table);
+    }
+    if (section.note) { box.appendChild(el('p', 'info-note', '※' + section.note)); }
+    if (section.links && section.links.length) { appendLinks(box, section.links); }
+    return box;
   }
 
   function createIntro(intro) {
