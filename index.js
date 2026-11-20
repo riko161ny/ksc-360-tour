@@ -159,6 +159,13 @@
 
   // "KSCでの学生生活" button and the per-spot facility button.
   var spotInfoButton = document.querySelector('#spotInfoButton');
+  var backButton = document.querySelector('#backButton');
+  backButton.addEventListener('click', function() {
+    var back = currentSpot && currentSpot.config.backButton;
+    if (back) {
+      switchSpot(findSpotById(back.target));
+    }
+  });
   document.querySelector('#lifeButton').addEventListener('click', function() {
     window.TourPanel.openActivities('KSCでの学生生活', config.studentLifeLead || '', config.studentLife || []);
   });
@@ -280,6 +287,10 @@
     spotInfoButton.hidden = !spotFacility || (spot.config.info || []).length > 0;
     spotInfoButton.querySelector('.spot-info-name').textContent = spotFacility ? spotFacility.name : '';
     spotInfoButton.setAttribute('aria-label', spotFacility ? spotFacility.name + 'の施設情報' : '');
+    // Optional "go back" button above the bottom bar (backButton: { target, label }).
+    var back = spot.config.backButton;
+    backButton.hidden = !(back && findSpotById(back.target));
+    backButton.querySelector('.back-button-label').textContent = back ? (back.label || '戻る') : '';
     updateThumbnails(spot);
     map.setCurrent(spot.id);
     if (spotIdFromHash() !== spot.id) {

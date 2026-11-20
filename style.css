@@ -1460,3 +1460,38 @@ body.mobile .float-sub {
     0 3px 0 #a8481a,
     0 7px 10px rgba(150, 70, 20, 0.25);
 }
+
+/* 地点ごとの「戻る」ボタン（画面下のバーのすぐ上、中央） */
+.back-button {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 14px);
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: rgba(31, 42, 68, 0.9);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.back-button[hidden] {
+  display: none;
+}
+
+.back-button:hover {
+  background: #f07a3a;
+  transform: translateX(-50%) scale(1.05);
+}
+
+.back-button-icon {
+  font-size: 17px;
+  line-height: 1;
+}
