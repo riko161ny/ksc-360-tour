@@ -116,7 +116,7 @@ window.TOUR_CONFIG = {
     { id: "p20-3", name: "3階｜参考図書・メディアフォーラムエリア", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p20-4", name: "4階｜一般図書エリア", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p20-book", name: "図書室（本棚）", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p20-DVD", name: "視聴覚コーナー", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p20-DVD", name: "視聴覚コーナー", map: null, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -0.24, pitch: 0.707, facility: "avCorner" } ] },
     { id: "board", name: "掲示板", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "zemi", name: "ゼミ", map: null, photo: null, view: null, northOffset: null, links: [], info: [] }
   ],
@@ -171,6 +171,10 @@ window.TOUR_CONFIG = {
     "libraryEating": {
       name: "飲食エリア",
       description: "長時間の勉強やレポート作成の合間に、図書館から出ることなく食事をとれるスペースです。2026年10月から試験的に設置されており、指定されたエリア内で、ルールに従って飲食できます。"
+    },
+    // 視聴覚コーナー（p20-DVD）。内容は確認できたものを書き足してください
+    "avCorner": {
+      name: "視聴覚コーナー"
     },
     // Ⅵ号館前（p18）のマーク。施設概要などは確認できた内容だけを書き足してください
     "building6": {
