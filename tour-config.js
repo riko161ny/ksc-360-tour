@@ -95,7 +95,12 @@ window.TOUR_CONFIG = {
         { yaw: -2.791, pitch: 0.001, facility: "building6" }
       ] },
     { id: "p19", name: "Ⅵ-101号室", map: { x: 0.4179, y: 0.6102 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p20", name: "図書室", map: { x: 0.4362, y: 0.6323 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p20", name: "図書室", map: { x: 0.4362, y: 0.6323 }, photo: null, view: null, northOffset: null,
+      links: [
+        { target: "p20-DVD", yaw: -1.983, pitch: 0.106 },
+        { target: "p20-4", yaw: 2.69, pitch: 0.125 }
+      ],
+      info: [] },
     { id: "p21", name: "Ⅳ号館", map: { x: 0.4837, y: 0.5187 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p22", name: "Ⅴ号館", map: { x: 0.5395, y: 0.4661 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p23", name: "Ⅶ号館", map: { x: 0.4549, y: 0.4255 }, photo: null, view: null, northOffset: null, links: [], info: [] },
@@ -104,10 +109,10 @@ window.TOUR_CONFIG = {
     { id: "p26", name: "陸上競技場", map: { x: 0.5316, y: 0.2944 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p27", name: "テニスコート", map: { x: 0.7464, y: 0.5076 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     // 図書室の中（p20 の写真が入口側の1枚目）。マップにはピンを出さないので map は null
-    { id: "p20-3", name: "図書室 2", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p20-4", name: "図書室 3", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p20-3", name: "3階｜参考図書・メディアフォーラムエリア", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p20-4", name: "4階｜一般図書エリア", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p20-book", name: "図書室（本棚）", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p20-DVD", name: "図書室（DVD）", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p20-DVD", name: "視聴覚コーナー", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "board", name: "掲示板", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "zemi", name: "ゼミ", map: null, photo: null, view: null, northOffset: null, links: [], info: [] }
   ],
