@@ -1545,8 +1545,8 @@ body.mobile .float-sub {
   font-size: 14px;
 }
 
-/* スマートフォンでは下のボタンが詰まるので、アイコンを省いて文字だけにする */
-body.mobile #controlBar .control-icon {
+/* 下の文字ボタン（地点一覧・マップ・学部など）はアイコンを付けず、文字だけにする */
+#controlBar .control-icon {
   display: none;
 }
 
