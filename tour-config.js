@@ -100,7 +100,11 @@ window.TOUR_CONFIG = {
         { target: "p20-DVD", yaw: -1.983, pitch: 0.106 },
         { target: "p20-4", yaw: 2.69, pitch: 0.125 }
       ],
-      info: [] },
+      info: [
+        // 2つが重ならないよう、図書室のマークは少し上にずらしています（editor.html で動かせます）
+        { yaw: -2.201, pitch: 0.777, facility: "libraryEating" },
+        { yaw: -2.201, pitch: 0.55, facility: "library" }
+      ] },
     { id: "p21", name: "Ⅳ号館", map: { x: 0.4837, y: 0.5187 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p22", name: "Ⅴ号館", map: { x: 0.5395, y: 0.4661 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p23", name: "Ⅶ号館", map: { x: 0.4549, y: 0.4255 }, photo: null, view: null, northOffset: null, links: [], info: [] },
@@ -158,6 +162,15 @@ window.TOUR_CONFIG = {
       icon: "✨",
       lead: "KSCではさまざまな学生団体が活動しています。気になるサークルの活動をチェックしてみよう！",
       showCircles: true
+    },
+    // 図書室（p20）の基本情報。内容は確認できたものを書き足してください
+    "library": {
+      name: "図書室"
+    },
+    // 図書室（p20）の足元の飲食エリア
+    "libraryEating": {
+      name: "飲食エリア",
+      description: "長時間の勉強やレポート作成の合間に、図書館から出ることなく食事をとれるスペースです。2026年10月から試験的に設置されており、指定されたエリア内で、ルールに従って飲食できます。"
     },
     // Ⅵ号館前（p18）のマーク。施設概要などは確認できた内容だけを書き足してください
     "building6": {
