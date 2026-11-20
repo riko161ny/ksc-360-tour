@@ -1346,3 +1346,105 @@ body.mobile #controlBar .control-button {
 body.mobile .info-title {
   font-size: 19px;
 }
+
+
+/* ---------- 浮かぶ立体文字のマーク（新月祭） ---------- */
+
+.float-hotspot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.float-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  animation: float-bob 3.2s ease-in-out infinite;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.float-main {
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+  color: #fff8ef;
+  white-space: nowrap;
+  /* 下に少しずつずらした影を重ねて厚みを出し、最後にやわらかい落ち影 */
+  text-shadow:
+    0 1px 0 #ffd2ae,
+    0 2px 0 #f9b27f,
+    0 3px 0 #f29a5f,
+    0 4px 0 #e8854a,
+    0 5px 0 #d9733a,
+    0 6px 0 #c9652f,
+    0 12px 14px rgba(20, 30, 50, 0.45),
+    0 20px 28px rgba(20, 30, 50, 0.25);
+  transition: text-shadow 0.2s ease;
+}
+
+.float-sub {
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: rgba(255, 251, 245, 0.94);
+  box-shadow: 0 3px 10px rgba(20, 30, 50, 0.25);
+  color: #1f2a44;
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.float-hotspot:hover .float-body,
+.float-hotspot:focus-visible .float-body {
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 14px rgba(255, 196, 130, 0.85));
+}
+
+.float-hotspot:hover .float-main {
+  text-shadow:
+    0 0 10px rgba(255, 236, 200, 0.95),
+    0 1px 0 #ffd2ae,
+    0 2px 0 #f9b27f,
+    0 3px 0 #f29a5f,
+    0 4px 0 #e8854a,
+    0 5px 0 #d9733a,
+    0 6px 0 #c9652f,
+    0 0 26px rgba(255, 170, 90, 0.9),
+    0 14px 18px rgba(20, 30, 50, 0.4);
+}
+
+@keyframes float-bob {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -6px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .float-body {
+    animation: none;
+  }
+}
+
+body.mobile .float-main {
+  font-size: 34px;
+}
+
+body.mobile .float-sub {
+  font-size: 12px;
+}
+
+/* パネル内の見出しも少し立体的に */
+.guide-intro-heading.pop3d {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  color: #f07a3a;
+  text-shadow:
+    0 1px 0 #d9652a,
+    0 2px 0 #c2561f,
+    0 3px 0 #a8481a,
+    0 7px 10px rgba(150, 70, 20, 0.25);
+}

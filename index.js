@@ -494,6 +494,30 @@
     wrapper.setAttribute('role', 'button');
     wrapper.setAttribute('aria-label', (title || '施設') + 'の情報');
 
+    // Floating 3D text mark (facility.hotspot = { style: "float3d", text, sub })
+    var look = facility.hotspot || {};
+    if (look.style === 'float3d') {
+      inner.className = 'float-hotspot';
+      var body = document.createElement('span');
+      body.className = 'float-body';
+      var main = document.createElement('span');
+      main.className = 'float-main';
+      main.textContent = look.text || title || '';
+      body.appendChild(main);
+      if (look.sub) {
+        var sub = document.createElement('span');
+        sub.className = 'float-sub';
+        sub.textContent = look.sub;
+        body.appendChild(sub);
+      }
+      inner.appendChild(body);
+      wrapper.addEventListener('click', function() {
+        window.TourPanel.open(facility);
+      });
+      stopTouchAndScrollEventPropagation(wrapper);
+      return wrapper;
+    }
+
     var icon = document.createElement('span');
     icon.classList.add('info-hotspot-icon');
     icon.textContent = iconText || 'i';

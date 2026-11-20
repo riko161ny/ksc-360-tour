@@ -78,7 +78,7 @@ window.TOUR_CONFIG = {
     { id: "p15", name: "ビズカフェ", map: { x: 0.3937, y: 0.4255 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p16", name: "コモンズ前", map: { x: 0.3865, y: 0.4848 }, photo: null, view: null, northOffset: null, links: [], info: [
       // 位置は yaw（左右）・pitch（上下、プラスが下）で調整できます。URL に ?edit を付けると画面中央の値が出ます
-      { yaw: 1.62, pitch: -0.07, facility: "shingetsusai" },
+      { yaw: 1.62, pitch: -0.16, facility: "shingetsusai" },
       { yaw: 1.62, pitch: 0.11, facility: "circles" }
     ] },
     { id: "p17", name: "アカデミックコモンズ", map: { x: 0.4251, y: 0.4729 }, photo: null, view: null, northOffset: null, links: [], info: [] },
@@ -105,9 +105,12 @@ window.TOUR_CONFIG = {
     "shingetsusai": {
       name: "新月祭をのぞいてみよう！",
       icon: "🎪",
+      // 360°写真の中では「新月祭」の立体文字で表示（style を外すと通常の丸いマークに戻ります）
+      hotspot: { style: "float3d", text: "新月祭", sub: "🎪 のぞいてみよう！" },
       intro: {
         tag: "大学祭",
         heading: "大学祭「新月祭」",
+        pop: true,
         text: "学生が主体となって企画・運営する大学祭。模擬店や学生団体による企画などが行われています。"
       },
       cards: [

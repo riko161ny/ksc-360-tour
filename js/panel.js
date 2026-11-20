@@ -127,7 +127,7 @@
       box.appendChild(el('span', 'guide-tag', intro.tag));
     }
     if (intro.heading) {
-      box.appendChild(el('h3', 'guide-intro-heading', intro.heading));
+      box.appendChild(el('h3', 'guide-intro-heading' + (intro.pop ? ' pop3d' : ''), intro.heading));
     }
     if (intro.text) {
       box.appendChild(el('p', 'guide-text', intro.text));
