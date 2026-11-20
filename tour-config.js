@@ -122,7 +122,7 @@ window.TOUR_CONFIG = {
     { id: "p20-book", name: "図書室（本棚）", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p20-DVD", name: "視聴覚コーナー", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p20-3", yaw: 1.249, pitch: 0.171 } ], info: [ { yaw: -0.24, pitch: 0.707, facility: "avCorner" } ] },
     { id: "board", name: "掲示板", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "zemi", name: "ゼミ", map: null, photo: null, view: null, northOffset: null, links: [], info: [] }
+    { id: "zemi", name: "ゼミ", map: null, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -1.13, pitch: 0.03, facility: "zemi" } ] }
   ],
 
   facilities: {
@@ -191,6 +191,10 @@ window.TOUR_CONFIG = {
     // Ⅲ号館（p06）のマーク。施設概要などは確認できた内容だけを書き足してください
     "building3": {
       name: "Ⅲ号館"
+    },
+    // ゼミ（zemi）のマーク。内容は確認できたものを書き足してください
+    "zemi": {
+      name: "ゼミ"
     },
     // Ⅵ号館前（p18）のマーク。施設概要などは確認できた内容だけを書き足してください
     "building6": {
