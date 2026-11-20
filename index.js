@@ -480,7 +480,10 @@
     stopTouchAndScrollEventPropagation(wrapper);
 
     inner.appendChild(icon);
-    inner.appendChild(label);
+    // label: false in tour-config.js hides the destination name for this arrow.
+    if (hotspot.label !== false) {
+      inner.appendChild(label);
+    }
 
     return wrapper;
   }

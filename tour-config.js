@@ -15,6 +15,7 @@
  *   view        : 最初に向く方向 { yaw, pitch, fov }（ラジアン）。null なら正面
  *   northOffset : 写真の中で「マップの上方向」を向いたときの yaw。設定するとマップに視線の扇形を出します
  *   links       : 写真の中に出す移動矢印 [ { target: "p02", yaw: 0, pitch: 0 } ]
+ *                 label: false を付けると、矢印に行き先の名前を出しません
  *   info        : 施設情報アイコン [ { yaw: 0, pitch: 0, facility: "facilities のキー" } ]
  *   facility    : （任意）この地点の施設情報。info で写真内に配置していないときは、画面中央に施設名ラベルを出します
  *   yaw / pitch は URL の末尾に ?edit を付けて開くと、画面中央の値を表示します。
@@ -114,7 +115,7 @@ window.TOUR_CONFIG = {
     { id: "p27", name: "テニスコート", map: { x: 0.7464, y: 0.5076 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     // 図書室の中（p20 の写真が入口側の1枚目）。マップにはピンを出さないので map は null
     { id: "p20-3", name: "3階｜参考図書・メディアフォーラムエリア", map: null, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -1.189, pitch: 0.065, facility: "libraryFloor3" } ] },
-    { id: "p20-4", name: "4階｜一般図書エリア", map: null, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -0.748, pitch: 0.02, facility: "libraryFloor4" } ] },
+    { id: "p20-4", name: "4階｜一般図書エリア", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p20-book", yaw: 0.862, pitch: 0.06, label: false } ], info: [ { yaw: -0.748, pitch: 0.02, facility: "libraryFloor4" } ] },
     { id: "p20-book", name: "図書室（本棚）", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p20-DVD", name: "視聴覚コーナー", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p20-3", yaw: 1.249, pitch: 0.171 } ], info: [ { yaw: -0.24, pitch: 0.707, facility: "avCorner" } ] },
     { id: "board", name: "掲示板", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
