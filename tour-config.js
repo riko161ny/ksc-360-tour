@@ -114,7 +114,7 @@ window.TOUR_CONFIG = {
     { id: "p27", name: "テニスコート", map: { x: 0.7464, y: 0.5076 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     // 図書室の中（p20 の写真が入口側の1枚目）。マップにはピンを出さないので map は null
     { id: "p20-3", name: "3階｜参考図書・メディアフォーラムエリア", map: null, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -1.189, pitch: 0.065, facility: "libraryFloor3" } ] },
-    { id: "p20-4", name: "4階｜一般図書エリア", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p20-4", name: "4階｜一般図書エリア", map: null, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -0.748, pitch: 0.02, facility: "libraryFloor4" } ] },
     { id: "p20-book", name: "図書室（本棚）", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p20-DVD", name: "視聴覚コーナー", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p20-3", yaw: 1.249, pitch: 0.171 } ], info: [ { yaw: -0.24, pitch: 0.707, facility: "avCorner" } ] },
     { id: "board", name: "掲示板", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
@@ -175,6 +175,10 @@ window.TOUR_CONFIG = {
     // 図書室 3階（p20-3）。内容は確認できたものを書き足してください
     "libraryFloor3": {
       name: "3階｜参考図書・メディアフォーラムエリア"
+    },
+    // 図書室 4階（p20-4）。内容は確認できたものを書き足してください
+    "libraryFloor4": {
+      name: "4階｜一般図書エリア"
     },
     // 視聴覚コーナー（p20-DVD）。内容は確認できたものを書き足してください
     "avCorner": {
