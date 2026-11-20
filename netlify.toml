@@ -2,3 +2,9 @@
 [build]
   publish = "."
   command = ""
+
+# 検索エンジンに載せない（限定公開のため）
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
