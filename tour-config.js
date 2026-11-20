@@ -67,8 +67,8 @@ window.TOUR_CONFIG = {
     { id: "p02", name: "Ⅱ号館横庭園", map: { x: 0.1065, y: 0.7633 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p03", name: "チャペル", map: { x: 0.088, y: 0.6807 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p04", name: "Ⅰ号館前", map: { x: 0.1503, y: 0.6348 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p05", name: "Ⅱ号館前", map: { x: 0.1996, y: 0.7179 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -1.964, pitch: -0.005, facility: "building2" } ], facility: "building2" },
-    { id: "p06", name: "Ⅲ号館", map: { x: 0.296, y: 0.6834 }, photo: null, view: null, northOffset: null,
+    { id: "p05", name: "Ⅱ号館前", map: { x: 0.1996, y: 0.7179 }, photo: null, view: { yaw: -1.964, pitch: -0.005, fov: 1.5708 }, northOffset: null, links: [], info: [ { yaw: -1.964, pitch: -0.005, facility: "building2" } ], facility: "building2" },
+    { id: "p06", name: "Ⅲ号館", map: { x: 0.296, y: 0.6834 }, photo: null, view: { yaw: -0.39, pitch: 0, fov: 1.5708 }, northOffset: null,
       links: [ { target: "zemi", yaw: -0.11, pitch: 0.07 } ],
       info: [ { yaw: -0.39, pitch: 0, facility: "building3" } ] },
     { id: "p07", name: "食堂", map: { x: 0.2649, y: 0.5984 }, photo: null, view: null, northOffset: null, links: [], info: [] },
@@ -78,9 +78,9 @@ window.TOUR_CONFIG = {
     { id: "p11", name: "Colorful Box（生協売店）", map: { x: 0.2971, y: 0.5051 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p12", name: "第二厚生棟", map: { x: 0.3092, y: 0.425 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p13", name: "体育館", map: { x: 0.3597, y: 0.5577 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p14", name: "バスロータリー", map: { x: 0.3758, y: 0.4356 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -3.029, pitch: 0.044, facility: "bus" } ], facility: "bus" },
+    { id: "p14", name: "バスロータリー", map: { x: 0.3758, y: 0.4356 }, photo: null, view: { yaw: -3.029, pitch: 0.044, fov: 1.5708 }, northOffset: null, links: [], info: [ { yaw: -3.029, pitch: 0.044, facility: "bus" } ], facility: "bus" },
     { id: "p15", name: "ビズカフェ", map: { x: 0.3937, y: 0.4255 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p16", name: "コモンズ前", map: { x: 0.3865, y: 0.4848 }, photo: null, view: null, northOffset: null,
+    { id: "p16", name: "コモンズ前", map: { x: 0.3865, y: 0.4848 }, photo: null, view: { yaw: 1.78, pitch: 0.075, fov: 1.5708 }, northOffset: null,
       links: [
         { target: "p17", yaw: 1.711, pitch: 0.121 }
       ],
@@ -90,7 +90,7 @@ window.TOUR_CONFIG = {
       { yaw: 1.01, pitch: 0.08, facility: "circles" }
     ] },
     { id: "p17", name: "アカデミックコモンズ", map: { x: 0.4251, y: 0.4729 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p18", name: "Ⅵ号館前", map: { x: 0.4088, y: 0.5707 }, photo: null, view: null, northOffset: null,
+    { id: "p18", name: "Ⅵ号館前", map: { x: 0.4088, y: 0.5707 }, photo: null, view: { yaw: -2.791, pitch: 0.001, fov: 1.5708 }, northOffset: null,
       links: [
         { target: "p19", yaw: 3, pitch: -0.02 },
         { target: "p20", yaw: -3.07, pitch: -0.02 }
@@ -99,15 +99,13 @@ window.TOUR_CONFIG = {
         { yaw: -2.791, pitch: 0.001, facility: "building6" }
       ] },
     { id: "p19", name: "Ⅵ-101号室", map: { x: 0.4179, y: 0.6102 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p20", name: "図書室", map: { x: 0.4362, y: 0.6323 }, photo: null, view: null, northOffset: null,
+    { id: "p20", name: "図書室", map: { x: 0.4362, y: 0.6323 }, photo: null, view: { yaw: -2.685, pitch: -0.039, fov: 1.5708 }, northOffset: null,
       links: [
-        { target: "p20-DVD", yaw: -1.983, pitch: 0.106 },
         { target: "p20-4", yaw: 2.69, pitch: 0.125 }
       ],
       info: [
-        // 2つが重ならないよう、図書室のマークは少し上にずらしています（editor.html で動かせます）
         { yaw: -2.201, pitch: 0.777, facility: "libraryEating" },
-        { yaw: -2.201, pitch: 0.55, facility: "library" }
+        { yaw: -2.685, pitch: -0.039, facility: "library" }
       ] },
     { id: "p21", name: "Ⅳ号館", map: { x: 0.4837, y: 0.5187 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p22", name: "Ⅴ号館", map: { x: 0.5395, y: 0.4661 }, photo: null, view: null, northOffset: null, links: [], info: [] },
@@ -117,12 +115,12 @@ window.TOUR_CONFIG = {
     { id: "p26", name: "陸上競技場", map: { x: 0.5316, y: 0.2944 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p27", name: "テニスコート", map: { x: 0.7464, y: 0.5076 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     // 図書室の中（p20 の写真が入口側の1枚目）。マップにはピンを出さないので map は null
-    { id: "p20-3", name: "3階｜参考図書・メディアフォーラムエリア", map: null, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -1.189, pitch: 0.065, facility: "libraryFloor3" } ] , backButton: { target: "p20", label: "図書館入口に戻る" } },
-    { id: "p20-4", name: "4階｜一般図書エリア", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p20-book", yaw: 0.862, pitch: 0.06, label: false } ], info: [ { yaw: -0.748, pitch: 0.02, facility: "libraryFloor4" } ] , backButton: { target: "p20", label: "図書館入口に戻る" } },
+    { id: "p20-3", name: "3階｜参考図書・メディアフォーラムエリア", map: null, photo: null, view: { yaw: -1.189, pitch: 0.065, fov: 1.5708 }, northOffset: null, links: [], info: [ { yaw: -1.189, pitch: 0.065, facility: "libraryFloor3" } ] , backButton: { target: "p20", label: "図書館入口に戻る" } },
+    { id: "p20-4", name: "4階｜一般図書エリア", map: null, photo: null, view: { yaw: -0.748, pitch: 0.02, fov: 1.5708 }, northOffset: null, links: [ { target: "p20-book", yaw: 0.862, pitch: 0.06, label: false } ], info: [ { yaw: -0.748, pitch: 0.02, facility: "libraryFloor4" } ] , backButton: { target: "p20", label: "図書館入口に戻る" } },
     { id: "p20-book", name: "図書室（本棚）", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p20-DVD", name: "視聴覚コーナー", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p20-3", yaw: 1.249, pitch: 0.171 } ], info: [ { yaw: -0.24, pitch: 0.707, facility: "avCorner" } ] },
+    { id: "p20-DVD", name: "視聴覚コーナー", map: null, photo: null, view: { yaw: -0.24, pitch: 0.3, fov: 1.5708 }, northOffset: null, links: [ { target: "p20-3", yaw: 1.249, pitch: 0.171 } ], info: [ { yaw: -0.24, pitch: 0.707, facility: "avCorner" } ] },
     { id: "board", name: "掲示板", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "zemi", name: "ゼミ", map: null, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -1.13, pitch: 0.03, facility: "zemi" } ] }
+    { id: "zemi", name: "ゼミ", map: null, photo: null, view: { yaw: -1.13, pitch: 0.03, fov: 1.5708 }, northOffset: null, links: [], info: [ { yaw: -1.13, pitch: 0.03, facility: "zemi" } ] }
   ],
 
   facilities: {
