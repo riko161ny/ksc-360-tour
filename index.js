@@ -166,8 +166,26 @@
       switchSpot(findSpotById(back.target));
     }
   });
-  document.querySelector('#lifeButton').addEventListener('click', function() {
-    window.TourPanel.openActivities('KSCでの学生生活', config.studentLifeLead || '', config.studentLife || []);
+  // Footer buttons: 学部情報 / KSCイベント情報 / サークル・部活情報 (config.footer).
+  var footer = config.footer || {};
+  document.querySelector('#facultyButton').addEventListener('click', function() {
+    window.TourPanel.open(footer.faculties || { name: '学部情報' });
+  });
+  document.querySelector('#eventButton').addEventListener('click', function() {
+    window.TourPanel.open(footer.events || { name: 'KSCイベント情報' });
+  });
+  document.querySelector('#clubButton').addEventListener('click', function() {
+    // The same cards as the marks at コモンズ前, put together in one panel.
+    var clubs = footer.clubs || {};
+    var merged = { name: clubs.name || 'サークル・部活情報', lead: clubs.lead || '', cards: [], showCircles: false };
+    (clubs.from || []).forEach(function(key) {
+      var f = facilities[key];
+      if (!f) { return; }
+      merged.lead = merged.lead || f.lead || '';
+      merged.cards = merged.cards.concat(f.cards || []);
+      merged.showCircles = merged.showCircles || !!f.showCircles;
+    });
+    window.TourPanel.open(merged);
   });
   spotInfoButton.addEventListener('click', function() {
     var facility = currentSpot && facilities[currentSpot.config.facility];

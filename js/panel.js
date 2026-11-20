@@ -42,6 +42,12 @@
     (facility.cards || []).forEach(function(card) {
       bodyElement.appendChild(createGuideCard(card));
     });
+    if (facility.tabs && facility.tabs.length) {
+      bodyElement.appendChild(createTabs(facility.tabs));
+    }
+    if (facility.placeholder) {
+      bodyElement.appendChild(el('p', 'info-placeholder', facility.placeholder));
+    }
     if (facility.showCircles) {
       var circles = (window.TOUR_CONFIG && window.TOUR_CONFIG.circles) || [];
       circles.forEach(function(circle) {
@@ -119,6 +125,41 @@
       bodyElement.appendChild(createActivityCard(activity));
     });
     show();
+  }
+
+  // Tabs (e.g. one per faculty): { label, lead, text, cards, links }. An empty tab says it is in preparation.
+  function createTabs(tabs) {
+    var wrap = el('div', 'info-tabs');
+    var bar = el('div', 'info-tab-bar');
+    bar.setAttribute('role', 'tablist');
+    var content = el('div', 'info-tab-content');
+    var buttons = tabs.map(function(tab, i) {
+      var b = el('button', 'info-tab', tab.label || '');
+      b.type = 'button';
+      b.setAttribute('role', 'tab');
+      b.addEventListener('click', function() { select(i); });
+      bar.appendChild(b);
+      return b;
+    });
+    function select(i) {
+      buttons.forEach(function(b, j) {
+        b.classList.toggle('selected', i === j);
+        b.setAttribute('aria-selected', i === j ? 'true' : 'false');
+      });
+      var tab = tabs[i];
+      content.innerHTML = '';
+      content.appendChild(el('h3', 'info-tab-title', tab.label || ''));
+      var empty = true;
+      if (tab.lead) { content.appendChild(el('p', 'info-lead', tab.lead)); empty = false; }
+      if (tab.text) { content.appendChild(el('p', 'info-text', tab.text)); empty = false; }
+      (tab.cards || []).forEach(function(card) { content.appendChild(createGuideCard(card)); empty = false; });
+      if (tab.links && tab.links.length) { appendLinks(content, tab.links); empty = false; }
+      if (empty) { content.appendChild(el('p', 'info-placeholder', '内容は準備中です。')); }
+    }
+    wrap.appendChild(bar);
+    wrap.appendChild(content);
+    select(0);
+    return wrap;
   }
 
   function createIntro(intro) {

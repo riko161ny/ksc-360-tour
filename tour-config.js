@@ -123,6 +123,30 @@ window.TOUR_CONFIG = {
     { id: "zemi", name: "ゼミ", map: null, photo: null, view: { yaw: -1.13, pitch: 0.03, fov: 1.5708 }, northOffset: null, links: [], info: [ { yaw: -1.13, pitch: 0.03, facility: "zemi" } ] }
   ],
 
+  // 画面下のボタン（学部情報・KSCイベント情報・サークル・部活情報）
+  footer: {
+    // 学部ごとのタブ。各タブに lead / text / cards / links を書くと表示されます（空なら「準備中」）
+    faculties: {
+      name: "学部情報",
+      tabs: [
+        { label: "総合政策学部" },
+        { label: "理学部" },
+        { label: "工学部" },
+        { label: "生命環境学部" },
+        { label: "建築学部" }
+      ]
+    },
+    events: {
+      name: "KSCイベント情報",
+      placeholder: "内容は準備中です。"
+    },
+    // from に並べた facilities（コモンズ前のマーク）のカードを、1つのパネルにまとめて出します
+    clubs: {
+      name: "サークル・部活情報",
+      from: ["circles"]
+    }
+  },
+
   facilities: {
     // バスロータリー（p14）：時刻表は書き写さず、大学公式サイトのバスのページへリンクする
     "bus": {
