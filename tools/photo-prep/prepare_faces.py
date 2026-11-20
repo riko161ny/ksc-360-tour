@@ -26,7 +26,7 @@ def boxes_for(found, W, H):
         else:
             spans = [(u.min(), u.max())]
         y0, y1 = v.min(), v.max()
-        if (y0 + y1) / 2 > H * 0.68:
+        if (y0 + y1) / 2 > H * float(os.environ.get("SKIP_BELOW", "0.68")):
             continue  # the photographer's own hand/body under the camera
         for x0, x1 in spans:
             w, h = x1 - x0, y1 - y0
