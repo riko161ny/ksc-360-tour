@@ -76,10 +76,14 @@ window.TOUR_CONFIG = {
     { id: "p13", name: "体育館", map: { x: 0.3597, y: 0.5577 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p14", name: "バスロータリー", map: { x: 0.3758, y: 0.4356 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -3.029, pitch: 0.044, facility: "bus" } ], facility: "bus" },
     { id: "p15", name: "ビズカフェ", map: { x: 0.3937, y: 0.4255 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p16", name: "コモンズ前", map: { x: 0.3865, y: 0.4848 }, photo: null, view: null, northOffset: null, links: [], info: [
-      // 位置は yaw（左右）・pitch（上下、プラスが下）で調整できます。URL に ?edit を付けると画面中央の値が出ます
-      { yaw: 1.62, pitch: -0.16, facility: "shingetsusai" },
-      { yaw: 1.62, pitch: 0.11, facility: "circles" }
+    { id: "p16", name: "コモンズ前", map: { x: 0.3865, y: 0.4848 }, photo: null, view: null, northOffset: null,
+      links: [
+        { target: "p17", yaw: 1.711, pitch: 0.121 }
+      ],
+      info: [
+      // 位置は yaw（左右）・pitch（上下、プラスが下）で調整できます。editor.html で見ながら決められます
+      { yaw: 2.55, pitch: 0.07, facility: "shingetsusai" },
+      { yaw: 1.01, pitch: 0.08, facility: "circles" }
     ] },
     { id: "p17", name: "アカデミックコモンズ", map: { x: 0.4251, y: 0.4729 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p18", name: "6号館前", map: { x: 0.4088, y: 0.5707 }, photo: null, view: null, northOffset: null, links: [], info: [] },
