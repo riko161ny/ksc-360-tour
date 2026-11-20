@@ -86,8 +86,15 @@ window.TOUR_CONFIG = {
       { yaw: 1.01, pitch: 0.08, facility: "circles" }
     ] },
     { id: "p17", name: "アカデミックコモンズ", map: { x: 0.4251, y: 0.4729 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p18", name: "6号館前", map: { x: 0.4088, y: 0.5707 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p19", name: "601号室", map: { x: 0.4179, y: 0.6102 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p18", name: "6号館前", map: { x: 0.4088, y: 0.5707 }, photo: null, view: null, northOffset: null,
+      links: [
+        { target: "p19", yaw: 3, pitch: -0.02 },
+        { target: "p20", yaw: -3.07, pitch: -0.02 }
+      ],
+      info: [
+        { yaw: -2.791, pitch: 0.001, facility: "building6" }
+      ] },
+    { id: "p19", name: "Ⅵ-101号室", map: { x: 0.4179, y: 0.6102 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p20", name: "図書館", map: { x: 0.4362, y: 0.6323 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p21", name: "4号館", map: { x: 0.4837, y: 0.5187 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p22", name: "5号館", map: { x: 0.5395, y: 0.4661 }, photo: null, view: null, northOffset: null, links: [], info: [] },
@@ -139,6 +146,10 @@ window.TOUR_CONFIG = {
       icon: "✨",
       lead: "KSCではさまざまな学生団体が活動しています。気になるサークルの活動をチェックしてみよう！",
       showCircles: true
+    },
+    // 6号館前（p18）のマーク。施設概要などは確認できた内容だけを書き足してください
+    "building6": {
+      name: "Ⅵ号館"
     },
     // 施設概要（overview）は確認できた内容だけを書き足してください。空のあいだは表示されません。
     "building2": {
