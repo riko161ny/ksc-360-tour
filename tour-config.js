@@ -68,7 +68,9 @@ window.TOUR_CONFIG = {
     { id: "p03", name: "チャペル", map: { x: 0.088, y: 0.6807 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p04", name: "Ⅰ号館前", map: { x: 0.1503, y: 0.6348 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p05", name: "Ⅱ号館前", map: { x: 0.1996, y: 0.7179 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -1.964, pitch: -0.005, facility: "building2" } ], facility: "building2" },
-    { id: "p06", name: "Ⅲ号館", map: { x: 0.296, y: 0.6834 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p06", name: "Ⅲ号館", map: { x: 0.296, y: 0.6834 }, photo: null, view: null, northOffset: null,
+      links: [ { target: "zemi", yaw: -0.11, pitch: 0.07 } ],
+      info: [ { yaw: -0.39, pitch: 0, facility: "building3" } ] },
     { id: "p07", name: "食堂", map: { x: 0.2649, y: 0.5984 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p08", name: "生協", map: { x: 0.2472, y: 0.5882 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p09", name: "食堂前テラス席", map: { x: 0.2496, y: 0.5441 }, photo: null, view: null, northOffset: null, links: [], info: [] },
@@ -185,6 +187,10 @@ window.TOUR_CONFIG = {
     // 視聴覚コーナー（p20-DVD）。内容は確認できたものを書き足してください
     "avCorner": {
       name: "視聴覚コーナー"
+    },
+    // Ⅲ号館（p06）のマーク。施設概要などは確認できた内容だけを書き足してください
+    "building3": {
+      name: "Ⅲ号館"
     },
     // Ⅵ号館前（p18）のマーク。施設概要などは確認できた内容だけを書き足してください
     "building6": {
