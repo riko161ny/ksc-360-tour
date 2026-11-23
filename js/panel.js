@@ -27,6 +27,7 @@
 
   function open(facility) {
     bodyElement.innerHTML = '';
+    panelElement.classList.toggle('wide', !!facility.wide);
 
     var title = el('h2', 'info-title', facility.name || '');
     title.id = 'infoTitle';
@@ -141,6 +142,7 @@
   // "KSCでの学生生活": one card per activity listed in config.studentLife.
   function openActivities(title, lead, activities) {
     bodyElement.innerHTML = '';
+    panelElement.classList.remove('wide');
     var heading = el('h2', 'info-title', title);
     heading.id = 'infoTitle';
     bodyElement.appendChild(heading);
@@ -234,43 +236,41 @@
     return box;
   }
 
-  // 「クラブ・サークル活動」: category tabs (all + each category) and a small card per group.
+  // 「部活・サークル」: one top tab per section (KSC / 体育会 / 文化総部), each with category headings and small cards.
   function createClubDirectory(dir) {
     var wrap = el('div', 'club-directory');
-    if (dir.lead) { appendParagraphs(wrap, dir.lead); }
-    var categories = dir.categories || [];
-    var byKey = {};
-    categories.forEach(function(c) { byKey[c.key] = c; });
-    var tabs = [{ key: '', label: 'すべて' }].concat(categories);
+    var sections = dir.sections || [];
     var bar = el('div', 'club-tabs');
     bar.setAttribute('role', 'tablist');
-    var count = el('p', 'club-count');
-    var grid = el('div', 'club-list');
-    var buttons = tabs.map(function(tab) {
-      var b = el('button', 'club-tab', tab.label);
+    var content = el('div', 'club-list');
+    content.setAttribute('role', 'tabpanel');
+    var buttons = sections.map(function(section, i) {
+      var b = el('button', 'club-tab', section.tab || section.heading || '');
       b.type = 'button';
       b.setAttribute('role', 'tab');
-      b.addEventListener('click', function() { select(tab.key); });
+      b.addEventListener('click', function() { select(i); });
       bar.appendChild(b);
       return b;
     });
-    function select(key) {
+    function select(index) {
       buttons.forEach(function(b, i) {
-        var on = tabs[i].key === key;
+        var on = i === index;
         b.classList.toggle('selected', on);
         b.setAttribute('aria-selected', on ? 'true' : 'false');
       });
-      grid.innerHTML = '';
-      var shown = (dir.groups || []).filter(function(group) { return !key || group.category === key; });
-      // One heading (e.g. "SPORTS｜スポーツ") and a grid of small cards per category.
-      categories.forEach(function(cat) {
-        var inCat = shown.filter(function(group) { return group.category === cat.key; });
-        if (!inCat.length) { return; }
-        grid.appendChild(el('h4', 'club-group-heading club-cat-text-' + cat.key, (cat.en ? cat.en + '｜' : '') + cat.label));
+      var section = sections[index];
+      content.innerHTML = '';
+      if (section.heading) { content.appendChild(el('h3', 'club-section-heading', section.heading)); }
+      if (section.text) { appendParagraphs(content, section.text); }
+      var total = 0;
+      (section.categories || []).forEach(function(cat) {
+        var groups = cat.groups || [];
+        if (!groups.length) { return; }
+        total += groups.length;
+        content.appendChild(el('h4', 'club-group-heading', (cat.en ? cat.en + '｜' : '') + cat.label));
         var cards = el('div', 'club-cards');
-        inCat.forEach(function(group) {
+        groups.forEach(function(group) {
           var card = el('div', 'club-card');
-          card.appendChild(el('span', 'club-card-category club-cat-' + cat.key, cat.label));
           card.appendChild(el('h5', 'club-card-name', group.name));
           (group.links || []).forEach(function(link) {
             var a = el('a', 'club-card-link', (link.label || '公式サイト') + ' ↗');
@@ -281,20 +281,22 @@
           });
           cards.appendChild(card);
         });
-        grid.appendChild(cards);
+        content.appendChild(cards);
       });
-      count.textContent = shown.length + '団体';
+      if (total) { content.insertBefore(el('p', 'club-count', '掲載 ' + total + '団体'), content.querySelector('.club-group-heading')); }
+      if (section.button) {
+        var actions = el('div', 'guide-actions club-official');
+        actions.appendChild(createLinkButton(section.button));
+        content.appendChild(actions);
+      }
+      (Array.isArray(section.note) ? section.note : section.note ? [section.note] : []).forEach(function(t) {
+        content.appendChild(el('p', 'club-note', t));
+      });
+      bar.scrollLeft = buttons[index].offsetLeft - 16;
     }
     wrap.appendChild(bar);
-    wrap.appendChild(count);
-    wrap.appendChild(grid);
-    select('');
-    if (dir.official) {
-      var actions = el('div', 'guide-actions club-official');
-      actions.appendChild(createLinkButton(dir.official));
-      wrap.appendChild(actions);
-    }
-    if (dir.note) { wrap.appendChild(el('p', 'club-note', dir.note)); }
+    wrap.appendChild(content);
+    if (sections.length) { select(0); }
     return wrap;
   }
 

@@ -705,7 +705,7 @@ body.info-open #infoBackdrop {
   background: #eef0f3;
   color: var(--card-text);
   font-size: 22px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .info-title {
@@ -1652,9 +1652,15 @@ body.mobile #controlBar .control-label {
 }
 
 .club-tabs {
+  position: sticky;
+  top: calc(-18px - var(--safe-top));
+  z-index: 2;
+  padding-right: 48px;
+  background: #fffaf3;
+  padding-top: calc(18px + var(--safe-top));
   display: flex;
   gap: 6px;
-  margin: 14px 0 6px;
+  margin: calc(-4px - var(--safe-top)) 0 6px;
   padding-bottom: 4px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -1680,7 +1686,7 @@ body.mobile #controlBar .control-label {
 
 .club-tab.selected {
   background: #1f2a44;
-  box-shadow: none;
+  box-shadow: 0 0 0 2px #f07a3a;
   color: #fff;
 }
 
@@ -1691,16 +1697,20 @@ body.mobile #controlBar .control-label {
 }
 
 .club-group-heading {
-  margin: 14px 0 8px;
-  font-size: 13px;
+  margin: 18px 0 8px;
+  padding-left: 8px;
+  border-left: 4px solid #f07a3a;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.04em;
+  color: #1f2a44;
 }
 
-.club-cat-text-sports { color: #1d4f91; }
-.club-cat-text-music { color: #a2470f; }
-.club-cat-text-culture { color: #23683a; }
-.club-cat-text-others { color: #5a3d99; }
+.club-section-heading {
+  margin: 4px 0 6px;
+  font-size: 18px;
+  color: #1f2a44;
+}
 
 .club-cards {
   display: grid;
@@ -1717,21 +1727,6 @@ body.mobile #controlBar .control-label {
   background: #fff;
   box-shadow: 0 2px 8px rgba(31, 42, 68, 0.08);
 }
-
-.club-card-category {
-  align-self: flex-start;
-  padding: 2px 8px;
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: bold;
-  line-height: 1.5;
-  white-space: nowrap;
-}
-
-.club-cat-sports { background: #e3f0ff; color: #1d4f91; }
-.club-cat-music { background: #ffe9d6; color: #a2470f; }
-.club-cat-culture { background: #e4f5e8; color: #23683a; }
-.club-cat-others { background: #efe9fb; color: #5a3d99; }
 
 .club-card-name {
   margin: 0;
@@ -1765,6 +1760,16 @@ body.mobile #controlBar .control-label {
   color: #5b6474;
 }
 
+/* 情報量の多いカード（facility.wide）は、パソコンでは画面の約3分の2の幅で開く */
+body.desktop #infoPanel.wide {
+  width: min(66vw, 1100px);
+  min-width: min(420px, 100%);
+}
+
+body.desktop #infoPanel.wide .club-cards {
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+}
+
 body.mobile .club-cards {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1777,4 +1782,10 @@ body.mobile .club-cards {
 
 body.mobile .float-main.float-main-small {
   font-size: 24px;
+}
+
+body.mobile .club-tabs {
+  top: -16px;
+  padding-top: 16px;
+  margin-top: -2px;
 }

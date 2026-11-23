@@ -188,15 +188,17 @@ window.TOUR_CONFIG = {
     },
     // コモンズ前（p16）の「サークル活動をのぞいてみよう！」パネル（中身は下の circles）
     "circles": {
-      name: "クラブ・サークル活動",
+      name: "部活・サークル",
       icon: "✨",
-      // 360°写真の中では「クラブ・サークル活動」の文字だけが浮かぶ表示（新月祭と同じ立体文字、下の一行なし）
-      hotspot: { style: "float3d", text: "クラブ・サークル活動", size: "small" },
+      // 360°写真の中では文字だけが浮かぶ表示（新月祭と同じ立体文字、下の一行なし）
+      hotspot: { style: "float3d", text: "部活・サークル", size: "small" },
+      // 情報が多いので、PCではパネルを画面の約3分の2の幅で開く
+      wide: true,
       intro: {
-        tag: "大学登録団体",
-        text: "神戸三田キャンパスには、スポーツや音楽、ダンス、研究活動など、さまざまな分野のサークルがあります。大学公式サイトでは、神戸三田キャンパスの大学登録団体が紹介されています。興味のある分野から、学生たちの課外活動を探してみましょう。"
+        tag: "CLUBS & CIRCLES",
+        text: "関西学院大学には、スポーツや音楽、ダンス、文化活動など、さまざまな部活・サークルがあります。神戸三田キャンパスのサークルをはじめ、関西学院大学全体の部活動も紹介しています。興味のある活動を探してみましょう。"
       },
-      // 団体の一覧（中身は下の clubDirectory）。以前の炎流の動画カードを出すときは showCircles: true
+      // タブと団体の一覧（中身は下の clubDirectory）。以前の炎流の動画カードを出すときは showCircles: true
       clubDirectory: true
     },
     // 図書室（p20）の足元の飲食エリア
@@ -597,179 +599,906 @@ window.TOUR_CONFIG = {
   //   videos    : 活動動画 [ { label: "演舞動画を見る", youtube: "動画ID", caption: "説明" } ]
   //   eventVideos: 大会・イベント動画（videos と同じ形）
   //   links     : その他の関連リンク [ { label, url } ]
-  // 「クラブ・サークル活動」カードの中身。groups の category は categories の key。
-  // links は大学公式サイトに載っているものだけを書きます
-  clubDirectory: {
-    "categories": [
-      {
-        "key": "sports",
-        "label": "スポーツ",
-        "en": "SPORTS"
+  // 「部活・サークル」カードの中身。sections がカード上部のタブ（KSCのサークル／体育会／文化系の部活）。
+  // categories はこのサイト独自の分類。links は大学公式サイトに載っているものだけ（末尾の計測用パラメータは除く）
+  clubDirectory: { "sections": [
+    {
+      "tab": "KSCのサークル",
+      "heading": "神戸三田キャンパスのサークル",
+      "text": "関西学院大学公式サイトで紹介されている、神戸三田キャンパスの大学登録団体（学生連盟に加盟していない同好会・サークル）です。",
+      "categories": [
+        {
+          "label": "スポーツ",
+          "en": "SPORTS",
+          "groups": [
+            {
+              "name": "バスケットボールK.G. Cagers",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/k.g.cagers/"
+                }
+              ]
+            },
+            {
+              "name": "合気道サークル",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/aikido_ksc"
+                }
+              ]
+            },
+            {
+              "name": "軟式野球サークルSharks"
+            },
+            {
+              "name": "テニスサークル“K.G.WinG”",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/k_g_wing/"
+                }
+              ]
+            },
+            {
+              "name": "サッカーサークル“フェルナンド”",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://instagram.com/fernand._ksc"
+                }
+              ]
+            },
+            {
+              "name": "バレーボールサークル“ぱぁぷる”"
+            }
+          ]
+        },
+        {
+          "label": "音楽・ダンス",
+          "en": "MUSIC & DANCE",
+          "groups": [
+            {
+              "name": "関西学院室内合奏団",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/kgco1995/"
+                }
+              ]
+            },
+            {
+              "name": "軽音サークル“DEEP STREAM”",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://instagram.com/deepstreamksc"
+                }
+              ]
+            },
+            {
+              "name": "ダンスサークルNey-Kid",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://instagram.com/ney_kid_ksc"
+                }
+              ]
+            },
+            {
+              "name": "関学よさこい連 ”炎流”",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/enrujp"
+                }
+              ]
+            },
+            {
+              "name": "フラダンスサークルMahalo",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://instagram.com/mahalo_ksc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "文化・社会活動",
+          "en": "CULTURE & COMMUNITY",
+          "groups": [
+            {
+              "name": "Eco-Habitat関西学院",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://instagram.com/eco_habitat_kgu"
+                }
+              ]
+            },
+            {
+              "name": "CLUB GEORDIE",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://instagram.com/club_geordie"
+                }
+              ]
+            },
+            {
+              "name": "SSV関西学院",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/ssv_kgu/"
+                }
+              ]
+            },
+            {
+              "name": "J-FUNユースK.G."
+            },
+            {
+              "name": "都市研究会"
+            }
+          ]
+        },
+        {
+          "label": "その他",
+          "en": "OTHERS",
+          "groups": [
+            {
+              "name": "LUNA GAMING"
+            }
+          ]
+        }
+      ],
+      "button": {
+        "label": "KSCのサークル一覧を見る",
+        "url": "https://www.kwansei.ac.jp/campuslife/club/tourokudantai.html"
       },
-      {
-        "key": "music",
-        "label": "音楽・ダンス",
-        "en": "MUSIC & DANCE"
+      "note": "カテゴリーは見やすくするためのこのサイト独自の分類で、大学公式の分類ではありません。団体名とリンクは、大学公式サイト「大学登録団体」の掲載内容（2026年11月確認）をもとにしています。"
+    },
+    {
+      "tab": "体育会（運動部）",
+      "heading": "関西学院大学の体育会",
+      "text": "関西学院大学には、さまざまな競技の体育会所属団体があります。各部の活動内容や最新情報は、大学公式サイトから確認できます。",
+      "categories": [
+        {
+          "label": "球技",
+          "groups": [
+            {
+              "name": "庭球部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgad.kwansei.ac.jp/tennis/"
+                }
+              ]
+            },
+            {
+              "name": "ソフトテニス部"
+            },
+            {
+              "name": "卓球部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgtabletennis.jp/"
+                }
+              ]
+            },
+            {
+              "name": "バドミントン部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kwanseibadminton.jimdofree.com/"
+                }
+              ]
+            },
+            {
+              "name": "硬式野球部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgad.kwansei.ac.jp/baseball/"
+                }
+              ]
+            },
+            {
+              "name": "硬式野球部（女子）",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgad.kwansei.ac.jp/baseball-w/"
+                }
+              ]
+            },
+            {
+              "name": "準硬式野球部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgjunko89.wixsite.com/junko-kwansei"
+                }
+              ]
+            },
+            {
+              "name": "サッカー部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgusoccer.com/"
+                }
+              ]
+            },
+            {
+              "name": "ラグビー部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "http://www.kgrfc.net/"
+                }
+              ]
+            },
+            {
+              "name": "アメリカンフットボール部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "http://www.kgfighters.com/"
+                }
+              ]
+            },
+            {
+              "name": "バレーボール部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://www.kgu-volleyball.org/"
+                }
+              ]
+            },
+            {
+              "name": "バスケットボール部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "http://kwansei-basketball.com/"
+                }
+              ]
+            },
+            {
+              "name": "ハンドボール部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgad.kwansei.ac.jp/handball/"
+                }
+              ]
+            },
+            {
+              "name": "陸上ホッケー部（男子）",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kg-hockey.com/"
+                }
+              ]
+            },
+            {
+              "name": "陸上ホッケー部（女子）",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://www5.hp-ez.com/hp/kgfhthunders/page1"
+                }
+              ]
+            },
+            {
+              "name": "ラクロス部（男子）",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://www.kglaxmen.com/"
+                }
+              ]
+            },
+            {
+              "name": "ラクロス部（女子）",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://www.kglacrosse.com/"
+                }
+              ]
+            },
+            {
+              "name": "ゴルフ部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kg-golf.net/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "武道・格闘技",
+          "groups": [
+            {
+              "name": "柔道部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://share.google/Yi0d0Vj2tJf7k95Oz"
+                }
+              ]
+            },
+            {
+              "name": "剣道部"
+            },
+            {
+              "name": "空手道部"
+            },
+            {
+              "name": "合気道部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "http://kwanseiaiki.oops.jp/"
+                }
+              ]
+            },
+            {
+              "name": "拳法部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgkempo.com/"
+                }
+              ]
+            },
+            {
+              "name": "相撲部",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/kgu_sumo"
+                }
+              ]
+            },
+            {
+              "name": "弓道部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://www.kwanseikyudo.com/"
+                }
+              ]
+            },
+            {
+              "name": "ボクシング部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kg-boxing.com/"
+                }
+              ]
+            },
+            {
+              "name": "レスリング部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://www.kgu-w.com/"
+                }
+              ]
+            },
+            {
+              "name": "フェンシング部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgfencing.wixsite.com/kgu-fencing-team"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "陸上・体操・個人競技",
+          "groups": [
+            {
+              "name": "陸上競技部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "http://kgac.main.jp/index.html"
+                }
+              ]
+            },
+            {
+              "name": "体操部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "http://kg-gymnastics.com/"
+                }
+              ]
+            },
+            {
+              "name": "重量挙部"
+            },
+            {
+              "name": "射撃部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgshooting.wixsite.com/kgshooting"
+                }
+              ]
+            },
+            {
+              "name": "洋弓部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kg-archery.1net.jp/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "水上・氷上・雪上",
+          "groups": [
+            {
+              "name": "水上競技部（競泳パート）",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "http://kgust.com/"
+                }
+              ]
+            },
+            {
+              "name": "水上競技部（水球パート）",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kguwp-web.jimdosite.com/"
+                }
+              ]
+            },
+            {
+              "name": "ボート部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://www.kg-rowing.com/"
+                }
+              ]
+            },
+            {
+              "name": "ヨット部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgyachtclub.wixsite.com/kgyachtclub"
+                }
+              ]
+            },
+            {
+              "name": "カヌー部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgcanoe2021.wixsite.com/website"
+                }
+              ]
+            },
+            {
+              "name": "スキー競技部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgskiteam.jimdofree.com/member/"
+                }
+              ]
+            },
+            {
+              "name": "スケート部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "http://kgskateclub.com/"
+                }
+              ]
+            },
+            {
+              "name": "アイスホッケー部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://www.kgicehockey.com/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "アウトドア・その他",
+          "groups": [
+            {
+              "name": "山岳部",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/kg.alpine_club"
+                }
+              ]
+            },
+            {
+              "name": "ワンダーフォーゲル部",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/kg_wandervogel"
+                }
+              ]
+            },
+            {
+              "name": "馬術部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kg-equestrian.jimdofree.com/"
+                }
+              ]
+            },
+            {
+              "name": "航空部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgastir.wixsite.com/kg-glider"
+                }
+              ]
+            },
+            {
+              "name": "自動車部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgad.kwansei.ac.jp/automobile/"
+                }
+              ]
+            },
+            {
+              "name": "編集部（関学スポーツ）",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgsports.net/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "button": {
+        "label": "体育会の部活動一覧を見る",
+        "url": "https://www.kwansei.ac.jp/campuslife/club/taiikukai.html"
       },
-      {
-        "key": "culture",
-        "label": "文化・社会活動",
-        "en": "CULTURE & COMMUNITY"
+      "note": "※関西学院大学全体の部活動を紹介しています。すべての部が神戸三田キャンパスを活動拠点としているわけではありません。カテゴリーは見やすくするためのこのサイト独自の分類で、大学公式の分類ではありません。団体名とリンクは、大学公式サイト「体育会」の掲載内容（2026年11月確認）をもとにしています。"
+    },
+    {
+      "tab": "文化系の部活",
+      "heading": "関西学院大学の文化総部",
+      "text": "関西学院大学には、音楽、芸術、研究活動など、さまざまな分野の文化系部活動があります。各部の詳細は大学公式サイトから確認できます。",
+      "categories": [
+        {
+          "label": "音楽",
+          "groups": [
+            {
+              "name": "関西学院グリークラブ",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://www.kg-glee.org/"
+                }
+              ]
+            },
+            {
+              "name": "混声合唱団エゴラド",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://www.egolado.com/"
+                }
+              ]
+            },
+            {
+              "name": "関西学院交響楽団",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "http://orchestra.musicinfo.co.jp/~kwanseiorche/"
+                }
+              ]
+            },
+            {
+              "name": "マンドリンクラブ",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/kgmcblletin"
+                }
+              ]
+            },
+            {
+              "name": "クラシックギタークラブ",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/kg.guitar/"
+                }
+              ]
+            },
+            {
+              "name": "ハーモニカ・ソサイアティ",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "http://kghamoso.web.fc2.com/"
+                }
+              ]
+            },
+            {
+              "name": "軽音楽部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kglmchp.wixsite.com/kglmc"
+                }
+              ]
+            },
+            {
+              "name": "邦楽クラブ",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "http://kghougaku.web.fc2.com./"
+                }
+              ]
+            },
+            {
+              "name": "音楽研究部"
+            }
+          ]
+        },
+        {
+          "label": "演劇・伝統芸能",
+          "groups": [
+            {
+              "name": "劇研究部 劇団狸寝入",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://tanukineiri.jimdofree.com/"
+                }
+              ]
+            },
+            {
+              "name": "能楽部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://orchid787166.studio.site/"
+                }
+              ]
+            },
+            {
+              "name": "古典芸能研究部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgkoten.wepage.com/"
+                }
+              ]
+            },
+            {
+              "name": "甲山落語研究会",
+              "links": [
+                {
+                  "label": "X",
+                  "url": "https://x.com/KG_rakugo"
+                }
+              ]
+            },
+            {
+              "name": "詩吟部吟月会"
+            }
+          ]
+        },
+        {
+          "label": "芸術・伝統文化",
+          "groups": [
+            {
+              "name": "写真部",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/kg_photo_club"
+                }
+              ]
+            },
+            {
+              "name": "映画研究部",
+              "links": [
+                {
+                  "label": "X",
+                  "url": "https://twitter.com/kgu_movie"
+                }
+              ]
+            },
+            {
+              "name": "文芸部",
+              "links": [
+                {
+                  "label": "X",
+                  "url": "https://twitter.com/kgbungei"
+                }
+              ]
+            },
+            {
+              "name": "絵画部弦月会",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://gengetsukaikg.jimdofree.com/"
+                }
+              ]
+            },
+            {
+              "name": "書道部",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/kg_shodo"
+                }
+              ]
+            },
+            {
+              "name": "茶道部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://sado-kwansei.jimdofree.com/"
+                }
+              ]
+            },
+            {
+              "name": "煎茶道部",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/kg_senchado"
+                }
+              ]
+            },
+            {
+              "name": "いけばな部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "http://ikebanakg.blogspot.com/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "学術・研究",
+          "groups": [
+            {
+              "name": "国際研究部"
+            },
+            {
+              "name": "英語研究部（E.S.S.）",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/kgess2025"
+                }
+              ]
+            },
+            {
+              "name": "関西学院ディベートクラブ"
+            },
+            {
+              "name": "ユネスコ研究部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "http://blog.livedoor.jp/unescoo/"
+                }
+              ]
+            },
+            {
+              "name": "考古学研究会",
+              "links": [
+                {
+                  "label": "X",
+                  "url": "https://twitter.com/kokoken_kwansei"
+                }
+              ]
+            },
+            {
+              "name": "古美術研究クラブ",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/kobiken_kg"
+                }
+              ]
+            },
+            {
+              "name": "速記研究部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "http://kwanseisokki.blog.shinobi.jp/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "将棋・囲碁・その他",
+          "groups": [
+            {
+              "name": "将棋部",
+              "links": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/kg_shogi/"
+                }
+              ]
+            },
+            {
+              "name": "囲碁部",
+              "links": [
+                {
+                  "label": "公式サイト",
+                  "url": "https://kgigd5.wixsite.com/kangaku15"
+                }
+              ]
+            },
+            {
+              "name": "ユースホステル部",
+              "links": [
+                {
+                  "label": "X",
+                  "url": "https://twitter.com/Kwangaku_YH"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "button": {
+        "label": "文化系の部活動一覧を見る",
+        "url": "https://www.kwansei.ac.jp/campuslife/club/bunkasoubu.html"
       },
-      {
-        "key": "others",
-        "label": "その他",
-        "en": "OTHERS"
-      }
-    ],
-    "groups": [
-      {
-        "name": "バスケットボールK.G. Cagers",
-        "category": "sports",
-        "links": [
-          {
-            "label": "Instagram",
-            "url": "https://www.instagram.com/k.g.cagers/"
-          }
-        ]
-      },
-      {
-        "name": "軟式野球サークルSharks",
-        "category": "sports"
-      },
-      {
-        "name": "テニスサークル“K.G.WinG”",
-        "category": "sports",
-        "links": [
-          {
-            "label": "Instagram",
-            "url": "https://www.instagram.com/k_g_wing/"
-          }
-        ]
-      },
-      {
-        "name": "サッカーサークル“フェルナンド”",
-        "category": "sports",
-        "links": [
-          {
-            "label": "Instagram",
-            "url": "https://instagram.com/fernand._ksc"
-          }
-        ]
-      },
-      {
-        "name": "バレーボールサークル“ぱぁぷる”",
-        "category": "sports"
-      },
-      {
-        "name": "合気道サークル",
-        "category": "sports",
-        "links": [
-          {
-            "label": "Instagram",
-            "url": "https://www.instagram.com/aikido_ksc"
-          }
-        ]
-      },
-      {
-        "name": "関西学院室内合奏団",
-        "category": "music",
-        "links": [
-          {
-            "label": "Instagram",
-            "url": "https://www.instagram.com/kgco1995/"
-          }
-        ]
-      },
-      {
-        "name": "軽音サークル“DEEP STREAM”",
-        "category": "music",
-        "links": [
-          {
-            "label": "Instagram",
-            "url": "https://instagram.com/deepstreamksc"
-          }
-        ]
-      },
-      {
-        "name": "ダンスサークルNey-Kid",
-        "category": "music",
-        "links": [
-          {
-            "label": "Instagram",
-            "url": "https://instagram.com/ney_kid_ksc"
-          }
-        ]
-      },
-      {
-        "name": "関学よさこい連 ”炎流”",
-        "category": "music",
-        "links": [
-          {
-            "label": "Instagram",
-            "url": "https://www.instagram.com/enrujp"
-          }
-        ]
-      },
-      {
-        "name": "フラダンスサークルMahalo",
-        "category": "music",
-        "links": [
-          {
-            "label": "Instagram",
-            "url": "https://instagram.com/mahalo_ksc"
-          }
-        ]
-      },
-      {
-        "name": "Eco-Habitat関西学院",
-        "category": "culture",
-        "links": [
-          {
-            "label": "Instagram",
-            "url": "https://instagram.com/eco_habitat_kgu"
-          }
-        ]
-      },
-      {
-        "name": "CLUB GEORDIE",
-        "category": "culture",
-        "links": [
-          {
-            "label": "Instagram",
-            "url": "https://instagram.com/club_geordie"
-          }
-        ]
-      },
-      {
-        "name": "SSV関西学院",
-        "category": "culture",
-        "links": [
-          {
-            "label": "Instagram",
-            "url": "https://www.instagram.com/ssv_kgu/"
-          }
-        ]
-      },
-      {
-        "name": "J-FUNユースK.G.",
-        "category": "culture"
-      },
-      {
-        "name": "都市研究会",
-        "category": "culture"
-      },
-      {
-        "name": "LUNA GAMING",
-        "category": "others"
-      }
-    ],
-    "note": "カテゴリーは見やすくするためのこのサイト独自の分類で、大学公式の分類ではありません。団体名とリンクは、関西学院大学公式サイト「大学登録団体」の神戸三田キャンパスの掲載内容（2026年11月確認）をもとにしています。大学登録団体は、学生連盟に加盟していない同好会・サークルです（体育会・文化総部の団体とは別です）。",
-    "official": {
-      "label": "大学公式サイトでサークル一覧を見る",
-      "url": "https://www.kwansei.ac.jp/campuslife/club/tourokudantai.html"
+      "note": "※関西学院大学全体の部活動を紹介しています。すべての部が神戸三田キャンパスを活動拠点としているわけではありません。カテゴリーは見やすくするためのこのサイト独自の分類で、大学公式の分類ではありません。団体名とリンクは、大学公式サイト「文化総部」の掲載内容（2026年11月確認）をもとにしています。"
     }
-  },
+  ] },
 
   circles: [
     {
