@@ -1789,3 +1789,75 @@ body.mobile .club-tabs {
   padding-top: 16px;
   margin-top: -2px;
 }
+
+/* ---------- その他の学生団体：紹介カード・コンパクト一覧 ---------- */
+.club-feature {
+  margin: 12px 0 0;
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(31, 42, 68, 0.08);
+}
+
+.club-feature-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1f2a44;
+}
+
+.club-feature-meta {
+  display: inline-block;
+  margin: 6px 0 0;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #ffe9d6;
+  color: #a2470f;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.club-feature-text {
+  margin: 10px 0 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #3b4558;
+}
+
+.club-feature .guide-actions {
+  margin-top: 12px;
+}
+
+.club-compact {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 10px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.club-compact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(31, 42, 68, 0.07);
+}
+
+.club-compact-name {
+  font-weight: bold;
+  color: #1f2a44;
+  word-break: break-word;
+}
+
+.club-compact-field {
+  font-size: 13px;
+  color: #5b6474;
+}
+
+body.mobile .club-compact {
+  grid-template-columns: 1fr;
+}

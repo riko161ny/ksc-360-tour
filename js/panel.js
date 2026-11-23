@@ -50,7 +50,8 @@
       bodyElement.appendChild(createGuideCard(card));
     });
     if (facility.clubDirectory) {
-      var directory = window.TOUR_CONFIG && window.TOUR_CONFIG.clubDirectory;
+      var directoryKey = typeof facility.clubDirectory === 'string' ? facility.clubDirectory : 'clubDirectory';
+      var directory = window.TOUR_CONFIG && window.TOUR_CONFIG[directoryKey];
       if (directory) {
         bodyElement.appendChild(createClubDirectory(directory));
       }
@@ -262,6 +263,17 @@
       content.innerHTML = '';
       if (section.heading) { content.appendChild(el('h3', 'club-section-heading', section.heading)); }
       if (section.text) { appendParagraphs(content, section.text); }
+      (section.features || []).forEach(function(f) { content.appendChild(createFeatureCard(f)); });
+      if (section.compact && section.compact.length) {
+        var compact = el('ul', 'club-compact');
+        section.compact.forEach(function(item) {
+          var li = el('li', 'club-compact-item');
+          li.appendChild(el('span', 'club-compact-name', item.name));
+          if (item.field) { li.appendChild(el('span', 'club-compact-field', item.field)); }
+          compact.appendChild(li);
+        });
+        content.appendChild(compact);
+      }
       var total = 0;
       (section.categories || []).forEach(function(cat) {
         var groups = cat.groups || [];
@@ -284,11 +296,22 @@
         content.appendChild(cards);
       });
       if (total) { content.insertBefore(el('p', 'club-count', '掲載 ' + total + '団体'), content.querySelector('.club-group-heading')); }
-      if (section.button) {
-        var actions = el('div', 'guide-actions club-official');
-        actions.appendChild(createLinkButton(section.button));
-        content.appendChild(actions);
-      }
+      var buttons2 = (section.button ? [section.button] : []).concat(section.buttons || []);
+      var actions = el('div', 'guide-actions club-official');
+      buttons2.forEach(function(btn, bi) {
+        // { openFacility: key, label }: opens another card in this tour, only once that card exists.
+        if (btn.openFacility) {
+          var target = window.TOUR_CONFIG.facilities && window.TOUR_CONFIG.facilities[btn.openFacility];
+          if (!target) { return; }
+          var b2 = el('button', 'guide-button', btn.label || target.name);
+          b2.type = 'button';
+          b2.addEventListener('click', function() { open(target); });
+          actions.appendChild(b2);
+        } else if (btn.url) {
+          actions.appendChild(createLinkButton(btn, actions.children.length > 0));
+        }
+      });
+      if (actions.children.length) { content.appendChild(actions); }
       (Array.isArray(section.note) ? section.note : section.note ? [section.note] : []).forEach(function(t) {
         content.appendChild(el('p', 'club-note', t));
       });
@@ -297,7 +320,27 @@
     wrap.appendChild(bar);
     wrap.appendChild(content);
     if (sections.length) { select(0); }
+    // After switching tabs, show the top of the new content.
+    buttons.forEach(function(b) {
+      b.addEventListener('click', function() {
+        if (panelElement.scrollTop > wrap.offsetTop) { panelElement.scrollTop = wrap.offsetTop; }
+      });
+    });
     return wrap;
+  }
+
+  // A larger card for a featured group: name, related faculty, text and a link.
+  function createFeatureCard(f) {
+    var box = el('section', 'club-feature');
+    box.appendChild(el('h4', 'club-feature-name', f.name || ''));
+    if (f.meta) { box.appendChild(el('p', 'club-feature-meta', f.meta)); }
+    if (f.text) { box.appendChild(el('p', 'club-feature-text', f.text)); }
+    if (f.link) {
+      var row = el('div', 'guide-actions');
+      row.appendChild(createLinkButton(f.link, true));
+      box.appendChild(row);
+    }
+    return box;
   }
 
   function createIntro(intro) {

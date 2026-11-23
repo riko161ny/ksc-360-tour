@@ -90,7 +90,9 @@ window.TOUR_CONFIG = {
       info: [
       // 位置は yaw（左右）・pitch（上下、プラスが下）で調整できます。editor.html で見ながら決められます
       { yaw: 2.55, pitch: 0.07, facility: "shingetsusai" },
-      { yaw: 1.01, pitch: 0.08, facility: "circles" }
+      { yaw: 1.01, pitch: 0.08, facility: "circles" },
+      // 仮の位置です。editor.html で見ながら調整してください
+      { yaw: 1.78, pitch: -0.18, facility: "studentGroups" }
     ] },
     { id: "p17", name: "アカデミックコモンズ", map: { x: 0.4251, y: 0.4729 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p18", name: "Ⅵ号館前", map: { x: 0.4088, y: 0.5707 }, photo: null, view: { yaw: -2.791, pitch: 0.001, fov: 1.5708 }, northOffset: null,
@@ -200,6 +202,18 @@ window.TOUR_CONFIG = {
       },
       // タブと団体の一覧（中身は下の clubDirectory）。以前の炎流の動画カードを出すときは showCircles: true
       clubDirectory: true
+    },
+
+    // コモンズ前（p16）の「その他の学生団体」パネル（中身は下の studentGroupDirectory）
+    "studentGroups": {
+      name: "その他の学生団体",
+      hotspot: { style: "float3d", text: "その他の学生団体", size: "small" },
+      wide: true,
+      intro: {
+        tag: "STUDENT ACTIVITIES",
+        text: "神戸三田キャンパスでは、部活やサークル以外にも、学生が主体となってさまざまな活動に取り組んでいます。新入生のサポートやイベント運営、映像制作、地域貢献など、多彩な学生の活動を紹介します。"
+      },
+      clubDirectory: "studentGroupDirectory"
     },
     // 図書室（p20）の足元の飲食エリア
     "libraryEating": {
@@ -601,6 +615,64 @@ window.TOUR_CONFIG = {
   //   links     : その他の関連リンク [ { label, url } ]
   // 「部活・サークル」カードの中身。sections がカード上部のタブ（KSCのサークル／体育会／文化系の部活）。
   // categories はこのサイト独自の分類。links は大学公式サイトに載っているものだけ（末尾の計測用パラメータは除く）
+  // 「その他の学生団体」パネルのタブ。features = 大きめの紹介カード、compact = 名前と分野だけの一覧
+  // buttons の { openFacility: "キー" } は、その施設カードが facilities にできたときだけ表示されます
+  studentGroupDirectory: { sections: [
+    {
+      tab: "学部関連の学生団体",
+      heading: "学部関連の学生団体",
+      features: [
+        {
+          name: "SCS",
+          meta: "関係する学部：総合政策学部",
+          text: "SCS（Student and Campus Supporter）は、総合政策学部の学生団体です。新入生のサポートや、サークル紹介・オープンキャンパスの運営などに取り組んでいます。",
+          link: { label: "活動について詳しく見る", url: "https://www.kwansei.ac.jp/s_policy/news/03413.html" }
+        },
+        {
+          name: "Mains",
+          meta: "関係する学部：理学部・工学部・生命環境学部・建築学部",
+          text: "Mainsは、神戸三田キャンパスの理系4学部の学生が集まる団体です。新入生のサポートや、オープンキャンパスの行事の企画・運営などに取り組んでいます。",
+          link: { label: "活動について詳しく見る", url: "https://www.kwansei.ac.jp/interviews/all/00473.html" }
+        }
+      ],
+      note: "紹介文は、大学公式サイトの記事（総合政策学部ニュース、インタビューサイト）の内容をもとにしています（2026年11月確認）。"
+    },
+    {
+      tab: "アカデミックコモンズ",
+      heading: "アカデミックコモンズ・プロジェクト",
+      text: "アカデミックコモンズでは、毎年春にアカデミックコモンズ・プロジェクトを募集・採択し、1年間の活動を支援しています。2026年度のプロジェクトは次の10件です。",
+      compact: [
+        { name: "LIMELIGHT", field: "映像制作" },
+        { name: "SHADECOR", field: "プロジェクションマッピング" },
+        { name: "UNIVERS＆", field: "宇宙教育" },
+        { name: "Feel Learning～感学～", field: "プログラミング教育" },
+        { name: "GoodHookFes", field: "価値循環" },
+        { name: "SDGstep", field: "SDGs広報" },
+        { name: "あ、みっけ！", field: "三田の地域に関する活動" },
+        { name: "Whiskers", field: "保護犬・保護猫" },
+        { name: "クレセントサイクリング", field: "シェアサイクル" },
+        { name: "関西学院AgriNOVA", field: "スマート農業" }
+      ],
+      buttons: [
+        // アカデミックコモンズの詳しいカードを作ったら、facilities のキーをここに書くとボタンが出ます
+        { openFacility: "academicCommons", label: "アカデミックコモンズ・プロジェクトを詳しく見る" },
+        { label: "2026年度のプロジェクト一覧（大学公式）", url: "https://www.kwansei.ac.jp/ksc/commons/2026.html" }
+      ],
+      note: "プロジェクト名と活動分野は、大学公式サイト「2026年度 プロジェクト・活動実績」をもとにしています（2026年11月確認）。活動分野は概要を簡潔に表すための表記です。"
+    },
+    {
+      tab: "ボランティア・地域活動",
+      heading: "ボランティア・地域活動",
+      features: [
+        {
+          name: "KG-VNET（関西学院大学ボランティアネットワーク）",
+          text: "関西学院大学では、学生によるさまざまなボランティア活動が行われています。大学のボランティアネットワーク「KG-VNET」では、地域交流や子どもへの支援などに取り組む団体の情報を確認できます。",
+          link: { label: "ボランティア団体一覧を見る", url: "https://www.kwansei.ac.jp/c_volunteer/kg_vnet/" }
+        }
+      ]
+    }
+  ] },
+
   clubDirectory: { "sections": [
     {
       "tab": "KSCのサークル",
