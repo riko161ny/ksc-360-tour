@@ -145,9 +145,9 @@ window.TOUR_CONFIG = {
       placeholder: "内容は準備中です。"
     },
     // from に並べた facilities（コモンズ前のマーク）のカードを、1つのパネルにまとめて出します
+    // facility を書くと、その施設情報のパネルをそのまま開きます（from は複数のパネルのカードをまとめる書き方）
     clubs: {
-      name: "サークル・部活情報",
-      from: ["circles"]
+      facility: "circles"
     }
   },
 
@@ -188,10 +188,16 @@ window.TOUR_CONFIG = {
     },
     // コモンズ前（p16）の「サークル活動をのぞいてみよう！」パネル（中身は下の circles）
     "circles": {
-      name: "サークル活動をのぞいてみよう！",
+      name: "クラブ・サークル活動",
       icon: "✨",
-      lead: "KSCではさまざまな学生団体が活動しています。気になるサークルの活動をチェックしてみよう！",
-      showCircles: true
+      // 360°写真の中では「クラブ・サークル活動」の文字だけが浮かぶ表示（新月祭と同じ立体文字、下の一行なし）
+      hotspot: { style: "float3d", text: "クラブ・サークル活動", size: "small" },
+      intro: {
+        tag: "大学登録団体",
+        text: "神戸三田キャンパスには、スポーツや音楽、ダンス、研究活動など、さまざまな分野のサークルがあります。大学公式サイトでは、神戸三田キャンパスの大学登録団体が紹介されています。興味のある分野から、学生たちの課外活動を探してみましょう。"
+      },
+      // 団体の一覧（中身は下の clubDirectory）。以前の炎流の動画カードを出すときは showCircles: true
+      clubDirectory: true
     },
     // 図書室（p20）の足元の飲食エリア
     "libraryEating": {
@@ -591,6 +597,180 @@ window.TOUR_CONFIG = {
   //   videos    : 活動動画 [ { label: "演舞動画を見る", youtube: "動画ID", caption: "説明" } ]
   //   eventVideos: 大会・イベント動画（videos と同じ形）
   //   links     : その他の関連リンク [ { label, url } ]
+  // 「クラブ・サークル活動」カードの中身。groups の category は categories の key。
+  // links は大学公式サイトに載っているものだけを書きます
+  clubDirectory: {
+    "categories": [
+      {
+        "key": "sports",
+        "label": "スポーツ",
+        "en": "SPORTS"
+      },
+      {
+        "key": "music",
+        "label": "音楽・ダンス",
+        "en": "MUSIC & DANCE"
+      },
+      {
+        "key": "culture",
+        "label": "文化・社会活動",
+        "en": "CULTURE & COMMUNITY"
+      },
+      {
+        "key": "others",
+        "label": "その他",
+        "en": "OTHERS"
+      }
+    ],
+    "groups": [
+      {
+        "name": "バスケットボールK.G. Cagers",
+        "category": "sports",
+        "links": [
+          {
+            "label": "Instagram",
+            "url": "https://www.instagram.com/k.g.cagers/"
+          }
+        ]
+      },
+      {
+        "name": "軟式野球サークルSharks",
+        "category": "sports"
+      },
+      {
+        "name": "テニスサークル“K.G.WinG”",
+        "category": "sports",
+        "links": [
+          {
+            "label": "Instagram",
+            "url": "https://www.instagram.com/k_g_wing/"
+          }
+        ]
+      },
+      {
+        "name": "サッカーサークル“フェルナンド”",
+        "category": "sports",
+        "links": [
+          {
+            "label": "Instagram",
+            "url": "https://instagram.com/fernand._ksc"
+          }
+        ]
+      },
+      {
+        "name": "バレーボールサークル“ぱぁぷる”",
+        "category": "sports"
+      },
+      {
+        "name": "合気道サークル",
+        "category": "sports",
+        "links": [
+          {
+            "label": "Instagram",
+            "url": "https://www.instagram.com/aikido_ksc"
+          }
+        ]
+      },
+      {
+        "name": "関西学院室内合奏団",
+        "category": "music",
+        "links": [
+          {
+            "label": "Instagram",
+            "url": "https://www.instagram.com/kgco1995/"
+          }
+        ]
+      },
+      {
+        "name": "軽音サークル“DEEP STREAM”",
+        "category": "music",
+        "links": [
+          {
+            "label": "Instagram",
+            "url": "https://instagram.com/deepstreamksc"
+          }
+        ]
+      },
+      {
+        "name": "ダンスサークルNey-Kid",
+        "category": "music",
+        "links": [
+          {
+            "label": "Instagram",
+            "url": "https://instagram.com/ney_kid_ksc"
+          }
+        ]
+      },
+      {
+        "name": "関学よさこい連 ”炎流”",
+        "category": "music",
+        "links": [
+          {
+            "label": "Instagram",
+            "url": "https://www.instagram.com/enrujp"
+          }
+        ]
+      },
+      {
+        "name": "フラダンスサークルMahalo",
+        "category": "music",
+        "links": [
+          {
+            "label": "Instagram",
+            "url": "https://instagram.com/mahalo_ksc"
+          }
+        ]
+      },
+      {
+        "name": "Eco-Habitat関西学院",
+        "category": "culture",
+        "links": [
+          {
+            "label": "Instagram",
+            "url": "https://instagram.com/eco_habitat_kgu"
+          }
+        ]
+      },
+      {
+        "name": "CLUB GEORDIE",
+        "category": "culture",
+        "links": [
+          {
+            "label": "Instagram",
+            "url": "https://instagram.com/club_geordie"
+          }
+        ]
+      },
+      {
+        "name": "SSV関西学院",
+        "category": "culture",
+        "links": [
+          {
+            "label": "Instagram",
+            "url": "https://www.instagram.com/ssv_kgu/"
+          }
+        ]
+      },
+      {
+        "name": "J-FUNユースK.G.",
+        "category": "culture"
+      },
+      {
+        "name": "都市研究会",
+        "category": "culture"
+      },
+      {
+        "name": "LUNA GAMING",
+        "category": "others"
+      }
+    ],
+    "note": "カテゴリーは見やすくするためのこのサイト独自の分類で、大学公式の分類ではありません。団体名とリンクは、関西学院大学公式サイト「大学登録団体」の神戸三田キャンパスの掲載内容（2026年11月確認）をもとにしています。大学登録団体は、学生連盟に加盟していない同好会・サークルです（体育会・文化総部の団体とは別です）。",
+    "official": {
+      "label": "大学公式サイトでサークル一覧を見る",
+      "url": "https://www.kwansei.ac.jp/campuslife/club/tourokudantai.html"
+    }
+  },
+
   circles: [
     {
       name: "関学よさこい連「炎流」",

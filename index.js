@@ -177,6 +177,10 @@
   document.querySelector('#clubButton').addEventListener('click', function() {
     // The same cards as the marks at コモンズ前, put together in one panel.
     var clubs = footer.clubs || {};
+    if (clubs.facility && facilities[clubs.facility]) {
+      window.TourPanel.open(facilities[clubs.facility]);
+      return;
+    }
     var merged = { name: clubs.name || 'サークル・部活情報', lead: clubs.lead || '', cards: [], showCircles: false };
     (clubs.from || []).forEach(function(key) {
       var f = facilities[key];
@@ -535,6 +539,9 @@
       var main = document.createElement('span');
       main.className = 'float-main';
       main.textContent = look.text || title || '';
+      if (look.size === 'small') {
+        main.classList.add('float-main-small');
+      }
       body.appendChild(main);
       if (look.sub) {
         var sub = document.createElement('span');

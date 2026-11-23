@@ -48,6 +48,23 @@
     (facility.cards || []).forEach(function(card) {
       bodyElement.appendChild(createGuideCard(card));
     });
+    if (facility.clubDirectory) {
+      var directory = window.TOUR_CONFIG && window.TOUR_CONFIG.clubDirectory;
+      if (directory) {
+        bodyElement.appendChild(createClubDirectory(directory));
+      }
+    }
+    if (facility.openFacility) {
+      var target = window.TOUR_CONFIG && window.TOUR_CONFIG.facilities && window.TOUR_CONFIG.facilities[facility.openFacility.key];
+      if (target) {
+        var openRow = el('div', 'guide-actions');
+        var openButton = el('button', 'guide-button', facility.openFacility.label || target.name);
+        openButton.type = 'button';
+        openButton.addEventListener('click', function() { open(target); });
+        openRow.appendChild(openButton);
+        bodyElement.appendChild(openRow);
+      }
+    }
     if (facility.tabs && facility.tabs.length) {
       bodyElement.appendChild(createTabs(facility.tabs));
     }
@@ -215,6 +232,70 @@
     if (section.note) { box.appendChild(el('p', 'info-note', '※' + section.note)); }
     if (section.links && section.links.length) { appendLinks(box, section.links); }
     return box;
+  }
+
+  // 「クラブ・サークル活動」: category tabs (all + each category) and a small card per group.
+  function createClubDirectory(dir) {
+    var wrap = el('div', 'club-directory');
+    if (dir.lead) { appendParagraphs(wrap, dir.lead); }
+    var categories = dir.categories || [];
+    var byKey = {};
+    categories.forEach(function(c) { byKey[c.key] = c; });
+    var tabs = [{ key: '', label: 'すべて' }].concat(categories);
+    var bar = el('div', 'club-tabs');
+    bar.setAttribute('role', 'tablist');
+    var count = el('p', 'club-count');
+    var grid = el('div', 'club-list');
+    var buttons = tabs.map(function(tab) {
+      var b = el('button', 'club-tab', tab.label);
+      b.type = 'button';
+      b.setAttribute('role', 'tab');
+      b.addEventListener('click', function() { select(tab.key); });
+      bar.appendChild(b);
+      return b;
+    });
+    function select(key) {
+      buttons.forEach(function(b, i) {
+        var on = tabs[i].key === key;
+        b.classList.toggle('selected', on);
+        b.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      grid.innerHTML = '';
+      var shown = (dir.groups || []).filter(function(group) { return !key || group.category === key; });
+      // One heading (e.g. "SPORTS｜スポーツ") and a grid of small cards per category.
+      categories.forEach(function(cat) {
+        var inCat = shown.filter(function(group) { return group.category === cat.key; });
+        if (!inCat.length) { return; }
+        grid.appendChild(el('h4', 'club-group-heading club-cat-text-' + cat.key, (cat.en ? cat.en + '｜' : '') + cat.label));
+        var cards = el('div', 'club-cards');
+        inCat.forEach(function(group) {
+          var card = el('div', 'club-card');
+          card.appendChild(el('span', 'club-card-category club-cat-' + cat.key, cat.label));
+          card.appendChild(el('h5', 'club-card-name', group.name));
+          (group.links || []).forEach(function(link) {
+            var a = el('a', 'club-card-link', (link.label || '公式サイト') + ' ↗');
+            a.href = link.url;
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+            card.appendChild(a);
+          });
+          cards.appendChild(card);
+        });
+        grid.appendChild(cards);
+      });
+      count.textContent = shown.length + '団体';
+    }
+    wrap.appendChild(bar);
+    wrap.appendChild(count);
+    wrap.appendChild(grid);
+    select('');
+    if (dir.official) {
+      var actions = el('div', 'guide-actions club-official');
+      actions.appendChild(createLinkButton(dir.official));
+      wrap.appendChild(actions);
+    }
+    if (dir.note) { wrap.appendChild(el('p', 'club-note', dir.note)); }
+    return wrap;
   }
 
   function createIntro(intro) {
