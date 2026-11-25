@@ -66,7 +66,11 @@ window.TOUR_CONFIG = {
   },
 
   spots: [
-    { id: "p01", name: "正門前", map: { x: 0.045, y: 0.7501 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p01", name: "正門前", map: { x: 0.045, y: 0.7501 }, photo: null, view: null, northOffset: null,
+      links: [
+        { target: "p04", yaw: 2.95, pitch: -0.062 }
+      ],
+      info: [] },
     { id: "p02", name: "Ⅱ号館横庭園", map: { x: 0.1065, y: 0.7633 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p03", name: "チャペル", map: { x: 0.088, y: 0.6807 }, photo: null, view: { yaw: 0.31, pitch: 0, fov: 1.5708 }, northOffset: null, links: [], info: [] },
     { id: "p04", name: "Ⅰ号館前", map: { x: 0.1503, y: 0.6348 }, photo: null, view: null, northOffset: null, links: [], info: [], facility: "building1" },
