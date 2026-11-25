@@ -1931,18 +1931,28 @@ TourI18n.register("ko", {
       "status": "provisional"
     },
     "facilities.studentHall1.overview.0": {
-      "ja": "第一厚生棟には、1階に食堂「Lunch Box」、2階に大学生協の購買店舗「Toy Box」があります。",
-      "text": "제1후생동에는 1층에 식당 'Lunch Box', 2층에 대학 생협 매장 'Toy Box'가 있습니다.",
+      "ja": "第一厚生棟には、1階に食堂「Lunch Box」とカフェ「CRESCENT cafe」、2階に大学生協の購買店舗「Toy Box」があります。",
+      "text": "제1후생동에는 1층에 식당 'Lunch Box'와 카페 'CRESCENT cafe', 2층에 대학 생협 매장 'Toy Box'가 있습니다.",
       "status": "provisional"
     },
     "facilities.studentHall1.sections.0.title": {
-      "ja": "1階｜食堂 Lunch Box",
-      "text": "1층 | 식당 Lunch Box",
+      "ja": "1階｜Lunch Box（ランチボックス）",
+      "text": "1층 | Lunch Box(런치 박스)",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.0.text": {
-      "ja": "ゆったりとしたスペースで食事ができる、大学生協の食堂です。",
-      "text": "여유로운 공간에서 식사할 수 있는 대학 생협 식당입니다.",
+    "facilities.studentHall1.sections.0.text.0": {
+      "ja": "第一厚生棟1階にある「Lunch Box」は、関西学院大学生協が運営する食堂です。",
+      "text": "제1후생동 1층에 있는 'Lunch Box'는 관서학원대학 생협이 운영하는 식당입니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.0.text.1": {
+      "ja": "定食や丼、カレー、うどん・そば・ラーメンなど、さまざまな種類の料理が提供されています。ゆったりとした食事スペースがあり、友人との昼食や授業の合間の休憩にも利用できます。",
+      "text": "정식과 덮밥, 카레, 우동·소바·라멘 등 다양한 요리가 제공됩니다. 여유로운 식사 공간이 있어 친구와 점심을 먹거나 수업 사이에 쉬기에도 좋습니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.0.text.2": {
+      "ja": "食堂のメニューは、関学生協の公式メニューページから確認できます。",
+      "text": "식당 메뉴는 관서학원 생협 공식 메뉴 페이지에서 확인할 수 있습니다.",
       "status": "provisional"
     },
     "facilities.studentHall1.sections.0.rows.0.0": {
@@ -1980,442 +1990,552 @@ TourI18n.register("ko", {
       "text": "일요일(2026년 11월은 3일도 휴무)",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.0.note": {
+    "facilities.studentHall1.sections.0.figure.caption": {
+      "ja": "Lunch Boxのメニュー展示",
+      "text": "Lunch Box의 메뉴 전시",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.0.figure.alt": {
+      "ja": "第一厚生棟Lunch Boxのメニュー展示。うどん、そば、ラーメン、カレーなどの料理が紹介されている",
+      "text": "제1후생동 Lunch Box의 메뉴 전시. 우동, 소바, 라멘, 카레 등의 요리가 소개되어 있다",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.0.note.0": {
       "ja": "2026年11月の営業時間です。時期によって変更されます。",
       "text": "2026년 11월 영업시간입니다. 시기에 따라 변경됩니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.1.title": {
-      "ja": "2階｜Toy Box（トイボックス）",
-      "text": "2층 | Toy Box(토이 박스)",
+    "facilities.studentHall1.sections.0.note.1": {
+      "ja": "写真の価格は撮影時のものです。現在の価格や提供状況はメニューページや店頭でご確認ください。",
+      "text": "사진 속 가격은 촬영 당시의 것입니다. 현재 가격과 제공 여부는 메뉴 페이지나 매장에서 확인해 주세요.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.1.highlight": {
-      "ja": "大学生活を支える、生協の総合購買店舗",
-      "text": "대학 생활을 지원하는 생협 종합 매장",
+    "facilities.studentHall1.sections.0.buttons.0.label": {
+      "ja": "Lunch Boxのメニューを見る",
+      "text": "Lunch Box 메뉴 보기",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.0.buttons.1.label": {
+      "ja": "最新の営業時間を見る",
+      "text": "최신 영업시간 보기",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.title": {
+      "ja": "1階｜CRESCENT cafe（クレセントカフェ）",
+      "text": "1층 | CRESCENT cafe(크레센트 카페)",
       "status": "provisional"
     },
     "facilities.studentHall1.sections.1.text.0": {
-      "ja": "第一厚生棟2階にある「Toy Box」は、関西学院大学生活協同組合が運営する購買店舗です。",
-      "text": "제1후생동 2층에 있는 'Toy Box'는 관서학원대학 생활협동조합이 운영하는 매장입니다.",
+      "ja": "Lunch Boxのレジ横には、大学生協が運営する小さなお店「CRESCENT cafe」があります。",
+      "text": "Lunch Box 계산대 옆에는 대학 생협이 운영하는 작은 가게 'CRESCENT cafe'가 있습니다.",
       "status": "provisional"
     },
     "facilities.studentHall1.sections.1.text.1": {
-      "ja": "授業で使用する教科書や参考書、ノートなどの文房具、パソコン、関学オリジナルグッズなどを販売しています。",
-      "text": "수업에서 쓰는 교과서와 참고서, 노트 등 문구, 컴퓨터, 관서학원 오리지널 굿즈 등을 판매합니다.",
-      "status": "provisional"
-    },
-    "facilities.studentHall1.sections.1.text.2": {
-      "ja": "さらに、旅行や資格取得、自動車学校、ゼミ合宿の手配など、大学生活に関係する幅広いサービスを取り扱っています。",
-      "text": "또한 여행, 자격 취득, 자동차 학원, 세미나 합숙 준비 등 대학 생활과 관련된 폭넓은 서비스를 취급합니다.",
+      "ja": "ソフトクリームやセルフサービスのコーヒーのほか、食堂で作ったお弁当や丼も温かい状態で販売しています。授業の合間に軽食やデザートを買えるお店です。",
+      "text": "소프트아이스크림과 셀프서비스 커피 외에도, 식당에서 만든 도시락과 덮밥을 따뜻한 상태로 판매합니다. 수업 사이에 간식이나 디저트를 살 수 있는 가게입니다.",
       "status": "provisional"
     },
     "facilities.studentHall1.sections.1.rows.0.0": {
-      "ja": "店舗名",
-      "text": "매장명",
-      "status": "provisional"
-    },
-    "facilities.studentHall1.sections.1.rows.1.0": {
       "ja": "場所",
       "text": "장소",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.1.rows.1.1": {
-      "ja": "第一厚生棟2階",
-      "text": "제1후생동 2층",
+    "facilities.studentHall1.sections.1.rows.0.1": {
+      "ja": "第一厚生棟1階（Lunch Boxのレジ横）",
+      "text": "제1후생동 1층(Lunch Box 계산대 옆)",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.rows.1.0": {
+      "ja": "営業時間（平日）",
+      "text": "영업시간(평일)",
       "status": "provisional"
     },
     "facilities.studentHall1.sections.1.rows.2.0": {
-      "ja": "運営",
-      "text": "운영",
-      "status": "provisional"
-    },
-    "facilities.studentHall1.sections.1.rows.2.1": {
-      "ja": "関西学院大学生活協同組合",
-      "text": "관서학원대학 생활협동조합",
-      "status": "provisional"
-    },
-    "facilities.studentHall1.sections.1.rows.3.0": {
-      "ja": "営業時間",
-      "text": "영업시간",
-      "status": "provisional"
-    },
-    "facilities.studentHall1.sections.1.rows.4.0": {
       "ja": "休業日",
       "text": "휴무일",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.1.rows.4.1": {
+    "facilities.studentHall1.sections.1.rows.2.1": {
+      "ja": "土日（2026年11月は3日も休業）",
+      "text": "토·일(2026년 11월은 3일도 휴무)",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.items.0.name": {
+      "ja": "ソフトクリーム",
+      "text": "소프트아이스크림",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.items.0.text": {
+      "ja": "季節によってトッピングソースが変わることもあります。",
+      "text": "계절에 따라 토핑 소스가 바뀌기도 합니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.items.1.name": {
+      "ja": "コーヒー",
+      "text": "커피",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.items.1.text": {
+      "ja": "セルフサービスのコーヒーがあります。",
+      "text": "셀프서비스 커피가 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.items.2.name": {
+      "ja": "お弁当・丼",
+      "text": "도시락·덮밥",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.items.2.text": {
+      "ja": "食堂で作ったお弁当や丼を、温かい状態で買えます。",
+      "text": "식당에서 만든 도시락과 덮밥을 따뜻한 상태로 살 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.note.0": {
+      "ja": "営業時間は2026年11月の公式案内に基づきます。",
+      "text": "영업시간은 2026년 11월 공식 안내를 기준으로 합니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.note.1": {
+      "ja": "下のInstagramは関学生協全体の公式アカウントです。",
+      "text": "아래 Instagram은 관서학원 생협 전체의 공식 계정입니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.buttons.0.label": {
+      "ja": "関学生協のInstagramを見る",
+      "text": "관서학원 생협 Instagram 보기",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.title": {
+      "ja": "2階｜Toy Box（トイボックス）",
+      "text": "2층 | Toy Box(토이 박스)",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.highlight": {
+      "ja": "大学生活を支える、生協の総合購買店舗",
+      "text": "대학 생활을 지원하는 생협 종합 매장",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.text.0": {
+      "ja": "第一厚生棟2階にある「Toy Box」は、関西学院大学生活協同組合が運営する購買店舗です。",
+      "text": "제1후생동 2층에 있는 'Toy Box'는 관서학원대학 생활협동조합이 운영하는 매장입니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.text.1": {
+      "ja": "授業で使用する教科書や参考書、ノートなどの文房具、パソコン、関学オリジナルグッズなどを販売しています。",
+      "text": "수업에서 쓰는 교과서와 참고서, 노트 등 문구, 컴퓨터, 관서학원 오리지널 굿즈 등을 판매합니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.text.2": {
+      "ja": "さらに、旅行や資格取得、自動車学校、ゼミ合宿の手配など、大学生活に関係する幅広いサービスを取り扱っています。",
+      "text": "또한 여행, 자격 취득, 자동차 학원, 세미나 합숙 준비 등 대학 생활과 관련된 폭넓은 서비스를 취급합니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.rows.0.0": {
+      "ja": "店舗名",
+      "text": "매장명",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.rows.1.0": {
+      "ja": "場所",
+      "text": "장소",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.rows.1.1": {
+      "ja": "第一厚生棟2階",
+      "text": "제1후생동 2층",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.rows.2.0": {
+      "ja": "運営",
+      "text": "운영",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.rows.2.1": {
+      "ja": "関西学院大学生活協同組合",
+      "text": "관서학원대학 생활협동조합",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.rows.3.0": {
+      "ja": "営業時間",
+      "text": "영업시간",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.rows.4.0": {
+      "ja": "休業日",
+      "text": "휴무일",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.rows.4.1": {
       "ja": "2026年11月は土日休業（11月3日も休業）",
       "text": "2026년 11월은 토·일 휴무(11월 3일도 휴무)",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.1.note.0": {
+    "facilities.studentHall1.sections.2.note.0": {
       "ja": "2026年11月の通常営業日の営業時間です。11月23日は17:00までの営業でした。",
       "text": "2026년 11월 평상시 영업시간입니다. 11월 23일은 17:00까지 영업했습니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.1.note.1": {
+    "facilities.studentHall1.sections.2.note.1": {
       "ja": "営業時間は時期によって変更されます。最新情報は関学生協公式サイトをご確認ください。",
       "text": "영업시간은 시기에 따라 변경됩니다. 최신 정보는 관서학원 생협 공식 사이트에서 확인해 주세요.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.1.buttons.0.label": {
+    "facilities.studentHall1.sections.2.buttons.0.label": {
       "ja": "最新の営業時間を見る",
       "text": "최신 영업시간 보기",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.title": {
+    "facilities.studentHall1.sections.3.title": {
       "ja": "授業に必要なものから関学グッズまで",
       "text": "수업 필수품부터 관서학원 굿즈까지",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.text": {
+    "facilities.studentHall1.sections.3.text": {
       "ja": "Toy Boxでは、授業に必要な学習用品から、学生生活を便利にする商品まで幅広く取り扱っています。",
       "text": "Toy Box에서는 수업에 필요한 학습용품부터 학생 생활을 편리하게 해 주는 상품까지 폭넓게 취급합니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.0.name": {
+    "facilities.studentHall1.sections.3.items.0.name": {
       "ja": "教科書・参考書",
       "text": "교과서·참고서",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.0.chips.0": {
+    "facilities.studentHall1.sections.3.items.0.chips.0": {
       "ja": "教科書",
       "text": "교과서",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.0.chips.1": {
+    "facilities.studentHall1.sections.3.items.0.chips.1": {
       "ja": "参考書",
       "text": "참고서",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.0.chips.2": {
+    "facilities.studentHall1.sections.3.items.0.chips.2": {
       "ja": "書籍・雑誌",
       "text": "서적·잡지",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.0.text": {
+    "facilities.studentHall1.sections.3.items.0.text": {
       "ja": "大学の講義や実習で使う参考書などを購入できます。書籍の注文もできます。",
       "text": "대학 강의나 실습에서 쓰는 참고서 등을 구입할 수 있습니다. 서적 주문도 가능합니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.1.name": {
+    "facilities.studentHall1.sections.3.items.1.name": {
       "ja": "文房具",
       "text": "문구",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.1.chips.0": {
+    "facilities.studentHall1.sections.3.items.1.chips.0": {
       "ja": "ノート",
       "text": "노트",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.1.chips.1": {
+    "facilities.studentHall1.sections.3.items.1.chips.1": {
       "ja": "ファイル",
       "text": "파일",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.1.text": {
+    "facilities.studentHall1.sections.3.items.1.text": {
       "ja": "授業や課題に必要な文房具を、生協の割引価格で販売しています。",
       "text": "수업과 과제에 필요한 문구를 생협 할인 가격으로 판매합니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.2.name": {
+    "facilities.studentHall1.sections.3.items.2.name": {
       "ja": "パソコン・周辺機器",
       "text": "컴퓨터·주변기기",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.2.chips.0": {
+    "facilities.studentHall1.sections.3.items.2.chips.0": {
       "ja": "パソコン",
       "text": "컴퓨터",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.2.chips.1": {
+    "facilities.studentHall1.sections.3.items.2.chips.1": {
       "ja": "周辺機器",
       "text": "주변기기",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.2.text": {
+    "facilities.studentHall1.sections.3.items.2.text": {
       "ja": "パソコン本体から周辺機器まで取り扱い、パソコンに関する質問にも対応しています。",
       "text": "컴퓨터 본체부터 주변기기까지 취급하며, 컴퓨터에 관한 질문에도 답해 줍니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.3.name": {
+    "facilities.studentHall1.sections.3.items.3.name": {
       "ja": "関学オリジナルグッズ",
       "text": "관서학원 오리지널 굿즈",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.3.chips.0": {
+    "facilities.studentHall1.sections.3.items.3.chips.0": {
       "ja": "ボールペン",
       "text": "볼펜",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.3.chips.1": {
+    "facilities.studentHall1.sections.3.items.3.chips.1": {
       "ja": "ノート",
       "text": "노트",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.3.chips.2": {
+    "facilities.studentHall1.sections.3.items.3.chips.2": {
       "ja": "スウェット",
       "text": "스웨트셔츠",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.3.chips.3": {
+    "facilities.studentHall1.sections.3.items.3.chips.3": {
       "ja": "クッキー",
       "text": "쿠키",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.items.3.text": {
+    "facilities.studentHall1.sections.3.items.3.text": {
       "ja": "関学のオリジナルグッズです。おみやげにもおすすめです。",
       "text": "관서학원 오리지널 굿즈입니다. 기념품으로도 추천합니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.2.note": {
+    "facilities.studentHall1.sections.3.note": {
       "ja": "商品例は関学生協公式サイトの紹介です。取扱商品や在庫は時期によって異なります。",
       "text": "상품 예시는 관서학원 생협 공식 사이트의 소개입니다. 취급 상품과 재고는 시기에 따라 다릅니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.3.title": {
+    "facilities.studentHall1.sections.4.title": {
       "ja": "買い物だけじゃない！学生生活をサポート",
       "text": "쇼핑만이 아니에요! 학생 생활을 지원",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.3.text": {
+    "facilities.studentHall1.sections.4.text": {
       "ja": "Toy Boxでは、商品の販売のほかに、学生生活に関するさまざまなサービスを取り扱っています。",
       "text": "Toy Box에서는 상품 판매 외에도 학생 생활에 관한 다양한 서비스를 취급합니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.3.items.0.name": {
+    "facilities.studentHall1.sections.4.items.0.name": {
       "ja": "資格・検定",
       "text": "자격·검정",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.3.items.0.text": {
+    "facilities.studentHall1.sections.4.items.0.text": {
       "ja": "TOEFLなどの検定の申込みや、資格スクールの申込みができます。",
       "text": "TOEFL 등 검정 신청과 자격 학원 신청을 할 수 있습니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.3.items.1.name": {
+    "facilities.studentHall1.sections.4.items.1.name": {
       "ja": "自動車学校",
       "text": "자동차 학원",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.3.items.1.text": {
+    "facilities.studentHall1.sections.4.items.1.text": {
       "ja": "自動車学校に生協の割引価格で入校できます。夏休み・春休みなどを使った合宿制の自動車学校も申し込めます。",
       "text": "생협 할인 가격으로 자동차 학원에 등록할 수 있습니다. 여름방학·봄방학 등을 이용한 합숙형 자동차 학원도 신청할 수 있습니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.3.items.2.name": {
+    "facilities.studentHall1.sections.4.items.2.name": {
       "ja": "国内・海外旅行",
       "text": "국내·해외여행",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.3.items.2.text": {
+    "facilities.studentHall1.sections.4.items.2.text": {
       "ja": "旅行の申込みや、語学留学などの相談ができます。",
       "text": "여행 신청과 어학연수 등의 상담을 할 수 있습니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.3.items.3.name": {
+    "facilities.studentHall1.sections.4.items.3.name": {
       "ja": "ゼミ合宿",
       "text": "세미나 합숙",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.3.items.3.text": {
+    "facilities.studentHall1.sections.4.items.3.text": {
       "ja": "ゼミ合宿の手配を取り扱っています。",
       "text": "세미나 합숙 준비를 취급합니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.3.items.4.name": {
+    "facilities.studentHall1.sections.4.items.4.name": {
       "ja": "住まいの紹介",
       "text": "주거 소개",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.3.items.4.text": {
+    "facilities.studentHall1.sections.4.items.4.text": {
       "ja": "関学生協の店舗案内で、Toy Boxの取扱いとして掲載されています。詳しい内容は公式サイトでご確認ください。",
       "text": "관서학원 생협 매장 안내에 Toy Box의 취급 서비스로 게재되어 있습니다. 자세한 내용은 공식 사이트에서 확인해 주세요.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.3.note": {
+    "facilities.studentHall1.sections.4.note": {
       "ja": "割引や取扱内容は変更される場合があります。",
       "text": "할인과 취급 내용은 변경될 수 있습니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.title": {
+    "facilities.studentHall1.sections.5.title": {
       "ja": "通学に便利な「関学NicoPa」",
       "text": "통학에 편리한 '관학 NicoPa'",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.text.0": {
+    "facilities.studentHall1.sections.5.text.0": {
       "ja": "関学NicoPaは、神姫バスで関西学院大学に通学する学生向けのICカードです。",
       "text": "관학 NicoPa는 신키 버스로 관서학원대학에 통학하는 학생을 위한 IC 카드입니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.text.1": {
+    "facilities.studentHall1.sections.5.text.1": {
       "ja": "Toy Boxでは、関学NicoPaの販売とチャージに対応しています。アカデミックコモンズにもチャージ機が設置されています。",
       "text": "Toy Box에서는 관학 NicoPa 판매와 충전을 합니다. 아카데믹 커먼즈에도 충전기가 설치되어 있습니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.text.2": {
+    "facilities.studentHall1.sections.5.text.2": {
       "ja": "関学生協の公式案内では、現金チャージ時に25％のプレミアが付くことや、神戸三田キャンパスへの指定通学路線で特別運賃が適用されることが紹介されています。",
       "text": "관서학원 생협 공식 안내에 따르면 현금 충전 시 25% 프리미엄이 붙고, 고베산다 캠퍼스로 가는 지정 통학 노선에서는 특별 운임이 적용됩니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.rows.0.0": {
+    "facilities.studentHall1.sections.5.rows.0.0": {
       "ja": "対象",
       "text": "대상",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.rows.0.1": {
+    "facilities.studentHall1.sections.5.rows.0.1": {
       "ja": "神姫バスで関学に通学する学生",
       "text": "신키 버스로 관서학원에 통학하는 학생",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.rows.1.0": {
+    "facilities.studentHall1.sections.5.rows.1.0": {
       "ja": "販売場所",
       "text": "판매처",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.rows.1.1": {
+    "facilities.studentHall1.sections.5.rows.1.1": {
       "ja": "Toy Box（神戸三田キャンパスではToy Boxのみ）",
       "text": "Toy Box(고베산다 캠퍼스에서는 Toy Box에서만)",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.rows.2.0": {
+    "facilities.studentHall1.sections.5.rows.2.0": {
       "ja": "チャージ",
       "text": "충전",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.rows.2.1": {
+    "facilities.studentHall1.sections.5.rows.2.1": {
       "ja": "Toy Box・アカデミックコモンズ",
       "text": "Toy Box·아카데믹 커먼즈",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.rows.3.0": {
+    "facilities.studentHall1.sections.5.rows.3.0": {
       "ja": "特徴",
       "text": "특징",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.rows.3.1": {
+    "facilities.studentHall1.sections.5.rows.3.1": {
       "ja": "現金チャージ時のプレミア、指定路線の特別運賃",
       "text": "현금 충전 시 프리미엄, 지정 노선 특별 운임",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.more.title": {
+    "facilities.studentHall1.sections.5.more.title": {
       "ja": "シャトルバスの乗車券",
       "text": "셔틀버스 승차권",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.more.text": {
+    "facilities.studentHall1.sections.5.more.text": {
       "ja": "西宮上ケ原キャンパスと神戸三田キャンパスを結ぶシャトルバスの乗車券も、Toy Boxで販売されています（神戸三田キャンパスではColorful Boxでも販売）。運賃や運行日は変更される場合があるため、公式ページで最新情報をご確認ください。",
       "text": "니시노미야 우에가하라 캠퍼스와 고베산다 캠퍼스를 잇는 셔틀버스 승차권도 Toy Box에서 판매합니다(고베산다 캠퍼스에서는 Colorful Box에서도 판매). 운임과 운행일은 변경될 수 있으니 공식 페이지에서 최신 정보를 확인해 주세요.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.note": {
+    "facilities.studentHall1.sections.5.note": {
       "ja": "利用条件や制度は変更される可能性があります。",
       "text": "이용 조건과 제도는 변경될 수 있습니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.4.buttons.0.label": {
+    "facilities.studentHall1.sections.5.buttons.0.label": {
       "ja": "関学NicoPaについて詳しく見る",
       "text": "관학 NicoPa 자세히 보기",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.5.title": {
+    "facilities.studentHall1.sections.6.title": {
       "ja": "KSCオリジナルマイボトル",
       "text": "KSC 오리지널 마이 보틀",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.5.text.0": {
+    "facilities.studentHall1.sections.6.text.0": {
       "ja": "神戸三田キャンパスの学生有志グループ「CAMP×US」とアウトドアブランド「Snow Peak」が共同開発したオリジナルマイボトルも、Toy Boxで販売されています。",
       "text": "고베산다 캠퍼스의 학생 자원 그룹 'CAMP×US'와 아웃도어 브랜드 'Snow Peak'가 공동 개발한 오리지널 마이 보틀도 Toy Box에서 판매합니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.5.text.1": {
+    "facilities.studentHall1.sections.6.text.1": {
       "ja": "キャンパス内の使い捨てペットボトルの削減を目指して開発されたもので、BiZCAFEではこのマイボトルを持参して無料ドリンクを楽しめます。",
       "text": "캠퍼스 내 일회용 페트병을 줄이기 위해 개발되었으며, BiZCAFE에서는 이 마이 보틀을 가져가 무료 음료를 즐길 수 있습니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.5.rows.0.0": {
+    "facilities.studentHall1.sections.6.rows.0.0": {
       "ja": "容量",
       "text": "용량",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.5.rows.1.0": {
+    "facilities.studentHall1.sections.6.rows.1.0": {
       "ja": "価格",
       "text": "가격",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.5.rows.1.1": {
+    "facilities.studentHall1.sections.6.rows.1.1": {
       "ja": "2,250円（税込）",
       "text": "2,250엔(세금 포함)",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.5.rows.2.0": {
+    "facilities.studentHall1.sections.6.rows.2.0": {
       "ja": "購入場所",
       "text": "구입처",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.5.rows.3.0": {
+    "facilities.studentHall1.sections.6.rows.3.0": {
       "ja": "購入方法",
       "text": "구입 방법",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.5.rows.3.1": {
+    "facilities.studentHall1.sections.6.rows.3.1": {
       "ja": "学生証の提示・所有者登録",
       "text": "학생증 제시·소유자 등록",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.5.rows.4.0": {
+    "facilities.studentHall1.sections.6.rows.4.0": {
       "ja": "購入制限",
       "text": "구입 제한",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.5.rows.4.1": {
+    "facilities.studentHall1.sections.6.rows.4.1": {
       "ja": "1人1回のみ",
       "text": "1인 1회만",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.5.rows.5.0": {
+    "facilities.studentHall1.sections.6.rows.5.0": {
       "ja": "転売・譲渡",
       "text": "전매·양도",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.5.rows.5.1": {
+    "facilities.studentHall1.sections.6.rows.5.1": {
       "ja": "禁止",
       "text": "금지",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.5.note": {
+    "facilities.studentHall1.sections.6.note": {
       "ja": "価格・購入条件はBiZCAFE神戸三田店の公式Instagramの投稿時点の情報です。販売価格や在庫は変更される場合があります。",
       "text": "가격·구입 조건은 BiZCAFE 고베산다점 공식 Instagram 게시 시점의 정보입니다. 판매 가격과 재고는 변경될 수 있습니다.",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.5.buttons.0.label": {
+    "facilities.studentHall1.sections.6.buttons.0.label": {
       "ja": "BiZCAFEについて詳しく見る",
       "text": "BiZCAFE 자세히 보기",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.6.title": {
+    "facilities.studentHall1.sections.7.title": {
       "ja": "公式情報",
       "text": "공식 정보",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.6.buttons.0.label": {
+    "facilities.studentHall1.sections.7.buttons.0.label": {
       "ja": "Toy Boxの店舗情報を見る",
       "text": "Toy Box 매장 정보 보기",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.6.buttons.1.label": {
+    "facilities.studentHall1.sections.7.buttons.1.label": {
       "ja": "最新の営業時間を見る",
       "text": "최신 영업시간 보기",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.6.buttons.2.label": {
+    "facilities.studentHall1.sections.7.buttons.2.label": {
       "ja": "関学NicoPaについて",
       "text": "관학 NicoPa 안내",
       "status": "provisional"
     },
-    "facilities.studentHall1.sections.6.buttons.3.label": {
+    "facilities.studentHall1.sections.7.buttons.3.label": {
       "ja": "BiZCAFE公式Instagramを見る",
       "text": "BiZCAFE 공식 Instagram 보기",
       "status": "provisional"

@@ -256,7 +256,8 @@
       });
       box.appendChild(line);
     }
-    if (!ev && section.figure && section.figure.src) { box.appendChild(createFigure(section.figure)); }
+    // figureAfterRows: true puts the photo below the text and table instead of above them.
+    if (!ev && !section.figureAfterRows && section.figure && section.figure.src) { box.appendChild(createFigure(section.figure)); }
     if (section.chips && section.chips.length) { box.appendChild(createChips(section.chips)); }
     if (section.text) { appendParagraphs(box, section.text); }
     if (section.rows && section.rows.length) {
@@ -269,6 +270,7 @@
       });
       box.appendChild(table);
     }
+    if (section.figureAfterRows && section.figure && section.figure.src) { box.appendChild(createFigure(section.figure)); }
     if (section.items && section.items.length) {
       // itemsStyle: "cards" shows the items as small cards side by side (one column on phones).
       var list = el('ul', 'info-items' + (section.itemsStyle === 'cards' ? ' info-items-cards' : ''));
