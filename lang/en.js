@@ -600,6 +600,11 @@ TourI18n.register("en", {
       "text": "Colorful Box (Co-op Store)",
       "status": "provisional"
     },
+    "facilities.bizcafe.name": {
+      "ja": "ビズカフェ",
+      "text": "Biz Cafe",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Building I",

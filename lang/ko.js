@@ -600,6 +600,11 @@ TourI18n.register("ko", {
       "text": "Colorful Box(생협 매점)",
       "status": "provisional"
     },
+    "facilities.bizcafe.name": {
+      "ja": "ビズカフェ",
+      "text": "비즈 카페",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Ⅰ호관",

@@ -600,6 +600,11 @@ TourI18n.register("zh-CN", {
       "text": "Colorful Box（生协小卖部）",
       "status": "provisional"
     },
+    "facilities.bizcafe.name": {
+      "ja": "ビズカフェ",
+      "text": "Biz咖啡厅",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Ⅰ号馆",
