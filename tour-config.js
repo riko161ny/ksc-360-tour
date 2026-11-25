@@ -187,7 +187,8 @@ window.TOUR_CONFIG = {
       ], facility: "building5" },
     { id: "p23", name: "Ⅶ号館", map: { x: 0.4549, y: 0.4255 }, photo: null, view: null, northOffset: null,
       links: [
-        { target: "p23-1", yaw: -0.265, pitch: -0.053 }
+        { target: "p23-1", yaw: -0.265, pitch: -0.053 },
+        { target: "p21", yaw: -2.675, pitch: 0.032 }
       ],
       info: [
         { yaw: -0.027, pitch: -0.116, facility: "building7" }
