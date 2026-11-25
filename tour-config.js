@@ -181,7 +181,7 @@ window.TOUR_CONFIG = {
     { id: "p13-1", name: "体育館内部", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p13", yaw: 0.178, pitch: 0.005 } ], info: [], backButton: { target: "p13", label: "体育館前に戻る" } },
     { id: "p15-1", name: "和室前", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p15", yaw: 1.944, pitch: 0.11 } ], info: [ { yaw: 0.037, pitch: 0.138, facility: "washitsu" }, { yaw: -2.34, pitch: 0.109, facility: "bus" } ], backButton: { target: "p15", label: "ビズカフェに戻る" } },
     { id: "p16-terasu", name: "コモンズテラス", map: null, photo: null, view: { yaw: 1.4, pitch: 0, fov: 1.5708 }, northOffset: null, links: [], info: [], backButton: { target: "p16", label: "コモンズ前に戻る" } },
-    { id: "p24-1", name: "事務室前（Ⅷ号館）", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p24", label: "Ⅷ号館エントランスに戻る" } },
+    { id: "p24-1", name: "事務室前（Ⅷ号館）", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p24-2", yaw: -1.926, pitch: 0.043 } ], info: [ { yaw: -0.295, pitch: 0.037, facility: "office8" } ], backButton: { target: "p24", label: "Ⅷ号館エントランスに戻る" } },
     { id: "p24-2", name: "パウダールーム（Ⅷ号館）", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p24", label: "Ⅷ号館エントランスに戻る" } }
   ],
 
@@ -306,6 +306,10 @@ window.TOUR_CONFIG = {
     // 体育館の情報マーク（中身は確認できた情報をあとで足します）
     "gym": {
       name: "体育館"
+    },
+    // Ⅷ号館の事務室の情報マーク（中身は確認できた情報をあとで足します）
+    "office8": {
+      name: "事務室（Ⅷ号館）"
     },
     // ↓ 施設情報（riko さんがまとめた内容。overview は段落ごとの配列、sections は見出しごとのまとまり）
     "building1": {

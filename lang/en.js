@@ -615,6 +615,11 @@ TourI18n.register("en", {
       "text": "Gymnasium",
       "status": "official"
     },
+    "facilities.office8.name": {
+      "ja": "事務室（Ⅷ号館）",
+      "text": "Office (Building VIII)",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Building I",

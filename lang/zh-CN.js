@@ -615,6 +615,11 @@ TourI18n.register("zh-CN", {
       "text": "体育馆",
       "status": "provisional"
     },
+    "facilities.office8.name": {
+      "ja": "事務室（Ⅷ号館）",
+      "text": "办公室（Ⅷ号馆）",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Ⅰ号馆",
