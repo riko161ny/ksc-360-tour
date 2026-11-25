@@ -610,6 +610,11 @@ TourI18n.register("zh-CN", {
       "text": "和室",
       "status": "provisional"
     },
+    "facilities.gym.name": {
+      "ja": "体育館",
+      "text": "体育馆",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Ⅰ号馆",

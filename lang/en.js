@@ -610,6 +610,11 @@ TourI18n.register("en", {
       "text": "Japanese-style Room",
       "status": "provisional"
     },
+    "facilities.gym.name": {
+      "ja": "体育館",
+      "text": "Gymnasium",
+      "status": "official"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Building I",

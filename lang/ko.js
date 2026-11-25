@@ -610,6 +610,11 @@ TourI18n.register("ko", {
       "text": "다다미방",
       "status": "provisional"
     },
+    "facilities.gym.name": {
+      "ja": "体育館",
+      "text": "체육관",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Ⅰ호관",
