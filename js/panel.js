@@ -265,6 +265,12 @@
     if (!ev && !section.figureAfterRows && section.figure && section.figure.src) { box.appendChild(createFigure(section.figure)); }
     if (section.chips && section.chips.length) { box.appendChild(createChips(section.chips)); }
     if (section.text) { appendParagraphs(box, section.text); }
+    // video: { youtube, title, caption } embeds a video in this section.
+    if (section.video) {
+      var secVideo = createVideo(section.video);
+      if (secVideo) { box.appendChild(secVideo); }
+      if (section.video.caption) { box.appendChild(el('p', 'info-caption', section.video.caption)); }
+    }
     if (section.rows && section.rows.length) {
       var table = el('table', 'info-table');
       section.rows.forEach(function(row) {

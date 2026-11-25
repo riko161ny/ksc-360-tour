@@ -2131,301 +2131,316 @@ TourI18n.register("zh-CN", {
       "status": "provisional"
     },
     "facilities.bizcafe.sections.1.title": {
+      "ja": "紹介動画",
+      "text": "介绍视频",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.video.title": {
+      "ja": "新たな学びの場「BiZCAFE」が神戸三田キャンパス（KSC)にオープン！",
+      "text": "新的学习场所“BiZCAFE”在神户三田校区（KSC）开业！",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.video.caption": {
+      "ja": "関西学院大学公式YouTubeチャンネルの動画です。",
+      "text": "关西学院大学官方YouTube频道的视频。",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.title": {
       "ja": "学生はドリンク無料！",
       "text": "学生饮品免费！",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.highlight": {
+    "facilities.bizcafe.sections.2.highlight": {
       "ja": "コーヒーや紅茶、ジュースなど、学生はいろいろなドリンクを無料で飲めます。",
       "text": "咖啡、红茶、果汁等，学生可以免费享用各种饮品。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.items.0.name": {
+    "facilities.bizcafe.sections.2.items.0.name": {
       "ja": "90分ごとに1杯",
       "text": "每90分钟1杯",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.items.0.text": {
+    "facilities.bizcafe.sections.2.items.0.text": {
       "ja": "90分おきに、無料でドリンクをもらえます。",
       "text": "每隔90分钟可以免费领取一杯饮品。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.items.1.name": {
+    "facilities.bizcafe.sections.2.items.1.name": {
       "ja": "マイボトルがなくてもOK",
       "text": "没有自带水杯也可以",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.items.1.text": {
+    "facilities.bizcafe.sections.2.items.1.text": {
       "ja": "KSCオリジナルマイボトルを持っていなくても、お店のグラスで飲めます。",
       "text": "即使没有KSC原创水杯，也可以用店里的玻璃杯饮用。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.items.2.name": {
+    "facilities.bizcafe.sections.2.items.2.name": {
       "ja": "100社以上の企業が協賛",
       "text": "100多家企业赞助",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.items.2.text": {
+    "facilities.bizcafe.sections.2.items.2.text": {
       "ja": "企業の協賛によって、学生の無料ドリンクが実現しています。",
       "text": "学生的免费饮品是通过企业赞助实现的。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.more.title": {
+    "facilities.bizcafe.sections.2.more.title": {
       "ja": "ドリンクメニューを見る",
       "text": "查看饮品菜单",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.more.chips.0": {
+    "facilities.bizcafe.sections.2.more.chips.0": {
       "ja": "アールグレイティー（ICE / HOT）",
       "text": "伯爵茶（冰 / 热）",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.more.chips.1": {
+    "facilities.bizcafe.sections.2.more.chips.1": {
       "ja": "コーヒー（ICE / HOT）",
       "text": "咖啡（冰 / 热）",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.more.chips.2": {
+    "facilities.bizcafe.sections.2.more.chips.2": {
       "ja": "アップルジュース",
       "text": "苹果汁",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.more.chips.3": {
+    "facilities.bizcafe.sections.2.more.chips.3": {
       "ja": "ピーチティー",
       "text": "桃子茶",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.more.chips.4": {
+    "facilities.bizcafe.sections.2.more.chips.4": {
       "ja": "グリーンティー",
       "text": "绿茶",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.more.chips.5": {
+    "facilities.bizcafe.sections.2.more.chips.5": {
       "ja": "アクエリアス",
       "text": "Aquarius（运动饮料）",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.more.chips.6": {
+    "facilities.bizcafe.sections.2.more.chips.6": {
       "ja": "カルピス",
       "text": "可尔必思（Calpis）",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.more.chips.7": {
+    "facilities.bizcafe.sections.2.more.chips.7": {
       "ja": "プロテイン",
       "text": "蛋白饮品",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.more.chips.8": {
+    "facilities.bizcafe.sections.2.more.chips.8": {
       "ja": "カフェオレ（ICE）",
       "text": "牛奶咖啡（冰）",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.more.chips.9": {
+    "facilities.bizcafe.sections.2.more.chips.9": {
       "ja": "マンゴージュース",
       "text": "芒果汁",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.more.note": {
+    "facilities.bizcafe.sections.2.more.note": {
       "ja": "メニューはInstagram投稿時点のものです。現在の提供状況とは異なる場合があります。",
       "text": "菜单为Instagram发布时的内容，可能与目前的供应情况不同。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.note": {
+    "facilities.bizcafe.sections.2.note": {
       "ja": "90分間隔・協賛企業数は、店舗公式Instagramの投稿時点の情報です。",
       "text": "90分钟间隔及赞助企业数量为店铺官方Instagram发布时的信息。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.title": {
+    "facilities.bizcafe.sections.3.title": {
       "ja": "KSCオリジナルマイボトル",
       "text": "KSC原创水杯",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.figure.caption": {
+    "facilities.bizcafe.sections.3.figure.caption": {
       "ja": "KSCオリジナルマイボトル",
       "text": "KSC原创水杯",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.chips.0": {
+    "facilities.bizcafe.sections.3.chips.0": {
       "ja": "Snow Peakとの共同開発",
       "text": "与Snow Peak共同开发",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.chips.2": {
+    "facilities.bizcafe.sections.3.chips.2": {
       "ja": "2,250円（税込）",
       "text": "2,250日元（含税）",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.chips.3": {
+    "facilities.bizcafe.sections.3.chips.3": {
       "ja": "購入場所：生協ToyBox（第一厚生棟2階）",
       "text": "购买地点：生协ToyBox（第一厚生楼2楼）",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.text.0": {
+    "facilities.bizcafe.sections.3.text.0": {
       "ja": "KSCオリジナルマイボトルは、神戸三田キャンパスの学生有志グループ「CAMP×US」とアウトドアブランド「Snow Peak」が共同開発したマイボトルです。容量は350mLで、持ち運びやすいサイズです。",
       "text": "KSC原创水杯由神户三田校区的学生志愿团体“CAMP×US”与户外品牌“Snow Peak”共同开发，容量350mL，便于携带。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.text.1": {
+    "facilities.bizcafe.sections.3.text.1": {
       "ja": "キャンパス内のペットボトル消費量の削減を目指す取り組みの一環として開発されました。BiZCAFEでは、オリジナルマイボトルを持参して無料ドリンクを楽しむこともできます（マイボトルがなくても、店舗のグラスで無料ドリンクを利用できます）。",
       "text": "这款水杯是为减少校园内塑料瓶消耗而开发的。在BiZCAFE，也可以自带原创水杯享用免费饮品（没有水杯也可以用店里的玻璃杯免费饮用）。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.0.0": {
+    "facilities.bizcafe.sections.3.rows.0.0": {
       "ja": "商品名",
       "text": "商品名称",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.0.1": {
+    "facilities.bizcafe.sections.3.rows.0.1": {
       "ja": "KSCオリジナルマイボトル",
       "text": "KSC原创水杯",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.1.0": {
+    "facilities.bizcafe.sections.3.rows.1.0": {
       "ja": "共同開発",
       "text": "共同开发",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.2.0": {
+    "facilities.bizcafe.sections.3.rows.2.0": {
       "ja": "容量",
       "text": "容量",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.3.0": {
+    "facilities.bizcafe.sections.3.rows.3.0": {
       "ja": "価格",
       "text": "价格",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.3.1": {
+    "facilities.bizcafe.sections.3.rows.3.1": {
       "ja": "2,250円（税込）",
       "text": "2,250日元（含税）",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.4.0": {
+    "facilities.bizcafe.sections.3.rows.4.0": {
       "ja": "購入対象",
       "text": "购买对象",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.4.1": {
+    "facilities.bizcafe.sections.3.rows.4.1": {
       "ja": "神戸三田キャンパスの学生",
       "text": "神户三田校区的学生",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.5.0": {
+    "facilities.bizcafe.sections.3.rows.5.0": {
       "ja": "購入場所",
       "text": "购买地点",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.5.1": {
+    "facilities.bizcafe.sections.3.rows.5.1": {
       "ja": "生協ToyBox（第一厚生棟2階）",
       "text": "生协ToyBox（第一厚生楼2楼）",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.6.0": {
+    "facilities.bizcafe.sections.3.rows.6.0": {
       "ja": "購入方法",
       "text": "购买方法",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.6.1": {
+    "facilities.bizcafe.sections.3.rows.6.1": {
       "ja": "学生証を提示し、所有者登録",
       "text": "出示学生证并进行所有者登记",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.7.0": {
+    "facilities.bizcafe.sections.3.rows.7.0": {
       "ja": "購入制限",
       "text": "购买限制",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.7.1": {
+    "facilities.bizcafe.sections.3.rows.7.1": {
       "ja": "1人1回のみ",
       "text": "每人限购一次",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.8.0": {
+    "facilities.bizcafe.sections.3.rows.8.0": {
       "ja": "転売・譲渡",
       "text": "转卖·转让",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.rows.8.1": {
+    "facilities.bizcafe.sections.3.rows.8.1": {
       "ja": "禁止",
       "text": "禁止",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.more.title": {
+    "facilities.bizcafe.sections.3.more.title": {
       "ja": "SDGsへの取り組み",
       "text": "推进SDGs的举措",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.more.text.0": {
+    "facilities.bizcafe.sections.3.more.text.0": {
       "ja": "関西学院大学が2025年に発表した情報によると、神戸三田キャンパスの学生の約7割がオリジナルマイボトルを所有しています。",
       "text": "根据关西学院大学2025年发布的信息，神户三田校区约七成学生拥有原创水杯。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.more.text.1": {
+    "facilities.bizcafe.sections.3.more.text.1": {
       "ja": "大学は、マイボトルの利用促進によって、キャンパス内の使い捨てペットボトルの消費量を削減することを目指しています。取り組みを始めた2021年には、年間約10万本のペットボトル削減が目標として掲げられました。",
       "text": "大学希望通过推广自带水杯，减少校园内一次性塑料瓶的消耗。2021年开始这项举措时，提出了每年减少约10万个塑料瓶的目标。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.note.0": {
+    "facilities.bizcafe.sections.3.note.0": {
       "ja": "価格・購入場所・購入方法は店舗公式Instagramの掲載情報です。最新の販売状況は店舗・生協でご確認ください。",
       "text": "价格、购买地点和购买方法为店铺官方Instagram上的信息。最新的销售情况请向店铺或生协确认。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.2.note.1": {
+    "facilities.bizcafe.sections.3.note.1": {
       "ja": "店舗公式Instagramでは永久保証付きと案内されています。保証の条件は店舗でご確認ください。",
       "text": "店铺官方Instagram介绍该水杯附带永久保修。保修条件请向店铺确认。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.3.title": {
+    "facilities.bizcafe.sections.4.title": {
       "ja": "企業と交流できるキャリア支援カフェ",
       "text": "可以与企业交流的职业支援咖啡馆",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.3.text": {
+    "facilities.bizcafe.sections.4.text": {
       "ja": "BiZCAFEでは、学生が企業の社会人と交流し、仕事や業界について知ることのできるイベントが開催されています。",
       "text": "BiZCAFE会举办活动，让学生与企业在职人士交流，了解工作和行业。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.3.items.0.text": {
+    "facilities.bizcafe.sections.4.items.0.text": {
       "ja": "企業の社会人と交流できる座談会です。店舗公式Instagramでは、低学年から参加できる約1時間の座談会として紹介されています。実際に働く社会人の話を聞き、仕事や将来のキャリアについて考える機会になっています。",
       "text": "这是可以与企业在职人士交流的座谈会。店铺官方Instagram介绍其为低年级学生也能参加、时长约1小时的座谈会。学生可以听取在职人士的经验，思考工作和未来的职业发展。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.3.items.1.text": {
+    "facilities.bizcafe.sections.4.items.1.text": {
       "ja": "2021年の開設時の大学の発表では、キャリアセンターと運営会社が共同で、学生に助言・支援したい企業や団体を募る「BIZCLASS」という取り組みが計画として紹介されていました。",
       "text": "在2021年开业时大学的发布中，曾介绍过一项名为“BIZCLASS”的计划，由职业中心与运营公司共同招募希望为学生提供建议和支持的企业及团体。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.3.note": {
+    "facilities.bizcafe.sections.4.note": {
       "ja": "イベントの内容や日時は変更される場合があります。最新の募集情報は店舗公式Instagramをご確認ください。",
       "text": "活动内容和日期可能会有变动。最新的招募信息请查看店铺官方Instagram。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.4.title": {
+    "facilities.bizcafe.sections.5.title": {
       "ja": "公式情報・最新のお知らせ",
       "text": "官方信息·最新通知",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.4.text": {
+    "facilities.bizcafe.sections.5.text": {
       "ja": "営業時間やイベント情報、最新のお知らせは、店舗公式Instagramで確認できます。",
       "text": "营业时间、活动信息和最新通知可以在店铺官方Instagram上查看。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.4.buttons.0.label": {
+    "facilities.bizcafe.sections.5.buttons.0.label": {
       "ja": "公式Instagramを見る",
       "text": "查看官方Instagram",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.4.buttons.1.label": {
+    "facilities.bizcafe.sections.5.buttons.1.label": {
       "ja": "BiZCAFE店舗情報を見る",
       "text": "查看BiZCAFE店铺信息",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.4.buttons.2.label": {
+    "facilities.bizcafe.sections.5.buttons.2.label": {
       "ja": "マイボトル開発の取り組みを見る",
       "text": "查看水杯开发的举措",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.4.buttons.3.label": {
+    "facilities.bizcafe.sections.5.buttons.3.label": {
       "ja": "マイボトルの取り組みを詳しく見る",
       "text": "详细了解水杯举措",
       "status": "provisional"
@@ -2641,13 +2656,68 @@ TourI18n.register("zh-CN", {
       "status": "provisional"
     },
     "facilities.office8.name": {
-      "ja": "事務室（Ⅷ号館）",
-      "text": "办公室（Ⅷ号馆）",
+      "ja": "神戸三田キャンパス事務室",
+      "text": "神户三田校区事务室",
+      "status": "provisional"
+    },
+    "facilities.office8.overview.0": {
+      "ja": "Ⅷ号館1階にある、大学生活に関するさまざまな手続きや相談に対応する窓口です。",
+      "text": "位于Ⅷ号馆1楼，是办理大学生活相关各种手续和咨询的窗口。",
+      "status": "provisional"
+    },
+    "facilities.office8.overview.1": {
+      "ja": "履修登録や授業、試験、奨学金などの相談に加え、学部行事やキャンパス施設に関する問い合わせにも対応しています。",
+      "text": "除了选课登记、授课、考试、奖学金等方面的咨询外，还受理有关学部活动和校园设施的询问。",
+      "status": "provisional"
+    },
+    "facilities.office8.sections.0.title": {
+      "ja": "窓口受付時間",
+      "text": "窗口受理时间",
+      "status": "provisional"
+    },
+    "facilities.office8.sections.0.rows.0.0": {
+      "ja": "平日",
+      "text": "工作日",
+      "status": "provisional"
+    },
+    "facilities.office8.sections.0.rows.1.0": {
+      "ja": "土曜・日曜・祝日",
+      "text": "星期六・星期日・节假日",
+      "status": "provisional"
+    },
+    "facilities.office8.sections.0.rows.1.1": {
+      "ja": "原則閉室",
+      "text": "原则上不开放",
+      "status": "provisional"
+    },
+    "facilities.office8.sections.0.note": {
+      "ja": "大学の休業期間中などは変更される場合があります。",
+      "text": "大学休业期间等可能会有变更。",
+      "status": "provisional"
+    },
+    "facilities.office8.sections.0.links.0.label": {
+      "ja": "関西学院大学「お問い合わせ」",
+      "text": "关西学院大学“咨询”",
       "status": "provisional"
     },
     "facilities.powderRoom.name": {
-      "ja": "パウダールーム（Ⅷ号館）",
-      "text": "化妆间（Ⅷ号馆）",
+      "ja": "パウダールーム",
+      "text": "化妆室",
+      "status": "provisional"
+    },
+    "facilities.powderRoom.overview.0": {
+      "ja": "Ⅷ号館1階には、関西学院大学で初めて設置されたパウダールームがあります。",
+      "text": "Ⅷ号馆1楼有关西学院大学首次设置的化妆室。",
+      "status": "provisional"
+    },
+    "facilities.powderRoom.overview.1": {
+      "ja": "理系学部の女子学生の増加に対応して整備された施設で、身だしなみを整えるスペースのほか、着替えに利用できるフィッティングルームも備えています。",
+      "text": "这是为应对理科学部女生增加而建的设施，除整理仪容的空间外，还设有可换衣服的试衣间。",
+      "status": "provisional"
+    },
+    "facilities.powderRoom.overview.2": {
+      "ja": "学生がより快適にキャンパスライフを送れるよう配慮された施設の一つです。",
+      "text": "这是为让学生更舒适地度过校园生活而设的设施之一。",
       "status": "provisional"
     },
     "facilities.cafeteria.name": {
