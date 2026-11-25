@@ -605,6 +605,11 @@ TourI18n.register("zh-CN", {
       "text": "Biz咖啡厅",
       "status": "provisional"
     },
+    "facilities.washitsu.name": {
+      "ja": "和室",
+      "text": "和室",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Ⅰ号馆",

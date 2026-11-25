@@ -179,7 +179,7 @@ window.TOUR_CONFIG = {
     // 2026年11月25日（2回目）に追加した写真
     { id: "p11-1", name: "出口付近（生協売店）", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p11", yaw: 0.003, pitch: 0.138 } ], info: [], backButton: { target: "p11", label: "生協売店入口に戻る" } },
     { id: "p13-1", name: "体育館内部", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p13", label: "体育館前に戻る" } },
-    { id: "p15-1", name: "和室前", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p15", label: "ビズカフェに戻る" } },
+    { id: "p15-1", name: "和室前", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p15", yaw: 1.944, pitch: 0.11 } ], info: [ { yaw: 0.037, pitch: 0.138, facility: "washitsu" }, { yaw: -2.34, pitch: 0.109, facility: "bus" } ], backButton: { target: "p15", label: "ビズカフェに戻る" } },
     { id: "p16-terasu", name: "コモンズテラス", map: null, photo: null, view: { yaw: 1.4, pitch: 0, fov: 1.5708 }, northOffset: null, links: [], info: [], backButton: { target: "p16", label: "コモンズ前に戻る" } },
     { id: "p24-1", name: "事務室前（Ⅷ号館）", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p24", label: "Ⅷ号館エントランスに戻る" } },
     { id: "p24-2", name: "パウダールーム（Ⅷ号館）", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p24", label: "Ⅷ号館エントランスに戻る" } }
@@ -298,6 +298,10 @@ window.TOUR_CONFIG = {
     // ビズカフェの情報マーク（中身は確認できた情報をあとで足します）
     "bizcafe": {
       name: "ビズカフェ"
+    },
+    // 和室の情報マーク（中身は確認できた情報をあとで足します）
+    "washitsu": {
+      name: "和室"
     },
     // ↓ 施設情報（riko さんがまとめた内容。overview は段落ごとの配列、sections は見出しごとのまとまり）
     "building1": {

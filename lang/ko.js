@@ -605,6 +605,11 @@ TourI18n.register("ko", {
       "text": "비즈 카페",
       "status": "provisional"
     },
+    "facilities.washitsu.name": {
+      "ja": "和室",
+      "text": "다다미방",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Ⅰ호관",
