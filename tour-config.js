@@ -175,7 +175,7 @@ window.TOUR_CONFIG = {
     { id: "p17-camp", name: "キャンプテント（アカデミックコモンズ）", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p17", yaw: 0.313, pitch: 0.171 } ], info: [ { yaw: 0.187, pitch: 0.806, facility: "campTent" } ], backButton: { target: "p17", label: "アカデミックコモンズに戻る" } },
     { id: "tableterass", name: "中庭", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "201room", name: "Ⅱ号館201号室", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p05", label: "Ⅱ号館前に戻る" } },
-    { id: "101room", name: "Ⅱ号館101号室", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p05", label: "Ⅱ号館前に戻る" } }
+    { id: "101room", name: "Ⅱ号館101号室", map: null, photo: null, view: null, northOffset: null, links: [ { target: "201room", yaw: -0.914, pitch: -0.025 } ], info: [], backButton: { target: "p05", label: "Ⅱ号館前に戻る" } }
   ],
 
   // 画面下のボタン（学部情報・KSCイベント情報・サークル・部活情報）
