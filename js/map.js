@@ -10,6 +10,7 @@
 (function() {
   var SVG_NS = 'http://www.w3.org/2000/svg';
   var FAN_RADIUS = 34;
+  function t(key, vars) { return window.TourI18n ? window.TourI18n.t(key, vars) : key; }
 
   function create(options) {
     var mapConfig = options.map || {};
@@ -58,7 +59,7 @@
         pin.appendChild(number);
         pin.classList.add('numbered');
       }
-      pin.setAttribute('aria-label', scene.name + 'へ移動');
+      pin.setAttribute('aria-label', t('hotspot.goTo', { name: scene.name }));
       pin.addEventListener('click', function() {
         onSelect(scene.id);
       });
@@ -71,7 +72,7 @@
       panelElement.classList.toggle('large', large);
       document.body.classList.toggle('map-large', large);
       sizeButton.textContent = large ? '－' : '＋';
-      sizeButton.setAttribute('aria-label', large ? 'マップを縮小' : 'マップを拡大');
+      sizeButton.setAttribute('aria-label', t(large ? 'map.shrink' : 'map.enlarge'));
       refresh();
     });
 
@@ -173,7 +174,7 @@
       }
       if (hasImage) {
         emptyElement.hidden = !!pin;
-        emptyElement.textContent = pin ? '' : 'この地点はまだマップに登録されていません';
+        emptyElement.textContent = pin ? '' : t('map.notRegistered');
       }
       scrollToCurrent();
     }
@@ -210,7 +211,21 @@
       viewportElement.scrollTop = el.offsetTop - viewportElement.clientHeight / 2;
     }
 
+    // New spot names after a language change.
+    function updateNames(list) {
+      list.forEach(function(item) {
+        var entry = pins[item.id];
+        if (!entry) { return; }
+        entry.scene.name = item.name;
+        entry.element.title = (item.number ? item.number + '. ' : '') + item.name;
+        entry.element.setAttribute('aria-label', t('hotspot.goTo', { name: item.name }));
+      });
+      sizeButton.setAttribute('aria-label', t(panelElement.classList.contains('large') ? 'map.shrink' : 'map.enlarge'));
+      if (hasImage && !pins[currentId]) { emptyElement.textContent = t('map.notRegistered'); }
+    }
+
     return {
+      updateNames: updateNames,
       setCurrent: setCurrent,
       setVisited: setVisited,
       setHeading: setHeading,

@@ -9,6 +9,10 @@
   var panelElement = document.querySelector('#infoPanel');
   var bodyElement = document.querySelector('#infoBody');
   var backdropElement = document.querySelector('#infoBackdrop');
+  // What the panel is showing, so it can be drawn again in another language.
+  var lastShown = null;
+
+  function t(key, vars) { return window.TourI18n ? window.TourI18n.t(key, vars) : key; }
 
   document.querySelector('#infoClose').addEventListener('click', close);
   backdropElement.addEventListener('click', close);
@@ -26,6 +30,7 @@
   });
 
   function open(facility) {
+    lastShown = { kind: 'facility', facility: facility };
     bodyElement.innerHTML = '';
     panelElement.classList.toggle('wide', !!facility.wide);
 
@@ -85,19 +90,19 @@
     }
     if (facility.overview) {
       var overview = el('div', 'info-section');
-      overview.appendChild(el('h3', 'info-heading', '施設概要'));
+      overview.appendChild(el('h3', 'info-heading', t('panel.overview')));
       appendParagraphs(overview, facility.overview);
       bodyElement.appendChild(overview);
     }
     if (facility.purpose) {
       var purpose = el('div', 'info-section');
-      purpose.appendChild(el('h3', 'info-heading', '利用目的'));
+      purpose.appendChild(el('h3', 'info-heading', t('panel.purpose')));
       purpose.appendChild(el('p', 'info-text', facility.purpose));
       bodyElement.appendChild(purpose);
     }
     if (facility.description) {
       var description = el('div', 'info-section');
-      description.appendChild(el('h3', 'info-heading', '説明'));
+      description.appendChild(el('h3', 'info-heading', t('panel.description')));
       appendParagraphs(description, facility.description);
       bodyElement.appendChild(description);
     }
@@ -108,7 +113,7 @@
       var video = createVideo(facility.video);
       if (video) {
         var videoSection = el('div', 'info-section');
-        videoSection.appendChild(el('h3', 'info-heading', '動画'));
+        videoSection.appendChild(el('h3', 'info-heading', t('panel.video')));
         videoSection.appendChild(video);
         bodyElement.appendChild(videoSection);
       }
@@ -116,7 +121,7 @@
     var related = (facility.activities || []).map(resolveActivity).filter(Boolean);
     if (related.length) {
       var relatedSection = el('div', 'info-section');
-      relatedSection.appendChild(el('h3', 'info-heading', '関連する活動'));
+      relatedSection.appendChild(el('h3', 'info-heading', t('panel.related')));
       related.forEach(function(activity) {
         relatedSection.appendChild(createActivityCard(activity));
       });
@@ -134,7 +139,7 @@
       bodyElement.appendChild(links);
     }
     if (facility.source) {
-      bodyElement.appendChild(el('p', 'info-source', '出典：' + facility.source));
+      bodyElement.appendChild(el('p', 'info-source', t('panel.source', { source: facility.source })));
     }
 
     show();
@@ -142,6 +147,7 @@
 
   // "KSCでの学生生活": one card per activity listed in config.studentLife.
   function openActivities(title, lead, activities) {
+    lastShown = { kind: 'activities', args: [title, lead, activities] };
     bodyElement.innerHTML = '';
     panelElement.classList.remove('wide');
     var heading = el('h2', 'info-title', title);
@@ -183,7 +189,7 @@
       if (tab.text) { content.appendChild(el('p', 'info-text', tab.text)); empty = false; }
       (tab.cards || []).forEach(function(card) { content.appendChild(createGuideCard(card)); empty = false; });
       if (tab.links && tab.links.length) { appendLinks(content, tab.links); empty = false; }
-      if (empty) { content.appendChild(el('p', 'info-placeholder', '内容は準備中です。')); }
+      if (empty) { content.appendChild(el('p', 'info-placeholder', t('panel.placeholder'))); }
     }
     wrap.appendChild(bar);
     wrap.appendChild(content);
@@ -285,7 +291,7 @@
           var card = el('div', 'club-card');
           card.appendChild(el('h5', 'club-card-name', group.name));
           (group.links || []).forEach(function(link) {
-            var a = el('a', 'club-card-link', (link.label || '公式サイト') + ' ↗');
+            var a = el('a', 'club-card-link', (link.label || t('panel.officialSite')) + ' ↗');
             a.href = link.url;
             a.target = '_blank';
             a.rel = 'noopener noreferrer';
@@ -295,7 +301,7 @@
         });
         content.appendChild(cards);
       });
-      if (total) { content.insertBefore(el('p', 'club-count', '掲載 ' + total + '団体'), content.querySelector('.club-group-heading')); }
+      if (total) { content.insertBefore(el('p', 'club-count', t('panel.count', { n: total })), content.querySelector('.club-group-heading')); }
       var buttons2 = (section.button ? [section.button] : []).concat(section.buttons || []);
       var actions = el('div', 'guide-actions club-official');
       buttons2.forEach(function(btn, bi) {
@@ -401,7 +407,7 @@
     });
     var links = [];
     if (circle.website) {
-      links.push({ label: circle.website.label || '公式サイトを見る', url: circle.website.url });
+      links.push({ label: circle.website.label || t('panel.viewOfficialSite'), url: circle.website.url });
     }
     (circle.sns || []).forEach(function(link) { links.push(link); });
     (circle.links || []).forEach(function(link) { links.push(link); });
@@ -417,7 +423,7 @@
 
   // Opens the video inside the card (the player is created only when asked for).
   function createVideoToggle(video, player) {
-    var button = el('button', 'guide-button secondary', (video.label || '動画を見る') + ' ▶');
+    var button = el('button', 'guide-button secondary', (video.label || t('panel.watchVideo')) + ' ▶');
     button.type = 'button';
     button.setAttribute('aria-expanded', 'false');
     button.addEventListener('click', function() {
@@ -485,7 +491,7 @@
       video: base.video,
       sections: base.sections,
       note: entry.note,
-      links: (entry.url ? [{ label: entry.label || '関連記事', url: entry.url }] : []).concat(base.links || [])
+      links: (entry.url ? [{ label: entry.label || t('panel.relatedArticle'), url: entry.url }] : []).concat(base.links || [])
     };
   }
 
@@ -580,11 +586,11 @@
     if (images.length > 1) {
       var prev = el('button', 'gallery-nav prev', '‹');
       prev.type = 'button';
-      prev.setAttribute('aria-label', '前の写真');
+      prev.setAttribute('aria-label', t('panel.prevPhoto'));
       prev.addEventListener('click', function() { show(index - 1); });
       var next = el('button', 'gallery-nav next', '›');
       next.type = 'button';
-      next.setAttribute('aria-label', '次の写真');
+      next.setAttribute('aria-label', t('panel.nextPhoto'));
       next.addEventListener('click', function() { show(index + 1); });
       gallery.appendChild(prev);
       gallery.appendChild(next);
@@ -599,7 +605,7 @@
     if (video.youtube) {
       var iframe = document.createElement('iframe');
       iframe.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(video.youtube) + '?rel=0&playsinline=1';
-      iframe.title = video.title || '動画';
+      iframe.title = video.title || t('panel.video');
       iframe.allow = 'accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen';
       iframe.allowFullscreen = true;
       iframe.loading = 'lazy';
@@ -630,5 +636,21 @@
     return node;
   }
 
-  window.TourPanel = { open: open, openActivities: openActivities, close: close };
+  // Draw the open panel again (after a language change), keeping the selected tabs and the scroll position.
+  function refresh() {
+    if (!lastShown || !document.body.classList.contains('info-open')) { return; }
+    var selected = Array.prototype.map.call(bodyElement.querySelectorAll('[role="tablist"]'), function(bar) {
+      var tabs = Array.prototype.slice.call(bar.children);
+      return tabs.indexOf(bar.querySelector('.selected'));
+    });
+    var scroll = panelElement.scrollTop;
+    if (lastShown.kind === 'facility') { open(lastShown.facility); } else { openActivities.apply(null, lastShown.args); }
+    bodyElement.querySelectorAll('[role="tablist"]').forEach(function(bar, i) {
+      var tab = bar.children[selected[i]];
+      if (selected[i] > 0 && tab) { tab.click(); }
+    });
+    panelElement.scrollTop = scroll;
+  }
+
+  window.TourPanel = { open: open, openActivities: openActivities, close: close, refresh: refresh };
 })();

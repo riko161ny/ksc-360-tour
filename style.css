@@ -1861,3 +1861,162 @@ body.mobile .club-tabs {
 body.mobile .club-compact {
   grid-template-columns: 1fr;
 }
+
+/* ---------- 言語切り替え（画面右上） ---------- */
+.lang-switch {
+  position: relative;
+  flex: none;
+  pointer-events: auto;
+}
+
+.lang-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: var(--ui-bg);
+  border: 1px solid var(--ui-border);
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.lang-icon {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+}
+
+.lang-caret {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 150px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--ui-bg-strong);
+  border: 1px solid var(--ui-border);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  z-index: 30;
+}
+
+.lang-menu[hidden] {
+  display: none;
+}
+
+.lang-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.lang-item::before {
+  content: "";
+  display: inline-block;
+  width: 1.2em;
+  flex: none;
+}
+
+.lang-item[aria-checked="true"] {
+  font-weight: bold;
+  color: #ffb27a;
+}
+
+.lang-item[aria-checked="true"]::before {
+  content: "✓";
+}
+
+.lang-item:hover,
+.lang-item:focus-visible {
+  background: rgba(255, 255, 255, 0.12);
+  outline: none;
+}
+
+.lang-button:focus-visible,
+.lang-item:focus-visible {
+  box-shadow: 0 0 0 2px #f07a3a;
+}
+
+body.mobile .lang-button {
+  padding: 0 10px;
+  font-size: 13px;
+}
+
+/* フッターのボタン名：パソコンは長い名前、スマートフォンは短い名前 */
+#controlBar .label-short {
+  display: none;
+}
+
+body.mobile #controlBar .label-full {
+  display: none;
+}
+
+body.mobile #controlBar .label-short {
+  display: inline;
+}
+
+/* 言語ごとの文字（中国語・韓国語は日本語フォントで表示しないようにする） */
+html[lang="ko"] body {
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Hiragino Sans", sans-serif;
+}
+
+html[lang="zh-CN"] body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Hiragino Sans GB", sans-serif;
+}
+
+html[lang="en"] body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Sans", "Noto Sans JP", sans-serif;
+}
+
+html:not([lang="ja"]) .info-text,
+html:not([lang="ja"]) .guide-text {
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+/* ?i18n-report を付けて開いたときの未翻訳一覧（制作用） */
+#i18nReport {
+  position: fixed;
+  left: 8px;
+  bottom: 8px;
+  max-width: min(560px, calc(100% - 16px));
+  max-height: 40vh;
+  overflow: auto;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: rgba(10, 16, 28, 0.92);
+  color: #fff;
+  font: 12px/1.5 monospace;
+  white-space: pre-wrap;
+  z-index: 200;
+}
+
+/* パソコンで施設パネルを開いているときも、言語ボタンと「?」がパネルの左に見えるようにする */
+body.desktop.info-open #topBar {
+  padding-right: calc(min(420px, 100%) + 16px);
+}
+
+body.desktop.info-open:has(#infoPanel.wide) #topBar {
+  padding-right: calc(max(min(66vw, 1100px), min(420px, 100%)) + 16px);
+}
+
+/* スマートフォンでパネルを開いているときも、画面上部の言語ボタンを押せるようにする */
+body.mobile.info-open #topBar {
+  z-index: 51;
+}

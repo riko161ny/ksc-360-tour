@@ -25,6 +25,10 @@
   var config = window.TOUR_CONFIG || {};
   var facilities = config.facilities || {};
   var photoDir = config.photoDir || 'photos';
+  var i18n = window.TourI18n;
+  var t = i18n ? i18n.t : function(key) { return key; };
+  // Functions that put the current language into texts already on screen (hotspots, thumbnails...).
+  var textUpdaters = [];
 
   var STORAGE_VISITED = 'kscTour.visited';
   var STORAGE_HELP = 'kscTour.helpSeen';
@@ -45,10 +49,13 @@
   var noPhotoElement = document.querySelector('#noPhoto');
   var editReadoutElement = document.querySelector('#editReadout');
 
-  document.title = config.shortTitle ? config.shortTitle + '（卒業制作）' : document.title;
-  document.querySelector('#siteTitle').textContent = config.title || '';
-  document.querySelector('#disclaimer').textContent = config.disclaimer || '';
-  document.querySelector('#helpModal .help-note').textContent = config.disclaimer || '';
+  function applySiteTexts() {
+    document.title = config.shortTitle ? config.shortTitle + t('title.suffix') : document.title;
+    document.querySelector('#siteTitle').textContent = config.title || '';
+    document.querySelector('#disclaimer').textContent = config.disclaimer || '';
+    document.querySelector('#helpModal .help-note').textContent = config.disclaimer || '';
+  }
+  applySiteTexts();
 
   // Detect desktop or mobile mode.
   var mql = window.matchMedia('(max-width: 700px), (max-height: 500px)');
@@ -87,7 +94,7 @@
       config: cfg,
       index: index,
       number: index + 1,
-      name: cfg.name || ('地点 ' + (index + 1)),
+      name: spotName(cfg, index),
       photo: cfg.photo || (photoDir + '/' + cfg.id + '.jpg'),
       state: 'new',     // new → loading → ready / missing
       scene: null,
@@ -169,10 +176,10 @@
   // Footer buttons: 学部情報 / KSCイベント情報 / サークル・部活情報 (config.footer).
   var footer = config.footer || {};
   document.querySelector('#facultyButton').addEventListener('click', function() {
-    window.TourPanel.open(footer.faculties || { name: '学部情報' });
+    window.TourPanel.open(footer.faculties || { name: t('footer.faculties') });
   });
   document.querySelector('#eventButton').addEventListener('click', function() {
-    window.TourPanel.open(footer.events || { name: 'KSCイベント情報' });
+    window.TourPanel.open(footer.events || { name: t('footer.events') });
   });
   document.querySelector('#clubButton').addEventListener('click', function() {
     // The same cards as the marks at コモンズ前, put together in one panel.
@@ -181,7 +188,7 @@
       window.TourPanel.open(facilities[clubs.facility]);
       return;
     }
-    var merged = { name: clubs.name || 'サークル・部活情報', lead: clubs.lead || '', cards: [], showCircles: false };
+    var merged = { name: clubs.name || t('footer.clubs'), lead: clubs.lead || '', cards: [], showCircles: false };
     (clubs.from || []).forEach(function(key) {
       var f = facilities[key];
       if (!f) { return; }
@@ -286,7 +293,7 @@
         console.warn('施設情報が見つかりません: ' + hotspot.facility);
         return;
       }
-      container.createHotspot(createInfoHotspotElement(facility.name, facility, facility.icon), { yaw: hotspot.yaw, pitch: hotspot.pitch || 0 });
+      container.createHotspot(createInfoHotspotElement(facility), { yaw: hotspot.yaw, pitch: hotspot.pitch || 0 });
     });
 
     view.addEventListener('change', function() {
@@ -303,16 +310,13 @@
     }
     currentSpot = spot;
     window.TourPanel.close();
-    sceneNameElement.textContent = spot.number + '. ' + spot.name;
     var spotFacility = facilities[spot.config.facility];
     // A facility mark placed in the photo (info with yaw/pitch) replaces the centre label.
     spotInfoButton.hidden = !spotFacility || (spot.config.info || []).length > 0;
-    spotInfoButton.querySelector('.spot-info-name').textContent = spotFacility ? spotFacility.name : '';
-    spotInfoButton.setAttribute('aria-label', spotFacility ? spotFacility.name + 'の施設情報' : '');
     // Optional "go back" button above the bottom bar (backButton: { target, label }).
     var back = spot.config.backButton;
     backButton.hidden = !(back && findSpotById(back.target));
-    backButton.querySelector('.back-button-label').textContent = back ? (back.label || '戻る') : '';
+    updateSpotTexts(spot);
     updateThumbnails(spot);
     map.setCurrent(spot.id);
     if (spotIdFromHash() !== spot.id) {
@@ -352,6 +356,33 @@
         }
       }
     });
+  }
+
+  // Texts for the current spot: name at the top, centre label, back button, coming-soon screen.
+  function updateSpotTexts(spot) {
+    sceneNameElement.textContent = spot.number + '. ' + spot.name;
+    var spotFacility = facilities[spot.config.facility];
+    spotInfoButton.querySelector('.spot-info-name').textContent = spotFacility ? spotFacility.name : '';
+    spotInfoButton.setAttribute('aria-label', spotFacility ? t('spot.infoLabel', { name: spotFacility.name }) : '');
+    var back = spot.config.backButton;
+    backButton.querySelector('.back-button-label').textContent = back ? (back.label || t('spot.back')) : '';
+    noPhotoElement.querySelector('.no-photo-name').textContent = spot.number + '. ' + spot.name;
+  }
+
+  function spotName(cfg, index) {
+    return cfg.name || t('spot.fallback', { n: index + 1 });
+  }
+
+  // Language changed (TourI18n has already rewritten the texts in config): refresh what is on screen.
+  // The scene, the camera direction and zoom are left as they are.
+  function applyLanguage() {
+    applySiteTexts();
+    spots.forEach(function(spot) { spot.name = spotName(spot.config, spot.index); });
+    map.updateNames(spots.map(function(spot) { return { id: spot.id, number: spot.number, name: spot.name }; }));
+    textUpdaters.forEach(function(update) { update(); });
+    if (currentSpot) { updateSpotTexts(currentSpot); }
+    if (!loadingElement.classList.contains('hidden')) { loadingTextElement.textContent = t('loading.text'); }
+    window.TourPanel.refresh();
   }
 
   function updateHeading() {
@@ -397,12 +428,16 @@
 
       var label = document.createElement('span');
       label.className = 'thumb-label';
-      label.textContent = spot.number + '. ' + spot.name;
 
       var badge = document.createElement('span');
       badge.className = 'thumb-visited';
       badge.textContent = '✓';
-      badge.setAttribute('aria-label', '訪問済み');
+      function updateTexts() {
+        label.textContent = spot.number + '. ' + spot.name;
+        badge.setAttribute('aria-label', t('thumb.visited'));
+      }
+      updateTexts();
+      textUpdaters.push(updateTexts);
 
       button.appendChild(img);
       button.appendChild(badge);
@@ -456,7 +491,7 @@
   }
 
   function showLoading(ratio) {
-    loadingTextElement.textContent = '360°写真を読み込んでいます';
+    loadingTextElement.textContent = t('loading.text');
     loadingElement.classList.remove('hidden');
     setLoadingProgress(ratio);
   }
@@ -489,7 +524,6 @@
     inner.classList.add('link-hotspot');
     wrapper.appendChild(inner);
     wrapper.setAttribute('role', 'button');
-    wrapper.setAttribute('aria-label', target.name + 'へ移動');
 
     // Create image element.
     var icon = document.createElement('img');
@@ -501,7 +535,12 @@
     // Destination name, always visible like a signpost.
     var label = document.createElement('div');
     label.classList.add('link-hotspot-label');
-    label.textContent = target.name;
+    function updateTexts() {
+      label.textContent = target.name;
+      wrapper.setAttribute('aria-label', t('hotspot.goTo', { name: target.name }));
+    }
+    updateTexts();
+    textUpdaters.push(updateTexts);
 
     // Add click event handler.
     wrapper.addEventListener('click', function() {
@@ -521,14 +560,20 @@
     return wrapper;
   }
 
-  function createInfoHotspotElement(title, facility, iconText) {
+  function createInfoHotspotElement(facility) {
+    var title = facility.name;
+    var iconText = facility.icon;
     var wrapper = document.createElement('div');
     wrapper.classList.add('hotspot');
     var inner = document.createElement('div');
     inner.classList.add('info-hotspot');
     wrapper.appendChild(inner);
     wrapper.setAttribute('role', 'button');
-    wrapper.setAttribute('aria-label', (title || '施設') + 'の情報');
+    function updateLabel() {
+      wrapper.setAttribute('aria-label', t('hotspot.info', { name: facility.name || t('hotspot.facility') }));
+    }
+    updateLabel();
+    textUpdaters.push(updateLabel);
 
     // Floating 3D text mark (facility.hotspot = { style: "float3d", text, sub })
     var look = facility.hotspot || {};
@@ -549,6 +594,10 @@
         sub.textContent = look.sub;
         body.appendChild(sub);
       }
+      textUpdaters.push(function() {
+        main.textContent = look.text || facility.name || '';
+        if (sub) { sub.textContent = look.sub; }
+      });
       inner.appendChild(body);
       wrapper.addEventListener('click', function() {
         window.TourPanel.open(facility);
@@ -567,6 +616,7 @@
     var label = document.createElement('span');
     label.classList.add('info-hotspot-label');
     label.textContent = title || '';
+    textUpdaters.push(function() { label.textContent = facility.name || ''; });
 
     inner.appendChild(icon);
     if (title) {
@@ -636,6 +686,12 @@
     } catch (e) {
       // Storage may be unavailable (private mode); the tour works without it.
     }
+  }
+
+  // Language menu and the saved language (see js/i18n.js).
+  if (i18n) {
+    i18n.onChange(applyLanguage);
+    i18n.start();
   }
 
   // Display the initial spot: URL hash, then config.startSpot, then the first spot.
