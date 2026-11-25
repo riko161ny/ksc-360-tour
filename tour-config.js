@@ -175,7 +175,14 @@ window.TOUR_CONFIG = {
     { id: "p17-camp", name: "キャンプテント（アカデミックコモンズ）", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p17", yaw: 0.313, pitch: 0.171 } ], info: [ { yaw: 0.187, pitch: 0.806, facility: "campTent" } ], backButton: { target: "p17", label: "アカデミックコモンズに戻る" } },
     { id: "tableterass", name: "中庭", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "201room", name: "Ⅱ号館201号室", map: null, photo: null, view: null, northOffset: null, links: [ { target: "101room", yaw: -0.968, pitch: 0.099 } ], info: [], backButton: { target: "p05", label: "Ⅱ号館前に戻る" } },
-    { id: "101room", name: "Ⅱ号館101号室", map: null, photo: null, view: null, northOffset: null, links: [ { target: "201room", yaw: -0.914, pitch: -0.025 }, { target: "p05", yaw: -2.094, pitch: 0.073 } ], info: [], backButton: { target: "p05", label: "Ⅱ号館前に戻る" } }
+    { id: "101room", name: "Ⅱ号館101号室", map: null, photo: null, view: null, northOffset: null, links: [ { target: "201room", yaw: -0.914, pitch: -0.025 }, { target: "p05", yaw: -2.094, pitch: 0.073 } ], info: [], backButton: { target: "p05", label: "Ⅱ号館前に戻る" } },
+    // 2026年11月25日（2回目）に追加した写真
+    { id: "p11-1", name: "出口付近（生協売店）", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p11", label: "生協売店入口に戻る" } },
+    { id: "p13-1", name: "体育館内部", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p13", label: "体育館前に戻る" } },
+    { id: "p15-1", name: "和室前", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p15", label: "ビズカフェに戻る" } },
+    { id: "p16-terasu", name: "コモンズテラス", map: null, photo: null, view: { yaw: 1.4, pitch: 0, fov: 1.5708 }, northOffset: null, links: [], info: [], backButton: { target: "p16", label: "コモンズ前に戻る" } },
+    { id: "p24-1", name: "事務室前（Ⅷ号館）", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p24", label: "Ⅷ号館エントランスに戻る" } },
+    { id: "p24-2", name: "パウダールーム（Ⅷ号館）", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p24", label: "Ⅷ号館エントランスに戻る" } }
   ],
 
   // 画面下のボタン（学部情報・KSCイベント情報・サークル・部活情報）

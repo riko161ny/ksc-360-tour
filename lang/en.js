@@ -360,6 +360,66 @@ TourI18n.register("en", {
       "text": "Back to the front of Building II",
       "status": "provisional"
     },
+    "spots.p11-1.name": {
+      "ja": "出口付近（生協売店）",
+      "text": "Near the Exit (Co-op Store)",
+      "status": "provisional"
+    },
+    "spots.p11-1.backButton.label": {
+      "ja": "生協売店入口に戻る",
+      "text": "Back to the Co-op Store entrance",
+      "status": "provisional"
+    },
+    "spots.p13-1.name": {
+      "ja": "体育館内部",
+      "text": "Inside the Gymnasium",
+      "status": "provisional"
+    },
+    "spots.p13-1.backButton.label": {
+      "ja": "体育館前に戻る",
+      "text": "Back to the front of the Gymnasium",
+      "status": "provisional"
+    },
+    "spots.p15-1.name": {
+      "ja": "和室前",
+      "text": "In front of the Japanese-style Room",
+      "status": "provisional"
+    },
+    "spots.p15-1.backButton.label": {
+      "ja": "ビズカフェに戻る",
+      "text": "Back to Biz Cafe",
+      "status": "provisional"
+    },
+    "spots.p16-terasu.name": {
+      "ja": "コモンズテラス",
+      "text": "Commons Terrace",
+      "status": "provisional"
+    },
+    "spots.p16-terasu.backButton.label": {
+      "ja": "コモンズ前に戻る",
+      "text": "Back to the front of the Commons",
+      "status": "provisional"
+    },
+    "spots.p24-1.name": {
+      "ja": "事務室前（Ⅷ号館）",
+      "text": "In front of the Office (Building VIII)",
+      "status": "provisional"
+    },
+    "spots.p24-1.backButton.label": {
+      "ja": "Ⅷ号館エントランスに戻る",
+      "text": "Back to the Building VIII entrance",
+      "status": "provisional"
+    },
+    "spots.p24-2.name": {
+      "ja": "パウダールーム（Ⅷ号館）",
+      "text": "Powder Room (Building VIII)",
+      "status": "provisional"
+    },
+    "spots.p24-2.backButton.label": {
+      "ja": "Ⅷ号館エントランスに戻る",
+      "text": "Back to the Building VIII entrance",
+      "status": "provisional"
+    },
     "footer.faculties.name": {
       "ja": "学部情報",
       "text": "Schools",

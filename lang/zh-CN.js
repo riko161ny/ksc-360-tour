@@ -360,6 +360,66 @@ TourI18n.register("zh-CN", {
       "text": "返回Ⅱ号馆前",
       "status": "provisional"
     },
+    "spots.p11-1.name": {
+      "ja": "出口付近（生協売店）",
+      "text": "出口附近（生协小卖部）",
+      "status": "provisional"
+    },
+    "spots.p11-1.backButton.label": {
+      "ja": "生協売店入口に戻る",
+      "text": "返回生协小卖部入口",
+      "status": "provisional"
+    },
+    "spots.p13-1.name": {
+      "ja": "体育館内部",
+      "text": "体育馆内部",
+      "status": "provisional"
+    },
+    "spots.p13-1.backButton.label": {
+      "ja": "体育館前に戻る",
+      "text": "返回体育馆前",
+      "status": "provisional"
+    },
+    "spots.p15-1.name": {
+      "ja": "和室前",
+      "text": "和室前",
+      "status": "provisional"
+    },
+    "spots.p15-1.backButton.label": {
+      "ja": "ビズカフェに戻る",
+      "text": "返回Biz咖啡厅",
+      "status": "provisional"
+    },
+    "spots.p16-terasu.name": {
+      "ja": "コモンズテラス",
+      "text": "学术共享空间露台",
+      "status": "provisional"
+    },
+    "spots.p16-terasu.backButton.label": {
+      "ja": "コモンズ前に戻る",
+      "text": "返回学术共享空间前",
+      "status": "provisional"
+    },
+    "spots.p24-1.name": {
+      "ja": "事務室前（Ⅷ号館）",
+      "text": "办公室前（Ⅷ号馆）",
+      "status": "provisional"
+    },
+    "spots.p24-1.backButton.label": {
+      "ja": "Ⅷ号館エントランスに戻る",
+      "text": "返回Ⅷ号馆入口",
+      "status": "provisional"
+    },
+    "spots.p24-2.name": {
+      "ja": "パウダールーム（Ⅷ号館）",
+      "text": "化妆间（Ⅷ号馆）",
+      "status": "provisional"
+    },
+    "spots.p24-2.backButton.label": {
+      "ja": "Ⅷ号館エントランスに戻る",
+      "text": "返回Ⅷ号馆入口",
+      "status": "provisional"
+    },
     "footer.faculties.name": {
       "ja": "学部情報",
       "text": "学部信息",

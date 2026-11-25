@@ -360,6 +360,66 @@ TourI18n.register("ko", {
       "text": "Ⅱ호관 앞으로 돌아가기",
       "status": "provisional"
     },
+    "spots.p11-1.name": {
+      "ja": "出口付近（生協売店）",
+      "text": "출구 부근(생협 매점)",
+      "status": "provisional"
+    },
+    "spots.p11-1.backButton.label": {
+      "ja": "生協売店入口に戻る",
+      "text": "생협 매점 입구로 돌아가기",
+      "status": "provisional"
+    },
+    "spots.p13-1.name": {
+      "ja": "体育館内部",
+      "text": "체육관 내부",
+      "status": "provisional"
+    },
+    "spots.p13-1.backButton.label": {
+      "ja": "体育館前に戻る",
+      "text": "체육관 앞으로 돌아가기",
+      "status": "provisional"
+    },
+    "spots.p15-1.name": {
+      "ja": "和室前",
+      "text": "다다미방 앞",
+      "status": "provisional"
+    },
+    "spots.p15-1.backButton.label": {
+      "ja": "ビズカフェに戻る",
+      "text": "비즈 카페로 돌아가기",
+      "status": "provisional"
+    },
+    "spots.p16-terasu.name": {
+      "ja": "コモンズテラス",
+      "text": "커먼즈 테라스",
+      "status": "provisional"
+    },
+    "spots.p16-terasu.backButton.label": {
+      "ja": "コモンズ前に戻る",
+      "text": "커먼즈 앞으로 돌아가기",
+      "status": "provisional"
+    },
+    "spots.p24-1.name": {
+      "ja": "事務室前（Ⅷ号館）",
+      "text": "사무실 앞(Ⅷ호관)",
+      "status": "provisional"
+    },
+    "spots.p24-1.backButton.label": {
+      "ja": "Ⅷ号館エントランスに戻る",
+      "text": "Ⅷ호관 입구로 돌아가기",
+      "status": "provisional"
+    },
+    "spots.p24-2.name": {
+      "ja": "パウダールーム（Ⅷ号館）",
+      "text": "파우더룸(Ⅷ호관)",
+      "status": "provisional"
+    },
+    "spots.p24-2.backButton.label": {
+      "ja": "Ⅷ号館エントランスに戻る",
+      "text": "Ⅷ호관 입구로 돌아가기",
+      "status": "provisional"
+    },
     "footer.faculties.name": {
       "ja": "学部情報",
       "text": "학부 정보",
