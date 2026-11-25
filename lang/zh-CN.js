@@ -515,6 +515,26 @@ TourI18n.register("zh-CN", {
       "text": "研讨课",
       "status": "provisional"
     },
+    "facilities.chapel.name": {
+      "ja": "チャペル",
+      "text": "礼拜堂",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.name": {
+      "ja": "第二厚生棟",
+      "text": "第二福利楼",
+      "status": "provisional"
+    },
+    "facilities.commons.name": {
+      "ja": "アカデミックコモンズ",
+      "text": "学术共享空间（Academic Commons）",
+      "status": "provisional"
+    },
+    "facilities.campTent.name": {
+      "ja": "キャンプテント",
+      "text": "露营帐篷",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Ⅰ号馆",

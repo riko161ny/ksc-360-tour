@@ -515,6 +515,26 @@ TourI18n.register("en", {
       "text": "Seminar",
       "status": "provisional"
     },
+    "facilities.chapel.name": {
+      "ja": "チャペル",
+      "text": "Lambuth Memorial Chapel",
+      "status": "official"
+    },
+    "facilities.studentHall2.name": {
+      "ja": "第二厚生棟",
+      "text": "Student Hall II",
+      "status": "official"
+    },
+    "facilities.commons.name": {
+      "ja": "アカデミックコモンズ",
+      "text": "Academic Commons",
+      "status": "official"
+    },
+    "facilities.campTent.name": {
+      "ja": "キャンプテント",
+      "text": "Camping Tent",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Building I",

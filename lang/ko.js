@@ -515,6 +515,26 @@ TourI18n.register("ko", {
       "text": "세미나",
       "status": "provisional"
     },
+    "facilities.chapel.name": {
+      "ja": "チャペル",
+      "text": "채플",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.name": {
+      "ja": "第二厚生棟",
+      "text": "제2후생동",
+      "status": "provisional"
+    },
+    "facilities.commons.name": {
+      "ja": "アカデミックコモンズ",
+      "text": "아카데믹 커먼즈",
+      "status": "provisional"
+    },
+    "facilities.campTent.name": {
+      "ja": "キャンプテント",
+      "text": "캠핑 텐트",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Ⅰ호관",
