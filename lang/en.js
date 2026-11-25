@@ -1925,6 +1925,506 @@ TourI18n.register("en", {
       "text": "The 4th floor has many general books useful for study and research. There are also course reserve books for classes and books on careers, qualifications and studying abroad, so it can be used for many purposes.",
       "status": "provisional"
     },
+    "facilities.studentHall1.name": {
+      "ja": "第一厚生棟",
+      "text": "Student Hall I",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.overview.0": {
+      "ja": "第一厚生棟には、1階に食堂「Lunch Box」、2階に大学生協の購買店舗「Toy Box」があります。",
+      "text": "Student Hall I has the Lunch Box cafeteria on the 1st floor and Toy Box, the university co-op store, on the 2nd floor.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.0.title": {
+      "ja": "1階｜食堂 Lunch Box",
+      "text": "1st floor | Lunch Box cafeteria",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.0.text": {
+      "ja": "ゆったりとしたスペースで食事ができる、大学生協の食堂です。",
+      "text": "A university co-op cafeteria with plenty of room to enjoy your meal.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.0.rows.0.0": {
+      "ja": "場所",
+      "text": "Location",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.0.rows.0.1": {
+      "ja": "第一厚生棟1階",
+      "text": "Student Hall I, 1st floor",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.0.rows.1.0": {
+      "ja": "営業時間（平日）",
+      "text": "Hours (weekdays)",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.0.rows.1.1": {
+      "ja": "8:30〜9:30・10:30〜19:00",
+      "text": "8:30–9:30, 10:30–19:00",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.0.rows.2.0": {
+      "ja": "営業時間（土曜）",
+      "text": "Hours (Saturday)",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.0.rows.3.0": {
+      "ja": "休業日",
+      "text": "Closed",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.0.rows.3.1": {
+      "ja": "日曜日（2026年11月は3日も休業）",
+      "text": "Sundays (also closed on November 3, 2026)",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.0.note": {
+      "ja": "2026年11月の営業時間です。時期によって変更されます。",
+      "text": "These are the hours for November 2026. They change depending on the time of year.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.title": {
+      "ja": "2階｜Toy Box（トイボックス）",
+      "text": "2nd floor | Toy Box",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.highlight": {
+      "ja": "大学生活を支える、生協の総合購買店舗",
+      "text": "The co-op's all-round store for university life",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.text.0": {
+      "ja": "第一厚生棟2階にある「Toy Box」は、関西学院大学生活協同組合が運営する購買店舗です。",
+      "text": "Toy Box, on the 2nd floor of Student Hall I, is a store run by the Kwansei Gakuin University Co-op.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.text.1": {
+      "ja": "授業で使用する教科書や参考書、ノートなどの文房具、パソコン、関学オリジナルグッズなどを販売しています。",
+      "text": "It sells textbooks and reference books for classes, notebooks and other stationery, computers, and Kwansei Gakuin original goods.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.text.2": {
+      "ja": "さらに、旅行や資格取得、自動車学校、ゼミ合宿の手配など、大学生活に関係する幅広いサービスを取り扱っています。",
+      "text": "It also offers a wide range of services for university life, such as travel, qualifications, driving schools and arranging seminar trips.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.rows.0.0": {
+      "ja": "店舗名",
+      "text": "Store",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.rows.1.0": {
+      "ja": "場所",
+      "text": "Location",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.rows.1.1": {
+      "ja": "第一厚生棟2階",
+      "text": "Student Hall I, 2nd floor",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.rows.2.0": {
+      "ja": "運営",
+      "text": "Run by",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.rows.2.1": {
+      "ja": "関西学院大学生活協同組合",
+      "text": "Kwansei Gakuin University Co-op",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.rows.3.0": {
+      "ja": "営業時間",
+      "text": "Opening hours",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.rows.4.0": {
+      "ja": "休業日",
+      "text": "Closed",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.rows.4.1": {
+      "ja": "2026年11月は土日休業（11月3日も休業）",
+      "text": "Closed on weekends in November 2026 (also closed on November 3)",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.note.0": {
+      "ja": "2026年11月の通常営業日の営業時間です。11月23日は17:00までの営業でした。",
+      "text": "These are the regular hours for November 2026. On November 23 the store closed at 17:00.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.note.1": {
+      "ja": "営業時間は時期によって変更されます。最新情報は関学生協公式サイトをご確認ください。",
+      "text": "Opening hours change depending on the time of year. Please check the Kwansei Gakuin co-op's official website for the latest information.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.1.buttons.0.label": {
+      "ja": "最新の営業時間を見る",
+      "text": "See the latest opening hours",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.title": {
+      "ja": "授業に必要なものから関学グッズまで",
+      "text": "From class essentials to Kwansei Gakuin goods",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.text": {
+      "ja": "Toy Boxでは、授業に必要な学習用品から、学生生活を便利にする商品まで幅広く取り扱っています。",
+      "text": "Toy Box carries everything from study supplies for classes to items that make student life easier.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.0.name": {
+      "ja": "教科書・参考書",
+      "text": "Textbooks and reference books",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.0.chips.0": {
+      "ja": "教科書",
+      "text": "Textbooks",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.0.chips.1": {
+      "ja": "参考書",
+      "text": "Reference books",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.0.chips.2": {
+      "ja": "書籍・雑誌",
+      "text": "Books and magazines",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.0.text": {
+      "ja": "大学の講義や実習で使う参考書などを購入できます。書籍の注文もできます。",
+      "text": "You can buy reference books and other books used in lectures and practical classes. You can also order books.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.1.name": {
+      "ja": "文房具",
+      "text": "Stationery",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.1.chips.0": {
+      "ja": "ノート",
+      "text": "Notebooks",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.1.chips.1": {
+      "ja": "ファイル",
+      "text": "Files",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.1.text": {
+      "ja": "授業や課題に必要な文房具を、生協の割引価格で販売しています。",
+      "text": "Stationery for classes and assignments is sold at co-op discount prices.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.2.name": {
+      "ja": "パソコン・周辺機器",
+      "text": "Computers and accessories",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.2.chips.0": {
+      "ja": "パソコン",
+      "text": "Computers",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.2.chips.1": {
+      "ja": "周辺機器",
+      "text": "Accessories",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.2.text": {
+      "ja": "パソコン本体から周辺機器まで取り扱い、パソコンに関する質問にも対応しています。",
+      "text": "It sells computers and accessories, and staff can answer your computer questions.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.3.name": {
+      "ja": "関学オリジナルグッズ",
+      "text": "Kwansei Gakuin original goods",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.3.chips.0": {
+      "ja": "ボールペン",
+      "text": "Ballpoint pens",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.3.chips.1": {
+      "ja": "ノート",
+      "text": "Notebooks",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.3.chips.2": {
+      "ja": "スウェット",
+      "text": "Sweatshirts",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.3.chips.3": {
+      "ja": "クッキー",
+      "text": "Cookies",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.items.3.text": {
+      "ja": "関学のオリジナルグッズです。おみやげにもおすすめです。",
+      "text": "Original Kwansei Gakuin goods. They also make good souvenirs.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.2.note": {
+      "ja": "商品例は関学生協公式サイトの紹介です。取扱商品や在庫は時期によって異なります。",
+      "text": "The example items come from the co-op's official website. Items and stock vary by season.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.3.title": {
+      "ja": "買い物だけじゃない！学生生活をサポート",
+      "text": "More than shopping: support for student life",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.3.text": {
+      "ja": "Toy Boxでは、商品の販売のほかに、学生生活に関するさまざまなサービスを取り扱っています。",
+      "text": "Besides selling goods, Toy Box offers a variety of services for student life.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.3.items.0.name": {
+      "ja": "資格・検定",
+      "text": "Qualifications and tests",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.3.items.0.text": {
+      "ja": "TOEFLなどの検定の申込みや、資格スクールの申込みができます。",
+      "text": "You can apply for tests such as TOEFL and sign up for qualification schools.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.3.items.1.name": {
+      "ja": "自動車学校",
+      "text": "Driving schools",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.3.items.1.text": {
+      "ja": "自動車学校に生協の割引価格で入校できます。夏休み・春休みなどを使った合宿制の自動車学校も申し込めます。",
+      "text": "You can enroll in driving schools at co-op discount prices, including residential driving courses during the summer and spring breaks.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.3.items.2.name": {
+      "ja": "国内・海外旅行",
+      "text": "Domestic and overseas travel",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.3.items.2.text": {
+      "ja": "旅行の申込みや、語学留学などの相談ができます。",
+      "text": "You can book trips and get advice on language study abroad.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.3.items.3.name": {
+      "ja": "ゼミ合宿",
+      "text": "Seminar trips",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.3.items.3.text": {
+      "ja": "ゼミ合宿の手配を取り扱っています。",
+      "text": "It arranges overnight trips for seminar classes.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.3.items.4.name": {
+      "ja": "住まいの紹介",
+      "text": "Housing referrals",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.3.items.4.text": {
+      "ja": "関学生協の店舗案内で、Toy Boxの取扱いとして掲載されています。詳しい内容は公式サイトでご確認ください。",
+      "text": "The co-op's store guide lists this as a Toy Box service. Please check the official website for details.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.3.note": {
+      "ja": "割引や取扱内容は変更される場合があります。",
+      "text": "Discounts and services may change.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.title": {
+      "ja": "通学に便利な「関学NicoPa」",
+      "text": "Kangaku NicoPa, handy for commuting",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.text.0": {
+      "ja": "関学NicoPaは、神姫バスで関西学院大学に通学する学生向けのICカードです。",
+      "text": "Kangaku NicoPa is an IC card for students who commute to Kwansei Gakuin University by Shinki Bus.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.text.1": {
+      "ja": "Toy Boxでは、関学NicoPaの販売とチャージに対応しています。アカデミックコモンズにもチャージ機が設置されています。",
+      "text": "Toy Box sells Kangaku NicoPa cards and lets you top them up. There is also a top-up machine in the Academic Commons.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.text.2": {
+      "ja": "関学生協の公式案内では、現金チャージ時に25％のプレミアが付くことや、神戸三田キャンパスへの指定通学路線で特別運賃が適用されることが紹介されています。",
+      "text": "According to the co-op's official guide, cash top-ups come with a 25% bonus, and special fares apply on designated commuter routes to Kobe-Sanda Campus.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.rows.0.0": {
+      "ja": "対象",
+      "text": "For",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.rows.0.1": {
+      "ja": "神姫バスで関学に通学する学生",
+      "text": "Students who commute to Kwansei Gakuin by Shinki Bus",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.rows.1.0": {
+      "ja": "販売場所",
+      "text": "Where to buy",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.rows.1.1": {
+      "ja": "Toy Box（神戸三田キャンパスではToy Boxのみ）",
+      "text": "Toy Box (only Toy Box on Kobe-Sanda Campus)",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.rows.2.0": {
+      "ja": "チャージ",
+      "text": "Top-up",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.rows.2.1": {
+      "ja": "Toy Box・アカデミックコモンズ",
+      "text": "Toy Box, Academic Commons",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.rows.3.0": {
+      "ja": "特徴",
+      "text": "Benefits",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.rows.3.1": {
+      "ja": "現金チャージ時のプレミア、指定路線の特別運賃",
+      "text": "Bonus on cash top-ups, special fares on designated routes",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.more.title": {
+      "ja": "シャトルバスの乗車券",
+      "text": "Shuttle bus tickets",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.more.text": {
+      "ja": "西宮上ケ原キャンパスと神戸三田キャンパスを結ぶシャトルバスの乗車券も、Toy Boxで販売されています（神戸三田キャンパスではColorful Boxでも販売）。運賃や運行日は変更される場合があるため、公式ページで最新情報をご確認ください。",
+      "text": "Toy Box also sells tickets for the shuttle bus between Nishinomiya-Uegahara Campus and Kobe-Sanda Campus (on Kobe-Sanda Campus they are also sold at Colorful Box). Fares and operating days may change, so please check the official page for the latest information.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.note": {
+      "ja": "利用条件や制度は変更される可能性があります。",
+      "text": "Conditions and the scheme itself may change.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.4.buttons.0.label": {
+      "ja": "関学NicoPaについて詳しく見る",
+      "text": "Learn more about Kangaku NicoPa",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.5.title": {
+      "ja": "KSCオリジナルマイボトル",
+      "text": "KSC original reusable bottle",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.5.text.0": {
+      "ja": "神戸三田キャンパスの学生有志グループ「CAMP×US」とアウトドアブランド「Snow Peak」が共同開発したオリジナルマイボトルも、Toy Boxで販売されています。",
+      "text": "Toy Box also sells the original reusable bottle co-developed by CAMP×US, a volunteer student group at Kobe-Sanda Campus, and the outdoor brand Snow Peak.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.5.text.1": {
+      "ja": "キャンパス内の使い捨てペットボトルの削減を目指して開発されたもので、BiZCAFEではこのマイボトルを持参して無料ドリンクを楽しめます。",
+      "text": "It was developed to cut down on single-use plastic bottles on campus. At BiZCAFE you can bring this bottle and enjoy free drinks.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.5.rows.0.0": {
+      "ja": "容量",
+      "text": "Capacity",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.5.rows.1.0": {
+      "ja": "価格",
+      "text": "Price",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.5.rows.1.1": {
+      "ja": "2,250円（税込）",
+      "text": "¥2,250 (tax included)",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.5.rows.2.0": {
+      "ja": "購入場所",
+      "text": "Where to buy",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.5.rows.3.0": {
+      "ja": "購入方法",
+      "text": "How to buy",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.5.rows.3.1": {
+      "ja": "学生証の提示・所有者登録",
+      "text": "Show your student ID and register as the owner",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.5.rows.4.0": {
+      "ja": "購入制限",
+      "text": "Limit",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.5.rows.4.1": {
+      "ja": "1人1回のみ",
+      "text": "Once per person",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.5.rows.5.0": {
+      "ja": "転売・譲渡",
+      "text": "Resale / transfer",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.5.rows.5.1": {
+      "ja": "禁止",
+      "text": "Not allowed",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.5.note": {
+      "ja": "価格・購入条件はBiZCAFE神戸三田店の公式Instagramの投稿時点の情報です。販売価格や在庫は変更される場合があります。",
+      "text": "The price and purchase conditions are as posted on BiZCAFE Kobe-Sanda's official Instagram. Prices and stock may change.",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.5.buttons.0.label": {
+      "ja": "BiZCAFEについて詳しく見る",
+      "text": "Learn more about BiZCAFE",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.6.title": {
+      "ja": "公式情報",
+      "text": "Official information",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.6.buttons.0.label": {
+      "ja": "Toy Boxの店舗情報を見る",
+      "text": "See Toy Box store information",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.6.buttons.1.label": {
+      "ja": "最新の営業時間を見る",
+      "text": "See the latest opening hours",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.6.buttons.2.label": {
+      "ja": "関学NicoPaについて",
+      "text": "About Kangaku NicoPa",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.sections.6.buttons.3.label": {
+      "ja": "BiZCAFE公式Instagramを見る",
+      "text": "See BiZCAFE's official Instagram",
+      "status": "provisional"
+    },
+    "facilities.studentHall1.source": {
+      "ja": "関西学院大学生活協同組合 公式サイト（2026年11月確認）、BiZCAFE神戸三田店 公式Instagram",
+      "text": "Kwansei Gakuin University Co-op official website (checked November 2026), BiZCAFE Kobe-Sanda official Instagram",
+      "status": "provisional"
+    },
     "facilities.room101.name": {
       "ja": "Ⅵ号館101教室",
       "text": "Building VI, Room 101",

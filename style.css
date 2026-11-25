@@ -2560,3 +2560,29 @@ body.mobile .shape-moon .cloud-text,
 body.mobile .shape-cross .cloud-text {
   font-size: 13px;
 }
+
+/* 項目を小さなカードで並べる表示（itemsStyle: "cards"） */
+.info-items-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.info-items-cards .info-item {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 12px;
+  background: #f6f2ec;
+}
+
+.info-items-cards .info-item .info-facts {
+  margin: 4px 0 2px;
+}
+
+.info-items-cards .info-item .info-fact {
+  font-size: 12px;
+}
+
+body.mobile .info-items-cards {
+  grid-template-columns: 1fr;
+}

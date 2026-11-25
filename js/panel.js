@@ -256,10 +256,12 @@
       box.appendChild(table);
     }
     if (section.items && section.items.length) {
-      var list = el('ul', 'info-items');
+      // itemsStyle: "cards" shows the items as small cards side by side (one column on phones).
+      var list = el('ul', 'info-items' + (section.itemsStyle === 'cards' ? ' info-items-cards' : ''));
       section.items.forEach(function(it) {
         var li = el('li', 'info-item');
         li.appendChild(el('span', 'info-item-name', it.name || ''));
+        if (it.chips && it.chips.length) { li.appendChild(createChips(it.chips)); }
         if (it.text) { li.appendChild(el('span', 'info-item-text', it.text)); }
         if (it.note) { li.appendChild(el('span', 'info-item-note', it.note)); }
         if ((it.videos && it.videos.length) || (it.links && it.links.length)) {
@@ -696,9 +698,19 @@
     }
     var actions = el('div', 'guide-actions');
     buttons.forEach(function(link) {
+      // { openFacility: key, label }: opens another card in this tour without moving the 360° view.
+      if (link.openFacility) {
+        var target = window.TOUR_CONFIG && window.TOUR_CONFIG.facilities && window.TOUR_CONFIG.facilities[link.openFacility];
+        if (!target) { return; }
+        var b = el('button', 'guide-button', link.label || target.name);
+        b.type = 'button';
+        b.addEventListener('click', function() { open(target); });
+        actions.appendChild(b);
+        return;
+      }
       actions.appendChild(createLinkButton(link));
     });
-    parent.appendChild(actions);
+    if (actions.children.length) { parent.appendChild(actions); }
   }
 
   function createLinkButton(link, secondary) {
