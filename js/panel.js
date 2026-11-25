@@ -216,9 +216,34 @@
   }
 
   // A headed block: paragraphs, a list of { name, text, note }, a two-column table, a note and links.
+  // Optional: fold (true = closed, "open" = open, tap the heading to fold), highlight (a stand-out line),
+  // figure { src, caption } (shown only when src is set), chips (small labels),
+  // more { title, chips, text, note } (a fold-out inside the section), buttons (link buttons). note may be a list.
   function createSection(section) {
-    var box = el('div', 'info-section');
-    if (section.title) { box.appendChild(el('h3', 'info-heading', section.title)); }
+    var outer = el('div', 'info-section');
+    var box = outer;
+    if (section.fold) {
+      var details = el('details', 'info-fold');
+      if (section.fold === 'open') { details.open = true; }
+      details.appendChild(el('summary', 'info-fold-title', section.title || ''));
+      box = el('div', 'info-fold-body');
+      details.appendChild(box);
+      outer.appendChild(details);
+    } else if (section.title) {
+      box.appendChild(el('h3', 'info-heading', section.title));
+    }
+    if (section.highlight) { box.appendChild(el('p', 'info-highlight', section.highlight)); }
+    if (section.figure && section.figure.src) {
+      var figure = el('figure', 'info-figure');
+      var image = document.createElement('img');
+      image.src = section.figure.src;
+      image.alt = section.figure.caption || '';
+      image.decoding = 'async';
+      figure.appendChild(image);
+      if (section.figure.caption) { figure.appendChild(el('figcaption', 'info-caption', section.figure.caption)); }
+      box.appendChild(figure);
+    }
+    if (section.chips && section.chips.length) { box.appendChild(createChips(section.chips)); }
     if (section.text) { appendParagraphs(box, section.text); }
     if (section.items && section.items.length) {
       var list = el('ul', 'info-items');
@@ -249,9 +274,32 @@
       });
       box.appendChild(table);
     }
-    if (section.note) { box.appendChild(el('p', 'info-note', '※' + section.note)); }
+    if (section.more) {
+      var more = el('details', 'activity-more');
+      more.appendChild(el('summary', 'activity-more-title', section.more.title || ''));
+      var moreBody = el('div', 'activity-more-body');
+      if (section.more.chips && section.more.chips.length) { moreBody.appendChild(createChips(section.more.chips)); }
+      if (section.more.text) { appendParagraphs(moreBody, section.more.text); }
+      if (section.more.note) { appendNotes(moreBody, section.more.note); }
+      more.appendChild(moreBody);
+      box.appendChild(more);
+    }
+    if (section.note) { appendNotes(box, section.note); }
+    if (section.buttons && section.buttons.length) { appendButtons(box, section.buttons); }
     if (section.links && section.links.length) { appendLinks(box, section.links); }
-    return box;
+    return outer;
+  }
+
+  function createChips(chips) {
+    var wrap = el('div', 'info-facts');
+    chips.forEach(function(chip) { wrap.appendChild(el('span', 'info-fact', chip)); });
+    return wrap;
+  }
+
+  function appendNotes(parent, note) {
+    (Array.isArray(note) ? note : [note]).forEach(function(n) {
+      parent.appendChild(el('p', 'info-note', '※' + n));
+    });
   }
 
   // 「部活・サークル」: one top tab per section (KSC / 体育会 / 文化総部), each with category headings and small cards.

@@ -601,8 +601,423 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "facilities.bizcafe.name": {
-      "ja": "ビズカフェ",
-      "text": "Biz Cafe",
+      "ja": "BiZCAFE（ビズカフェ）",
+      "text": "BiZCAFE",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.facts.0": {
+      "ja": "学生はドリンク無料",
+      "text": "Free drinks for students",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.facts.1": {
+      "ja": "Wi-Fiあり",
+      "text": "Wi-Fi available",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.facts.2": {
+      "ja": "コンセントあり",
+      "text": "Power outlets",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.facts.3": {
+      "ja": "10:25〜16:55（土日祝休み）",
+      "text": "10:25–16:55 (closed weekends and holidays)",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.lead": {
+      "ja": "無料ドリンクを楽しみながら、学び、交流できるカフェ",
+      "text": "A café where you can study and connect over free drinks",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.overview.0": {
+      "ja": "BiZCAFEは、2021年4月に神戸三田キャンパスのアカデミックコモンズ1階にオープンした、学生のキャリア形成とSDGsの推進を目的とするカフェです。",
+      "text": "BiZCAFE opened in April 2021 on the first floor of the Academic Commons at Kobe-Sanda Campus. It is a café that aims to support students' career development and promote the SDGs.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.overview.1": {
+      "ja": "学生同士の交流や自習、課題の作成などに利用できるほか、企業の社会人と交流するイベントも開催されています。",
+      "text": "Students use it to meet friends, study on their own and work on assignments, and it also hosts events where students can talk with people working at companies.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.overview.2": {
+      "ja": "学生が無料でドリンクを楽しめることも特徴です。",
+      "text": "Another highlight is that students can enjoy drinks for free.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.title": {
+      "ja": "基本情報",
+      "text": "Basic information",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.rows.0.0": {
+      "ja": "施設名",
+      "text": "Name",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.rows.0.1": {
+      "ja": "BiZCAFE（ビズカフェ）",
+      "text": "BiZCAFE",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.rows.1.0": {
+      "ja": "場所",
+      "text": "Location",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.rows.1.1": {
+      "ja": "アカデミックコモンズ1階",
+      "text": "Academic Commons, 1st floor",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.rows.2.0": {
+      "ja": "営業時間",
+      "text": "Opening hours",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.rows.3.0": {
+      "ja": "定休日",
+      "text": "Closed",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.rows.3.1": {
+      "ja": "土日祝日",
+      "text": "Weekends and public holidays",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.rows.4.1": {
+      "ja": "あり",
+      "text": "Available",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.rows.5.0": {
+      "ja": "コンセント",
+      "text": "Power outlets",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.rows.5.1": {
+      "ja": "あり",
+      "text": "Available",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.rows.6.0": {
+      "ja": "ドリンク",
+      "text": "Drinks",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.rows.6.1": {
+      "ja": "学生は無料",
+      "text": "Free for students",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.rows.7.0": {
+      "ja": "開設",
+      "text": "Opened",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.rows.7.1": {
+      "ja": "2021年4月8日",
+      "text": "April 8, 2021",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.0.note": {
+      "ja": "営業時間は変更される場合があります。最新情報は店舗公式Instagramをご確認ください。",
+      "text": "Opening hours may change. Please check the café's official Instagram for the latest information.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.title": {
+      "ja": "学生はドリンク無料！",
+      "text": "Free drinks for students!",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.highlight": {
+      "ja": "学生はドリンクが無料。マイボトルがなくても、店舗のグラスで無料ドリンクを利用できます。",
+      "text": "Drinks are free for students. Even without a reusable bottle, you can have free drinks in the café's glasses.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.text.0": {
+      "ja": "BiZCAFEでは、学生に無料でドリンクを提供しています。コーヒーや紅茶、ジュースなど、さまざまなドリンクが用意されています。",
+      "text": "BiZCAFE serves drinks to students for free. There is a variety to choose from, including coffee, tea and juice.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.text.1": {
+      "ja": "店舗公式Instagramによると、ドリンクは90分おきに無料で利用できます。",
+      "text": "According to the café's official Instagram, students can get a free drink every 90 minutes.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.text.2": {
+      "ja": "KSCオリジナルマイボトルを持っていなくても、店舗のグラスを使用して無料で飲むことができます。",
+      "text": "Even if you don't have a KSC original reusable bottle, you can drink for free using the café's glasses.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.text.3": {
+      "ja": "無料ドリンクサービスは、100社以上の企業による協賛によって実現していると、店舗公式Instagramで紹介されています。",
+      "text": "The café's official Instagram explains that the free drink service is made possible by sponsorship from more than 100 companies.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.more.title": {
+      "ja": "ドリンクメニューを見る",
+      "text": "See the drink menu",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.more.chips.0": {
+      "ja": "アールグレイティー（ICE / HOT）",
+      "text": "Earl Grey tea (iced / hot)",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.more.chips.1": {
+      "ja": "コーヒー（ICE / HOT）",
+      "text": "Coffee (iced / hot)",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.more.chips.2": {
+      "ja": "アップルジュース",
+      "text": "Apple juice",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.more.chips.3": {
+      "ja": "ピーチティー",
+      "text": "Peach tea",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.more.chips.4": {
+      "ja": "グリーンティー",
+      "text": "Green tea",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.more.chips.5": {
+      "ja": "アクエリアス",
+      "text": "Aquarius (sports drink)",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.more.chips.6": {
+      "ja": "カルピス",
+      "text": "Calpis",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.more.chips.7": {
+      "ja": "プロテイン",
+      "text": "Protein drink",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.more.chips.8": {
+      "ja": "カフェオレ（ICE）",
+      "text": "Café au lait (iced)",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.more.chips.9": {
+      "ja": "マンゴージュース",
+      "text": "Mango juice",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.more.note": {
+      "ja": "メニューはInstagram投稿時点のものです。現在の提供状況とは異なる場合があります。",
+      "text": "The menu is as of the Instagram post and may differ from what is served now.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.note": {
+      "ja": "90分間隔・協賛企業数は投稿時点の情報です。",
+      "text": "The 90-minute interval and the number of sponsor companies are as of the post.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.title": {
+      "ja": "KSCオリジナルマイボトル",
+      "text": "KSC original reusable bottle",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.figure.caption": {
+      "ja": "KSCオリジナルマイボトル",
+      "text": "KSC original reusable bottle",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.chips.0": {
+      "ja": "Snow Peakとの共同開発",
+      "text": "Co-developed with Snow Peak",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.chips.2": {
+      "ja": "2,250円（税込）",
+      "text": "¥2,250 (tax included)",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.chips.3": {
+      "ja": "購入場所：生協ToyBox（第一厚生棟2階）",
+      "text": "Where to buy: Co-op ToyBox (Student Hall I, 2nd floor)",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.text.0": {
+      "ja": "KSCオリジナルマイボトルは、神戸三田キャンパスの学生有志グループ「CAMP×US」とアウトドアブランド「Snow Peak」が共同開発したマイボトルです。容量は350mLで、持ち運びやすいサイズです。",
+      "text": "The KSC original reusable bottle was co-developed by CAMP×US, a volunteer student group at Kobe-Sanda Campus, and the outdoor brand Snow Peak. It holds 350 mL and is easy to carry around.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.text.1": {
+      "ja": "キャンパス内のペットボトル消費量の削減を目指す取り組みの一環として開発されました。BiZCAFEでは、オリジナルマイボトルを持参して無料ドリンクを楽しむこともできます（マイボトルがなくても、店舗のグラスで無料ドリンクを利用できます）。",
+      "text": "It was developed as part of an effort to reduce the number of plastic bottles used on campus. At BiZCAFE you can also bring your original bottle and enjoy free drinks (even without one, you can have free drinks in the café's glasses).",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.0.0": {
+      "ja": "商品名",
+      "text": "Product",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.0.1": {
+      "ja": "KSCオリジナルマイボトル",
+      "text": "KSC original reusable bottle",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.1.0": {
+      "ja": "共同開発",
+      "text": "Co-developed by",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.2.0": {
+      "ja": "容量",
+      "text": "Capacity",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.3.0": {
+      "ja": "価格",
+      "text": "Price",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.3.1": {
+      "ja": "2,250円（税込）",
+      "text": "¥2,250 (tax included)",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.4.0": {
+      "ja": "購入対象",
+      "text": "Who can buy",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.4.1": {
+      "ja": "神戸三田キャンパスの学生",
+      "text": "Kobe-Sanda Campus students",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.5.0": {
+      "ja": "購入場所",
+      "text": "Where to buy",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.5.1": {
+      "ja": "生協ToyBox（第一厚生棟2階）",
+      "text": "Co-op ToyBox (Student Hall I, 2nd floor)",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.6.0": {
+      "ja": "購入方法",
+      "text": "How to buy",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.6.1": {
+      "ja": "学生証を提示し、所有者登録",
+      "text": "Show your student ID and register as the owner",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.7.0": {
+      "ja": "購入制限",
+      "text": "Limit",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.7.1": {
+      "ja": "1人1回のみ",
+      "text": "Once per person",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.8.0": {
+      "ja": "転売・譲渡",
+      "text": "Resale / transfer",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.rows.8.1": {
+      "ja": "禁止",
+      "text": "Not allowed",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.more.title": {
+      "ja": "SDGsへの取り組み",
+      "text": "Working toward the SDGs",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.more.text.0": {
+      "ja": "関西学院大学が2025年に発表した情報によると、神戸三田キャンパスの学生の約7割がオリジナルマイボトルを所有しています。",
+      "text": "According to information released by Kwansei Gakuin University in 2025, about 70% of Kobe-Sanda Campus students own the original bottle.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.more.text.1": {
+      "ja": "大学は、マイボトルの利用促進によって、キャンパス内の使い捨てペットボトルの消費量を削減することを目指しています。取り組みを始めた2021年には、年間約10万本のペットボトル削減が目標として掲げられました。",
+      "text": "By encouraging the use of reusable bottles, the university aims to cut the number of disposable plastic bottles used on campus. When the effort began in 2021, the goal was set at about 100,000 fewer plastic bottles a year.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.note.0": {
+      "ja": "価格・購入場所・購入方法は店舗公式Instagramの掲載情報です。最新の販売状況は店舗・生協でご確認ください。",
+      "text": "The price, where to buy and how to buy are from the café's official Instagram. Please check with the café or the co-op for current availability.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.2.note.1": {
+      "ja": "店舗公式Instagramでは永久保証付きと案内されています。保証の条件は店舗でご確認ください。",
+      "text": "The café's official Instagram says the bottle comes with a lifetime warranty. Please ask the café about the warranty conditions.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.3.title": {
+      "ja": "企業と交流できるキャリア支援カフェ",
+      "text": "A career-support café where you can meet companies",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.3.text": {
+      "ja": "BiZCAFEでは、学生が企業の社会人と交流し、仕事や業界について知ることのできるイベントが開催されています。",
+      "text": "BiZCAFE holds events where students can talk with people working at companies and learn about jobs and industries.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.3.items.0.text": {
+      "ja": "企業の社会人と交流できる座談会です。店舗公式Instagramでは、低学年から参加できる約1時間の座談会として紹介されています。実際に働く社会人の話を聞き、仕事や将来のキャリアについて考える機会になっています。",
+      "text": "A small-group talk with people working at companies. The café's official Instagram describes it as a roughly one-hour session that first- and second-year students can join too. It is a chance to hear from working people and think about jobs and your future career.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.3.items.1.text": {
+      "ja": "2021年の開設時の大学の発表では、キャリアセンターと運営会社が共同で、学生に助言・支援したい企業や団体を募る「BIZCLASS」という取り組みが計画として紹介されていました。",
+      "text": "When the café opened in 2021, the university's announcement described a planned program called BIZCLASS, in which the Career Center and the café's operating company would jointly recruit companies and organizations wishing to advise and support students.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.3.note": {
+      "ja": "イベントの内容や日時は変更される場合があります。最新の募集情報は店舗公式Instagramをご確認ください。",
+      "text": "Event details and dates may change. Please check the café's official Instagram for the latest announcements.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.4.title": {
+      "ja": "公式情報・最新のお知らせ",
+      "text": "Official information and latest news",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.4.text": {
+      "ja": "営業時間やイベント情報、最新のお知らせは、店舗公式Instagramで確認できます。",
+      "text": "Opening hours, events and the latest news are posted on the café's official Instagram.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.4.buttons.0.label": {
+      "ja": "公式Instagramを見る",
+      "text": "Official Instagram",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.4.buttons.1.label": {
+      "ja": "BiZCAFE店舗情報を見る",
+      "text": "BiZCAFE shop information",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.4.buttons.2.label": {
+      "ja": "マイボトル開発の取り組みを見る",
+      "text": "About the bottle's development",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.4.buttons.3.label": {
+      "ja": "マイボトルの取り組みを詳しく見る",
+      "text": "More about the bottle initiative",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.source": {
+      "ja": "関西学院大学公式サイト（2021年2月・2025年12月の記事）、BiZCAFE神戸三田店 公式Instagram",
+      "text": "Kwansei Gakuin University official website (articles from February 2021 and December 2025), BiZCAFE Kobe-Sanda official Instagram",
       "status": "provisional"
     },
     "facilities.washitsu.name": {

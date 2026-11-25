@@ -2244,3 +2244,78 @@ body.mobile .faculty-dept-list {
 .study-links .study-tag {
   border-radius: 8px;
 }
+
+/* ---------- 施設情報：たためる見出し・目立たせる一文・写真（BiZCAFE など） ---------- */
+.info-fold {
+  border: 1px solid #e3e6eb;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.info-fold-title {
+  padding: 12px 14px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #1f2a44;
+  cursor: pointer;
+  list-style: none;
+}
+
+.info-fold-title::-webkit-details-marker {
+  display: none;
+}
+
+.info-fold-title::before {
+  content: "＋";
+  display: inline-block;
+  width: 1.4em;
+  color: #8a5a00;
+}
+
+.info-fold[open] > .info-fold-title::before {
+  content: "－";
+}
+
+.info-fold-body {
+  padding: 0 14px 14px;
+}
+
+.info-fold-body > .info-facts {
+  margin-bottom: 10px;
+}
+
+.info-fold-body .activity-more {
+  margin-top: 10px;
+}
+
+.info-highlight {
+  margin: 0 0 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #ffe9d6;
+  color: #1f2a44;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.info-figure {
+  margin: 0 0 12px;
+}
+
+.info-figure img {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #eef0f3;
+}
+
+.info-fold-body .guide-actions {
+  margin-top: 10px;
+}
+
+.info-section > .guide-actions {
+  margin-top: 10px;
+}
