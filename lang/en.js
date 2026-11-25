@@ -1925,6 +1925,71 @@ TourI18n.register("en", {
       "text": "The 4th floor has many general books useful for study and research. There are also course reserve books for classes and books on careers, qualifications and studying abroad, so it can be used for many purposes.",
       "status": "provisional"
     },
+    "facilities.room101.name": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Building VI, Room 101",
+      "status": "provisional"
+    },
+    "facilities.room101.hotspot.text": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Building VI, Room 101",
+      "status": "provisional"
+    },
+    "facilities.room101.hotspot.desc": {
+      "ja": "通常の講義だけでなく、講演会やオープンキャンパス、大学行事などにも利用される大教室です。",
+      "text": "A large lecture hall used not only for regular classes but also for talks, open campus events and other university events.",
+      "status": "provisional"
+    },
+    "facilities.room101.overview.0": {
+      "ja": "通常の講義だけでなく、講演会やオープンキャンパス、大学行事などにも利用される大教室です。",
+      "text": "A large lecture hall used not only for regular classes but also for talks, open campus events and other university events.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.name": {
+      "ja": "講演会",
+      "text": "Talks",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.hotspot.text": {
+      "ja": "講演会",
+      "text": "Talks",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.text": {
+      "ja": "著名人による講演会や、大学祭『新月祭』のトークショーなどが開催されています。",
+      "text": "Talks by well-known guests and talk shows during the Shingetsu Festival, the university festival, are held here.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.name": {
+      "ja": "オープンキャンパス",
+      "text": "Open campus",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.hotspot.text": {
+      "ja": "オープンキャンパス",
+      "text": "Open campus",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.text": {
+      "ja": "オープンキャンパスでは、学部紹介や入試説明会などの会場として利用されています。",
+      "text": "During open campus events, the room is used for school introductions and admissions briefings.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.name": {
+      "ja": "チャペルアワーって？",
+      "text": "What is Chapel Hour?",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.hotspot.text": {
+      "ja": "チャペルアワーって？",
+      "text": "What is Chapel Hour?",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.text": {
+      "ja": "関西学院大学では、キリスト教主義教育の一環として、チャペルアワーが設けられています。",
+      "text": "As part of its Christian education, Kwansei Gakuin University holds Chapel Hour.",
+      "status": "provisional"
+    },
     "facilities.building6.name": {
       "ja": "Ⅵ号館",
       "text": "Building VI",

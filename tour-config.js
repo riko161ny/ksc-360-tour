@@ -157,7 +157,12 @@ window.TOUR_CONFIG = {
       info: [
         { yaw: -2.791, pitch: 0.001, facility: "building6" }
       ] },
-    { id: "p19", name: "Ⅵ-101号室", map: { x: 0.4179, y: 0.6102 }, photo: null, view: null, northOffset: null, links: [ { target: "p18", yaw: 1.896, pitch: 0.01 } ], info: [ { yaw: 0.111, pitch: 0.043, facility: "building6" } ] },
+    { id: "p19", name: "Ⅵ-101号室", map: { x: 0.4179, y: 0.6102 }, photo: null, view: null, northOffset: null, links: [ { target: "p18", yaw: 1.896, pitch: 0.01 } ], info: [
+        { yaw: -0.17, pitch: -0.33, facility: "room101" },
+        { yaw: -0.82, pitch: -0.06, facility: "room101Lecture" },
+        { yaw: 0.45, pitch: -0.06, facility: "room101OpenCampus" },
+        { yaw: 1.3, pitch: -0.08, facility: "room101Chapel" }
+      ] },
     { id: "p20", name: "図書室", map: { x: 0.4362, y: 0.6323 }, photo: null, view: { yaw: -2.685, pitch: -0.039, fov: 1.5708 }, northOffset: null,
       links: [
         { target: "p20-DVD", yaw: -1.976, pitch: 0.11 },
@@ -850,6 +855,47 @@ window.TOUR_CONFIG = {
       "name": "4階｜一般図書エリア",
       "overview": [
         "4階には、学習や研究に役立つ一般図書が数多く並んでいます。また、授業に関連する指定図書や、就職・資格・留学などに関する図書もあり、幅広い目的で利用できます。"
+      ]
+    },
+    // Ⅵ-101号室（p19）の浮遊タイトル（雲の外、上の方に表示）
+    "room101": {
+      name: "Ⅵ号館101教室",
+      hotspot: { style: "title3d", text: "Ⅵ号館101教室", desc: "通常の講義だけでなく、講演会やオープンキャンパス、大学行事などにも利用される大教室です。" },
+      overview: [
+        "通常の講義だけでなく、講演会やオープンキャンパス、大学行事などにも利用される大教室です。"
+      ]
+    },
+    // Ⅵ-101号室（p19）の雲型マーク（style: "cloud3d"）。
+    // 雲の横に小さな写真を出すときは hotspot に photo: { src: "assets/media/○○.jpg" } を、
+    // パネルに写真を出すときは sections の figure.src に同じ写真を入れます（掲載許可のある写真のみ）。
+    "room101Lecture": {
+      name: "講演会",
+      hotspot: { style: "cloud3d", text: "講演会", photo: null },
+      sections: [
+        {
+          figure: { src: "", caption: "", alt: "" },
+          text: "著名人による講演会や、大学祭『新月祭』のトークショーなどが開催されています。"
+        }
+      ]
+    },
+    "room101OpenCampus": {
+      name: "オープンキャンパス",
+      hotspot: { style: "cloud3d", text: "オープンキャンパス", photo: null },
+      sections: [
+        {
+          figure: { src: "", caption: "", alt: "" },
+          text: "オープンキャンパスでは、学部紹介や入試説明会などの会場として利用されています。"
+        }
+      ]
+    },
+    "room101Chapel": {
+      name: "チャペルアワーって？",
+      hotspot: { style: "cloud3d", text: "チャペルアワーって？", photo: null },
+      sections: [
+        {
+          figure: { src: "", caption: "", alt: "" },
+          text: "関西学院大学では、キリスト教主義教育の一環として、チャペルアワーが設けられています。"
+        }
       ]
     },
     // Ⅵ号館前（p18）のマーク

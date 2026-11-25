@@ -2319,3 +2319,172 @@ body.mobile .faculty-dept-list {
 .info-section > .guide-actions {
   margin-top: 10px;
 }
+
+/* ---------- 浮かぶタイトル＋説明（Ⅵ-101、title3d） ---------- */
+
+.title3d-hotspot .float-body {
+  gap: 10px;
+}
+
+.title3d-desc {
+  max-width: 340px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: rgba(255, 251, 245, 0.88);
+  box-shadow: 0 4px 14px rgba(20, 30, 50, 0.25);
+  color: #1f2a44;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.hotspot:focus-visible {
+  outline: none;
+}
+
+.hotspot:focus-visible .title3d-hotspot .float-body {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 14px rgba(255, 196, 130, 0.85));
+}
+
+body.mobile .title3d-desc {
+  max-width: 250px;
+  font-size: 12px;
+}
+
+/* ---------- 雲型の浮遊マーク（Ⅵ-101、cloud3d） ---------- */
+
+.cloud-hotspot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cloud-float {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: cloud-drift 5s ease-in-out infinite;
+}
+
+.cloud-body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 200px;
+  height: 110px;
+  padding: 36px 30px 8px 34px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 6px 10px rgba(20, 30, 50, 0.28));
+}
+
+.cloud-hotspot.has-photo .cloud-body {
+  min-width: 224px;
+  height: 123px;
+}
+
+.cloud-shape {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.cloud-fill {
+  fill: rgba(255, 255, 255, 0.72);
+  stroke: rgba(255, 255, 255, 0.85);
+  stroke-width: 2.5;
+  transition: fill 0.3s ease, stroke 0.3s ease, stroke-width 0.3s ease;
+}
+
+.cloud-text {
+  position: relative;
+  white-space: nowrap;
+  color: #1f2a44;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.3;
+  text-align: center;
+  transition: color 0.3s ease, text-shadow 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.cloud-photo {
+  display: block;
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 6px 14px rgba(20, 30, 50, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ホバー・キーボードのフォーカス・タップ時：ふちが明るくなり、外側に光が広がる */
+.cloud-hotspot:hover .cloud-body,
+.hotspot:focus-visible .cloud-body,
+.cloud-hotspot.is-tapped .cloud-body {
+  transform: scale(1.07);
+  filter:
+    drop-shadow(0 0 10px rgba(255, 255, 255, 0.95))
+    drop-shadow(0 0 22px rgba(255, 214, 150, 0.85));
+}
+
+.cloud-hotspot:hover .cloud-fill,
+.hotspot:focus-visible .cloud-fill,
+.cloud-hotspot.is-tapped .cloud-fill {
+  fill: rgba(255, 255, 255, 0.86);
+  stroke: #ffffff;
+  stroke-width: 4;
+}
+
+.cloud-hotspot:hover .cloud-text,
+.hotspot:focus-visible .cloud-text,
+.cloud-hotspot.is-tapped .cloud-text {
+  color: #0f1a33;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.03em;
+}
+
+.cloud-hotspot:hover .cloud-photo,
+.hotspot:focus-visible .cloud-photo {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 2px #fff, 0 0 18px rgba(255, 214, 150, 0.85), 0 8px 16px rgba(20, 30, 50, 0.3);
+}
+
+@keyframes cloud-drift {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -5px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cloud-float {
+    animation: none;
+  }
+}
+
+body.mobile .cloud-body {
+  min-width: 160px;
+  height: 88px;
+  padding: 28px 24px 6px 27px;
+}
+
+body.mobile .cloud-hotspot.has-photo .cloud-body {
+  min-width: 176px;
+  height: 97px;
+}
+
+body.mobile .cloud-text {
+  font-size: 14px;
+}
+
+body.mobile .cloud-photo {
+  width: 96px;
+  height: 64px;
+}

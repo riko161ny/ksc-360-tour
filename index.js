@@ -575,8 +575,44 @@
     updateLabel();
     textUpdaters.push(updateLabel);
 
-    // Floating 3D text mark (facility.hotspot = { style: "float3d", text, sub })
     var look = facility.hotspot || {};
+
+    // Cloud-shaped floating mark (facility.hotspot = { style: "cloud3d", text, photo: { src, alt } })
+    if (look.style === 'cloud3d') {
+      return createCloudHotspot(wrapper, inner, facility, look);
+    }
+
+    // Floating title with a short description (facility.hotspot = { style: "title3d", text, desc })
+    if (look.style === 'title3d') {
+      inner.className = 'float-hotspot title3d-hotspot';
+      var tBody = document.createElement('span');
+      tBody.className = 'float-body';
+      var tMain = document.createElement('span');
+      tMain.className = 'float-main';
+      var tDesc = document.createElement('span');
+      tDesc.className = 'title3d-desc';
+      function updateTitle() {
+        tMain.textContent = look.text || facility.name || '';
+        tDesc.textContent = look.desc || '';
+        tDesc.hidden = !look.desc;
+      }
+      updateTitle();
+      textUpdaters.push(updateTitle);
+      tBody.appendChild(tMain);
+      tBody.appendChild(tDesc);
+      inner.appendChild(tBody);
+      wrapper.tabIndex = 0;
+      wrapper.addEventListener('click', function() {
+        window.TourPanel.open(facility);
+      });
+      wrapper.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); window.TourPanel.open(facility); }
+      });
+      stopTouchAndScrollEventPropagation(wrapper);
+      return wrapper;
+    }
+
+    // Floating 3D text mark (facility.hotspot = { style: "float3d", text, sub })
     if (look.style === 'float3d') {
       inner.className = 'float-hotspot';
       var body = document.createElement('span');
@@ -629,6 +665,72 @@
 
     stopTouchAndScrollEventPropagation(wrapper);
 
+    return wrapper;
+  }
+
+  // Lumpy cloud outline used by the "cloud3d" mark.
+  var CLOUD_PATH = 'M52 128 C24 128 8 110 14 90 C18 74 32 66 46 68 C44 46 62 28 86 32 ' +
+    'C96 14 122 6 144 18 C160 6 190 10 200 32 C222 30 240 50 234 72 ' +
+    'C250 84 248 112 226 124 C220 128 212 129 204 128 Z';
+
+  function createCloudHotspot(wrapper, inner, facility, look) {
+    inner.className = 'cloud-hotspot';
+    var bob = document.createElement('div');
+    bob.className = 'cloud-float';
+    var body = document.createElement('div');
+    body.className = 'cloud-body';
+    body.innerHTML = '<svg class="cloud-shape" viewBox="0 0 256 140" preserveAspectRatio="none" aria-hidden="true" focusable="false">' +
+      '<path class="cloud-fill" d="' + CLOUD_PATH + '"></path></svg>';
+    var text = document.createElement('span');
+    text.className = 'cloud-text';
+    body.appendChild(text);
+    bob.appendChild(body);
+
+    // Optional small photo next to the cloud (only photos with confirmed permission).
+    var photo = look.photo && look.photo.src ? look.photo : null;
+    var img = null;
+    if (photo) {
+      inner.classList.add('has-photo');
+      img = document.createElement('img');
+      img.className = 'cloud-photo';
+      img.src = photo.src;
+      img.alt = '';
+      img.loading = 'lazy';
+      img.draggable = false;
+      bob.appendChild(img);
+    }
+    inner.appendChild(bob);
+
+    function updateText() {
+      text.textContent = look.text || facility.name || '';
+    }
+    updateText();
+    textUpdaters.push(updateText);
+
+    wrapper.tabIndex = 0;
+    var lastPointer = 'mouse';
+    var opening = false;
+    wrapper.addEventListener('pointerdown', function(e) { lastPointer = e.pointerType || 'mouse'; });
+    function open() {
+      if (lastPointer === 'touch' || lastPointer === 'pen') {
+        // Short glow first so the tap is visible, then open the panel.
+        if (opening) { return; }
+        opening = true;
+        inner.classList.add('is-tapped');
+        setTimeout(function() {
+          window.TourPanel.open(facility);
+          inner.classList.remove('is-tapped');
+          opening = false;
+        }, 260);
+        return;
+      }
+      window.TourPanel.open(facility);
+    }
+    wrapper.addEventListener('click', open);
+    wrapper.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); lastPointer = 'keyboard'; open(); }
+    });
+    stopTouchAndScrollEventPropagation(wrapper);
     return wrapper;
   }
 

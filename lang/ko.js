@@ -1925,6 +1925,71 @@ TourI18n.register("ko", {
       "text": "4층에는 학습과 연구에 도움이 되는 일반도서가 많이 진열되어 있습니다. 또한 수업과 관련된 지정 도서와 취업·자격·유학 등에 관한 도서도 있어 폭넓은 목적으로 이용할 수 있습니다.",
       "status": "provisional"
     },
+    "facilities.room101.name": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Ⅵ호관 101 교실",
+      "status": "provisional"
+    },
+    "facilities.room101.hotspot.text": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Ⅵ호관 101 교실",
+      "status": "provisional"
+    },
+    "facilities.room101.hotspot.desc": {
+      "ja": "通常の講義だけでなく、講演会やオープンキャンパス、大学行事などにも利用される大教室です。",
+      "text": "일반 강의뿐 아니라 강연회, 오픈 캠퍼스, 대학 행사 등에도 이용되는 대형 강의실입니다.",
+      "status": "provisional"
+    },
+    "facilities.room101.overview.0": {
+      "ja": "通常の講義だけでなく、講演会やオープンキャンパス、大学行事などにも利用される大教室です。",
+      "text": "일반 강의뿐 아니라 강연회, 오픈 캠퍼스, 대학 행사 등에도 이용되는 대형 강의실입니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.name": {
+      "ja": "講演会",
+      "text": "강연회",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.hotspot.text": {
+      "ja": "講演会",
+      "text": "강연회",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.text": {
+      "ja": "著名人による講演会や、大学祭『新月祭』のトークショーなどが開催されています。",
+      "text": "유명인의 강연회와 대학 축제 '신게쓰 축제(新月祭)'의 토크쇼 등이 열립니다.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.name": {
+      "ja": "オープンキャンパス",
+      "text": "오픈 캠퍼스",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.hotspot.text": {
+      "ja": "オープンキャンパス",
+      "text": "오픈 캠퍼스",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.text": {
+      "ja": "オープンキャンパスでは、学部紹介や入試説明会などの会場として利用されています。",
+      "text": "오픈 캠퍼스 때에는 학부 소개와 입시 설명회 등의 장소로 이용됩니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.name": {
+      "ja": "チャペルアワーって？",
+      "text": "채플 아워란?",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.hotspot.text": {
+      "ja": "チャペルアワーって？",
+      "text": "채플 아워란?",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.text": {
+      "ja": "関西学院大学では、キリスト教主義教育の一環として、チャペルアワーが設けられています。",
+      "text": "관서학원대학에서는 기독교주의 교육의 일환으로 채플 아워를 운영하고 있습니다.",
+      "status": "provisional"
+    },
     "facilities.building6.name": {
       "ja": "Ⅵ号館",
       "text": "Ⅵ호관",

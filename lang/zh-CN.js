@@ -1925,6 +1925,71 @@ TourI18n.register("zh-CN", {
       "text": "4楼陈列着大量有助于学习和研究的一般图书。此外，还有与课程相关的指定图书，以及有关就业、资格考试、留学等的图书，可用于多种目的。",
       "status": "provisional"
     },
+    "facilities.room101.name": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Ⅵ号馆101教室",
+      "status": "provisional"
+    },
+    "facilities.room101.hotspot.text": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Ⅵ号馆101教室",
+      "status": "provisional"
+    },
+    "facilities.room101.hotspot.desc": {
+      "ja": "通常の講義だけでなく、講演会やオープンキャンパス、大学行事などにも利用される大教室です。",
+      "text": "这间大教室不仅用于日常授课，也用于讲座、开放校园日和各类大学活动。",
+      "status": "provisional"
+    },
+    "facilities.room101.overview.0": {
+      "ja": "通常の講義だけでなく、講演会やオープンキャンパス、大学行事などにも利用される大教室です。",
+      "text": "这间大教室不仅用于日常授课，也用于讲座、开放校园日和各类大学活动。",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.name": {
+      "ja": "講演会",
+      "text": "讲座",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.hotspot.text": {
+      "ja": "講演会",
+      "text": "讲座",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.text": {
+      "ja": "著名人による講演会や、大学祭『新月祭』のトークショーなどが開催されています。",
+      "text": "这里会举办知名人士的讲座，以及大学校园节“新月祭”的脱口秀等活动。",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.name": {
+      "ja": "オープンキャンパス",
+      "text": "开放校园日",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.hotspot.text": {
+      "ja": "オープンキャンパス",
+      "text": "开放校园日",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.text": {
+      "ja": "オープンキャンパスでは、学部紹介や入試説明会などの会場として利用されています。",
+      "text": "开放校园日期间，这里用作学部介绍和入学考试说明会等的会场。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.name": {
+      "ja": "チャペルアワーって？",
+      "text": "什么是礼拜时间（Chapel Hour）？",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.hotspot.text": {
+      "ja": "チャペルアワーって？",
+      "text": "什么是礼拜时间（Chapel Hour）？",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.text": {
+      "ja": "関西学院大学では、キリスト教主義教育の一環として、チャペルアワーが設けられています。",
+      "text": "作为基督教主义教育的一部分，关西学院大学设有礼拜时间（Chapel Hour）。",
+      "status": "provisional"
+    },
     "facilities.building6.name": {
       "ja": "Ⅵ号館",
       "text": "Ⅵ号馆",
