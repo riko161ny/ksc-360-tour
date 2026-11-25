@@ -121,9 +121,9 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "spots.p03.name": {
-      "ja": "チャペル",
+      "ja": "ランバス記念礼拝堂",
       "text": "Lambuth Memorial Chapel",
-      "status": "official"
+      "status": "provisional"
     },
     "spots.p04.name": {
       "ja": "Ⅰ号館前",
@@ -301,8 +301,8 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "spots.p12-room.backButton.label": {
-      "ja": "第二厚生棟に戻る",
-      "text": "Back to Student Hall II",
+      "ja": "第二厚生棟入口に戻る",
+      "text": "Back to the Student Hall II entrance",
       "status": "provisional"
     },
     "spots.p12-win.name": {
@@ -311,8 +311,8 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "spots.p12-win.backButton.label": {
-      "ja": "第二厚生棟に戻る",
-      "text": "Back to Student Hall II",
+      "ja": "第二厚生棟入口に戻る",
+      "text": "Back to the Student Hall II entrance",
       "status": "provisional"
     },
     "spots.p17-2.name": {
@@ -516,9 +516,9 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "facilities.chapel.name": {
-      "ja": "チャペル",
+      "ja": "ランバス記念礼拝堂",
       "text": "Lambuth Memorial Chapel",
-      "status": "official"
+      "status": "provisional"
     },
     "facilities.studentHall2.name": {
       "ja": "第二厚生棟",

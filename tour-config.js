@@ -72,7 +72,7 @@ window.TOUR_CONFIG = {
       ],
       info: [] },
     { id: "p02", name: "Ⅱ号館横庭園", map: { x: 0.1065, y: 0.7633 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p03", name: "チャペル", map: { x: 0.088, y: 0.6807 }, photo: null, view: { yaw: 0.31, pitch: 0, fov: 1.5708 }, northOffset: null,
+    { id: "p03", name: "ランバス記念礼拝堂", map: { x: 0.088, y: 0.6807 }, photo: null, view: { yaw: 0.31, pitch: 0, fov: 1.5708 }, northOffset: null,
       links: [],
       info: [
         { yaw: 0.716, pitch: -0.092, facility: "chapel" }
@@ -169,8 +169,8 @@ window.TOUR_CONFIG = {
     { id: "zemi", name: "ゼミ", map: null, photo: null, view: { yaw: -1.13, pitch: 0.03, fov: 1.5708 }, northOffset: null, links: [], info: [ { yaw: -1.13, pitch: 0.03, facility: "zemi" } ] },
     // 2026年11月25日に追加した写真（移動矢印は editor.html で位置を決めてから足します）
     { id: "p23-1", name: "Ⅶ号館中庭", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p23", label: "Ⅶ号館に戻る" } },
-    { id: "p12-room", name: "食堂内部（第二厚生棟）", map: null, photo: null, view: { yaw: -1.0, pitch: 0, fov: 1.5708 }, northOffset: null, links: [ { target: "p12", yaw: 3.004, pitch: 0.035 } ], info: [], backButton: { target: "p12", label: "第二厚生棟に戻る" } },
-    { id: "p12-win", name: "窓側席（第二厚生棟）", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p12-room", yaw: -1.08, pitch: 0.104 } ], info: [], backButton: { target: "p12", label: "第二厚生棟に戻る" } },
+    { id: "p12-room", name: "食堂内部（第二厚生棟）", map: null, photo: null, view: { yaw: -1.0, pitch: 0, fov: 1.5708 }, northOffset: null, links: [ { target: "p12", yaw: 3.004, pitch: 0.035 } ], info: [], backButton: { target: "p12", label: "第二厚生棟入口に戻る" } },
+    { id: "p12-win", name: "窓側席（第二厚生棟）", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p12-room", yaw: -1.08, pitch: 0.104 } ], info: [], backButton: { target: "p12", label: "第二厚生棟入口に戻る" } },
     { id: "p17-2", name: "アカデミックコモンズ2階", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p17", yaw: -0.69, pitch: 0.249 } ], info: [ { yaw: 0.791, pitch: 0.186, facility: "commons" } ], backButton: { target: "p17", label: "アカデミックコモンズに戻る" } },
     { id: "p17-camp", name: "キャンプテント（アカデミックコモンズ）", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p17", yaw: 0.313, pitch: 0.171 } ], info: [ { yaw: 0.187, pitch: 0.806, facility: "campTent" } ], backButton: { target: "p17", label: "アカデミックコモンズに戻る" } },
     { id: "tableterass", name: "中庭", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
@@ -268,9 +268,9 @@ window.TOUR_CONFIG = {
     "zemi": {
       name: "ゼミ"
     },
-    // チャペルの情報マーク（中身は確認できた情報をあとで足します）
+    // ランバス記念礼拝堂（チャペル）の情報マーク（中身は確認できた情報をあとで足します）
     "chapel": {
-      name: "チャペル"
+      name: "ランバス記念礼拝堂"
     },
     // 第二厚生棟の情報マーク（中身は確認できた情報をあとで足します）
     "studentHall2": {

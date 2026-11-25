@@ -121,8 +121,8 @@ TourI18n.register("zh-CN", {
       "status": "provisional"
     },
     "spots.p03.name": {
-      "ja": "チャペル",
-      "text": "礼拜堂",
+      "ja": "ランバス記念礼拝堂",
+      "text": "兰伯斯纪念礼拜堂",
       "status": "provisional"
     },
     "spots.p04.name": {
@@ -301,8 +301,8 @@ TourI18n.register("zh-CN", {
       "status": "provisional"
     },
     "spots.p12-room.backButton.label": {
-      "ja": "第二厚生棟に戻る",
-      "text": "返回第二福利楼",
+      "ja": "第二厚生棟入口に戻る",
+      "text": "返回第二福利楼入口",
       "status": "provisional"
     },
     "spots.p12-win.name": {
@@ -311,8 +311,8 @@ TourI18n.register("zh-CN", {
       "status": "provisional"
     },
     "spots.p12-win.backButton.label": {
-      "ja": "第二厚生棟に戻る",
-      "text": "返回第二福利楼",
+      "ja": "第二厚生棟入口に戻る",
+      "text": "返回第二福利楼入口",
       "status": "provisional"
     },
     "spots.p17-2.name": {
@@ -516,8 +516,8 @@ TourI18n.register("zh-CN", {
       "status": "provisional"
     },
     "facilities.chapel.name": {
-      "ja": "チャペル",
-      "text": "礼拜堂",
+      "ja": "ランバス記念礼拝堂",
+      "text": "兰伯斯纪念礼拜堂",
       "status": "provisional"
     },
     "facilities.studentHall2.name": {

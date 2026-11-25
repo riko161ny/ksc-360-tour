@@ -121,8 +121,8 @@ TourI18n.register("ko", {
       "status": "provisional"
     },
     "spots.p03.name": {
-      "ja": "チャペル",
-      "text": "채플",
+      "ja": "ランバス記念礼拝堂",
+      "text": "램버스 기념 예배당",
       "status": "provisional"
     },
     "spots.p04.name": {
@@ -301,8 +301,8 @@ TourI18n.register("ko", {
       "status": "provisional"
     },
     "spots.p12-room.backButton.label": {
-      "ja": "第二厚生棟に戻る",
-      "text": "제2후생동으로 돌아가기",
+      "ja": "第二厚生棟入口に戻る",
+      "text": "제2후생동 입구로 돌아가기",
       "status": "provisional"
     },
     "spots.p12-win.name": {
@@ -311,8 +311,8 @@ TourI18n.register("ko", {
       "status": "provisional"
     },
     "spots.p12-win.backButton.label": {
-      "ja": "第二厚生棟に戻る",
-      "text": "제2후생동으로 돌아가기",
+      "ja": "第二厚生棟入口に戻る",
+      "text": "제2후생동 입구로 돌아가기",
       "status": "provisional"
     },
     "spots.p17-2.name": {
@@ -516,8 +516,8 @@ TourI18n.register("ko", {
       "status": "provisional"
     },
     "facilities.chapel.name": {
-      "ja": "チャペル",
-      "text": "채플",
+      "ja": "ランバス記念礼拝堂",
+      "text": "램버스 기념 예배당",
       "status": "provisional"
     },
     "facilities.studentHall2.name": {
