@@ -94,7 +94,13 @@ window.TOUR_CONFIG = {
     { id: "p09", name: "食堂前テラス席", map: { x: 0.2496, y: 0.5441 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p10", name: "スカイガーデン", map: { x: 0.2697, y: 0.4729 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p11", name: "Colorful Box（生協売店）", map: { x: 0.2971, y: 0.5051 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p12", name: "第二厚生棟", map: { x: 0.3092, y: 0.425 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p12", name: "第二厚生棟", map: { x: 0.3092, y: 0.425 }, photo: null, view: null, northOffset: null,
+      links: [
+        { target: "p12-win", yaw: -0.126, pitch: 0.107 }
+      ],
+      info: [
+        { yaw: -0.426, pitch: 0.068, facility: "studentHall2" }
+      ] },
     { id: "p13", name: "体育館", map: { x: 0.3597, y: 0.5577 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p14", name: "バスロータリー", map: { x: 0.3758, y: 0.4356 }, photo: null, view: { yaw: -3.029, pitch: 0.044, fov: 1.5708 }, northOffset: null, links: [], info: [ { yaw: -3.029, pitch: 0.044, facility: "bus" } ], facility: "bus" },
     { id: "p15", name: "ビズカフェ", map: { x: 0.3937, y: 0.4255 }, photo: null, view: { yaw: -1.41, pitch: 0, fov: 1.5708 }, northOffset: null, links: [], info: [] },
@@ -246,6 +252,10 @@ window.TOUR_CONFIG = {
     // チャペルの情報マーク（中身は確認できた情報をあとで足します）
     "chapel": {
       name: "チャペル"
+    },
+    // 第二厚生棟の情報マーク（中身は確認できた情報をあとで足します）
+    "studentHall2": {
+      name: "第二厚生棟"
     },
     // ↓ 施設情報（riko さんがまとめた内容。overview は段落ごとの配列、sections は見出しごとのまとまり）
     "building1": {
