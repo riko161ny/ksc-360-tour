@@ -285,6 +285,81 @@ TourI18n.register("en", {
       "text": "Seminar",
       "status": "provisional"
     },
+    "spots.p23-1.name": {
+      "ja": "Ⅶ号館中庭",
+      "text": "Building VII Courtyard",
+      "status": "provisional"
+    },
+    "spots.p23-1.backButton.label": {
+      "ja": "Ⅶ号館に戻る",
+      "text": "Back to Building VII",
+      "status": "provisional"
+    },
+    "spots.p12-room.name": {
+      "ja": "食堂内部（第二厚生棟）",
+      "text": "Inside the Cafeteria (Student Hall II)",
+      "status": "provisional"
+    },
+    "spots.p12-room.backButton.label": {
+      "ja": "第二厚生棟に戻る",
+      "text": "Back to Student Hall II",
+      "status": "provisional"
+    },
+    "spots.p12-win.name": {
+      "ja": "窓側席（第二厚生棟）",
+      "text": "Window Seats (Student Hall II)",
+      "status": "provisional"
+    },
+    "spots.p12-win.backButton.label": {
+      "ja": "第二厚生棟に戻る",
+      "text": "Back to Student Hall II",
+      "status": "provisional"
+    },
+    "spots.p17-2.name": {
+      "ja": "アカデミックコモンズ2階",
+      "text": "Academic Commons 2nd Floor",
+      "status": "provisional"
+    },
+    "spots.p17-2.backButton.label": {
+      "ja": "アカデミックコモンズに戻る",
+      "text": "Back to the Academic Commons",
+      "status": "provisional"
+    },
+    "spots.p17-camp.name": {
+      "ja": "キャンプテント（アカデミックコモンズ）",
+      "text": "Camping Tent (Academic Commons)",
+      "status": "provisional"
+    },
+    "spots.p17-camp.backButton.label": {
+      "ja": "アカデミックコモンズに戻る",
+      "text": "Back to the Academic Commons",
+      "status": "provisional"
+    },
+    "spots.tableterass.name": {
+      "ja": "中庭",
+      "text": "Courtyard",
+      "status": "provisional"
+    },
+    "spots.201room.name": {
+      "ja": "Ⅱ号館201号室",
+      "text": "Building II, Room 201",
+      "status": "provisional"
+    },
+    "spots.201room.backButton.label": {
+      "ja": "Ⅱ号館前に戻る",
+      "text": "Back to the front of Building II",
+      "status": "provisional"
+    },
+    "spots.101room.name": {
+      "ja": "Ⅱ号館101号室",
+      "text": "Building II, Room 101",
+      "status": "provisional"
+    },
+    "spots.101room.backButton.label": {
+      "ja": "Ⅱ号館前に戻る",
+      "text": "Back to the front of Building II",
+      "status": "provisional"
+    },
     "footer.faculties.name": {
       "ja": "学部情報",
       "text": "Schools",

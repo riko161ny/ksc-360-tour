@@ -285,6 +285,81 @@ TourI18n.register("zh-CN", {
       "text": "研讨课",
       "status": "provisional"
     },
+    "spots.p23-1.name": {
+      "ja": "Ⅶ号館中庭",
+      "text": "Ⅶ号馆中庭",
+      "status": "provisional"
+    },
+    "spots.p23-1.backButton.label": {
+      "ja": "Ⅶ号館に戻る",
+      "text": "返回Ⅶ号馆",
+      "status": "provisional"
+    },
+    "spots.p12-room.name": {
+      "ja": "食堂内部（第二厚生棟）",
+      "text": "食堂内部（第二福利楼）",
+      "status": "provisional"
+    },
+    "spots.p12-room.backButton.label": {
+      "ja": "第二厚生棟に戻る",
+      "text": "返回第二福利楼",
+      "status": "provisional"
+    },
+    "spots.p12-win.name": {
+      "ja": "窓側席（第二厚生棟）",
+      "text": "靠窗座位（第二福利楼）",
+      "status": "provisional"
+    },
+    "spots.p12-win.backButton.label": {
+      "ja": "第二厚生棟に戻る",
+      "text": "返回第二福利楼",
+      "status": "provisional"
+    },
+    "spots.p17-2.name": {
+      "ja": "アカデミックコモンズ2階",
+      "text": "学术共享空间2楼",
+      "status": "provisional"
+    },
+    "spots.p17-2.backButton.label": {
+      "ja": "アカデミックコモンズに戻る",
+      "text": "返回学术共享空间",
+      "status": "provisional"
+    },
+    "spots.p17-camp.name": {
+      "ja": "キャンプテント（アカデミックコモンズ）",
+      "text": "露营帐篷（学术共享空间）",
+      "status": "provisional"
+    },
+    "spots.p17-camp.backButton.label": {
+      "ja": "アカデミックコモンズに戻る",
+      "text": "返回学术共享空间",
+      "status": "provisional"
+    },
+    "spots.tableterass.name": {
+      "ja": "中庭",
+      "text": "中庭",
+      "status": "provisional"
+    },
+    "spots.201room.name": {
+      "ja": "Ⅱ号館201号室",
+      "text": "Ⅱ号馆201教室",
+      "status": "provisional"
+    },
+    "spots.201room.backButton.label": {
+      "ja": "Ⅱ号館前に戻る",
+      "text": "返回Ⅱ号馆前",
+      "status": "provisional"
+    },
+    "spots.101room.name": {
+      "ja": "Ⅱ号館101号室",
+      "text": "Ⅱ号馆101教室",
+      "status": "provisional"
+    },
+    "spots.101room.backButton.label": {
+      "ja": "Ⅱ号館前に戻る",
+      "text": "返回Ⅱ号馆前",
+      "status": "provisional"
+    },
     "footer.faculties.name": {
       "ja": "学部情報",
       "text": "学部信息",

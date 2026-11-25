@@ -68,7 +68,7 @@ window.TOUR_CONFIG = {
   spots: [
     { id: "p01", name: "正門前", map: { x: 0.045, y: 0.7501 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p02", name: "Ⅱ号館横庭園", map: { x: 0.1065, y: 0.7633 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p03", name: "チャペル", map: { x: 0.088, y: 0.6807 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p03", name: "チャペル", map: { x: 0.088, y: 0.6807 }, photo: null, view: { yaw: 0.31, pitch: 0, fov: 1.5708 }, northOffset: null, links: [], info: [] },
     { id: "p04", name: "Ⅰ号館前", map: { x: 0.1503, y: 0.6348 }, photo: null, view: null, northOffset: null, links: [], info: [], facility: "building1" },
     { id: "p05", name: "Ⅱ号館前", map: { x: 0.1996, y: 0.7179 }, photo: null, view: { yaw: -1.964, pitch: -0.005, fov: 1.5708 }, northOffset: null, links: [], info: [ { yaw: -1.964, pitch: -0.005, facility: "building2" } ], facility: "building2" },
     { id: "p06", name: "Ⅲ号館", map: { x: 0.296, y: 0.6834 }, photo: null, view: { yaw: -0.39, pitch: 0, fov: 1.5708 }, northOffset: null,
@@ -82,7 +82,7 @@ window.TOUR_CONFIG = {
     { id: "p12", name: "第二厚生棟", map: { x: 0.3092, y: 0.425 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p13", name: "体育館", map: { x: 0.3597, y: 0.5577 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p14", name: "バスロータリー", map: { x: 0.3758, y: 0.4356 }, photo: null, view: { yaw: -3.029, pitch: 0.044, fov: 1.5708 }, northOffset: null, links: [], info: [ { yaw: -3.029, pitch: 0.044, facility: "bus" } ], facility: "bus" },
-    { id: "p15", name: "ビズカフェ", map: { x: 0.3937, y: 0.4255 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p15", name: "ビズカフェ", map: { x: 0.3937, y: 0.4255 }, photo: null, view: { yaw: -1.41, pitch: 0, fov: 1.5708 }, northOffset: null, links: [], info: [] },
     { id: "p16", name: "コモンズ前", map: { x: 0.3865, y: 0.4848 }, photo: null, view: { yaw: 1.78, pitch: 0.075, fov: 1.5708 }, northOffset: null,
       links: [
         { target: "p17", yaw: 1.711, pitch: 0.121 }
@@ -126,7 +126,16 @@ window.TOUR_CONFIG = {
     { id: "p20-book", name: "図書室（本棚）", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p20-DVD", name: "視聴覚コーナー", map: null, photo: null, view: { yaw: -0.24, pitch: 0.3, fov: 1.5708 }, northOffset: null, links: [ { target: "p20", yaw: 1.25, pitch: 0.17 } ], info: [ { yaw: -0.24, pitch: 0.707, facility: "avCorner" } ] },
     { id: "board", name: "掲示板", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "zemi", name: "ゼミ", map: null, photo: null, view: { yaw: -1.13, pitch: 0.03, fov: 1.5708 }, northOffset: null, links: [], info: [ { yaw: -1.13, pitch: 0.03, facility: "zemi" } ] }
+    { id: "zemi", name: "ゼミ", map: null, photo: null, view: { yaw: -1.13, pitch: 0.03, fov: 1.5708 }, northOffset: null, links: [], info: [ { yaw: -1.13, pitch: 0.03, facility: "zemi" } ] },
+    // 2026年11月25日に追加した写真（移動矢印は editor.html で位置を決めてから足します）
+    { id: "p23-1", name: "Ⅶ号館中庭", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p23", label: "Ⅶ号館に戻る" } },
+    { id: "p12-room", name: "食堂内部（第二厚生棟）", map: null, photo: null, view: { yaw: -1.0, pitch: 0, fov: 1.5708 }, northOffset: null, links: [], info: [], backButton: { target: "p12", label: "第二厚生棟に戻る" } },
+    { id: "p12-win", name: "窓側席（第二厚生棟）", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p12", label: "第二厚生棟に戻る" } },
+    { id: "p17-2", name: "アカデミックコモンズ2階", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p17", label: "アカデミックコモンズに戻る" } },
+    { id: "p17-camp", name: "キャンプテント（アカデミックコモンズ）", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p17", label: "アカデミックコモンズに戻る" } },
+    { id: "tableterass", name: "中庭", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "201room", name: "Ⅱ号館201号室", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p05", label: "Ⅱ号館前に戻る" } },
+    { id: "101room", name: "Ⅱ号館101号室", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p05", label: "Ⅱ号館前に戻る" } }
   ],
 
   // 画面下のボタン（学部情報・KSCイベント情報・サークル・部活情報）

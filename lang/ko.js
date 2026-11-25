@@ -285,6 +285,81 @@ TourI18n.register("ko", {
       "text": "세미나",
       "status": "provisional"
     },
+    "spots.p23-1.name": {
+      "ja": "Ⅶ号館中庭",
+      "text": "Ⅶ호관 중정",
+      "status": "provisional"
+    },
+    "spots.p23-1.backButton.label": {
+      "ja": "Ⅶ号館に戻る",
+      "text": "Ⅶ호관으로 돌아가기",
+      "status": "provisional"
+    },
+    "spots.p12-room.name": {
+      "ja": "食堂内部（第二厚生棟）",
+      "text": "식당 내부(제2후생동)",
+      "status": "provisional"
+    },
+    "spots.p12-room.backButton.label": {
+      "ja": "第二厚生棟に戻る",
+      "text": "제2후생동으로 돌아가기",
+      "status": "provisional"
+    },
+    "spots.p12-win.name": {
+      "ja": "窓側席（第二厚生棟）",
+      "text": "창가 좌석(제2후생동)",
+      "status": "provisional"
+    },
+    "spots.p12-win.backButton.label": {
+      "ja": "第二厚生棟に戻る",
+      "text": "제2후생동으로 돌아가기",
+      "status": "provisional"
+    },
+    "spots.p17-2.name": {
+      "ja": "アカデミックコモンズ2階",
+      "text": "아카데믹 커먼즈 2층",
+      "status": "provisional"
+    },
+    "spots.p17-2.backButton.label": {
+      "ja": "アカデミックコモンズに戻る",
+      "text": "아카데믹 커먼즈로 돌아가기",
+      "status": "provisional"
+    },
+    "spots.p17-camp.name": {
+      "ja": "キャンプテント（アカデミックコモンズ）",
+      "text": "캠핑 텐트(아카데믹 커먼즈)",
+      "status": "provisional"
+    },
+    "spots.p17-camp.backButton.label": {
+      "ja": "アカデミックコモンズに戻る",
+      "text": "아카데믹 커먼즈로 돌아가기",
+      "status": "provisional"
+    },
+    "spots.tableterass.name": {
+      "ja": "中庭",
+      "text": "중정",
+      "status": "provisional"
+    },
+    "spots.201room.name": {
+      "ja": "Ⅱ号館201号室",
+      "text": "Ⅱ호관 201호실",
+      "status": "provisional"
+    },
+    "spots.201room.backButton.label": {
+      "ja": "Ⅱ号館前に戻る",
+      "text": "Ⅱ호관 앞으로 돌아가기",
+      "status": "provisional"
+    },
+    "spots.101room.name": {
+      "ja": "Ⅱ号館101号室",
+      "text": "Ⅱ호관 101호실",
+      "status": "provisional"
+    },
+    "spots.101room.backButton.label": {
+      "ja": "Ⅱ号館前に戻る",
+      "text": "Ⅱ호관 앞으로 돌아가기",
+      "status": "provisional"
+    },
     "footer.faculties.name": {
       "ja": "学部情報",
       "text": "학부 정보",
