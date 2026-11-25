@@ -88,7 +88,11 @@ TourI18n.register("ko", {
     "faculty.officialFaculty": "{name} 공식 사이트",
     "faculty.officialDepartment": "{name} 공식 페이지",
     "faculty.learn": "학습 내용",
-    "faculty.courses": "수업 예"
+    "faculty.courses": "수업 예",
+    "faculty.study": "더 자세히 알아보기",
+    "faculty.studyYear": "대상: {year}",
+    "faculty.loginOnly": "재학생 전용・로그인 필요",
+    "faculty.publicDoc": "일반 공개"
   },
   "content": {
     "title": {
@@ -1201,9 +1205,89 @@ TourI18n.register("ko", {
       "text": "학부·학과 소개와 수업 예는 대학 공식 사이트의 각 학부·학과 페이지를 바탕으로 정리했습니다(2026년 11월 확인). 수업 내용과 개설 학년은 바뀔 수 있습니다.",
       "status": "provisional"
     },
+    "facultyGuide.studyLinks.note": {
+      "ja": "卒業に必要な単位や必修科目は、入学年度によって異なることがあります。自分の入学年度の資料を確認してください。",
+      "text": "졸업에 필요한 학점과 필수 과목은 입학 연도에 따라 다를 수 있습니다. 자신의 입학 연도 자료를 확인하세요.",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.curriculum.label": {
+      "ja": "カリキュラムを見る",
+      "text": "커리큘럼 보기",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.curriculum.text": {
+      "ja": "学科・課程ごとの授業科目と単位数の一覧です。",
+      "text": "학과·과정별 수업 과목과 학점 목록입니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.model.label": {
+      "ja": "4年間の履修モデルを見る",
+      "text": "4년간의 이수 모델 보기",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.model.text": {
+      "ja": "1年次から4年次まで、どの順番で授業を取るかの例です。",
+      "text": "1학년부터 4학년까지 어떤 순서로 수업을 듣는지 보여 주는 예입니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.syllabus.label": {
+      "ja": "シラバスで授業を調べる",
+      "text": "실러버스에서 수업 찾기",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.syllabus.text": {
+      "ja": "授業ごとの内容と授業計画を調べられます。開講年度・キャンパス・学部を選んで検索します。",
+      "text": "수업별 내용과 수업 계획을 찾아볼 수 있습니다. 개강 연도·캠퍼스·학부를 선택해 검색합니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.syllabus.year": {
+      "ja": "開講年度ごと（検索画面で選ぶ）",
+      "text": "개강 연도별(검색 화면에서 선택)",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.handbook.label": {
+      "ja": "履修心得・履修の手引き",
+      "text": "이수 안내(리슈 고코로에·리슈노 테비키)",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.handbook.text": {
+      "ja": "履修の方法、卒業要件、必修科目をまとめた資料です。2026年度版の一般公開は確認できなかったため、学生ポータル kwic への案内にしています。",
+      "text": "이수 방법, 졸업 요건, 필수 과목을 정리한 자료입니다. 2026년도판의 일반 공개를 확인할 수 없어 학생 포털 kwic으로 안내합니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.handbook.year": {
+      "ja": "2026年度（在学生のみ）",
+      "text": "2026년도(재학생만)",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.timetable.label": {
+      "ja": "授業時間帯を見る",
+      "text": "수업 시간대 보기",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.timetable.text": {
+      "ja": "神戸三田キャンパスの学部の授業は、第1時限 9:00〜10:30 から第5時限 16:50〜18:20 までです。",
+      "text": "고베 산다 캠퍼스의 학부 수업은 1교시 9:00~10:30부터 5교시 16:50~18:20까지입니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.timetable.year": {
+      "ja": "2026年度以降",
+      "text": "2026년도 이후",
+      "status": "provisional"
+    },
     "facultyGuide.buildingNote": {
       "ja": "各号館のカードの説明をもとにした関連です。その学部の授業が主にこの建物で行われることを示すものではありません。",
       "text": "각 호관 카드의 설명을 바탕으로 한 관련입니다. 그 학부의 수업이 주로 이 건물에서 이루어진다는 뜻은 아닙니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.study.curriculum.year": {
+      "ja": "2021年度以降入学生",
+      "text": "2021년도 이후 입학생",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.study.model.year": {
+      "ja": "2021年度以降入学生",
+      "text": "2021년도 이후 입학생",
       "status": "provisional"
     },
     "facultyGuide.faculties.policy.name": {
@@ -1381,6 +1465,16 @@ TourI18n.register("ko", {
       "text": "외교의 역사와 오늘날의 외교 정책, 일본 외교에 대한 기본적인 이해를 깊게 합니다.",
       "status": "provisional"
     },
+    "facultyGuide.faculties.science.study.curriculum.year": {
+      "ja": "2025年度以降入学生用など（大学学則の別表）",
+      "text": "2025년도 이후 입학생용 등(대학 학칙 별표)",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.study.model.year": {
+      "ja": "資料に記載なし",
+      "text": "자료에 기재 없음",
+      "status": "provisional"
+    },
     "facultyGuide.faculties.science.name": {
       "ja": "理学部",
       "text": "이학부",
@@ -1394,6 +1488,11 @@ TourI18n.register("ko", {
     "facultyGuide.faculties.science.fields": {
       "ja": "数学・物理学・宇宙物理学・化学を、3つの学科で学びます。物理・宇宙学科には、宇宙物理学の主要3分野（電波天文学・赤外線天文学・X線天文学）がそろっています。",
       "text": "수학·물리학·우주물리학·화학을 3개 학과에서 배웁니다. 물리·우주학과에는 우주물리학의 주요 3분야(전파천문학·적외선천문학·X선천문학)가 갖춰져 있습니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "자료에 기재 없음",
       "status": "provisional"
     },
     "facultyGuide.faculties.science.departments.science-math.name": {
@@ -1506,6 +1605,11 @@ TourI18n.register("ko", {
       "text": "물리학의 기본 법칙을 사용해 천체와 우주의 구조와 진화를 이해합니다.",
       "status": "provisional"
     },
+    "facultyGuide.faculties.science.departments.science-chemistry.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "자료에 기재 없음",
+      "status": "provisional"
+    },
     "facultyGuide.faculties.science.departments.science-chemistry.name": {
       "ja": "化学科",
       "text": "화학과",
@@ -1561,6 +1665,16 @@ TourI18n.register("ko", {
       "text": "유기 합성 연구에 필요한 기본 조작과 기술을 익힙니다.",
       "status": "provisional"
     },
+    "facultyGuide.faculties.engineering.study.curriculum.year": {
+      "ja": "2025年度以降入学生用など（大学学則の別表）",
+      "text": "2025년도 이후 입학생용 등(대학 학칙 별표)",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.study.model.year": {
+      "ja": "資料に記載なし",
+      "text": "자료에 기재 없음",
+      "status": "provisional"
+    },
     "facultyGuide.faculties.engineering.name": {
       "ja": "工学部",
       "text": "공학부",
@@ -1574,6 +1688,11 @@ TourI18n.register("ko", {
     "facultyGuide.faculties.engineering.fields": {
       "ja": "物質科学・電気電子工学・情報科学・人間・機械系の4分野を、4つの課程で学びます。",
       "text": "물질과학·전기전자공학·정보과학·인간·기계계의 4개 분야를 4개 과정에서 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "자료에 기재 없음",
       "status": "provisional"
     },
     "facultyGuide.faculties.engineering.departments.engineering-materials.name": {
@@ -1609,6 +1728,11 @@ TourI18n.register("ko", {
     "facultyGuide.faculties.engineering.departments.engineering-materials.courseNote": {
       "ja": "物質工学概論・ものづくり理工学実験1は、公式サイトには科目名のみ掲載されているため、内容の説明は載せていません。",
       "text": "물질공학개론·모노즈쿠리 이공학실험 1은 공식 사이트에 과목명만 게재되어 있어 내용 설명은 싣지 않았습니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "자료에 기재 없음",
       "status": "provisional"
     },
     "facultyGuide.faculties.engineering.departments.engineering-electrical.name": {
@@ -1651,6 +1775,11 @@ TourI18n.register("ko", {
       "text": "전기전자공학의 기반이 되는 계측 기술에 관한 실험 과목입니다.",
       "status": "provisional"
     },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.study.curriculum.year": {
+      "ja": "2025年度以降入学生用",
+      "text": "2025년도 이후 입학생용",
+      "status": "provisional"
+    },
     "facultyGuide.faculties.engineering.departments.engineering-informatics.name": {
       "ja": "情報工学課程",
       "text": "정보공학 과정",
@@ -1679,6 +1808,11 @@ TourI18n.register("ko", {
     "facultyGuide.faculties.engineering.departments.engineering-informatics.courseNote": {
       "ja": "公式サイトには科目名のみ掲載されているため、内容の説明は載せていません。",
       "text": "공식 사이트에 과목명만 게재되어 있어 내용 설명은 싣지 않았습니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.study.curriculum.year": {
+      "ja": "2025年度以降入学生用・2021年度以降入学生用",
+      "text": "2025년도 이후 입학생용·2021년도 이후 입학생용",
       "status": "provisional"
     },
     "facultyGuide.faculties.engineering.departments.engineering-mechanical.name": {
@@ -1711,6 +1845,16 @@ TourI18n.register("ko", {
       "text": "공식 사이트에 과목명만 게재되어 있어 내용 설명은 싣지 않았습니다.",
       "status": "provisional"
     },
+    "facultyGuide.faculties.bes.study.curriculum.year": {
+      "ja": "2025年度以降入学生用など（大学学則の別表）",
+      "text": "2025년도 이후 입학생용 등(대학 학칙 별표)",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.study.model.year": {
+      "ja": "資料に記載なし",
+      "text": "자료에 기재 없음",
+      "status": "provisional"
+    },
     "facultyGuide.faculties.bes.name": {
       "ja": "生命環境学部",
       "text": "생명환경학부",
@@ -1724,6 +1868,11 @@ TourI18n.register("ko", {
     "facultyGuide.faculties.bes.fields": {
       "ja": "生物科学・生命医科学・環境応用化学を、3つの学科で学びます。",
       "text": "생물과학·생명의과학·환경응용화학을 3개 학과에서 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "자료에 기재 없음",
       "status": "provisional"
     },
     "facultyGuide.faculties.bes.departments.bes-biology.name": {
@@ -1779,6 +1928,11 @@ TourI18n.register("ko", {
     "facultyGuide.faculties.bes.departments.bes-biology.courses.2.text": {
       "ja": "卒業研究の前に必要な実験手法や、研究の基本的な考え方を身につけます。",
       "text": "졸업 연구 전에 필요한 실험 기법과 연구의 기본적인 사고방식을 익힙니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "자료에 기재 없음",
       "status": "provisional"
     },
     "facultyGuide.faculties.bes.departments.bes-biomedical.name": {
@@ -1889,6 +2043,16 @@ TourI18n.register("ko", {
     "facultyGuide.faculties.bes.departments.bes-chemistry.courses.2.text": {
       "ja": "環境分析・地球化学・無機・物理・有機・高分子化学にわたって、分析・合成・分離・データ処理の基本的な方法を学びます。",
       "text": "환경분석·지구화학·무기·물리·유기·고분자화학에 걸쳐 분석·합성·분리·데이터 처리의 기본적인 방법을 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "자료에 기재 없음",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.study.model.year": {
+      "ja": "資料に記載なし",
+      "text": "자료에 기재 없음",
       "status": "provisional"
     },
     "facultyGuide.faculties.architecture.name": {

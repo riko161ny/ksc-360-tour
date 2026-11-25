@@ -2174,3 +2174,73 @@ body.mobile .faculty-grid,
 body.mobile .faculty-dept-list {
   grid-template-columns: 1fr;
 }
+
+/* 学部情報「もっと詳しく学びを知る」 */
+.study-link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.study-link {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(31, 42, 68, 0.08);
+  color: #1f2a44;
+  text-decoration: none;
+}
+
+.study-link:hover,
+.study-link:focus-visible {
+  box-shadow: 0 0 0 2px #f07a3a, 0 4px 12px rgba(31, 42, 68, 0.12);
+  outline: none;
+}
+
+.study-link-label {
+  font-size: 15px;
+  font-weight: bold;
+  color: #b4561f;
+}
+
+.study-link-text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #3b4558;
+}
+
+.study-link-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.study-tag {
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: #eef1f6;
+  color: #3b4558;
+  font-size: 12px;
+}
+
+.study-tag-public {
+  background: #e3f2e8;
+  color: #23633a;
+}
+
+.study-tag-login {
+  background: #fde7e4;
+  color: #a12b1c;
+  font-weight: bold;
+}
+
+.study-links {
+  margin-top: 20px;
+}
+
+.study-links .study-tag {
+  border-radius: 8px;
+}

@@ -88,7 +88,11 @@ TourI18n.register("en", {
     "faculty.officialFaculty": "{name} official website",
     "faculty.officialDepartment": "{name} official page",
     "faculty.learn": "What you learn",
-    "faculty.courses": "Sample courses"
+    "faculty.courses": "Sample courses",
+    "faculty.study": "Learn more about studying here",
+    "faculty.studyYear": "Applies to: {year}",
+    "faculty.loginOnly": "Current students only (login required)",
+    "faculty.publicDoc": "Public"
   },
   "content": {
     "title": {
@@ -1201,9 +1205,89 @@ TourI18n.register("en", {
       "text": "The school and department introductions and sample courses are based on each school's and department's page on the university's official website (checked in November 2026). Course content and the year in which courses are offered may change.",
       "status": "provisional"
     },
+    "facultyGuide.studyLinks.note": {
+      "ja": "卒業に必要な単位や必修科目は、入学年度によって異なることがあります。自分の入学年度の資料を確認してください。",
+      "text": "Credits required for graduation and required courses may differ by year of entry. Check the materials for your own year of entry.",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.curriculum.label": {
+      "ja": "カリキュラムを見る",
+      "text": "View the curriculum",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.curriculum.text": {
+      "ja": "学科・課程ごとの授業科目と単位数の一覧です。",
+      "text": "A list of courses and credits for each department or program.",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.model.label": {
+      "ja": "4年間の履修モデルを見る",
+      "text": "View the four-year course plan",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.model.text": {
+      "ja": "1年次から4年次まで、どの順番で授業を取るかの例です。",
+      "text": "An example of the order in which to take courses from the first to the fourth year.",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.syllabus.label": {
+      "ja": "シラバスで授業を調べる",
+      "text": "Search courses in the syllabus",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.syllabus.text": {
+      "ja": "授業ごとの内容と授業計画を調べられます。開講年度・キャンパス・学部を選んで検索します。",
+      "text": "Look up the content and schedule of each course. Search by choosing the academic year, campus and school.",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.syllabus.year": {
+      "ja": "開講年度ごと（検索画面で選ぶ）",
+      "text": "Each academic year (choose on the search page)",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.handbook.label": {
+      "ja": "履修心得・履修の手引き",
+      "text": "Course registration handbook (Rishu Kokoroe / Rishu no Tebiki)",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.handbook.text": {
+      "ja": "履修の方法、卒業要件、必修科目をまとめた資料です。2026年度版の一般公開は確認できなかったため、学生ポータル kwic への案内にしています。",
+      "text": "A guide to course registration, graduation requirements and required courses. We could not find a publicly available 2026 edition, so this links to the student portal kwic.",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.handbook.year": {
+      "ja": "2026年度（在学生のみ）",
+      "text": "2026 academic year (current students only)",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.timetable.label": {
+      "ja": "授業時間帯を見る",
+      "text": "View class periods",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.timetable.text": {
+      "ja": "神戸三田キャンパスの学部の授業は、第1時限 9:00〜10:30 から第5時限 16:50〜18:20 までです。",
+      "text": "Undergraduate classes at Kobe Sanda Campus run from 1st period (9:00–10:30) to 5th period (16:50–18:20).",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.timetable.year": {
+      "ja": "2026年度以降",
+      "text": "From the 2026 academic year",
+      "status": "provisional"
+    },
     "facultyGuide.buildingNote": {
       "ja": "各号館のカードの説明をもとにした関連です。その学部の授業が主にこの建物で行われることを示すものではありません。",
       "text": "This link is based on the description in this building's card. It does not mean that the school's classes are held mainly in this building.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.study.curriculum.year": {
+      "ja": "2021年度以降入学生",
+      "text": "Students entering in 2021 or later",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.study.model.year": {
+      "ja": "2021年度以降入学生",
+      "text": "Students entering in 2021 or later",
       "status": "provisional"
     },
     "facultyGuide.faculties.policy.name": {
@@ -1381,6 +1465,16 @@ TourI18n.register("en", {
       "text": "Deepen your basic understanding of diplomatic history, today's foreign policy and Japanese diplomacy.",
       "status": "provisional"
     },
+    "facultyGuide.faculties.science.study.curriculum.year": {
+      "ja": "2025年度以降入学生用など（大学学則の別表）",
+      "text": "For students entering in 2025 or later, and others (appendix to the University Regulations)",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.study.model.year": {
+      "ja": "資料に記載なし",
+      "text": "Not stated in the document",
+      "status": "provisional"
+    },
     "facultyGuide.faculties.science.name": {
       "ja": "理学部",
       "text": "School of Science",
@@ -1394,6 +1488,11 @@ TourI18n.register("en", {
     "facultyGuide.faculties.science.fields": {
       "ja": "数学・物理学・宇宙物理学・化学を、3つの学科で学びます。物理・宇宙学科には、宇宙物理学の主要3分野（電波天文学・赤外線天文学・X線天文学）がそろっています。",
       "text": "Mathematics, physics, astrophysics and chemistry are studied in three departments. The Department of Physics and Astronomy covers the three main fields of astrophysics: radio, infrared and X-ray astronomy.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "Not stated in the document",
       "status": "provisional"
     },
     "facultyGuide.faculties.science.departments.science-math.name": {
@@ -1506,6 +1605,11 @@ TourI18n.register("en", {
       "text": "Use the basic laws of physics to understand the structure and evolution of celestial bodies and the universe.",
       "status": "provisional"
     },
+    "facultyGuide.faculties.science.departments.science-chemistry.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "Not stated in the document",
+      "status": "provisional"
+    },
     "facultyGuide.faculties.science.departments.science-chemistry.name": {
       "ja": "化学科",
       "text": "Department of Chemistry",
@@ -1561,6 +1665,16 @@ TourI18n.register("en", {
       "text": "Learn the basic techniques and skills needed for research in organic synthesis.",
       "status": "provisional"
     },
+    "facultyGuide.faculties.engineering.study.curriculum.year": {
+      "ja": "2025年度以降入学生用など（大学学則の別表）",
+      "text": "For students entering in 2025 or later, and others (appendix to the University Regulations)",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.study.model.year": {
+      "ja": "資料に記載なし",
+      "text": "Not stated in the document",
+      "status": "provisional"
+    },
     "facultyGuide.faculties.engineering.name": {
       "ja": "工学部",
       "text": "School of Engineering",
@@ -1574,6 +1688,11 @@ TourI18n.register("en", {
     "facultyGuide.faculties.engineering.fields": {
       "ja": "物質科学・電気電子工学・情報科学・人間・機械系の4分野を、4つの課程で学びます。",
       "text": "Four fields—materials science, electrical and electronic engineering, information science, and human and mechanical systems—are studied in four programs.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "Not stated in the document",
       "status": "provisional"
     },
     "facultyGuide.faculties.engineering.departments.engineering-materials.name": {
@@ -1609,6 +1728,11 @@ TourI18n.register("en", {
     "facultyGuide.faculties.engineering.departments.engineering-materials.courseNote": {
       "ja": "物質工学概論・ものづくり理工学実験1は、公式サイトには科目名のみ掲載されているため、内容の説明は載せていません。",
       "text": "For Introduction to Materials Engineering and Science and Engineering Manufacturing Lab 1, the official website lists only the course names, so no descriptions are given.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "Not stated in the document",
       "status": "provisional"
     },
     "facultyGuide.faculties.engineering.departments.engineering-electrical.name": {
@@ -1651,6 +1775,11 @@ TourI18n.register("en", {
       "text": "A laboratory course on the measurement technologies that underpin electrical and electronic engineering.",
       "status": "provisional"
     },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.study.curriculum.year": {
+      "ja": "2025年度以降入学生用",
+      "text": "For students entering in 2025 or later",
+      "status": "provisional"
+    },
     "facultyGuide.faculties.engineering.departments.engineering-informatics.name": {
       "ja": "情報工学課程",
       "text": "Program in Informatics",
@@ -1679,6 +1808,11 @@ TourI18n.register("en", {
     "facultyGuide.faculties.engineering.departments.engineering-informatics.courseNote": {
       "ja": "公式サイトには科目名のみ掲載されているため、内容の説明は載せていません。",
       "text": "The official website lists only the course names, so no descriptions are given.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.study.curriculum.year": {
+      "ja": "2025年度以降入学生用・2021年度以降入学生用",
+      "text": "For students entering in 2025 or later / in 2021 or later",
       "status": "provisional"
     },
     "facultyGuide.faculties.engineering.departments.engineering-mechanical.name": {
@@ -1711,6 +1845,16 @@ TourI18n.register("en", {
       "text": "The official website lists only the course names, so no descriptions are given.",
       "status": "provisional"
     },
+    "facultyGuide.faculties.bes.study.curriculum.year": {
+      "ja": "2025年度以降入学生用など（大学学則の別表）",
+      "text": "For students entering in 2025 or later, and others (appendix to the University Regulations)",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.study.model.year": {
+      "ja": "資料に記載なし",
+      "text": "Not stated in the document",
+      "status": "provisional"
+    },
     "facultyGuide.faculties.bes.name": {
       "ja": "生命環境学部",
       "text": "School of Biological and Environmental Sciences",
@@ -1724,6 +1868,11 @@ TourI18n.register("en", {
     "facultyGuide.faculties.bes.fields": {
       "ja": "生物科学・生命医科学・環境応用化学を、3つの学科で学びます。",
       "text": "Biological sciences, biomedical sciences and environmental applied chemistry are studied in three departments.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "Not stated in the document",
       "status": "provisional"
     },
     "facultyGuide.faculties.bes.departments.bes-biology.name": {
@@ -1779,6 +1928,11 @@ TourI18n.register("en", {
     "facultyGuide.faculties.bes.departments.bes-biology.courses.2.text": {
       "ja": "卒業研究の前に必要な実験手法や、研究の基本的な考え方を身につけます。",
       "text": "Learn the experimental methods and basic research mindset needed before starting graduation research.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "Not stated in the document",
       "status": "provisional"
     },
     "facultyGuide.faculties.bes.departments.bes-biomedical.name": {
@@ -1889,6 +2043,16 @@ TourI18n.register("en", {
     "facultyGuide.faculties.bes.departments.bes-chemistry.courses.2.text": {
       "ja": "環境分析・地球化学・無機・物理・有機・高分子化学にわたって、分析・合成・分離・データ処理の基本的な方法を学びます。",
       "text": "Learn the basic methods of analysis, synthesis, separation and data processing across environmental analysis, geochemistry, and inorganic, physical, organic and polymer chemistry.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "Not stated in the document",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.study.model.year": {
+      "ja": "資料に記載なし",
+      "text": "Not stated in the document",
       "status": "provisional"
     },
     "facultyGuide.faculties.architecture.name": {

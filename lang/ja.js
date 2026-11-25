@@ -88,6 +88,10 @@ TourI18n.register("ja", {
     "faculty.officialFaculty": "{name}の公式サイト",
     "faculty.officialDepartment": "{name}の公式ページ",
     "faculty.learn": "学習内容",
-    "faculty.courses": "授業の例"
+    "faculty.courses": "授業の例",
+    "faculty.study": "もっと詳しく学びを知る",
+    "faculty.studyYear": "対象：{year}",
+    "faculty.loginOnly": "在学生向け・要ログイン",
+    "faculty.publicDoc": "一般公開"
   }
 });

@@ -478,6 +478,7 @@
         actions.appendChild(createLinkButton({ label: t('faculty.officialFaculty', { name: faculty.name }), url: faculty.url }));
         bodyElement.appendChild(actions);
       }
+      appendStudyLinks(data, faculty, null);
     } else {
       var dhead = el('div', 'faculty-head');
       dhead.appendChild(el('span', 'faculty-of', faculty.name));
@@ -510,8 +511,38 @@
         dActions.appendChild(createLinkButton({ label: t('faculty.officialDepartment', { name: department.name }), url: department.url }));
         bodyElement.appendChild(dActions);
       }
+      appendStudyLinks(data, faculty, department);
     }
     if (data.source) { bodyElement.appendChild(el('p', 'club-note', data.source)); }
+  }
+
+  // 「もっと詳しく学びを知る」: 学科の資料があればそれを、なければ学部の資料を使う。
+  function appendStudyLinks(data, faculty, department) {
+    var config = data.studyLinks;
+    if (!config || !config.items) { return; }
+    var box = el('div', 'info-section study-links');
+    box.appendChild(el('h3', 'info-heading', t('faculty.study')));
+    var list = el('div', 'study-link-list');
+    config.items.forEach(function(item) {
+      var own = (department && department.study && department.study[item.id]) || (faculty.study && faculty.study[item.id]);
+      var url = item.url || (own && own.url);
+      if (!url) { return; }
+      var year = item.year || (own && own.year);
+      var a = el('a', 'study-link');
+      a.href = url;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.appendChild(el('span', 'study-link-label', item.label + ' ↗'));
+      if (item.text) { a.appendChild(el('span', 'study-link-text', item.text)); }
+      var meta = el('span', 'study-link-meta');
+      if (year) { meta.appendChild(el('span', 'study-tag', t('faculty.studyYear', { year: year }))); }
+      meta.appendChild(el('span', 'study-tag ' + (item.login ? 'study-tag-login' : 'study-tag-public'), t(item.login ? 'faculty.loginOnly' : 'faculty.publicDoc')));
+      a.appendChild(meta);
+      list.appendChild(a);
+    });
+    box.appendChild(list);
+    if (config.note) { box.appendChild(el('p', 'info-note', '※' + config.note)); }
+    bodyElement.appendChild(box);
   }
 
   function createIntro(intro) {

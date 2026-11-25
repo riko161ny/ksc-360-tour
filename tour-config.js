@@ -621,10 +621,48 @@ window.TOUR_CONFIG = {
   facultyGuide: {
     "intro": "神戸三田キャンパスには5つの学部があります。学部を選ぶと、学部の紹介と学科・課程の一覧が表示されます。",
     "source": "学部・学科の紹介と授業例は、大学公式サイトの各学部・学科のページをもとにまとめています（2026年11月確認）。授業の内容や開講年次は変わることがあります。",
+    "studyLinks": {
+      "note": "卒業に必要な単位や必修科目は、入学年度によって異なることがあります。自分の入学年度の資料を確認してください。",
+      "items": [
+        {
+          "id": "curriculum",
+          "label": "カリキュラムを見る",
+          "text": "学科・課程ごとの授業科目と単位数の一覧です。"
+        },
+        {
+          "id": "model",
+          "label": "4年間の履修モデルを見る",
+          "text": "1年次から4年次まで、どの順番で授業を取るかの例です。"
+        },
+        {
+          "id": "syllabus",
+          "label": "シラバスで授業を調べる",
+          "text": "授業ごとの内容と授業計画を調べられます。開講年度・キャンパス・学部を選んで検索します。",
+          "url": "https://syllabus.kwansei.ac.jp/uniasv2/UnSSOLoginControlFree",
+          "year": "開講年度ごと（検索画面で選ぶ）"
+        },
+        {
+          "id": "handbook",
+          "label": "履修心得・履修の手引き",
+          "text": "履修の方法、卒業要件、必修科目をまとめた資料です。2026年度版の一般公開は確認できなかったため、学生ポータル kwic への案内にしています。",
+          "url": "https://kwic.kwansei.ac.jp/",
+          "year": "2026年度（在学生のみ）",
+          "login": true
+        },
+        {
+          "id": "timetable",
+          "label": "授業時間帯を見る",
+          "text": "神戸三田キャンパスの学部の授業は、第1時限 9:00〜10:30 から第5時限 16:50〜18:20 までです。",
+          "url": "https://www.kwansei.ac.jp/campuslife/timetable.html",
+          "year": "2026年度以降"
+        }
+      ]
+    },
     "buildingNote": "各号館のカードの説明をもとにした関連です。その学部の授業が主にこの建物で行われることを示すものではありません。",
     "faculties": [
       {
         "id": "policy",
+        "study": {"curriculum": {"url": "https://www.kwansei.ac.jp/s_policy/assets/sousei_curriculum1.pdf", "year": "2021年度以降入学生"}, "model": {"url": "https://www.kwansei.ac.jp/s_policy/assets/sousei_curriculum3.pdf", "year": "2021年度以降入学生"}},
         "name": "総合政策学部",
         "url": "https://www.kwansei.ac.jp/s_policy/",
         "lead": "「自然と人間の共生、人間と人間の共生」を理念に、現代社会のさまざまな問題に対して、多様な学問の専門知識をもとに解決策を探り、実践できる力を育てる学部です。",
@@ -714,6 +752,7 @@ window.TOUR_CONFIG = {
       },
       {
         "id": "science",
+        "study": {"curriculum": {"url": "https://www.kwansei.ac.jp/assets/36_science.pdf", "year": "2025年度以降入学生用など（大学学則の別表）"}, "model": {"url": "https://www.kwansei.ac.jp/s_science/assets/s_science_model2.pdf", "year": "資料に記載なし"}},
         "name": "理学部",
         "url": "https://www.kwansei.ac.jp/s_science/",
         "lead": "自然や科学の法則を理解し、新たな真理を追究する力を育む学部です。",
@@ -721,6 +760,7 @@ window.TOUR_CONFIG = {
         "departments": [
           {
             "id": "science-math",
+            "study": {"curriculum": {"url": "https://www.kwansei.ac.jp/s_science/assets/s_scienced_ms_curriculum.pdf", "year": "資料に記載なし"}},
             "name": "数理科学科",
             "url": "https://www.kwansei.ac.jp/s_science/d_ms/",
             "text": "基礎数学から応用数理までを幅広く学びます。データサイエンスや確率過程、統計・アクチュアリーに関わる手法も扱います。",
@@ -767,6 +807,7 @@ window.TOUR_CONFIG = {
           },
           {
             "id": "science-chemistry",
+            "study": {"curriculum": {"url": "https://www.kwansei.ac.jp/s_science/assets/s_scienced_d_c_curriculum.pdf", "year": "資料に記載なし"}},
             "name": "化学科",
             "url": "https://www.kwansei.ac.jp/s_science/d_c/",
             "text": "原子・分子のレベルから物質を理解します。物質の構造・機能とその原理を解明する「分析・物理化学系」と、化学反応で機能性物質を創りだす「無機・有機化学系」の2分野があります。",
@@ -792,6 +833,7 @@ window.TOUR_CONFIG = {
       },
       {
         "id": "engineering",
+        "study": {"curriculum": {"url": "https://www.kwansei.ac.jp/assets/37_engineering.pdf", "year": "2025年度以降入学生用など（大学学則の別表）"}, "model": {"url": "https://www.kwansei.ac.jp/s_engineering/assets/s_engineering_model.pdf", "year": "資料に記載なし"}},
         "name": "工学部",
         "url": "https://www.kwansei.ac.jp/s_engineering/",
         "lead": "学科の代わりに「課程制」を取り入れ、分野を横断したカリキュラムで、複雑化する社会の課題を解決できる力を身につける学部です。",
@@ -799,6 +841,7 @@ window.TOUR_CONFIG = {
         "departments": [
           {
             "id": "engineering-materials",
+            "study": {"curriculum": {"url": "https://www.kg-nanotech.jp/page/page000225.html", "year": "資料に記載なし"}},
             "name": "物質工学課程",
             "url": "https://www.kg-nanotech.jp/page/page000008.html",
             "text": "「創エネ」「蓄エネ」「省エネ」の3つの観点から物質科学をとらえ、新しい物質を生み出すための基礎から実践までを、物理と化学の両面から学びます。",
@@ -818,6 +861,7 @@ window.TOUR_CONFIG = {
           },
           {
             "id": "engineering-electrical",
+            "study": {"curriculum": {"url": "https://www.kg-nanotech.jp/page/page000225.html", "year": "資料に記載なし"}},
             "name": "電気電子応用工学課程",
             "url": "https://www.kg-nanotech.jp/page/page000009.html",
             "text": "次世代モビリティーなどで使われる動力機器や情報通信機器、エネルギーの輸送・変換機器の基盤となる、電気エネルギーの有効利用について学びます。",
@@ -838,6 +882,7 @@ window.TOUR_CONFIG = {
           },
           {
             "id": "engineering-informatics",
+            "study": {"curriculum": {"url": "https://cs.kwansei.ac.jp/education/", "year": "2025年度以降入学生用"}},
             "name": "情報工学課程",
             "url": "https://cs.kwansei.ac.jp/",
             "text": "ハードウェア・ソフトウェア・ネットワークなどITの基盤となる専門知識に加え、AIやデータマイニング、コンピュータグラフィックス（CG）などの技術を学びます。",
@@ -856,6 +901,7 @@ window.TOUR_CONFIG = {
           },
           {
             "id": "engineering-mechanical",
+            "study": {"curriculum": {"url": "https://am.kwansei.ac.jp/education.html", "year": "2025年度以降入学生用・2021年度以降入学生用"}},
             "name": "知能・機械工学課程",
             "url": "https://am.kwansei.ac.jp/",
             "text": "人工知能と機械工学の基礎から、機械システムを知能化するための幅広い知識・技術を学びます。",
@@ -876,6 +922,7 @@ window.TOUR_CONFIG = {
       },
       {
         "id": "bes",
+        "study": {"curriculum": {"url": "https://www.kwansei.ac.jp/assets/38_bes.pdf", "year": "2025年度以降入学生用など（大学学則の別表）"}, "model": {"url": "https://www.kwansei.ac.jp/s_bes/assets/s_bes_model.pdf", "year": "資料に記載なし"}},
         "name": "生命環境学部",
         "url": "https://www.kwansei.ac.jp/s_bes/",
         "lead": "環境・食糧・健康など、現代社会の課題の解決に挑む力を身につける学部です。実験科学とデータサイエンスを活かした教育・研究に取り組んでいます。",
@@ -883,6 +930,7 @@ window.TOUR_CONFIG = {
         "departments": [
           {
             "id": "bes-biology",
+            "study": {"curriculum": {"url": "https://www.kwansei.ac.jp/s_bes/assets/s_bes_d_b_curriculum2022.pdf", "year": "資料に記載なし"}},
             "name": "生物科学科",
             "url": "https://www.kwansei.ac.jp/s_bes/d_b/",
             "text": "地球上の多様な生物について学び、その活用の可能性を探ります。植物昆虫科学・応用微生物学・計算生物学の3つの専攻があります。",
@@ -906,6 +954,7 @@ window.TOUR_CONFIG = {
           },
           {
             "id": "bes-biomedical",
+            "study": {"curriculum": {"url": "https://www.kwansei.ac.jp/s_bes/assets/s_bes_d_bs_curriculum.pdf", "year": "資料に記載なし"}},
             "name": "生命医科学科",
             "url": "https://www.kwansei.ac.jp/s_bes/d_bs/",
             "text": "ヒトを含む哺乳動物の生命現象を解明し、基礎医学分野に応用することで、病気の治療や健康の維持に役立てることをめざします。発生再生医科学・生命医科学・医工学の3つの専攻があります。",
@@ -954,6 +1003,7 @@ window.TOUR_CONFIG = {
       },
       {
         "id": "architecture",
+        "study": {"curriculum": {"url": "https://www.kwansei.ac.jp/s_architecture/assets/s_architecture_curriculum.pdf", "year": "資料に記載なし"}, "model": {"url": "https://www.kwansei.ac.jp/s_architecture/assets/s_architecture_risyumodel.pdf", "year": "資料に記載なし"}},
         "name": "建築学部",
         "url": "https://www.kwansei.ac.jp/s_architecture/",
         "lead": "グローバルな視野で建築と都市の未来を創造し、建築学で社会課題の解決をめざす学部です。",

@@ -88,7 +88,11 @@ TourI18n.register("zh-CN", {
     "faculty.officialFaculty": "{name}官方网站",
     "faculty.officialDepartment": "{name}官方页面",
     "faculty.learn": "学习内容",
-    "faculty.courses": "课程示例"
+    "faculty.courses": "课程示例",
+    "faculty.study": "进一步了解学习内容",
+    "faculty.studyYear": "适用：{year}",
+    "faculty.loginOnly": "仅限在校生・需要登录",
+    "faculty.publicDoc": "公开资料"
   },
   "content": {
     "title": {
@@ -1201,9 +1205,89 @@ TourI18n.register("zh-CN", {
       "text": "学部・学科介绍和课程示例依据大学官方网站各学部・学科的页面整理（2026年11月确认）。课程内容和开课年级可能会有变化。",
       "status": "provisional"
     },
+    "facultyGuide.studyLinks.note": {
+      "ja": "卒業に必要な単位や必修科目は、入学年度によって異なることがあります。自分の入学年度の資料を確認してください。",
+      "text": "毕业所需学分及必修课程可能因入学年度而异。请查看与自己入学年度对应的资料。",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.curriculum.label": {
+      "ja": "カリキュラムを見る",
+      "text": "查看课程设置",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.curriculum.text": {
+      "ja": "学科・課程ごとの授業科目と単位数の一覧です。",
+      "text": "各学科・课程的授课科目及学分一览。",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.model.label": {
+      "ja": "4年間の履修モデルを見る",
+      "text": "查看四年修读模式",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.model.text": {
+      "ja": "1年次から4年次まで、どの順番で授業を取るかの例です。",
+      "text": "从一年级到四年级按什么顺序修读课程的示例。",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.syllabus.label": {
+      "ja": "シラバスで授業を調べる",
+      "text": "在教学大纲中查询课程",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.syllabus.text": {
+      "ja": "授業ごとの内容と授業計画を調べられます。開講年度・キャンパス・学部を選んで検索します。",
+      "text": "可查询每门课程的内容和授课计划。选择开课年度、校区和学部进行检索。",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.syllabus.year": {
+      "ja": "開講年度ごと（検索画面で選ぶ）",
+      "text": "按开课年度（在检索页面选择）",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.handbook.label": {
+      "ja": "履修心得・履修の手引き",
+      "text": "选课须知・选课指南",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.handbook.text": {
+      "ja": "履修の方法、卒業要件、必修科目をまとめた資料です。2026年度版の一般公開は確認できなかったため、学生ポータル kwic への案内にしています。",
+      "text": "汇总了选课方法、毕业要求和必修课程的资料。由于未能确认2026年度版已公开，此处链接至学生门户网站 kwic。",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.handbook.year": {
+      "ja": "2026年度（在学生のみ）",
+      "text": "2026年度（仅限在校生）",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.timetable.label": {
+      "ja": "授業時間帯を見る",
+      "text": "查看上课时间",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.timetable.text": {
+      "ja": "神戸三田キャンパスの学部の授業は、第1時限 9:00〜10:30 から第5時限 16:50〜18:20 までです。",
+      "text": "神户三田校区的本科课程从第1节（9:00～10:30）到第5节（16:50～18:20）。",
+      "status": "provisional"
+    },
+    "facultyGuide.studyLinks.items.timetable.year": {
+      "ja": "2026年度以降",
+      "text": "2026年度起",
+      "status": "provisional"
+    },
     "facultyGuide.buildingNote": {
       "ja": "各号館のカードの説明をもとにした関連です。その学部の授業が主にこの建物で行われることを示すものではありません。",
       "text": "此关联依据各号馆卡片中的说明，并不表示该学部的课程主要在本建筑中进行。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.study.curriculum.year": {
+      "ja": "2021年度以降入学生",
+      "text": "2021年度及以后入学的学生",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.study.model.year": {
+      "ja": "2021年度以降入学生",
+      "text": "2021年度及以后入学的学生",
       "status": "provisional"
     },
     "facultyGuide.faculties.policy.name": {
@@ -1381,6 +1465,16 @@ TourI18n.register("zh-CN", {
       "text": "加深对外交历史、当今外交政策及日本外交的基本理解。",
       "status": "provisional"
     },
+    "facultyGuide.faculties.science.study.curriculum.year": {
+      "ja": "2025年度以降入学生用など（大学学則の別表）",
+      "text": "适用于2025年度及以后入学的学生等（大学学则附表）",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.study.model.year": {
+      "ja": "資料に記載なし",
+      "text": "资料中未注明",
+      "status": "provisional"
+    },
     "facultyGuide.faculties.science.name": {
       "ja": "理学部",
       "text": "理系",
@@ -1394,6 +1488,11 @@ TourI18n.register("zh-CN", {
     "facultyGuide.faculties.science.fields": {
       "ja": "数学・物理学・宇宙物理学・化学を、3つの学科で学びます。物理・宇宙学科には、宇宙物理学の主要3分野（電波天文学・赤外線天文学・X線天文学）がそろっています。",
       "text": "在3个学科中学习数学、物理学、宇宙物理学和化学。物理、宇宙学科设有宇宙物理学的3个主要领域（射电天文学、红外天文学、X射线天文学）。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "资料中未注明",
       "status": "provisional"
     },
     "facultyGuide.faculties.science.departments.science-math.name": {
@@ -1506,6 +1605,11 @@ TourI18n.register("zh-CN", {
       "text": "运用物理学的基本法则，理解天体和宇宙的结构与演化。",
       "status": "provisional"
     },
+    "facultyGuide.faculties.science.departments.science-chemistry.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "资料中未注明",
+      "status": "provisional"
+    },
     "facultyGuide.faculties.science.departments.science-chemistry.name": {
       "ja": "化学科",
       "text": "化学科",
@@ -1561,6 +1665,16 @@ TourI18n.register("zh-CN", {
       "text": "掌握有机合成研究所需的基本操作和技术。",
       "status": "provisional"
     },
+    "facultyGuide.faculties.engineering.study.curriculum.year": {
+      "ja": "2025年度以降入学生用など（大学学則の別表）",
+      "text": "适用于2025年度及以后入学的学生等（大学学则附表）",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.study.model.year": {
+      "ja": "資料に記載なし",
+      "text": "资料中未注明",
+      "status": "provisional"
+    },
     "facultyGuide.faculties.engineering.name": {
       "ja": "工学部",
       "text": "工系",
@@ -1574,6 +1688,11 @@ TourI18n.register("zh-CN", {
     "facultyGuide.faculties.engineering.fields": {
       "ja": "物質科学・電気電子工学・情報科学・人間・機械系の4分野を、4つの課程で学びます。",
       "text": "在4个课程中学习物质科学、电气电子工学、信息科学、人类・机械系4个领域。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "资料中未注明",
       "status": "provisional"
     },
     "facultyGuide.faculties.engineering.departments.engineering-materials.name": {
@@ -1609,6 +1728,11 @@ TourI18n.register("zh-CN", {
     "facultyGuide.faculties.engineering.departments.engineering-materials.courseNote": {
       "ja": "物質工学概論・ものづくり理工学実験1は、公式サイトには科目名のみ掲載されているため、内容の説明は載せていません。",
       "text": "物质工学概论和制造理工学实验1在官方网站上仅刊载了科目名称，因此未附内容说明。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "资料中未注明",
       "status": "provisional"
     },
     "facultyGuide.faculties.engineering.departments.engineering-electrical.name": {
@@ -1651,6 +1775,11 @@ TourI18n.register("zh-CN", {
       "text": "关于作为电气电子工学基础的测量技术的实验科目。",
       "status": "provisional"
     },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.study.curriculum.year": {
+      "ja": "2025年度以降入学生用",
+      "text": "适用于2025年度及以后入学的学生",
+      "status": "provisional"
+    },
     "facultyGuide.faculties.engineering.departments.engineering-informatics.name": {
       "ja": "情報工学課程",
       "text": "信息工学课程",
@@ -1679,6 +1808,11 @@ TourI18n.register("zh-CN", {
     "facultyGuide.faculties.engineering.departments.engineering-informatics.courseNote": {
       "ja": "公式サイトには科目名のみ掲載されているため、内容の説明は載せていません。",
       "text": "官方网站上仅刊载了科目名称，因此未附内容说明。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.study.curriculum.year": {
+      "ja": "2025年度以降入学生用・2021年度以降入学生用",
+      "text": "适用于2025年度及以后入学的学生・2021年度及以后入学的学生",
       "status": "provisional"
     },
     "facultyGuide.faculties.engineering.departments.engineering-mechanical.name": {
@@ -1711,6 +1845,16 @@ TourI18n.register("zh-CN", {
       "text": "官方网站上仅刊载了科目名称，因此未附内容说明。",
       "status": "provisional"
     },
+    "facultyGuide.faculties.bes.study.curriculum.year": {
+      "ja": "2025年度以降入学生用など（大学学則の別表）",
+      "text": "适用于2025年度及以后入学的学生等（大学学则附表）",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.study.model.year": {
+      "ja": "資料に記載なし",
+      "text": "资料中未注明",
+      "status": "provisional"
+    },
     "facultyGuide.faculties.bes.name": {
       "ja": "生命環境学部",
       "text": "生命环境系",
@@ -1724,6 +1868,11 @@ TourI18n.register("zh-CN", {
     "facultyGuide.faculties.bes.fields": {
       "ja": "生物科学・生命医科学・環境応用化学を、3つの学科で学びます。",
       "text": "在3个学科中学习生物科学、生命医科学和环境应用化学。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "资料中未注明",
       "status": "provisional"
     },
     "facultyGuide.faculties.bes.departments.bes-biology.name": {
@@ -1779,6 +1928,11 @@ TourI18n.register("zh-CN", {
     "facultyGuide.faculties.bes.departments.bes-biology.courses.2.text": {
       "ja": "卒業研究の前に必要な実験手法や、研究の基本的な考え方を身につけます。",
       "text": "掌握毕业研究前所需的实验方法和研究的基本思路。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "资料中未注明",
       "status": "provisional"
     },
     "facultyGuide.faculties.bes.departments.bes-biomedical.name": {
@@ -1889,6 +2043,16 @@ TourI18n.register("zh-CN", {
     "facultyGuide.faculties.bes.departments.bes-chemistry.courses.2.text": {
       "ja": "環境分析・地球化学・無機・物理・有機・高分子化学にわたって、分析・合成・分離・データ処理の基本的な方法を学びます。",
       "text": "涵盖环境分析、地球化学、无机、物理、有机、高分子化学，学习分析、合成、分离、数据处理的基本方法。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.study.curriculum.year": {
+      "ja": "資料に記載なし",
+      "text": "资料中未注明",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.study.model.year": {
+      "ja": "資料に記載なし",
+      "text": "资料中未注明",
       "status": "provisional"
     },
     "facultyGuide.faculties.architecture.name": {
