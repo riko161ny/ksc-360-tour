@@ -136,18 +136,18 @@ TourI18n.register("ko", {
       "status": "provisional"
     },
     "spots.p06.name": {
-      "ja": "Ⅲ号館",
-      "text": "Ⅲ호관",
+      "ja": "Ⅲ号館前",
+      "text": "Ⅲ호관 앞",
       "status": "provisional"
     },
     "spots.p07.name": {
-      "ja": "食堂",
-      "text": "식당",
+      "ja": "Lunch Box（食堂）",
+      "text": "Lunch Box(식당)",
       "status": "provisional"
     },
     "spots.p08.name": {
-      "ja": "生協",
-      "text": "생협",
+      "ja": "Toy Box（生協）",
+      "text": "Toy Box(생협)",
       "status": "provisional"
     },
     "spots.p09.name": {
@@ -211,23 +211,23 @@ TourI18n.register("ko", {
       "status": "provisional"
     },
     "spots.p21.name": {
-      "ja": "Ⅳ号館",
-      "text": "Ⅳ호관",
+      "ja": "Ⅳ号館前",
+      "text": "Ⅳ호관 앞",
       "status": "provisional"
     },
     "spots.p22.name": {
-      "ja": "Ⅴ号館",
-      "text": "Ⅴ호관",
+      "ja": "Ⅴ号館前",
+      "text": "Ⅴ호관 앞",
       "status": "provisional"
     },
     "spots.p23.name": {
-      "ja": "Ⅶ号館",
-      "text": "Ⅶ호관",
+      "ja": "Ⅶ号館前",
+      "text": "Ⅶ호관 앞",
       "status": "provisional"
     },
     "spots.p24.name": {
-      "ja": "Ⅷ号館",
-      "text": "Ⅷ호관",
+      "ja": "Ⅷ号館前",
+      "text": "Ⅷ호관 앞",
       "status": "provisional"
     },
     "spots.p25.name": {

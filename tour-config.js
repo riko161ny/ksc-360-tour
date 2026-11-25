@@ -92,11 +92,11 @@ window.TOUR_CONFIG = {
       info: [
         { yaw: -2.23, pitch: -0.002, facility: "building2" }
       ], facility: "building2" },
-    { id: "p06", name: "Ⅲ号館", map: { x: 0.296, y: 0.6834 }, photo: null, view: { yaw: -0.39, pitch: 0, fov: 1.5708 }, northOffset: null,
+    { id: "p06", name: "Ⅲ号館前", map: { x: 0.296, y: 0.6834 }, photo: null, view: { yaw: -0.39, pitch: 0, fov: 1.5708 }, northOffset: null,
       links: [ { target: "zemi", yaw: -0.11, pitch: 0.07 } ],
       info: [ { yaw: -0.39, pitch: 0, facility: "building3" } ] },
-    { id: "p07", name: "食堂", map: { x: 0.2649, y: 0.5984 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -0.207, pitch: 0.034, facility: "cafeteria" } ] },
-    { id: "p08", name: "生協", map: { x: 0.2472, y: 0.5882 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: 0.4, pitch: -0.05, facility: "studentHall1" } ] },
+    { id: "p07", name: "Lunch Box（食堂）", map: { x: 0.2649, y: 0.5984 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -0.207, pitch: 0.034, facility: "cafeteria" } ] },
+    { id: "p08", name: "Toy Box（生協）", map: { x: 0.2472, y: 0.5882 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: 0.4, pitch: -0.05, facility: "studentHall1" } ] },
     { id: "p09", name: "食堂前テラス席", map: { x: 0.2496, y: 0.5441 }, photo: null, view: null, northOffset: null,
       links: [
         { target: "p07", yaw: 1.071, pitch: 0.147 },
@@ -172,7 +172,7 @@ window.TOUR_CONFIG = {
         { yaw: -2.201, pitch: 0.777, facility: "libraryEating" },
         { yaw: -2.685, pitch: -0.039, facility: "library" }
       ] },
-    { id: "p21", name: "Ⅳ号館", map: { x: 0.4837, y: 0.5187 }, photo: null, view: null, northOffset: null,
+    { id: "p21", name: "Ⅳ号館前", map: { x: 0.4837, y: 0.5187 }, photo: null, view: null, northOffset: null,
       links: [
         { target: "p18", yaw: 1.436, pitch: 0.056 },
         { target: "p22", yaw: -1.565, pitch: -0.024 },
@@ -181,7 +181,7 @@ window.TOUR_CONFIG = {
       info: [
         { yaw: -0.035, pitch: -0.053, facility: "building4" }
       ], facility: "building4" },
-    { id: "p22", name: "Ⅴ号館", map: { x: 0.5395, y: 0.4661 }, photo: null, view: null, northOffset: null,
+    { id: "p22", name: "Ⅴ号館前", map: { x: 0.5395, y: 0.4661 }, photo: null, view: null, northOffset: null,
       links: [
         { target: "p25", yaw: 3.004, pitch: 0.05 },
         { target: "p26", yaw: -1.752, pitch: -0.017 },
@@ -190,7 +190,7 @@ window.TOUR_CONFIG = {
       info: [
         { yaw: -0.008, pitch: -0.053, facility: "building5" }
       ], facility: "building5" },
-    { id: "p23", name: "Ⅶ号館", map: { x: 0.4549, y: 0.4255 }, photo: null, view: null, northOffset: null,
+    { id: "p23", name: "Ⅶ号館前", map: { x: 0.4549, y: 0.4255 }, photo: null, view: null, northOffset: null,
       links: [
         { target: "p23-1", yaw: -0.265, pitch: -0.053 },
         { target: "p21", yaw: -2.675, pitch: 0.032 }
@@ -198,7 +198,7 @@ window.TOUR_CONFIG = {
       info: [
         { yaw: -0.027, pitch: -0.116, facility: "building7" }
       ], facility: "building7" },
-    { id: "p24", name: "Ⅷ号館", map: { x: 0.3959, y: 0.3475 }, photo: null, view: null, northOffset: null, links: [ { target: "p24-1", yaw: -0.595, pitch: -0.047 } ], info: [ { yaw: -0.005, pitch: -0.181, facility: "building8" } ], facility: "building8" },
+    { id: "p24", name: "Ⅷ号館前", map: { x: 0.3959, y: 0.3475 }, photo: null, view: null, northOffset: null, links: [ { target: "p24-1", yaw: -0.595, pitch: -0.047 } ], info: [ { yaw: -0.005, pitch: -0.181, facility: "building8" } ], facility: "building8" },
     { id: "p25", name: "来場者用駐車場", map: { x: 0.4855, y: 0.3678 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p26", name: "陸上競技場", map: { x: 0.5316, y: 0.2944 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p27", name: "テニスコート", map: { x: 0.7464, y: 0.5076 }, photo: null, view: null, northOffset: null, links: [], info: [] },

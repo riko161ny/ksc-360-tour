@@ -136,18 +136,18 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "spots.p06.name": {
-      "ja": "Ⅲ号館",
-      "text": "Building III",
-      "status": "official"
+      "ja": "Ⅲ号館前",
+      "text": "In front of Building III",
+      "status": "provisional"
     },
     "spots.p07.name": {
-      "ja": "食堂",
-      "text": "Cafeteria",
+      "ja": "Lunch Box（食堂）",
+      "text": "Lunch Box (Cafeteria)",
       "status": "provisional"
     },
     "spots.p08.name": {
-      "ja": "生協",
-      "text": "Co-op Store",
+      "ja": "Toy Box（生協）",
+      "text": "Toy Box (Co-op Store)",
       "status": "provisional"
     },
     "spots.p09.name": {
@@ -211,23 +211,23 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "spots.p21.name": {
-      "ja": "Ⅳ号館",
-      "text": "Building IV",
-      "status": "official"
+      "ja": "Ⅳ号館前",
+      "text": "In front of Building IV",
+      "status": "provisional"
     },
     "spots.p22.name": {
-      "ja": "Ⅴ号館",
-      "text": "Building V",
-      "status": "official"
+      "ja": "Ⅴ号館前",
+      "text": "In front of Building V",
+      "status": "provisional"
     },
     "spots.p23.name": {
-      "ja": "Ⅶ号館",
-      "text": "Building VII",
+      "ja": "Ⅶ号館前",
+      "text": "In front of Building VII",
       "status": "provisional"
     },
     "spots.p24.name": {
-      "ja": "Ⅷ号館",
-      "text": "Building VIII",
+      "ja": "Ⅷ号館前",
+      "text": "In front of Building VIII",
       "status": "provisional"
     },
     "spots.p25.name": {
