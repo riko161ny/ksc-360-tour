@@ -2374,27 +2374,16 @@ body.mobile .title3d-desc {
 .cloud-body {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  min-width: 200px;
-  height: 110px;
-  padding: 36px 30px 8px 34px;
+  gap: 6px;
   transition: transform 0.3s ease, filter 0.3s ease;
   filter: drop-shadow(0 6px 10px rgba(20, 30, 50, 0.28));
 }
 
-.cloud-hotspot.has-photo .cloud-body {
-  min-width: 224px;
-  height: 123px;
-}
-
-.cloud-shape {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
+/* 写真つきのマークは少し大きく */
+.cloud-hotspot.has-photo .mark-shape {
+  transform: scale(1.12);
 }
 
 .cloud-fill {
@@ -2469,16 +2458,6 @@ body.mobile .title3d-desc {
   }
 }
 
-body.mobile .cloud-body {
-  min-width: 160px;
-  height: 88px;
-  padding: 28px 24px 6px 27px;
-}
-
-body.mobile .cloud-hotspot.has-photo .cloud-body {
-  min-width: 176px;
-  height: 97px;
-}
 
 body.mobile .cloud-text {
   font-size: 14px;
@@ -2489,16 +2468,7 @@ body.mobile .cloud-photo {
   height: 64px;
 }
 
-/* 雲以外の形（shape: "moon" 光る月 / "cross" 十字架）。名前は形の下に表示 */
-.shape-moon .cloud-body,
-.shape-cross .cloud-body {
-  flex-direction: column;
-  gap: 6px;
-  min-width: 0;
-  height: auto;
-  padding: 0;
-}
-
+/* 形（shape: "cloud" 雲 / "moon" 光る月 / "cross" 十字架）。名前は形の下のラベルに表示 */
 .mark-shape {
   display: block;
   width: 84px;
@@ -2523,6 +2493,7 @@ body.mobile .cloud-photo {
   stroke-linejoin: round;
 }
 
+.shape-cloud .cloud-text,
 .shape-moon .cloud-text,
 .shape-cross .cloud-text {
   padding: 4px 12px;
@@ -2556,6 +2527,7 @@ body.mobile .mark-shape {
   height: 66px;
 }
 
+body.mobile .shape-cloud .cloud-text,
 body.mobile .shape-moon .cloud-text,
 body.mobile .shape-cross .cloud-text {
   font-size: 13px;
@@ -2585,4 +2557,93 @@ body.mobile .shape-cross .cloud-text {
 
 body.mobile .info-items-cards {
   grid-template-columns: 1fr;
+}
+
+.mark-cloud {
+  width: 128px;
+  height: 70px;
+}
+
+body.mobile .mark-cloud {
+  width: 100px;
+  height: 55px;
+}
+
+/* ---------- イベント紹介カード（section.event） ---------- */
+
+.event-card {
+  padding: 14px;
+  border: 1px solid rgba(31, 42, 68, 0.1);
+  border-radius: 14px;
+  background: #fffdf9;
+}
+
+.event-card .info-figure {
+  margin: -2px 0 12px;
+}
+
+.event-head {
+  margin-bottom: 8px;
+}
+
+.event-kicker {
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: #d9733a;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+
+.event-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  margin: 0;
+  color: #1f2a44;
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+.event-year {
+  color: #d9733a;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.event-subtitle {
+  margin: 4px 0 0;
+  color: #3b4558;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.event-card.compact {
+  padding: 12px;
+  background: #f6f2ec;
+  border: none;
+}
+
+.event-card.compact .event-title {
+  font-size: 16px;
+}
+
+.event-card.compact .event-year {
+  font-size: 17px;
+}
+
+.event-card.compact .event-subtitle {
+  font-size: 14px;
+}
+
+.event-card .guide-actions .guide-button {
+  min-height: 44px;
+}
+
+.event-name {
+  font-weight: bold;
 }

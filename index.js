@@ -684,16 +684,15 @@
     bob.className = 'cloud-float';
     var body = document.createElement('div');
     body.className = 'cloud-body';
-    // shape: "cloud" (default), "moon" (glowing crescent) or "cross"; moon and cross show the title below the mark.
-    var markPath = SHAPE_PATHS[look.shape];
-    if (markPath) {
-      inner.classList.add('shape-' + look.shape);
-      body.innerHTML = '<svg class="mark-shape" viewBox="0 0 100 100" aria-hidden="true" focusable="false">' +
-        '<path class="cloud-fill" d="' + markPath + '"></path></svg>';
-    } else {
-      body.innerHTML = '<svg class="cloud-shape" viewBox="0 0 256 140" preserveAspectRatio="none" aria-hidden="true" focusable="false">' +
-        '<path class="cloud-fill" d="' + CLOUD_PATH + '"></path></svg>';
-    }
+    // shape: "cloud" (default), "moon" (glowing crescent) or "cross".
+    // The title always sits below the mark, in a small label.
+    var shape = SHAPE_PATHS[look.shape] ? look.shape : 'cloud';
+    inner.classList.add('shape-' + shape);
+    body.innerHTML = shape === 'cloud' ?
+      '<svg class="mark-shape mark-cloud" viewBox="0 0 256 140" aria-hidden="true" focusable="false">' +
+        '<path class="cloud-fill" d="' + CLOUD_PATH + '"></path></svg>' :
+      '<svg class="mark-shape" viewBox="0 0 100 100" aria-hidden="true" focusable="false">' +
+        '<path class="cloud-fill" d="' + SHAPE_PATHS[shape] + '"></path></svg>';
     var text = document.createElement('span');
     text.className = 'cloud-text';
     body.appendChild(text);

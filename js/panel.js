@@ -220,9 +220,21 @@
   // figure { src, caption } (shown only when src is set), chips (small labels),
   // more { title, chips, text, note } (a fold-out inside the section), buttons (link buttons). note may be a list.
   function createSection(section) {
-    var outer = el('div', 'info-section');
+    // event { year, kicker, subtitle, compact }: an event card. Photo first, then the year, title and subtitle.
+    var ev = section.event;
+    var outer = el('div', 'info-section' + (ev ? ' event-card' + (ev.compact ? ' compact' : '') : ''));
     var box = outer;
-    if (section.fold) {
+    if (ev) {
+      if (section.figure && section.figure.src) { box.appendChild(createFigure(section.figure)); }
+      var head = el('div', 'event-head');
+      if (ev.kicker) { head.appendChild(el('span', 'event-kicker', ev.kicker)); }
+      var heading = el('h3', 'event-title');
+      if (ev.year) { heading.appendChild(el('span', 'event-year', ev.year)); }
+      heading.appendChild(el('span', 'event-name', section.title || ''));
+      head.appendChild(heading);
+      if (ev.subtitle) { head.appendChild(el('p', 'event-subtitle', ev.subtitle)); }
+      box.appendChild(head);
+    } else if (section.fold) {
       var details = el('details', 'info-fold');
       if (section.fold === 'open') { details.open = true; }
       details.appendChild(el('summary', 'info-fold-title', section.title || ''));
@@ -233,16 +245,7 @@
       box.appendChild(el('h3', 'info-heading', section.title));
     }
     if (section.highlight) { box.appendChild(el('p', 'info-highlight', section.highlight)); }
-    if (section.figure && section.figure.src) {
-      var figure = el('figure', 'info-figure');
-      var image = document.createElement('img');
-      image.src = section.figure.src;
-      image.alt = section.figure.alt || section.figure.caption || '';
-      image.decoding = 'async';
-      figure.appendChild(image);
-      if (section.figure.caption) { figure.appendChild(el('figcaption', 'info-caption', section.figure.caption)); }
-      box.appendChild(figure);
-    }
+    if (!ev && section.figure && section.figure.src) { box.appendChild(createFigure(section.figure)); }
     if (section.chips && section.chips.length) { box.appendChild(createChips(section.chips)); }
     if (section.text) { appendParagraphs(box, section.text); }
     if (section.rows && section.rows.length) {
@@ -290,6 +293,17 @@
     if (section.buttons && section.buttons.length) { appendButtons(box, section.buttons); }
     if (section.links && section.links.length) { appendLinks(box, section.links); }
     return outer;
+  }
+
+  function createFigure(fig) {
+    var figure = el('figure', 'info-figure');
+    var image = document.createElement('img');
+    image.src = fig.src;
+    image.alt = fig.alt || fig.caption || '';
+    image.decoding = 'async';
+    figure.appendChild(image);
+    if (fig.caption) { figure.appendChild(el('figcaption', 'info-caption', fig.caption)); }
+    return figure;
   }
 
   function createChips(chips) {

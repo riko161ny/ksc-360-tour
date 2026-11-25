@@ -2446,8 +2446,8 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "facilities.room101Lecture.name": {
-      "ja": "講演会",
-      "text": "Talks",
+      "ja": "講演会・トークショー",
+      "text": "Talks and talk shows",
       "status": "provisional"
     },
     "facilities.room101Lecture.hotspot.text": {
@@ -2455,9 +2455,144 @@ TourI18n.register("en", {
       "text": "Talks",
       "status": "provisional"
     },
-    "facilities.room101Lecture.sections.0.text": {
-      "ja": "著名人による講演会や、大学祭『新月祭』のトークショーなどが開催されています。",
-      "text": "Talks by well-known guests and talk shows during the Shingetsu Festival, the university festival, are held here.",
+    "facilities.room101Lecture.overview.0": {
+      "ja": "Ⅵ号館101教室は、通常の講義だけでなく、著名人を招いた講演会や大学祭のトークショーなど、さまざまなイベントの会場としても利用されています。",
+      "text": "Besides regular classes, Room 101 in Building VI is used as a venue for many events, such as talks by well-known guests and talk shows during the university festival.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.overview.1": {
+      "ja": "これまでに企画されたイベントを紹介します。",
+      "text": "Here are some of the events that have been planned here.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.title": {
+      "ja": "池上彰氏による記念講演",
+      "text": "Commemorative lecture by Akira Ikegami",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.event.subtitle": {
+      "ja": "「大学時代に何をなすべきか」",
+      "text": "\"What should you do in your university years?\"",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.text.0": {
+      "ja": "2021年5月10日、神戸三田キャンパスの5学部体制への再編を記念し、ジャーナリストの池上彰氏による講演会が開催されました。",
+      "text": "On May 10, 2021, journalist Akira Ikegami gave a lecture to mark the reorganization of Kobe-Sanda Campus into five schools.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.text.1": {
+      "ja": "講演では、文系・理系の垣根を越えて学べるKSCで、受け身ではなく貪欲に学んでほしいと語られました。",
+      "text": "He told students that at KSC, where you can learn across the humanities and sciences, they should learn eagerly rather than passively.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.text.2": {
+      "ja": "Ⅵ号館101教室とオンラインを併用して実施され、学生・教職員ら約630人が参加しました（オンラインでの参加385人を含む）。",
+      "text": "It was held in Room 101 of Building VI and online, with about 630 students and staff taking part (including 385 online).",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.buttons.0.label": {
+      "ja": "大学公式記事を見る",
+      "text": "Read the university's article",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.title": {
+      "ja": "新月祭トークショー",
+      "text": "Shingetsu Festival talk show",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.event.kicker": {
+      "ja": "新月祭2026",
+      "text": "Shingetsu Festival 2026",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.event.subtitle": {
+      "ja": "ゲスト：ROLAND氏",
+      "text": "Guest: ROLAND",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.text.0": {
+      "ja": "2026年10月25日の大学祭「新月祭」では、Ⅵ号館101教室を会場とするROLAND氏のトークショーが公式プログラムに掲載されました。",
+      "text": "For the Shingetsu Festival on October 25, 2026, the official program listed a talk show by ROLAND in Room 101 of Building VI.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.text.1": {
+      "ja": "101教室は、大学の講演会だけでなく、大学祭のイベント会場としても利用されています。",
+      "text": "Room 101 is used not only for university lectures but also as an event venue during the festival.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.0.0": {
+      "ja": "開催予定日",
+      "text": "Scheduled date",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.0.1": {
+      "ja": "2026年10月25日",
+      "text": "October 25, 2026",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.1.0": {
+      "ja": "ゲスト",
+      "text": "Guest",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.1.1": {
+      "ja": "ROLAND氏",
+      "text": "ROLAND",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.2.0": {
+      "ja": "開場",
+      "text": "Doors open",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.3.0": {
+      "ja": "開始",
+      "text": "Starts",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.4.0": {
+      "ja": "会場",
+      "text": "Venue",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.4.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Building VI, Room 101",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.note": {
+      "ja": "新月祭公式サイトのタイムテーブルに掲載された開催予定の情報です。",
+      "text": "This is the schedule listed in the timetable on the Shingetsu Festival's official website.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.buttons.0.label": {
+      "ja": "新月祭2026の公式情報を見る",
+      "text": "See the Shingetsu Festival 2026 official information",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.2.title": {
+      "ja": "秋季人権問題講演会",
+      "text": "Autumn human rights lecture",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.2.event.subtitle": {
+      "ja": "「マイクロアグレッションを理解するー無自覚な差別・排除への気づき」",
+      "text": "\"Understanding microaggressions: noticing unconscious discrimination and exclusion\"",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.2.text": {
+      "ja": "2024年10月4日には、Ⅵ号館101教室を会場とする秋季人権問題講演会が案内されました。講師は立命館大学の金友子氏。日常生活における無意識の差別や排除について考える内容です。",
+      "text": "An autumn human rights lecture in Room 101 of Building VI was announced for October 4, 2024. The speaker was Kim Wooja of Ritsumeikan University, and the lecture looked at unconscious discrimination and exclusion in everyday life.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.2.buttons.0.label": {
+      "ja": "大学公式資料を見る",
+      "text": "See the university's official flyer",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.source": {
+      "ja": "関西学院大学 神戸三田キャンパス記事（2021年5月13日）、新月祭2026公式サイト「KSC企画タイムテーブル」、関西学院大学 人権教育研究室（2024年度秋季人権問題講演会チラシ）",
+      "text": "Kwansei Gakuin University Kobe-Sanda Campus article (May 13, 2021), Shingetsu Festival 2026 official website \"KSC timetable\", Kwansei Gakuin University Human Rights Education Office (flyer for the 2024 autumn human rights lecture)",
       "status": "provisional"
     },
     "facilities.room101OpenCampus.name": {

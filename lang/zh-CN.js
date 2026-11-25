@@ -2446,8 +2446,8 @@ TourI18n.register("zh-CN", {
       "status": "provisional"
     },
     "facilities.room101Lecture.name": {
-      "ja": "講演会",
-      "text": "讲座",
+      "ja": "講演会・トークショー",
+      "text": "讲座与脱口秀",
       "status": "provisional"
     },
     "facilities.room101Lecture.hotspot.text": {
@@ -2455,9 +2455,144 @@ TourI18n.register("zh-CN", {
       "text": "讲座",
       "status": "provisional"
     },
-    "facilities.room101Lecture.sections.0.text": {
-      "ja": "著名人による講演会や、大学祭『新月祭』のトークショーなどが開催されています。",
-      "text": "这里会举办知名人士的讲座，以及大学校园节“新月祭”的脱口秀等活动。",
+    "facilities.room101Lecture.overview.0": {
+      "ja": "Ⅵ号館101教室は、通常の講義だけでなく、著名人を招いた講演会や大学祭のトークショーなど、さまざまなイベントの会場としても利用されています。",
+      "text": "Ⅵ号馆101教室不仅用于日常授课，也是邀请知名人士的讲座、大学校园节脱口秀等各种活动的会场。",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.overview.1": {
+      "ja": "これまでに企画されたイベントを紹介します。",
+      "text": "下面介绍这里策划过的一些活动。",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.title": {
+      "ja": "池上彰氏による記念講演",
+      "text": "池上彰先生的纪念讲座",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.event.subtitle": {
+      "ja": "「大学時代に何をなすべきか」",
+      "text": "“大学时代应该做什么”",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.text.0": {
+      "ja": "2021年5月10日、神戸三田キャンパスの5学部体制への再編を記念し、ジャーナリストの池上彰氏による講演会が開催されました。",
+      "text": "2021年5月10日，为纪念神户三田校区改组为5个学部，举办了新闻工作者池上彰先生的讲座。",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.text.1": {
+      "ja": "講演では、文系・理系の垣根を越えて学べるKSCで、受け身ではなく貪欲に学んでほしいと語られました。",
+      "text": "他在讲座中表示，在可以跨越文理界限学习的KSC，希望学生们不要被动，而要积极地学习。",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.text.2": {
+      "ja": "Ⅵ号館101教室とオンラインを併用して実施され、学生・教職員ら約630人が参加しました（オンラインでの参加385人を含む）。",
+      "text": "讲座在Ⅵ号馆101教室与线上同时进行，约630名学生和教职员参加（含线上参加的385人）。",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.buttons.0.label": {
+      "ja": "大学公式記事を見る",
+      "text": "查看大学官方报道",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.title": {
+      "ja": "新月祭トークショー",
+      "text": "新月祭脱口秀",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.event.kicker": {
+      "ja": "新月祭2026",
+      "text": "新月祭2026",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.event.subtitle": {
+      "ja": "ゲスト：ROLAND氏",
+      "text": "嘉宾：ROLAND",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.text.0": {
+      "ja": "2026年10月25日の大学祭「新月祭」では、Ⅵ号館101教室を会場とするROLAND氏のトークショーが公式プログラムに掲載されました。",
+      "text": "在2026年10月25日的大学校园节“新月祭”上，以Ⅵ号馆101教室为会场的ROLAND脱口秀被列入了官方节目单。",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.text.1": {
+      "ja": "101教室は、大学の講演会だけでなく、大学祭のイベント会場としても利用されています。",
+      "text": "101教室不仅用于大学讲座，也用作校园节的活动会场。",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.0.0": {
+      "ja": "開催予定日",
+      "text": "预定日期",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.0.1": {
+      "ja": "2026年10月25日",
+      "text": "2026年10月25日",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.1.0": {
+      "ja": "ゲスト",
+      "text": "嘉宾",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.1.1": {
+      "ja": "ROLAND氏",
+      "text": "ROLAND",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.2.0": {
+      "ja": "開場",
+      "text": "入场",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.3.0": {
+      "ja": "開始",
+      "text": "开始",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.4.0": {
+      "ja": "会場",
+      "text": "会场",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.4.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Ⅵ号馆101教室",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.note": {
+      "ja": "新月祭公式サイトのタイムテーブルに掲載された開催予定の情報です。",
+      "text": "以上为新月祭官方网站时间表上刊登的预定信息。",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.buttons.0.label": {
+      "ja": "新月祭2026の公式情報を見る",
+      "text": "查看新月祭2026官方信息",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.2.title": {
+      "ja": "秋季人権問題講演会",
+      "text": "秋季人权问题讲座",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.2.event.subtitle": {
+      "ja": "「マイクロアグレッションを理解するー無自覚な差別・排除への気づき」",
+      "text": "“理解微歧视——察觉无意识的歧视与排斥”",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.2.text": {
+      "ja": "2024年10月4日には、Ⅵ号館101教室を会場とする秋季人権問題講演会が案内されました。講師は立命館大学の金友子氏。日常生活における無意識の差別や排除について考える内容です。",
+      "text": "2024年10月4日，校方发布了在Ⅵ号馆101教室举办秋季人权问题讲座的通知。讲师为立命馆大学的金友子老师，内容是思考日常生活中无意识的歧视与排斥。",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.2.buttons.0.label": {
+      "ja": "大学公式資料を見る",
+      "text": "查看大学官方资料",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.source": {
+      "ja": "関西学院大学 神戸三田キャンパス記事（2021年5月13日）、新月祭2026公式サイト「KSC企画タイムテーブル」、関西学院大学 人権教育研究室（2024年度秋季人権問題講演会チラシ）",
+      "text": "关西学院大学神户三田校区报道（2021年5月13日）、新月祭2026官方网站“KSC企划时间表”、关西学院大学人权教育研究室（2024年度秋季人权问题讲座传单）",
       "status": "provisional"
     },
     "facilities.room101OpenCampus.name": {

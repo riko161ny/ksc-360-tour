@@ -2446,8 +2446,8 @@ TourI18n.register("ko", {
       "status": "provisional"
     },
     "facilities.room101Lecture.name": {
-      "ja": "講演会",
-      "text": "강연회",
+      "ja": "講演会・トークショー",
+      "text": "강연회·토크쇼",
       "status": "provisional"
     },
     "facilities.room101Lecture.hotspot.text": {
@@ -2455,9 +2455,144 @@ TourI18n.register("ko", {
       "text": "강연회",
       "status": "provisional"
     },
-    "facilities.room101Lecture.sections.0.text": {
-      "ja": "著名人による講演会や、大学祭『新月祭』のトークショーなどが開催されています。",
-      "text": "유명인의 강연회와 대학 축제 '신게쓰 축제(新月祭)'의 토크쇼 등이 열립니다.",
+    "facilities.room101Lecture.overview.0": {
+      "ja": "Ⅵ号館101教室は、通常の講義だけでなく、著名人を招いた講演会や大学祭のトークショーなど、さまざまなイベントの会場としても利用されています。",
+      "text": "Ⅵ호관 101 교실은 일반 강의뿐 아니라 유명인을 초청한 강연회와 대학 축제 토크쇼 등 다양한 행사의 장소로도 이용됩니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.overview.1": {
+      "ja": "これまでに企画されたイベントを紹介します。",
+      "text": "지금까지 기획된 행사를 소개합니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.title": {
+      "ja": "池上彰氏による記念講演",
+      "text": "이케가미 아키라 씨의 기념 강연",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.event.subtitle": {
+      "ja": "「大学時代に何をなすべきか」",
+      "text": "'대학 시절에 무엇을 해야 하는가'",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.text.0": {
+      "ja": "2021年5月10日、神戸三田キャンパスの5学部体制への再編を記念し、ジャーナリストの池上彰氏による講演会が開催されました。",
+      "text": "2021년 5월 10일, 고베산다 캠퍼스의 5개 학부 체제 재편을 기념해 저널리스트 이케가미 아키라 씨의 강연회가 열렸습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.text.1": {
+      "ja": "講演では、文系・理系の垣根を越えて学べるKSCで、受け身ではなく貪欲に学んでほしいと語られました。",
+      "text": "강연에서는 문과·이과의 경계를 넘어 배울 수 있는 KSC에서 수동적이지 말고 적극적으로 배우기를 바란다고 이야기했습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.text.2": {
+      "ja": "Ⅵ号館101教室とオンラインを併用して実施され、学生・教職員ら約630人が参加しました（オンラインでの参加385人を含む）。",
+      "text": "Ⅵ호관 101 교실과 온라인을 병행해 진행되었으며, 학생과 교직원 등 약 630명이 참가했습니다(온라인 참가 385명 포함).",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.0.buttons.0.label": {
+      "ja": "大学公式記事を見る",
+      "text": "대학 공식 기사 보기",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.title": {
+      "ja": "新月祭トークショー",
+      "text": "신게쓰 축제 토크쇼",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.event.kicker": {
+      "ja": "新月祭2026",
+      "text": "신게쓰 축제 2026",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.event.subtitle": {
+      "ja": "ゲスト：ROLAND氏",
+      "text": "게스트: ROLAND 씨",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.text.0": {
+      "ja": "2026年10月25日の大学祭「新月祭」では、Ⅵ号館101教室を会場とするROLAND氏のトークショーが公式プログラムに掲載されました。",
+      "text": "2026년 10월 25일 대학 축제 '신게쓰 축제(新月祭)'에서는 Ⅵ호관 101 교실에서 열리는 ROLAND 씨의 토크쇼가 공식 프로그램에 게재되었습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.text.1": {
+      "ja": "101教室は、大学の講演会だけでなく、大学祭のイベント会場としても利用されています。",
+      "text": "101 교실은 대학 강연회뿐 아니라 대학 축제의 행사장으로도 이용됩니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.0.0": {
+      "ja": "開催予定日",
+      "text": "개최 예정일",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.0.1": {
+      "ja": "2026年10月25日",
+      "text": "2026년 10월 25일",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.1.0": {
+      "ja": "ゲスト",
+      "text": "게스트",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.1.1": {
+      "ja": "ROLAND氏",
+      "text": "ROLAND 씨",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.2.0": {
+      "ja": "開場",
+      "text": "입장 시작",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.3.0": {
+      "ja": "開始",
+      "text": "시작",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.4.0": {
+      "ja": "会場",
+      "text": "장소",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.rows.4.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Ⅵ호관 101 교실",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.note": {
+      "ja": "新月祭公式サイトのタイムテーブルに掲載された開催予定の情報です。",
+      "text": "신게쓰 축제 공식 사이트의 타임테이블에 게재된 개최 예정 정보입니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.1.buttons.0.label": {
+      "ja": "新月祭2026の公式情報を見る",
+      "text": "신게쓰 축제 2026 공식 정보 보기",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.2.title": {
+      "ja": "秋季人権問題講演会",
+      "text": "추계 인권 문제 강연회",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.2.event.subtitle": {
+      "ja": "「マイクロアグレッションを理解するー無自覚な差別・排除への気づき」",
+      "text": "'마이크로어그레션 이해하기 - 무자각적 차별·배제에 대한 깨달음'",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.2.text": {
+      "ja": "2024年10月4日には、Ⅵ号館101教室を会場とする秋季人権問題講演会が案内されました。講師は立命館大学の金友子氏。日常生活における無意識の差別や排除について考える内容です。",
+      "text": "2024년 10월 4일에는 Ⅵ호관 101 교실에서 열리는 추계 인권 문제 강연회가 안내되었습니다. 강사는 리쓰메이칸대학의 김우자 씨로, 일상생활 속 무의식적인 차별과 배제에 대해 생각하는 내용입니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.sections.2.buttons.0.label": {
+      "ja": "大学公式資料を見る",
+      "text": "대학 공식 자료 보기",
+      "status": "provisional"
+    },
+    "facilities.room101Lecture.source": {
+      "ja": "関西学院大学 神戸三田キャンパス記事（2021年5月13日）、新月祭2026公式サイト「KSC企画タイムテーブル」、関西学院大学 人権教育研究室（2024年度秋季人権問題講演会チラシ）",
+      "text": "관서학원대학 고베산다 캠퍼스 기사(2021년 5월 13일), 신게쓰 축제 2026 공식 사이트 'KSC 기획 타임테이블', 관서학원대학 인권교육연구실(2024년도 추계 인권 문제 강연회 전단)",
       "status": "provisional"
     },
     "facilities.room101OpenCampus.name": {
