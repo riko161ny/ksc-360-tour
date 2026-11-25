@@ -595,6 +595,11 @@ TourI18n.register("en", {
       "text": "Camping Tent",
       "status": "provisional"
     },
+    "facilities.colorfulBox.name": {
+      "ja": "Colorful Box（生協売店）",
+      "text": "Colorful Box (Co-op Store)",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Building I",

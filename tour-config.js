@@ -99,7 +99,7 @@ window.TOUR_CONFIG = {
     { id: "p08", name: "生協", map: { x: 0.2472, y: 0.5882 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p09", name: "食堂前テラス席", map: { x: 0.2496, y: 0.5441 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p10", name: "スカイガーデン", map: { x: 0.2697, y: 0.4729 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p11", name: "Colorful Box（生協売店）", map: { x: 0.2971, y: 0.5051 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p11", name: "Colorful Box（生協売店）", map: { x: 0.2971, y: 0.5051 }, photo: null, view: null, northOffset: null, links: [ { target: "p11-1", yaw: 1.43, pitch: 0.046 } ], info: [ { yaw: 0.43, pitch: -0.19, facility: "colorfulBox" } ] },
     { id: "p12", name: "第二厚生棟", map: { x: 0.3092, y: 0.425 }, photo: null, view: null, northOffset: null,
       links: [
         { target: "p12-win", yaw: -0.126, pitch: 0.107 }
@@ -290,6 +290,10 @@ window.TOUR_CONFIG = {
     // キャンプテントの情報マーク（中身は確認できた情報をあとで足します）
     "campTent": {
       name: "キャンプテント"
+    },
+    // 生協売店の情報マーク（中身は確認できた情報をあとで足します）
+    "colorfulBox": {
+      name: "Colorful Box（生協売店）"
     },
     // ↓ 施設情報（riko さんがまとめた内容。overview は段落ごとの配列、sections は見出しごとのまとまり）
     "building1": {

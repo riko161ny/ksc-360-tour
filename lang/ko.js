@@ -595,6 +595,11 @@ TourI18n.register("ko", {
       "text": "캠핑 텐트",
       "status": "provisional"
     },
+    "facilities.colorfulBox.name": {
+      "ja": "Colorful Box（生協売店）",
+      "text": "Colorful Box(생협 매점)",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Ⅰ호관",
