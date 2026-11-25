@@ -1216,8 +1216,118 @@ TourI18n.register("ko", {
       "status": "provisional"
     },
     "facilities.washitsu.name": {
-      "ja": "和室",
-      "text": "다다미방",
+      "ja": "和室「新月の間」",
+      "text": "다다미방 '신게쓰노마'",
+      "status": "provisional"
+    },
+    "facilities.washitsu.lead": {
+      "ja": "アカデミックコモンズにある、床の間と日本庭園のある和室",
+      "text": "아카데믹 커먼스에 있는, 도코노마와 일본 정원이 있는 다다미방",
+      "status": "provisional"
+    },
+    "facilities.washitsu.overview.0": {
+      "ja": "アカデミックコモンズには、「新月の間」と呼ばれる16畳の本格的な和室があります。床の間があり、日本庭園も備えています。",
+      "text": "아카데믹 커먼스에는 '신게쓰노마'라고 불리는 16첩 규모의 정통 다다미방이 있습니다. 도코노마가 있고 일본 정원도 갖추고 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.washitsu.overview.1": {
+      "ja": "お茶会や生け花ができる設備がそろっていて、学生どうしが交流する場として使われています。",
+      "text": "다도회와 꽃꽂이를 할 수 있는 설비가 갖춰져 있어, 학생들이 교류하는 장소로 쓰이고 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.title": {
+      "ja": "基本情報",
+      "text": "기본 정보",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.0.0": {
+      "ja": "名称",
+      "text": "명칭",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.0.1": {
+      "ja": "新月の間",
+      "text": "신게쓰노마",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.1.0": {
+      "ja": "場所",
+      "text": "장소",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.1.1": {
+      "ja": "アカデミックコモンズ",
+      "text": "아카데믹 커먼즈",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.2.0": {
+      "ja": "広さ",
+      "text": "넓이",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.2.1": {
+      "ja": "16畳",
+      "text": "16첩",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.3.0": {
+      "ja": "設備",
+      "text": "설비",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.3.1": {
+      "ja": "床の間・日本庭園",
+      "text": "도코노마·일본 정원",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.4.0": {
+      "ja": "使われ方",
+      "text": "이용 방식",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.4.1": {
+      "ja": "お茶会・生け花・学生の交流",
+      "text": "다도회·꽃꽂이·학생 교류",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.note": {
+      "ja": "広さや設備は、2014年に更新された学院史編纂室の「関学事典」の記述です。現在の利用方法は大学でご確認ください。",
+      "text": "넓이와 설비는 2014년에 갱신된 학원사 편찬실 '간가쿠 사전'의 기술입니다. 현재 이용 방법은 대학에 확인해 주세요.",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.1.title": {
+      "ja": "こんな活動も",
+      "text": "이런 활동도",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.1.items.0.name": {
+      "ja": "七夕お茶会",
+      "text": "칠석 다도회",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.1.items.0.text": {
+      "ja": "グローバルLinkフィールドの活動として、新月の間で留学生と一緒に茶道を体験する文化交流が開かれたことが、アカデミックコモンズの活動紹介で紹介されています。",
+      "text": "아카데믹 커먼스 활동 소개에는 글로벌 링크 필드 활동으로 신게쓰노마에서 유학생과 함께 다도를 체험하는 문화 교류가 열렸다고 소개되어 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.2.title": {
+      "ja": "公式情報",
+      "text": "공식 정보",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.2.buttons.0.label": {
+      "ja": "関学事典「アカデミックコモンズ」を見る",
+      "text": "간가쿠 사전 '아카데믹 커먼스' 보기",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.2.buttons.1.label": {
+      "ja": "アカデミックコモンズの活動紹介を見る",
+      "text": "아카데믹 커먼스 활동 소개 보기",
+      "status": "provisional"
+    },
+    "facilities.washitsu.source": {
+      "ja": "関西学院 学院史編纂室「関学事典」（2014年9月更新）、関西学院大学 神戸三田キャンパス アカデミックコモンズ公式ページ（2026年11月確認）",
+      "text": "간세이가쿠인 학원사 편찬실 '간가쿠 사전'(2014년 9월 갱신), 간세이가쿠인대학 고베산다 캠퍼스 아카데믹 커먼스 공식 페이지(2026년 11월 확인)",
       "status": "provisional"
     },
     "facilities.gym.name": {

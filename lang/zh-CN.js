@@ -1216,8 +1216,118 @@ TourI18n.register("zh-CN", {
       "status": "provisional"
     },
     "facilities.washitsu.name": {
-      "ja": "和室",
-      "text": "和室",
+      "ja": "和室「新月の間」",
+      "text": "和室“新月之间”",
+      "status": "provisional"
+    },
+    "facilities.washitsu.lead": {
+      "ja": "アカデミックコモンズにある、床の間と日本庭園のある和室",
+      "text": "位于学术共享空间、设有壁龛和日式庭园的和室",
+      "status": "provisional"
+    },
+    "facilities.washitsu.overview.0": {
+      "ja": "アカデミックコモンズには、「新月の間」と呼ばれる16畳の本格的な和室があります。床の間があり、日本庭園も備えています。",
+      "text": "学术共享空间里有一间名为“新月之间”的16张榻榻米大小的正宗和室，设有壁龛，还配有日式庭园。",
+      "status": "provisional"
+    },
+    "facilities.washitsu.overview.1": {
+      "ja": "お茶会や生け花ができる設備がそろっていて、学生どうしが交流する場として使われています。",
+      "text": "这里具备举办茶会和插花的设施，被用作学生之间交流的场所。",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.title": {
+      "ja": "基本情報",
+      "text": "基本信息",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.0.0": {
+      "ja": "名称",
+      "text": "名称",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.0.1": {
+      "ja": "新月の間",
+      "text": "新月之间",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.1.0": {
+      "ja": "場所",
+      "text": "地点",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.1.1": {
+      "ja": "アカデミックコモンズ",
+      "text": "学术共享空间（Academic Commons）",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.2.0": {
+      "ja": "広さ",
+      "text": "面积",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.2.1": {
+      "ja": "16畳",
+      "text": "16张榻榻米",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.3.0": {
+      "ja": "設備",
+      "text": "设施",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.3.1": {
+      "ja": "床の間・日本庭園",
+      "text": "壁龛、日式庭园",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.4.0": {
+      "ja": "使われ方",
+      "text": "用途",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.4.1": {
+      "ja": "お茶会・生け花・学生の交流",
+      "text": "茶会、插花、学生交流",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.note": {
+      "ja": "広さや設備は、2014年に更新された学院史編纂室の「関学事典」の記述です。現在の利用方法は大学でご確認ください。",
+      "text": "面积和设施来自学院史编纂室于2014年更新的《关学事典》。目前的使用方法请向大学确认。",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.1.title": {
+      "ja": "こんな活動も",
+      "text": "还有这样的活动",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.1.items.0.name": {
+      "ja": "七夕お茶会",
+      "text": "七夕茶会",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.1.items.0.text": {
+      "ja": "グローバルLinkフィールドの活動として、新月の間で留学生と一緒に茶道を体験する文化交流が開かれたことが、アカデミックコモンズの活動紹介で紹介されています。",
+      "text": "学术共享空间的活动介绍中提到，作为Global Link Field的活动，曾在新月之间举办与留学生一起体验茶道的文化交流。",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.2.title": {
+      "ja": "公式情報",
+      "text": "官方信息",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.2.buttons.0.label": {
+      "ja": "関学事典「アカデミックコモンズ」を見る",
+      "text": "查看《关学事典》“学术共享空间”",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.2.buttons.1.label": {
+      "ja": "アカデミックコモンズの活動紹介を見る",
+      "text": "查看学术共享空间活动介绍",
+      "status": "provisional"
+    },
+    "facilities.washitsu.source": {
+      "ja": "関西学院 学院史編纂室「関学事典」（2014年9月更新）、関西学院大学 神戸三田キャンパス アカデミックコモンズ公式ページ（2026年11月確認）",
+      "text": "关西学院学院史编纂室《关学事典》（2014年9月更新）、关西学院大学神户三田校区学术共享空间官方页面（2026年11月确认）",
       "status": "provisional"
     },
     "facilities.gym.name": {

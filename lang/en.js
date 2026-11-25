@@ -1216,8 +1216,118 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "facilities.washitsu.name": {
-      "ja": "和室",
-      "text": "Japanese-style Room",
+      "ja": "和室「新月の間」",
+      "text": "Japanese-style room \"Shingetsu-no-Ma\"",
+      "status": "provisional"
+    },
+    "facilities.washitsu.lead": {
+      "ja": "アカデミックコモンズにある、床の間と日本庭園のある和室",
+      "text": "A Japanese-style room in the Academic Commons, with a tokonoma alcove and a Japanese garden",
+      "status": "provisional"
+    },
+    "facilities.washitsu.overview.0": {
+      "ja": "アカデミックコモンズには、「新月の間」と呼ばれる16畳の本格的な和室があります。床の間があり、日本庭園も備えています。",
+      "text": "The Academic Commons has an authentic 16-tatami Japanese-style room called \"Shingetsu-no-Ma.\" It has a tokonoma alcove and a Japanese garden.",
+      "status": "provisional"
+    },
+    "facilities.washitsu.overview.1": {
+      "ja": "お茶会や生け花ができる設備がそろっていて、学生どうしが交流する場として使われています。",
+      "text": "It is equipped for tea ceremonies and ikebana, and is used as a place for students to connect.",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.title": {
+      "ja": "基本情報",
+      "text": "Basic information",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.0.0": {
+      "ja": "名称",
+      "text": "Name",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.0.1": {
+      "ja": "新月の間",
+      "text": "Shingetsu-no-Ma",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.1.0": {
+      "ja": "場所",
+      "text": "Location",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.1.1": {
+      "ja": "アカデミックコモンズ",
+      "text": "Academic Commons",
+      "status": "official"
+    },
+    "facilities.washitsu.sections.0.rows.2.0": {
+      "ja": "広さ",
+      "text": "Size",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.2.1": {
+      "ja": "16畳",
+      "text": "16 tatami mats",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.3.0": {
+      "ja": "設備",
+      "text": "Features",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.3.1": {
+      "ja": "床の間・日本庭園",
+      "text": "Tokonoma alcove, Japanese garden",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.4.0": {
+      "ja": "使われ方",
+      "text": "Uses",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.4.1": {
+      "ja": "お茶会・生け花・学生の交流",
+      "text": "Tea ceremonies, ikebana, student exchange",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.note": {
+      "ja": "広さや設備は、2014年に更新された学院史編纂室の「関学事典」の記述です。現在の利用方法は大学でご確認ください。",
+      "text": "The size and features are from the Kwansei Gakuin encyclopedia by the School History Office, last updated in 2014. Please check with the university for current use.",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.1.title": {
+      "ja": "こんな活動も",
+      "text": "Activities held here",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.1.items.0.name": {
+      "ja": "七夕お茶会",
+      "text": "Tanabata tea gathering",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.1.items.0.text": {
+      "ja": "グローバルLinkフィールドの活動として、新月の間で留学生と一緒に茶道を体験する文化交流が開かれたことが、アカデミックコモンズの活動紹介で紹介されています。",
+      "text": "The Academic Commons activity page describes a cultural exchange held in Shingetsu-no-Ma as part of Global Link Field, where students tried the tea ceremony together with international students.",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.2.title": {
+      "ja": "公式情報",
+      "text": "Official information",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.2.buttons.0.label": {
+      "ja": "関学事典「アカデミックコモンズ」を見る",
+      "text": "Read the encyclopedia entry \"Academic Commons\"",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.2.buttons.1.label": {
+      "ja": "アカデミックコモンズの活動紹介を見る",
+      "text": "See Academic Commons activities",
+      "status": "provisional"
+    },
+    "facilities.washitsu.source": {
+      "ja": "関西学院 学院史編纂室「関学事典」（2014年9月更新）、関西学院大学 神戸三田キャンパス アカデミックコモンズ公式ページ（2026年11月確認）",
+      "text": "Kwansei Gakuin School History Office encyclopedia (updated Sept. 2014); Kwansei Gakuin University Kobe-Sanda Campus Academic Commons official page (checked Nov. 2026)",
       "status": "provisional"
     },
     "facilities.gym.name": {
