@@ -104,7 +104,13 @@ window.TOUR_CONFIG = {
         { target: "p10", yaw: -2.52, pitch: 0.02 }
       ],
       info: [] },
-    { id: "p10", name: "スカイガーデン", map: { x: 0.2697, y: 0.4729 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p10", name: "スカイガーデン", map: { x: 0.2697, y: 0.4729 }, photo: null, view: null, northOffset: null,
+      links: [
+        { target: "p09", yaw: 1.154, pitch: 0.026 },
+        { target: "p11", yaw: -0.62, pitch: 0.16 },
+        { target: "p12", yaw: -2.037, pitch: 0.034 }
+      ],
+      info: [] },
     { id: "p11", name: "Colorful Box（生協売店）", map: { x: 0.2971, y: 0.5051 }, photo: null, view: null, northOffset: null, links: [ { target: "p11-1", yaw: 1.43, pitch: 0.046 } ], info: [ { yaw: 0.43, pitch: -0.19, facility: "colorfulBox" } ] },
     { id: "p12", name: "第二厚生棟", map: { x: 0.3092, y: 0.425 }, photo: null, view: null, northOffset: null,
       links: [
