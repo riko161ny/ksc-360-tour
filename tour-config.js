@@ -132,7 +132,9 @@ window.TOUR_CONFIG = {
     { id: "p18", name: "Ⅵ号館前", map: { x: 0.4088, y: 0.5707 }, photo: null, view: { yaw: -2.791, pitch: 0.001, fov: 1.5708 }, northOffset: null,
       links: [
         { target: "p19", yaw: 3, pitch: -0.02 },
-        { target: "p20", yaw: -3.07, pitch: -0.02 }
+        { target: "p20", yaw: -3.07, pitch: -0.02 },
+        { target: "p13", yaw: -0.686, pitch: 0.054 },
+        { target: "p17", yaw: 0.743, pitch: -0.065 }
       ],
       info: [
         { yaw: -2.791, pitch: 0.001, facility: "building6" }
