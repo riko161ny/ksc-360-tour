@@ -72,7 +72,11 @@ window.TOUR_CONFIG = {
       ],
       info: [] },
     { id: "p02", name: "Ⅱ号館横庭園", map: { x: 0.1065, y: 0.7633 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p03", name: "チャペル", map: { x: 0.088, y: 0.6807 }, photo: null, view: { yaw: 0.31, pitch: 0, fov: 1.5708 }, northOffset: null, links: [], info: [] },
+    { id: "p03", name: "チャペル", map: { x: 0.088, y: 0.6807 }, photo: null, view: { yaw: 0.31, pitch: 0, fov: 1.5708 }, northOffset: null,
+      links: [],
+      info: [
+        { yaw: 0.716, pitch: -0.092, facility: "chapel" }
+      ] },
     { id: "p04", name: "Ⅰ号館前", map: { x: 0.1503, y: 0.6348 }, photo: null, view: null, northOffset: null, links: [], info: [], facility: "building1" },
     { id: "p05", name: "Ⅱ号館前", map: { x: 0.1996, y: 0.7179 }, photo: null, view: { yaw: -1.964, pitch: -0.005, fov: 1.5708 }, northOffset: null, links: [], info: [ { yaw: -1.964, pitch: -0.005, facility: "building2" } ], facility: "building2" },
     { id: "p06", name: "Ⅲ号館", map: { x: 0.296, y: 0.6834 }, photo: null, view: { yaw: -0.39, pitch: 0, fov: 1.5708 }, northOffset: null,
@@ -231,6 +235,10 @@ window.TOUR_CONFIG = {
     // ゼミ（zemi）のマーク。内容は確認できたものを書き足してください
     "zemi": {
       name: "ゼミ"
+    },
+    // チャペルの情報マーク（中身は確認できた情報をあとで足します）
+    "chapel": {
+      name: "チャペル"
     },
     // ↓ 施設情報（riko さんがまとめた内容。overview は段落ごとの配列、sections は見出しごとのまとまり）
     "building1": {
