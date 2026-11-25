@@ -570,9 +570,479 @@ TourI18n.register("ko", {
       "text": "장시간 공부나 리포트 작성 중간에 도서관을 나가지 않고 식사할 수 있는 공간입니다. 2026년 10월부터 시험적으로 설치되었으며, 지정된 구역 안에서 규칙에 따라 음식을 먹고 마실 수 있습니다.",
       "status": "provisional"
     },
-    "facilities.zemi.name": {
-      "ja": "ゼミ",
-      "text": "세미나",
+    "facilities.zemiAbout.name": {
+      "ja": "ゼミって何？",
+      "text": "제미(세미나)란?",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.overviewTitle": {
+      "ja": "ゼミとは",
+      "text": "제미란",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.hotspot.text": {
+      "ja": "ゼミって何？",
+      "text": "제미(세미나)란?",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.lead": {
+      "ja": "少人数で専門分野を深く学ぶ授業",
+      "text": "소수 인원으로 전문 분야를 깊이 배우는 수업",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.overview.0": {
+      "ja": "ゼミ（ゼミナール）は、学生が特定の研究分野について少人数で学び、研究を深める授業です。",
+      "text": "제미(세미나)는 학생이 특정 연구 분야에 대해 소수 인원으로 배우며 연구를 깊이 하는 수업입니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.overview.1": {
+      "ja": "関西学院大学総合政策学部では、3・4年次に学生全員がいずれかのゼミに所属し、教員との議論やフィールドワークなどを通じて専門性を深めます。",
+      "text": "간세이가쿠인대학 종합정책학부에서는 3·4학년 때 모든 학생이 어느 한 제미에 소속되어, 교원과의 토론과 필드워크 등을 통해 전문성을 깊게 합니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.overview.2": {
+      "ja": "学生は自分の関心に基づいて研究テーマを設定し、調査や分析、発表などに取り組みます。",
+      "text": "학생은 자신의 관심에 따라 연구 주제를 정하고 조사·분석·발표 등에 힘씁니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.title": {
+      "ja": "普段のゼミでは何をする？",
+      "text": "평소 제미에서는 무엇을 할까?",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.0.name": {
+      "ja": "文献調査",
+      "text": "문헌 조사",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.0.text": {
+      "ja": "研究テーマに関連する書籍や論文などを読み、専門的な知識を深めます。",
+      "text": "연구 주제와 관련된 책과 논문 등을 읽고 전문 지식을 쌓습니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.1.name": {
+      "ja": "ディスカッション",
+      "text": "토론",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.1.text": {
+      "ja": "学生同士や教員と意見を交換し、研究について議論します。",
+      "text": "학생끼리 또는 교원과 의견을 나누며 연구에 대해 토론합니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.2.name": {
+      "ja": "調査・研究",
+      "text": "조사·연구",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.2.text": {
+      "ja": "自分の研究テーマに基づいて、調査や実験、フィールドワークなどを行います。",
+      "text": "자신의 연구 주제에 따라 조사, 실험, 필드워크 등을 합니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.3.name": {
+      "ja": "研究発表",
+      "text": "연구 발표",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.3.text": {
+      "ja": "調査や研究の成果を発表し、質問や意見をもとに研究内容を見直します。",
+      "text": "조사와 연구 성과를 발표하고, 질문과 의견을 바탕으로 연구 내용을 다시 검토합니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.note": {
+      "ja": "これらはゼミで行われる活動の例であり、すべてのゼミが同じ方法で授業を進めるわけではありません。",
+      "text": "이는 제미에서 하는 활동의 예이며, 모든 제미가 같은 방식으로 수업을 진행하는 것은 아닙니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.title": {
+      "ja": "何年生から始まる？",
+      "text": "몇 학년부터 시작할까?",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.subtitle": {
+      "ja": "3・4年次にゼミで専門的な研究へ",
+      "text": "3·4학년에 제미에서 전문적인 연구로",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.text.0": {
+      "ja": "総合政策学部では、1・2年次に幅広い分野を学び、3・4年次に専門性を深めていきます。",
+      "text": "종합정책학부에서는 1·2학년에 폭넓은 분야를 배우고, 3·4학년에 전문성을 깊게 합니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.text.1": {
+      "ja": "3年次以降は、ゼミでの研究活動を通じて、進級論文や卒業論文、卒業制作などに取り組みます。",
+      "text": "3학년 이후에는 제미 연구 활동을 통해 진급 논문, 졸업 논문, 졸업 작품 등에 힘씁니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.history.0.year": {
+      "ja": "1・2年次",
+      "text": "1·2학년",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.history.0.text": {
+      "ja": "幅広い分野の学習",
+      "text": "폭넓은 분야의 학습",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.history.1.year": {
+      "ja": "3年次",
+      "text": "3학년",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.history.1.text": {
+      "ja": "ゼミで専門的な研究",
+      "text": "제미에서 전문적인 연구",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.history.2.year": {
+      "ja": "4年次",
+      "text": "4학년",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.history.2.text": {
+      "ja": "研究の深化・卒業研究",
+      "text": "연구 심화·졸업 연구",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.note": {
+      "ja": "この説明は総合政策学部のカリキュラムに基づくものです。",
+      "text": "이 설명은 종합정책학부 커리큘럼을 바탕으로 합니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.2.title": {
+      "ja": "研究成果を発表する「リサーチ・フェア」",
+      "text": "연구 성과를 발표하는 '리서치 페어'",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.2.text.0": {
+      "ja": "総合政策学部では、学生が日頃の学びや研究成果を発表する「リサーチ・フェア」が開催されています。",
+      "text": "종합정책학부에서는 학생이 평소의 배움과 연구 성과를 발표하는 '리서치 페어'가 열립니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.2.text.1": {
+      "ja": "1998年から続く学部独自の行事で、学生が取り組んださまざまな研究テーマについて発表し、意見を交換する機会となっています。",
+      "text": "1998년부터 이어진 학부 고유의 행사로, 학생들이 다양한 연구 주제를 발표하고 의견을 나누는 기회가 되고 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.2.text.2": {
+      "ja": "高校生や卒業生などにも広く開かれているイベントです。",
+      "text": "고등학생과 졸업생 등에게도 널리 열려 있는 행사입니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.2.buttons.0.label": {
+      "ja": "リサーチ・フェアについて詳しく見る",
+      "text": "리서치 페어 자세히 보기",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.source": {
+      "ja": "関西学院大学 総合政策学部 公式サイト（2026年11月確認）",
+      "text": "간세이가쿠인대학 종합정책학부 공식 사이트(2026년 11월 확인)",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.name": {
+      "ja": "大用ゼミをのぞいてみよう！",
+      "text": "오요 제미를 들여다보자!",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.overviewTitle": {
+      "ja": "大用ゼミの紹介",
+      "text": "오요 제미 소개",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.hotspot.text": {
+      "ja": "大用ゼミをのぞいてみよう！",
+      "text": "오요 제미를 들여다보자!",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.lead": {
+      "ja": "AIと認知科学から、人間の知能を探究する",
+      "text": "AI와 인지과학으로 인간의 지능을 탐구하다",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.overview.0": {
+      "ja": "大用ゼミでは、人工知能（AI）や認知科学を中心に、人間の知能や情報処理の仕組みについて学んでいます。",
+      "text": "오요 제미에서는 인공지능(AI)과 인지과학을 중심으로 인간의 지능과 정보 처리의 구조에 대해 배웁니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.overview.1": {
+      "ja": "文献調査やプログラミング、データ分析などを通じて、人工知能と人間の認知について理解を深めます。",
+      "text": "문헌 조사, 프로그래밍, 데이터 분석 등을 통해 인공지능과 인간의 인지에 대한 이해를 깊게 합니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.overview.2": {
+      "ja": "学生はそれぞれの興味や関心に基づいて研究テーマを設定し、研究成果を論文や制作物としてまとめます。",
+      "text": "학생은 각자의 흥미와 관심에 따라 연구 주제를 정하고, 연구 성과를 논문이나 작품으로 정리합니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.title": {
+      "ja": "基本情報",
+      "text": "기본 정보",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.0.0": {
+      "ja": "ゼミ名",
+      "text": "제미명",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.0.1": {
+      "ja": "大用ゼミ",
+      "text": "오요 제미",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.1.0": {
+      "ja": "ゼミ科目名",
+      "text": "제미 과목명",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.1.1": {
+      "ja": "メディア工房",
+      "text": "미디어 공방",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.2.0": {
+      "ja": "担当教員",
+      "text": "담당 교원",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.2.1": {
+      "ja": "大用 庫智",
+      "text": "大用 庫智",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.3.0": {
+      "ja": "主な研究分野",
+      "text": "주요 연구 분야",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.3.1": {
+      "ja": "人工知能・認知科学",
+      "text": "인공지능·인지과학",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.chips.0": {
+      "ja": "機械学習",
+      "text": "머신러닝",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.chips.1": {
+      "ja": "強化学習",
+      "text": "강화학습",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.chips.2": {
+      "ja": "生成AI",
+      "text": "생성형 AI",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.chips.3": {
+      "ja": "心理学",
+      "text": "심리학",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.chips.5": {
+      "ja": "統計学",
+      "text": "통계학",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.chips.6": {
+      "ja": "データ分析",
+      "text": "데이터 분석",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.title": {
+      "ja": "大用ゼミでは何をしている？",
+      "text": "오요 제미에서는 무엇을 할까?",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.text.0": {
+      "ja": "大用ゼミでは、3年生と4年生が一緒に学んでいます。",
+      "text": "오요 제미에서는 3학년과 4학년이 함께 배웁니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.text.1": {
+      "ja": "授業では、認知科学や人工知能に関する書籍を分担して読み、担当者が内容を解説します。その後、学生同士でディスカッションを行い、理解を深めます。",
+      "text": "수업에서는 인지과학과 인공지능 관련 책을 나눠 읽고 담당자가 내용을 해설합니다. 그 후 학생끼리 토론하며 이해를 깊게 합니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.text.2": {
+      "ja": "研究の節目には、個人やチームで進捗報告を行い、先生やゼミ生からアドバイスを受けながら研究を進めます。",
+      "text": "연구의 고비마다 개인이나 팀으로 진척 상황을 보고하고, 선생님과 제미생의 조언을 받으며 연구를 진행합니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.0.name": {
+      "ja": "文献を読んで発表",
+      "text": "문헌을 읽고 발표",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.0.text": {
+      "ja": "AIや認知科学に関する書籍を読み、担当者が内容を解説します。",
+      "text": "AI와 인지과학 관련 책을 읽고 담당자가 내용을 해설합니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.1.name": {
+      "ja": "ディスカッション",
+      "text": "토론",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.1.text": {
+      "ja": "研究テーマについて学生同士で意見を交換します。",
+      "text": "연구 주제에 대해 학생끼리 의견을 나눕니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.2.name": {
+      "ja": "プログラミング",
+      "text": "프로그래밍",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.2.text": {
+      "ja": "Pythonなどを使用したプログラミングやデータ分析について学びます。",
+      "text": "Python 등을 사용한 프로그래밍과 데이터 분석을 배웁니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.3.name": {
+      "ja": "研究の進捗報告",
+      "text": "연구 진척 보고",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.3.text": {
+      "ja": "個人・チームの研究について発表し、教員やゼミ生から助言を受けます。",
+      "text": "개인·팀 연구를 발표하고 교원과 제미생에게 조언을 받습니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.2.title": {
+      "ja": "2026年度のゼミ活動",
+      "text": "2026년도 제미 활동",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.2.text.0": {
+      "ja": "2026年度は、人間の認知の基本的な仕組みについて学びながら、G検定の学習を通じてAIの仕組みや応用への理解も深めています。",
+      "text": "2026년도에는 인간 인지의 기본 구조를 배우면서, G검정 공부를 통해 AI의 구조와 응용에 대한 이해도 깊이고 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.2.text.1": {
+      "ja": "心理学に基づいたゲームを体験し、人間の認知とAI技術の関係について考える活動にも取り組んでいます。",
+      "text": "심리학에 기반한 게임을 체험하며 인간의 인지와 AI 기술의 관계에 대해 생각하는 활동도 하고 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.title": {
+      "ja": "学生の研究テーマを見てみよう",
+      "text": "학생 연구 주제를 살펴보자",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.text": {
+      "ja": "大用研究室の公式ホームページには、学生の研究テーマや研究概要が掲載されています。ここでは、これまでの研究からいくつか紹介します。",
+      "text": "오요 연구실 공식 홈페이지에는 학생의 연구 주제와 연구 개요가 실려 있습니다. 여기서는 지금까지의 연구 중 몇 가지를 소개합니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.0.name": {
+      "ja": "XR技術を用いたデジタル関学三田キャンパスの構築",
+      "text": "XR 기술을 활용한 디지털 간가쿠 산다 캠퍼스 구축",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.0.chips.0": {
+      "ja": "2025年度 進級論文",
+      "text": "2025년도 진급 논문",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.0.text": {
+      "ja": "フォトグラメトリなどの技術を用いて、神戸三田キャンパスをデジタル空間で再現することを目指した研究です。",
+      "text": "포토그래메트리 등의 기술을 활용해 고베산다 캠퍼스를 디지털 공간에 재현하는 것을 목표로 한 연구입니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.1.name": {
+      "ja": "児童の自己理解を促進する対話型感情支援ツールの研究",
+      "text": "아동의 자기 이해를 촉진하는 대화형 감정 지원 도구 연구",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.1.chips.0": {
+      "ja": "2025年度 進級論文",
+      "text": "2025년도 진급 논문",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.1.text": {
+      "ja": "児童が自分の感情への理解を深めることを支援する、対話型ツールに関する研究です。",
+      "text": "아동이 자신의 감정을 더 잘 이해하도록 돕는 대화형 도구에 관한 연구입니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.2.name": {
+      "ja": "画像認識技術を活用したダンスのパフォーマンス向上支援",
+      "text": "이미지 인식 기술을 활용한 댄스 퍼포먼스 향상 지원",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.2.chips.0": {
+      "ja": "2024年度",
+      "text": "2024년도",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.2.text": {
+      "ja": "画像認識技術を用いて、ダンスのパフォーマンスの分析や向上支援に取り組んだ研究です。",
+      "text": "이미지 인식 기술로 댄스 퍼포먼스를 분석하고 향상을 지원한 연구입니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.note": {
+      "ja": "過去の研究の一部です。現在も続いている研究とは限りません。",
+      "text": "과거 연구의 일부이며, 현재도 계속되는 연구라고는 할 수 없습니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.4.title": {
+      "ja": "研究以外の活動も",
+      "text": "연구 외의 활동도",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.4.text.0": {
+      "ja": "大用ゼミでは、研究活動に加えて、プログラミングの勉強会や学生同士の交流イベントなども行っています。",
+      "text": "오요 제미에서는 연구 활동 외에도 프로그래밍 스터디와 학생 교류 행사 등도 합니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.4.text.1": {
+      "ja": "研究室の公式サイトでは、心理学ゲーム、AR体験、たこ焼きパーティー、ご飯会などの活動が紹介されています。",
+      "text": "연구실 공식 사이트에는 심리학 게임, AR 체험, 다코야키 파티, 식사 모임 등의 활동이 소개되어 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.5.title": {
+      "ja": "もっと詳しく知りたい人へ",
+      "text": "더 자세히 알고 싶은 사람에게",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.5.text": {
+      "ja": "大用研究室のホームページでは、ゼミの活動内容や学生の研究テーマ、研究成果、ニュースなどを紹介しています。",
+      "text": "오요 연구실 홈페이지에서는 제미 활동 내용과 학생의 연구 주제, 연구 성과, 뉴스 등을 소개합니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.5.buttons.0.label": {
+      "ja": "大用研究室の公式ホームページを見る",
+      "text": "오요 연구실 공식 홈페이지 보기",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.source": {
+      "ja": "大用研究室ホームページ（2026年11月確認）",
+      "text": "오요 연구실 홈페이지(2026년 11월 확인)",
+      "status": "provisional"
+    },
+    "facilities.zemiOthers.name": {
+      "ja": "ほかのゼミものぞいてみよう！",
+      "text": "다른 제미도 들여다보자!",
+      "status": "provisional"
+    },
+    "facilities.zemiOthers.hotspot.text": {
+      "ja": "ほかのゼミものぞいてみよう！",
+      "text": "다른 제미도 들여다보자!",
+      "status": "provisional"
+    },
+    "facilities.zemiOthers.lead": {
+      "ja": "総合政策学部には、さまざまな研究分野があります",
+      "text": "종합정책학부에는 다양한 연구 분야가 있습니다",
+      "status": "provisional"
+    },
+    "facilities.zemiOthers.intro.text": {
+      "ja": "総合政策学部では、学生がそれぞれの興味や関心に応じた研究テーマに取り組んでいます。ゼミによって研究分野や活動方法はさまざまです。ここでは、総合政策学部の4学科から、大学公式サイトで活動が紹介されているゼミをいくつか紹介します。",
+      "text": "종합정책학부에서는 학생들이 각자의 흥미와 관심에 맞는 연구 주제에 힘쓰고 있습니다. 제미마다 연구 분야와 활동 방식은 다양합니다. 여기서는 종합정책학부 4개 학과에서 대학 공식 사이트에 활동이 소개된 제미를 몇 가지 소개합니다.",
+      "status": "provisional"
+    },
+    "facilities.zemiOthers.source": {
+      "ja": "関西学院大学 総合政策学部 公式サイトのニュース記事（2026年11月確認）",
+      "text": "간세이가쿠인대학 종합정책학부 공식 사이트 뉴스 기사(2026년 11월 확인)",
       "status": "provisional"
     },
     "facilities.chapel.name": {
@@ -5093,6 +5563,221 @@ TourI18n.register("ko", {
     "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.2.text": {
       "ja": "美術館と交流施設の2つの課題に取り組む設計演習です。",
       "text": "미술관과 교류 시설의 2가지 과제에 임하는 설계 연습입니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.tab": {
+      "ja": "総合政策学科",
+      "text": "종합정책학과",
+      "status": "official"
+    },
+    "zemiDirectory.sections.0.features.0.name": {
+      "ja": "白川ゼミ",
+      "text": "시라카와 제미",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.features.0.meta": {
+      "ja": "総合政策学科｜国際関係・政治哲学など",
+      "text": "종합정책학과｜국제관계·정치철학 등",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.features.0.text": {
+      "ja": "白川ゼミでは、国際関係や社会の問題について、学生が研究テーマを設定して考察しています。",
+      "text": "시라카와 제미에서는 국제관계와 사회 문제에 대해 학생이 연구 주제를 정하고 고찰합니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.features.0.detailsLabel": {
+      "ja": "詳しく見る",
+      "text": "자세히 보기",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.features.0.details.0": {
+      "ja": "2024年12月には、関西国際関係合同ゼミナールに参加し、ほかの大学のゼミと研究成果を発表・共有しました。",
+      "text": "2024년 12월에는 간사이 국제관계 합동 세미나에 참가해 다른 대학 제미와 연구 성과를 발표·공유했습니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.features.0.details.1": {
+      "ja": "学生は、パンデミックにおけるワクチン接種義務化と個人の自由について、倫理的な観点から検討した研究などを発表しました。",
+      "text": "학생들은 팬데믹 시 백신 접종 의무화와 개인의 자유를 윤리적 관점에서 검토한 연구 등을 발표했습니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.features.0.link.label": {
+      "ja": "大学公式記事を見る",
+      "text": "대학 공식 기사 보기",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.note": {
+      "ja": "紹介しているのは各ゼミの活動の一部です。360度写真で見られるのは大用ゼミのゼミ室だけです。",
+      "text": "소개한 것은 각 제미 활동의 일부입니다. 360도 사진으로 볼 수 있는 것은 오요 제미의 제미실뿐입니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.tab": {
+      "ja": "メディア情報学科",
+      "text": "미디어정보학과",
+      "status": "official"
+    },
+    "zemiDirectory.sections.1.features.0.name": {
+      "ja": "山田ゼミ",
+      "text": "야마다 제미",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.0.meta": {
+      "ja": "メディア情報学科｜情報技術・データ活用など",
+      "text": "미디어정보학과｜정보기술·데이터 활용 등",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.0.text": {
+      "ja": "山田孝子ゼミでは、情報技術を活用した研究活動に取り組んでいます。",
+      "text": "야마다 다카코 제미에서는 정보기술을 활용한 연구 활동을 하고 있습니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.0.detailsLabel": {
+      "ja": "詳しく見る",
+      "text": "자세히 보기",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.0.details.0": {
+      "ja": "2026年9月には、企業との共同研究の成果を「国際フロンティア産業メッセ2026」で展示・発表しました。",
+      "text": "2026년 9월에는 기업과의 공동 연구 성과를 '국제 프런티어 산업 메세 2026'에서 전시·발표했습니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.0.details.1": {
+      "ja": "ゼミ生は、研究内容の説明や来場者との意見交換を担当しました。",
+      "text": "제미생들은 연구 내용 설명과 방문객과의 의견 교환을 맡았습니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.0.link.label": {
+      "ja": "大学公式記事を見る",
+      "text": "대학 공식 기사 보기",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.1.name": {
+      "ja": "池側ゼミ",
+      "text": "池側 제미",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.1.meta": {
+      "ja": "メディア情報学科｜映像・メディア・コミュニケーションデザイン",
+      "text": "미디어정보학과｜영상·미디어·커뮤니케이션 디자인",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.1.text": {
+      "ja": "池側隆之ゼミでは、映像コンテンツや紙メディア、コミュニケーションデザインなど、さまざまな形式で研究成果を制作しています。",
+      "text": "池側隆之 제미에서는 영상 콘텐츠, 종이 매체, 커뮤니케이션 디자인 등 다양한 형식으로 연구 성과를 제작합니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.1.detailsLabel": {
+      "ja": "詳しく見る",
+      "text": "자세히 보기",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.1.details.0": {
+      "ja": "2026年2月には、神戸市のデザイン・クリエイティブセンター神戸（KIITO）でゼミ展が企画されました。",
+      "text": "2026년 2월에는 고베시의 디자인·크리에이티브 센터 고베(KIITO)에서 제미 전시가 기획되었습니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.1.details.1": {
+      "ja": "3年生の制作研究や4年生の卒業研究などを紹介する展示として案内されています。",
+      "text": "3학년의 제작 연구와 4학년의 졸업 연구 등을 소개하는 전시로 안내되었습니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.1.link.label": {
+      "ja": "大学公式記事を見る",
+      "text": "대학 공식 기사 보기",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.note": {
+      "ja": "紹介しているのは各ゼミの活動の一部です。360度写真で見られるのは大用ゼミのゼミ室だけです。",
+      "text": "소개한 것은 각 제미 활동의 일부입니다. 360도 사진으로 볼 수 있는 것은 오요 제미의 제미실뿐입니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.tab": {
+      "ja": "都市政策学科",
+      "text": "도시정책학과",
+      "status": "official"
+    },
+    "zemiDirectory.sections.2.features.0.name": {
+      "ja": "平松ゼミ",
+      "text": "히라마쓰 제미",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.features.0.meta": {
+      "ja": "都市政策学科｜都市政策・環境問題",
+      "text": "도시정책학과｜도시정책·환경 문제",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.features.0.text": {
+      "ja": "平松ゼミでは、都市政策や地域社会の課題について学んでいます。",
+      "text": "히라마쓰 제미에서는 도시정책과 지역사회의 과제에 대해 배웁니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.features.0.detailsLabel": {
+      "ja": "詳しく見る",
+      "text": "자세히 보기",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.features.0.details.0": {
+      "ja": "2025年10月には、川崎重工業の協力のもと、国際学部のゼミと合同演習を実施しました。",
+      "text": "2025년 10월에는 가와사키 중공업의 협력으로 국제학부 제미와 합동 연습을 했습니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.features.0.details.1": {
+      "ja": "学生たちは、ごみ処理施設やリサイクル、外国人居住者のごみ出しルールなどをテーマに、グループで議論しました。",
+      "text": "학생들은 쓰레기 처리 시설, 재활용, 외국인 거주자의 쓰레기 배출 규칙 등을 주제로 그룹 토론을 했습니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.features.0.link.label": {
+      "ja": "大学公式記事を見る",
+      "text": "대학 공식 기사 보기",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.note": {
+      "ja": "紹介しているのは各ゼミの活動の一部です。360度写真で見られるのは大用ゼミのゼミ室だけです。",
+      "text": "소개한 것은 각 제미 활동의 일부입니다. 360도 사진으로 볼 수 있는 것은 오요 제미의 제미실뿐입니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.tab": {
+      "ja": "国際政策学科",
+      "text": "국제정책학과",
+      "status": "official"
+    },
+    "zemiDirectory.sections.3.features.0.name": {
+      "ja": "道券ゼミ",
+      "text": "道券 제미",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.features.0.meta": {
+      "ja": "国際政策学科｜国際協力・政府開発援助",
+      "text": "국제정책학과｜국제협력·정부개발원조",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.features.0.text": {
+      "ja": "道券ゼミでは、国際協力や政府開発援助などのテーマについて学んでいます。",
+      "text": "道券 제미에서는 국제협력과 정부개발원조 등의 주제에 대해 배웁니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.features.0.detailsLabel": {
+      "ja": "詳しく見る",
+      "text": "자세히 보기",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.features.0.details.0": {
+      "ja": "2025年9月には、国際協力の仕組みや日本の政府開発援助への理解を深めるため、東京研修を実施しました。",
+      "text": "2025년 9월에는 국제협력의 구조와 일본의 정부개발원조에 대한 이해를 깊게 하기 위해 도쿄 연수를 했습니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.features.0.details.1": {
+      "ja": "学生たちは、国連開発計画（UNDP）駐日代表事務所やJICA本部などを訪問し、現場で働く人々から話を聞きました。",
+      "text": "학생들은 유엔개발계획(UNDP) 주일 대표사무소와 JICA 본부 등을 방문해 현장에서 일하는 사람들의 이야기를 들었습니다.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.features.0.link.label": {
+      "ja": "大学公式記事を見る",
+      "text": "대학 공식 기사 보기",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.note": {
+      "ja": "紹介しているのは各ゼミの活動の一部です。360度写真で見られるのは大用ゼミのゼミ室だけです。",
+      "text": "소개한 것은 각 제미 활동의 일부입니다. 360도 사진으로 볼 수 있는 것은 오요 제미의 제미실뿐입니다.",
       "status": "provisional"
     },
     "studentGroupDirectory.sections.0.tab": {

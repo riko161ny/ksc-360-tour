@@ -99,7 +99,7 @@
     }
     if (facility.overview) {
       var overview = el('div', 'info-section');
-      overview.appendChild(el('h3', 'info-heading', t('panel.overview')));
+      overview.appendChild(el('h3', 'info-heading', facility.overviewTitle || t('panel.overview')));
       appendParagraphs(overview, facility.overview);
       bodyElement.appendChild(overview);
     }
@@ -420,6 +420,12 @@
       });
       var section = sections[index];
       content.innerHTML = '';
+      // dir.animate: a short fade when switching tabs.
+      if (dir.animate) {
+        content.classList.remove('club-fade');
+        void content.offsetWidth;
+        content.classList.add('club-fade');
+      }
       if (section.heading) { content.appendChild(el('h3', 'club-section-heading', section.heading)); }
       if (section.text) { appendParagraphs(content, section.text); }
       (section.features || []).forEach(function(f) { content.appendChild(createFeatureCard(f)); });
@@ -494,6 +500,21 @@
     box.appendChild(el('h4', 'club-feature-name', f.name || ''));
     if (f.meta) { box.appendChild(el('p', 'club-feature-meta', f.meta)); }
     if (f.text) { box.appendChild(el('p', 'club-feature-text', f.text)); }
+    // details: [paragraphs] shown under a 「詳しく見る」 fold, with the link inside it.
+    if (f.details) {
+      var more = el('details', 'activity-more club-feature-more');
+      more.appendChild(el('summary', 'activity-more-title', f.detailsLabel || ''));
+      var moreBody = el('div', 'activity-more-body');
+      appendParagraphs(moreBody, f.details);
+      if (f.link) {
+        var moreRow = el('div', 'guide-actions');
+        moreRow.appendChild(createLinkButton(f.link, true));
+        moreBody.appendChild(moreRow);
+      }
+      more.appendChild(moreBody);
+      box.appendChild(more);
+      return box;
+    }
     if (f.link) {
       var row = el('div', 'guide-actions');
       row.appendChild(createLinkButton(f.link, true));

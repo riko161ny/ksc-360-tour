@@ -3014,3 +3014,109 @@ body.desktop #infoPanel.rich.wide .info-items-cards {
 body.mobile #infoPanel.rich .info-section {
   padding: 14px 14px;
 }
+
+/* ---------- 思考吹き出し型の浮遊マーク（ゼミ室、cloud3d + shape: "thought"） ---------- */
+.shape-thought .cloud-body {
+  display: block;
+  padding: 0 0 40px 0;
+}
+
+/* 少し不規則な楕円の吹き出し */
+.thought-bubble {
+  position: relative;
+  display: block;
+  padding: 22px 32px 22px;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  border-radius: 52% 48% 55% 45% / 62% 58% 42% 38%;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.5), inset 0 -6px 12px rgba(31, 42, 68, 0.06);
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shape-thought .cloud-text {
+  display: block;
+  color: #1f2a44;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+/* 左下に小さくなっていく丸を3つ */
+.thought-dot {
+  position: absolute;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.45);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.thought-dot.d1 {
+  left: 16%;
+  bottom: 18px;
+  width: 20px;
+  height: 17px;
+}
+
+.thought-dot.d2 {
+  left: calc(16% - 16px);
+  bottom: 4px;
+  width: 13px;
+  height: 12px;
+}
+
+.thought-dot.d3 {
+  left: calc(16% - 28px);
+  bottom: -6px;
+  width: 8px;
+  height: 8px;
+}
+
+.shape-thought:hover .thought-bubble,
+.hotspot:focus-visible .shape-thought .thought-bubble,
+.shape-thought.is-tapped .thought-bubble,
+.shape-thought:hover .thought-dot,
+.hotspot:focus-visible .shape-thought .thought-dot,
+.shape-thought.is-tapped .thought-dot {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: #ffffff;
+}
+
+body.mobile .thought-bubble {
+  padding: 15px 22px 15px;
+}
+
+body.mobile .shape-thought .cloud-text {
+  font-size: 14px;
+}
+
+body.mobile .shape-thought .cloud-body {
+  padding-bottom: 32px;
+}
+
+body.mobile .thought-dot.d1 { width: 15px; height: 13px; bottom: 14px; }
+body.mobile .thought-dot.d2 { width: 10px; height: 9px; bottom: 3px; left: calc(16% - 12px); }
+body.mobile .thought-dot.d3 { width: 6px; height: 6px; bottom: -5px; left: calc(16% - 21px); }
+
+/* 学科タブの切り替え（clubDirectory.animate） */
+.club-list.club-fade {
+  animation: club-fade-in 0.25s ease-out;
+}
+
+@keyframes club-fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .club-list.club-fade {
+    animation: none;
+  }
+}
+
+.club-feature-more {
+  margin-top: 8px;
+}
+
+#infoPanel.rich .club-tabs {
+  background: #f3efe8;
+}

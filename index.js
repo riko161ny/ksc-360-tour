@@ -686,16 +686,28 @@
     body.className = 'cloud-body';
     // shape: "cloud" (default), "moon" (glowing crescent) or "cross".
     // The title always sits below the mark, in a small label.
-    var shape = SHAPE_PATHS[look.shape] ? look.shape : 'cloud';
+    // "thought" is a comic-style thought bubble with the title inside (ゼミ室).
+    var shape = look.shape === 'thought' ? 'thought' : SHAPE_PATHS[look.shape] ? look.shape : 'cloud';
     inner.classList.add('shape-' + shape);
-    body.innerHTML = shape === 'cloud' ?
+    var text = document.createElement('span');
+    text.className = 'cloud-text';
+    if (shape === 'thought') {
+      var bubble = document.createElement('span');
+      bubble.className = 'thought-bubble';
+      bubble.appendChild(text);
+      body.appendChild(bubble);
+      ['thought-dot d1', 'thought-dot d2', 'thought-dot d3'].forEach(function(c) {
+        var dot = document.createElement('span');
+        dot.className = c;
+        dot.setAttribute('aria-hidden', 'true');
+        body.appendChild(dot);
+      });
+    } else body.innerHTML = shape === 'cloud' ?
       '<svg class="mark-shape mark-cloud" viewBox="0 0 256 140" aria-hidden="true" focusable="false">' +
         '<path class="cloud-fill" d="' + CLOUD_PATH + '"></path></svg>' :
       '<svg class="mark-shape" viewBox="0 0 100 100" aria-hidden="true" focusable="false">' +
         '<path class="cloud-fill" d="' + SHAPE_PATHS[shape] + '"></path></svg>';
-    var text = document.createElement('span');
-    text.className = 'cloud-text';
-    body.appendChild(text);
+    if (shape !== 'thought') { body.appendChild(text); }
     bob.appendChild(body);
 
     // Optional small photo next to the cloud (only photos with confirmed permission).

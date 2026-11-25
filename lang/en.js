@@ -570,9 +570,479 @@ TourI18n.register("en", {
       "text": "A space where you can eat without leaving the library, during breaks from long study sessions or report writing. It has been set up on a trial basis since October 2026, and you may eat and drink within the designated area, following the rules.",
       "status": "provisional"
     },
-    "facilities.zemi.name": {
-      "ja": "ゼミ",
+    "facilities.zemiAbout.name": {
+      "ja": "ゼミって何？",
+      "text": "What is a seminar (zemi)?",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.overviewTitle": {
+      "ja": "ゼミとは",
+      "text": "About seminars",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.hotspot.text": {
+      "ja": "ゼミって何？",
+      "text": "What is a seminar (zemi)?",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.lead": {
+      "ja": "少人数で専門分野を深く学ぶ授業",
+      "text": "Small classes for in-depth study of a specialty",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.overview.0": {
+      "ja": "ゼミ（ゼミナール）は、学生が特定の研究分野について少人数で学び、研究を深める授業です。",
+      "text": "A zemi (seminar) is a small class where students study a particular research field and deepen their research.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.overview.1": {
+      "ja": "関西学院大学総合政策学部では、3・4年次に学生全員がいずれかのゼミに所属し、教員との議論やフィールドワークなどを通じて専門性を深めます。",
+      "text": "In the School of Policy Studies, every student joins a seminar in their third and fourth years and builds expertise through discussions with faculty, fieldwork and more.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.overview.2": {
+      "ja": "学生は自分の関心に基づいて研究テーマを設定し、調査や分析、発表などに取り組みます。",
+      "text": "Students choose research themes based on their own interests and work on surveys, analysis and presentations.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.title": {
+      "ja": "普段のゼミでは何をする？",
+      "text": "What happens in a typical seminar?",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.0.name": {
+      "ja": "文献調査",
+      "text": "Literature research",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.0.text": {
+      "ja": "研究テーマに関連する書籍や論文などを読み、専門的な知識を深めます。",
+      "text": "Read books and papers related to your theme to build specialist knowledge.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.1.name": {
+      "ja": "ディスカッション",
+      "text": "Discussion",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.1.text": {
+      "ja": "学生同士や教員と意見を交換し、研究について議論します。",
+      "text": "Exchange views with classmates and faculty and discuss research.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.2.name": {
+      "ja": "調査・研究",
+      "text": "Research and surveys",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.2.text": {
+      "ja": "自分の研究テーマに基づいて、調査や実験、フィールドワークなどを行います。",
+      "text": "Carry out surveys, experiments and fieldwork based on your theme.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.3.name": {
+      "ja": "研究発表",
+      "text": "Presentations",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.items.3.text": {
+      "ja": "調査や研究の成果を発表し、質問や意見をもとに研究内容を見直します。",
+      "text": "Present your results and refine your research based on questions and feedback.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.0.note": {
+      "ja": "これらはゼミで行われる活動の例であり、すべてのゼミが同じ方法で授業を進めるわけではありません。",
+      "text": "These are examples; not every seminar is run the same way.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.title": {
+      "ja": "何年生から始まる？",
+      "text": "When does it start?",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.subtitle": {
+      "ja": "3・4年次にゼミで専門的な研究へ",
+      "text": "Specialized research in seminars in years 3 and 4",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.text.0": {
+      "ja": "総合政策学部では、1・2年次に幅広い分野を学び、3・4年次に専門性を深めていきます。",
+      "text": "In the School of Policy Studies, students study a wide range of fields in years 1 and 2, then specialize in years 3 and 4.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.text.1": {
+      "ja": "3年次以降は、ゼミでの研究活動を通じて、進級論文や卒業論文、卒業制作などに取り組みます。",
+      "text": "From year 3, students work on a third-year paper, a graduation thesis or a graduation project through their seminar.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.history.0.year": {
+      "ja": "1・2年次",
+      "text": "Years 1–2",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.history.0.text": {
+      "ja": "幅広い分野の学習",
+      "text": "Broad study across fields",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.history.1.year": {
+      "ja": "3年次",
+      "text": "Year 3",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.history.1.text": {
+      "ja": "ゼミで専門的な研究",
+      "text": "Specialized research in a seminar",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.history.2.year": {
+      "ja": "4年次",
+      "text": "Year 4",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.history.2.text": {
+      "ja": "研究の深化・卒業研究",
+      "text": "Deeper research and graduation work",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.1.note": {
+      "ja": "この説明は総合政策学部のカリキュラムに基づくものです。",
+      "text": "This is based on the School of Policy Studies curriculum.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.2.title": {
+      "ja": "研究成果を発表する「リサーチ・フェア」",
+      "text": "The \"Research Fair\" for presenting research",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.2.text.0": {
+      "ja": "総合政策学部では、学生が日頃の学びや研究成果を発表する「リサーチ・フェア」が開催されています。",
+      "text": "The School of Policy Studies holds a \"Research Fair\" where students present their studies and research.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.2.text.1": {
+      "ja": "1998年から続く学部独自の行事で、学生が取り組んださまざまな研究テーマについて発表し、意見を交換する機会となっています。",
+      "text": "Held since 1998, this event unique to the school gives students a chance to present a wide range of research themes and exchange views.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.2.text.2": {
+      "ja": "高校生や卒業生などにも広く開かれているイベントです。",
+      "text": "It is open to many visitors, including high school students and alumni.",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.sections.2.buttons.0.label": {
+      "ja": "リサーチ・フェアについて詳しく見る",
+      "text": "Learn more about the Research Fair",
+      "status": "provisional"
+    },
+    "facilities.zemiAbout.source": {
+      "ja": "関西学院大学 総合政策学部 公式サイト（2026年11月確認）",
+      "text": "Kwansei Gakuin University School of Policy Studies official website (checked Nov. 2026)",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.name": {
+      "ja": "大用ゼミをのぞいてみよう！",
+      "text": "Take a peek at the Oyo Seminar!",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.overviewTitle": {
+      "ja": "大用ゼミの紹介",
+      "text": "About the Oyo Seminar",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.hotspot.text": {
+      "ja": "大用ゼミをのぞいてみよう！",
+      "text": "Take a peek at the Oyo Seminar!",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.lead": {
+      "ja": "AIと認知科学から、人間の知能を探究する",
+      "text": "Exploring human intelligence through AI and cognitive science",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.overview.0": {
+      "ja": "大用ゼミでは、人工知能（AI）や認知科学を中心に、人間の知能や情報処理の仕組みについて学んでいます。",
+      "text": "The Oyo Seminar studies human intelligence and information processing, centered on artificial intelligence (AI) and cognitive science.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.overview.1": {
+      "ja": "文献調査やプログラミング、データ分析などを通じて、人工知能と人間の認知について理解を深めます。",
+      "text": "Through literature research, programming and data analysis, students deepen their understanding of AI and human cognition.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.overview.2": {
+      "ja": "学生はそれぞれの興味や関心に基づいて研究テーマを設定し、研究成果を論文や制作物としてまとめます。",
+      "text": "Students choose themes based on their interests and turn their results into papers or works.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.title": {
+      "ja": "基本情報",
+      "text": "Basic information",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.0.0": {
+      "ja": "ゼミ名",
       "text": "Seminar",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.0.1": {
+      "ja": "大用ゼミ",
+      "text": "Oyo Seminar",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.1.0": {
+      "ja": "ゼミ科目名",
+      "text": "Course name",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.1.1": {
+      "ja": "メディア工房",
+      "text": "Media Kobo (Media Workshop)",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.2.0": {
+      "ja": "担当教員",
+      "text": "Instructor",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.2.1": {
+      "ja": "大用 庫智",
+      "text": "大用 庫智",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.3.0": {
+      "ja": "主な研究分野",
+      "text": "Main fields",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.rows.3.1": {
+      "ja": "人工知能・認知科学",
+      "text": "Artificial intelligence, cognitive science",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.chips.0": {
+      "ja": "機械学習",
+      "text": "Machine learning",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.chips.1": {
+      "ja": "強化学習",
+      "text": "Reinforcement learning",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.chips.2": {
+      "ja": "生成AI",
+      "text": "Generative AI",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.chips.3": {
+      "ja": "心理学",
+      "text": "Psychology",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.chips.5": {
+      "ja": "統計学",
+      "text": "Statistics",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.0.chips.6": {
+      "ja": "データ分析",
+      "text": "Data analysis",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.title": {
+      "ja": "大用ゼミでは何をしている？",
+      "text": "What does the Oyo Seminar do?",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.text.0": {
+      "ja": "大用ゼミでは、3年生と4年生が一緒に学んでいます。",
+      "text": "In the Oyo Seminar, third- and fourth-year students study together.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.text.1": {
+      "ja": "授業では、認知科学や人工知能に関する書籍を分担して読み、担当者が内容を解説します。その後、学生同士でディスカッションを行い、理解を深めます。",
+      "text": "In class, students split up readings on cognitive science and AI, and the person in charge explains the content. Then they discuss it together to deepen their understanding.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.text.2": {
+      "ja": "研究の節目には、個人やチームで進捗報告を行い、先生やゼミ生からアドバイスを受けながら研究を進めます。",
+      "text": "At research milestones, individuals and teams report their progress and move forward with advice from the instructor and classmates.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.0.name": {
+      "ja": "文献を読んで発表",
+      "text": "Reading and presenting",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.0.text": {
+      "ja": "AIや認知科学に関する書籍を読み、担当者が内容を解説します。",
+      "text": "Read books on AI and cognitive science; the person in charge explains them.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.1.name": {
+      "ja": "ディスカッション",
+      "text": "Discussion",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.1.text": {
+      "ja": "研究テーマについて学生同士で意見を交換します。",
+      "text": "Students exchange views on their research themes.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.2.name": {
+      "ja": "プログラミング",
+      "text": "Programming",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.2.text": {
+      "ja": "Pythonなどを使用したプログラミングやデータ分析について学びます。",
+      "text": "Learn programming and data analysis with Python and other tools.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.3.name": {
+      "ja": "研究の進捗報告",
+      "text": "Progress reports",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.1.items.3.text": {
+      "ja": "個人・チームの研究について発表し、教員やゼミ生から助言を受けます。",
+      "text": "Present individual or team research and get advice from the instructor and classmates.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.2.title": {
+      "ja": "2026年度のゼミ活動",
+      "text": "Seminar activities in 2026",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.2.text.0": {
+      "ja": "2026年度は、人間の認知の基本的な仕組みについて学びながら、G検定の学習を通じてAIの仕組みや応用への理解も深めています。",
+      "text": "In the 2026 academic year, students are learning the basics of human cognition while deepening their understanding of how AI works and is applied by studying for the JDLA Deep Learning for GENERAL (G検定) exam.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.2.text.1": {
+      "ja": "心理学に基づいたゲームを体験し、人間の認知とAI技術の関係について考える活動にも取り組んでいます。",
+      "text": "They also play psychology-based games and think about how human cognition relates to AI technology.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.title": {
+      "ja": "学生の研究テーマを見てみよう",
+      "text": "Student research themes",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.text": {
+      "ja": "大用研究室の公式ホームページには、学生の研究テーマや研究概要が掲載されています。ここでは、これまでの研究からいくつか紹介します。",
+      "text": "The Oyo Lab website lists student research themes and summaries. Here are a few past projects.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.0.name": {
+      "ja": "XR技術を用いたデジタル関学三田キャンパスの構築",
+      "text": "Building a digital Kwansei Sanda campus with XR technology",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.0.chips.0": {
+      "ja": "2025年度 進級論文",
+      "text": "2025 third-year paper",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.0.text": {
+      "ja": "フォトグラメトリなどの技術を用いて、神戸三田キャンパスをデジタル空間で再現することを目指した研究です。",
+      "text": "A project that aimed to recreate Kobe-Sanda Campus in digital space using photogrammetry and other techniques.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.1.name": {
+      "ja": "児童の自己理解を促進する対話型感情支援ツールの研究",
+      "text": "An interactive emotional support tool to help children understand themselves",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.1.chips.0": {
+      "ja": "2025年度 進級論文",
+      "text": "2025 third-year paper",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.1.text": {
+      "ja": "児童が自分の感情への理解を深めることを支援する、対話型ツールに関する研究です。",
+      "text": "Research on an interactive tool that helps children better understand their own feelings.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.2.name": {
+      "ja": "画像認識技術を活用したダンスのパフォーマンス向上支援",
+      "text": "Supporting dance performance with image recognition",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.2.chips.0": {
+      "ja": "2024年度",
+      "text": "2024",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.items.2.text": {
+      "ja": "画像認識技術を用いて、ダンスのパフォーマンスの分析や向上支援に取り組んだ研究です。",
+      "text": "Research that used image recognition to analyze dance performance and help dancers improve.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.3.note": {
+      "ja": "過去の研究の一部です。現在も続いている研究とは限りません。",
+      "text": "These are some past projects and may not be ongoing.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.4.title": {
+      "ja": "研究以外の活動も",
+      "text": "Beyond research",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.4.text.0": {
+      "ja": "大用ゼミでは、研究活動に加えて、プログラミングの勉強会や学生同士の交流イベントなども行っています。",
+      "text": "Besides research, the Oyo Seminar holds programming study sessions and social events for students.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.4.text.1": {
+      "ja": "研究室の公式サイトでは、心理学ゲーム、AR体験、たこ焼きパーティー、ご飯会などの活動が紹介されています。",
+      "text": "The lab website features activities such as psychology games, AR experiences, a takoyaki party and group dinners.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.5.title": {
+      "ja": "もっと詳しく知りたい人へ",
+      "text": "Want to know more?",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.5.text": {
+      "ja": "大用研究室のホームページでは、ゼミの活動内容や学生の研究テーマ、研究成果、ニュースなどを紹介しています。",
+      "text": "The Oyo Lab website introduces seminar activities, student research themes, results and news.",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.sections.5.buttons.0.label": {
+      "ja": "大用研究室の公式ホームページを見る",
+      "text": "Visit the Oyo Lab website",
+      "status": "provisional"
+    },
+    "facilities.zemiOyo.source": {
+      "ja": "大用研究室ホームページ（2026年11月確認）",
+      "text": "Oyo Lab website (checked Nov. 2026)",
+      "status": "provisional"
+    },
+    "facilities.zemiOthers.name": {
+      "ja": "ほかのゼミものぞいてみよう！",
+      "text": "Take a peek at other seminars!",
+      "status": "provisional"
+    },
+    "facilities.zemiOthers.hotspot.text": {
+      "ja": "ほかのゼミものぞいてみよう！",
+      "text": "Take a peek at other seminars!",
+      "status": "provisional"
+    },
+    "facilities.zemiOthers.lead": {
+      "ja": "総合政策学部には、さまざまな研究分野があります",
+      "text": "The School of Policy Studies covers many research fields",
+      "status": "provisional"
+    },
+    "facilities.zemiOthers.intro.text": {
+      "ja": "総合政策学部では、学生がそれぞれの興味や関心に応じた研究テーマに取り組んでいます。ゼミによって研究分野や活動方法はさまざまです。ここでは、総合政策学部の4学科から、大学公式サイトで活動が紹介されているゼミをいくつか紹介します。",
+      "text": "Students in the School of Policy Studies work on research themes that match their interests, and fields and methods vary by seminar. Here are a few seminars from the school's four departments whose activities are featured on the university's official website.",
+      "status": "provisional"
+    },
+    "facilities.zemiOthers.source": {
+      "ja": "関西学院大学 総合政策学部 公式サイトのニュース記事（2026年11月確認）",
+      "text": "News articles on the Kwansei Gakuin University School of Policy Studies website (checked Nov. 2026)",
       "status": "provisional"
     },
     "facilities.chapel.name": {
@@ -5093,6 +5563,221 @@ TourI18n.register("en", {
     "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.2.text": {
       "ja": "美術館と交流施設の2つの課題に取り組む設計演習です。",
       "text": "A design studio with two assignments: an art museum and a community facility.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.tab": {
+      "ja": "総合政策学科",
+      "text": "Department of Policy Studies",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.features.0.name": {
+      "ja": "白川ゼミ",
+      "text": "Shirakawa Seminar",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.features.0.meta": {
+      "ja": "総合政策学科｜国際関係・政治哲学など",
+      "text": "Dept. of Policy Studies | International relations, political philosophy, etc.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.features.0.text": {
+      "ja": "白川ゼミでは、国際関係や社会の問題について、学生が研究テーマを設定して考察しています。",
+      "text": "In the Shirakawa Seminar, students set research themes on international relations and social issues and examine them.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.features.0.detailsLabel": {
+      "ja": "詳しく見る",
+      "text": "Details",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.features.0.details.0": {
+      "ja": "2024年12月には、関西国際関係合同ゼミナールに参加し、ほかの大学のゼミと研究成果を発表・共有しました。",
+      "text": "In December 2024, they joined the Kansai joint seminar on international relations and shared their research with seminars from other universities.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.features.0.details.1": {
+      "ja": "学生は、パンデミックにおけるワクチン接種義務化と個人の自由について、倫理的な観点から検討した研究などを発表しました。",
+      "text": "Students presented work such as an ethical examination of vaccine mandates and individual freedom during a pandemic.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.features.0.link.label": {
+      "ja": "大学公式記事を見る",
+      "text": "Read the university's article",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.0.note": {
+      "ja": "紹介しているのは各ゼミの活動の一部です。360度写真で見られるのは大用ゼミのゼミ室だけです。",
+      "text": "These are only some of each seminar's activities. Only the Oyo Seminar room can be viewed in 360°.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.tab": {
+      "ja": "メディア情報学科",
+      "text": "Department of Media and Information",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.0.name": {
+      "ja": "山田ゼミ",
+      "text": "Yamada Seminar",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.0.meta": {
+      "ja": "メディア情報学科｜情報技術・データ活用など",
+      "text": "Dept. of Media Informatics | IT, data use, etc.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.0.text": {
+      "ja": "山田孝子ゼミでは、情報技術を活用した研究活動に取り組んでいます。",
+      "text": "Takako Yamada's seminar carries out research that makes use of information technology.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.0.detailsLabel": {
+      "ja": "詳しく見る",
+      "text": "Details",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.0.details.0": {
+      "ja": "2026年9月には、企業との共同研究の成果を「国際フロンティア産業メッセ2026」で展示・発表しました。",
+      "text": "In September 2026, they exhibited and presented results of joint research with a company at the International Frontier Industry Messe 2026.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.0.details.1": {
+      "ja": "ゼミ生は、研究内容の説明や来場者との意見交換を担当しました。",
+      "text": "Students explained the research and talked with visitors.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.0.link.label": {
+      "ja": "大学公式記事を見る",
+      "text": "Read the university's article",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.1.name": {
+      "ja": "池側ゼミ",
+      "text": "池側 Seminar",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.1.meta": {
+      "ja": "メディア情報学科｜映像・メディア・コミュニケーションデザイン",
+      "text": "Dept. of Media Informatics | Video, media, communication design",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.1.text": {
+      "ja": "池側隆之ゼミでは、映像コンテンツや紙メディア、コミュニケーションデザインなど、さまざまな形式で研究成果を制作しています。",
+      "text": "The 池側隆之 seminar produces research in many forms, including video content, print media and communication design.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.1.detailsLabel": {
+      "ja": "詳しく見る",
+      "text": "Details",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.1.details.0": {
+      "ja": "2026年2月には、神戸市のデザイン・クリエイティブセンター神戸（KIITO）でゼミ展が企画されました。",
+      "text": "In February 2026, a seminar exhibition was planned at Design and Creative Center Kobe (KIITO).",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.1.details.1": {
+      "ja": "3年生の制作研究や4年生の卒業研究などを紹介する展示として案内されています。",
+      "text": "It was announced as a show of third-year production research and fourth-year graduation work.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.features.1.link.label": {
+      "ja": "大学公式記事を見る",
+      "text": "Read the university's article",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.1.note": {
+      "ja": "紹介しているのは各ゼミの活動の一部です。360度写真で見られるのは大用ゼミのゼミ室だけです。",
+      "text": "These are only some of each seminar's activities. Only the Oyo Seminar room can be viewed in 360°.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.tab": {
+      "ja": "都市政策学科",
+      "text": "Department of Urban Policy",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.features.0.name": {
+      "ja": "平松ゼミ",
+      "text": "Hiramatsu Seminar",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.features.0.meta": {
+      "ja": "都市政策学科｜都市政策・環境問題",
+      "text": "Dept. of Urban Policy | Urban policy, environmental issues",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.features.0.text": {
+      "ja": "平松ゼミでは、都市政策や地域社会の課題について学んでいます。",
+      "text": "The Hiramatsu Seminar studies urban policy and local community issues.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.features.0.detailsLabel": {
+      "ja": "詳しく見る",
+      "text": "Details",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.features.0.details.0": {
+      "ja": "2025年10月には、川崎重工業の協力のもと、国際学部のゼミと合同演習を実施しました。",
+      "text": "In October 2025, with the cooperation of Kawasaki Heavy Industries, they held a joint session with seminars from the School of International Studies.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.features.0.details.1": {
+      "ja": "学生たちは、ごみ処理施設やリサイクル、外国人居住者のごみ出しルールなどをテーマに、グループで議論しました。",
+      "text": "Students discussed topics such as waste treatment facilities, recycling and garbage rules for foreign residents in groups.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.features.0.link.label": {
+      "ja": "大学公式記事を見る",
+      "text": "Read the university's article",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.2.note": {
+      "ja": "紹介しているのは各ゼミの活動の一部です。360度写真で見られるのは大用ゼミのゼミ室だけです。",
+      "text": "These are only some of each seminar's activities. Only the Oyo Seminar room can be viewed in 360°.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.tab": {
+      "ja": "国際政策学科",
+      "text": "Department of International Policy",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.features.0.name": {
+      "ja": "道券ゼミ",
+      "text": "道券 Seminar",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.features.0.meta": {
+      "ja": "国際政策学科｜国際協力・政府開発援助",
+      "text": "Dept. of International Policy | International cooperation, ODA",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.features.0.text": {
+      "ja": "道券ゼミでは、国際協力や政府開発援助などのテーマについて学んでいます。",
+      "text": "The 道券 Seminar studies themes such as international cooperation and official development assistance.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.features.0.detailsLabel": {
+      "ja": "詳しく見る",
+      "text": "Details",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.features.0.details.0": {
+      "ja": "2025年9月には、国際協力の仕組みや日本の政府開発援助への理解を深めるため、東京研修を実施しました。",
+      "text": "In September 2025, they held a study trip to Tokyo to learn more about how international cooperation and Japan's ODA work.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.features.0.details.1": {
+      "ja": "学生たちは、国連開発計画（UNDP）駐日代表事務所やJICA本部などを訪問し、現場で働く人々から話を聞きました。",
+      "text": "Students visited places such as the UNDP Representation Office in Tokyo and JICA headquarters and heard from people working there.",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.features.0.link.label": {
+      "ja": "大学公式記事を見る",
+      "text": "Read the university's article",
+      "status": "provisional"
+    },
+    "zemiDirectory.sections.3.note": {
+      "ja": "紹介しているのは各ゼミの活動の一部です。360度写真で見られるのは大用ゼミのゼミ室だけです。",
+      "text": "These are only some of each seminar's activities. Only the Oyo Seminar room can be viewed in 360°.",
       "status": "provisional"
     },
     "studentGroupDirectory.sections.0.tab": {
