@@ -222,7 +222,7 @@
   function createSection(section) {
     // event { year, kicker, subtitle, compact }: an event card. Photo first, then the year, title and subtitle.
     var ev = section.event;
-    var outer = el('div', 'info-section' + (ev ? ' event-card' + (ev.compact ? ' compact' : '') : ''));
+    var outer = el('div', 'info-section' + (ev ? ' event-card' + (ev.compact ? ' compact' : '') : '') + (section.style === 'feature' ? ' feature-card' : ''));
     var box = outer;
     if (ev) {
       if (section.figure && section.figure.src) { box.appendChild(createFigure(section.figure)); }
@@ -244,6 +244,8 @@
     } else if (section.title) {
       box.appendChild(el('h3', 'info-heading', section.title));
     }
+    // subtitle: a short line under the heading.
+    if (section.subtitle && !ev) { box.appendChild(el('p', 'info-subtitle', section.subtitle)); }
     if (section.highlight) { box.appendChild(el('p', 'info-highlight', section.highlight)); }
     // timeline: [{ label, time, current }] shows a short time line (current = the highlighted slot).
     if (section.timeline && section.timeline.length) {
@@ -271,7 +273,23 @@
       box.appendChild(table);
     }
     if (section.figureAfterRows && section.figure && section.figure.src) { box.appendChild(createFigure(section.figure)); }
-    if (section.items && section.items.length) {
+    // history: [{ year, text }] shows a small year-by-year list.
+    if (section.history && section.history.length) {
+      var hist = el('ol', 'info-history');
+      section.history.forEach(function(h) {
+        var li = el('li', 'info-history-row');
+        li.appendChild(el('span', 'info-history-year', h.year || ''));
+        li.appendChild(el('span', 'info-history-text', h.text || ''));
+        hist.appendChild(li);
+      });
+      box.appendChild(hist);
+    }
+    // itemsStyle: "accordion" shows each item closed, with its name and sub line; tap to open.
+    if (section.items && section.items.length && section.itemsStyle === 'accordion') {
+      var acc = el('div', 'info-accordion');
+      section.items.forEach(function(it) { acc.appendChild(createAccordionItem(it)); });
+      box.appendChild(acc);
+    } else if (section.items && section.items.length) {
       // itemsStyle: "cards" shows the items as small cards side by side (one column on phones).
       var list = el('ul', 'info-items' + (section.itemsStyle === 'cards' ? ' info-items-cards' : ''));
       section.items.forEach(function(it) {
@@ -306,6 +324,50 @@
     if (section.buttons && section.buttons.length) { appendButtons(box, section.buttons); }
     if (section.links && section.links.length) { appendLinks(box, section.links); }
     return outer;
+  }
+
+  // One accordion row: { name, sub, text, record, figure }. Opens and closes with a short slide.
+  function createAccordionItem(it) {
+    var details = el('details', 'info-acc');
+    var summary = el('summary', 'info-acc-head');
+    var label = el('span', 'info-acc-label');
+    label.appendChild(el('span', 'info-acc-name', it.name || ''));
+    if (it.sub) { label.appendChild(el('span', 'info-acc-sub', it.sub)); }
+    summary.appendChild(label);
+    summary.appendChild(el('span', 'info-acc-icon', ''));
+    details.appendChild(summary);
+    var body = el('div', 'info-acc-body');
+    if (it.sub) { body.appendChild(el('p', 'info-acc-field', it.sub)); }
+    if (it.text) { appendParagraphs(body, it.text); }
+    if (it.record) {
+      var rec = el('div', 'info-acc-record');
+      appendParagraphs(rec, it.record);
+      body.appendChild(rec);
+    }
+    if (it.figure && it.figure.src) { body.appendChild(createFigure(it.figure)); }
+    if (it.note) { appendNotes(body, it.note); }
+    details.appendChild(body);
+    summary.addEventListener('click', function(e) {
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce || !body.animate) { return; }
+      e.preventDefault();
+      if (details._anim) { details._anim.cancel(); }
+      var opening = !details.open;
+      if (opening) { details.open = true; }
+      var h = body.scrollHeight;
+      var anim = body.animate(
+        opening ? [{ height: '0px', opacity: 0 }, { height: h + 'px', opacity: 1 }] : [{ height: h + 'px', opacity: 1 }, { height: '0px', opacity: 0 }],
+        { duration: 220, easing: 'ease-out' });
+      body.style.overflow = 'hidden';
+      details._anim = anim;
+      anim.onfinish = function() {
+        if (!opening) { details.open = false; }
+        body.style.overflow = '';
+        details._anim = null;
+      };
+      anim.oncancel = function() { body.style.overflow = ''; };
+    });
+    return details;
   }
 
   function createFigure(fig) {

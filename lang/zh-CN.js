@@ -770,9 +770,759 @@ TourI18n.register("zh-CN", {
       "text": "关西学院大学生活协同组合官方网站（2026年11月确认）、新月祭2026官方网站",
       "status": "provisional"
     },
-    "facilities.commons.name": {
+    "facilities.academicCommons.name": {
+      "ja": "アカデミックコモンズ 1階",
+      "text": "学术共享空间 1楼",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.lead": {
+      "ja": "学習・交流・学生の活動が生まれる場所",
+      "text": "孕育学习、交流与学生活动的地方",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.0.title": {
       "ja": "アカデミックコモンズ",
       "text": "学术共享空间（Academic Commons）",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.0.subtitle": {
+      "ja": "学生が主体的に学び、交流し、活動する場所",
+      "text": "学生自主学习、交流和活动的地方",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.0.text.0": {
+      "ja": "神戸三田キャンパスのアカデミックコモンズは、2013年4月に開設された2階建ての施設です。",
+      "text": "神户三田校区的学术共享空间是2013年4月开放的两层建筑。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.0.text.1": {
+      "ja": "「学習」「憩い」「学生活動」をコンセプトとし、学生が主体的に学び、交流し、活動できる場所として整備されました。愛称は「CRESCENT（クレセント）」です。",
+      "text": "以“学习”“休憩”“学生活动”为理念，作为学生能够自主学习、交流和活动的场所而建。昵称为“CRESCENT（新月）”。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.0.text.2": {
+      "ja": "共同学習やグループワーク、学生主体のプロジェクト、さまざまなイベントなど、多様な活動に利用されています。",
+      "text": "这里用于共同学习、小组作业、学生主导的项目以及各种活动等多种用途。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.1.title": {
+      "ja": "1階のようす",
+      "text": "1楼概况",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.1.text.0": {
+      "ja": "アカデミックコモンズの1階には、広々とした共同学習スペースや、発表・イベントのための設備、学生が交流できるラウンジなどがあります。",
+      "text": "学术共享空间1楼有宽敞的共同学习空间、用于发表和活动的设施，以及学生交流的休息室等。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.1.text.1": {
+      "ja": "授業の課題に取り組んだり、友人と話し合ったり、学生が企画したイベントに参加したりと、さまざまな目的で利用されています。",
+      "text": "学生们在这里做课业、与朋友讨论、参加学生策划的活动等，用途多样。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.2.title": {
+      "ja": "アクティブラーニングゾーン",
+      "text": "主动学习区",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.2.subtitle": {
+      "ja": "自由に組み合わせられる、約800㎡の共同学習スペース",
+      "text": "可自由组合的约800㎡共同学习空间",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.2.figure.caption": {
+      "ja": "アクティブラーニングゾーン",
+      "text": "主动学习区",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.2.text.0": {
+      "ja": "1階の中心にあるアクティブラーニングゾーンは、2階まで吹き抜けになった約800㎡の開放的な空間です。",
+      "text": "位于1楼中心的主动学习区是一个挑高至2楼、约800㎡的开阔空间。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.2.text.1": {
+      "ja": "可動式の机や椅子、ホワイトボードなどを活用し、個人学習からグループディスカッション、発表の準備まで、さまざまな活動ができます。",
+      "text": "利用可移动的桌椅和白板等，可以进行从个人学习到小组讨论、发表准备等各种活动。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.2.text.2": {
+      "ja": "また、学生団体によるイベントやワークショップの会場としても利用されています。",
+      "text": "这里也被用作学生团体举办活动和工作坊的场地。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.3.title": {
+      "ja": "シアター",
+      "text": "剧场厅",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.3.subtitle": {
+      "ja": "発表やイベントに利用される多目的スペース",
+      "text": "用于发表和活动的多功能空间",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.3.figure.caption": {
+      "ja": "シアター",
+      "text": "剧场厅",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.3.text.0": {
+      "ja": "1階には、120インチのハイビジョンプロジェクターや音響設備を備えたシアターがあります。学生によるプレゼンテーションやイベント、映像作品の上映などに利用される空間です。",
+      "text": "1楼设有配备120英寸高清投影仪和音响设备的剧场厅，用于学生发表、活动及影像作品放映等。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.3.text.1": {
+      "ja": "2025年のオープンキャンパスでは、学生プロジェクト「SHADECOR」によるプロジェクションマッピングの展示が企画されました。",
+      "text": "在2025年的开放校园日上，学生项目“SHADECOR”策划了投影映射展示。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.4.title": {
+      "ja": "プレゼンテーションルーム・アクティブルーム",
+      "text": "发表室・活动室",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.4.subtitle": {
+      "ja": "話し合いから成果発表まで",
+      "text": "从讨论到成果发表",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.4.text.0": {
+      "ja": "プレゼンテーションルームでは、学生が発表やディスカッションを行うことができます。また、アクティブルームは、少人数のグループ活動や打ち合わせなどに対応するスペースです。",
+      "text": "学生可以在发表室进行发表和讨论。活动室则是供小组活动和碰头会等使用的空间。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.4.text.1": {
+      "ja": "アカデミックコモンズには、活動内容や人数に応じて使い分けられる学習空間が用意されています。",
+      "text": "学术共享空间准备了可根据活动内容和人数灵活选用的学习空间。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.5.title": {
+      "ja": "クレセントラウンジ",
+      "text": "新月休息室",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.5.subtitle": {
+      "ja": "授業の合間に過ごせる、くつろぎの空間",
+      "text": "课间放松的空间",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.5.text.0": {
+      "ja": "クレセントラウンジは、友人との会話や休憩などに利用できるスペースです。",
+      "text": "新月休息室是可以与朋友聊天、休息的空间。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.5.text.1": {
+      "ja": "学生が授業の合間に過ごしたり、友人同士で交流したりする場所として利用されています。",
+      "text": "学生们在课间来这里度过时间，或与朋友交流。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.title": {
+      "ja": "テントのある学びの空間",
+      "text": "有帐篷的学习空间",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.subtitle": {
+      "ja": "キャンプの手法を取り入れた、新しい学びの形",
+      "text": "引入露营方式的新型学习",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.figure.caption": {
+      "ja": "アカデミックコモンズのテント",
+      "text": "学术共享空间的帐篷",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.text.0": {
+      "ja": "神戸三田キャンパスでは、テントなどのアウトドア用品を活用した「Camping Campus®」という取り組みが行われています。",
+      "text": "神户三田校区开展了利用帐篷等户外用品的“Camping Campus®”项目。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.text.1": {
+      "ja": "2019年には、学生の提案によってアカデミックコモンズにテントが設置されました。テントは、学生が学習や休憩をする場所として利用され、学部の垣根を越えた交流の場づくりにもつながりました。",
+      "text": "2019年，根据学生的提议，学术共享空间里设置了帐篷。帐篷被学生用作学习和休息的场所，也促成了跨学部交流的空间。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.text.2": {
+      "ja": "また、関西学院大学は2020年にアウトドアブランド「Snow Peak」と包括連携協定を締結し、キャンプの手法を取り入れた学びを展開しています。",
+      "text": "此外，关西学院大学于2020年与户外品牌“Snow Peak”签订了全面合作协议，开展引入露营方式的学习。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.text.3": {
+      "ja": "2025年のオープンキャンパスでは、クレセントラウンジで学生グループ「CAMP×US」が、来場者にテント空間を体験してもらう企画を実施しました。",
+      "text": "在2025年的开放校园日上，学生团体“CAMP×US”在新月休息室举办了让来访者体验帐篷空间的活动。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.history.0.year": {
+      "ja": "2019年",
+      "text": "2019年",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.history.0.text": {
+      "ja": "学生の提案により、アカデミックコモンズにテントを設置。",
+      "text": "根据学生提议，在学术共享空间设置帐篷。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.history.1.year": {
+      "ja": "2020年",
+      "text": "2020年",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.history.1.text": {
+      "ja": "関西学院大学とSnow Peakが包括連携協定を締結。",
+      "text": "关西学院大学与Snow Peak签订全面合作协议。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.history.2.year": {
+      "ja": "2025年",
+      "text": "2025年",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.history.2.text": {
+      "ja": "オープンキャンパスでCAMP×USがテント体験企画を実施。",
+      "text": "CAMP×US在开放校园日举办帐篷体验活动。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.note": {
+      "ja": "年表は過去の取り組みです。現在設置されているテントの数や利用方法は確認できていません。",
+      "text": "年表为过去的活动。目前设置的帐篷数量和使用方法尚未确认。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.title": {
+      "ja": "学習を支える設備・サポート",
+      "text": "支持学习的设施与服务",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.text": {
+      "ja": "アカデミックコモンズには、学生の学習を支えるさまざまな設備やサービスがあります。",
+      "text": "学术共享空间有各种支持学生学习的设施和服务。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.0.name": {
+      "ja": "ツールデスク",
+      "text": "工具台",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.0.text": {
+      "ja": "学習やグループ活動に使用するノートパソコンなどの機器を貸し出しています。",
+      "text": "出借学习和小组活动用的笔记本电脑等设备。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.1.name": {
+      "ja": "クレセントチューター",
+      "text": "新月导师",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.1.text": {
+      "ja": "関西学院大学の大学院生が、学部生の学習に関する相談に応じる制度です。",
+      "text": "由关西学院大学的研究生为本科生提供学习咨询的制度。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.2.name": {
+      "ja": "カジュアルライブラリー",
+      "text": "休闲图书角",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.2.text": {
+      "ja": "学生が気軽に本と出会えるスペースとして設けられています。",
+      "text": "让学生轻松接触书籍的空间。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.3.name": {
+      "ja": "学生支援窓口",
+      "text": "学生支援窗口",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.3.text": {
+      "ja": "1階には、障がいのある学生の修学を支援するキャンパス自立支援室や、健康面を支える保健館分室があります。",
+      "text": "1楼设有支持残障学生学习的校区自立支援室，以及负责健康的保健馆分室。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.title": {
+      "ja": "アカデミックコモンズ・プロジェクト",
+      "text": "学术共享空间项目（Academic Commons Project）",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.subtitle": {
+      "ja": "学生のアイデアを、実際の活動へ。",
+      "text": "把学生的想法变成实际行动。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.text.0": {
+      "ja": "アカデミックコモンズでは、学生がグループで目標を設定し、その実現に向けて活動する「アカデミックコモンズ・プロジェクト」が実施されています。",
+      "text": "学术共享空间开展“学术共享空间项目”，由学生以小组形式设定目标并为实现目标而活动。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.text.1": {
+      "ja": "大学は毎年春にプロジェクトを募集・採択し、1年間の活動を支援しています。活動内容は映像制作やプログラミング教育、環境問題への取り組み、地域交流など多岐にわたります。",
+      "text": "大学每年春季招募并选定项目，支持其一年的活动。活动内容涵盖影像制作、编程教育、环境问题、地区交流等多个领域。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.text.2": {
+      "ja": "2026年度は、次の10団体が活動しています。団体名をタップすると、くわしい説明が開きます。",
+      "text": "2026年度有以下10个团体在活动。点击团体名称即可展开详细说明。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.0.sub": {
+      "ja": "映像制作プロジェクト",
+      "text": "影像制作项目",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.0.text.0": {
+      "ja": "自主制作映像のほか、学内外の団体や個人からの依頼を受け、PVや施設紹介動画などを制作しています。",
+      "text": "除自主制作的影像外，还接受校内外团体和个人的委托，制作宣传片和设施介绍视频等。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.0.text.1": {
+      "ja": "企画・撮影・編集まで、学生がさまざまな制作工程に取り組んでいます。",
+      "text": "从策划、拍摄到剪辑，学生参与各个制作环节。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.1.sub": {
+      "ja": "プロジェクションマッピング制作プロジェクト",
+      "text": "投影映射制作项目",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.1.text.0": {
+      "ja": "映像を建物や空間に投影するプロジェクションマッピングの制作・投影を行っています。",
+      "text": "制作并放映将影像投射到建筑和空间上的投影映射。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.1.text.1": {
+      "ja": "学内外のイベントへの参加に加え、小学生向けのワークショップや技術指導にも取り組んでいます。",
+      "text": "除参加校内外活动外，还为小学生举办工作坊并进行技术指导。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.1.record": {
+      "ja": "2026年6月には、神戸三田キャンパスの体育館でプロジェクションマッピングを実施しました。",
+      "text": "2026年6月，在神户三田校区体育馆进行了投影映射表演。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.2.sub": {
+      "ja": "宇宙教育プロジェクト",
+      "text": "宇宙教育项目",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.2.text.0": {
+      "ja": "宇宙への興味や関心を広げるため、学内外でイベントを企画しています。",
+      "text": "为扩大人们对宇宙的兴趣，在校内外策划活动。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.2.text.1": {
+      "ja": "SNSで宇宙に関する情報を発信するほか、惑星や星座を題材にした体験型イベントなどにも取り組んでいます。",
+      "text": "通过社交媒体发布宇宙相关信息，还举办以行星和星座为主题的体验型活动。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.2.record": {
+      "ja": "2026年6月・7月には、学内で「スペース射的」を開催しました。",
+      "text": "2026年6月和7月，在校内举办了“太空射击游戏”。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.3.name": {
+      "ja": "Feel Learning～感学～",
+      "text": "Feel Learning～感学～",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.3.sub": {
+      "ja": "プログラミング教室開催プロジェクト",
+      "text": "编程教室项目",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.3.text.0": {
+      "ja": "主に小学生を対象としたプログラミングのワークショップを開催しています。",
+      "text": "主要面向小学生举办编程工作坊。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.3.text.1": {
+      "ja": "また、大学生向けのC言語勉強会などを通じて、学生同士の学び合いも支援しています。",
+      "text": "还通过面向大学生的C语言学习会等，支持学生之间的互助学习。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.3.record": {
+      "ja": "2026年7月には、大学生向けのC言語の勉強会を開きました。",
+      "text": "2026年7月举办了面向大学生的C语言学习会。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.4.sub": {
+      "ja": "価値循環型プロジェクト",
+      "text": "价值循环型项目",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.4.text.0": {
+      "ja": "衣服の廃棄問題に着目し、古着を再利用するフリーマーケットやワークショップを開催しています。",
+      "text": "关注服装废弃问题，举办旧衣再利用的跳蚤市场和工作坊。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.4.text.1": {
+      "ja": "着なくなった服を必要な人へつなぎ、衣服の再利用を通じて環境問題について考える機会を提供しています。",
+      "text": "把不再穿的衣服送到需要的人手中，通过衣物再利用提供思考环境问题的机会。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.4.record": {
+      "ja": "2026年6月には「GoodHookFes vol.6」を開き、無料のフリーマーケットとリメイクのワークショップを行いました。",
+      "text": "2026年6月举办了“GoodHookFes vol.6”，开设免费跳蚤市场和改造工作坊。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.5.sub": {
+      "ja": "SDGs広報プロジェクト",
+      "text": "SDGs宣传项目",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.5.text.0": {
+      "ja": "「みんなの生活にSDGsを」をモットーに、SDGsを身近に感じてもらうための活動を行っています。",
+      "text": "以“让SDGs融入每个人的生活”为座右铭，开展让人们亲近SDGs的活动。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.5.text.1": {
+      "ja": "地域の小学生を対象としたイベントや体験学習などを通じて、環境問題や持続可能な社会について学ぶ機会を提供しています。",
+      "text": "通过面向当地小学生的活动和体验学习等，提供学习环境问题和可持续社会的机会。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.5.record": {
+      "ja": "2026年8月には、三田市の小学生を招いて、海とプラスチックごみについて学ぶイベントを開きました。",
+      "text": "2026年8月，邀请三田市的小学生参加了学习海洋与塑料垃圾的活动。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.6.name": {
+      "ja": "あ、みっけ！",
+      "text": "啊，发现啦！（あ、みっけ！）",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.6.sub": {
+      "ja": "三田をもっと好きになるプロジェクト",
+      "text": "更爱三田项目",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.6.text.0": {
+      "ja": "三田市の魅力を発信し、地域の人々との交流を促進する活動を行っています。",
+      "text": "宣传三田市的魅力，促进与当地居民的交流。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.6.text.1": {
+      "ja": "市内のイベントや地域活動への参加を通じて、学生や地域の人々が三田市への愛着を深めるきっかけづくりに取り組んでいます。",
+      "text": "通过参加市内活动和地区活动，为学生和当地居民加深对三田市的感情创造契机。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.7.sub": {
+      "ja": "保護犬・保護猫プロジェクト",
+      "text": "救助犬猫项目",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.7.text.0": {
+      "ja": "保護犬・保護猫について学び、その存在や保護活動への理解を広げることを目指しています。",
+      "text": "学习有关救助犬猫的知识，致力于加深人们对它们及救助活动的了解。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.7.text.1": {
+      "ja": "メンバーは保護施設でボランティア活動にも参加し、動物のお世話や施設運営の手伝いなどを行っています。",
+      "text": "成员们还在救助设施做志愿者，照顾动物并协助设施运营。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.8.name": {
+      "ja": "クレセントサイクリング",
+      "text": "新月骑行（クレセントサイクリング）",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.8.sub": {
+      "ja": "シェアサイクルプロジェクト",
+      "text": "共享单车项目",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.8.text.0": {
+      "ja": "神戸三田キャンパスに通う学生の移動を便利にするため、地域と連携したシェアサイクル制度の実現を目指しています。",
+      "text": "为方便神户三田校区学生出行，致力于实现与地区合作的共享单车制度。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.8.text.1": {
+      "ja": "自転車を活用した三田市内の移動や地域の魅力発見、新しい交流の創出に取り組んでいます。",
+      "text": "致力于利用自行车在三田市内出行、发现地区魅力和创造新的交流。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.8.note": {
+      "ja": "シェアサイクル制度は、実現に向けて取り組んでいる段階です。",
+      "text": "共享单车制度目前仍处于筹备阶段。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.9.name": {
+      "ja": "関西学院AgriNOVA",
+      "text": "关西学院AgriNOVA",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.9.sub": {
+      "ja": "スマート農業推進プロジェクト",
+      "text": "智慧农业推进项目",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.9.text.0": {
+      "ja": "気候変動や農業従事者の減少などの課題に対し、データや生物情報を活用した農業の実現を目指しています。",
+      "text": "针对气候变化和农业从业者减少等问题，致力于实现利用数据和生物信息的农业。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.9.text.1": {
+      "ja": "将来的にはアプリ開発などを通じて、効率的で持続可能な農業への貢献を目指しています。",
+      "text": "将来希望通过开发应用程序等，为高效、可持续的农业作出贡献。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.9.record": {
+      "ja": "2026年7月にはUNIVERS＆と合同で、小学生の自由研究を支援するイベントを実施しました。",
+      "text": "2026年7月，与UNIVERS＆联合举办了支持小学生自由研究的活动。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.buttons.0.label": {
+      "ja": "2026年度のプロジェクト活動を見る",
+      "text": "查看2026年度项目活动",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.note": {
+      "ja": "団体名・活動内容・活動実績は、大学公式サイト「2026年度 プロジェクト・活動実績」をもとにしています（2026年11月確認）。",
+      "text": "团体名称、活动内容和活动成果参考了大学官网“2026年度项目・活动成果”（2026年11月确认）。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.9.title": {
+      "ja": "公式情報",
+      "text": "官方信息",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.9.buttons.0.label": {
+      "ja": "アカデミックコモンズ公式ページを見る",
+      "text": "查看学术共享空间官方页面",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.9.buttons.1.label": {
+      "ja": "アカデミックコモンズについて",
+      "text": "关于学术共享空间",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.9.buttons.2.label": {
+      "ja": "学生サポート・窓口案内を見る",
+      "text": "查看学生支援・窗口指南",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.source": {
+      "ja": "関西学院大学 神戸三田キャンパス アカデミックコモンズ公式ページ、学生サポートページ（2026年11月確認）",
+      "text": "关西学院大学神户三田校区学术共享空间官方页面、学生支援页面（2026年11月确认）",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.name": {
+      "ja": "アカデミックコモンズ 2階",
+      "text": "学术共享空间 2楼",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.lead": {
+      "ja": "仲間と学びを深め、アイデアを形にする空間",
+      "text": "与伙伴深化学习、把想法变为现实的空间",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.overview.0": {
+      "ja": "アカデミックコモンズの2階には、少人数での打ち合わせからグループでの共同作業まで、さまざまな活動に対応するスペースがあります。",
+      "text": "学术共享空间2楼有从小型碰头会到小组共同作业等各种活动所需的空间。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.overview.1": {
+      "ja": "また、キャリアセンターなど、学生生活を支援する窓口も設けられています。",
+      "text": "这里还设有职业中心等支持学生生活的窗口。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.0.title": {
+      "ja": "アカデミックデッキ",
+      "text": "学术平台",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.0.subtitle": {
+      "ja": "1階の大空間を見渡せる、開放的な学習スペース",
+      "text": "可俯瞰1楼大空间的开放式学习空间",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.0.figure.caption": {
+      "ja": "アカデミックデッキ",
+      "text": "学术平台",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.0.text.0": {
+      "ja": "アカデミックデッキは、2階からアクティブラーニングゾーンに張り出したスペースです。",
+      "text": "学术平台是从2楼向主动学习区伸出的空间。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.0.text.1": {
+      "ja": "1階の開放的な空間を見渡すことができ、机やホワイトボードを使用して、学生同士の打ち合わせや共同学習を行うことができます。",
+      "text": "在这里可以俯瞰1楼的开阔空间，学生可以使用桌子和白板进行碰头会或共同学习。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.1.title": {
+      "ja": "ミーティングルーム",
+      "text": "会议室",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.1.subtitle": {
+      "ja": "少人数の話し合いやグループワークに",
+      "text": "适合小组讨论和小组作业",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.1.text.0": {
+      "ja": "ミーティングルームは、少人数での打ち合わせや話し合いに利用できる部屋です。",
+      "text": "会议室是可供小范围碰头和讨论使用的房间。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.1.text.1": {
+      "ja": "グループでの課題や企画の準備など、目的に応じた活動に活用できます。",
+      "text": "可用于小组作业、策划准备等各种用途。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.2.title": {
+      "ja": "リサーチルーム",
+      "text": "研究室",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.2.subtitle": {
+      "ja": "資料調査や個人作業に",
+      "text": "适合资料调查和个人作业",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.2.text.0": {
+      "ja": "リサーチルームは、グループでの打ち合わせに向けた個人の調査や準備などに適したスペースです。",
+      "text": "研究室适合为小组碰头会做个人调查和准备。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.2.text.1": {
+      "ja": "集中して情報を整理したり、作業を進めたりする場として利用できます。",
+      "text": "可以在这里专心整理信息、推进工作。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.3.title": {
+      "ja": "クリエイティブスクエア",
+      "text": "创意广场",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.3.subtitle": {
+      "ja": "アイデアを具体的な形にするための空間",
+      "text": "把想法变为具体形态的空间",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.3.text.0": {
+      "ja": "クリエイティブスクエアは、可動式の机などを活用し、作業やディスカッションを行うためのスペースです。",
+      "text": "创意广场是利用可移动桌子等进行作业和讨论的空间。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.3.text.1": {
+      "ja": "グループで企画を考えたり、作品制作の準備をしたりするなど、共同作業に利用できます。",
+      "text": "可用于小组策划、作品制作准备等共同作业。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.4.title": {
+      "ja": "プロジェクトルーム・ミッションルーム",
+      "text": "项目室・任务室",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.4.subtitle": {
+      "ja": "学生のプロジェクト活動を支える部屋",
+      "text": "支持学生项目活动的房间",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.4.text.0": {
+      "ja": "2階には、学生がグループで取り組む活動のためのプロジェクトルームやミッションルームが設けられています。",
+      "text": "2楼设有供学生小组活动使用的项目室和任务室。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.4.text.1": {
+      "ja": "アカデミックコモンズでは、学生が自ら設定した目標に向けて活動するプロジェクトを支援しており、専用のスペースや設備を活用した活動が行われています。",
+      "text": "学术共享空间支持学生为自己设定的目标而活动的项目，学生利用专用空间和设备开展活动。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.5.title": {
+      "ja": "コラボレーションルーム",
+      "text": "协作室",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.5.subtitle": {
+      "ja": "学生同士の協働を支えるスペース",
+      "text": "支持学生协作的空间",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.5.text.0": {
+      "ja": "コラボレーションルームは、学生団体の活動や共同企画などに利用されるスペースです。",
+      "text": "协作室用于学生团体活动和共同策划等。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.5.text.1": {
+      "ja": "アカデミックコモンズには、学生が交流し、アイデアを共有するための環境が整えられています。",
+      "text": "学术共享空间为学生交流和分享想法提供了良好环境。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.title": {
+      "ja": "学生生活を支える窓口",
+      "text": "支持学生生活的窗口",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.text": {
+      "ja": "2階には、学習スペースのほかにも、大学生活や将来の進路について相談できる窓口があります。",
+      "text": "2楼除学习空间外，还有可以咨询大学生活和未来出路的窗口。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.0.name": {
+      "ja": "キャリアセンター",
+      "text": "职业中心",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.0.chips.0": {
+      "ja": "就職活動や将来の進路をサポート",
+      "text": "支持求职和未来出路",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.0.text": {
+      "ja": "進路選択、インターンシップ、就職活動などについて専門のキャリアアドバイザーに相談できます。キャリアガイダンスや個人面談、面接トレーニング、業界研究セミナー、学内企業説明会なども実施されています。",
+      "text": "可以就出路选择、实习、求职等向专业职业顾问咨询。还举办职业指导、个人面谈、面试训练、行业研究讲座和校内企业说明会等。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.1.name": {
+      "ja": "教務機構事務部",
+      "text": "教务机构事务部",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.1.chips.0": {
+      "ja": "教員免許の取得をサポート",
+      "text": "支持考取教师资格",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.1.text": {
+      "ja": "教職課程の履修や教員採用試験など、教員を目指す学生からの相談に対応しています。",
+      "text": "为希望成为教师的学生提供教职课程选修和教师录用考试等方面的咨询。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.2.name": {
+      "ja": "学生支援相談室",
+      "text": "学生支援咨询室",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.2.chips.0": {
+      "ja": "学生生活の悩みを相談できる場所",
+      "text": "可以咨询学生生活烦恼的地方",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.2.text": {
+      "ja": "心理相談、修学相談、生活相談など、学生が抱えるさまざまな悩みについて、専門のカウンセラーに相談できます。相談内容の秘密は厳守されます。",
+      "text": "可以就心理、学业、生活等各种烦恼向专业咨询师咨询。咨询内容严格保密。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.buttons.0.label": {
+      "ja": "学生サポート・窓口案内を見る",
+      "text": "查看学生支援・窗口指南",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.7.title": {
+      "ja": "アカデミックコモンズの特徴",
+      "text": "学术共享空间的特色",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.7.text.0": {
+      "ja": "アカデミックコモンズは、学生が自由に学ぶだけでなく、グループでの共同作業や学生自身によるプロジェクト活動など、さまざまな学びを支える施設です。",
+      "text": "学术共享空间不仅让学生自由学习，还支持小组共同作业和学生自主的项目活动等多种学习。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.7.text.1": {
+      "ja": "1階の開放的な共同学習空間と、2階の目的に応じた活動スペースを使い分けながら、学生が主体的に活動できる環境が整えられています。",
+      "text": "学生可以灵活使用1楼开放的共同学习空间和2楼按用途划分的活动空间，自主开展活动。",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.source": {
+      "ja": "関西学院大学 神戸三田キャンパス 学生サポートページ（2026年11月確認）",
+      "text": "关西学院大学神户三田校区学生支援页面（2026年11月确认）",
       "status": "provisional"
     },
     "facilities.campTent.name": {

@@ -2694,3 +2694,177 @@ body.mobile .mark-cloud {
   font-size: 18px;
   font-weight: 900;
 }
+
+/* 見出しの下の短い一文（section.subtitle） */
+.info-subtitle {
+  margin: -4px 0 10px;
+  color: #8a5a00;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* ほかと少し区別した特集セクション（section.style: "feature"） */
+.info-section.feature-card {
+  padding: 14px;
+  border-radius: 12px;
+  background: #f4f7f1;
+  box-shadow: inset 0 0 0 1px #d6e2cc;
+}
+
+.info-section.feature-card .info-figure {
+  margin-bottom: 12px;
+}
+
+/* 年ごとの小さな年表（section.history） */
+.info-history {
+  margin: 6px 0 10px;
+  padding: 0;
+  list-style: none;
+  border-left: 2px solid #c9d8bd;
+}
+
+.info-history-row {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  padding: 4px 0 8px 14px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.info-history-row::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #5f8a4a;
+}
+
+.info-history-year {
+  flex: 0 0 auto;
+  font-weight: bold;
+  color: #3f6a2d;
+}
+
+.info-history-text {
+  color: #3b4558;
+}
+
+/* アコーディオン（itemsStyle: "accordion"） */
+.info-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 4px 0 10px;
+}
+
+.info-acc {
+  border: 1px solid #e3e6eb;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.info-acc-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 10px 12px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.info-acc-head::-webkit-details-marker {
+  display: none;
+}
+
+.info-acc-label {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.info-acc-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: #1f2a44;
+}
+
+.info-acc-sub {
+  font-size: 12px;
+  color: #5b6474;
+}
+
+.info-acc[open] .info-acc-sub {
+  display: none;
+}
+
+.info-acc-icon {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f6f2ec;
+  position: relative;
+}
+
+.info-acc-icon::before,
+.info-acc-icon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 2px;
+  margin: -1px 0 0 -6px;
+  background: #8a5a00;
+  transition: transform 0.2s ease;
+}
+
+.info-acc-icon::after {
+  transform: rotate(90deg);
+}
+
+.info-acc[open] .info-acc-icon::after {
+  transform: rotate(0deg);
+}
+
+.info-acc-body {
+  padding: 0 12px 12px;
+}
+
+.info-acc-field {
+  display: inline-block;
+  margin: 0 0 8px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #fff2cc;
+  color: #8a5a00;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.info-acc-record {
+  margin-top: 6px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #f6f2ec;
+}
+
+.info-acc-record .info-text {
+  margin: 0;
+  font-size: 13px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .info-acc-icon::before,
+  .info-acc-icon::after {
+    transition: none;
+  }
+}

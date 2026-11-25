@@ -770,9 +770,759 @@ TourI18n.register("ko", {
       "text": "관서학원대학 생활협동조합 공식 사이트(2026년 11월 확인), 신게쓰 축제 2026 공식 사이트",
       "status": "provisional"
     },
-    "facilities.commons.name": {
+    "facilities.academicCommons.name": {
+      "ja": "アカデミックコモンズ 1階",
+      "text": "아카데믹 커먼스 1층",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.lead": {
+      "ja": "学習・交流・学生の活動が生まれる場所",
+      "text": "학습·교류·학생 활동이 생겨나는 곳",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.0.title": {
       "ja": "アカデミックコモンズ",
       "text": "아카데믹 커먼즈",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.0.subtitle": {
+      "ja": "学生が主体的に学び、交流し、活動する場所",
+      "text": "학생이 주체적으로 배우고 교류하며 활동하는 곳",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.0.text.0": {
+      "ja": "神戸三田キャンパスのアカデミックコモンズは、2013年4月に開設された2階建ての施設です。",
+      "text": "고베산다 캠퍼스의 아카데믹 커먼스는 2013년 4월에 문을 연 2층 건물입니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.0.text.1": {
+      "ja": "「学習」「憩い」「学生活動」をコンセプトとし、学生が主体的に学び、交流し、活動できる場所として整備されました。愛称は「CRESCENT（クレセント）」です。",
+      "text": "'학습', '휴식', '학생 활동'을 콘셉트로, 학생이 주체적으로 배우고 교류하며 활동할 수 있는 곳으로 마련되었습니다. 애칭은 'CRESCENT(크레센트)'입니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.0.text.2": {
+      "ja": "共同学習やグループワーク、学生主体のプロジェクト、さまざまなイベントなど、多様な活動に利用されています。",
+      "text": "공동 학습과 그룹 활동, 학생 주도 프로젝트, 다양한 행사 등 여러 활동에 이용됩니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.1.title": {
+      "ja": "1階のようす",
+      "text": "1층의 모습",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.1.text.0": {
+      "ja": "アカデミックコモンズの1階には、広々とした共同学習スペースや、発表・イベントのための設備、学生が交流できるラウンジなどがあります。",
+      "text": "아카데믹 커먼스 1층에는 넓은 공동 학습 공간과 발표·행사를 위한 설비, 학생들이 교류할 수 있는 라운지 등이 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.1.text.1": {
+      "ja": "授業の課題に取り組んだり、友人と話し合ったり、学生が企画したイベントに参加したりと、さまざまな目的で利用されています。",
+      "text": "수업 과제를 하거나 친구와 이야기하거나 학생이 기획한 행사에 참여하는 등 다양한 목적으로 이용됩니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.2.title": {
+      "ja": "アクティブラーニングゾーン",
+      "text": "액티브 러닝 존",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.2.subtitle": {
+      "ja": "自由に組み合わせられる、約800㎡の共同学習スペース",
+      "text": "자유롭게 배치할 수 있는 약 800㎡의 공동 학습 공간",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.2.figure.caption": {
+      "ja": "アクティブラーニングゾーン",
+      "text": "액티브 러닝 존",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.2.text.0": {
+      "ja": "1階の中心にあるアクティブラーニングゾーンは、2階まで吹き抜けになった約800㎡の開放的な空間です。",
+      "text": "1층 중심에 있는 액티브 러닝 존은 2층까지 뚫린 약 800㎡의 개방적인 공간입니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.2.text.1": {
+      "ja": "可動式の机や椅子、ホワイトボードなどを活用し、個人学習からグループディスカッション、発表の準備まで、さまざまな活動ができます。",
+      "text": "이동식 책상과 의자, 화이트보드 등을 활용해 개인 학습부터 그룹 토론, 발표 준비까지 다양한 활동을 할 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.2.text.2": {
+      "ja": "また、学生団体によるイベントやワークショップの会場としても利用されています。",
+      "text": "또한 학생 단체의 행사와 워크숍 장소로도 이용됩니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.3.title": {
+      "ja": "シアター",
+      "text": "시어터",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.3.subtitle": {
+      "ja": "発表やイベントに利用される多目的スペース",
+      "text": "발표와 행사에 이용되는 다목적 공간",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.3.figure.caption": {
+      "ja": "シアター",
+      "text": "시어터",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.3.text.0": {
+      "ja": "1階には、120インチのハイビジョンプロジェクターや音響設備を備えたシアターがあります。学生によるプレゼンテーションやイベント、映像作品の上映などに利用される空間です。",
+      "text": "1층에는 120인치 고화질 프로젝터와 음향 설비를 갖춘 시어터가 있습니다. 학생 프레젠테이션과 행사, 영상 작품 상영 등에 이용되는 공간입니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.3.text.1": {
+      "ja": "2025年のオープンキャンパスでは、学生プロジェクト「SHADECOR」によるプロジェクションマッピングの展示が企画されました。",
+      "text": "2025년 오픈 캠퍼스에서는 학생 프로젝트 'SHADECOR'의 프로젝션 매핑 전시가 기획되었습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.4.title": {
+      "ja": "プレゼンテーションルーム・アクティブルーム",
+      "text": "프레젠테이션 룸·액티브 룸",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.4.subtitle": {
+      "ja": "話し合いから成果発表まで",
+      "text": "토론부터 성과 발표까지",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.4.text.0": {
+      "ja": "プレゼンテーションルームでは、学生が発表やディスカッションを行うことができます。また、アクティブルームは、少人数のグループ活動や打ち合わせなどに対応するスペースです。",
+      "text": "프레젠테이션 룸에서는 학생이 발표와 토론을 할 수 있습니다. 액티브 룸은 소규모 그룹 활동과 회의 등에 쓰이는 공간입니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.4.text.1": {
+      "ja": "アカデミックコモンズには、活動内容や人数に応じて使い分けられる学習空間が用意されています。",
+      "text": "아카데믹 커먼스에는 활동 내용과 인원에 맞게 골라 쓸 수 있는 학습 공간이 마련되어 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.5.title": {
+      "ja": "クレセントラウンジ",
+      "text": "크레센트 라운지",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.5.subtitle": {
+      "ja": "授業の合間に過ごせる、くつろぎの空間",
+      "text": "수업 사이에 쉴 수 있는 편안한 공간",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.5.text.0": {
+      "ja": "クレセントラウンジは、友人との会話や休憩などに利用できるスペースです。",
+      "text": "크레센트 라운지는 친구와 대화하거나 쉬는 데 이용할 수 있는 공간입니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.5.text.1": {
+      "ja": "学生が授業の合間に過ごしたり、友人同士で交流したりする場所として利用されています。",
+      "text": "학생들이 수업 사이에 시간을 보내거나 친구들과 교류하는 장소로 이용됩니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.title": {
+      "ja": "テントのある学びの空間",
+      "text": "텐트가 있는 배움의 공간",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.subtitle": {
+      "ja": "キャンプの手法を取り入れた、新しい学びの形",
+      "text": "캠핑 방식을 도입한 새로운 배움의 형태",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.figure.caption": {
+      "ja": "アカデミックコモンズのテント",
+      "text": "아카데믹 커먼스의 텐트",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.text.0": {
+      "ja": "神戸三田キャンパスでは、テントなどのアウトドア用品を活用した「Camping Campus®」という取り組みが行われています。",
+      "text": "고베산다 캠퍼스에서는 텐트 등 아웃도어 용품을 활용한 'Camping Campus®'라는 활동이 이루어지고 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.text.1": {
+      "ja": "2019年には、学生の提案によってアカデミックコモンズにテントが設置されました。テントは、学生が学習や休憩をする場所として利用され、学部の垣根を越えた交流の場づくりにもつながりました。",
+      "text": "2019년에는 학생의 제안으로 아카데믹 커먼스에 텐트가 설치되었습니다. 텐트는 학생들이 공부하고 쉬는 장소로 이용되었고, 학부의 벽을 넘는 교류의 장을 만드는 데에도 이어졌습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.text.2": {
+      "ja": "また、関西学院大学は2020年にアウトドアブランド「Snow Peak」と包括連携協定を締結し、キャンプの手法を取り入れた学びを展開しています。",
+      "text": "또한 간세이가쿠인대학은 2020년에 아웃도어 브랜드 'Snow Peak'와 포괄 연계 협정을 맺고, 캠핑 방식을 도입한 배움을 펼치고 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.text.3": {
+      "ja": "2025年のオープンキャンパスでは、クレセントラウンジで学生グループ「CAMP×US」が、来場者にテント空間を体験してもらう企画を実施しました。",
+      "text": "2025년 오픈 캠퍼스에서는 크레센트 라운지에서 학생 그룹 'CAMP×US'가 방문객이 텐트 공간을 체험하는 기획을 진행했습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.history.0.year": {
+      "ja": "2019年",
+      "text": "2019년",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.history.0.text": {
+      "ja": "学生の提案により、アカデミックコモンズにテントを設置。",
+      "text": "학생의 제안으로 아카데믹 커먼스에 텐트 설치.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.history.1.year": {
+      "ja": "2020年",
+      "text": "2020년",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.history.1.text": {
+      "ja": "関西学院大学とSnow Peakが包括連携協定を締結。",
+      "text": "간세이가쿠인대학과 Snow Peak가 포괄 연계 협정 체결.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.history.2.year": {
+      "ja": "2025年",
+      "text": "2025년",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.history.2.text": {
+      "ja": "オープンキャンパスでCAMP×USがテント体験企画を実施。",
+      "text": "오픈 캠퍼스에서 CAMP×US가 텐트 체험 기획 진행.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.6.note": {
+      "ja": "年表は過去の取り組みです。現在設置されているテントの数や利用方法は確認できていません。",
+      "text": "연표는 과거의 활동입니다. 현재 설치된 텐트의 수와 이용 방법은 확인하지 못했습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.title": {
+      "ja": "学習を支える設備・サポート",
+      "text": "학습을 돕는 설비·지원",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.text": {
+      "ja": "アカデミックコモンズには、学生の学習を支えるさまざまな設備やサービスがあります。",
+      "text": "아카데믹 커먼스에는 학생의 학습을 돕는 다양한 설비와 서비스가 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.0.name": {
+      "ja": "ツールデスク",
+      "text": "툴 데스크",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.0.text": {
+      "ja": "学習やグループ活動に使用するノートパソコンなどの機器を貸し出しています。",
+      "text": "학습과 그룹 활동에 쓰는 노트북 등의 기기를 대여합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.1.name": {
+      "ja": "クレセントチューター",
+      "text": "크레센트 튜터",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.1.text": {
+      "ja": "関西学院大学の大学院生が、学部生の学習に関する相談に応じる制度です。",
+      "text": "간세이가쿠인대학 대학원생이 학부생의 학습 상담에 응하는 제도입니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.2.name": {
+      "ja": "カジュアルライブラリー",
+      "text": "캐주얼 라이브러리",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.2.text": {
+      "ja": "学生が気軽に本と出会えるスペースとして設けられています。",
+      "text": "학생들이 부담 없이 책을 만날 수 있는 공간입니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.3.name": {
+      "ja": "学生支援窓口",
+      "text": "학생 지원 창구",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.7.items.3.text": {
+      "ja": "1階には、障がいのある学生の修学を支援するキャンパス自立支援室や、健康面を支える保健館分室があります。",
+      "text": "1층에는 장애가 있는 학생의 수학을 지원하는 캠퍼스 자립지원실과 건강을 돕는 보건관 분실이 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.title": {
+      "ja": "アカデミックコモンズ・プロジェクト",
+      "text": "아카데믹 커먼즈 프로젝트",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.subtitle": {
+      "ja": "学生のアイデアを、実際の活動へ。",
+      "text": "학생의 아이디어를 실제 활동으로.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.text.0": {
+      "ja": "アカデミックコモンズでは、学生がグループで目標を設定し、その実現に向けて活動する「アカデミックコモンズ・プロジェクト」が実施されています。",
+      "text": "아카데믹 커먼스에서는 학생이 그룹으로 목표를 세우고 그 실현을 위해 활동하는 '아카데믹 커먼스 프로젝트'가 진행되고 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.text.1": {
+      "ja": "大学は毎年春にプロジェクトを募集・採択し、1年間の活動を支援しています。活動内容は映像制作やプログラミング教育、環境問題への取り組み、地域交流など多岐にわたります。",
+      "text": "대학은 매년 봄에 프로젝트를 모집·채택해 1년간 활동을 지원합니다. 활동 내용은 영상 제작, 프로그래밍 교육, 환경 문제 대응, 지역 교류 등 다양합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.text.2": {
+      "ja": "2026年度は、次の10団体が活動しています。団体名をタップすると、くわしい説明が開きます。",
+      "text": "2026년도에는 다음 10개 단체가 활동하고 있습니다. 단체명을 누르면 자세한 설명이 열립니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.0.sub": {
+      "ja": "映像制作プロジェクト",
+      "text": "영상 제작 프로젝트",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.0.text.0": {
+      "ja": "自主制作映像のほか、学内外の団体や個人からの依頼を受け、PVや施設紹介動画などを制作しています。",
+      "text": "자체 제작 영상 외에도 학내외 단체와 개인의 의뢰를 받아 PV와 시설 소개 영상 등을 제작합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.0.text.1": {
+      "ja": "企画・撮影・編集まで、学生がさまざまな制作工程に取り組んでいます。",
+      "text": "기획부터 촬영·편집까지 학생들이 다양한 제작 과정에 참여합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.1.sub": {
+      "ja": "プロジェクションマッピング制作プロジェクト",
+      "text": "프로젝션 매핑 제작 프로젝트",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.1.text.0": {
+      "ja": "映像を建物や空間に投影するプロジェクションマッピングの制作・投影を行っています。",
+      "text": "건물이나 공간에 영상을 투사하는 프로젝션 매핑을 제작·상영합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.1.text.1": {
+      "ja": "学内外のイベントへの参加に加え、小学生向けのワークショップや技術指導にも取り組んでいます。",
+      "text": "학내외 행사 참가뿐 아니라 초등학생 대상 워크숍과 기술 지도에도 힘쓰고 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.1.record": {
+      "ja": "2026年6月には、神戸三田キャンパスの体育館でプロジェクションマッピングを実施しました。",
+      "text": "2026년 6월에는 고베산다 캠퍼스 체육관에서 프로젝션 매핑을 선보였습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.2.sub": {
+      "ja": "宇宙教育プロジェクト",
+      "text": "우주 교육 프로젝트",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.2.text.0": {
+      "ja": "宇宙への興味や関心を広げるため、学内外でイベントを企画しています。",
+      "text": "우주에 대한 흥미와 관심을 넓히기 위해 학내외에서 행사를 기획합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.2.text.1": {
+      "ja": "SNSで宇宙に関する情報を発信するほか、惑星や星座を題材にした体験型イベントなどにも取り組んでいます。",
+      "text": "SNS로 우주 관련 정보를 전하고, 행성과 별자리를 주제로 한 체험형 행사도 진행합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.2.record": {
+      "ja": "2026年6月・7月には、学内で「スペース射的」を開催しました。",
+      "text": "2026년 6월·7월에는 학내에서 '스페이스 사격'을 열었습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.3.name": {
+      "ja": "Feel Learning～感学～",
+      "text": "Feel Learning~感学~",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.3.sub": {
+      "ja": "プログラミング教室開催プロジェクト",
+      "text": "프로그래밍 교실 개최 프로젝트",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.3.text.0": {
+      "ja": "主に小学生を対象としたプログラミングのワークショップを開催しています。",
+      "text": "주로 초등학생을 대상으로 프로그래밍 워크숍을 엽니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.3.text.1": {
+      "ja": "また、大学生向けのC言語勉強会などを通じて、学生同士の学び合いも支援しています。",
+      "text": "또한 대학생 대상 C언어 스터디 등을 통해 학생 간 배움도 지원합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.3.record": {
+      "ja": "2026年7月には、大学生向けのC言語の勉強会を開きました。",
+      "text": "2026년 7월에는 대학생 대상 C언어 스터디를 열었습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.4.sub": {
+      "ja": "価値循環型プロジェクト",
+      "text": "가치 순환형 프로젝트",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.4.text.0": {
+      "ja": "衣服の廃棄問題に着目し、古着を再利用するフリーマーケットやワークショップを開催しています。",
+      "text": "의류 폐기 문제에 주목해, 헌 옷을 재활용하는 플리마켓과 워크숍을 엽니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.4.text.1": {
+      "ja": "着なくなった服を必要な人へつなぎ、衣服の再利用を通じて環境問題について考える機会を提供しています。",
+      "text": "입지 않는 옷을 필요한 사람에게 연결하고, 의류 재활용을 통해 환경 문제를 생각하는 기회를 제공합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.4.record": {
+      "ja": "2026年6月には「GoodHookFes vol.6」を開き、無料のフリーマーケットとリメイクのワークショップを行いました。",
+      "text": "2026년 6월에는 'GoodHookFes vol.6'을 열어 무료 플리마켓과 리메이크 워크숍을 진행했습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.5.sub": {
+      "ja": "SDGs広報プロジェクト",
+      "text": "SDGs 홍보 프로젝트",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.5.text.0": {
+      "ja": "「みんなの生活にSDGsを」をモットーに、SDGsを身近に感じてもらうための活動を行っています。",
+      "text": "'모두의 생활에 SDGs를'을 모토로, SDGs를 가깝게 느낄 수 있도록 활동합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.5.text.1": {
+      "ja": "地域の小学生を対象としたイベントや体験学習などを通じて、環境問題や持続可能な社会について学ぶ機会を提供しています。",
+      "text": "지역 초등학생 대상 행사와 체험 학습 등을 통해 환경 문제와 지속 가능한 사회에 대해 배울 기회를 제공합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.5.record": {
+      "ja": "2026年8月には、三田市の小学生を招いて、海とプラスチックごみについて学ぶイベントを開きました。",
+      "text": "2026년 8월에는 산다시 초등학생을 초대해 바다와 플라스틱 쓰레기에 대해 배우는 행사를 열었습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.6.name": {
+      "ja": "あ、みっけ！",
+      "text": "아, 밋케!(あ、みっけ！)",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.6.sub": {
+      "ja": "三田をもっと好きになるプロジェクト",
+      "text": "산다를 더 좋아하게 되는 프로젝트",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.6.text.0": {
+      "ja": "三田市の魅力を発信し、地域の人々との交流を促進する活動を行っています。",
+      "text": "산다시의 매력을 알리고 지역 주민과의 교류를 촉진하는 활동을 합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.6.text.1": {
+      "ja": "市内のイベントや地域活動への参加を通じて、学生や地域の人々が三田市への愛着を深めるきっかけづくりに取り組んでいます。",
+      "text": "시내 행사와 지역 활동 참여를 통해 학생과 지역 주민이 산다시에 애착을 갖는 계기를 만들고 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.7.sub": {
+      "ja": "保護犬・保護猫プロジェクト",
+      "text": "보호견·보호묘 프로젝트",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.7.text.0": {
+      "ja": "保護犬・保護猫について学び、その存在や保護活動への理解を広げることを目指しています。",
+      "text": "보호견·보호묘에 대해 배우고, 그 존재와 보호 활동에 대한 이해를 넓히는 것을 목표로 합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.7.text.1": {
+      "ja": "メンバーは保護施設でボランティア活動にも参加し、動物のお世話や施設運営の手伝いなどを行っています。",
+      "text": "멤버들은 보호 시설에서 봉사 활동에도 참여해 동물을 돌보고 시설 운영을 돕습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.8.name": {
+      "ja": "クレセントサイクリング",
+      "text": "크레센트 사이클링",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.8.sub": {
+      "ja": "シェアサイクルプロジェクト",
+      "text": "공유 자전거 프로젝트",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.8.text.0": {
+      "ja": "神戸三田キャンパスに通う学生の移動を便利にするため、地域と連携したシェアサイクル制度の実現を目指しています。",
+      "text": "고베산다 캠퍼스에 다니는 학생의 이동을 편리하게 하기 위해, 지역과 연계한 공유 자전거 제도의 실현을 목표로 합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.8.text.1": {
+      "ja": "自転車を活用した三田市内の移動や地域の魅力発見、新しい交流の創出に取り組んでいます。",
+      "text": "자전거를 활용한 산다 시내 이동과 지역의 매력 발견, 새로운 교류 창출에 힘쓰고 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.8.note": {
+      "ja": "シェアサイクル制度は、実現に向けて取り組んでいる段階です。",
+      "text": "공유 자전거 제도는 실현을 위해 노력하고 있는 단계입니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.9.name": {
+      "ja": "関西学院AgriNOVA",
+      "text": "간세이가쿠인 AgriNOVA",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.9.sub": {
+      "ja": "スマート農業推進プロジェクト",
+      "text": "스마트 농업 추진 프로젝트",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.9.text.0": {
+      "ja": "気候変動や農業従事者の減少などの課題に対し、データや生物情報を活用した農業の実現を目指しています。",
+      "text": "기후 변화와 농업 종사자 감소 등의 과제에 대응해, 데이터와 생물 정보를 활용한 농업의 실현을 목표로 합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.9.text.1": {
+      "ja": "将来的にはアプリ開発などを通じて、効率的で持続可能な農業への貢献を目指しています。",
+      "text": "앞으로는 앱 개발 등을 통해 효율적이고 지속 가능한 농업에 기여하고자 합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.items.9.record": {
+      "ja": "2026年7月にはUNIVERS＆と合同で、小学生の自由研究を支援するイベントを実施しました。",
+      "text": "2026년 7월에는 UNIVERS＆와 합동으로 초등학생의 자유 연구를 지원하는 행사를 열었습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.buttons.0.label": {
+      "ja": "2026年度のプロジェクト活動を見る",
+      "text": "2026년도 프로젝트 활동 보기",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.8.note": {
+      "ja": "団体名・活動内容・活動実績は、大学公式サイト「2026年度 プロジェクト・活動実績」をもとにしています（2026年11月確認）。",
+      "text": "단체명·활동 내용·활동 실적은 대학 공식 사이트 '2026년도 프로젝트·활동 실적'을 바탕으로 했습니다(2026년 11월 확인).",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.9.title": {
+      "ja": "公式情報",
+      "text": "공식 정보",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.9.buttons.0.label": {
+      "ja": "アカデミックコモンズ公式ページを見る",
+      "text": "아카데믹 커먼스 공식 페이지 보기",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.9.buttons.1.label": {
+      "ja": "アカデミックコモンズについて",
+      "text": "아카데믹 커먼스 소개",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.sections.9.buttons.2.label": {
+      "ja": "学生サポート・窓口案内を見る",
+      "text": "학생 지원·창구 안내 보기",
+      "status": "provisional"
+    },
+    "facilities.academicCommons.source": {
+      "ja": "関西学院大学 神戸三田キャンパス アカデミックコモンズ公式ページ、学生サポートページ（2026年11月確認）",
+      "text": "간세이가쿠인대학 고베산다 캠퍼스 아카데믹 커먼스 공식 페이지, 학생 지원 페이지(2026년 11월 확인)",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.name": {
+      "ja": "アカデミックコモンズ 2階",
+      "text": "아카데믹 커먼스 2층",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.lead": {
+      "ja": "仲間と学びを深め、アイデアを形にする空間",
+      "text": "동료와 배움을 깊게 하고 아이디어를 실현하는 공간",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.overview.0": {
+      "ja": "アカデミックコモンズの2階には、少人数での打ち合わせからグループでの共同作業まで、さまざまな活動に対応するスペースがあります。",
+      "text": "아카데믹 커먼스 2층에는 소규모 회의부터 그룹 공동 작업까지 다양한 활동에 맞는 공간이 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.overview.1": {
+      "ja": "また、キャリアセンターなど、学生生活を支援する窓口も設けられています。",
+      "text": "또한 커리어 센터 등 학생 생활을 지원하는 창구도 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.0.title": {
+      "ja": "アカデミックデッキ",
+      "text": "아카데믹 데크",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.0.subtitle": {
+      "ja": "1階の大空間を見渡せる、開放的な学習スペース",
+      "text": "1층의 넓은 공간이 내려다보이는 개방적인 학습 공간",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.0.figure.caption": {
+      "ja": "アカデミックデッキ",
+      "text": "아카데믹 데크",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.0.text.0": {
+      "ja": "アカデミックデッキは、2階からアクティブラーニングゾーンに張り出したスペースです。",
+      "text": "아카데믹 데크는 2층에서 액티브 러닝 존 쪽으로 튀어나온 공간입니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.0.text.1": {
+      "ja": "1階の開放的な空間を見渡すことができ、机やホワイトボードを使用して、学生同士の打ち合わせや共同学習を行うことができます。",
+      "text": "1층의 개방적인 공간을 내려다볼 수 있고, 책상과 화이트보드를 이용해 학생끼리 회의나 공동 학습을 할 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.1.title": {
+      "ja": "ミーティングルーム",
+      "text": "미팅 룸",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.1.subtitle": {
+      "ja": "少人数の話し合いやグループワークに",
+      "text": "소규모 토론과 그룹 활동에",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.1.text.0": {
+      "ja": "ミーティングルームは、少人数での打ち合わせや話し合いに利用できる部屋です。",
+      "text": "미팅 룸은 소규모 회의와 토론에 이용할 수 있는 방입니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.1.text.1": {
+      "ja": "グループでの課題や企画の準備など、目的に応じた活動に活用できます。",
+      "text": "그룹 과제나 기획 준비 등 목적에 맞는 활동에 활용할 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.2.title": {
+      "ja": "リサーチルーム",
+      "text": "리서치 룸",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.2.subtitle": {
+      "ja": "資料調査や個人作業に",
+      "text": "자료 조사와 개인 작업에",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.2.text.0": {
+      "ja": "リサーチルームは、グループでの打ち合わせに向けた個人の調査や準備などに適したスペースです。",
+      "text": "리서치 룸은 그룹 회의를 위한 개인 조사와 준비 등에 알맞은 공간입니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.2.text.1": {
+      "ja": "集中して情報を整理したり、作業を進めたりする場として利用できます。",
+      "text": "집중해서 정보를 정리하거나 작업을 진행하는 장소로 이용할 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.3.title": {
+      "ja": "クリエイティブスクエア",
+      "text": "크리에이티브 스퀘어",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.3.subtitle": {
+      "ja": "アイデアを具体的な形にするための空間",
+      "text": "아이디어를 구체적인 형태로 만드는 공간",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.3.text.0": {
+      "ja": "クリエイティブスクエアは、可動式の机などを活用し、作業やディスカッションを行うためのスペースです。",
+      "text": "크리에이티브 스퀘어는 이동식 책상 등을 활용해 작업과 토론을 하는 공간입니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.3.text.1": {
+      "ja": "グループで企画を考えたり、作品制作の準備をしたりするなど、共同作業に利用できます。",
+      "text": "그룹으로 기획을 생각하거나 작품 제작을 준비하는 등 공동 작업에 이용할 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.4.title": {
+      "ja": "プロジェクトルーム・ミッションルーム",
+      "text": "프로젝트 룸·미션 룸",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.4.subtitle": {
+      "ja": "学生のプロジェクト活動を支える部屋",
+      "text": "학생 프로젝트 활동을 돕는 방",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.4.text.0": {
+      "ja": "2階には、学生がグループで取り組む活動のためのプロジェクトルームやミッションルームが設けられています。",
+      "text": "2층에는 학생이 그룹으로 하는 활동을 위한 프로젝트 룸과 미션 룸이 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.4.text.1": {
+      "ja": "アカデミックコモンズでは、学生が自ら設定した目標に向けて活動するプロジェクトを支援しており、専用のスペースや設備を活用した活動が行われています。",
+      "text": "아카데믹 커먼스는 학생이 스스로 정한 목표를 향해 활동하는 프로젝트를 지원하며, 전용 공간과 설비를 활용한 활동이 이루어지고 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.5.title": {
+      "ja": "コラボレーションルーム",
+      "text": "컬래버레이션 룸",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.5.subtitle": {
+      "ja": "学生同士の協働を支えるスペース",
+      "text": "학생 간 협업을 돕는 공간",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.5.text.0": {
+      "ja": "コラボレーションルームは、学生団体の活動や共同企画などに利用されるスペースです。",
+      "text": "컬래버레이션 룸은 학생 단체 활동과 공동 기획 등에 이용되는 공간입니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.5.text.1": {
+      "ja": "アカデミックコモンズには、学生が交流し、アイデアを共有するための環境が整えられています。",
+      "text": "아카데믹 커먼스에는 학생이 교류하고 아이디어를 나눌 수 있는 환경이 갖춰져 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.title": {
+      "ja": "学生生活を支える窓口",
+      "text": "학생 생활을 돕는 창구",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.text": {
+      "ja": "2階には、学習スペースのほかにも、大学生活や将来の進路について相談できる窓口があります。",
+      "text": "2층에는 학습 공간 외에도 대학 생활과 장래 진로에 대해 상담할 수 있는 창구가 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.0.name": {
+      "ja": "キャリアセンター",
+      "text": "커리어 센터",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.0.chips.0": {
+      "ja": "就職活動や将来の進路をサポート",
+      "text": "취업 활동과 장래 진로 지원",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.0.text": {
+      "ja": "進路選択、インターンシップ、就職活動などについて専門のキャリアアドバイザーに相談できます。キャリアガイダンスや個人面談、面接トレーニング、業界研究セミナー、学内企業説明会なども実施されています。",
+      "text": "진로 선택, 인턴십, 취업 활동 등에 대해 전문 커리어 어드바이저와 상담할 수 있습니다. 커리어 가이던스와 개인 면담, 면접 트레이닝, 업계 연구 세미나, 학내 기업 설명회 등도 열립니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.1.name": {
+      "ja": "教務機構事務部",
+      "text": "교무기구 사무부",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.1.chips.0": {
+      "ja": "教員免許の取得をサポート",
+      "text": "교원 면허 취득 지원",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.1.text": {
+      "ja": "教職課程の履修や教員採用試験など、教員を目指す学生からの相談に対応しています。",
+      "text": "교직 과정 이수와 교원 채용 시험 등 교사를 목표로 하는 학생의 상담에 응합니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.2.name": {
+      "ja": "学生支援相談室",
+      "text": "학생지원상담실",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.2.chips.0": {
+      "ja": "学生生活の悩みを相談できる場所",
+      "text": "학생 생활의 고민을 상담할 수 있는 곳",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.items.2.text": {
+      "ja": "心理相談、修学相談、生活相談など、学生が抱えるさまざまな悩みについて、専門のカウンセラーに相談できます。相談内容の秘密は厳守されます。",
+      "text": "심리 상담, 수학 상담, 생활 상담 등 학생이 겪는 다양한 고민을 전문 카운슬러와 상담할 수 있습니다. 상담 내용의 비밀은 엄수됩니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.6.buttons.0.label": {
+      "ja": "学生サポート・窓口案内を見る",
+      "text": "학생 지원·창구 안내 보기",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.7.title": {
+      "ja": "アカデミックコモンズの特徴",
+      "text": "아카데믹 커먼스의 특징",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.7.text.0": {
+      "ja": "アカデミックコモンズは、学生が自由に学ぶだけでなく、グループでの共同作業や学生自身によるプロジェクト活動など、さまざまな学びを支える施設です。",
+      "text": "아카데믹 커먼스는 학생이 자유롭게 배우는 것뿐 아니라 그룹 공동 작업과 학생 스스로의 프로젝트 활동 등 다양한 배움을 돕는 시설입니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.sections.7.text.1": {
+      "ja": "1階の開放的な共同学習空間と、2階の目的に応じた活動スペースを使い分けながら、学生が主体的に活動できる環境が整えられています。",
+      "text": "1층의 개방적인 공동 학습 공간과 2층의 목적별 활동 공간을 골라 쓰며 학생이 주체적으로 활동할 수 있는 환경이 갖춰져 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.academicCommons2F.source": {
+      "ja": "関西学院大学 神戸三田キャンパス 学生サポートページ（2026年11月確認）",
+      "text": "간세이가쿠인대학 고베산다 캠퍼스 학생 지원 페이지(2026년 11월 확인)",
       "status": "provisional"
     },
     "facilities.campTent.name": {
