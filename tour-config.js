@@ -143,7 +143,13 @@ window.TOUR_CONFIG = {
       ] },
     { id: "p21", name: "Ⅳ号館", map: { x: 0.4837, y: 0.5187 }, photo: null, view: null, northOffset: null, links: [], info: [], facility: "building4" },
     { id: "p22", name: "Ⅴ号館", map: { x: 0.5395, y: 0.4661 }, photo: null, view: null, northOffset: null, links: [], info: [], facility: "building5" },
-    { id: "p23", name: "Ⅶ号館", map: { x: 0.4549, y: 0.4255 }, photo: null, view: null, northOffset: null, links: [], info: [], facility: "building7" },
+    { id: "p23", name: "Ⅶ号館", map: { x: 0.4549, y: 0.4255 }, photo: null, view: null, northOffset: null,
+      links: [
+        { target: "p23-1", yaw: -0.265, pitch: -0.053 }
+      ],
+      info: [
+        { yaw: -0.027, pitch: -0.116, facility: "building7" }
+      ], facility: "building7" },
     { id: "p24", name: "Ⅷ号館", map: { x: 0.3959, y: 0.3475 }, photo: null, view: null, northOffset: null, links: [], info: [], facility: "building8" },
     { id: "p25", name: "来場者用駐車場", map: { x: 0.4855, y: 0.3678 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p26", name: "陸上競技場", map: { x: 0.5316, y: 0.2944 }, photo: null, view: null, northOffset: null, links: [], info: [] },
