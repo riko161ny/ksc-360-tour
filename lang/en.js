@@ -620,6 +620,11 @@ TourI18n.register("en", {
       "text": "Office (Building VIII)",
       "status": "provisional"
     },
+    "facilities.powderRoom.name": {
+      "ja": "パウダールーム（Ⅷ号館）",
+      "text": "Powder Room (Building VIII)",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Building I",

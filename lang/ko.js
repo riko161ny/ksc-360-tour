@@ -620,6 +620,11 @@ TourI18n.register("ko", {
       "text": "사무실(Ⅷ호관)",
       "status": "provisional"
     },
+    "facilities.powderRoom.name": {
+      "ja": "パウダールーム（Ⅷ号館）",
+      "text": "파우더룸(Ⅷ호관)",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Ⅰ호관",

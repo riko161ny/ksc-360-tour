@@ -620,6 +620,11 @@ TourI18n.register("zh-CN", {
       "text": "办公室（Ⅷ号馆）",
       "status": "provisional"
     },
+    "facilities.powderRoom.name": {
+      "ja": "パウダールーム（Ⅷ号館）",
+      "text": "化妆间（Ⅷ号馆）",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Ⅰ号馆",
