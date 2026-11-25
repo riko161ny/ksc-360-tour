@@ -147,7 +147,15 @@ window.TOUR_CONFIG = {
         { yaw: -2.201, pitch: 0.777, facility: "libraryEating" },
         { yaw: -2.685, pitch: -0.039, facility: "library" }
       ] },
-    { id: "p21", name: "Ⅳ号館", map: { x: 0.4837, y: 0.5187 }, photo: null, view: null, northOffset: null, links: [], info: [], facility: "building4" },
+    { id: "p21", name: "Ⅳ号館", map: { x: 0.4837, y: 0.5187 }, photo: null, view: null, northOffset: null,
+      links: [
+        { target: "p18", yaw: 1.436, pitch: 0.056 },
+        { target: "p22", yaw: -1.565, pitch: -0.024 },
+        { target: "p23", yaw: -2.476, pitch: -0.022 }
+      ],
+      info: [
+        { yaw: -0.035, pitch: -0.053, facility: "building4" }
+      ], facility: "building4" },
     { id: "p22", name: "Ⅴ号館", map: { x: 0.5395, y: 0.4661 }, photo: null, view: null, northOffset: null, links: [], info: [], facility: "building5" },
     { id: "p23", name: "Ⅶ号館", map: { x: 0.4549, y: 0.4255 }, photo: null, view: null, northOffset: null,
       links: [
