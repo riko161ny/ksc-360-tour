@@ -731,28 +731,38 @@ TourI18n.register("zh-CN", {
       "status": "provisional"
     },
     "facilities.bizcafe.sections.1.highlight": {
-      "ja": "学生はドリンクが無料。マイボトルがなくても、店舗のグラスで無料ドリンクを利用できます。",
-      "text": "学生饮品免费。即使没有自带水杯，也可以用店里的玻璃杯免费享用饮品。",
+      "ja": "コーヒーや紅茶、ジュースなど、学生はいろいろなドリンクを無料で飲めます。",
+      "text": "咖啡、红茶、果汁等，学生可以免费享用各种饮品。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.text.0": {
-      "ja": "BiZCAFEでは、学生に無料でドリンクを提供しています。コーヒーや紅茶、ジュースなど、さまざまなドリンクが用意されています。",
-      "text": "BiZCAFE为学生免费提供饮品，有咖啡、红茶、果汁等多种选择。",
+    "facilities.bizcafe.sections.1.items.0.name": {
+      "ja": "90分ごとに1杯",
+      "text": "每90分钟1杯",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.text.1": {
-      "ja": "店舗公式Instagramによると、ドリンクは90分おきに無料で利用できます。",
-      "text": "根据店铺官方Instagram，每隔90分钟可以免费领取一次饮品。",
+    "facilities.bizcafe.sections.1.items.0.text": {
+      "ja": "90分おきに、無料でドリンクをもらえます。",
+      "text": "每隔90分钟可以免费领取一杯饮品。",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.text.2": {
-      "ja": "KSCオリジナルマイボトルを持っていなくても、店舗のグラスを使用して無料で飲むことができます。",
-      "text": "即使没有KSC原创水杯，也可以用店里的玻璃杯免费饮用。",
+    "facilities.bizcafe.sections.1.items.1.name": {
+      "ja": "マイボトルがなくてもOK",
+      "text": "没有自带水杯也可以",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.text.3": {
-      "ja": "無料ドリンクサービスは、100社以上の企業による協賛によって実現していると、店舗公式Instagramで紹介されています。",
-      "text": "店铺官方Instagram介绍，免费饮品服务由100多家企业赞助实现。",
+    "facilities.bizcafe.sections.1.items.1.text": {
+      "ja": "KSCオリジナルマイボトルを持っていなくても、お店のグラスで飲めます。",
+      "text": "即使没有KSC原创水杯，也可以用店里的玻璃杯饮用。",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.items.2.name": {
+      "ja": "100社以上の企業が協賛",
+      "text": "100多家企业赞助",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.items.2.text": {
+      "ja": "企業の協賛によって、学生の無料ドリンクが実現しています。",
+      "text": "学生的免费饮品是通过企业赞助实现的。",
       "status": "provisional"
     },
     "facilities.bizcafe.sections.1.more.title": {
@@ -816,8 +826,8 @@ TourI18n.register("zh-CN", {
       "status": "provisional"
     },
     "facilities.bizcafe.sections.1.note": {
-      "ja": "90分間隔・協賛企業数は投稿時点の情報です。",
-      "text": "90分钟间隔及赞助企业数量为发布时的信息。",
+      "ja": "90分間隔・協賛企業数は、店舗公式Instagramの投稿時点の情報です。",
+      "text": "90分钟间隔及赞助企业数量为店铺官方Instagram发布时的信息。",
       "status": "provisional"
     },
     "facilities.bizcafe.sections.2.title": {

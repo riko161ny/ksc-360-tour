@@ -731,28 +731,38 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "facilities.bizcafe.sections.1.highlight": {
-      "ja": "学生はドリンクが無料。マイボトルがなくても、店舗のグラスで無料ドリンクを利用できます。",
-      "text": "Drinks are free for students. Even without a reusable bottle, you can have free drinks in the café's glasses.",
+      "ja": "コーヒーや紅茶、ジュースなど、学生はいろいろなドリンクを無料で飲めます。",
+      "text": "Coffee, tea, juice and more: students can have all kinds of drinks for free.",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.text.0": {
-      "ja": "BiZCAFEでは、学生に無料でドリンクを提供しています。コーヒーや紅茶、ジュースなど、さまざまなドリンクが用意されています。",
-      "text": "BiZCAFE serves drinks to students for free. There is a variety to choose from, including coffee, tea and juice.",
+    "facilities.bizcafe.sections.1.items.0.name": {
+      "ja": "90分ごとに1杯",
+      "text": "One drink every 90 minutes",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.text.1": {
-      "ja": "店舗公式Instagramによると、ドリンクは90分おきに無料で利用できます。",
-      "text": "According to the café's official Instagram, students can get a free drink every 90 minutes.",
+    "facilities.bizcafe.sections.1.items.0.text": {
+      "ja": "90分おきに、無料でドリンクをもらえます。",
+      "text": "You can get a free drink every 90 minutes.",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.text.2": {
-      "ja": "KSCオリジナルマイボトルを持っていなくても、店舗のグラスを使用して無料で飲むことができます。",
-      "text": "Even if you don't have a KSC original reusable bottle, you can drink for free using the café's glasses.",
+    "facilities.bizcafe.sections.1.items.1.name": {
+      "ja": "マイボトルがなくてもOK",
+      "text": "No bottle needed",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.text.3": {
-      "ja": "無料ドリンクサービスは、100社以上の企業による協賛によって実現していると、店舗公式Instagramで紹介されています。",
-      "text": "The café's official Instagram explains that the free drink service is made possible by sponsorship from more than 100 companies.",
+    "facilities.bizcafe.sections.1.items.1.text": {
+      "ja": "KSCオリジナルマイボトルを持っていなくても、お店のグラスで飲めます。",
+      "text": "Even without a KSC original reusable bottle, you can drink from the café's glasses.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.items.2.name": {
+      "ja": "100社以上の企業が協賛",
+      "text": "Sponsored by 100+ companies",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.items.2.text": {
+      "ja": "企業の協賛によって、学生の無料ドリンクが実現しています。",
+      "text": "Company sponsorship is what makes the free drinks for students possible.",
       "status": "provisional"
     },
     "facilities.bizcafe.sections.1.more.title": {
@@ -816,8 +826,8 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "facilities.bizcafe.sections.1.note": {
-      "ja": "90分間隔・協賛企業数は投稿時点の情報です。",
-      "text": "The 90-minute interval and the number of sponsor companies are as of the post.",
+      "ja": "90分間隔・協賛企業数は、店舗公式Instagramの投稿時点の情報です。",
+      "text": "The 90-minute interval and the number of sponsors are as of the café's official Instagram post.",
       "status": "provisional"
     },
     "facilities.bizcafe.sections.2.title": {

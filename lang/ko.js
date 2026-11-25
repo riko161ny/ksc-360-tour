@@ -731,28 +731,38 @@ TourI18n.register("ko", {
       "status": "provisional"
     },
     "facilities.bizcafe.sections.1.highlight": {
-      "ja": "学生はドリンクが無料。マイボトルがなくても、店舗のグラスで無料ドリンクを利用できます。",
-      "text": "학생은 음료가 무료입니다. 마이 보틀이 없어도 매장 유리잔으로 무료 음료를 이용할 수 있습니다.",
+      "ja": "コーヒーや紅茶、ジュースなど、学生はいろいろなドリンクを無料で飲めます。",
+      "text": "커피와 홍차, 주스 등 학생은 다양한 음료를 무료로 마실 수 있습니다.",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.text.0": {
-      "ja": "BiZCAFEでは、学生に無料でドリンクを提供しています。コーヒーや紅茶、ジュースなど、さまざまなドリンクが用意されています。",
-      "text": "BiZCAFE에서는 학생에게 음료를 무료로 제공합니다. 커피와 홍차, 주스 등 다양한 음료가 준비되어 있습니다.",
+    "facilities.bizcafe.sections.1.items.0.name": {
+      "ja": "90分ごとに1杯",
+      "text": "90분마다 1잔",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.text.1": {
-      "ja": "店舗公式Instagramによると、ドリンクは90分おきに無料で利用できます。",
-      "text": "매장 공식 Instagram에 따르면 음료는 90분마다 무료로 이용할 수 있습니다.",
+    "facilities.bizcafe.sections.1.items.0.text": {
+      "ja": "90分おきに、無料でドリンクをもらえます。",
+      "text": "90분마다 무료로 음료를 받을 수 있습니다.",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.text.2": {
-      "ja": "KSCオリジナルマイボトルを持っていなくても、店舗のグラスを使用して無料で飲むことができます。",
-      "text": "KSC 오리지널 마이 보틀이 없어도 매장 유리잔을 사용해 무료로 마실 수 있습니다.",
+    "facilities.bizcafe.sections.1.items.1.name": {
+      "ja": "マイボトルがなくてもOK",
+      "text": "마이 보틀이 없어도 OK",
       "status": "provisional"
     },
-    "facilities.bizcafe.sections.1.text.3": {
-      "ja": "無料ドリンクサービスは、100社以上の企業による協賛によって実現していると、店舗公式Instagramで紹介されています。",
-      "text": "매장 공식 Instagram에서는 무료 음료 서비스가 100개 이상 기업의 협찬으로 실현되고 있다고 소개하고 있습니다.",
+    "facilities.bizcafe.sections.1.items.1.text": {
+      "ja": "KSCオリジナルマイボトルを持っていなくても、お店のグラスで飲めます。",
+      "text": "KSC 오리지널 마이 보틀이 없어도 매장 유리잔으로 마실 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.items.2.name": {
+      "ja": "100社以上の企業が協賛",
+      "text": "100개 이상 기업이 협찬",
+      "status": "provisional"
+    },
+    "facilities.bizcafe.sections.1.items.2.text": {
+      "ja": "企業の協賛によって、学生の無料ドリンクが実現しています。",
+      "text": "기업의 협찬으로 학생 무료 음료가 실현되고 있습니다.",
       "status": "provisional"
     },
     "facilities.bizcafe.sections.1.more.title": {
@@ -816,8 +826,8 @@ TourI18n.register("ko", {
       "status": "provisional"
     },
     "facilities.bizcafe.sections.1.note": {
-      "ja": "90分間隔・協賛企業数は投稿時点の情報です。",
-      "text": "90분 간격·협찬 기업 수는 게시 시점의 정보입니다.",
+      "ja": "90分間隔・協賛企業数は、店舗公式Instagramの投稿時点の情報です。",
+      "text": "90분 간격·협찬 기업 수는 매장 공식 Instagram 게시 시점의 정보입니다.",
       "status": "provisional"
     },
     "facilities.bizcafe.sections.2.title": {
