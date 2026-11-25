@@ -177,7 +177,7 @@ window.TOUR_CONFIG = {
     { id: "201room", name: "Ⅱ号館201号室", map: null, photo: null, view: null, northOffset: null, links: [ { target: "101room", yaw: -0.968, pitch: 0.099 } ], info: [], backButton: { target: "p05", label: "Ⅱ号館前に戻る" } },
     { id: "101room", name: "Ⅱ号館101号室", map: null, photo: null, view: null, northOffset: null, links: [ { target: "201room", yaw: -0.914, pitch: -0.025 }, { target: "p05", yaw: -2.094, pitch: 0.073 } ], info: [], backButton: { target: "p05", label: "Ⅱ号館前に戻る" } },
     // 2026年11月25日（2回目）に追加した写真
-    { id: "p11-1", name: "出口付近（生協売店）", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p11", label: "生協売店入口に戻る" } },
+    { id: "p11-1", name: "出口付近（生協売店）", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p11", yaw: 0.003, pitch: 0.138 } ], info: [], backButton: { target: "p11", label: "生協売店入口に戻る" } },
     { id: "p13-1", name: "体育館内部", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p13", label: "体育館前に戻る" } },
     { id: "p15-1", name: "和室前", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p15", label: "ビズカフェに戻る" } },
     { id: "p16-terasu", name: "コモンズテラス", map: null, photo: null, view: { yaw: 1.4, pitch: 0, fov: 1.5708 }, northOffset: null, links: [], info: [], backButton: { target: "p16", label: "コモンズ前に戻る" } },
