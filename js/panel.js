@@ -34,6 +34,8 @@
     lastShown = { kind: 'facility', facility: facility, options: options };
     bodyElement.innerHTML = '';
     panelElement.classList.toggle('wide', !!facility.wide);
+    // layout: "rich" gives bigger headings and each section its own white card (アカデミックコモンズなど).
+    panelElement.classList.toggle('rich', facility.layout === 'rich');
 
     var title = el('h2', 'info-title', facility.name || '');
     title.id = 'infoTitle';
@@ -161,6 +163,7 @@
     lastShown = { kind: 'activities', args: [title, lead, activities] };
     bodyElement.innerHTML = '';
     panelElement.classList.remove('wide');
+    panelElement.classList.remove('rich');
     var heading = el('h2', 'info-title', title);
     heading.id = 'infoTitle';
     bodyElement.appendChild(heading);

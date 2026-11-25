@@ -383,6 +383,8 @@ window.TOUR_CONFIG = {
     // /ksc/campuslife/support.html（2026年11月確認）。テントの写真は assets/media/ に置いて figure.src に書くと表示されます。
     "academicCommons": {
       name: "アカデミックコモンズ 1階",
+      wide: true,
+      layout: "rich",
       lead: "学習・交流・学生の活動が生まれる場所",
       sections: [
         {
@@ -532,6 +534,8 @@ window.TOUR_CONFIG = {
     // アカデミックコモンズ2階（p17-2）。文章は riko さんの原稿。窓口の階は大学公式 /ksc/campuslife/support.html で確認。
     "academicCommons2F": {
       name: "アカデミックコモンズ 2階",
+      wide: true,
+      layout: "rich",
       lead: "仲間と学びを深め、アイデアを形にする空間",
       overview: [
         "アカデミックコモンズの2階には、少人数での打ち合わせからグループでの共同作業まで、さまざまな活動に対応するスペースがあります。",
