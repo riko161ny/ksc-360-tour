@@ -585,6 +585,191 @@ TourI18n.register("en", {
       "text": "Student Hall II",
       "status": "official"
     },
+    "facilities.studentHall2.overview.0": {
+      "ja": "第二厚生棟には、大学生協が運営する食堂「Fresh Box（フレッシュボックス）」があります。",
+      "text": "Student Hall II houses Fresh Box, a cafeteria run by the university co-op.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.overview.1": {
+      "ja": "食事スペースは1階と2階にあり、学生が昼食や休憩に利用しています。",
+      "text": "There is seating on the 1st and 2nd floors, where students have lunch and take breaks.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.overview.2": {
+      "ja": "また、2階の食堂スペースは大学祭「新月祭」のイベント会場としても利用されています。",
+      "text": "The 2nd-floor dining area is also used as an event venue during the Shingetsu Festival, the university festival.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.title": {
+      "ja": "基本情報",
+      "text": "Basic information",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.0.0": {
+      "ja": "施設名",
+      "text": "Name",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.0.1": {
+      "ja": "Fresh Box（フレッシュボックス）",
+      "text": "Fresh Box",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.1.0": {
+      "ja": "場所",
+      "text": "Location",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.1.1": {
+      "ja": "第二厚生棟1階",
+      "text": "Student Hall II, 1st floor",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.2.0": {
+      "ja": "営業時間",
+      "text": "Opening hours",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.3.0": {
+      "ja": "食事スペース",
+      "text": "Seating",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.3.1": {
+      "ja": "1階・2階",
+      "text": "1st and 2nd floors",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.4.0": {
+      "ja": "運営",
+      "text": "Run by",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.4.1": {
+      "ja": "関西学院大学生活協同組合",
+      "text": "Kwansei Gakuin University Co-op",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.note": {
+      "ja": "営業時間は授業期間・休業期間などによって変更されます。最新情報は関学生協公式サイトをご確認ください。",
+      "text": "Opening hours change between term time and breaks. Please check the Kwansei Gakuin co-op's official website for the latest information.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.links.0.label": {
+      "ja": "関学生協の店舗別営業時間（公式）",
+      "text": "Co-op opening hours by shop (official)",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.1.title": {
+      "ja": "好きなおかずを選べるグラムバイキング",
+      "text": "Pick your own dishes, priced by weight",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.1.figure.caption": {
+      "ja": "Fresh Boxのサラダバー・ホットバー",
+      "text": "The salad bar and hot bar at Fresh Box",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.1.figure.alt": {
+      "ja": "第二厚生棟Fresh Boxのサラダバーとホットバー。料理が並ぶグラムバイキング形式の食堂設備",
+      "text": "The salad bar and hot bar at Fresh Box in Student Hall II, where dishes are laid out for self-service priced by weight",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.1.text": {
+      "ja": "Fresh Boxでは、カウンターで注文する料理に加え、好きなおかずを自由に選べるグラムバイキングが特徴です。サラダバーやホットバーが設けられており、好みに合わせて料理を組み合わせることができます。",
+      "text": "Besides dishes you order at the counter, Fresh Box is known for its self-service buffet priced by weight, where you pick whatever sides you like. With a salad bar and a hot bar, you can put together a meal to suit your taste.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.1.buttons.0.label": {
+      "ja": "Fresh Boxのメニューを見る",
+      "text": "See the Fresh Box menu",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.title": {
+      "ja": "新月祭ではダンス公演の会場に！",
+      "text": "A dance stage during the Shingetsu Festival!",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.text.0": {
+      "ja": "第二厚生棟の2階は、普段は食事スペースとして利用されていますが、大学祭「新月祭」ではイベント会場としても活用されています。",
+      "text": "The 2nd floor of Student Hall II is normally a dining area, but during the Shingetsu Festival it is also used as an event venue.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.text.1": {
+      "ja": "2026年の新月祭では、ダンスサークル「Ney-Kid」が2日間にわたり公演を行い、さまざまなジャンルのダンスやバンドセッションを披露しました。",
+      "text": "At the 2026 Shingetsu Festival, the dance club Ney-Kid performed over two days, with dances in many genres and band sessions.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.0.0": {
+      "ja": "団体",
+      "text": "Group",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.1.0": {
+      "ja": "イベント",
+      "text": "Event",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.1.1": {
+      "ja": "新月祭2026",
+      "text": "Shingetsu Festival 2026",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.2.0": {
+      "ja": "場所",
+      "text": "Location",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.2.1": {
+      "ja": "第二厚生棟2階食堂",
+      "text": "Student Hall II, 2nd-floor dining area",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.3.0": {
+      "ja": "内容",
+      "text": "Program",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.3.1": {
+      "ja": "各ジャンルのショーケース、バンドセッション",
+      "text": "Showcases in each genre, band sessions",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.items.0.name": {
+      "ja": "公演の動画",
+      "text": "Performance video",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.items.0.text": {
+      "ja": "2025年の新月祭での、Ney-Kidの公演の様子です。",
+      "text": "Ney-Kid's performance at the 2025 Shingetsu Festival.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.items.0.videos.0.label": {
+      "ja": "動画を見る",
+      "text": "Watch the video",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.items.0.videos.0.caption": {
+      "ja": "Ney-Kid公式YouTubeチャンネルより（掲載の許可を得ています）。",
+      "text": "From Ney-Kid's official YouTube channel (used with permission).",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.note": {
+      "ja": "2026年の開催内容です。会場や内容は年によって変わる場合があります。",
+      "text": "This is what was held in 2026. The venue and program may differ from year to year.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.links.0.label": {
+      "ja": "新月祭2026 KSC一般企画（公式）",
+      "text": "Shingetsu Festival 2026 KSC events (official)",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.source": {
+      "ja": "関西学院大学生活協同組合 公式サイト（2026年11月確認）、新月祭2026公式サイト",
+      "text": "Kwansei Gakuin University Co-op official website (checked November 2026), Shingetsu Festival 2026 official website",
+      "status": "provisional"
+    },
     "facilities.commons.name": {
       "ja": "アカデミックコモンズ",
       "text": "Academic Commons",

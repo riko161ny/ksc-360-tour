@@ -585,6 +585,191 @@ TourI18n.register("zh-CN", {
       "text": "第二福利楼",
       "status": "provisional"
     },
+    "facilities.studentHall2.overview.0": {
+      "ja": "第二厚生棟には、大学生協が運営する食堂「Fresh Box（フレッシュボックス）」があります。",
+      "text": "第二厚生楼内有大学生协经营的食堂“Fresh Box”。",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.overview.1": {
+      "ja": "食事スペースは1階と2階にあり、学生が昼食や休憩に利用しています。",
+      "text": "1楼和2楼设有用餐区，学生们在这里吃午饭和休息。",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.overview.2": {
+      "ja": "また、2階の食堂スペースは大学祭「新月祭」のイベント会場としても利用されています。",
+      "text": "此外，2楼的用餐区也会在大学校园节“新月祭”期间用作活动会场。",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.title": {
+      "ja": "基本情報",
+      "text": "基本信息",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.0.0": {
+      "ja": "施設名",
+      "text": "设施名称",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.0.1": {
+      "ja": "Fresh Box（フレッシュボックス）",
+      "text": "Fresh Box",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.1.0": {
+      "ja": "場所",
+      "text": "地点",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.1.1": {
+      "ja": "第二厚生棟1階",
+      "text": "第二厚生楼1楼",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.2.0": {
+      "ja": "営業時間",
+      "text": "营业时间",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.3.0": {
+      "ja": "食事スペース",
+      "text": "用餐区",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.3.1": {
+      "ja": "1階・2階",
+      "text": "1楼、2楼",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.4.0": {
+      "ja": "運営",
+      "text": "运营",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.4.1": {
+      "ja": "関西学院大学生活協同組合",
+      "text": "关西学院大学生活协同组合",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.note": {
+      "ja": "営業時間は授業期間・休業期間などによって変更されます。最新情報は関学生協公式サイトをご確認ください。",
+      "text": "营业时间会因上课期间、假期等而变动。最新信息请查看关学生协官方网站。",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.links.0.label": {
+      "ja": "関学生協の店舗別営業時間（公式）",
+      "text": "关学生协各店营业时间（官方）",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.1.title": {
+      "ja": "好きなおかずを選べるグラムバイキング",
+      "text": "自选菜品、按克计价的自助餐",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.1.figure.caption": {
+      "ja": "Fresh Boxのサラダバー・ホットバー",
+      "text": "Fresh Box的沙拉吧和热菜吧",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.1.figure.alt": {
+      "ja": "第二厚生棟Fresh Boxのサラダバーとホットバー。料理が並ぶグラムバイキング形式の食堂設備",
+      "text": "第二厚生楼Fresh Box的沙拉吧和热菜吧，摆放着按克计价自助餐的菜品",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.1.text": {
+      "ja": "Fresh Boxでは、カウンターで注文する料理に加え、好きなおかずを自由に選べるグラムバイキングが特徴です。サラダバーやホットバーが設けられており、好みに合わせて料理を組み合わせることができます。",
+      "text": "Fresh Box除了在柜台点餐的菜品外，还以可自由挑选喜欢菜品、按克计价的自助餐为特色。这里设有沙拉吧和热菜吧，可以根据喜好搭配餐食。",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.1.buttons.0.label": {
+      "ja": "Fresh Boxのメニューを見る",
+      "text": "查看Fresh Box的菜单",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.title": {
+      "ja": "新月祭ではダンス公演の会場に！",
+      "text": "新月祭时变身舞蹈表演会场！",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.text.0": {
+      "ja": "第二厚生棟の2階は、普段は食事スペースとして利用されていますが、大学祭「新月祭」ではイベント会場としても活用されています。",
+      "text": "第二厚生楼2楼平时是用餐区，在大学校园节“新月祭”期间也会用作活动会场。",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.text.1": {
+      "ja": "2026年の新月祭では、ダンスサークル「Ney-Kid」が2日間にわたり公演を行い、さまざまなジャンルのダンスやバンドセッションを披露しました。",
+      "text": "在2026年的新月祭上，舞蹈社团“Ney-Kid”进行了为期两天的公演，表演了各种风格的舞蹈和乐队演奏。",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.0.0": {
+      "ja": "団体",
+      "text": "团体",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.1.0": {
+      "ja": "イベント",
+      "text": "活动",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.1.1": {
+      "ja": "新月祭2026",
+      "text": "新月祭2026",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.2.0": {
+      "ja": "場所",
+      "text": "地点",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.2.1": {
+      "ja": "第二厚生棟2階食堂",
+      "text": "第二厚生楼2楼食堂",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.3.0": {
+      "ja": "内容",
+      "text": "内容",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.3.1": {
+      "ja": "各ジャンルのショーケース、バンドセッション",
+      "text": "各风格的展示表演、乐队演奏",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.items.0.name": {
+      "ja": "公演の動画",
+      "text": "公演视频",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.items.0.text": {
+      "ja": "2025年の新月祭での、Ney-Kidの公演の様子です。",
+      "text": "这是Ney-Kid在2025年新月祭上的公演。",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.items.0.videos.0.label": {
+      "ja": "動画を見る",
+      "text": "观看视频",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.items.0.videos.0.caption": {
+      "ja": "Ney-Kid公式YouTubeチャンネルより（掲載の許可を得ています）。",
+      "text": "来自Ney-Kid官方YouTube频道（已获得刊登许可）。",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.note": {
+      "ja": "2026年の開催内容です。会場や内容は年によって変わる場合があります。",
+      "text": "以上为2026年的举办内容。会场和内容每年可能有所不同。",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.links.0.label": {
+      "ja": "新月祭2026 KSC一般企画（公式）",
+      "text": "新月祭2026 KSC一般企划（官方）",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.source": {
+      "ja": "関西学院大学生活協同組合 公式サイト（2026年11月確認）、新月祭2026公式サイト",
+      "text": "关西学院大学生活协同组合官方网站（2026年11月确认）、新月祭2026官方网站",
+      "status": "provisional"
+    },
     "facilities.commons.name": {
       "ja": "アカデミックコモンズ",
       "text": "学术共享空间（Academic Commons）",

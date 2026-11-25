@@ -585,6 +585,191 @@ TourI18n.register("ko", {
       "text": "제2후생동",
       "status": "provisional"
     },
+    "facilities.studentHall2.overview.0": {
+      "ja": "第二厚生棟には、大学生協が運営する食堂「Fresh Box（フレッシュボックス）」があります。",
+      "text": "제2후생동에는 대학 생협이 운영하는 식당 'Fresh Box(프레시 박스)'가 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.overview.1": {
+      "ja": "食事スペースは1階と2階にあり、学生が昼食や休憩に利用しています。",
+      "text": "식사 공간은 1층과 2층에 있으며, 학생들이 점심 식사나 휴식에 이용합니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.overview.2": {
+      "ja": "また、2階の食堂スペースは大学祭「新月祭」のイベント会場としても利用されています。",
+      "text": "또한 2층 식당 공간은 대학 축제 '신게쓰 축제(新月祭)'의 이벤트 장소로도 이용됩니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.title": {
+      "ja": "基本情報",
+      "text": "기본 정보",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.0.0": {
+      "ja": "施設名",
+      "text": "시설명",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.0.1": {
+      "ja": "Fresh Box（フレッシュボックス）",
+      "text": "Fresh Box(프레시 박스)",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.1.0": {
+      "ja": "場所",
+      "text": "장소",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.1.1": {
+      "ja": "第二厚生棟1階",
+      "text": "제2후생동 1층",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.2.0": {
+      "ja": "営業時間",
+      "text": "영업시간",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.3.0": {
+      "ja": "食事スペース",
+      "text": "식사 공간",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.3.1": {
+      "ja": "1階・2階",
+      "text": "1층·2층",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.4.0": {
+      "ja": "運営",
+      "text": "운영",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.rows.4.1": {
+      "ja": "関西学院大学生活協同組合",
+      "text": "관서학원대학 생활협동조합",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.note": {
+      "ja": "営業時間は授業期間・休業期間などによって変更されます。最新情報は関学生協公式サイトをご確認ください。",
+      "text": "영업시간은 수업 기간·휴업 기간 등에 따라 변경됩니다. 최신 정보는 관서학원 생협 공식 사이트에서 확인해 주세요.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.0.links.0.label": {
+      "ja": "関学生協の店舗別営業時間（公式）",
+      "text": "관서학원 생협 매장별 영업시간(공식)",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.1.title": {
+      "ja": "好きなおかずを選べるグラムバイキング",
+      "text": "좋아하는 반찬을 고르는 그램 뷔페",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.1.figure.caption": {
+      "ja": "Fresh Boxのサラダバー・ホットバー",
+      "text": "Fresh Box의 샐러드 바·핫 바",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.1.figure.alt": {
+      "ja": "第二厚生棟Fresh Boxのサラダバーとホットバー。料理が並ぶグラムバイキング形式の食堂設備",
+      "text": "제2후생동 Fresh Box의 샐러드 바와 핫 바. 요리가 놓인 그램 뷔페 형식의 식당 설비",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.1.text": {
+      "ja": "Fresh Boxでは、カウンターで注文する料理に加え、好きなおかずを自由に選べるグラムバイキングが特徴です。サラダバーやホットバーが設けられており、好みに合わせて料理を組み合わせることができます。",
+      "text": "Fresh Box는 카운터에서 주문하는 요리 외에, 좋아하는 반찬을 자유롭게 고를 수 있는 그램 뷔페가 특징입니다. 샐러드 바와 핫 바가 있어 취향에 맞게 요리를 조합할 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.1.buttons.0.label": {
+      "ja": "Fresh Boxのメニューを見る",
+      "text": "Fresh Box 메뉴 보기",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.title": {
+      "ja": "新月祭ではダンス公演の会場に！",
+      "text": "신게쓰 축제에서는 댄스 공연장으로!",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.text.0": {
+      "ja": "第二厚生棟の2階は、普段は食事スペースとして利用されていますが、大学祭「新月祭」ではイベント会場としても活用されています。",
+      "text": "제2후생동 2층은 평소에는 식사 공간으로 이용되지만, 대학 축제 '신게쓰 축제(新月祭)'에서는 이벤트 장소로도 활용됩니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.text.1": {
+      "ja": "2026年の新月祭では、ダンスサークル「Ney-Kid」が2日間にわたり公演を行い、さまざまなジャンルのダンスやバンドセッションを披露しました。",
+      "text": "2026년 신게쓰 축제에서는 댄스 서클 'Ney-Kid'가 이틀에 걸쳐 공연을 열어 다양한 장르의 댄스와 밴드 세션을 선보였습니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.0.0": {
+      "ja": "団体",
+      "text": "단체",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.1.0": {
+      "ja": "イベント",
+      "text": "이벤트",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.1.1": {
+      "ja": "新月祭2026",
+      "text": "신게쓰 축제 2026",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.2.0": {
+      "ja": "場所",
+      "text": "장소",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.2.1": {
+      "ja": "第二厚生棟2階食堂",
+      "text": "제2후생동 2층 식당",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.3.0": {
+      "ja": "内容",
+      "text": "내용",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.rows.3.1": {
+      "ja": "各ジャンルのショーケース、バンドセッション",
+      "text": "장르별 쇼케이스, 밴드 세션",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.items.0.name": {
+      "ja": "公演の動画",
+      "text": "공연 영상",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.items.0.text": {
+      "ja": "2025年の新月祭での、Ney-Kidの公演の様子です。",
+      "text": "2025년 신게쓰 축제에서 열린 Ney-Kid의 공연 모습입니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.items.0.videos.0.label": {
+      "ja": "動画を見る",
+      "text": "영상 보기",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.items.0.videos.0.caption": {
+      "ja": "Ney-Kid公式YouTubeチャンネルより（掲載の許可を得ています）。",
+      "text": "Ney-Kid 공식 YouTube 채널에서(게재 허가를 받았습니다).",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.note": {
+      "ja": "2026年の開催内容です。会場や内容は年によって変わる場合があります。",
+      "text": "2026년 개최 내용입니다. 장소와 내용은 해마다 달라질 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.sections.2.links.0.label": {
+      "ja": "新月祭2026 KSC一般企画（公式）",
+      "text": "신게쓰 축제 2026 KSC 일반 기획(공식)",
+      "status": "provisional"
+    },
+    "facilities.studentHall2.source": {
+      "ja": "関西学院大学生活協同組合 公式サイト（2026年11月確認）、新月祭2026公式サイト",
+      "text": "관서학원대학 생활협동조합 공식 사이트(2026년 11월 확인), 신게쓰 축제 2026 공식 사이트",
+      "status": "provisional"
+    },
     "facilities.commons.name": {
       "ja": "アカデミックコモンズ",
       "text": "아카데믹 커먼즈",
