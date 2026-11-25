@@ -115,7 +115,14 @@ window.TOUR_CONFIG = {
       // 仮の位置です。editor.html で見ながら調整してください
       { yaw: 1.78, pitch: -0.18, facility: "studentGroups" }
     ] },
-    { id: "p17", name: "アカデミックコモンズ", map: { x: 0.4251, y: 0.4729 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p17", name: "アカデミックコモンズ", map: { x: 0.4251, y: 0.4729 }, photo: null, view: null, northOffset: null,
+      links: [
+        { target: "p17-2", yaw: -0.972, pitch: -0.137 },
+        { target: "p17-camp", yaw: 0.408, pitch: 0.228 }
+      ],
+      info: [
+        { yaw: -1.826, pitch: 0.082, facility: "commons" }
+      ] },
     { id: "p18", name: "Ⅵ号館前", map: { x: 0.4088, y: 0.5707 }, photo: null, view: { yaw: -2.791, pitch: 0.001, fov: 1.5708 }, northOffset: null,
       links: [
         { target: "p19", yaw: 3, pitch: -0.02 },
@@ -256,6 +263,10 @@ window.TOUR_CONFIG = {
     // 第二厚生棟の情報マーク（中身は確認できた情報をあとで足します）
     "studentHall2": {
       name: "第二厚生棟"
+    },
+    // アカデミックコモンズの情報マーク（中身は確認できた情報をあとで足します）
+    "commons": {
+      name: "アカデミックコモンズ"
     },
     // ↓ 施設情報（riko さんがまとめた内容。overview は段落ごとの配列、sections は見出しごとのまとまり）
     "building1": {
