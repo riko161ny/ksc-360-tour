@@ -85,7 +85,13 @@ window.TOUR_CONFIG = {
         { yaw: -1.412, pitch: -0.101, facility: "building1" },
         { yaw: 1.169, pitch: -0.006, facility: "building2" }
       ], facility: "building1" },
-    { id: "p05", name: "Ⅱ号館前", map: { x: 0.1996, y: 0.7179 }, photo: null, view: { yaw: -1.964, pitch: -0.005, fov: 1.5708 }, northOffset: null, links: [], info: [ { yaw: -1.964, pitch: -0.005, facility: "building2" } ], facility: "building2" },
+    { id: "p05", name: "Ⅱ号館前", map: { x: 0.1996, y: 0.7179 }, photo: null, view: { yaw: -1.964, pitch: -0.005, fov: 1.5708 }, northOffset: null,
+      links: [
+        { target: "101room", yaw: -1.894, pitch: 0.011 }
+      ],
+      info: [
+        { yaw: -2.23, pitch: -0.002, facility: "building2" }
+      ], facility: "building2" },
     { id: "p06", name: "Ⅲ号館", map: { x: 0.296, y: 0.6834 }, photo: null, view: { yaw: -0.39, pitch: 0, fov: 1.5708 }, northOffset: null,
       links: [ { target: "zemi", yaw: -0.11, pitch: 0.07 } ],
       info: [ { yaw: -0.39, pitch: 0, facility: "building3" } ] },
