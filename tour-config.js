@@ -159,7 +159,7 @@ window.TOUR_CONFIG = {
     { id: "p23-1", name: "Ⅶ号館中庭", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p23", label: "Ⅶ号館に戻る" } },
     { id: "p12-room", name: "食堂内部（第二厚生棟）", map: null, photo: null, view: { yaw: -1.0, pitch: 0, fov: 1.5708 }, northOffset: null, links: [ { target: "p12", yaw: 3.004, pitch: 0.035 } ], info: [], backButton: { target: "p12", label: "第二厚生棟に戻る" } },
     { id: "p12-win", name: "窓側席（第二厚生棟）", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p12-room", yaw: -1.08, pitch: 0.104 } ], info: [], backButton: { target: "p12", label: "第二厚生棟に戻る" } },
-    { id: "p17-2", name: "アカデミックコモンズ2階", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p17", label: "アカデミックコモンズに戻る" } },
+    { id: "p17-2", name: "アカデミックコモンズ2階", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p17", yaw: -0.69, pitch: 0.249 } ], info: [ { yaw: 0.791, pitch: 0.186, facility: "commons" } ], backButton: { target: "p17", label: "アカデミックコモンズに戻る" } },
     { id: "p17-camp", name: "キャンプテント（アカデミックコモンズ）", map: null, photo: null, view: null, northOffset: null, links: [ { target: "p17", yaw: 0.313, pitch: 0.171 } ], info: [ { yaw: 0.187, pitch: 0.806, facility: "campTent" } ], backButton: { target: "p17", label: "アカデミックコモンズに戻る" } },
     { id: "tableterass", name: "中庭", map: null, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "201room", name: "Ⅱ号館201号室", map: null, photo: null, view: null, northOffset: null, links: [], info: [], backButton: { target: "p05", label: "Ⅱ号館前に戻る" } },
