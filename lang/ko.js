@@ -1235,6 +1235,11 @@ TourI18n.register("ko", {
       "text": "다도회와 꽃꽂이를 할 수 있는 설비가 갖춰져 있어, 학생들이 교류하는 장소로 쓰이고 있습니다.",
       "status": "provisional"
     },
+    "facilities.washitsu.overview.2": {
+      "ja": "ふだんは予約なしで使えて、課題をするなど、学生が自由に利用しています。土足厳禁なので、靴を脱いで上がりましょう。",
+      "text": "평소에는 예약 없이 이용할 수 있어, 과제를 하는 등 학생들이 자유롭게 사용하고 있습니다. 신발을 신고 들어갈 수 없으니 신발을 벗고 올라가세요.",
+      "status": "provisional"
+    },
     "facilities.washitsu.sections.0.title": {
       "ja": "基本情報",
       "text": "기본 정보",
@@ -1256,8 +1261,8 @@ TourI18n.register("ko", {
       "status": "provisional"
     },
     "facilities.washitsu.sections.0.rows.1.1": {
-      "ja": "アカデミックコモンズ",
-      "text": "아카데믹 커먼즈",
+      "ja": "アカデミックコモンズ1階",
+      "text": "아카데믹 커먼즈 1층",
       "status": "provisional"
     },
     "facilities.washitsu.sections.0.rows.2.0": {
@@ -1286,13 +1291,33 @@ TourI18n.register("ko", {
       "status": "provisional"
     },
     "facilities.washitsu.sections.0.rows.4.1": {
-      "ja": "お茶会・生け花・学生の交流",
-      "text": "다도회·꽃꽂이·학생 교류",
+      "ja": "課題・お茶会・生け花・学生の交流",
+      "text": "과제·다도회·꽃꽂이·학생 교류",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.5.0": {
+      "ja": "予約",
+      "text": "예약",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.5.1": {
+      "ja": "不要（自由に利用できます）",
+      "text": "불필요(자유롭게 이용 가능)",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.6.0": {
+      "ja": "土足",
+      "text": "신발",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.6.1": {
+      "ja": "禁止（靴を脱いで利用）",
+      "text": "금지(신발을 벗고 이용)",
       "status": "provisional"
     },
     "facilities.washitsu.sections.0.note": {
-      "ja": "広さや設備は、2014年に更新された学院史編纂室の「関学事典」の記述です。現在の利用方法は大学でご確認ください。",
-      "text": "넓이와 설비는 2014년에 갱신된 학원사 편찬실 '간가쿠 사전'의 기술입니다. 현재 이용 방법은 대학에 확인해 주세요.",
+      "ja": "広さや設備は、2014年に更新された学院史編纂室の「関学事典」の記述です。利用のしかたは在学生への確認によるもので、変わる場合があります。",
+      "text": "넓이와 설비는 2014년에 갱신된 학원사 편찬실 '간가쿠 사전'의 기술입니다. 이용 방법은 재학생에게 확인한 내용이며 바뀔 수 있습니다.",
       "status": "provisional"
     },
     "facilities.washitsu.sections.1.title": {

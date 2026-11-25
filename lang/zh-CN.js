@@ -1235,6 +1235,11 @@ TourI18n.register("zh-CN", {
       "text": "这里具备举办茶会和插花的设施，被用作学生之间交流的场所。",
       "status": "provisional"
     },
+    "facilities.washitsu.overview.2": {
+      "ja": "ふだんは予約なしで使えて、課題をするなど、学生が自由に利用しています。土足厳禁なので、靴を脱いで上がりましょう。",
+      "text": "平时无需预约即可使用，学生们会在这里写作业等，自由使用。禁止穿鞋入内，请脱鞋后进入。",
+      "status": "provisional"
+    },
     "facilities.washitsu.sections.0.title": {
       "ja": "基本情報",
       "text": "基本信息",
@@ -1256,8 +1261,8 @@ TourI18n.register("zh-CN", {
       "status": "provisional"
     },
     "facilities.washitsu.sections.0.rows.1.1": {
-      "ja": "アカデミックコモンズ",
-      "text": "学术共享空间（Academic Commons）",
+      "ja": "アカデミックコモンズ1階",
+      "text": "学术共享空间（Academic Commons）1楼",
       "status": "provisional"
     },
     "facilities.washitsu.sections.0.rows.2.0": {
@@ -1286,13 +1291,33 @@ TourI18n.register("zh-CN", {
       "status": "provisional"
     },
     "facilities.washitsu.sections.0.rows.4.1": {
-      "ja": "お茶会・生け花・学生の交流",
-      "text": "茶会、插花、学生交流",
+      "ja": "課題・お茶会・生け花・学生の交流",
+      "text": "写作业、茶会、插花、学生交流",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.5.0": {
+      "ja": "予約",
+      "text": "预约",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.5.1": {
+      "ja": "不要（自由に利用できます）",
+      "text": "无需（可自由使用）",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.6.0": {
+      "ja": "土足",
+      "text": "穿鞋",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.6.1": {
+      "ja": "禁止（靴を脱いで利用）",
+      "text": "禁止（请脱鞋使用）",
       "status": "provisional"
     },
     "facilities.washitsu.sections.0.note": {
-      "ja": "広さや設備は、2014年に更新された学院史編纂室の「関学事典」の記述です。現在の利用方法は大学でご確認ください。",
-      "text": "面积和设施来自学院史编纂室于2014年更新的《关学事典》。目前的使用方法请向大学确认。",
+      "ja": "広さや設備は、2014年に更新された学院史編纂室の「関学事典」の記述です。利用のしかたは在学生への確認によるもので、変わる場合があります。",
+      "text": "面积和设施来自学院史编纂室于2014年更新的《关学事典》。使用方式根据在校生提供的信息，可能会有变化。",
       "status": "provisional"
     },
     "facilities.washitsu.sections.1.title": {

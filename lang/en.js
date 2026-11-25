@@ -1235,6 +1235,11 @@ TourI18n.register("en", {
       "text": "It is equipped for tea ceremonies and ikebana, and is used as a place for students to connect.",
       "status": "provisional"
     },
+    "facilities.washitsu.overview.2": {
+      "ja": "ふだんは予約なしで使えて、課題をするなど、学生が自由に利用しています。土足厳禁なので、靴を脱いで上がりましょう。",
+      "text": "No reservation is needed, and students use it freely, for example to work on assignments. Outdoor shoes are not allowed, so please take your shoes off before stepping in.",
+      "status": "provisional"
+    },
     "facilities.washitsu.sections.0.title": {
       "ja": "基本情報",
       "text": "Basic information",
@@ -1256,9 +1261,9 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "facilities.washitsu.sections.0.rows.1.1": {
-      "ja": "アカデミックコモンズ",
-      "text": "Academic Commons",
-      "status": "official"
+      "ja": "アカデミックコモンズ1階",
+      "text": "Academic Commons, 1st floor",
+      "status": "provisional"
     },
     "facilities.washitsu.sections.0.rows.2.0": {
       "ja": "広さ",
@@ -1286,13 +1291,33 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "facilities.washitsu.sections.0.rows.4.1": {
-      "ja": "お茶会・生け花・学生の交流",
-      "text": "Tea ceremonies, ikebana, student exchange",
+      "ja": "課題・お茶会・生け花・学生の交流",
+      "text": "Assignments, tea ceremonies, ikebana, student exchange",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.5.0": {
+      "ja": "予約",
+      "text": "Reservation",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.5.1": {
+      "ja": "不要（自由に利用できます）",
+      "text": "Not needed (free to use)",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.6.0": {
+      "ja": "土足",
+      "text": "Shoes",
+      "status": "provisional"
+    },
+    "facilities.washitsu.sections.0.rows.6.1": {
+      "ja": "禁止（靴を脱いで利用）",
+      "text": "Not allowed (take your shoes off)",
       "status": "provisional"
     },
     "facilities.washitsu.sections.0.note": {
-      "ja": "広さや設備は、2014年に更新された学院史編纂室の「関学事典」の記述です。現在の利用方法は大学でご確認ください。",
-      "text": "The size and features are from the Kwansei Gakuin encyclopedia by the School History Office, last updated in 2014. Please check with the university for current use.",
+      "ja": "広さや設備は、2014年に更新された学院史編纂室の「関学事典」の記述です。利用のしかたは在学生への確認によるもので、変わる場合があります。",
+      "text": "The size and features are from the Kwansei Gakuin encyclopedia by the School History Office, last updated in 2014. How the room is used is based on what current students told us and may change.",
       "status": "provisional"
     },
     "facilities.washitsu.sections.1.title": {
