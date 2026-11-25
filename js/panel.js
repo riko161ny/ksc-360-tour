@@ -245,6 +245,17 @@
       box.appendChild(el('h3', 'info-heading', section.title));
     }
     if (section.highlight) { box.appendChild(el('p', 'info-highlight', section.highlight)); }
+    // timeline: [{ label, time, current }] shows a short time line (current = the highlighted slot).
+    if (section.timeline && section.timeline.length) {
+      var line = el('ol', 'info-timeline');
+      section.timeline.forEach(function(slot) {
+        var li = el('li', 'info-timeline-slot' + (slot.current ? ' current' : ''));
+        li.appendChild(el('span', 'info-timeline-label', slot.label || ''));
+        if (slot.time) { li.appendChild(el('span', 'info-timeline-time', slot.time)); }
+        line.appendChild(li);
+      });
+      box.appendChild(line);
+    }
     if (!ev && section.figure && section.figure.src) { box.appendChild(createFigure(section.figure)); }
     if (section.chips && section.chips.length) { box.appendChild(createChips(section.chips)); }
     if (section.text) { appendParagraphs(box, section.text); }

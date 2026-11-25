@@ -2605,9 +2605,179 @@ TourI18n.register("en", {
       "text": "Open campus",
       "status": "provisional"
     },
-    "facilities.room101OpenCampus.sections.0.text": {
-      "ja": "オープンキャンパスでは、学部紹介や入試説明会などの会場として利用されています。",
-      "text": "During open campus events, the room is used for school introductions and admissions briefings.",
+    "facilities.room101OpenCampus.lead": {
+      "ja": "現役大学生が伝える、関学の学びとキャンパスライフ",
+      "text": "Current students share what learning and campus life at Kwansei Gakuin are like",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.overview.0": {
+      "ja": "神戸三田キャンパスでは、高校生や保護者を対象に、大学での学びや学生生活を紹介するオープンキャンパスが開催されています。",
+      "text": "Kobe-Sanda Campus holds open campus events where high school students and parents can learn about studying and student life at university.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.overview.1": {
+      "ja": "Ⅵ号館101教室も、学生による学部紹介などの会場として使用されてきました。",
+      "text": "Room 101 of Building VI has also been used for student-led introductions to the schools.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.title": {
+      "ja": "現役学生が語る！14学部のここスゴ！",
+      "text": "Current students talk: the best things about our 14 schools!",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.event.kicker": {
+      "ja": "101教室で開催",
+      "text": "Held in Room 101",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.figure.caption": {
+      "ja": "2022年のオープンキャンパスで、理系4学部の学生が101教室に登壇",
+      "text": "Students from the four science schools on stage in Room 101 at the 2022 open campus",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.text.0": {
+      "ja": "2022年8月11日のオープンキャンパスでは、Ⅵ号館101教室で「現役学生が語る！14学部のここスゴ！」という企画が実施されました。",
+      "text": "At the open campus on August 11, 2022, Room 101 of Building VI hosted \"Current students talk: the best things about our 14 schools!\"",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.text.1": {
+      "ja": "この会場では、理学部・工学部・生命環境学部・建築学部の代表学生がステージに登壇し、それぞれの学部の魅力や実際の大学での学びについて、高校生に紹介しました。",
+      "text": "Here, student representatives from the Schools of Science, Engineering, Biological and Environmental Sciences, and Architecture took the stage and told high school students what makes their schools special and what studying at university is really like.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.0.0": {
+      "ja": "開催日",
+      "text": "Date",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.0.1": {
+      "ja": "2022年8月11日",
+      "text": "August 11, 2022",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.1.0": {
+      "ja": "会場",
+      "text": "Venue",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.1.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Building VI, Room 101",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.2.0": {
+      "ja": "企画",
+      "text": "Program",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.2.1": {
+      "ja": "現役学生が語る！14学部のここスゴ！",
+      "text": "Current students talk: the best things about our 14 schools!",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.3.0": {
+      "ja": "登壇",
+      "text": "Speakers",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.3.1": {
+      "ja": "理系4学部の代表学生",
+      "text": "Student representatives of the four science schools",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.buttons.0.label": {
+      "ja": "2022年のオープンキャンパスを見る",
+      "text": "See the 2022 open campus",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.title": {
+      "ja": "KSCのオープンキャンパスを体験",
+      "text": "What you can do at KSC open campus",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.text": {
+      "ja": "神戸三田キャンパスのオープンキャンパスでは、学部紹介や模擬講義、研究室・実験施設の見学、キャンパスツアーなど、大学での学びや学生生活について知るためのさまざまな企画が実施されています。",
+      "text": "Open campus at Kobe-Sanda Campus offers many ways to learn about studying and student life, such as school introductions, sample lectures, lab and facility visits, and campus tours.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.0.name": {
+      "ja": "学部紹介・模擬講義",
+      "text": "School introductions and sample lectures",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.0.text": {
+      "ja": "各学部の紹介や模擬講義を通じて、学部で学ぶ内容を知ることができます。",
+      "text": "Introductions to each school and sample lectures show you what you would study there.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.1.name": {
+      "ja": "研究室・実験施設の見学",
+      "text": "Lab and facility visits",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.1.text": {
+      "ja": "普段は見る機会の少ない大学の研究室や実験施設を見学できる企画が行われています。",
+      "text": "Programs let you visit university labs and experiment facilities you rarely get to see.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.2.name": {
+      "ja": "キャンパスツアー",
+      "text": "Campus tours",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.2.text": {
+      "ja": "実際のキャンパスを歩きながら、大学の施設や学習環境を見学できます。",
+      "text": "Walk around the campus and see the facilities and learning spaces for yourself.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.3.name": {
+      "ja": "学生による企画",
+      "text": "Student-run programs",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.3.text": {
+      "ja": "現役学生による学部紹介や学生生活についての企画を通じて、大学生活の様子を知ることができます。",
+      "text": "Programs run by current students, such as school introductions and talks about student life, show you what university life is like.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.note": {
+      "ja": "これまでにKSC全体のオープンキャンパスで実施されてきた企画です。すべてが101教室で開催されるわけではありません。",
+      "text": "These are programs that have been held across KSC open campus events. Not all of them take place in Room 101.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.title": {
+      "ja": "神戸三田キャンパスのオープンキャンパス",
+      "text": "Open campus at Kobe-Sanda Campus",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.event.subtitle": {
+      "ja": "KSC全体の開催実績",
+      "text": "Campus-wide event",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.text.0": {
+      "ja": "2026年8月8日、神戸三田キャンパスで夏のオープンキャンパスが開催され、大学公式発表によると延べ5,300名を超える高校生や保護者が来場しました。",
+      "text": "On August 8, 2026, Kobe-Sanda Campus held its summer open campus. According to the university, more than 5,300 visits were made by high school students and parents.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.text.1": {
+      "ja": "大学入試に関する情報提供やキャンパスツアーのほか、建築学部では学部紹介や研究紹介、個別相談、デザインスタジオの開放などが行われました。",
+      "text": "Besides admissions information and campus tours, the School of Architecture offered a school introduction, research presentations, one-on-one consultations and an open design studio.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.note": {
+      "ja": "キャンパス全体の情報です。来場者数や企画は101教室でのものではありません。",
+      "text": "This is information for the whole campus. The visitor numbers and programs are not for Room 101.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.buttons.0.label": {
+      "ja": "2026年のオープンキャンパスを見る",
+      "text": "See the 2026 open campus",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.source": {
+      "ja": "関西学院大学 神戸三田キャンパス ニュース（2022年8月12日）、関西学院大学 建築学部 ニュース（2026年8月10日）",
+      "text": "Kwansei Gakuin University Kobe-Sanda Campus news (August 12, 2022), School of Architecture news (August 10, 2026)",
       "status": "provisional"
     },
     "facilities.room101Chapel.name": {
@@ -2620,9 +2790,244 @@ TourI18n.register("en", {
       "text": "What is Chapel Hour?",
       "status": "provisional"
     },
-    "facilities.room101Chapel.sections.0.text": {
-      "ja": "関西学院大学では、キリスト教主義教育の一環として、チャペルアワーが設けられています。",
-      "text": "As part of its Christian education, Kwansei Gakuin University holds Chapel Hour.",
+    "facilities.room101Chapel.lead": {
+      "ja": "授業の合間に、自分自身や社会について考える時間",
+      "text": "A break between classes to think about yourself and society",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.overview.0": {
+      "ja": "関西学院大学では、キリスト教主義教育の一環として、1限と2限の間に「チャペルアワー」という時間が設けられています。",
+      "text": "As part of its Christian education, Kwansei Gakuin University sets aside a time called Chapel Hour between periods 1 and 2.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.overview.1": {
+      "ja": "チャペルアワーは、大学が授業と並ぶ重要な教育プログラムとして位置づけているものです。聖書の言葉や祈り、講話、音楽などに触れる時間です。",
+      "text": "The university treats Chapel Hour as an educational program as important as classes. It is a time for Bible readings, prayer, talks and music.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.title": {
+      "ja": "いつ行われる？",
+      "text": "When is it?",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.highlight": {
+      "ja": "1限と2限の間の30分間",
+      "text": "30 minutes between periods 1 and 2",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.timeline.0.label": {
+      "ja": "1限",
+      "text": "Period 1",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.timeline.1.label": {
+      "ja": "チャペルアワー",
+      "text": "Chapel hour",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.timeline.2.label": {
+      "ja": "2限",
+      "text": "Period 2",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.text.0": {
+      "ja": "通常の授業期間中、1限と2限の間にチャペルアワーの時間帯が設けられています。2026年度の時間は10:30〜11:00（全キャンパス共通）です。",
+      "text": "During regular term, Chapel Hour is set between periods 1 and 2. In the 2026 academic year it runs from 10:30 to 11:00 on all campuses.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.text.1": {
+      "ja": "各学部でさまざまなプログラムが行われていて、詳しい日程は大学が発行する「チャペル週報」で確認できます。",
+      "text": "Each school runs a variety of programs. You can find the detailed schedule in the Chapel Weekly published by the university.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.0.0": {
+      "ja": "時間",
+      "text": "Time",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.1.0": {
+      "ja": "実施時期",
+      "text": "When",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.1.1": {
+      "ja": "授業実施期間の平日",
+      "text": "Weekdays during term",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.2.0": {
+      "ja": "場所",
+      "text": "Location",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.2.1": {
+      "ja": "各学部のチャペル",
+      "text": "Each school's chapel",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.3.0": {
+      "ja": "内容",
+      "text": "Program",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.3.1": {
+      "ja": "学部や開催日によって異なる",
+      "text": "Varies by school and day",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.title": {
+      "ja": "チャペルアワーの内容",
+      "text": "What happens at Chapel Hour",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.text": {
+      "ja": "聖書の朗読や祈り、教職員・学生・ゲストによる講話などが行われます。聖歌隊やハンドベルクワイアなど、学生音楽団体の演奏が取り入れられることもあります。",
+      "text": "There are Bible readings, prayers and talks by faculty, staff, students and guests. Student music groups such as the choir and handbell choir sometimes perform.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.0.name": {
+      "ja": "聖書・祈り",
+      "text": "Bible and prayer",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.0.text": {
+      "ja": "聖書の言葉に耳を傾け、祈りとともに静かな時間を過ごします。",
+      "text": "Listen to words from the Bible and spend a quiet moment in prayer.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.1.name": {
+      "ja": "講話・メッセージ",
+      "text": "Talks and messages",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.1.text": {
+      "ja": "教職員や学生、ゲストによる話を聞きます。",
+      "text": "Listen to talks by faculty, staff, students and guests.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.2.name": {
+      "ja": "音楽チャペル",
+      "text": "Music chapel",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.2.text": {
+      "ja": "聖歌隊、ハンドベルクワイア、バロックアンサンブルの演奏に触れられます。",
+      "text": "Hear performances by the choir, handbell choir and baroque ensemble.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.3.text": {
+      "ja": "宣教師による英語のチャペルも、大学公式サイトで紹介されています。",
+      "text": "The university's website also introduces chapel in English led by missionaries.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.note": {
+      "ja": "大学が紹介しているプログラムの例です。毎回すべてが行われるわけではありません。",
+      "text": "These are examples of programs introduced by the university. Not all of them happen every time.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.2.title": {
+      "ja": "101教室では、大学合同チャペルも開催",
+      "text": "Room 101 also hosts the joint university chapel",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.2.text.0": {
+      "ja": "Ⅵ号館101教室は、複数学部の学生が集まる「大学合同チャペル」の神戸三田キャンパスの会場です。",
+      "text": "Room 101 of Building VI is the Kobe-Sanda Campus venue for the joint university chapel, where students from several schools gather.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.2.text.1": {
+      "ja": "大学合同チャペルは、通常の30分間のチャペルアワーとは違い、約50分間の特別なプログラムです。春・秋の大学キリスト教週間や、クリスマスを待ち望むアドベントチャペルアワーなどが行われます。",
+      "text": "Unlike the usual 30-minute chapel hour, the joint university chapel is a special program of about 50 minutes. It includes University Christian Week in spring and fall, and the Advent chapel hour leading up to Christmas.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.2.note": {
+      "ja": "ふだんの各学部のチャペルアワーが、すべて101教室で行われるわけではありません。",
+      "text": "The regular chapel hours of each school are not all held in Room 101.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.title": {
+      "ja": "2026年度の大学合同チャペル",
+      "text": "Joint university chapels in the 2026 academic year",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.0.name": {
+      "ja": "大学キリスト教週間（春学期）",
+      "text": "University Christian Week (spring semester)",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.0.chips.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Building VI, Room 101",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.0.text": {
+      "ja": "2026年5月19日（火）・20日（水）",
+      "text": "May 19 (Tue) and 20 (Wed), 2026",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.1.name": {
+      "ja": "大学キリスト教週間（秋学期）",
+      "text": "University Christian Week (fall semester)",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.1.chips.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Building VI, Room 101",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.1.text": {
+      "ja": "2026年10月15日（木）・16日（金）",
+      "text": "October 15 (Thu) and 16 (Fri), 2026",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.2.name": {
+      "ja": "アドベントチャペルアワー",
+      "text": "Advent chapel hour",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.2.chips.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Building VI, Room 101",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.2.text": {
+      "ja": "2026年12月7日（開催予定）。聖歌隊や音楽団体による演奏と、クリスマスの賛美歌が取り入れられると紹介されています。",
+      "text": "December 7, 2026 (scheduled). The university says it includes performances by the choir and music groups, and traditional Christmas hymns.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.note.0": {
+      "ja": "大学公式サイトに掲載された2026年度の日程です。時間・会場は神戸三田キャンパスのものです。",
+      "text": "These are the 2026 dates listed on the university's official website. The times and venue are for Kobe-Sanda Campus.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.note.1": {
+      "ja": "翌年度以降の日程や会場は変わる場合があります。",
+      "text": "Dates and venues may change in later years.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.4.title": {
+      "ja": "公式情報",
+      "text": "Official information",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.4.text": {
+      "ja": "「チャペル週報」は授業期間中に毎週発行されていて、大学各学部のチャペルアワーのスケジュールなどを確認できます。",
+      "text": "The Chapel Weekly is published every week during term, and lists the chapel hour schedule for each school, among other things.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.4.buttons.0.label": {
+      "ja": "チャペルアワーについて詳しく見る",
+      "text": "Learn more about Chapel Hour",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.4.buttons.1.label": {
+      "ja": "チャペル週報を見る",
+      "text": "See the Chapel Weekly",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.source": {
+      "ja": "関西学院大学 公式サイト「チャペルアワー」「チャペル週報」（2026年11月確認）",
+      "text": "Kwansei Gakuin University official website, \"Chapel Hour\" and \"Chapel Weekly\" (checked November 2026)",
       "status": "provisional"
     },
     "facilities.building6.name": {

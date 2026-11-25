@@ -2605,9 +2605,179 @@ TourI18n.register("ko", {
       "text": "오픈 캠퍼스",
       "status": "provisional"
     },
-    "facilities.room101OpenCampus.sections.0.text": {
-      "ja": "オープンキャンパスでは、学部紹介や入試説明会などの会場として利用されています。",
-      "text": "오픈 캠퍼스 때에는 학부 소개와 입시 설명회 등의 장소로 이용됩니다.",
+    "facilities.room101OpenCampus.lead": {
+      "ja": "現役大学生が伝える、関学の学びとキャンパスライフ",
+      "text": "재학생이 전하는 관서학원의 배움과 캠퍼스 라이프",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.overview.0": {
+      "ja": "神戸三田キャンパスでは、高校生や保護者を対象に、大学での学びや学生生活を紹介するオープンキャンパスが開催されています。",
+      "text": "고베산다 캠퍼스에서는 고등학생과 보호자를 대상으로 대학에서의 배움과 학생 생활을 소개하는 오픈 캠퍼스가 열립니다.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.overview.1": {
+      "ja": "Ⅵ号館101教室も、学生による学部紹介などの会場として使用されてきました。",
+      "text": "Ⅵ호관 101 교실도 학생들의 학부 소개 등의 장소로 사용되어 왔습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.title": {
+      "ja": "現役学生が語る！14学部のここスゴ！",
+      "text": "재학생이 말한다! 14개 학부의 여기가 대단해!",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.event.kicker": {
+      "ja": "101教室で開催",
+      "text": "101 교실에서 개최",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.figure.caption": {
+      "ja": "2022年のオープンキャンパスで、理系4学部の学生が101教室に登壇",
+      "text": "2022년 오픈 캠퍼스에서 이공계 4개 학부 학생들이 101 교실 무대에 올랐습니다",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.text.0": {
+      "ja": "2022年8月11日のオープンキャンパスでは、Ⅵ号館101教室で「現役学生が語る！14学部のここスゴ！」という企画が実施されました。",
+      "text": "2022년 8월 11일 오픈 캠퍼스에서는 Ⅵ호관 101 교실에서 '재학생이 말한다! 14개 학부의 여기가 대단해!'라는 기획이 열렸습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.text.1": {
+      "ja": "この会場では、理学部・工学部・生命環境学部・建築学部の代表学生がステージに登壇し、それぞれの学部の魅力や実際の大学での学びについて、高校生に紹介しました。",
+      "text": "이 장소에서는 이학부·공학부·생명환경학부·건축학부 대표 학생들이 무대에 올라 각 학부의 매력과 실제 대학에서의 배움을 고등학생들에게 소개했습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.0.0": {
+      "ja": "開催日",
+      "text": "개최일",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.0.1": {
+      "ja": "2022年8月11日",
+      "text": "2022년 8월 11일",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.1.0": {
+      "ja": "会場",
+      "text": "장소",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.1.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Ⅵ호관 101 교실",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.2.0": {
+      "ja": "企画",
+      "text": "기획",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.2.1": {
+      "ja": "現役学生が語る！14学部のここスゴ！",
+      "text": "재학생이 말한다! 14개 학부의 여기가 대단해!",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.3.0": {
+      "ja": "登壇",
+      "text": "등단",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.3.1": {
+      "ja": "理系4学部の代表学生",
+      "text": "이공계 4개 학부 대표 학생",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.buttons.0.label": {
+      "ja": "2022年のオープンキャンパスを見る",
+      "text": "2022년 오픈 캠퍼스 보기",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.title": {
+      "ja": "KSCのオープンキャンパスを体験",
+      "text": "KSC 오픈 캠퍼스 체험",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.text": {
+      "ja": "神戸三田キャンパスのオープンキャンパスでは、学部紹介や模擬講義、研究室・実験施設の見学、キャンパスツアーなど、大学での学びや学生生活について知るためのさまざまな企画が実施されています。",
+      "text": "고베산다 캠퍼스 오픈 캠퍼스에서는 학부 소개와 모의 강의, 연구실·실험 시설 견학, 캠퍼스 투어 등 대학에서의 배움과 학생 생활을 알 수 있는 다양한 기획이 진행됩니다.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.0.name": {
+      "ja": "学部紹介・模擬講義",
+      "text": "학부 소개·모의 강의",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.0.text": {
+      "ja": "各学部の紹介や模擬講義を通じて、学部で学ぶ内容を知ることができます。",
+      "text": "각 학부 소개와 모의 강의를 통해 학부에서 배우는 내용을 알 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.1.name": {
+      "ja": "研究室・実験施設の見学",
+      "text": "연구실·실험 시설 견학",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.1.text": {
+      "ja": "普段は見る機会の少ない大学の研究室や実験施設を見学できる企画が行われています。",
+      "text": "평소에는 보기 어려운 대학 연구실과 실험 시설을 견학할 수 있는 기획이 진행됩니다.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.2.name": {
+      "ja": "キャンパスツアー",
+      "text": "캠퍼스 투어",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.2.text": {
+      "ja": "実際のキャンパスを歩きながら、大学の施設や学習環境を見学できます。",
+      "text": "실제 캠퍼스를 걸으며 대학 시설과 학습 환경을 견학할 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.3.name": {
+      "ja": "学生による企画",
+      "text": "학생 기획",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.3.text": {
+      "ja": "現役学生による学部紹介や学生生活についての企画を通じて、大学生活の様子を知ることができます。",
+      "text": "재학생의 학부 소개와 학생 생활에 관한 기획을 통해 대학 생활의 모습을 알 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.note": {
+      "ja": "これまでにKSC全体のオープンキャンパスで実施されてきた企画です。すべてが101教室で開催されるわけではありません。",
+      "text": "지금까지 KSC 전체 오픈 캠퍼스에서 진행되어 온 기획입니다. 모두 101 교실에서 열리는 것은 아닙니다.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.title": {
+      "ja": "神戸三田キャンパスのオープンキャンパス",
+      "text": "고베산다 캠퍼스 오픈 캠퍼스",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.event.subtitle": {
+      "ja": "KSC全体の開催実績",
+      "text": "KSC 전체 개최 실적",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.text.0": {
+      "ja": "2026年8月8日、神戸三田キャンパスで夏のオープンキャンパスが開催され、大学公式発表によると延べ5,300名を超える高校生や保護者が来場しました。",
+      "text": "2026년 8월 8일 고베산다 캠퍼스에서 여름 오픈 캠퍼스가 열렸으며, 대학 공식 발표에 따르면 고등학생과 보호자 등 연인원 5,300명 이상이 방문했습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.text.1": {
+      "ja": "大学入試に関する情報提供やキャンパスツアーのほか、建築学部では学部紹介や研究紹介、個別相談、デザインスタジオの開放などが行われました。",
+      "text": "대학 입시 관련 정보 제공과 캠퍼스 투어 외에도, 건축학부에서는 학부 소개와 연구 소개, 개별 상담, 디자인 스튜디오 개방 등이 진행되었습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.note": {
+      "ja": "キャンパス全体の情報です。来場者数や企画は101教室でのものではありません。",
+      "text": "캠퍼스 전체 정보입니다. 방문자 수와 기획은 101 교실의 것이 아닙니다.",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.buttons.0.label": {
+      "ja": "2026年のオープンキャンパスを見る",
+      "text": "2026년 오픈 캠퍼스 보기",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.source": {
+      "ja": "関西学院大学 神戸三田キャンパス ニュース（2022年8月12日）、関西学院大学 建築学部 ニュース（2026年8月10日）",
+      "text": "관서학원대학 고베산다 캠퍼스 뉴스(2022년 8월 12일), 관서학원대학 건축학부 뉴스(2026년 8월 10일)",
       "status": "provisional"
     },
     "facilities.room101Chapel.name": {
@@ -2620,9 +2790,244 @@ TourI18n.register("ko", {
       "text": "채플 아워란?",
       "status": "provisional"
     },
-    "facilities.room101Chapel.sections.0.text": {
-      "ja": "関西学院大学では、キリスト教主義教育の一環として、チャペルアワーが設けられています。",
-      "text": "관서학원대학에서는 기독교주의 교육의 일환으로 채플 아워를 운영하고 있습니다.",
+    "facilities.room101Chapel.lead": {
+      "ja": "授業の合間に、自分自身や社会について考える時間",
+      "text": "수업 사이에 나 자신과 사회에 대해 생각하는 시간",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.overview.0": {
+      "ja": "関西学院大学では、キリスト教主義教育の一環として、1限と2限の間に「チャペルアワー」という時間が設けられています。",
+      "text": "관서학원대학에서는 기독교주의 교육의 일환으로 1교시와 2교시 사이에 '채플 아워'라는 시간을 두고 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.overview.1": {
+      "ja": "チャペルアワーは、大学が授業と並ぶ重要な教育プログラムとして位置づけているものです。聖書の言葉や祈り、講話、音楽などに触れる時間です。",
+      "text": "채플 아워는 대학이 수업과 나란히 중요한 교육 프로그램으로 자리매김하고 있는 것입니다. 성경 말씀과 기도, 강화, 음악 등을 접하는 시간입니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.title": {
+      "ja": "いつ行われる？",
+      "text": "언제 열리나요?",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.highlight": {
+      "ja": "1限と2限の間の30分間",
+      "text": "1교시와 2교시 사이의 30분",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.timeline.0.label": {
+      "ja": "1限",
+      "text": "1교시",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.timeline.1.label": {
+      "ja": "チャペルアワー",
+      "text": "채플 아워",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.timeline.2.label": {
+      "ja": "2限",
+      "text": "2교시",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.text.0": {
+      "ja": "通常の授業期間中、1限と2限の間にチャペルアワーの時間帯が設けられています。2026年度の時間は10:30〜11:00（全キャンパス共通）です。",
+      "text": "평소 수업 기간에는 1교시와 2교시 사이에 채플 아워 시간대가 마련되어 있습니다. 2026년도 시간은 10:30~11:00(전 캠퍼스 공통)입니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.text.1": {
+      "ja": "各学部でさまざまなプログラムが行われていて、詳しい日程は大学が発行する「チャペル週報」で確認できます。",
+      "text": "각 학부에서 다양한 프로그램이 진행되며, 자세한 일정은 대학이 발행하는 '채플 주보'에서 확인할 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.0.0": {
+      "ja": "時間",
+      "text": "시간",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.1.0": {
+      "ja": "実施時期",
+      "text": "실시 시기",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.1.1": {
+      "ja": "授業実施期間の平日",
+      "text": "수업 기간의 평일",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.2.0": {
+      "ja": "場所",
+      "text": "장소",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.2.1": {
+      "ja": "各学部のチャペル",
+      "text": "각 학부의 채플",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.3.0": {
+      "ja": "内容",
+      "text": "내용",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.3.1": {
+      "ja": "学部や開催日によって異なる",
+      "text": "학부와 개최일에 따라 다름",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.title": {
+      "ja": "チャペルアワーの内容",
+      "text": "채플 아워의 내용",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.text": {
+      "ja": "聖書の朗読や祈り、教職員・学生・ゲストによる講話などが行われます。聖歌隊やハンドベルクワイアなど、学生音楽団体の演奏が取り入れられることもあります。",
+      "text": "성경 낭독과 기도, 교직원·학생·게스트의 강화 등이 진행됩니다. 성가대와 핸드벨 콰이어 등 학생 음악 단체의 연주가 함께할 때도 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.0.name": {
+      "ja": "聖書・祈り",
+      "text": "성경·기도",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.0.text": {
+      "ja": "聖書の言葉に耳を傾け、祈りとともに静かな時間を過ごします。",
+      "text": "성경 말씀에 귀 기울이고 기도와 함께 조용한 시간을 보냅니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.1.name": {
+      "ja": "講話・メッセージ",
+      "text": "강화·메시지",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.1.text": {
+      "ja": "教職員や学生、ゲストによる話を聞きます。",
+      "text": "교직원과 학생, 게스트의 이야기를 듣습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.2.name": {
+      "ja": "音楽チャペル",
+      "text": "음악 채플",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.2.text": {
+      "ja": "聖歌隊、ハンドベルクワイア、バロックアンサンブルの演奏に触れられます。",
+      "text": "성가대, 핸드벨 콰이어, 바로크 앙상블의 연주를 접할 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.3.text": {
+      "ja": "宣教師による英語のチャペルも、大学公式サイトで紹介されています。",
+      "text": "선교사가 진행하는 영어 채플도 대학 공식 사이트에 소개되어 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.note": {
+      "ja": "大学が紹介しているプログラムの例です。毎回すべてが行われるわけではありません。",
+      "text": "대학이 소개하는 프로그램의 예입니다. 매번 모두 진행되는 것은 아닙니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.2.title": {
+      "ja": "101教室では、大学合同チャペルも開催",
+      "text": "101 교실에서는 대학 합동 채플도 열려요",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.2.text.0": {
+      "ja": "Ⅵ号館101教室は、複数学部の学生が集まる「大学合同チャペル」の神戸三田キャンパスの会場です。",
+      "text": "Ⅵ호관 101 교실은 여러 학부 학생이 모이는 '대학 합동 채플'의 고베산다 캠퍼스 장소입니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.2.text.1": {
+      "ja": "大学合同チャペルは、通常の30分間のチャペルアワーとは違い、約50分間の特別なプログラムです。春・秋の大学キリスト教週間や、クリスマスを待ち望むアドベントチャペルアワーなどが行われます。",
+      "text": "대학 합동 채플은 평소 30분간의 채플 아워와 달리 약 50분간 진행되는 특별 프로그램입니다. 봄·가을의 대학 기독교 주간과 크리스마스를 기다리는 대림절 채플 아워 등이 열립니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.2.note": {
+      "ja": "ふだんの各学部のチャペルアワーが、すべて101教室で行われるわけではありません。",
+      "text": "평소 각 학부의 채플 아워가 모두 101 교실에서 열리는 것은 아닙니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.title": {
+      "ja": "2026年度の大学合同チャペル",
+      "text": "2026년도 대학 합동 채플",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.0.name": {
+      "ja": "大学キリスト教週間（春学期）",
+      "text": "대학 기독교 주간(봄 학기)",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.0.chips.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Ⅵ호관 101 교실",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.0.text": {
+      "ja": "2026年5月19日（火）・20日（水）",
+      "text": "2026년 5월 19일(화)·20일(수)",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.1.name": {
+      "ja": "大学キリスト教週間（秋学期）",
+      "text": "대학 기독교 주간(가을 학기)",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.1.chips.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Ⅵ호관 101 교실",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.1.text": {
+      "ja": "2026年10月15日（木）・16日（金）",
+      "text": "2026년 10월 15일(목)·16일(금)",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.2.name": {
+      "ja": "アドベントチャペルアワー",
+      "text": "대림절 채플 아워",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.2.chips.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Ⅵ호관 101 교실",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.2.text": {
+      "ja": "2026年12月7日（開催予定）。聖歌隊や音楽団体による演奏と、クリスマスの賛美歌が取り入れられると紹介されています。",
+      "text": "2026년 12월 7일(개최 예정). 성가대와 음악 단체의 연주, 크리스마스 찬송가가 함께한다고 소개되어 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.note.0": {
+      "ja": "大学公式サイトに掲載された2026年度の日程です。時間・会場は神戸三田キャンパスのものです。",
+      "text": "대학 공식 사이트에 게재된 2026년도 일정입니다. 시간·장소는 고베산다 캠퍼스 기준입니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.note.1": {
+      "ja": "翌年度以降の日程や会場は変わる場合があります。",
+      "text": "다음 연도 이후의 일정과 장소는 바뀔 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.4.title": {
+      "ja": "公式情報",
+      "text": "공식 정보",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.4.text": {
+      "ja": "「チャペル週報」は授業期間中に毎週発行されていて、大学各学部のチャペルアワーのスケジュールなどを確認できます。",
+      "text": "'채플 주보'는 수업 기간 중 매주 발행되며, 대학 각 학부의 채플 아워 일정 등을 확인할 수 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.4.buttons.0.label": {
+      "ja": "チャペルアワーについて詳しく見る",
+      "text": "채플 아워 자세히 보기",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.4.buttons.1.label": {
+      "ja": "チャペル週報を見る",
+      "text": "채플 주보 보기",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.source": {
+      "ja": "関西学院大学 公式サイト「チャペルアワー」「チャペル週報」（2026年11月確認）",
+      "text": "관서학원대학 공식 사이트 '채플 아워' '채플 주보'(2026년 11월 확인)",
       "status": "provisional"
     },
     "facilities.building6.name": {

@@ -2605,9 +2605,179 @@ TourI18n.register("zh-CN", {
       "text": "开放校园日",
       "status": "provisional"
     },
-    "facilities.room101OpenCampus.sections.0.text": {
-      "ja": "オープンキャンパスでは、学部紹介や入試説明会などの会場として利用されています。",
-      "text": "开放校园日期间，这里用作学部介绍和入学考试说明会等的会场。",
+    "facilities.room101OpenCampus.lead": {
+      "ja": "現役大学生が伝える、関学の学びとキャンパスライフ",
+      "text": "在校大学生讲述的关学学习与校园生活",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.overview.0": {
+      "ja": "神戸三田キャンパスでは、高校生や保護者を対象に、大学での学びや学生生活を紹介するオープンキャンパスが開催されています。",
+      "text": "神户三田校区面向高中生和家长举办开放校园日，介绍大学的学习和学生生活。",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.overview.1": {
+      "ja": "Ⅵ号館101教室も、学生による学部紹介などの会場として使用されてきました。",
+      "text": "Ⅵ号馆101教室也曾用作学生介绍学部等活动的会场。",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.title": {
+      "ja": "現役学生が語る！14学部のここスゴ！",
+      "text": "在校生来讲！14个学部的厉害之处！",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.event.kicker": {
+      "ja": "101教室で開催",
+      "text": "在101教室举办",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.figure.caption": {
+      "ja": "2022年のオープンキャンパスで、理系4学部の学生が101教室に登壇",
+      "text": "2022年开放校园日上，理科4个学部的学生登上101教室的讲台",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.text.0": {
+      "ja": "2022年8月11日のオープンキャンパスでは、Ⅵ号館101教室で「現役学生が語る！14学部のここスゴ！」という企画が実施されました。",
+      "text": "在2022年8月11日的开放校园日上，Ⅵ号馆101教室举办了“在校生来讲！14个学部的厉害之处！”活动。",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.text.1": {
+      "ja": "この会場では、理学部・工学部・生命環境学部・建築学部の代表学生がステージに登壇し、それぞれの学部の魅力や実際の大学での学びについて、高校生に紹介しました。",
+      "text": "在这个会场，理学部、工学部、生命环境学部、建筑学部的学生代表登台，向高中生介绍了各学部的魅力和大学里的实际学习。",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.0.0": {
+      "ja": "開催日",
+      "text": "举办日期",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.0.1": {
+      "ja": "2022年8月11日",
+      "text": "2022年8月11日",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.1.0": {
+      "ja": "会場",
+      "text": "会场",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.1.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Ⅵ号馆101教室",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.2.0": {
+      "ja": "企画",
+      "text": "活动",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.2.1": {
+      "ja": "現役学生が語る！14学部のここスゴ！",
+      "text": "在校生来讲！14个学部的厉害之处！",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.3.0": {
+      "ja": "登壇",
+      "text": "登台",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.rows.3.1": {
+      "ja": "理系4学部の代表学生",
+      "text": "理科4个学部的学生代表",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.0.buttons.0.label": {
+      "ja": "2022年のオープンキャンパスを見る",
+      "text": "查看2022年开放校园日",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.title": {
+      "ja": "KSCのオープンキャンパスを体験",
+      "text": "体验KSC开放校园日",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.text": {
+      "ja": "神戸三田キャンパスのオープンキャンパスでは、学部紹介や模擬講義、研究室・実験施設の見学、キャンパスツアーなど、大学での学びや学生生活について知るためのさまざまな企画が実施されています。",
+      "text": "神户三田校区的开放校园日举办学部介绍、模拟讲课、参观研究室和实验设施、校园参观等各种活动，帮助了解大学的学习和学生生活。",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.0.name": {
+      "ja": "学部紹介・模擬講義",
+      "text": "学部介绍、模拟讲课",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.0.text": {
+      "ja": "各学部の紹介や模擬講義を通じて、学部で学ぶ内容を知ることができます。",
+      "text": "通过各学部的介绍和模拟讲课，可以了解学部的学习内容。",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.1.name": {
+      "ja": "研究室・実験施設の見学",
+      "text": "参观研究室和实验设施",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.1.text": {
+      "ja": "普段は見る機会の少ない大学の研究室や実験施設を見学できる企画が行われています。",
+      "text": "举办可以参观平时难得一见的大学研究室和实验设施的活动。",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.2.name": {
+      "ja": "キャンパスツアー",
+      "text": "校园参观",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.2.text": {
+      "ja": "実際のキャンパスを歩きながら、大学の施設や学習環境を見学できます。",
+      "text": "可以一边在校园里走走，一边参观大学的设施和学习环境。",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.3.name": {
+      "ja": "学生による企画",
+      "text": "学生策划的活动",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.items.3.text": {
+      "ja": "現役学生による学部紹介や学生生活についての企画を通じて、大学生活の様子を知ることができます。",
+      "text": "通过在校生的学部介绍和有关学生生活的活动，可以了解大学生活的样子。",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.1.note": {
+      "ja": "これまでにKSC全体のオープンキャンパスで実施されてきた企画です。すべてが101教室で開催されるわけではありません。",
+      "text": "以上是KSC全校区开放校园日举办过的活动，并非全部在101教室举行。",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.title": {
+      "ja": "神戸三田キャンパスのオープンキャンパス",
+      "text": "神户三田校区的开放校园日",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.event.subtitle": {
+      "ja": "KSC全体の開催実績",
+      "text": "KSC全校区的举办情况",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.text.0": {
+      "ja": "2026年8月8日、神戸三田キャンパスで夏のオープンキャンパスが開催され、大学公式発表によると延べ5,300名を超える高校生や保護者が来場しました。",
+      "text": "2026年8月8日，神户三田校区举办了夏季开放校园日。据大学官方发布，到访的高中生和家长累计超过5,300人次。",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.text.1": {
+      "ja": "大学入試に関する情報提供やキャンパスツアーのほか、建築学部では学部紹介や研究紹介、個別相談、デザインスタジオの開放などが行われました。",
+      "text": "除了提供大学入学考试信息和校园参观外，建筑学部还举办了学部介绍、研究介绍、个别咨询和设计工作室开放等活动。",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.note": {
+      "ja": "キャンパス全体の情報です。来場者数や企画は101教室でのものではありません。",
+      "text": "以上为整个校区的信息，到访人数和活动并非101教室的。",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.sections.2.buttons.0.label": {
+      "ja": "2026年のオープンキャンパスを見る",
+      "text": "查看2026年开放校园日",
+      "status": "provisional"
+    },
+    "facilities.room101OpenCampus.source": {
+      "ja": "関西学院大学 神戸三田キャンパス ニュース（2022年8月12日）、関西学院大学 建築学部 ニュース（2026年8月10日）",
+      "text": "关西学院大学神户三田校区新闻（2022年8月12日）、关西学院大学建筑学部新闻（2026年8月10日）",
       "status": "provisional"
     },
     "facilities.room101Chapel.name": {
@@ -2620,9 +2790,244 @@ TourI18n.register("zh-CN", {
       "text": "什么是礼拜时间（Chapel Hour）？",
       "status": "provisional"
     },
-    "facilities.room101Chapel.sections.0.text": {
-      "ja": "関西学院大学では、キリスト教主義教育の一環として、チャペルアワーが設けられています。",
-      "text": "作为基督教主义教育的一部分，关西学院大学设有礼拜时间（Chapel Hour）。",
+    "facilities.room101Chapel.lead": {
+      "ja": "授業の合間に、自分自身や社会について考える時間",
+      "text": "在课间思考自己与社会的时间",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.overview.0": {
+      "ja": "関西学院大学では、キリスト教主義教育の一環として、1限と2限の間に「チャペルアワー」という時間が設けられています。",
+      "text": "作为基督教主义教育的一部分，关西学院大学在第1节和第2节之间设有“礼拜时间”。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.overview.1": {
+      "ja": "チャペルアワーは、大学が授業と並ぶ重要な教育プログラムとして位置づけているものです。聖書の言葉や祈り、講話、音楽などに触れる時間です。",
+      "text": "大学将礼拜时间定位为与课程同等重要的教育项目。这是接触圣经话语、祈祷、讲话和音乐等的时间。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.title": {
+      "ja": "いつ行われる？",
+      "text": "什么时候举行？",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.highlight": {
+      "ja": "1限と2限の間の30分間",
+      "text": "第1节和第2节之间的30分钟",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.timeline.0.label": {
+      "ja": "1限",
+      "text": "第1节",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.timeline.1.label": {
+      "ja": "チャペルアワー",
+      "text": "礼拜时间",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.timeline.2.label": {
+      "ja": "2限",
+      "text": "第2节",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.text.0": {
+      "ja": "通常の授業期間中、1限と2限の間にチャペルアワーの時間帯が設けられています。2026年度の時間は10:30〜11:00（全キャンパス共通）です。",
+      "text": "平时上课期间，第1节和第2节之间设有礼拜时间。2026学年度的时间为10:30～11:00（所有校区相同）。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.text.1": {
+      "ja": "各学部でさまざまなプログラムが行われていて、詳しい日程は大学が発行する「チャペル週報」で確認できます。",
+      "text": "各学部会举办各种活动，详细日程可在大学发行的《礼拜周报》中查看。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.0.0": {
+      "ja": "時間",
+      "text": "时间",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.1.0": {
+      "ja": "実施時期",
+      "text": "实施时间",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.1.1": {
+      "ja": "授業実施期間の平日",
+      "text": "上课期间的工作日",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.2.0": {
+      "ja": "場所",
+      "text": "地点",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.2.1": {
+      "ja": "各学部のチャペル",
+      "text": "各学部的礼拜堂",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.3.0": {
+      "ja": "内容",
+      "text": "内容",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.0.rows.3.1": {
+      "ja": "学部や開催日によって異なる",
+      "text": "因学部和日期而异",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.title": {
+      "ja": "チャペルアワーの内容",
+      "text": "礼拜时间的内容",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.text": {
+      "ja": "聖書の朗読や祈り、教職員・学生・ゲストによる講話などが行われます。聖歌隊やハンドベルクワイアなど、学生音楽団体の演奏が取り入れられることもあります。",
+      "text": "会进行圣经朗读、祈祷以及教职员、学生、嘉宾的讲话等。有时也会有圣歌队、手铃合奏团等学生音乐团体的演奏。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.0.name": {
+      "ja": "聖書・祈り",
+      "text": "圣经、祈祷",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.0.text": {
+      "ja": "聖書の言葉に耳を傾け、祈りとともに静かな時間を過ごします。",
+      "text": "聆听圣经的话语，在祈祷中度过安静的时光。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.1.name": {
+      "ja": "講話・メッセージ",
+      "text": "讲话、信息",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.1.text": {
+      "ja": "教職員や学生、ゲストによる話を聞きます。",
+      "text": "聆听教职员、学生和嘉宾的讲话。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.2.name": {
+      "ja": "音楽チャペル",
+      "text": "音乐礼拜",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.2.text": {
+      "ja": "聖歌隊、ハンドベルクワイア、バロックアンサンブルの演奏に触れられます。",
+      "text": "可以欣赏圣歌队、手铃合奏团和巴洛克合奏团的演奏。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.items.3.text": {
+      "ja": "宣教師による英語のチャペルも、大学公式サイトで紹介されています。",
+      "text": "大学官方网站也介绍了由传教士主持的英语礼拜。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.1.note": {
+      "ja": "大学が紹介しているプログラムの例です。毎回すべてが行われるわけではありません。",
+      "text": "以上是大学介绍的活动示例，并非每次都会全部进行。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.2.title": {
+      "ja": "101教室では、大学合同チャペルも開催",
+      "text": "101教室也会举办大学联合礼拜",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.2.text.0": {
+      "ja": "Ⅵ号館101教室は、複数学部の学生が集まる「大学合同チャペル」の神戸三田キャンパスの会場です。",
+      "text": "Ⅵ号馆101教室是神户三田校区举办“大学联合礼拜”的会场，多个学部的学生会聚集在这里。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.2.text.1": {
+      "ja": "大学合同チャペルは、通常の30分間のチャペルアワーとは違い、約50分間の特別なプログラムです。春・秋の大学キリスト教週間や、クリスマスを待ち望むアドベントチャペルアワーなどが行われます。",
+      "text": "大学联合礼拜不同于平时30分钟的礼拜时间，是约50分钟的特别活动，包括春秋两季的大学基督教周和期待圣诞节的将临期礼拜时间等。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.2.note": {
+      "ja": "ふだんの各学部のチャペルアワーが、すべて101教室で行われるわけではありません。",
+      "text": "平时各学部的礼拜时间并非全部在101教室举行。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.title": {
+      "ja": "2026年度の大学合同チャペル",
+      "text": "2026学年度的大学联合礼拜",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.0.name": {
+      "ja": "大学キリスト教週間（春学期）",
+      "text": "大学基督教周（春季学期）",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.0.chips.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Ⅵ号馆101教室",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.0.text": {
+      "ja": "2026年5月19日（火）・20日（水）",
+      "text": "2026年5月19日（周二）、20日（周三）",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.1.name": {
+      "ja": "大学キリスト教週間（秋学期）",
+      "text": "大学基督教周（秋季学期）",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.1.chips.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Ⅵ号馆101教室",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.1.text": {
+      "ja": "2026年10月15日（木）・16日（金）",
+      "text": "2026年10月15日（周四）、16日（周五）",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.2.name": {
+      "ja": "アドベントチャペルアワー",
+      "text": "将临期礼拜时间",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.2.chips.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Ⅵ号馆101教室",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.items.2.text": {
+      "ja": "2026年12月7日（開催予定）。聖歌隊や音楽団体による演奏と、クリスマスの賛美歌が取り入れられると紹介されています。",
+      "text": "2026年12月7日（预定）。据介绍，届时会有圣歌队和音乐团体的演奏以及圣诞赞美诗。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.note.0": {
+      "ja": "大学公式サイトに掲載された2026年度の日程です。時間・会場は神戸三田キャンパスのものです。",
+      "text": "以上为大学官方网站刊登的2026学年度日程，时间和会场为神户三田校区的信息。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.3.note.1": {
+      "ja": "翌年度以降の日程や会場は変わる場合があります。",
+      "text": "下一学年度以后的日程和会场可能会有变化。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.4.title": {
+      "ja": "公式情報",
+      "text": "官方信息",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.4.text": {
+      "ja": "「チャペル週報」は授業期間中に毎週発行されていて、大学各学部のチャペルアワーのスケジュールなどを確認できます。",
+      "text": "《礼拜周报》在上课期间每周发行，可以查看各学部礼拜时间的安排等。",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.4.buttons.0.label": {
+      "ja": "チャペルアワーについて詳しく見る",
+      "text": "详细了解礼拜时间",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.sections.4.buttons.1.label": {
+      "ja": "チャペル週報を見る",
+      "text": "查看礼拜周报",
+      "status": "provisional"
+    },
+    "facilities.room101Chapel.source": {
+      "ja": "関西学院大学 公式サイト「チャペルアワー」「チャペル週報」（2026年11月確認）",
+      "text": "关西学院大学官方网站“礼拜时间”“礼拜周报”（2026年11月确认）",
       "status": "provisional"
     },
     "facilities.building6.name": {
