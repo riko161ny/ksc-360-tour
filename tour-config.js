@@ -156,7 +156,7 @@ window.TOUR_CONFIG = {
       info: [
         { yaw: -0.027, pitch: -0.116, facility: "building7" }
       ], facility: "building7" },
-    { id: "p24", name: "Ⅷ号館", map: { x: 0.3959, y: 0.3475 }, photo: null, view: null, northOffset: null, links: [], info: [], facility: "building8" },
+    { id: "p24", name: "Ⅷ号館", map: { x: 0.3959, y: 0.3475 }, photo: null, view: null, northOffset: null, links: [ { target: "p24-1", yaw: -0.595, pitch: -0.047 } ], info: [ { yaw: -0.005, pitch: -0.181, facility: "building8" } ], facility: "building8" },
     { id: "p25", name: "来場者用駐車場", map: { x: 0.4855, y: 0.3678 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p26", name: "陸上競技場", map: { x: 0.5316, y: 0.2944 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p27", name: "テニスコート", map: { x: 0.7464, y: 0.5076 }, photo: null, view: null, northOffset: null, links: [], info: [] },
