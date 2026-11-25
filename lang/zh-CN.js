@@ -1225,6 +1225,66 @@ TourI18n.register("zh-CN", {
       "text": "体育馆",
       "status": "provisional"
     },
+    "facilities.gym.overview.0": {
+      "ja": "神戸三田キャンパスの体育館は、体育の授業や体育会・サークル活動などに利用されている施設です。",
+      "text": "神户三田校区的体育馆用于体育课以及体育会、社团活动等。",
+      "status": "provisional"
+    },
+    "facilities.gym.overview.1": {
+      "ja": "スポーツ活動だけでなく、学生同士の交流イベントやオープンキャンパスなど、さまざまな行事にも活用されています。",
+      "text": "除体育活动外，还用于学生交流活动、开放校园日等各种活动。",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.title": {
+      "ja": "イベントでの利用",
+      "text": "活动中的使用",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.0.name": {
+      "ja": "オープンキャンパス",
+      "text": "开放校园日",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.0.text": {
+      "ja": "2022年8月11日のオープンキャンパスでは、体育館で応援団総部による課外活動紹介が行われました。応援歌「新月旗のもとに」を披露し、高校生にエールを送りました。",
+      "text": "在2022年8月11日的开放校园日上，应援团总部在体育馆介绍了课外活动，演唱了应援歌《新月旗之下》，为高中生加油。",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.1.name": {
+      "ja": "学生スポーツ大会",
+      "text": "学生运动会",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.1.text": {
+      "ja": "学部・学科の学生が主体となってスポーツ大会を企画・運営する取り組みも行われています。",
+      "text": "也有由各学部、学科的学生主导策划和运营运动会的活动。",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.2.name": {
+      "ja": "プロジェクションマッピング",
+      "text": "投影映射",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.2.text": {
+      "ja": "2026年には、学生団体「SHADECOR」が体育館を舞台にしたプロジェクションマッピングを実施しました。",
+      "text": "2026年，学生团体“SHADECOR”以体育馆为舞台进行了投影映射表演。",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.3.name": {
+      "ja": "大学祭「新月祭」",
+      "text": "大学文化节“新月祭”",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.3.text": {
+      "ja": "2026年の新月祭では、ドッジボール大会や縁日などの会場として体育館が公式プログラムに掲載されました。",
+      "text": "在2026年的新月祭上，体育馆作为躲避球大赛和庙会摊位等的会场被列入了官方节目单。",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.links.0.label": {
+      "ja": "新月祭2026 KSC一般企画（公式）",
+      "text": "新月祭2026 KSC一般企划（官方）",
+      "status": "provisional"
+    },
     "facilities.office8.name": {
       "ja": "事務室（Ⅷ号館）",
       "text": "办公室（Ⅷ号馆）",

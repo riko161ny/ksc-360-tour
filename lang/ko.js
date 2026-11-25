@@ -1225,6 +1225,66 @@ TourI18n.register("ko", {
       "text": "체육관",
       "status": "provisional"
     },
+    "facilities.gym.overview.0": {
+      "ja": "神戸三田キャンパスの体育館は、体育の授業や体育会・サークル活動などに利用されている施設です。",
+      "text": "고베산다 캠퍼스 체육관은 체육 수업과 체육회·동아리 활동 등에 이용되는 시설입니다.",
+      "status": "provisional"
+    },
+    "facilities.gym.overview.1": {
+      "ja": "スポーツ活動だけでなく、学生同士の交流イベントやオープンキャンパスなど、さまざまな行事にも活用されています。",
+      "text": "스포츠 활동뿐 아니라 학생 간 교류 행사와 오픈 캠퍼스 등 다양한 행사에도 활용됩니다.",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.title": {
+      "ja": "イベントでの利用",
+      "text": "행사에서의 이용",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.0.name": {
+      "ja": "オープンキャンパス",
+      "text": "오픈 캠퍼스",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.0.text": {
+      "ja": "2022年8月11日のオープンキャンパスでは、体育館で応援団総部による課外活動紹介が行われました。応援歌「新月旗のもとに」を披露し、高校生にエールを送りました。",
+      "text": "2022년 8월 11일 오픈 캠퍼스에서는 체육관에서 응원단 총부의 과외 활동 소개가 열렸습니다. 응원가 '신게쓰키노 모토니'를 선보이며 고등학생들에게 응원을 보냈습니다.",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.1.name": {
+      "ja": "学生スポーツ大会",
+      "text": "학생 스포츠 대회",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.1.text": {
+      "ja": "学部・学科の学生が主体となってスポーツ大会を企画・運営する取り組みも行われています。",
+      "text": "학부·학과 학생들이 주체가 되어 스포츠 대회를 기획·운영하는 활동도 이루어지고 있습니다.",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.2.name": {
+      "ja": "プロジェクションマッピング",
+      "text": "프로젝션 매핑",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.2.text": {
+      "ja": "2026年には、学生団体「SHADECOR」が体育館を舞台にしたプロジェクションマッピングを実施しました。",
+      "text": "2026년에는 학생 단체 'SHADECOR'가 체육관을 무대로 프로젝션 매핑을 선보였습니다.",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.3.name": {
+      "ja": "大学祭「新月祭」",
+      "text": "대학 축제 ‘신게쓰 축제(新月祭)’",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.3.text": {
+      "ja": "2026年の新月祭では、ドッジボール大会や縁日などの会場として体育館が公式プログラムに掲載されました。",
+      "text": "2026년 신게쓰 축제에서는 피구 대회와 축제 노점 등의 장소로 체육관이 공식 프로그램에 게재되었습니다.",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.links.0.label": {
+      "ja": "新月祭2026 KSC一般企画（公式）",
+      "text": "신게쓰 축제 2026 KSC 일반 기획(공식)",
+      "status": "provisional"
+    },
     "facilities.office8.name": {
       "ja": "事務室（Ⅷ号館）",
       "text": "사무실(Ⅷ호관)",

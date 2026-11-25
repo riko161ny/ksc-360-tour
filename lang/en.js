@@ -1225,6 +1225,66 @@ TourI18n.register("en", {
       "text": "Gymnasium",
       "status": "official"
     },
+    "facilities.gym.overview.0": {
+      "ja": "神戸三田キャンパスの体育館は、体育の授業や体育会・サークル活動などに利用されている施設です。",
+      "text": "The gym at Kobe-Sanda Campus is used for physical education classes and by athletic clubs and circles.",
+      "status": "provisional"
+    },
+    "facilities.gym.overview.1": {
+      "ja": "スポーツ活動だけでなく、学生同士の交流イベントやオープンキャンパスなど、さまざまな行事にも活用されています。",
+      "text": "Besides sports, it is also used for many events, such as student social events and open campus.",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.title": {
+      "ja": "イベントでの利用",
+      "text": "Events held here",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.0.name": {
+      "ja": "オープンキャンパス",
+      "text": "Open campus",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.0.text": {
+      "ja": "2022年8月11日のオープンキャンパスでは、体育館で応援団総部による課外活動紹介が行われました。応援歌「新月旗のもとに」を披露し、高校生にエールを送りました。",
+      "text": "At the open campus on August 11, 2022, the cheer squad introduced extracurricular activities in the gym, performing the cheer song \"Shingetsuki no Moto ni\" and cheering on the high school students.",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.1.name": {
+      "ja": "学生スポーツ大会",
+      "text": "Student sports tournaments",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.1.text": {
+      "ja": "学部・学科の学生が主体となってスポーツ大会を企画・運営する取り組みも行われています。",
+      "text": "Students in some schools and departments also plan and run their own sports tournaments.",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.2.name": {
+      "ja": "プロジェクションマッピング",
+      "text": "Projection mapping",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.2.text": {
+      "ja": "2026年には、学生団体「SHADECOR」が体育館を舞台にしたプロジェクションマッピングを実施しました。",
+      "text": "In 2026, the student group SHADECOR put on a projection mapping show in the gym.",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.3.name": {
+      "ja": "大学祭「新月祭」",
+      "text": "The Shingetsu Festival (university festival)",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.items.3.text": {
+      "ja": "2026年の新月祭では、ドッジボール大会や縁日などの会場として体育館が公式プログラムに掲載されました。",
+      "text": "For the 2026 Shingetsu Festival, the official program listed the gym as the venue for events such as a dodgeball tournament and festival stalls.",
+      "status": "provisional"
+    },
+    "facilities.gym.sections.0.links.0.label": {
+      "ja": "新月祭2026 KSC一般企画（公式）",
+      "text": "Shingetsu Festival 2026 KSC events (official)",
+      "status": "provisional"
+    },
     "facilities.office8.name": {
       "ja": "事務室（Ⅷ号館）",
       "text": "Office (Building VIII)",
