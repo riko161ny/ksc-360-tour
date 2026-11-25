@@ -2488,3 +2488,75 @@ body.mobile .cloud-photo {
   width: 96px;
   height: 64px;
 }
+
+/* 雲以外の形（shape: "moon" 光る月 / "cross" 十字架）。名前は形の下に表示 */
+.shape-moon .cloud-body,
+.shape-cross .cloud-body {
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  height: auto;
+  padding: 0;
+}
+
+.mark-shape {
+  display: block;
+  width: 84px;
+  height: 84px;
+  overflow: visible;
+}
+
+.shape-moon .cloud-body {
+  filter: drop-shadow(0 0 8px rgba(255, 226, 140, 0.85)) drop-shadow(0 0 18px rgba(255, 200, 90, 0.45));
+}
+
+.shape-moon .cloud-fill {
+  fill: rgba(255, 238, 170, 0.92);
+  stroke: rgba(255, 250, 225, 0.95);
+}
+
+.shape-cross .cloud-body {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.85)) drop-shadow(0 6px 10px rgba(20, 30, 50, 0.25));
+}
+
+.shape-cross .cloud-fill {
+  stroke-linejoin: round;
+}
+
+.shape-moon .cloud-text,
+.shape-cross .cloud-text {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 3px 10px rgba(20, 30, 50, 0.22);
+  font-size: 15px;
+}
+
+.shape-moon:hover .cloud-body,
+.hotspot:focus-visible .shape-moon .cloud-body,
+.shape-moon.is-tapped .cloud-body {
+  filter: drop-shadow(0 0 12px rgba(255, 236, 160, 1)) drop-shadow(0 0 30px rgba(255, 200, 90, 0.85));
+}
+
+.shape-moon:hover .cloud-fill,
+.hotspot:focus-visible .shape-moon .cloud-fill,
+.shape-moon.is-tapped .cloud-fill {
+  fill: rgba(255, 244, 196, 1);
+  stroke: #fffbe8;
+}
+
+.shape-cross:hover .cloud-body,
+.hotspot:focus-visible .shape-cross .cloud-body,
+.shape-cross.is-tapped .cloud-body {
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 1)) drop-shadow(0 0 28px rgba(255, 214, 150, 0.85));
+}
+
+body.mobile .mark-shape {
+  width: 66px;
+  height: 66px;
+}
+
+body.mobile .shape-moon .cloud-text,
+body.mobile .shape-cross .cloud-text {
+  font-size: 13px;
+}

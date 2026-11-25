@@ -880,7 +880,7 @@ window.TOUR_CONFIG = {
     },
     "room101OpenCampus": {
       name: "オープンキャンパス",
-      hotspot: { style: "cloud3d", text: "オープンキャンパス", photo: null },
+      hotspot: { style: "cloud3d", shape: "moon", text: "オープンキャンパス", photo: null },
       sections: [
         {
           figure: { src: "", caption: "", alt: "" },
@@ -890,7 +890,7 @@ window.TOUR_CONFIG = {
     },
     "room101Chapel": {
       name: "チャペルアワーって？",
-      hotspot: { style: "cloud3d", text: "チャペルアワーって？", photo: null },
+      hotspot: { style: "cloud3d", shape: "cross", text: "チャペルアワーって？", photo: null },
       sections: [
         {
           figure: { src: "", caption: "", alt: "" },

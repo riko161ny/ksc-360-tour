@@ -673,14 +673,27 @@
     'C96 14 122 6 144 18 C160 6 190 10 200 32 C222 30 240 50 234 72 ' +
     'C250 84 248 112 226 124 C220 128 212 129 204 128 Z';
 
+  var SHAPE_PATHS = {
+    moon: 'M51.9 10 A40 40 0 1 0 84.9 69.5 A34 34 0 1 1 51.9 10 Z',
+    cross: 'M42 6 H58 V28 H80 V44 H58 V94 H42 V44 H20 V28 H42 Z'
+  };
+
   function createCloudHotspot(wrapper, inner, facility, look) {
     inner.className = 'cloud-hotspot';
     var bob = document.createElement('div');
     bob.className = 'cloud-float';
     var body = document.createElement('div');
     body.className = 'cloud-body';
-    body.innerHTML = '<svg class="cloud-shape" viewBox="0 0 256 140" preserveAspectRatio="none" aria-hidden="true" focusable="false">' +
-      '<path class="cloud-fill" d="' + CLOUD_PATH + '"></path></svg>';
+    // shape: "cloud" (default), "moon" (glowing crescent) or "cross"; moon and cross show the title below the mark.
+    var markPath = SHAPE_PATHS[look.shape];
+    if (markPath) {
+      inner.classList.add('shape-' + look.shape);
+      body.innerHTML = '<svg class="mark-shape" viewBox="0 0 100 100" aria-hidden="true" focusable="false">' +
+        '<path class="cloud-fill" d="' + markPath + '"></path></svg>';
+    } else {
+      body.innerHTML = '<svg class="cloud-shape" viewBox="0 0 256 140" preserveAspectRatio="none" aria-hidden="true" focusable="false">' +
+        '<path class="cloud-fill" d="' + CLOUD_PATH + '"></path></svg>';
+    }
     var text = document.createElement('span');
     text.className = 'cloud-text';
     body.appendChild(text);
