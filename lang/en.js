@@ -625,6 +625,11 @@ TourI18n.register("en", {
       "text": "Powder Room (Building VIII)",
       "status": "provisional"
     },
+    "facilities.cafeteria.name": {
+      "ja": "食堂",
+      "text": "Cafeteria",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Building I",

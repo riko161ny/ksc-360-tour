@@ -95,7 +95,7 @@ window.TOUR_CONFIG = {
     { id: "p06", name: "Ⅲ号館", map: { x: 0.296, y: 0.6834 }, photo: null, view: { yaw: -0.39, pitch: 0, fov: 1.5708 }, northOffset: null,
       links: [ { target: "zemi", yaw: -0.11, pitch: 0.07 } ],
       info: [ { yaw: -0.39, pitch: 0, facility: "building3" } ] },
-    { id: "p07", name: "食堂", map: { x: 0.2649, y: 0.5984 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p07", name: "食堂", map: { x: 0.2649, y: 0.5984 }, photo: null, view: null, northOffset: null, links: [], info: [ { yaw: -0.207, pitch: 0.034, facility: "cafeteria" } ] },
     { id: "p08", name: "生協", map: { x: 0.2472, y: 0.5882 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p09", name: "食堂前テラス席", map: { x: 0.2496, y: 0.5441 }, photo: null, view: null, northOffset: null,
       links: [
@@ -350,6 +350,10 @@ window.TOUR_CONFIG = {
     // Ⅷ号館のパウダールームの情報マーク（中身は確認できた情報をあとで足します）
     "powderRoom": {
       name: "パウダールーム（Ⅷ号館）"
+    },
+    // 食堂の情報マーク（中身は確認できた情報をあとで足します）
+    "cafeteria": {
+      name: "食堂"
     },
     // ↓ 施設情報（riko さんがまとめた内容。overview は段落ごとの配列、sections は見出しごとのまとまり）
     "building1": {

@@ -625,6 +625,11 @@ TourI18n.register("ko", {
       "text": "파우더룸(Ⅷ호관)",
       "status": "provisional"
     },
+    "facilities.cafeteria.name": {
+      "ja": "食堂",
+      "text": "식당",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Ⅰ호관",

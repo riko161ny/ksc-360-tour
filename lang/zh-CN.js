@@ -625,6 +625,11 @@ TourI18n.register("zh-CN", {
       "text": "化妆间（Ⅷ号馆）",
       "status": "provisional"
     },
+    "facilities.cafeteria.name": {
+      "ja": "食堂",
+      "text": "食堂",
+      "status": "provisional"
+    },
     "facilities.building1.name": {
       "ja": "Ⅰ号館",
       "text": "Ⅰ号馆",
