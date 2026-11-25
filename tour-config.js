@@ -109,7 +109,7 @@ window.TOUR_CONFIG = {
       ] },
     { id: "p13", name: "体育館", map: { x: 0.3597, y: 0.5577 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p14", name: "バスロータリー", map: { x: 0.3758, y: 0.4356 }, photo: null, view: { yaw: -3.029, pitch: 0.044, fov: 1.5708 }, northOffset: null, links: [], info: [ { yaw: -3.029, pitch: 0.044, facility: "bus" } ], facility: "bus" },
-    { id: "p15", name: "ビズカフェ", map: { x: 0.3937, y: 0.4255 }, photo: null, view: { yaw: -1.41, pitch: 0, fov: 1.5708 }, northOffset: null, links: [ { target: "p15-1", yaw: 1.642, pitch: 0.107 } ], info: [ { yaw: -1.96, pitch: 0.129, facility: "bizcafe" } ] },
+    { id: "p15", name: "ビズカフェ", map: { x: 0.3937, y: 0.4255 }, photo: null, view: { yaw: -1.41, pitch: 0, fov: 1.5708 }, northOffset: null, links: [ { target: "p15-1", yaw: 1.642, pitch: 0.107 }, { target: "p17", yaw: -2.746, pitch: 0.104 } ], info: [ { yaw: -1.96, pitch: 0.129, facility: "bizcafe" } ] },
     { id: "p16", name: "コモンズ前", map: { x: 0.3865, y: 0.4848 }, photo: null, view: { yaw: 1.78, pitch: 0.075, fov: 1.5708 }, northOffset: null,
       links: [
         { target: "p17", yaw: 1.711, pitch: 0.121 }
