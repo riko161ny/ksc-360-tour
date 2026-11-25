@@ -77,7 +77,18 @@ TourI18n.register("ko", {
     "panel.watchVideo": "동영상 보기",
     "panel.relatedArticle": "관련 기사",
     "panel.prevPhoto": "이전 사진",
-    "panel.nextPhoto": "다음 사진"
+    "panel.nextPhoto": "다음 사진",
+    "faculty.related": "이 건물과 관련된 학부",
+    "faculty.backTo": "{name}(으)로 돌아가기",
+    "faculty.backToList": "학부 목록으로 돌아가기",
+    "faculty.departmentCount": "학과·과정 {n}개",
+    "faculty.fields": "배울 수 있는 분야",
+    "faculty.departments": "학과·과정",
+    "faculty.seeCourses": "학습 내용과 수업 예 보기",
+    "faculty.officialFaculty": "{name} 공식 사이트",
+    "faculty.officialDepartment": "{name} 공식 페이지",
+    "faculty.learn": "학습 내용",
+    "faculty.courses": "수업 예"
   },
   "content": {
     "title": {
@@ -274,31 +285,6 @@ TourI18n.register("ko", {
       "ja": "学部情報",
       "text": "학부 정보",
       "status": "provisional"
-    },
-    "footer.faculties.tabs.0.label": {
-      "ja": "総合政策学部",
-      "text": "종합정책학부",
-      "status": "official"
-    },
-    "footer.faculties.tabs.1.label": {
-      "ja": "理学部",
-      "text": "이학부",
-      "status": "official"
-    },
-    "footer.faculties.tabs.2.label": {
-      "ja": "工学部",
-      "text": "공학부",
-      "status": "official"
-    },
-    "footer.faculties.tabs.3.label": {
-      "ja": "生命環境学部",
-      "text": "생명환경학부",
-      "status": "official"
-    },
-    "footer.faculties.tabs.4.label": {
-      "ja": "建築学部",
-      "text": "건축학부",
-      "status": "official"
     },
     "footer.events.name": {
       "ja": "KSCイベント情報",
@@ -1203,6 +1189,776 @@ TourI18n.register("ko", {
     "studentLifeLead": {
       "ja": "神戸三田キャンパスで行われている活動の一部を紹介します。くわしくは各公式情報をご覧ください。",
       "text": "고베 산다 캠퍼스에서 이루어지는 활동의 일부를 소개합니다. 자세한 내용은 각 공식 정보를 확인해 주세요.",
+      "status": "provisional"
+    },
+    "facultyGuide.intro": {
+      "ja": "神戸三田キャンパスには5つの学部があります。学部を選ぶと、学部の紹介と学科・課程の一覧が表示されます。",
+      "text": "고베 산다 캠퍼스에는 5개 학부가 있습니다. 학부를 선택하면 학부 소개와 학과·과정 목록이 표시됩니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.source": {
+      "ja": "学部・学科の紹介と授業例は、大学公式サイトの各学部・学科のページをもとにまとめています（2026年11月確認）。授業の内容や開講年次は変わることがあります。",
+      "text": "학부·학과 소개와 수업 예는 대학 공식 사이트의 각 학부·학과 페이지를 바탕으로 정리했습니다(2026년 11월 확인). 수업 내용과 개설 학년은 바뀔 수 있습니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.buildingNote": {
+      "ja": "各号館のカードの説明をもとにした関連です。その学部の授業が主にこの建物で行われることを示すものではありません。",
+      "text": "각 호관 카드의 설명을 바탕으로 한 관련입니다. 그 학부의 수업이 주로 이 건물에서 이루어진다는 뜻은 아닙니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.name": {
+      "ja": "総合政策学部",
+      "text": "종합정책학부",
+      "status": "official"
+    },
+    "facultyGuide.faculties.policy.lead": {
+      "ja": "「自然と人間の共生、人間と人間の共生」を理念に、現代社会のさまざまな問題に対して、多様な学問の専門知識をもとに解決策を探り、実践できる力を育てる学部です。",
+      "text": "‘자연과 인간의 공생, 인간과 인간의 공생’을 이념으로, 현대 사회의 다양한 문제에 대해 여러 학문의 전문 지식을 바탕으로 해결책을 찾고 실천할 수 있는 힘을 기르는 학부입니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.fields": {
+      "ja": "法学・政治学・経済学・経営学・社会学・社会福祉学・工学・理学・言語などを組み合わせて学びます。1年次は学科に所属せず、2年次から4つの学科に分かれます。",
+      "text": "법학·정치학·경제학·경영학·사회학·사회복지학·공학·이학·언어 등을 조합하여 배웁니다. 1학년에는 학과에 소속되지 않고, 2학년부터 4개 학과로 나뉩니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.name": {
+      "ja": "総合政策学科",
+      "text": "종합정책학과",
+      "status": "official"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.text": {
+      "ja": "「共生の社会」の構築をめざし、「自然環境」「社会・経済・技術システム」「言語・文化・思想」の3つの領域から、目標に合わせて科目を選んで学びます。",
+      "text": "‘공생 사회’의 구축을 목표로 ‘자연환경’ ‘사회·경제·기술 시스템’ ‘언어·문화·사상’의 3개 영역에서 목표에 맞춰 과목을 골라 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.0.name": {
+      "ja": "公共選択論",
+      "text": "공공선택론",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.0.text": {
+      "ja": "経済と政治・行政の関わりや、政策が決まるしくみを公共選択論の考え方から理解します。",
+      "text": "경제와 정치·행정의 관계와 정책이 결정되는 구조를 공공선택론의 관점에서 이해합니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.1.name": {
+      "ja": "環境政策論",
+      "text": "환경정책론",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.1.text": {
+      "ja": "環境政策の歴史や課題を学び、分析・考察・提案する力を身につけます。",
+      "text": "환경 정책의 역사와 과제를 배우고 분석·고찰·제안하는 힘을 기릅니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.2.name": {
+      "ja": "公共政策課題研究A【国際貿易の発展と税関】",
+      "text": "공공정책과제연구A【국제무역의 발전과 세관】",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.2.text": {
+      "ja": "税関の手続きや関連する政策を、神戸税関の職員などを講師に迎えて学びます。",
+      "text": "고베 세관 직원 등을 강사로 맞아 세관 절차와 관련 정책을 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.name": {
+      "ja": "メディア情報学科",
+      "text": "미디어정보학과",
+      "status": "official"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.text": {
+      "ja": "人にやさしい豊かな情報社会の実現に向けて、知識や技術、政策を立てる力を身につけ、解決策を映像・メディアとして社会に発信することを学びます。",
+      "text": "사람에게 친화적인 풍요로운 정보 사회의 실현을 위해 지식과 기술, 정책을 세우는 힘을 기르고, 해결책을 영상·미디어로 사회에 발신하는 것을 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.0.name": {
+      "ja": "メディア制作演習（シミュレーション）",
+      "text": "미디어제작연습(시뮬레이션)",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.0.text": {
+      "ja": "Pythonプログラミングの基本を学び、ドローンの飛行を制御するプログラムを作ります。",
+      "text": "Python 프로그래밍의 기본을 배우고 드론 비행을 제어하는 프로그램을 만듭니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.1.name": {
+      "ja": "メディア制作演習（映像表現）",
+      "text": "미디어제작연습(영상표현)",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.1.text": {
+      "ja": "デジタル一眼カメラでの撮影や編集を通じて、映像による政策提言をめざします。",
+      "text": "디지털 일안 카메라 촬영과 편집을 통해 영상을 통한 정책 제언을 목표로 합니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.2.name": {
+      "ja": "メディア情報課題研究",
+      "text": "미디어정보과제연구",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.2.text": {
+      "ja": "学術研究のためのコミュニケーション力や批判的思考力を育てます。",
+      "text": "학술 연구를 위한 커뮤니케이션 능력과 비판적 사고력을 기릅니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.name": {
+      "ja": "都市政策学科",
+      "text": "도시정책학과",
+      "status": "official"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.text": {
+      "ja": "市民・企業・行政が協働できる都市空間の創造をめざし、政治学・経済学・経営学・都市科学を組み合わせて政策提言に取り組みます。",
+      "text": "시민·기업·행정이 협동할 수 있는 도시 공간의 창조를 목표로 정치학·경제학·경영학·도시과학을 조합하여 정책 제언에 힘씁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.0.name": {
+      "ja": "ベンチャー経営論",
+      "text": "벤처경영론",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.0.text": {
+      "ja": "起業に関する基本的な知識や考え方を体系的に学びます。",
+      "text": "창업에 관한 기본 지식과 사고방식을 체계적으로 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.1.name": {
+      "ja": "都市政策課題研究B【JAL連携講座】",
+      "text": "도시정책과제연구B【JAL 연계 강좌】",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.1.text": {
+      "ja": "航空業界やエアラインのビジネス戦略について学びます。",
+      "text": "항공 업계와 항공사의 비즈니스 전략에 대해 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.2.name": {
+      "ja": "政策コンサルティング演習",
+      "text": "정책컨설팅연습",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.2.text": {
+      "ja": "経済の課題を統計的に分析し、財務省の政策担当者に直接政策提言を行います。",
+      "text": "경제 과제를 통계적으로 분석하고 재무성 정책 담당자에게 직접 정책을 제언합니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.name": {
+      "ja": "国際政策学科",
+      "text": "국제정책학과",
+      "status": "official"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.text": {
+      "ja": "国連の「持続可能な開発目標（SDGs）」を念頭に、国際社会の課題を解決に導き、より良い国際社会の実現をめざして学びます。",
+      "text": "유엔의 ‘지속가능발전목표(SDGs)’를 염두에 두고, 국제 사회의 과제를 해결로 이끌어 더 나은 국제 사회의 실현을 목표로 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.0.name": {
+      "ja": "国際発展政策",
+      "text": "국제발전정책",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.0.text": {
+      "ja": "発展途上国の課題と開発政策の基本を学びます。",
+      "text": "개발도상국의 과제와 개발 정책의 기본을 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.1.name": {
+      "ja": "国際協力論",
+      "text": "국제협력론",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.1.text": {
+      "ja": "第二次世界大戦後の国際協力の歴史を学び、これからの国際協力のあり方を考えます。",
+      "text": "제2차 세계대전 이후 국제 협력의 역사를 배우고, 앞으로의 국제 협력의 바람직한 모습을 생각합니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.2.name": {
+      "ja": "外交政策",
+      "text": "외교정책",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.2.text": {
+      "ja": "外交の歴史や今日の外交政策、日本外交について基本的な理解を深めます。",
+      "text": "외교의 역사와 오늘날의 외교 정책, 일본 외교에 대한 기본적인 이해를 깊게 합니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.name": {
+      "ja": "理学部",
+      "text": "이학부",
+      "status": "official"
+    },
+    "facultyGuide.faculties.science.lead": {
+      "ja": "自然や科学の法則を理解し、新たな真理を追究する力を育む学部です。",
+      "text": "자연과 과학의 법칙을 이해하고 새로운 진리를 추구하는 힘을 기르는 학부입니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.fields": {
+      "ja": "数学・物理学・宇宙物理学・化学を、3つの学科で学びます。物理・宇宙学科には、宇宙物理学の主要3分野（電波天文学・赤外線天文学・X線天文学）がそろっています。",
+      "text": "수학·물리학·우주물리학·화학을 3개 학과에서 배웁니다. 물리·우주학과에는 우주물리학의 주요 3분야(전파천문학·적외선천문학·X선천문학)가 갖춰져 있습니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.name": {
+      "ja": "数理科学科",
+      "text": "수리과학과",
+      "status": "official"
+    },
+    "facultyGuide.faculties.science.departments.science-math.text": {
+      "ja": "基礎数学から応用数理までを幅広く学びます。データサイエンスや確率過程、統計・アクチュアリーに関わる手法も扱います。",
+      "text": "기초 수학부터 응용 수리까지 폭넓게 배웁니다. 데이터 사이언스와 확률 과정, 통계·보험계리에 관한 기법도 다룹니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.0.name": {
+      "ja": "線形代数I",
+      "text": "선형대수 I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.0.year": {
+      "ja": "1年次",
+      "text": "1학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.0.text": {
+      "ja": "ベクトルと行列の理論の基礎を学びます。",
+      "text": "벡터와 행렬 이론의 기초를 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.1.name": {
+      "ja": "応用数理入門",
+      "text": "응용수리입문",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.1.year": {
+      "ja": "2年次",
+      "text": "2학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.1.text": {
+      "ja": "これまでに学んだ数学を活用し、身の回りの現象を数理的に捉えます。",
+      "text": "지금까지 배운 수학을 활용해 주변 현상을 수리적으로 파악합니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.2.name": {
+      "ja": "数理科学演習",
+      "text": "수리과학연습",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "3·4학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.2.text": {
+      "ja": "自然・生命・社会現象の数理モデルや、代数学・時系列分析などの基礎理論を学びます。",
+      "text": "자연·생명·사회 현상의 수리 모델과 대수학·시계열 분석 등의 기초 이론을 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.name": {
+      "ja": "物理・宇宙学科",
+      "text": "물리・우주학과",
+      "status": "official"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.text": {
+      "ja": "理論・実験・観測を通じて、物理学の未解決問題と宇宙の謎に迫ります。",
+      "text": "이론·실험·관측을 통해 물리학의 미해결 문제와 우주의 수수께끼에 다가갑니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.0.name": {
+      "ja": "力学Ⅰ",
+      "text": "역학 I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.0.year": {
+      "ja": "1年次",
+      "text": "1학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.0.text": {
+      "ja": "古典力学の基礎概念を理解し、運動方程式の解き方を学びます。",
+      "text": "고전역학의 기초 개념을 이해하고 운동방정식을 푸는 방법을 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.1.name": {
+      "ja": "基礎物理学実験I",
+      "text": "기초물리학실험 I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.1.year": {
+      "ja": "2年次",
+      "text": "2학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.1.text": {
+      "ja": "基礎的な実験や測定を行い、物理現象と物理法則の関係を深く理解します。",
+      "text": "기초적인 실험과 측정을 하며 물리 현상과 물리 법칙의 관계를 깊이 이해합니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.2.name": {
+      "ja": "宇宙物理学",
+      "text": "우주물리학",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "3·4학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.2.text": {
+      "ja": "物理学の基本法則を使って、天体や宇宙の構造と進化を理解します。",
+      "text": "물리학의 기본 법칙을 사용해 천체와 우주의 구조와 진화를 이해합니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.name": {
+      "ja": "化学科",
+      "text": "화학과",
+      "status": "official"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.text": {
+      "ja": "原子・分子のレベルから物質を理解します。物質の構造・機能とその原理を解明する「分析・物理化学系」と、化学反応で機能性物質を創りだす「無機・有機化学系」の2分野があります。",
+      "text": "원자·분자 수준에서 물질을 이해합니다. 물질의 구조·기능과 그 원리를 해명하는 ‘분석·물리화학계’와 화학 반응으로 기능성 물질을 만들어 내는 ‘무기·유기화학계’의 2개 분야가 있습니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.0.name": {
+      "ja": "基礎化学実験I",
+      "text": "기초화학실험 I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.0.year": {
+      "ja": "1年次",
+      "text": "1학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.0.text": {
+      "ja": "有機・無機化合物を使った実験で、基本的な測定や操作を身につけます。",
+      "text": "유기·무기 화합물을 사용한 실험으로 기본적인 측정과 조작을 익힙니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.1.name": {
+      "ja": "分析化学I",
+      "text": "분석화학 I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.1.year": {
+      "ja": "2年次",
+      "text": "2학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.1.text": {
+      "ja": "試料の調製や分析操作を学び、重量分析・容量分析の方法を理解します。",
+      "text": "시료 조제와 분석 조작을 배우고 중량 분석·용량 분석 방법을 이해합니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.2.name": {
+      "ja": "有機化学実験",
+      "text": "유기화학실험",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "3·4학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.2.text": {
+      "ja": "有機合成の研究に必要な基本操作や技術を身につけます。",
+      "text": "유기 합성 연구에 필요한 기본 조작과 기술을 익힙니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.name": {
+      "ja": "工学部",
+      "text": "공학부",
+      "status": "official"
+    },
+    "facultyGuide.faculties.engineering.lead": {
+      "ja": "学科の代わりに「課程制」を取り入れ、分野を横断したカリキュラムで、複雑化する社会の課題を解決できる力を身につける学部です。",
+      "text": "학과 대신 ‘과정제’를 도입하여, 분야를 아우르는 커리큘럼으로 복잡해지는 사회 과제를 해결할 수 있는 힘을 기르는 학부입니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.fields": {
+      "ja": "物質科学・電気電子工学・情報科学・人間・機械系の4分野を、4つの課程で学びます。",
+      "text": "물질과학·전기전자공학·정보과학·인간·기계계의 4개 분야를 4개 과정에서 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.name": {
+      "ja": "物質工学課程",
+      "text": "물질공학 과정",
+      "status": "official"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.text": {
+      "ja": "「創エネ」「蓄エネ」「省エネ」の3つの観点から物質科学をとらえ、新しい物質を生み出すための基礎から実践までを、物理と化学の両面から学びます。",
+      "text": "‘에너지 창출’ ‘에너지 저장’ ‘에너지 절약’의 3가지 관점에서 물질과학을 파악하고, 새로운 물질을 만들어 내기 위한 기초부터 실천까지를 물리와 화학 양면에서 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.courses.0.name": {
+      "ja": "先進エネルギーナノ工学詳論",
+      "text": "선진에너지나노공학상론",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.courses.0.text": {
+      "ja": "エネルギーを「創る」「蓄える」「運ぶ」「使う」に関わる最先端の研究内容を学び、教員の研究テーマの内容と意義を理解します。",
+      "text": "에너지를 ‘만들다’ ‘저장하다’ ‘옮기다’ ‘쓰다’와 관련된 최첨단 연구 내용을 배우고, 교원의 연구 주제의 내용과 의의를 이해합니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.courses.1.name": {
+      "ja": "物質工学概論",
+      "text": "물질공학개론",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.courses.2.name": {
+      "ja": "ものづくり理工学実験1",
+      "text": "모노즈쿠리 이공학실험 1",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.courseNote": {
+      "ja": "物質工学概論・ものづくり理工学実験1は、公式サイトには科目名のみ掲載されているため、内容の説明は載せていません。",
+      "text": "물질공학개론·모노즈쿠리 이공학실험 1은 공식 사이트에 과목명만 게재되어 있어 내용 설명은 싣지 않았습니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.name": {
+      "ja": "電気電子応用工学課程",
+      "text": "전기전자 응용공학 과정",
+      "status": "official"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.text": {
+      "ja": "次世代モビリティーなどで使われる動力機器や情報通信機器、エネルギーの輸送・変換機器の基盤となる、電気エネルギーの有効利用について学びます。",
+      "text": "차세대 모빌리티 등에 사용되는 동력 기기와 정보통신 기기, 에너지 수송·변환 기기의 기반이 되는 전기 에너지의 효율적 이용에 대해 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.0.name": {
+      "ja": "基礎電気電子実験",
+      "text": "기초전기전자실험",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.0.text": {
+      "ja": "1年次から電気電子工学の基礎を実践的に身につけます。",
+      "text": "1학년부터 전기전자공학의 기초를 실천적으로 익힙니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.1.name": {
+      "ja": "電気電子ものづくり実験",
+      "text": "전기전자 모노즈쿠리 실험",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.1.text": {
+      "ja": "省電力パワーエレクトロニクスの要素技術を体験的に学ぶ実験科目です。",
+      "text": "절전형 파워 일렉트로닉스의 요소 기술을 체험적으로 배우는 실험 과목입니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.2.name": {
+      "ja": "電気電子計測実験",
+      "text": "전기전자계측실험",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.2.text": {
+      "ja": "電気電子工学の基盤となる計測技術に関わる実験科目です。",
+      "text": "전기전자공학의 기반이 되는 계측 기술에 관한 실험 과목입니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.name": {
+      "ja": "情報工学課程",
+      "text": "정보공학 과정",
+      "status": "official"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.text": {
+      "ja": "ハードウェア・ソフトウェア・ネットワークなどITの基盤となる専門知識に加え、AIやデータマイニング、コンピュータグラフィックス（CG）などの技術を学びます。",
+      "text": "하드웨어·소프트웨어·네트워크 등 IT의 기반이 되는 전문 지식에 더해 AI와 데이터 마이닝, 컴퓨터 그래픽스(CG) 등의 기술을 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.courses.0.name": {
+      "ja": "情報工学概論",
+      "text": "정보공학개론",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.courses.1.name": {
+      "ja": "データ構造とアルゴリズム",
+      "text": "데이터 구조와 알고리즘",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.courses.2.name": {
+      "ja": "コンピュータグラフィックス",
+      "text": "컴퓨터 그래픽스",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.courseNote": {
+      "ja": "公式サイトには科目名のみ掲載されているため、内容の説明は載せていません。",
+      "text": "공식 사이트에 과목명만 게재되어 있어 내용 설명은 싣지 않았습니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.name": {
+      "ja": "知能・機械工学課程",
+      "text": "지능・기계공학 과정",
+      "status": "official"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.text": {
+      "ja": "人工知能と機械工学の基礎から、機械システムを知能化するための幅広い知識・技術を学びます。",
+      "text": "인공지능과 기계공학의 기초부터 기계 시스템을 지능화하기 위한 폭넓은 지식·기술을 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.courses.0.name": {
+      "ja": "知能・機械工学概論",
+      "text": "지능·기계공학개론",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.courses.1.name": {
+      "ja": "人工知能基礎",
+      "text": "인공지능기초",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.courses.2.name": {
+      "ja": "ロボティクス",
+      "text": "로보틱스",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.courseNote": {
+      "ja": "公式サイトには科目名のみ掲載されているため、内容の説明は載せていません。",
+      "text": "공식 사이트에 과목명만 게재되어 있어 내용 설명은 싣지 않았습니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.name": {
+      "ja": "生命環境学部",
+      "text": "생명환경학부",
+      "status": "official"
+    },
+    "facultyGuide.faculties.bes.lead": {
+      "ja": "環境・食糧・健康など、現代社会の課題の解決に挑む力を身につける学部です。実験科学とデータサイエンスを活かした教育・研究に取り組んでいます。",
+      "text": "환경·식량·건강 등 현대 사회의 과제 해결에 도전하는 힘을 기르는 학부입니다. 실험과학과 데이터 사이언스를 활용한 교육·연구에 힘쓰고 있습니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.fields": {
+      "ja": "生物科学・生命医科学・環境応用化学を、3つの学科で学びます。",
+      "text": "생물과학·생명의과학·환경응용화학을 3개 학과에서 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.name": {
+      "ja": "生物科学科",
+      "text": "생물과학과",
+      "status": "official"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.text": {
+      "ja": "地球上の多様な生物について学び、その活用の可能性を探ります。植物昆虫科学・応用微生物学・計算生物学の3つの専攻があります。",
+      "text": "지구상의 다양한 생물에 대해 배우고 그 활용 가능성을 탐구합니다. 식물곤충과학·응용미생물학·계산생물학의 3개 전공이 있습니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.0.name": {
+      "ja": "生命科学I",
+      "text": "생명과학 I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.0.year": {
+      "ja": "1年次",
+      "text": "1학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.0.text": {
+      "ja": "高校生物の基礎から始め、DNAからRNA、タンパク質への流れや遺伝子操作技術の原理までを学びます。",
+      "text": "고등학교 생물의 기초에서 시작해 DNA에서 RNA, 단백질로 이어지는 흐름과 유전자 조작 기술의 원리까지 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.1.name": {
+      "ja": "細胞・組織学実験",
+      "text": "세포·조직학실험",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.1.year": {
+      "ja": "2年次",
+      "text": "2학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.1.text": {
+      "ja": "細胞や組織を扱うための基本技術を身につけます。",
+      "text": "세포와 조직을 다루기 위한 기본 기술을 익힙니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.2.name": {
+      "ja": "先端生命科学実験Ⅰ",
+      "text": "첨단생명과학실험 I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "3·4학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.2.text": {
+      "ja": "卒業研究の前に必要な実験手法や、研究の基本的な考え方を身につけます。",
+      "text": "졸업 연구 전에 필요한 실험 기법과 연구의 기본적인 사고방식을 익힙니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.name": {
+      "ja": "生命医科学科",
+      "text": "생명의과학과",
+      "status": "official"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.text": {
+      "ja": "ヒトを含む哺乳動物の生命現象を解明し、基礎医学分野に応用することで、病気の治療や健康の維持に役立てることをめざします。発生再生医科学・生命医科学・医工学の3つの専攻があります。",
+      "text": "인간을 포함한 포유동물의 생명 현상을 해명하고 기초의학 분야에 응용함으로써 질병 치료와 건강 유지에 도움이 되는 것을 목표로 합니다. 발생재생의과학·생명의과학·의공학의 3개 전공이 있습니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.0.name": {
+      "ja": "医科学入門A",
+      "text": "의과학입문 A",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.0.year": {
+      "ja": "1年次",
+      "text": "1학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.0.text": {
+      "ja": "専門科目を学ぶために必要な生命科学の基礎を、遺伝学・発生学・化学・光学技術など多角的な視点から学びます。",
+      "text": "전문 과목을 배우기 위해 필요한 생명과학의 기초를 유전학·발생학·화학·광학 기술 등 다각적인 관점에서 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.1.name": {
+      "ja": "基礎医科学実験Ⅰ",
+      "text": "기초의과학실험 I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.1.year": {
+      "ja": "2年次",
+      "text": "2학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.1.text": {
+      "ja": "生命現象を分子レベルで解析するための基本的な技術や知識を身につけます。",
+      "text": "생명 현상을 분자 수준에서 분석하기 위한 기본적인 기술과 지식을 익힙니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.2.name": {
+      "ja": "先端医科学実験Ⅰ",
+      "text": "첨단의과학실험 I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "3·4학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.2.text": {
+      "ja": "卒業研究の前に必要な実験手法や、実験計画の立て方・考え方を学びます。",
+      "text": "졸업 연구 전에 필요한 실험 기법과 실험 계획을 세우는 방법·사고방식을 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.name": {
+      "ja": "環境応用化学科",
+      "text": "환경응용화학과",
+      "status": "official"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.text": {
+      "ja": "化学の基礎をしっかり学び、環境問題に取り組むための基礎的な力を身につけます。物質創生系・機能探索系・環境分析・地球化学系の3つの分野があります。",
+      "text": "화학의 기초를 착실히 배우고 환경 문제에 대처하기 위한 기초적인 힘을 기릅니다. 물질창생계·기능탐색계·환경분석·지구화학계의 3개 분야가 있습니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.0.name": {
+      "ja": "基礎化学実験Ⅰ",
+      "text": "기초화학실험 I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.0.year": {
+      "ja": "1年次",
+      "text": "1학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.0.text": {
+      "ja": "無機分析化学・物理化学・有機化学の3分野の実験を通じて、化学の基本概念を体験的に理解します。",
+      "text": "무기분석화학·물리화학·유기화학의 3개 분야 실험을 통해 화학의 기본 개념을 체험적으로 이해합니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.1.name": {
+      "ja": "地球環境化学",
+      "text": "지구환경화학",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.1.year": {
+      "ja": "2年次",
+      "text": "2학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.1.text": {
+      "ja": "大気・海洋・陸域での水の循環を、化学平衡論や反応速度論の基礎を使って学びます。",
+      "text": "대기·해양·육역에서의 물의 순환을 화학평형론과 반응속도론의 기초를 사용해 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.2.name": {
+      "ja": "環境応用化学実験I",
+      "text": "환경응용화학실험 I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "3·4학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.2.text": {
+      "ja": "環境分析・地球化学・無機・物理・有機・高分子化学にわたって、分析・合成・分離・データ処理の基本的な方法を学びます。",
+      "text": "환경분석·지구화학·무기·물리·유기·고분자화학에 걸쳐 분석·합성·분리·데이터 처리의 기본적인 방법을 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.name": {
+      "ja": "建築学部",
+      "text": "건축학부",
+      "status": "official"
+    },
+    "facultyGuide.faculties.architecture.lead": {
+      "ja": "グローバルな視野で建築と都市の未来を創造し、建築学で社会課題の解決をめざす学部です。",
+      "text": "글로벌한 시야로 건축과 도시의 미래를 창조하고, 건축학으로 사회 과제의 해결을 목표로 하는 학부입니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.fields": {
+      "ja": "一級建築士をめざす教育を基本に、都市デザインや都市計画の科目も学べます。「デザインとマネジメント」「工学と人文社会科学」「グローバルとフィールド」の3つを重視しています。",
+      "text": "1급 건축사를 목표로 하는 교육을 기본으로 도시 디자인과 도시 계획 과목도 배울 수 있습니다. ‘디자인과 매니지먼트’ ‘공학과 인문사회과학’ ‘글로벌과 필드’의 3가지를 중시합니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.name": {
+      "ja": "建築学科",
+      "text": "건축학과",
+      "status": "official"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.text": {
+      "ja": "設計や建設にとどまらず、建築の始まりから終わりまでを、工学とデザインを基盤に、マネジメントの視点も含めて学びます。",
+      "text": "설계와 건설에 그치지 않고 건축의 시작부터 끝까지를 공학과 디자인을 기반으로 매니지먼트의 관점도 포함하여 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.0.name": {
+      "ja": "建築・都市デザイン概論",
+      "text": "건축·도시디자인개론",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.0.year": {
+      "ja": "1年次",
+      "text": "1학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.0.text": {
+      "ja": "複数の専任教員によるオムニバス形式の講義で、建築や都市の多様性と魅力を学びます。",
+      "text": "여러 전임 교원이 진행하는 옴니버스 형식의 강의로 건축과 도시의 다양성과 매력을 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.1.name": {
+      "ja": "建築材料学実験",
+      "text": "건축재료학실험",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.1.year": {
+      "ja": "2年次",
+      "text": "2학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.1.text": {
+      "ja": "建築材料に直接触れる実験で力学的な性質を理解し、計測や統計処理の基本を学びます。",
+      "text": "건축 재료를 직접 만지는 실험으로 역학적 성질을 이해하고 계측과 통계 처리의 기본을 배웁니다.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.2.name": {
+      "ja": "建築設計演習Ⅲ",
+      "text": "건축설계연습 III",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "3·4학년",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.2.text": {
+      "ja": "美術館と交流施設の2つの課題に取り組む設計演習です。",
+      "text": "미술관과 교류 시설의 2가지 과제에 임하는 설계 연습입니다.",
       "status": "provisional"
     },
     "studentGroupDirectory.sections.0.tab": {

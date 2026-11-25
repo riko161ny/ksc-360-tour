@@ -77,6 +77,17 @@ TourI18n.register("ja", {
     "panel.watchVideo": "動画を見る",
     "panel.relatedArticle": "関連記事",
     "panel.prevPhoto": "前の写真",
-    "panel.nextPhoto": "次の写真"
+    "panel.nextPhoto": "次の写真",
+    "faculty.related": "この建物に関連する学部",
+    "faculty.backTo": "{name}に戻る",
+    "faculty.backToList": "学部一覧に戻る",
+    "faculty.departmentCount": "学科・課程 {n}",
+    "faculty.fields": "学べる分野",
+    "faculty.departments": "学科・課程",
+    "faculty.seeCourses": "学習内容と授業例を見る",
+    "faculty.officialFaculty": "{name}の公式サイト",
+    "faculty.officialDepartment": "{name}の公式ページ",
+    "faculty.learn": "学習内容",
+    "faculty.courses": "授業の例"
   }
 });

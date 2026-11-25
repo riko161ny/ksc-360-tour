@@ -77,7 +77,18 @@ TourI18n.register("en", {
     "panel.watchVideo": "Watch the video",
     "panel.relatedArticle": "Related article",
     "panel.prevPhoto": "Previous photo",
-    "panel.nextPhoto": "Next photo"
+    "panel.nextPhoto": "Next photo",
+    "faculty.related": "Schools related to this building",
+    "faculty.backTo": "Back to {name}",
+    "faculty.backToList": "Back to all schools",
+    "faculty.departmentCount": "{n} departments/programs",
+    "faculty.fields": "Fields of study",
+    "faculty.departments": "Departments and programs",
+    "faculty.seeCourses": "See what you learn and sample courses",
+    "faculty.officialFaculty": "{name} official website",
+    "faculty.officialDepartment": "{name} official page",
+    "faculty.learn": "What you learn",
+    "faculty.courses": "Sample courses"
   },
   "content": {
     "title": {
@@ -274,31 +285,6 @@ TourI18n.register("en", {
       "ja": "学部情報",
       "text": "Schools",
       "status": "provisional"
-    },
-    "footer.faculties.tabs.0.label": {
-      "ja": "総合政策学部",
-      "text": "School of Policy Studies",
-      "status": "official"
-    },
-    "footer.faculties.tabs.1.label": {
-      "ja": "理学部",
-      "text": "School of Science",
-      "status": "official"
-    },
-    "footer.faculties.tabs.2.label": {
-      "ja": "工学部",
-      "text": "School of Engineering",
-      "status": "official"
-    },
-    "footer.faculties.tabs.3.label": {
-      "ja": "生命環境学部",
-      "text": "School of Biological and Environmental Sciences",
-      "status": "official"
-    },
-    "footer.faculties.tabs.4.label": {
-      "ja": "建築学部",
-      "text": "School of Architecture",
-      "status": "official"
     },
     "footer.events.name": {
       "ja": "KSCイベント情報",
@@ -1203,6 +1189,776 @@ TourI18n.register("en", {
     "studentLifeLead": {
       "ja": "神戸三田キャンパスで行われている活動の一部を紹介します。くわしくは各公式情報をご覧ください。",
       "text": "Here are some of the activities at Kobe Sanda Campus. For details, please see each official source.",
+      "status": "provisional"
+    },
+    "facultyGuide.intro": {
+      "ja": "神戸三田キャンパスには5つの学部があります。学部を選ぶと、学部の紹介と学科・課程の一覧が表示されます。",
+      "text": "Kobe Sanda Campus has five schools. Choose a school to see an introduction and a list of its departments and programs.",
+      "status": "provisional"
+    },
+    "facultyGuide.source": {
+      "ja": "学部・学科の紹介と授業例は、大学公式サイトの各学部・学科のページをもとにまとめています（2026年11月確認）。授業の内容や開講年次は変わることがあります。",
+      "text": "The school and department introductions and sample courses are based on each school's and department's page on the university's official website (checked in November 2026). Course content and the year in which courses are offered may change.",
+      "status": "provisional"
+    },
+    "facultyGuide.buildingNote": {
+      "ja": "各号館のカードの説明をもとにした関連です。その学部の授業が主にこの建物で行われることを示すものではありません。",
+      "text": "This link is based on the description in this building's card. It does not mean that the school's classes are held mainly in this building.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.name": {
+      "ja": "総合政策学部",
+      "text": "School of Policy Studies",
+      "status": "official"
+    },
+    "facultyGuide.faculties.policy.lead": {
+      "ja": "「自然と人間の共生、人間と人間の共生」を理念に、現代社会のさまざまな問題に対して、多様な学問の専門知識をもとに解決策を探り、実践できる力を育てる学部です。",
+      "text": "Guided by the philosophy of “coexistence between nature and people, and among people,” this school develops the ability to find and put into practice solutions to the many problems of today's society, drawing on specialized knowledge from diverse disciplines.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.fields": {
+      "ja": "法学・政治学・経済学・経営学・社会学・社会福祉学・工学・理学・言語などを組み合わせて学びます。1年次は学科に所属せず、2年次から4つの学科に分かれます。",
+      "text": "Students combine law, political science, economics, business administration, sociology, social welfare, engineering, science, languages and more. In the first year students do not belong to a department; they are divided into four departments from the second year.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.name": {
+      "ja": "総合政策学科",
+      "text": "Department of Policy Studies",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.text": {
+      "ja": "「共生の社会」の構築をめざし、「自然環境」「社会・経済・技術システム」「言語・文化・思想」の3つの領域から、目標に合わせて科目を選んで学びます。",
+      "text": "Aiming to build a “society of coexistence,” students choose courses to match their goals from three areas: natural environment; social, economic and technological systems; and language, culture and thought.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.0.name": {
+      "ja": "公共選択論",
+      "text": "Public Choice Theory",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.0.text": {
+      "ja": "経済と政治・行政の関わりや、政策が決まるしくみを公共選択論の考え方から理解します。",
+      "text": "Understand the links between the economy, politics and administration, and how policies are decided, through public choice theory.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.1.name": {
+      "ja": "環境政策論",
+      "text": "Environmental Policy",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.1.text": {
+      "ja": "環境政策の歴史や課題を学び、分析・考察・提案する力を身につけます。",
+      "text": "Learn the history and issues of environmental policy and develop the ability to analyze, examine and make proposals.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.2.name": {
+      "ja": "公共政策課題研究A【国際貿易の発展と税関】",
+      "text": "Public Policy Issues A [International Trade and Customs]",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.2.text": {
+      "ja": "税関の手続きや関連する政策を、神戸税関の職員などを講師に迎えて学びます。",
+      "text": "Learn about customs procedures and related policies, with lecturers including staff of Kobe Customs.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.name": {
+      "ja": "メディア情報学科",
+      "text": "Department of Media and Information",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.text": {
+      "ja": "人にやさしい豊かな情報社会の実現に向けて、知識や技術、政策を立てる力を身につけ、解決策を映像・メディアとして社会に発信することを学びます。",
+      "text": "Toward a rich, people-friendly information society, students gain knowledge, skills and the ability to plan policy, and learn to communicate solutions to society through video and media.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.0.name": {
+      "ja": "メディア制作演習（シミュレーション）",
+      "text": "Media Production Practice (Simulation)",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.0.text": {
+      "ja": "Pythonプログラミングの基本を学び、ドローンの飛行を制御するプログラムを作ります。",
+      "text": "Learn the basics of Python programming and write programs that control drone flight.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.1.name": {
+      "ja": "メディア制作演習（映像表現）",
+      "text": "Media Production Practice (Visual Expression)",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.1.text": {
+      "ja": "デジタル一眼カメラでの撮影や編集を通じて、映像による政策提言をめざします。",
+      "text": "Through shooting with digital SLR cameras and editing, students aim to make policy proposals through video.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.2.name": {
+      "ja": "メディア情報課題研究",
+      "text": "Media and Information Research Project",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.2.text": {
+      "ja": "学術研究のためのコミュニケーション力や批判的思考力を育てます。",
+      "text": "Develop the communication skills and critical thinking needed for academic research.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.name": {
+      "ja": "都市政策学科",
+      "text": "Department of Urban Policy",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.text": {
+      "ja": "市民・企業・行政が協働できる都市空間の創造をめざし、政治学・経済学・経営学・都市科学を組み合わせて政策提言に取り組みます。",
+      "text": "Aiming to create urban spaces where citizens, businesses and government can work together, students combine political science, economics, business administration and urban science to make policy proposals.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.0.name": {
+      "ja": "ベンチャー経営論",
+      "text": "Venture Management",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.0.text": {
+      "ja": "起業に関する基本的な知識や考え方を体系的に学びます。",
+      "text": "Learn the basic knowledge and ways of thinking about starting a business in a systematic way.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.1.name": {
+      "ja": "都市政策課題研究B【JAL連携講座】",
+      "text": "Urban Policy Issues B [JAL Partnership Course]",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.1.text": {
+      "ja": "航空業界やエアラインのビジネス戦略について学びます。",
+      "text": "Learn about the aviation industry and airline business strategies.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.2.name": {
+      "ja": "政策コンサルティング演習",
+      "text": "Policy Consulting Seminar",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.2.text": {
+      "ja": "経済の課題を統計的に分析し、財務省の政策担当者に直接政策提言を行います。",
+      "text": "Analyze economic issues statistically and present policy proposals directly to policy officials of the Ministry of Finance.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.name": {
+      "ja": "国際政策学科",
+      "text": "Department of International Policy",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.text": {
+      "ja": "国連の「持続可能な開発目標（SDGs）」を念頭に、国際社会の課題を解決に導き、より良い国際社会の実現をめざして学びます。",
+      "text": "With the UN Sustainable Development Goals (SDGs) in mind, students learn to help solve the problems of the international community and work toward a better world.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.0.name": {
+      "ja": "国際発展政策",
+      "text": "International Development Policy",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.0.text": {
+      "ja": "発展途上国の課題と開発政策の基本を学びます。",
+      "text": "Learn the issues facing developing countries and the basics of development policy.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.1.name": {
+      "ja": "国際協力論",
+      "text": "International Cooperation",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.1.text": {
+      "ja": "第二次世界大戦後の国際協力の歴史を学び、これからの国際協力のあり方を考えます。",
+      "text": "Learn the history of international cooperation since World War II and think about what it should look like in the future.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.2.name": {
+      "ja": "外交政策",
+      "text": "Foreign Policy",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.2.text": {
+      "ja": "外交の歴史や今日の外交政策、日本外交について基本的な理解を深めます。",
+      "text": "Deepen your basic understanding of diplomatic history, today's foreign policy and Japanese diplomacy.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.name": {
+      "ja": "理学部",
+      "text": "School of Science",
+      "status": "official"
+    },
+    "facultyGuide.faculties.science.lead": {
+      "ja": "自然や科学の法則を理解し、新たな真理を追究する力を育む学部です。",
+      "text": "This school develops the ability to understand the laws of nature and science and to pursue new truths.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.fields": {
+      "ja": "数学・物理学・宇宙物理学・化学を、3つの学科で学びます。物理・宇宙学科には、宇宙物理学の主要3分野（電波天文学・赤外線天文学・X線天文学）がそろっています。",
+      "text": "Mathematics, physics, astrophysics and chemistry are studied in three departments. The Department of Physics and Astronomy covers the three main fields of astrophysics: radio, infrared and X-ray astronomy.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.name": {
+      "ja": "数理科学科",
+      "text": "Department of Mathematical Sciences",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.text": {
+      "ja": "基礎数学から応用数理までを幅広く学びます。データサイエンスや確率過程、統計・アクチュアリーに関わる手法も扱います。",
+      "text": "Students study a broad range from pure mathematics to applied mathematics, including methods related to data science, stochastic processes, statistics and actuarial science.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.0.name": {
+      "ja": "線形代数I",
+      "text": "Linear Algebra I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.0.year": {
+      "ja": "1年次",
+      "text": "1st year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.0.text": {
+      "ja": "ベクトルと行列の理論の基礎を学びます。",
+      "text": "Learn the basics of the theory of vectors and matrices.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.1.name": {
+      "ja": "応用数理入門",
+      "text": "Introduction to Applied Mathematics",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.1.year": {
+      "ja": "2年次",
+      "text": "2nd year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.1.text": {
+      "ja": "これまでに学んだ数学を活用し、身の回りの現象を数理的に捉えます。",
+      "text": "Use the mathematics you have learned to understand everyday phenomena mathematically.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.2.name": {
+      "ja": "数理科学演習",
+      "text": "Mathematical Sciences Seminar",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "3rd–4th year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.2.text": {
+      "ja": "自然・生命・社会現象の数理モデルや、代数学・時系列分析などの基礎理論を学びます。",
+      "text": "Learn mathematical models of natural, biological and social phenomena, and basic theory such as algebra and time series analysis.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.name": {
+      "ja": "物理・宇宙学科",
+      "text": "Department of Physics and Astronomy",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.text": {
+      "ja": "理論・実験・観測を通じて、物理学の未解決問題と宇宙の謎に迫ります。",
+      "text": "Through theory, experiments and observation, students tackle unsolved problems in physics and the mysteries of the universe.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.0.name": {
+      "ja": "力学Ⅰ",
+      "text": "Mechanics I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.0.year": {
+      "ja": "1年次",
+      "text": "1st year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.0.text": {
+      "ja": "古典力学の基礎概念を理解し、運動方程式の解き方を学びます。",
+      "text": "Understand the basic concepts of classical mechanics and learn how to solve equations of motion.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.1.name": {
+      "ja": "基礎物理学実験I",
+      "text": "Basic Physics Laboratory I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.1.year": {
+      "ja": "2年次",
+      "text": "2nd year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.1.text": {
+      "ja": "基礎的な実験や測定を行い、物理現象と物理法則の関係を深く理解します。",
+      "text": "Carry out basic experiments and measurements to deeply understand the relationship between physical phenomena and physical laws.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.2.name": {
+      "ja": "宇宙物理学",
+      "text": "Astrophysics",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "3rd–4th year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.2.text": {
+      "ja": "物理学の基本法則を使って、天体や宇宙の構造と進化を理解します。",
+      "text": "Use the basic laws of physics to understand the structure and evolution of celestial bodies and the universe.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.name": {
+      "ja": "化学科",
+      "text": "Department of Chemistry",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.text": {
+      "ja": "原子・分子のレベルから物質を理解します。物質の構造・機能とその原理を解明する「分析・物理化学系」と、化学反応で機能性物質を創りだす「無機・有機化学系」の2分野があります。",
+      "text": "Students understand substances at the level of atoms and molecules. There are two fields: analytical and physical chemistry, which clarifies the structure, functions and principles of substances, and inorganic and organic chemistry, which creates functional materials through chemical reactions.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.0.name": {
+      "ja": "基礎化学実験I",
+      "text": "Basic Chemistry Laboratory I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.0.year": {
+      "ja": "1年次",
+      "text": "1st year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.0.text": {
+      "ja": "有機・無機化合物を使った実験で、基本的な測定や操作を身につけます。",
+      "text": "Learn basic measurements and techniques through experiments with organic and inorganic compounds.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.1.name": {
+      "ja": "分析化学I",
+      "text": "Analytical Chemistry I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.1.year": {
+      "ja": "2年次",
+      "text": "2nd year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.1.text": {
+      "ja": "試料の調製や分析操作を学び、重量分析・容量分析の方法を理解します。",
+      "text": "Learn sample preparation and analytical techniques, and understand gravimetric and volumetric analysis.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.2.name": {
+      "ja": "有機化学実験",
+      "text": "Organic Chemistry Laboratory",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "3rd–4th year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.2.text": {
+      "ja": "有機合成の研究に必要な基本操作や技術を身につけます。",
+      "text": "Learn the basic techniques and skills needed for research in organic synthesis.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.name": {
+      "ja": "工学部",
+      "text": "School of Engineering",
+      "status": "official"
+    },
+    "facultyGuide.faculties.engineering.lead": {
+      "ja": "学科の代わりに「課程制」を取り入れ、分野を横断したカリキュラムで、複雑化する社会の課題を解決できる力を身につける学部です。",
+      "text": "Instead of departments, this school uses a program system, with a cross-disciplinary curriculum that develops the ability to solve the increasingly complex problems of society.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.fields": {
+      "ja": "物質科学・電気電子工学・情報科学・人間・機械系の4分野を、4つの課程で学びます。",
+      "text": "Four fields—materials science, electrical and electronic engineering, information science, and human and mechanical systems—are studied in four programs.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.name": {
+      "ja": "物質工学課程",
+      "text": "Program in Materials Engineering",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.text": {
+      "ja": "「創エネ」「蓄エネ」「省エネ」の3つの観点から物質科学をとらえ、新しい物質を生み出すための基礎から実践までを、物理と化学の両面から学びます。",
+      "text": "Students view materials science from three angles—creating, storing and saving energy—and learn from basics to practice in creating new materials, from both physics and chemistry.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.courses.0.name": {
+      "ja": "先進エネルギーナノ工学詳論",
+      "text": "Advanced Energy Nanoengineering",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.courses.0.text": {
+      "ja": "エネルギーを「創る」「蓄える」「運ぶ」「使う」に関わる最先端の研究内容を学び、教員の研究テーマの内容と意義を理解します。",
+      "text": "Learn about cutting-edge research on creating, storing, transporting and using energy, and understand the content and significance of the faculty's research themes.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.courses.1.name": {
+      "ja": "物質工学概論",
+      "text": "Introduction to Materials Engineering",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.courses.2.name": {
+      "ja": "ものづくり理工学実験1",
+      "text": "Science and Engineering Manufacturing Lab 1",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.courseNote": {
+      "ja": "物質工学概論・ものづくり理工学実験1は、公式サイトには科目名のみ掲載されているため、内容の説明は載せていません。",
+      "text": "For Introduction to Materials Engineering and Science and Engineering Manufacturing Lab 1, the official website lists only the course names, so no descriptions are given.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.name": {
+      "ja": "電気電子応用工学課程",
+      "text": "Program in Applied Electrical and Electronic Engineering",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.text": {
+      "ja": "次世代モビリティーなどで使われる動力機器や情報通信機器、エネルギーの輸送・変換機器の基盤となる、電気エネルギーの有効利用について学びます。",
+      "text": "Students learn about the effective use of electrical energy, which underpins power equipment used in next-generation mobility, information and communication equipment, and equipment for transporting and converting energy.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.0.name": {
+      "ja": "基礎電気電子実験",
+      "text": "Basic Electrical and Electronic Laboratory",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.0.text": {
+      "ja": "1年次から電気電子工学の基礎を実践的に身につけます。",
+      "text": "Gain a practical grounding in electrical and electronic engineering from the first year.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.1.name": {
+      "ja": "電気電子ものづくり実験",
+      "text": "Electrical and Electronic Manufacturing Lab",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.1.text": {
+      "ja": "省電力パワーエレクトロニクスの要素技術を体験的に学ぶ実験科目です。",
+      "text": "A laboratory course to learn the key technologies of energy-saving power electronics through hands-on experience.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.2.name": {
+      "ja": "電気電子計測実験",
+      "text": "Electrical and Electronic Measurement Lab",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.2.text": {
+      "ja": "電気電子工学の基盤となる計測技術に関わる実験科目です。",
+      "text": "A laboratory course on the measurement technologies that underpin electrical and electronic engineering.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.name": {
+      "ja": "情報工学課程",
+      "text": "Program in Informatics",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.text": {
+      "ja": "ハードウェア・ソフトウェア・ネットワークなどITの基盤となる専門知識に加え、AIやデータマイニング、コンピュータグラフィックス（CG）などの技術を学びます。",
+      "text": "In addition to specialized knowledge that forms the basis of IT, such as hardware, software and networks, students learn technologies such as AI, data mining and computer graphics (CG).",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.courses.0.name": {
+      "ja": "情報工学概論",
+      "text": "Introduction to Informatics",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.courses.1.name": {
+      "ja": "データ構造とアルゴリズム",
+      "text": "Data Structures and Algorithms",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.courses.2.name": {
+      "ja": "コンピュータグラフィックス",
+      "text": "Computer Graphics",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.courseNote": {
+      "ja": "公式サイトには科目名のみ掲載されているため、内容の説明は載せていません。",
+      "text": "The official website lists only the course names, so no descriptions are given.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.name": {
+      "ja": "知能・機械工学課程",
+      "text": "Program in Intelligent and Mechanical Engineering",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.text": {
+      "ja": "人工知能と機械工学の基礎から、機械システムを知能化するための幅広い知識・技術を学びます。",
+      "text": "Students learn from the basics of artificial intelligence and mechanical engineering to the wide range of knowledge and skills needed to make mechanical systems intelligent.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.courses.0.name": {
+      "ja": "知能・機械工学概論",
+      "text": "Introduction to Intelligent and Mechanical Engineering",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.courses.1.name": {
+      "ja": "人工知能基礎",
+      "text": "Fundamentals of Artificial Intelligence",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.courses.2.name": {
+      "ja": "ロボティクス",
+      "text": "Robotics",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.courseNote": {
+      "ja": "公式サイトには科目名のみ掲載されているため、内容の説明は載せていません。",
+      "text": "The official website lists only the course names, so no descriptions are given.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.name": {
+      "ja": "生命環境学部",
+      "text": "School of Biological and Environmental Sciences",
+      "status": "official"
+    },
+    "facultyGuide.faculties.bes.lead": {
+      "ja": "環境・食糧・健康など、現代社会の課題の解決に挑む力を身につける学部です。実験科学とデータサイエンスを活かした教育・研究に取り組んでいます。",
+      "text": "This school develops the ability to tackle today's challenges in areas such as the environment, food and health. It carries out education and research that make use of experimental science and data science.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.fields": {
+      "ja": "生物科学・生命医科学・環境応用化学を、3つの学科で学びます。",
+      "text": "Biological sciences, biomedical sciences and environmental applied chemistry are studied in three departments.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.name": {
+      "ja": "生物科学科",
+      "text": "Department of Biological Sciences",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.text": {
+      "ja": "地球上の多様な生物について学び、その活用の可能性を探ります。植物昆虫科学・応用微生物学・計算生物学の3つの専攻があります。",
+      "text": "Students learn about the diverse living things on Earth and explore how they can be used. There are three majors: plant and insect science, applied microbiology and computational biology.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.0.name": {
+      "ja": "生命科学I",
+      "text": "Life Science I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.0.year": {
+      "ja": "1年次",
+      "text": "1st year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.0.text": {
+      "ja": "高校生物の基礎から始め、DNAからRNA、タンパク質への流れや遺伝子操作技術の原理までを学びます。",
+      "text": "Starting from high school biology, learn the flow from DNA to RNA to protein and the principles of genetic engineering techniques.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.1.name": {
+      "ja": "細胞・組織学実験",
+      "text": "Cell and Histology Laboratory",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.1.year": {
+      "ja": "2年次",
+      "text": "2nd year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.1.text": {
+      "ja": "細胞や組織を扱うための基本技術を身につけます。",
+      "text": "Learn the basic techniques for handling cells and tissues.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.2.name": {
+      "ja": "先端生命科学実験Ⅰ",
+      "text": "Advanced Life Science Laboratory I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "3rd–4th year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.2.text": {
+      "ja": "卒業研究の前に必要な実験手法や、研究の基本的な考え方を身につけます。",
+      "text": "Learn the experimental methods and basic research mindset needed before starting graduation research.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.name": {
+      "ja": "生命医科学科",
+      "text": "Department of Biomedical Sciences",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.text": {
+      "ja": "ヒトを含む哺乳動物の生命現象を解明し、基礎医学分野に応用することで、病気の治療や健康の維持に役立てることをめざします。発生再生医科学・生命医科学・医工学の3つの専攻があります。",
+      "text": "The department aims to clarify life phenomena in mammals, including humans, and apply them to basic medicine to help treat diseases and maintain health. There are three majors: developmental and regenerative medicine, biomedical science and biomedical engineering.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.0.name": {
+      "ja": "医科学入門A",
+      "text": "Introduction to Medical Science A",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.0.year": {
+      "ja": "1年次",
+      "text": "1st year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.0.text": {
+      "ja": "専門科目を学ぶために必要な生命科学の基礎を、遺伝学・発生学・化学・光学技術など多角的な視点から学びます。",
+      "text": "Learn the life science basics needed for specialized courses from multiple perspectives, including genetics, embryology, chemistry and optical technology.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.1.name": {
+      "ja": "基礎医科学実験Ⅰ",
+      "text": "Basic Medical Science Laboratory I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.1.year": {
+      "ja": "2年次",
+      "text": "2nd year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.1.text": {
+      "ja": "生命現象を分子レベルで解析するための基本的な技術や知識を身につけます。",
+      "text": "Learn the basic techniques and knowledge for analyzing life phenomena at the molecular level.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.2.name": {
+      "ja": "先端医科学実験Ⅰ",
+      "text": "Advanced Medical Science Laboratory I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "3rd–4th year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.2.text": {
+      "ja": "卒業研究の前に必要な実験手法や、実験計画の立て方・考え方を学びます。",
+      "text": "Learn the experimental methods needed before graduation research, and how to plan and think about experiments.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.name": {
+      "ja": "環境応用化学科",
+      "text": "Department of Environmental Applied Chemistry",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.text": {
+      "ja": "化学の基礎をしっかり学び、環境問題に取り組むための基礎的な力を身につけます。物質創生系・機能探索系・環境分析・地球化学系の3つの分野があります。",
+      "text": "Students learn the fundamentals of chemistry thoroughly and gain the basic skills to tackle environmental issues. There are three fields: materials creation, function exploration, and environmental analysis and geochemistry.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.0.name": {
+      "ja": "基礎化学実験Ⅰ",
+      "text": "Basic Chemistry Laboratory I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.0.year": {
+      "ja": "1年次",
+      "text": "1st year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.0.text": {
+      "ja": "無機分析化学・物理化学・有機化学の3分野の実験を通じて、化学の基本概念を体験的に理解します。",
+      "text": "Understand the basic concepts of chemistry through hands-on experiments in three fields: inorganic analytical chemistry, physical chemistry and organic chemistry.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.1.name": {
+      "ja": "地球環境化学",
+      "text": "Global Environmental Chemistry",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.1.year": {
+      "ja": "2年次",
+      "text": "2nd year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.1.text": {
+      "ja": "大気・海洋・陸域での水の循環を、化学平衡論や反応速度論の基礎を使って学びます。",
+      "text": "Learn about the water cycle in the atmosphere, oceans and on land, using the basics of chemical equilibrium and reaction kinetics.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.2.name": {
+      "ja": "環境応用化学実験I",
+      "text": "Environmental Applied Chemistry Laboratory I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "3rd–4th year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.2.text": {
+      "ja": "環境分析・地球化学・無機・物理・有機・高分子化学にわたって、分析・合成・分離・データ処理の基本的な方法を学びます。",
+      "text": "Learn the basic methods of analysis, synthesis, separation and data processing across environmental analysis, geochemistry, and inorganic, physical, organic and polymer chemistry.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.name": {
+      "ja": "建築学部",
+      "text": "School of Architecture",
+      "status": "official"
+    },
+    "facultyGuide.faculties.architecture.lead": {
+      "ja": "グローバルな視野で建築と都市の未来を創造し、建築学で社会課題の解決をめざす学部です。",
+      "text": "With a global perspective, this school creates the future of architecture and cities, and aims to solve social issues through architecture.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.fields": {
+      "ja": "一級建築士をめざす教育を基本に、都市デザインや都市計画の科目も学べます。「デザインとマネジメント」「工学と人文社会科学」「グローバルとフィールド」の3つを重視しています。",
+      "text": "Based on education for those aiming to become first-class registered architects, students can also take courses in urban design and urban planning. The school emphasizes three pairs: design and management, engineering and the humanities and social sciences, and global and field-based study.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.name": {
+      "ja": "建築学科",
+      "text": "Department of Architecture",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.text": {
+      "ja": "設計や建設にとどまらず、建築の始まりから終わりまでを、工学とデザインを基盤に、マネジメントの視点も含めて学びます。",
+      "text": "Going beyond design and construction, students learn about the whole life of a building, from beginning to end, based on engineering and design and including a management perspective.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.0.name": {
+      "ja": "建築・都市デザイン概論",
+      "text": "Introduction to Architecture and Urban Design",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.0.year": {
+      "ja": "1年次",
+      "text": "1st year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.0.text": {
+      "ja": "複数の専任教員によるオムニバス形式の講義で、建築や都市の多様性と魅力を学びます。",
+      "text": "In an omnibus lecture by several full-time faculty members, learn about the diversity and appeal of architecture and cities.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.1.name": {
+      "ja": "建築材料学実験",
+      "text": "Building Materials Laboratory",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.1.year": {
+      "ja": "2年次",
+      "text": "2nd year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.1.text": {
+      "ja": "建築材料に直接触れる実験で力学的な性質を理解し、計測や統計処理の基本を学びます。",
+      "text": "Through experiments with real building materials, understand their mechanical properties and learn the basics of measurement and statistical processing.",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.2.name": {
+      "ja": "建築設計演習Ⅲ",
+      "text": "Architectural Design Studio III",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "3rd–4th year",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.2.text": {
+      "ja": "美術館と交流施設の2つの課題に取り組む設計演習です。",
+      "text": "A design studio with two assignments: an art museum and a community facility.",
       "status": "provisional"
     },
     "studentGroupDirectory.sections.0.tab": {

@@ -29,14 +29,21 @@
     });
   });
 
-  function open(facility) {
-    lastShown = { kind: 'facility', facility: facility };
+  // options (学部情報だけ): { faculty: 'policy', department: 'policy-media', from: 開いた元の号館の facility }
+  function open(facility, options) {
+    lastShown = { kind: 'facility', facility: facility, options: options };
     bodyElement.innerHTML = '';
     panelElement.classList.toggle('wide', !!facility.wide);
 
     var title = el('h2', 'info-title', facility.name || '');
     title.id = 'infoTitle';
     bodyElement.appendChild(title);
+
+    if (facility.facultyGuide) {
+      renderFacultyGuide(facility, options || {});
+      show();
+      return;
+    }
 
     if (facility.facts && facility.facts.length) {
       var facts = el('div', 'info-facts');
@@ -109,6 +116,10 @@
     (facility.sections || []).forEach(function(section) {
       bodyElement.appendChild(createSection(section));
     });
+    if (facility.faculties && facility.faculties.length) {
+      var relatedFaculties = createRelatedFaculties(facility);
+      if (relatedFaculties) { bodyElement.appendChild(relatedFaculties); }
+    }
     if (facility.video) {
       var video = createVideo(facility.video);
       if (video) {
@@ -347,6 +358,160 @@
       box.appendChild(row);
     }
     return box;
+  }
+
+  // ---------- 学部情報（フッターと各号館で共通。データは config.facultyGuide） ----------
+  function facultyGuideData() {
+    return (window.TOUR_CONFIG && window.TOUR_CONFIG.facultyGuide) || { faculties: [] };
+  }
+
+  function facultyGuideFacility() {
+    var footer = (window.TOUR_CONFIG && window.TOUR_CONFIG.footer) || {};
+    return footer.faculties && footer.faculties.facultyGuide ? footer.faculties : { name: t('footer.faculties'), facultyGuide: true, wide: true };
+  }
+
+  function findById(list, id) {
+    for (var i = 0; i < (list || []).length; i++) {
+      if (list[i].id === id) { return list[i]; }
+    }
+    return null;
+  }
+
+  // 号館カードの「この建物に関連する学部」: 押すと共通の学部情報を、その学部から開く。
+  function createRelatedFaculties(building) {
+    var data = facultyGuideData();
+    var faculties = building.faculties.map(function(id) { return findById(data.faculties, id); }).filter(Boolean);
+    if (!faculties.length) { return null; }
+    var box = el('div', 'info-section faculty-related');
+    box.appendChild(el('h3', 'info-heading', t('faculty.related')));
+    var row = el('div', 'faculty-related-list');
+    faculties.forEach(function(faculty) {
+      var b = el('button', 'faculty-chip', faculty.name + ' →');
+      b.type = 'button';
+      b.addEventListener('click', function() {
+        open(facultyGuideFacility(), { faculty: faculty.id, from: building });
+      });
+      row.appendChild(b);
+    });
+    box.appendChild(row);
+    if (data.buildingNote) { box.appendChild(el('p', 'info-note', '※' + data.buildingNote)); }
+    return box;
+  }
+
+  // 学部一覧 → 学部（概要と学科・課程の一覧）→ 学科・課程（学習内容と授業例）の3段階。
+  function renderFacultyGuide(facility, state) {
+    var data = facultyGuideData();
+    var faculty = findById(data.faculties, state.faculty);
+    var department = faculty ? findById(faculty.departments, state.department) : null;
+
+    function go(next) {
+      open(facility, { faculty: next.faculty, department: next.department, from: state.from });
+      panelElement.scrollTop = 0;
+    }
+
+    var nav = el('div', 'faculty-nav');
+    if (state.from) {
+      var back = el('button', 'faculty-back faculty-back-building', '← ' + t('faculty.backTo', { name: state.from.name }));
+      back.type = 'button';
+      back.addEventListener('click', function() { open(state.from); });
+      nav.appendChild(back);
+    }
+    if (department) {
+      var up = el('button', 'faculty-back', '← ' + t('faculty.backTo', { name: faculty.name }));
+      up.type = 'button';
+      up.addEventListener('click', function() { go({ faculty: faculty.id }); });
+      nav.appendChild(up);
+    } else if (faculty) {
+      var list = el('button', 'faculty-back', '← ' + t('faculty.backToList'));
+      list.type = 'button';
+      list.addEventListener('click', function() { go({}); });
+      nav.appendChild(list);
+    }
+    if (nav.children.length) { bodyElement.appendChild(nav); }
+
+    // 現在地（学部情報 › 学部 › 学科）
+    var crumbs = [t('footer.faculties')];
+    if (faculty) { crumbs.push(faculty.name); }
+    if (department) { crumbs.push(department.name); }
+    if (crumbs.length > 1) { bodyElement.appendChild(el('p', 'faculty-crumbs', crumbs.join(' › '))); }
+
+    if (!faculty) {
+      if (data.intro) { bodyElement.appendChild(el('p', 'info-lead', data.intro)); }
+      var grid = el('div', 'faculty-grid');
+      (data.faculties || []).forEach(function(f) {
+        var card = el('button', 'faculty-card');
+        card.type = 'button';
+        card.appendChild(el('span', 'faculty-card-name', f.name));
+        if (f.lead) { card.appendChild(el('span', 'faculty-card-text', f.lead)); }
+        card.appendChild(el('span', 'faculty-card-count', t('faculty.departmentCount', { n: (f.departments || []).length })));
+        card.addEventListener('click', function() { go({ faculty: f.id }); });
+        grid.appendChild(card);
+      });
+      bodyElement.appendChild(grid);
+    } else if (!department) {
+      var head = el('div', 'faculty-head');
+      head.appendChild(el('h3', 'faculty-name', faculty.name));
+      if (faculty.lead) { head.appendChild(el('p', 'info-text', faculty.lead)); }
+      bodyElement.appendChild(head);
+      if (faculty.fields) {
+        var fields = el('div', 'info-section');
+        fields.appendChild(el('h3', 'info-heading', t('faculty.fields')));
+        fields.appendChild(el('p', 'info-text', faculty.fields));
+        bodyElement.appendChild(fields);
+      }
+      var depts = el('div', 'info-section');
+      depts.appendChild(el('h3', 'info-heading', t('faculty.departments')));
+      var deptList = el('div', 'faculty-dept-list');
+      (faculty.departments || []).forEach(function(d) {
+        var item = el('button', 'faculty-dept');
+        item.type = 'button';
+        item.appendChild(el('span', 'faculty-dept-name', d.name));
+        if (d.text) { item.appendChild(el('span', 'faculty-dept-text', d.text)); }
+        item.appendChild(el('span', 'faculty-dept-more', t('faculty.seeCourses') + ' →'));
+        item.addEventListener('click', function() { go({ faculty: faculty.id, department: d.id }); });
+        deptList.appendChild(item);
+      });
+      depts.appendChild(deptList);
+      bodyElement.appendChild(depts);
+      if (faculty.url) {
+        var actions = el('div', 'guide-actions');
+        actions.appendChild(createLinkButton({ label: t('faculty.officialFaculty', { name: faculty.name }), url: faculty.url }));
+        bodyElement.appendChild(actions);
+      }
+    } else {
+      var dhead = el('div', 'faculty-head');
+      dhead.appendChild(el('span', 'faculty-of', faculty.name));
+      dhead.appendChild(el('h3', 'faculty-name', department.name));
+      bodyElement.appendChild(dhead);
+      if (department.text) {
+        var learn = el('div', 'info-section');
+        learn.appendChild(el('h3', 'info-heading', t('faculty.learn')));
+        learn.appendChild(el('p', 'info-text', department.text));
+        bodyElement.appendChild(learn);
+      }
+      if (department.courses && department.courses.length) {
+        var courses = el('div', 'info-section');
+        courses.appendChild(el('h3', 'info-heading', t('faculty.courses')));
+        var ul = el('ul', 'info-items');
+        department.courses.forEach(function(course) {
+          var li = el('li', 'info-item');
+          var name = el('span', 'info-item-name', course.name);
+          if (course.year) { name.appendChild(el('span', 'faculty-year', course.year)); }
+          li.appendChild(name);
+          if (course.text) { li.appendChild(el('span', 'info-item-text', course.text)); }
+          ul.appendChild(li);
+        });
+        courses.appendChild(ul);
+        if (department.courseNote) { courses.appendChild(el('p', 'info-note', '※' + department.courseNote)); }
+        bodyElement.appendChild(courses);
+      }
+      if (department.url) {
+        var dActions = el('div', 'guide-actions');
+        dActions.appendChild(createLinkButton({ label: t('faculty.officialDepartment', { name: department.name }), url: department.url }));
+        bodyElement.appendChild(dActions);
+      }
+    }
+    if (data.source) { bodyElement.appendChild(el('p', 'club-note', data.source)); }
   }
 
   function createIntro(intro) {
@@ -644,7 +809,7 @@
       return tabs.indexOf(bar.querySelector('.selected'));
     });
     var scroll = panelElement.scrollTop;
-    if (lastShown.kind === 'facility') { open(lastShown.facility); } else { openActivities.apply(null, lastShown.args); }
+    if (lastShown.kind === 'facility') { open(lastShown.facility, lastShown.options); } else { openActivities.apply(null, lastShown.args); }
     bodyElement.querySelectorAll('[role="tablist"]').forEach(function(bar, i) {
       var tab = bar.children[selected[i]];
       if (selected[i] > 0 && tab) { tab.click(); }

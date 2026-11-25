@@ -2020,3 +2020,157 @@ body.desktop.info-open:has(#infoPanel.wide) #topBar {
 body.mobile.info-open #topBar {
   z-index: 51;
 }
+
+/* ---------- 学部情報（学部一覧 → 学部 → 学科・課程） ---------- */
+.faculty-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 10px;
+}
+
+.faculty-back {
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1.5px #c9d0dd;
+  color: #1f2a44;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.faculty-back:hover,
+.faculty-back:focus-visible {
+  box-shadow: inset 0 0 0 1.5px #f07a3a;
+}
+
+.faculty-back-building {
+  background: #1f2a44;
+  box-shadow: none;
+  color: #fff;
+}
+
+.faculty-crumbs {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #5b6474;
+}
+
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 10px;
+  margin: 12px 0 16px;
+}
+
+.faculty-card,
+.faculty-dept {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(31, 42, 68, 0.08);
+  color: #1f2a44;
+  text-align: left;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.faculty-card:hover,
+.faculty-card:focus-visible,
+.faculty-dept:hover,
+.faculty-dept:focus-visible {
+  box-shadow: 0 0 0 2px #f07a3a, 0 4px 12px rgba(31, 42, 68, 0.12);
+  outline: none;
+}
+
+.faculty-card-name,
+.faculty-dept-name {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.faculty-card-text,
+.faculty-dept-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3b4558;
+}
+
+.faculty-card-count,
+.faculty-dept-more {
+  margin-top: auto;
+  font-size: 13px;
+  font-weight: bold;
+  color: #b4561f;
+}
+
+.faculty-head {
+  margin: 0 0 14px;
+}
+
+.faculty-name {
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1f2a44;
+}
+
+.faculty-of {
+  display: inline-block;
+  margin: 0 0 4px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #ffe9d6;
+  color: #a2470f;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.faculty-dept-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.faculty-year {
+  margin-left: 8px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: #eef0f3;
+  color: #5b6474;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.faculty-related-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.faculty-chip {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #1f2a44;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.faculty-chip:hover,
+.faculty-chip:focus-visible {
+  box-shadow: 0 0 0 2px #f07a3a;
+  outline: none;
+}
+
+body.mobile .faculty-grid,
+body.mobile .faculty-dept-list {
+  grid-template-columns: 1fr;
+}

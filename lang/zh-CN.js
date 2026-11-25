@@ -77,7 +77,18 @@ TourI18n.register("zh-CN", {
     "panel.watchVideo": "观看视频",
     "panel.relatedArticle": "相关文章",
     "panel.prevPhoto": "上一张照片",
-    "panel.nextPhoto": "下一张照片"
+    "panel.nextPhoto": "下一张照片",
+    "faculty.related": "与本建筑相关的学部",
+    "faculty.backTo": "返回{name}",
+    "faculty.backToList": "返回学部列表",
+    "faculty.departmentCount": "学科・课程 {n}个",
+    "faculty.fields": "可学习的领域",
+    "faculty.departments": "学科・课程",
+    "faculty.seeCourses": "查看学习内容和课程示例",
+    "faculty.officialFaculty": "{name}官方网站",
+    "faculty.officialDepartment": "{name}官方页面",
+    "faculty.learn": "学习内容",
+    "faculty.courses": "课程示例"
   },
   "content": {
     "title": {
@@ -274,31 +285,6 @@ TourI18n.register("zh-CN", {
       "ja": "学部情報",
       "text": "学部信息",
       "status": "provisional"
-    },
-    "footer.faculties.tabs.0.label": {
-      "ja": "総合政策学部",
-      "text": "综合政策系",
-      "status": "official"
-    },
-    "footer.faculties.tabs.1.label": {
-      "ja": "理学部",
-      "text": "理系",
-      "status": "official"
-    },
-    "footer.faculties.tabs.2.label": {
-      "ja": "工学部",
-      "text": "工系",
-      "status": "official"
-    },
-    "footer.faculties.tabs.3.label": {
-      "ja": "生命環境学部",
-      "text": "生命环境系",
-      "status": "official"
-    },
-    "footer.faculties.tabs.4.label": {
-      "ja": "建築学部",
-      "text": "建筑系",
-      "status": "official"
     },
     "footer.events.name": {
       "ja": "KSCイベント情報",
@@ -1203,6 +1189,776 @@ TourI18n.register("zh-CN", {
     "studentLifeLead": {
       "ja": "神戸三田キャンパスで行われている活動の一部を紹介します。くわしくは各公式情報をご覧ください。",
       "text": "这里介绍神户三田校区开展的部分活动。详情请查看各官方信息。",
+      "status": "provisional"
+    },
+    "facultyGuide.intro": {
+      "ja": "神戸三田キャンパスには5つの学部があります。学部を選ぶと、学部の紹介と学科・課程の一覧が表示されます。",
+      "text": "神户三田校区有5个学部。选择学部后，将显示学部介绍以及学科・课程列表。",
+      "status": "provisional"
+    },
+    "facultyGuide.source": {
+      "ja": "学部・学科の紹介と授業例は、大学公式サイトの各学部・学科のページをもとにまとめています（2026年11月確認）。授業の内容や開講年次は変わることがあります。",
+      "text": "学部・学科介绍和课程示例依据大学官方网站各学部・学科的页面整理（2026年11月确认）。课程内容和开课年级可能会有变化。",
+      "status": "provisional"
+    },
+    "facultyGuide.buildingNote": {
+      "ja": "各号館のカードの説明をもとにした関連です。その学部の授業が主にこの建物で行われることを示すものではありません。",
+      "text": "此关联依据各号馆卡片中的说明，并不表示该学部的课程主要在本建筑中进行。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.name": {
+      "ja": "総合政策学部",
+      "text": "综合政策系",
+      "status": "official"
+    },
+    "facultyGuide.faculties.policy.lead": {
+      "ja": "「自然と人間の共生、人間と人間の共生」を理念に、現代社会のさまざまな問題に対して、多様な学問の専門知識をもとに解決策を探り、実践できる力を育てる学部です。",
+      "text": "以“自然与人类的共生、人与人的共生”为理念，培养基于多种学科的专业知识，针对现代社会各种问题探寻解决方案并加以实践的能力。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.fields": {
+      "ja": "法学・政治学・経済学・経営学・社会学・社会福祉学・工学・理学・言語などを組み合わせて学びます。1年次は学科に所属せず、2年次から4つの学科に分かれます。",
+      "text": "将法学、政治学、经济学、经营学、社会学、社会福利学、工学、理学、语言等结合起来学习。一年级不分学科，从二年级起分入4个学科。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.name": {
+      "ja": "総合政策学科",
+      "text": "综合政策学科",
+      "status": "official"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.text": {
+      "ja": "「共生の社会」の構築をめざし、「自然環境」「社会・経済・技術システム」「言語・文化・思想」の3つの領域から、目標に合わせて科目を選んで学びます。",
+      "text": "以构建“共生社会”为目标，从“自然环境”“社会・经济・技术系统”“语言・文化・思想”3个领域中，根据目标选择科目学习。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.0.name": {
+      "ja": "公共選択論",
+      "text": "公共选择论",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.0.text": {
+      "ja": "経済と政治・行政の関わりや、政策が決まるしくみを公共選択論の考え方から理解します。",
+      "text": "从公共选择论的角度理解经济与政治、行政的关系以及政策的决定机制。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.1.name": {
+      "ja": "環境政策論",
+      "text": "环境政策论",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.1.text": {
+      "ja": "環境政策の歴史や課題を学び、分析・考察・提案する力を身につけます。",
+      "text": "学习环境政策的历史和课题，培养分析、思考和提出建议的能力。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.2.name": {
+      "ja": "公共政策課題研究A【国際貿易の発展と税関】",
+      "text": "公共政策课题研究A【国际贸易的发展与海关】",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-policy.courses.2.text": {
+      "ja": "税関の手続きや関連する政策を、神戸税関の職員などを講師に迎えて学びます。",
+      "text": "邀请神户海关的职员等担任讲师，学习海关手续及相关政策。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.name": {
+      "ja": "メディア情報学科",
+      "text": "媒体信息学科",
+      "status": "official"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.text": {
+      "ja": "人にやさしい豊かな情報社会の実現に向けて、知識や技術、政策を立てる力を身につけ、解決策を映像・メディアとして社会に発信することを学びます。",
+      "text": "为实现以人为本的丰富信息社会，掌握知识、技术和制定政策的能力，学习通过影像和媒体向社会传达解决方案。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.0.name": {
+      "ja": "メディア制作演習（シミュレーション）",
+      "text": "媒体制作练习（模拟）",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.0.text": {
+      "ja": "Pythonプログラミングの基本を学び、ドローンの飛行を制御するプログラムを作ります。",
+      "text": "学习Python编程基础，编写控制无人机飞行的程序。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.1.name": {
+      "ja": "メディア制作演習（映像表現）",
+      "text": "媒体制作练习（影像表现）",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.1.text": {
+      "ja": "デジタル一眼カメラでの撮影や編集を通じて、映像による政策提言をめざします。",
+      "text": "通过使用数码单反相机拍摄和剪辑，以影像形式提出政策建议。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.2.name": {
+      "ja": "メディア情報課題研究",
+      "text": "媒体信息课题研究",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-media.courses.2.text": {
+      "ja": "学術研究のためのコミュニケーション力や批判的思考力を育てます。",
+      "text": "培养学术研究所需的沟通能力和批判性思维。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.name": {
+      "ja": "都市政策学科",
+      "text": "城市政策学科",
+      "status": "official"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.text": {
+      "ja": "市民・企業・行政が協働できる都市空間の創造をめざし、政治学・経済学・経営学・都市科学を組み合わせて政策提言に取り組みます。",
+      "text": "以创造市民、企业、行政能够协作的城市空间为目标，结合政治学、经济学、经营学、城市科学开展政策建议。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.0.name": {
+      "ja": "ベンチャー経営論",
+      "text": "风险企业经营论",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.0.text": {
+      "ja": "起業に関する基本的な知識や考え方を体系的に学びます。",
+      "text": "系统地学习有关创业的基本知识和思维方式。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.1.name": {
+      "ja": "都市政策課題研究B【JAL連携講座】",
+      "text": "城市政策课题研究B【JAL合作讲座】",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.1.text": {
+      "ja": "航空業界やエアラインのビジネス戦略について学びます。",
+      "text": "学习航空业以及航空公司的商业战略。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.2.name": {
+      "ja": "政策コンサルティング演習",
+      "text": "政策咨询练习",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-urban.courses.2.text": {
+      "ja": "経済の課題を統計的に分析し、財務省の政策担当者に直接政策提言を行います。",
+      "text": "对经济课题进行统计分析，并直接向财务省的政策负责人提出政策建议。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.name": {
+      "ja": "国際政策学科",
+      "text": "国际政策学科",
+      "status": "official"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.text": {
+      "ja": "国連の「持続可能な開発目標（SDGs）」を念頭に、国際社会の課題を解決に導き、より良い国際社会の実現をめざして学びます。",
+      "text": "以联合国“可持续发展目标（SDGs）”为念，学习如何解决国际社会的课题，致力于实现更美好的国际社会。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.0.name": {
+      "ja": "国際発展政策",
+      "text": "国际发展政策",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.0.text": {
+      "ja": "発展途上国の課題と開発政策の基本を学びます。",
+      "text": "学习发展中国家的课题以及开发政策的基础。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.1.name": {
+      "ja": "国際協力論",
+      "text": "国际合作论",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.1.text": {
+      "ja": "第二次世界大戦後の国際協力の歴史を学び、これからの国際協力のあり方を考えます。",
+      "text": "学习第二次世界大战后国际合作的历史，思考今后国际合作应有的形态。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.2.name": {
+      "ja": "外交政策",
+      "text": "外交政策",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.policy.departments.policy-international.courses.2.text": {
+      "ja": "外交の歴史や今日の外交政策、日本外交について基本的な理解を深めます。",
+      "text": "加深对外交历史、当今外交政策及日本外交的基本理解。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.name": {
+      "ja": "理学部",
+      "text": "理系",
+      "status": "official"
+    },
+    "facultyGuide.faculties.science.lead": {
+      "ja": "自然や科学の法則を理解し、新たな真理を追究する力を育む学部です。",
+      "text": "培养理解自然与科学法则、追求新真理之能力的学部。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.fields": {
+      "ja": "数学・物理学・宇宙物理学・化学を、3つの学科で学びます。物理・宇宙学科には、宇宙物理学の主要3分野（電波天文学・赤外線天文学・X線天文学）がそろっています。",
+      "text": "在3个学科中学习数学、物理学、宇宙物理学和化学。物理、宇宙学科设有宇宙物理学的3个主要领域（射电天文学、红外天文学、X射线天文学）。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.name": {
+      "ja": "数理科学科",
+      "text": "数理科学科",
+      "status": "official"
+    },
+    "facultyGuide.faculties.science.departments.science-math.text": {
+      "ja": "基礎数学から応用数理までを幅広く学びます。データサイエンスや確率過程、統計・アクチュアリーに関わる手法も扱います。",
+      "text": "广泛学习从基础数学到应用数理的内容，也涉及数据科学、随机过程以及统计、精算相关的方法。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.0.name": {
+      "ja": "線形代数I",
+      "text": "线性代数I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.0.year": {
+      "ja": "1年次",
+      "text": "一年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.0.text": {
+      "ja": "ベクトルと行列の理論の基礎を学びます。",
+      "text": "学习向量与矩阵理论的基础。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.1.name": {
+      "ja": "応用数理入門",
+      "text": "应用数理入门",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.1.year": {
+      "ja": "2年次",
+      "text": "二年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.1.text": {
+      "ja": "これまでに学んだ数学を活用し、身の回りの現象を数理的に捉えます。",
+      "text": "运用已学的数学知识，从数理角度把握身边的现象。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.2.name": {
+      "ja": "数理科学演習",
+      "text": "数理科学练习",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "三・四年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-math.courses.2.text": {
+      "ja": "自然・生命・社会現象の数理モデルや、代数学・時系列分析などの基礎理論を学びます。",
+      "text": "学习自然、生命、社会现象的数理模型以及代数学、时间序列分析等基础理论。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.name": {
+      "ja": "物理・宇宙学科",
+      "text": "物理、宇宙学科",
+      "status": "official"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.text": {
+      "ja": "理論・実験・観測を通じて、物理学の未解決問題と宇宙の謎に迫ります。",
+      "text": "通过理论、实验和观测，探索物理学中的未解之题和宇宙之谜。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.0.name": {
+      "ja": "力学Ⅰ",
+      "text": "力学Ⅰ",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.0.year": {
+      "ja": "1年次",
+      "text": "一年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.0.text": {
+      "ja": "古典力学の基礎概念を理解し、運動方程式の解き方を学びます。",
+      "text": "理解经典力学的基础概念，学习运动方程的解法。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.1.name": {
+      "ja": "基礎物理学実験I",
+      "text": "基础物理学实验I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.1.year": {
+      "ja": "2年次",
+      "text": "二年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.1.text": {
+      "ja": "基礎的な実験や測定を行い、物理現象と物理法則の関係を深く理解します。",
+      "text": "进行基础实验和测量，深入理解物理现象与物理法则的关系。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.2.name": {
+      "ja": "宇宙物理学",
+      "text": "宇宙物理学",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "三・四年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-physics.courses.2.text": {
+      "ja": "物理学の基本法則を使って、天体や宇宙の構造と進化を理解します。",
+      "text": "运用物理学的基本法则，理解天体和宇宙的结构与演化。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.name": {
+      "ja": "化学科",
+      "text": "化学科",
+      "status": "official"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.text": {
+      "ja": "原子・分子のレベルから物質を理解します。物質の構造・機能とその原理を解明する「分析・物理化学系」と、化学反応で機能性物質を創りだす「無機・有機化学系」の2分野があります。",
+      "text": "从原子、分子层面理解物质。分为阐明物质结构、功能及其原理的“分析・物理化学系”和通过化学反应创造功能性物质的“无机・有机化学系”2个领域。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.0.name": {
+      "ja": "基礎化学実験I",
+      "text": "基础化学实验I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.0.year": {
+      "ja": "1年次",
+      "text": "一年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.0.text": {
+      "ja": "有機・無機化合物を使った実験で、基本的な測定や操作を身につけます。",
+      "text": "通过使用有机和无机化合物的实验，掌握基本的测量和操作。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.1.name": {
+      "ja": "分析化学I",
+      "text": "分析化学I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.1.year": {
+      "ja": "2年次",
+      "text": "二年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.1.text": {
+      "ja": "試料の調製や分析操作を学び、重量分析・容量分析の方法を理解します。",
+      "text": "学习试样制备和分析操作，理解重量分析和容量分析的方法。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.2.name": {
+      "ja": "有機化学実験",
+      "text": "有机化学实验",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "三・四年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.science.departments.science-chemistry.courses.2.text": {
+      "ja": "有機合成の研究に必要な基本操作や技術を身につけます。",
+      "text": "掌握有机合成研究所需的基本操作和技术。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.name": {
+      "ja": "工学部",
+      "text": "工系",
+      "status": "official"
+    },
+    "facultyGuide.faculties.engineering.lead": {
+      "ja": "学科の代わりに「課程制」を取り入れ、分野を横断したカリキュラムで、複雑化する社会の課題を解決できる力を身につける学部です。",
+      "text": "以“课程制”代替学科，通过跨领域的课程体系，培养能够解决日益复杂的社会课题的能力。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.fields": {
+      "ja": "物質科学・電気電子工学・情報科学・人間・機械系の4分野を、4つの課程で学びます。",
+      "text": "在4个课程中学习物质科学、电气电子工学、信息科学、人类・机械系4个领域。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.name": {
+      "ja": "物質工学課程",
+      "text": "物质工学课程",
+      "status": "official"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.text": {
+      "ja": "「創エネ」「蓄エネ」「省エネ」の3つの観点から物質科学をとらえ、新しい物質を生み出すための基礎から実践までを、物理と化学の両面から学びます。",
+      "text": "从“创能”“储能”“节能”3个角度把握物质科学，从物理和化学两方面学习创造新物质所需的基础到实践。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.courses.0.name": {
+      "ja": "先進エネルギーナノ工学詳論",
+      "text": "先进能源纳米工学详论",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.courses.0.text": {
+      "ja": "エネルギーを「創る」「蓄える」「運ぶ」「使う」に関わる最先端の研究内容を学び、教員の研究テーマの内容と意義を理解します。",
+      "text": "学习与能源的“创造”“储存”“输送”“使用”相关的前沿研究内容，理解教师研究课题的内容和意义。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.courses.1.name": {
+      "ja": "物質工学概論",
+      "text": "物质工学概论",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.courses.2.name": {
+      "ja": "ものづくり理工学実験1",
+      "text": "制造理工学实验1",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-materials.courseNote": {
+      "ja": "物質工学概論・ものづくり理工学実験1は、公式サイトには科目名のみ掲載されているため、内容の説明は載せていません。",
+      "text": "物质工学概论和制造理工学实验1在官方网站上仅刊载了科目名称，因此未附内容说明。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.name": {
+      "ja": "電気電子応用工学課程",
+      "text": "电力电子应用工学课程",
+      "status": "official"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.text": {
+      "ja": "次世代モビリティーなどで使われる動力機器や情報通信機器、エネルギーの輸送・変換機器の基盤となる、電気エネルギーの有効利用について学びます。",
+      "text": "学习作为下一代出行等所用动力设备、信息通信设备以及能源输送・转换设备基础的电能有效利用。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.0.name": {
+      "ja": "基礎電気電子実験",
+      "text": "基础电气电子实验",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.0.text": {
+      "ja": "1年次から電気電子工学の基礎を実践的に身につけます。",
+      "text": "从一年级起实践性地掌握电气电子工学的基础。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.1.name": {
+      "ja": "電気電子ものづくり実験",
+      "text": "电气电子制造实验",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.1.text": {
+      "ja": "省電力パワーエレクトロニクスの要素技術を体験的に学ぶ実験科目です。",
+      "text": "通过亲身体验学习节能电力电子要素技术的实验科目。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.2.name": {
+      "ja": "電気電子計測実験",
+      "text": "电气电子测量实验",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-electrical.courses.2.text": {
+      "ja": "電気電子工学の基盤となる計測技術に関わる実験科目です。",
+      "text": "关于作为电气电子工学基础的测量技术的实验科目。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.name": {
+      "ja": "情報工学課程",
+      "text": "信息工学课程",
+      "status": "official"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.text": {
+      "ja": "ハードウェア・ソフトウェア・ネットワークなどITの基盤となる専門知識に加え、AIやデータマイニング、コンピュータグラフィックス（CG）などの技術を学びます。",
+      "text": "除了硬件、软件、网络等作为IT基础的专业知识外，还学习AI、数据挖掘、计算机图形学（CG）等技术。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.courses.0.name": {
+      "ja": "情報工学概論",
+      "text": "信息工学概论",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.courses.1.name": {
+      "ja": "データ構造とアルゴリズム",
+      "text": "数据结构与算法",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.courses.2.name": {
+      "ja": "コンピュータグラフィックス",
+      "text": "计算机图形学",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-informatics.courseNote": {
+      "ja": "公式サイトには科目名のみ掲載されているため、内容の説明は載せていません。",
+      "text": "官方网站上仅刊载了科目名称，因此未附内容说明。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.name": {
+      "ja": "知能・機械工学課程",
+      "text": "智能、机械工学课程",
+      "status": "official"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.text": {
+      "ja": "人工知能と機械工学の基礎から、機械システムを知能化するための幅広い知識・技術を学びます。",
+      "text": "从人工智能和机械工学的基础，到使机械系统智能化所需的广泛知识与技术。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.courses.0.name": {
+      "ja": "知能・機械工学概論",
+      "text": "智能・机械工学概论",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.courses.1.name": {
+      "ja": "人工知能基礎",
+      "text": "人工智能基础",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.courses.2.name": {
+      "ja": "ロボティクス",
+      "text": "机器人学",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.engineering.departments.engineering-mechanical.courseNote": {
+      "ja": "公式サイトには科目名のみ掲載されているため、内容の説明は載せていません。",
+      "text": "官方网站上仅刊载了科目名称，因此未附内容说明。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.name": {
+      "ja": "生命環境学部",
+      "text": "生命环境系",
+      "status": "official"
+    },
+    "facultyGuide.faculties.bes.lead": {
+      "ja": "環境・食糧・健康など、現代社会の課題の解決に挑む力を身につける学部です。実験科学とデータサイエンスを活かした教育・研究に取り組んでいます。",
+      "text": "培养挑战环境、粮食、健康等现代社会课题之能力的学部。开展运用实验科学和数据科学的教育与研究。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.fields": {
+      "ja": "生物科学・生命医科学・環境応用化学を、3つの学科で学びます。",
+      "text": "在3个学科中学习生物科学、生命医科学和环境应用化学。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.name": {
+      "ja": "生物科学科",
+      "text": "生物科学科",
+      "status": "official"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.text": {
+      "ja": "地球上の多様な生物について学び、その活用の可能性を探ります。植物昆虫科学・応用微生物学・計算生物学の3つの専攻があります。",
+      "text": "学习地球上多样的生物，探索其利用的可能性。设有植物昆虫科学、应用微生物学、计算生物学3个专业。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.0.name": {
+      "ja": "生命科学I",
+      "text": "生命科学I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.0.year": {
+      "ja": "1年次",
+      "text": "一年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.0.text": {
+      "ja": "高校生物の基礎から始め、DNAからRNA、タンパク質への流れや遺伝子操作技術の原理までを学びます。",
+      "text": "从高中生物基础开始，学习从DNA到RNA再到蛋白质的流程以及基因操作技术的原理。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.1.name": {
+      "ja": "細胞・組織学実験",
+      "text": "细胞・组织学实验",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.1.year": {
+      "ja": "2年次",
+      "text": "二年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.1.text": {
+      "ja": "細胞や組織を扱うための基本技術を身につけます。",
+      "text": "掌握处理细胞和组织的基本技术。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.2.name": {
+      "ja": "先端生命科学実験Ⅰ",
+      "text": "前沿生命科学实验Ⅰ",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "三・四年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biology.courses.2.text": {
+      "ja": "卒業研究の前に必要な実験手法や、研究の基本的な考え方を身につけます。",
+      "text": "掌握毕业研究前所需的实验方法和研究的基本思路。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.name": {
+      "ja": "生命医科学科",
+      "text": "生命医科学科",
+      "status": "official"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.text": {
+      "ja": "ヒトを含む哺乳動物の生命現象を解明し、基礎医学分野に応用することで、病気の治療や健康の維持に役立てることをめざします。発生再生医科学・生命医科学・医工学の3つの専攻があります。",
+      "text": "阐明包括人类在内的哺乳动物的生命现象，并将其应用于基础医学领域，致力于为疾病治疗和健康维持作出贡献。设有发生再生医科学、生命医科学、医工学3个专业。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.0.name": {
+      "ja": "医科学入門A",
+      "text": "医科学入门A",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.0.year": {
+      "ja": "1年次",
+      "text": "一年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.0.text": {
+      "ja": "専門科目を学ぶために必要な生命科学の基礎を、遺伝学・発生学・化学・光学技術など多角的な視点から学びます。",
+      "text": "从遗传学、发生学、化学、光学技术等多角度学习专业科目所需的生命科学基础。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.1.name": {
+      "ja": "基礎医科学実験Ⅰ",
+      "text": "基础医科学实验Ⅰ",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.1.year": {
+      "ja": "2年次",
+      "text": "二年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.1.text": {
+      "ja": "生命現象を分子レベルで解析するための基本的な技術や知識を身につけます。",
+      "text": "掌握在分子层面分析生命现象的基本技术和知识。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.2.name": {
+      "ja": "先端医科学実験Ⅰ",
+      "text": "前沿医科学实验Ⅰ",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "三・四年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-biomedical.courses.2.text": {
+      "ja": "卒業研究の前に必要な実験手法や、実験計画の立て方・考え方を学びます。",
+      "text": "学习毕业研究前所需的实验方法，以及制定实验计划的方法和思路。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.name": {
+      "ja": "環境応用化学科",
+      "text": "环境应用化学科",
+      "status": "official"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.text": {
+      "ja": "化学の基礎をしっかり学び、環境問題に取り組むための基礎的な力を身につけます。物質創生系・機能探索系・環境分析・地球化学系の3つの分野があります。",
+      "text": "扎实学习化学基础，掌握应对环境问题的基本能力。设有物质创生系、功能探索系、环境分析・地球化学系3个领域。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.0.name": {
+      "ja": "基礎化学実験Ⅰ",
+      "text": "基础化学实验Ⅰ",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.0.year": {
+      "ja": "1年次",
+      "text": "一年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.0.text": {
+      "ja": "無機分析化学・物理化学・有機化学の3分野の実験を通じて、化学の基本概念を体験的に理解します。",
+      "text": "通过无机分析化学、物理化学、有机化学3个领域的实验，亲身理解化学的基本概念。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.1.name": {
+      "ja": "地球環境化学",
+      "text": "地球环境化学",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.1.year": {
+      "ja": "2年次",
+      "text": "二年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.1.text": {
+      "ja": "大気・海洋・陸域での水の循環を、化学平衡論や反応速度論の基礎を使って学びます。",
+      "text": "运用化学平衡论和反应速率论的基础，学习大气、海洋、陆地中的水循环。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.2.name": {
+      "ja": "環境応用化学実験I",
+      "text": "环境应用化学实验I",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "三・四年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.bes.departments.bes-chemistry.courses.2.text": {
+      "ja": "環境分析・地球化学・無機・物理・有機・高分子化学にわたって、分析・合成・分離・データ処理の基本的な方法を学びます。",
+      "text": "涵盖环境分析、地球化学、无机、物理、有机、高分子化学，学习分析、合成、分离、数据处理的基本方法。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.name": {
+      "ja": "建築学部",
+      "text": "建筑系",
+      "status": "official"
+    },
+    "facultyGuide.faculties.architecture.lead": {
+      "ja": "グローバルな視野で建築と都市の未来を創造し、建築学で社会課題の解決をめざす学部です。",
+      "text": "以全球视野创造建筑与城市的未来，致力于以建筑学解决社会课题的学部。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.fields": {
+      "ja": "一級建築士をめざす教育を基本に、都市デザインや都市計画の科目も学べます。「デザインとマネジメント」「工学と人文社会科学」「グローバルとフィールド」の3つを重視しています。",
+      "text": "以培养一级建筑师的教育为基础，还可以学习城市设计和城市规划的科目。重视“设计与管理”“工学与人文社会科学”“全球与实地”3个方面。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.name": {
+      "ja": "建築学科",
+      "text": "建筑学科",
+      "status": "official"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.text": {
+      "ja": "設計や建設にとどまらず、建築の始まりから終わりまでを、工学とデザインを基盤に、マネジメントの視点も含めて学びます。",
+      "text": "不局限于设计和施工，以工学和设计为基础，并结合管理的视角，学习建筑从开始到结束的全过程。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.0.name": {
+      "ja": "建築・都市デザイン概論",
+      "text": "建筑・城市设计概论",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.0.year": {
+      "ja": "1年次",
+      "text": "一年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.0.text": {
+      "ja": "複数の専任教員によるオムニバス形式の講義で、建築や都市の多様性と魅力を学びます。",
+      "text": "通过多位专任教师轮流授课的形式，学习建筑与城市的多样性和魅力。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.1.name": {
+      "ja": "建築材料学実験",
+      "text": "建筑材料学实验",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.1.year": {
+      "ja": "2年次",
+      "text": "二年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.1.text": {
+      "ja": "建築材料に直接触れる実験で力学的な性質を理解し、計測や統計処理の基本を学びます。",
+      "text": "通过直接接触建筑材料的实验理解其力学性质，学习测量和统计处理的基础。",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.2.name": {
+      "ja": "建築設計演習Ⅲ",
+      "text": "建筑设计练习Ⅲ",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.2.year": {
+      "ja": "3・4年次",
+      "text": "三・四年级",
+      "status": "provisional"
+    },
+    "facultyGuide.faculties.architecture.departments.architecture-architecture.courses.2.text": {
+      "ja": "美術館と交流施設の2つの課題に取り組む設計演習です。",
+      "text": "以美术馆和交流设施2个课题开展的设计练习。",
       "status": "provisional"
     },
     "studentGroupDirectory.sections.0.tab": {
