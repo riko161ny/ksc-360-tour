@@ -97,7 +97,13 @@ window.TOUR_CONFIG = {
       info: [ { yaw: -0.39, pitch: 0, facility: "building3" } ] },
     { id: "p07", name: "食堂", map: { x: 0.2649, y: 0.5984 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p08", name: "生協", map: { x: 0.2472, y: 0.5882 }, photo: null, view: null, northOffset: null, links: [], info: [] },
-    { id: "p09", name: "食堂前テラス席", map: { x: 0.2496, y: 0.5441 }, photo: null, view: null, northOffset: null, links: [], info: [] },
+    { id: "p09", name: "食堂前テラス席", map: { x: 0.2496, y: 0.5441 }, photo: null, view: null, northOffset: null,
+      links: [
+        { target: "p07", yaw: 1.071, pitch: 0.147 },
+        { target: "p11", yaw: -1.838, pitch: 0.046 },
+        { target: "p10", yaw: -2.52, pitch: 0.02 }
+      ],
+      info: [] },
     { id: "p10", name: "スカイガーデン", map: { x: 0.2697, y: 0.4729 }, photo: null, view: null, northOffset: null, links: [], info: [] },
     { id: "p11", name: "Colorful Box（生協売店）", map: { x: 0.2971, y: 0.5051 }, photo: null, view: null, northOffset: null, links: [ { target: "p11-1", yaw: 1.43, pitch: 0.046 } ], info: [ { yaw: 0.43, pitch: -0.19, facility: "colorfulBox" } ] },
     { id: "p12", name: "第二厚生棟", map: { x: 0.3092, y: 0.425 }, photo: null, view: null, northOffset: null,
