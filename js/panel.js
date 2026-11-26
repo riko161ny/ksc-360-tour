@@ -435,7 +435,13 @@
         void content.offsetWidth;
         content.classList.add('club-fade');
       }
-      if (section.heading) { content.appendChild(el('h3', 'club-section-heading', section.heading)); }
+      // section.spotlight: 動画を中心にした特集を一覧より上に出す（「KSCのサークル」の炎流）
+      var spotlight = section.spotlight ? createClubSpotlight(section.spotlight) : null;
+      if (spotlight) {
+        content.appendChild(spotlight);
+        if (section.spotlight.listHeading) { content.appendChild(el('h3', 'club-section-heading club-spotlight-next', section.spotlight.listHeading)); }
+      }
+      if (section.heading) { content.appendChild(el(spotlight ? 'h4' : 'h3', spotlight ? 'club-list-title' : 'club-section-heading', section.heading)); }
       if (section.text) { appendParagraphs(content, section.text); }
       (section.features || []).forEach(function(f) { content.appendChild(createFeatureCard(f)); });
       if (section.compact && section.compact.length) {
@@ -457,7 +463,21 @@
         var cards = el('div', 'club-cards');
         groups.forEach(function(group) {
           var card = el('div', 'club-card');
-          card.appendChild(el('h5', 'club-card-name', group.name));
+          if (group.spotlight && spotlight) {
+            // 一覧の名前を押すと、上の特集へ移動する
+            var jump = el('button', 'club-card-name club-card-jump', group.name);
+            jump.type = 'button';
+            jump.addEventListener('click', function() {
+              panelElement.scrollTop = Math.max(0, spotlight.offsetTop - 8);
+              spotlight.classList.remove('flash');
+              void spotlight.offsetWidth;
+              spotlight.classList.add('flash');
+            });
+            card.appendChild(jump);
+            card.appendChild(el('span', 'club-card-jump-hint', t('panel.spotlightJump')));
+          } else {
+            card.appendChild(el('h5', 'club-card-name', group.name));
+          }
           (group.links || []).forEach(function(link) {
             var a = el('a', 'club-card-link', (link.label || t('panel.officialSite')) + ' ↗');
             a.href = link.url;
@@ -501,6 +521,52 @@
       });
     });
     return wrap;
+  }
+
+  // 特集（炎流）：見出し・導入 → 団体名・キャッチコピー・紹介 → 動画 → 活動カード3枚 → Instagram
+  function createClubSpotlight(sp) {
+    var box = el('section', 'club-spotlight');
+    if (sp.title) { box.appendChild(el('h3', 'club-section-heading', sp.title)); }
+    if (sp.text) { appendParagraphs(box, sp.text); }
+    var card = el('div', 'club-spotlight-card');
+    if (sp.name) { card.appendChild(el('h4', 'club-spotlight-name', sp.name)); }
+    if (sp.catch) { card.appendChild(el('p', 'club-spotlight-catch', sp.catch)); }
+    (sp.about || []).forEach(function(p) { card.appendChild(el('p', 'club-spotlight-text', p)); });
+    if (sp.video && sp.video.youtube) {
+      if (sp.video.heading) { card.appendChild(el('h5', 'club-spotlight-sub', sp.video.heading)); }
+      var player = createVideo({ youtube: sp.video.youtube, title: sp.video.title });
+      if (player) { card.appendChild(player); }
+      if (sp.video.title) { card.appendChild(el('p', 'club-spotlight-video-title', sp.video.title)); }
+      if (sp.video.text) { card.appendChild(el('p', 'club-spotlight-text', sp.video.text)); }
+      if (sp.video.button) {
+        var vrow = el('div', 'guide-actions');
+        vrow.appendChild(createLinkButton(sp.video.button, true));
+        card.appendChild(vrow);
+      }
+    }
+    if (sp.activities && sp.activities.length) {
+      var grid = el('div', 'club-spotlight-activities');
+      sp.activities.forEach(function(a) {
+        var c = el('div', 'club-spotlight-activity');
+        c.appendChild(el('h5', 'club-spotlight-activity-title', a.title));
+        c.appendChild(el('p', 'club-spotlight-activity-text', a.text));
+        grid.appendChild(c);
+      });
+      card.appendChild(grid);
+    }
+    if (sp.more) {
+      var more = el('div', 'club-spotlight-more');
+      if (sp.more.heading) { more.appendChild(el('h5', 'club-spotlight-sub', sp.more.heading)); }
+      if (sp.more.text) { more.appendChild(el('p', 'club-spotlight-text', sp.more.text)); }
+      if (sp.more.button) {
+        var mrow = el('div', 'guide-actions');
+        mrow.appendChild(createLinkButton(sp.more.button, false));
+        more.appendChild(mrow);
+      }
+      card.appendChild(more);
+    }
+    box.appendChild(card);
+    return box;
   }
 
   // A larger card for a featured group: name, related faculty, text and a link.

@@ -94,7 +94,8 @@ TourI18n.register("ko", {
     "faculty.study": "더 자세히 알아보기",
     "faculty.studyYear": "대상: {year}",
     "faculty.loginOnly": "재학생 전용・로그인 필요",
-    "faculty.publicDoc": "일반 공개"
+    "faculty.publicDoc": "일반 공개",
+    "panel.spotlightJump": "위의 소개 보기 ↑"
   },
   "content": {
     "title": {
@@ -1419,7 +1420,7 @@ TourI18n.register("ko", {
     },
     "facilities.shingetsusai.intro.heading": {
       "ja": "大学祭「新月祭」",
-      "text": "대학 축제 ‘신게쓰 축제(新月祭)’",
+      "text": "대학 축제 '신게쓰 축제(新月祭)'",
       "status": "provisional"
     },
     "facilities.shingetsusai.intro.text": {
@@ -3589,7 +3590,7 @@ TourI18n.register("ko", {
     },
     "facilities.gym.sections.0.items.3.name": {
       "ja": "大学祭「新月祭」",
-      "text": "대학 축제 ‘신게쓰 축제(新月祭)’",
+      "text": "대학 축제 '신게쓰 축제(新月祭)'",
       "status": "provisional"
     },
     "facilities.gym.sections.0.items.3.text": {
@@ -6982,6 +6983,111 @@ TourI18n.register("ko", {
       "text": "간세이가쿠인 대학교 공식 사이트에서 소개하는 고베 산다 캠퍼스의 대학 등록 단체(학생연맹에 가맹하지 않은 동호회·동아리)입니다.",
       "status": "provisional"
     },
+    "clubDirectory.sections.0.spotlight.title": {
+      "ja": "KSCのサークルをのぞいてみよう！",
+      "text": "KSC의 동아리를 들여다봐요!",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.text": {
+      "ja": "神戸三田キャンパスでは、さまざまなサークルが活動しています。今回は、その中から、よさこいサークル「関学よさこい連 炎流」の活動を紹介します。",
+      "text": "고베 산다 캠퍼스에서는 다양한 동아리가 활동하고 있습니다. 이번에는 그중에서 요사코이 동아리 '関学よさこい連 炎流(엔루)'의 활동을 소개합니다.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.name": {
+      "ja": "関学よさこい連「炎流（えんる）」",
+      "text": "関学よさこい連 '炎流(엔루)'",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.catch": {
+      "ja": "三田から全国へ！仲間とつくる、よさこいの舞台",
+      "text": "산다에서 전국으로! 동료와 함께 만드는 요사코이 무대",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.about.0": {
+      "ja": "関学よさこい連「炎流」は、神戸三田キャンパスを拠点に活動する大学登録団体です。",
+      "text": "関学よさこい連 '炎流'은 고베 산다 캠퍼스를 거점으로 활동하는 대학 등록 단체입니다.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.about.1": {
+      "ja": "「最高の感動、楽しみ、満足感を生み出し、感じ、伝え、分かち合う」をコンセプトに、日々練習に取り組んでいます。",
+      "text": "'최고의 감동, 즐거움, 만족감을 만들어 내고, 느끼고, 전하고, 나눈다'를 콘셉트로 매일 연습에 임하고 있습니다.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.about.2": {
+      "ja": "大学祭「新月祭」での演舞に加え、地域のイベントや全国各地のよさこい祭りにも参加しています。",
+      "text": "대학 축제 '신게쓰 축제(新月祭)'에서의 공연 외에도 지역 이벤트와 전국 각지의 요사코이 축제에도 참가하고 있습니다.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.video.heading": {
+      "ja": "実際の演舞を見てみよう！",
+      "text": "실제 공연을 봐요!",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.video.title": {
+      "ja": "こいや祭り2026｜フィナーレ演舞",
+      "text": "こいや祭り 2026 | 피날레 공연",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.video.text": {
+      "ja": "2026年9月、大阪で開催された「こいや祭り」で、炎流が披露した演舞の映像です。仲間とともに一つの演舞をつくり上げる、学生たちの活動の様子をぜひ映像でご覧ください。",
+      "text": "2026년 9월 오사카에서 열린 'こいや祭り(코이야 마쓰리)'에서 炎流가 선보인 공연 영상입니다. 동료와 함께 하나의 공연을 만들어 가는 학생들의 활동 모습을 영상으로 확인해 보세요.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.video.button.label": {
+      "ja": "YouTubeで動画を見る",
+      "text": "YouTube에서 영상 보기",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.0.title": {
+      "ja": "大学祭「新月祭」",
+      "text": "대학 축제 '신게쓰 축제(新月祭)'",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.0.text": {
+      "ja": "神戸三田キャンパスの大学祭では、演舞を披露する企画が行われています。2026年の新月祭公式プログラムにも、炎流の演舞が掲載されました。",
+      "text": "고베 산다 캠퍼스의 대학 축제에서는 공연을 선보이는 기획이 열리고 있습니다. 2026년 신게쓰 축제 공식 프로그램에도 炎流의 공연이 실렸습니다.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.1.title": {
+      "ja": "地域との交流",
+      "text": "지역과의 교류",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.1.text": {
+      "ja": "2026年3月には、三田市のC-ビレッジで開催された地域交流イベント「Cul Bar Town SANDA」で演舞を披露しました。",
+      "text": "2026년 3월에는 산다시의 C-빌리지에서 열린 지역 교류 이벤트 'Cul Bar Town SANDA'에서 공연을 선보였습니다.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.2.title": {
+      "ja": "全国のよさこい祭り",
+      "text": "전국의 요사코이 축제",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.2.text": {
+      "ja": "三田を拠点に、全国各地のよさこい祭りにも参加しています。2026年には、大阪の「こいや祭り」に参加しました。",
+      "text": "산다를 거점으로 전국 각지의 요사코이 축제에도 참가하고 있습니다. 2026년에는 오사카의 'こいや祭り'에 참가했습니다.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.more.heading": {
+      "ja": "炎流についてもっと知る",
+      "text": "炎流에 대해 더 알아보기",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.more.text": {
+      "ja": "普段の活動や最新情報は、炎流の公式Instagramから確認できます。",
+      "text": "평소 활동과 최신 정보는 炎流의 공식 Instagram에서 확인할 수 있습니다.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.more.button.label": {
+      "ja": "炎流の公式Instagramを見る",
+      "text": "炎流 공식 Instagram 보기",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.listHeading": {
+      "ja": "ほかのKSCサークルも見てみよう！",
+      "text": "다른 KSC 동아리도 봐요!",
+      "status": "provisional"
+    },
     "clubDirectory.sections.0.categories.0.label": {
       "ja": "スポーツ",
       "text": "스포츠",
@@ -7889,7 +7995,7 @@ TourI18n.register("ko", {
     },
     "activities.shingetsusai.name": {
       "ja": "大学祭「新月祭」",
-      "text": "대학 축제 ‘신게쓰 축제(新月祭)’",
+      "text": "대학 축제 '신게쓰 축제(新月祭)'",
       "status": "provisional"
     },
     "activities.shingetsusai.summary": {

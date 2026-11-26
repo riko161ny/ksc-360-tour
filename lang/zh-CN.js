@@ -94,7 +94,8 @@ TourI18n.register("zh-CN", {
     "faculty.study": "进一步了解学习内容",
     "faculty.studyYear": "适用：{year}",
     "faculty.loginOnly": "仅限在校生・需要登录",
-    "faculty.publicDoc": "公开资料"
+    "faculty.publicDoc": "公开资料",
+    "panel.spotlightJump": "查看上方介绍 ↑"
   },
   "content": {
     "title": {
@@ -1419,7 +1420,7 @@ TourI18n.register("zh-CN", {
     },
     "facilities.shingetsusai.intro.heading": {
       "ja": "大学祭「新月祭」",
-      "text": "大学文化节“新月祭”",
+      "text": "大学节“新月祭”",
       "status": "provisional"
     },
     "facilities.shingetsusai.intro.text": {
@@ -3589,7 +3590,7 @@ TourI18n.register("zh-CN", {
     },
     "facilities.gym.sections.0.items.3.name": {
       "ja": "大学祭「新月祭」",
-      "text": "大学文化节“新月祭”",
+      "text": "大学节“新月祭”",
       "status": "provisional"
     },
     "facilities.gym.sections.0.items.3.text": {
@@ -6982,6 +6983,111 @@ TourI18n.register("zh-CN", {
       "text": "这些是关西学院大学官方网站介绍的神户三田校区大学登记团体（未加入学生联盟的同好会和社团）。",
       "status": "provisional"
     },
+    "clubDirectory.sections.0.spotlight.title": {
+      "ja": "KSCのサークルをのぞいてみよう！",
+      "text": "来看看KSC的社团吧！",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.text": {
+      "ja": "神戸三田キャンパスでは、さまざまなサークルが活動しています。今回は、その中から、よさこいサークル「関学よさこい連 炎流」の活動を紹介します。",
+      "text": "神户三田校区有各种各样的社团在活动。这次从中介绍YOSAKOI舞蹈社团“関学よさこい連 炎流（Enru）”的活动。",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.name": {
+      "ja": "関学よさこい連「炎流（えんる）」",
+      "text": "関学よさこい連“炎流（Enru）”",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.catch": {
+      "ja": "三田から全国へ！仲間とつくる、よさこいの舞台",
+      "text": "从三田走向全国！和伙伴一起打造的YOSAKOI舞台",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.about.0": {
+      "ja": "関学よさこい連「炎流」は、神戸三田キャンパスを拠点に活動する大学登録団体です。",
+      "text": "関学よさこい連“炎流”是以神户三田校区为据点活动的大学登记团体。",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.about.1": {
+      "ja": "「最高の感動、楽しみ、満足感を生み出し、感じ、伝え、分かち合う」をコンセプトに、日々練習に取り組んでいます。",
+      "text": "以“创造、感受、传递并分享最大的感动、乐趣和满足感”为理念，每天坚持练习。",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.about.2": {
+      "ja": "大学祭「新月祭」での演舞に加え、地域のイベントや全国各地のよさこい祭りにも参加しています。",
+      "text": "除了在大学节“新月祭”上表演外，还参加地区活动和全国各地的YOSAKOI祭。",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.video.heading": {
+      "ja": "実際の演舞を見てみよう！",
+      "text": "来看看真实的表演吧！",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.video.title": {
+      "ja": "こいや祭り2026｜フィナーレ演舞",
+      "text": "こいや祭り2026｜终场表演",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.video.text": {
+      "ja": "2026年9月、大阪で開催された「こいや祭り」で、炎流が披露した演舞の映像です。仲間とともに一つの演舞をつくり上げる、学生たちの活動の様子をぜひ映像でご覧ください。",
+      "text": "这是2026年9月在大阪举办的“こいや祭り”上炎流表演的视频。请通过视频看看学生们和伙伴一起打造一场表演的样子。",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.video.button.label": {
+      "ja": "YouTubeで動画を見る",
+      "text": "在YouTube上观看视频",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.0.title": {
+      "ja": "大学祭「新月祭」",
+      "text": "大学节“新月祭”",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.0.text": {
+      "ja": "神戸三田キャンパスの大学祭では、演舞を披露する企画が行われています。2026年の新月祭公式プログラムにも、炎流の演舞が掲載されました。",
+      "text": "在神户三田校区的大学节上，有表演类的企划。炎流的表演也被列入了2026年新月祭的官方节目单。",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.1.title": {
+      "ja": "地域との交流",
+      "text": "与地区的交流",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.1.text": {
+      "ja": "2026年3月には、三田市のC-ビレッジで開催された地域交流イベント「Cul Bar Town SANDA」で演舞を披露しました。",
+      "text": "2026年3月，在三田市C-Village举办的地区交流活动“Cul Bar Town SANDA”上进行了表演。",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.2.title": {
+      "ja": "全国のよさこい祭り",
+      "text": "全国的YOSAKOI祭",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.2.text": {
+      "ja": "三田を拠点に、全国各地のよさこい祭りにも参加しています。2026年には、大阪の「こいや祭り」に参加しました。",
+      "text": "以三田为据点，也参加全国各地的YOSAKOI祭。2026年参加了大阪的“こいや祭り”。",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.more.heading": {
+      "ja": "炎流についてもっと知る",
+      "text": "进一步了解炎流",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.more.text": {
+      "ja": "普段の活動や最新情報は、炎流の公式Instagramから確認できます。",
+      "text": "日常活动和最新信息可以在炎流的官方Instagram上查看。",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.more.button.label": {
+      "ja": "炎流の公式Instagramを見る",
+      "text": "查看炎流的官方Instagram",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.listHeading": {
+      "ja": "ほかのKSCサークルも見てみよう！",
+      "text": "也看看KSC的其他社团吧！",
+      "status": "provisional"
+    },
     "clubDirectory.sections.0.categories.0.label": {
       "ja": "スポーツ",
       "text": "体育",
@@ -7889,7 +7995,7 @@ TourI18n.register("zh-CN", {
     },
     "activities.shingetsusai.name": {
       "ja": "大学祭「新月祭」",
-      "text": "大学文化节“新月祭”",
+      "text": "大学节“新月祭”",
       "status": "provisional"
     },
     "activities.shingetsusai.summary": {

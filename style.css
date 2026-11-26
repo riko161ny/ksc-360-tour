@@ -3894,3 +3894,134 @@ body.info-open .guide-tips-bar {
 .guide-hotspot {
   pointer-events: none;
 }
+
+/* ---------- 「KSCのサークル」タブの特集（炎流） ---------- */
+.club-spotlight {
+  margin-bottom: 22px;
+  scroll-margin-top: 8px;
+}
+
+.club-spotlight-card {
+  margin-top: 10px;
+  padding: 18px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(31, 42, 68, 0.08);
+}
+
+.club-spotlight.flash .club-spotlight-card {
+  animation: clubSpotlightFlash 1.2s ease;
+}
+
+@keyframes clubSpotlightFlash {
+  0%, 100% { box-shadow: 0 2px 8px rgba(31, 42, 68, 0.08); }
+  40% { box-shadow: 0 0 0 4px rgba(47, 95, 208, 0.35); }
+}
+
+.club-spotlight-name {
+  margin: 0;
+  color: #1f2a44;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.club-spotlight-catch {
+  margin: 4px 0 10px;
+  color: #b35c00;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.club-spotlight-text {
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.club-spotlight-sub {
+  margin: 18px 0 8px;
+  padding-left: 10px;
+  border-left: 4px solid #2f5fd0;
+  color: #1f2a44;
+  font-size: 16px;
+}
+
+.club-spotlight .info-video {
+  width: 100%;
+  max-width: 720px;
+}
+
+.club-spotlight-video-title {
+  margin: 8px 0 4px;
+  color: #1f2a44;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.club-spotlight-activities {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.club-spotlight-activity {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #f3efe8;
+}
+
+.club-spotlight-activity-title {
+  margin: 0 0 4px;
+  color: #1f2a44;
+  font-size: 15px;
+}
+
+.club-spotlight-activity-text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.club-spotlight-next {
+  margin-top: 8px;
+}
+
+.club-list-title {
+  margin: 10px 0 4px;
+  color: #3d4760;
+  font-size: 15px;
+}
+
+.club-card-jump {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-family: inherit;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.club-card-jump-hint {
+  color: #2f5fd0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+body.mobile .club-spotlight-card {
+  padding: 14px;
+}
+
+body.mobile .club-spotlight-name {
+  font-size: 19px;
+}
+
+body.mobile .club-spotlight-activities {
+  grid-template-columns: 1fr;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .club-spotlight.flash .club-spotlight-card { animation: none; }
+}

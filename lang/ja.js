@@ -94,6 +94,7 @@ TourI18n.register("ja", {
     "faculty.study": "もっと詳しく学びを知る",
     "faculty.studyYear": "対象：{year}",
     "faculty.loginOnly": "在学生向け・要ログイン",
-    "faculty.publicDoc": "一般公開"
+    "faculty.publicDoc": "一般公開",
+    "panel.spotlightJump": "上の紹介を見る ↑"
   }
 });

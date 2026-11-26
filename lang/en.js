@@ -94,7 +94,8 @@ TourI18n.register("en", {
     "faculty.study": "Learn more about studying here",
     "faculty.studyYear": "Applies to: {year}",
     "faculty.loginOnly": "Current students only (login required)",
-    "faculty.publicDoc": "Public"
+    "faculty.publicDoc": "Public",
+    "panel.spotlightJump": "See the feature above ↑"
   },
   "content": {
     "title": {
@@ -1419,7 +1420,7 @@ TourI18n.register("en", {
     },
     "facilities.shingetsusai.intro.heading": {
       "ja": "大学祭「新月祭」",
-      "text": "The Shingetsu Festival (university festival)",
+      "text": "University festival \"Shingetsu Festival\"",
       "status": "provisional"
     },
     "facilities.shingetsusai.intro.text": {
@@ -3589,7 +3590,7 @@ TourI18n.register("en", {
     },
     "facilities.gym.sections.0.items.3.name": {
       "ja": "大学祭「新月祭」",
-      "text": "The Shingetsu Festival (university festival)",
+      "text": "University festival \"Shingetsu Festival\"",
       "status": "provisional"
     },
     "facilities.gym.sections.0.items.3.text": {
@@ -6982,6 +6983,111 @@ TourI18n.register("en", {
       "text": "These are the university-registered groups at Kobe Sanda Campus (clubs and circles not belonging to the Student Federation), as introduced on the Kwansei Gakuin University official website.",
       "status": "provisional"
     },
+    "clubDirectory.sections.0.spotlight.title": {
+      "ja": "KSCのサークルをのぞいてみよう！",
+      "text": "Take a look at KSC's circles!",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.text": {
+      "ja": "神戸三田キャンパスでは、さまざまなサークルが活動しています。今回は、その中から、よさこいサークル「関学よさこい連 炎流」の活動を紹介します。",
+      "text": "Many circles are active at Kobe Sanda Campus. Here we introduce one of them: the yosakoi dance circle \"Kangaku Yosakoi-ren Enru.\"",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.name": {
+      "ja": "関学よさこい連「炎流（えんる）」",
+      "text": "Kangaku Yosakoi-ren \"Enru\" (炎流)",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.catch": {
+      "ja": "三田から全国へ！仲間とつくる、よさこいの舞台",
+      "text": "From Sanda to all of Japan! Yosakoi performances created with friends",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.about.0": {
+      "ja": "関学よさこい連「炎流」は、神戸三田キャンパスを拠点に活動する大学登録団体です。",
+      "text": "Kangaku Yosakoi-ren \"Enru\" is a university-registered group based at Kobe Sanda Campus.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.about.1": {
+      "ja": "「最高の感動、楽しみ、満足感を生み出し、感じ、伝え、分かち合う」をコンセプトに、日々練習に取り組んでいます。",
+      "text": "Under the concept \"create, feel, convey and share the greatest excitement, fun and satisfaction,\" the members practice every day.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.about.2": {
+      "ja": "大学祭「新月祭」での演舞に加え、地域のイベントや全国各地のよさこい祭りにも参加しています。",
+      "text": "Besides performing at the university festival \"Shingetsu Festival,\" they also take part in local events and yosakoi festivals across Japan.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.video.heading": {
+      "ja": "実際の演舞を見てみよう！",
+      "text": "Watch a real performance!",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.video.title": {
+      "ja": "こいや祭り2026｜フィナーレ演舞",
+      "text": "Koiya Matsuri 2026 | Finale performance",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.video.text": {
+      "ja": "2026年9月、大阪で開催された「こいや祭り」で、炎流が披露した演舞の映像です。仲間とともに一つの演舞をつくり上げる、学生たちの活動の様子をぜひ映像でご覧ください。",
+      "text": "This video shows Enru's performance at \"Koiya Matsuri,\" held in Osaka in September 2026. Watch how the students build a single performance together.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.video.button.label": {
+      "ja": "YouTubeで動画を見る",
+      "text": "Watch on YouTube",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.0.title": {
+      "ja": "大学祭「新月祭」",
+      "text": "University festival \"Shingetsu Festival\"",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.0.text": {
+      "ja": "神戸三田キャンパスの大学祭では、演舞を披露する企画が行われています。2026年の新月祭公式プログラムにも、炎流の演舞が掲載されました。",
+      "text": "At Kobe Sanda Campus's university festival, there are programs where groups perform. Enru's performance was also listed in the official program of the 2026 Shingetsu Festival.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.1.title": {
+      "ja": "地域との交流",
+      "text": "With the local community",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.1.text": {
+      "ja": "2026年3月には、三田市のC-ビレッジで開催された地域交流イベント「Cul Bar Town SANDA」で演舞を披露しました。",
+      "text": "In March 2026, they performed at \"Cul Bar Town SANDA,\" a community event held at C-Village in Sanda City.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.2.title": {
+      "ja": "全国のよさこい祭り",
+      "text": "Yosakoi festivals across Japan",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.activities.2.text": {
+      "ja": "三田を拠点に、全国各地のよさこい祭りにも参加しています。2026年には、大阪の「こいや祭り」に参加しました。",
+      "text": "Based in Sanda, they also join yosakoi festivals around Japan. In 2026, they took part in \"Koiya Matsuri\" in Osaka.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.more.heading": {
+      "ja": "炎流についてもっと知る",
+      "text": "Learn more about Enru",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.more.text": {
+      "ja": "普段の活動や最新情報は、炎流の公式Instagramから確認できます。",
+      "text": "You can see their everyday activities and latest news on Enru's official Instagram.",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.more.button.label": {
+      "ja": "炎流の公式Instagramを見る",
+      "text": "See Enru's official Instagram",
+      "status": "provisional"
+    },
+    "clubDirectory.sections.0.spotlight.listHeading": {
+      "ja": "ほかのKSCサークルも見てみよう！",
+      "text": "See other KSC circles too!",
+      "status": "provisional"
+    },
     "clubDirectory.sections.0.categories.0.label": {
       "ja": "スポーツ",
       "text": "Sports",
@@ -7889,7 +7995,7 @@ TourI18n.register("en", {
     },
     "activities.shingetsusai.name": {
       "ja": "大学祭「新月祭」",
-      "text": "The Shingetsu Festival (university festival)",
+      "text": "University festival \"Shingetsu Festival\"",
       "status": "provisional"
     },
     "activities.shingetsusai.summary": {
