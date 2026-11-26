@@ -30,6 +30,8 @@ TourI18n.register("en", {
     "footer.events.short": "Events",
     "footer.clubs": "Clubs & Circles",
     "footer.clubs.short": "Clubs",
+    "footer.guide": "Explore by theme",
+    "footer.guide.short": "Themes",
     "view.left": "Look left",
     "view.right": "Look right",
     "view.up": "Look up",
@@ -108,6 +110,951 @@ TourI18n.register("en", {
     "disclaimer": {
       "ja": "このサイトは個人の卒業制作です。関西学院大学の公式サイトではありません。",
       "text": "This site is a personal graduation project. It is not an official Kwansei Gakuin University website.",
+      "status": "provisional"
+    },
+    "guide.arch.text": {
+      "ja": "関西学院大学 神戸三田キャンパスへようこそ！",
+      "text": "Welcome to Kwansei Gakuin University Kobe Sanda Campus!",
+      "status": "provisional"
+    },
+    "guide.arch.lines.0": {
+      "ja": "関西学院大学",
+      "text": "Kwansei Gakuin University",
+      "status": "provisional"
+    },
+    "guide.arch.lines.1": {
+      "ja": "神戸三田キャンパスへようこそ！",
+      "text": "Welcome to Kobe Sanda Campus!",
+      "status": "provisional"
+    },
+    "guide.welcome.title": {
+      "ja": "360度で、キャンパスを探検しよう！",
+      "text": "Explore the campus in 360°!",
+      "status": "provisional"
+    },
+    "guide.welcome.text.0": {
+      "ja": "ここは、関西学院大学神戸三田キャンパスを360度写真で見学できるバーチャルキャンパスツアーです。",
+      "text": "This is a virtual campus tour where you can visit Kwansei Gakuin University's Kobe Sanda Campus through 360° photos.",
+      "status": "provisional"
+    },
+    "guide.welcome.text.1": {
+      "ja": "大学の施設や学習環境はもちろん、学部での学びやゼミ、食堂、サークル活動、大学祭など、さまざまな情報を紹介しています。",
+      "text": "Besides the facilities and learning environment, it introduces studies in each school, seminars, cafeterias, club activities, the university festival and more.",
+      "status": "provisional"
+    },
+    "guide.welcome.text.2": {
+      "ja": "実際にキャンパスを歩くように、気になる場所を自由に探索してみましょう！",
+      "text": "Explore the places that interest you, just like walking around the real campus!",
+      "status": "provisional"
+    },
+    "guide.welcome.button": {
+      "ja": "さっそく探検してみる！",
+      "text": "Start exploring!",
+      "status": "provisional"
+    },
+    "guide.tips.items.0.title": {
+      "ja": "見回してみよう！",
+      "text": "Look around!",
+      "status": "provisional"
+    },
+    "guide.tips.items.0.text": {
+      "ja": "パソコンではドラッグ、スマートフォンではスワイプすると、360度の景色を自由に見回せます。",
+      "text": "Drag on a computer or swipe on a smartphone to look around the 360° view freely.",
+      "status": "provisional"
+    },
+    "guide.tips.items.1.title": {
+      "ja": "矢印を押して進もう！",
+      "text": "Press the arrows to move!",
+      "status": "provisional"
+    },
+    "guide.tips.items.1.text": {
+      "ja": "移動矢印をクリックすると、次の撮影地点へ進めます。",
+      "text": "Click a movement arrow to go to the next photo spot.",
+      "status": "provisional"
+    },
+    "guide.tips.items.2.title": {
+      "ja": "気になる場所をタップ！",
+      "text": "Tap what interests you!",
+      "status": "provisional"
+    },
+    "guide.tips.items.2.text": {
+      "ja": "施設名や情報アイコンを押すと、施設の特徴や学生の活動について詳しく見ることができます。",
+      "text": "Press a facility name or an information icon to learn more about the facility and student activities.",
+      "status": "provisional"
+    },
+    "guide.tips.note": {
+      "ja": "マップや地点一覧から、気になる場所へ直接移動することもできます。",
+      "text": "You can also jump straight to a place from the map or the spot list.",
+      "status": "provisional"
+    },
+    "guide.tips.next": {
+      "ja": "わかった！次へ",
+      "text": "Got it! Next",
+      "status": "provisional"
+    },
+    "guide.tips.more": {
+      "ja": "次の説明へ",
+      "text": "Next tip",
+      "status": "provisional"
+    },
+    "guide.tips.skip": {
+      "ja": "説明をとばす",
+      "text": "Skip the tips",
+      "status": "provisional"
+    },
+    "guide.choose.title": {
+      "ja": "まずは、何が知りたい？",
+      "text": "First, what would you like to know?",
+      "status": "provisional"
+    },
+    "guide.choose.subtitle": {
+      "ja": "気になるテーマを選んで、神戸三田キャンパスを探検してみよう！",
+      "text": "Pick a theme and explore Kobe Sanda Campus!",
+      "status": "provisional"
+    },
+    "guide.choose.study.title": {
+      "ja": "大学での学びを知りたい！",
+      "text": "I want to know about studying here!",
+      "status": "provisional"
+    },
+    "guide.choose.study.subtitle": {
+      "ja": "どんな授業や研究があるの？",
+      "text": "What kinds of classes and research are there?",
+      "status": "provisional"
+    },
+    "guide.choose.study.text": {
+      "ja": "5つの学部の学びを知って、実際の講義室や研究に関連する施設を見に行ってみよう！",
+      "text": "Learn about the five schools, then go and see real lecture rooms and research-related facilities!",
+      "status": "provisional"
+    },
+    "guide.choose.study.button": {
+      "ja": "学部を選んでみる",
+      "text": "Choose a school",
+      "status": "provisional"
+    },
+    "guide.choose.life.title": {
+      "ja": "学生生活の様子を知りたい！",
+      "text": "I want to know about student life!",
+      "status": "provisional"
+    },
+    "guide.choose.life.subtitle": {
+      "ja": "大学生って普段どんなふうに過ごしているの？",
+      "text": "How do university students usually spend their days?",
+      "status": "provisional"
+    },
+    "guide.choose.life.text": {
+      "ja": "食堂、サークル、学生の活動場所など、気になるキャンパスライフをのぞいてみよう！",
+      "text": "Take a peek at campus life: cafeterias, clubs, places where students are active and more!",
+      "status": "provisional"
+    },
+    "guide.choose.life.button": {
+      "ja": "学生生活を見てみる",
+      "text": "See student life",
+      "status": "provisional"
+    },
+    "guide.choose.free": {
+      "ja": "自由にキャンパスを探検する",
+      "text": "Explore the campus freely",
+      "status": "provisional"
+    },
+    "guide.choose.walk": {
+      "ja": "正門から歩いて探検する",
+      "text": "Walk from the main gate",
+      "status": "provisional"
+    },
+    "guide.change.title": {
+      "ja": "探し方を変える",
+      "text": "Change how to explore",
+      "status": "provisional"
+    },
+    "guide.change.study": {
+      "ja": "大学での学びを知りたい",
+      "text": "I want to know about studying here",
+      "status": "provisional"
+    },
+    "guide.change.life": {
+      "ja": "学生生活の様子を知りたい",
+      "text": "I want to know about student life",
+      "status": "provisional"
+    },
+    "guide.change.free": {
+      "ja": "自由にキャンパスを探検する",
+      "text": "Explore the campus freely",
+      "status": "provisional"
+    },
+    "guide.change.note": {
+      "ja": "今いる場所はそのままです。行き先を選んだときだけ移動します。",
+      "text": "You stay where you are. You only move when you choose a destination.",
+      "status": "provisional"
+    },
+    "guide.labels.back": {
+      "ja": "戻る",
+      "text": "Back",
+      "status": "provisional"
+    },
+    "guide.labels.close": {
+      "ja": "閉じる",
+      "text": "Close",
+      "status": "provisional"
+    },
+    "guide.labels.go": {
+      "ja": "この場所に行ってみる",
+      "text": "Go to this place",
+      "status": "provisional"
+    },
+    "guide.labels.detail": {
+      "ja": "詳しく知る",
+      "text": "Learn more",
+      "status": "provisional"
+    },
+    "guide.labels.canSee": {
+      "ja": "360度で見られるもの",
+      "text": "What you can see in 360°",
+      "status": "provisional"
+    },
+    "guide.labels.nextTitle": {
+      "ja": "次はここを見てみよう！",
+      "text": "See this next!",
+      "status": "provisional"
+    },
+    "guide.walk.title": {
+      "ja": "それでは、キャンパスを探検してみよう！",
+      "text": "Now, let's explore the campus!",
+      "status": "provisional"
+    },
+    "guide.walk.text": {
+      "ja": "矢印を押して次の場所へ進んでみてください。",
+      "text": "Press an arrow to move on to the next place.",
+      "status": "provisional"
+    },
+    "guide.study.title": {
+      "ja": "気になる学部はどこ？",
+      "text": "Which school interests you?",
+      "status": "provisional"
+    },
+    "guide.study.text": {
+      "ja": "神戸三田キャンパスには5つの学部があります。興味のある学部を選んでみましょう！",
+      "text": "Kobe Sanda Campus has five schools. Choose the one that interests you!",
+      "status": "provisional"
+    },
+    "guide.study.button": {
+      "ja": "この学部を見てみる",
+      "text": "See this school",
+      "status": "provisional"
+    },
+    "guide.study.catchphrase": {
+      "ja": "どんなことを学ぶ学部なんだろう？",
+      "text": "What do students learn here?",
+      "status": "provisional"
+    },
+    "guide.study.fieldsTitle": {
+      "ja": "主な学習分野",
+      "text": "Main fields of study",
+      "status": "provisional"
+    },
+    "guide.study.departmentsTitle": {
+      "ja": "学科・課程",
+      "text": "Departments and programs",
+      "status": "provisional"
+    },
+    "guide.study.detailButton": {
+      "ja": "学部について詳しく知る",
+      "text": "Learn more about this school",
+      "status": "provisional"
+    },
+    "guide.study.placesButton": {
+      "ja": "この学部に関連する施設を見に行こう！",
+      "text": "Visit facilities related to this school!",
+      "status": "provisional"
+    },
+    "guide.study.placesTitle": {
+      "ja": "この学部に関連する施設を見に行こう！",
+      "text": "Visit facilities related to this school!",
+      "status": "provisional"
+    },
+    "guide.study.placesText": {
+      "ja": "大学では、どんな場所で授業や研究が行われているんだろう？キャンパスの施設を実際にのぞいてみましょう！",
+      "text": "Where do classes and research take place at university? Take a look at the campus facilities!",
+      "status": "provisional"
+    },
+    "guide.study.placesNote": {
+      "ja": "各号館のカードの説明をもとにした関連です。その学部の授業がすべてこの建物で行われるという意味ではありません。建物の中の研究室や実験室は撮影していません。",
+      "text": "These links are based on the descriptions in each building's card. They do not mean that all of the school's classes are held in that building. Labs and research rooms inside the buildings were not photographed.",
+      "status": "provisional"
+    },
+    "guide.study.places.policy.0.title": {
+      "ja": "大用ゼミのゼミ室",
+      "text": "Oyo Seminar room",
+      "status": "provisional"
+    },
+    "guide.study.places.policy.0.text": {
+      "ja": "総合政策学部 大用ゼミのゼミ室です。ゼミの仕組みや研究テーマを紹介しています。",
+      "text": "The seminar room of the Oyo Seminar in the School of Policy Studies. It explains how seminars work and their research themes.",
+      "status": "provisional"
+    },
+    "guide.study.places.policy.0.see": {
+      "ja": "ゼミ室の中のようす",
+      "text": "Inside the seminar room",
+      "status": "provisional"
+    },
+    "guide.study.places.policy.0.arrive": {
+      "ja": "ゼミ室に到着！少人数での学びをのぞいてみよう。",
+      "text": "You've arrived at the seminar room! Take a peek at small-group learning.",
+      "status": "provisional"
+    },
+    "guide.study.places.policy.1.title": {
+      "ja": "Ⅱ号館101号室",
+      "text": "Building II, Room 101",
+      "status": "provisional"
+    },
+    "guide.study.places.policy.1.text": {
+      "ja": "Ⅱ号館は、主に総合政策学部や建築学部の学生が利用する講義棟です。",
+      "text": "Building II is a lecture building used mainly by students of the School of Policy Studies and the School of Architecture.",
+      "status": "provisional"
+    },
+    "guide.study.places.policy.1.see": {
+      "ja": "講義室の中のようす",
+      "text": "Inside the lecture room",
+      "status": "provisional"
+    },
+    "guide.study.places.policy.1.arrive": {
+      "ja": "Ⅱ号館101号室に到着！講義室のようすを見てみよう。",
+      "text": "You've arrived at Building II, Room 101! Have a look at the lecture room.",
+      "status": "provisional"
+    },
+    "guide.study.places.policy.2.title": {
+      "ja": "Ⅰ号館",
+      "text": "Building I",
+      "status": "official"
+    },
+    "guide.study.places.policy.2.text": {
+      "ja": "Ⅰ号館は、主に総合政策学部・総合政策研究科に関連する施設がある校舎です。",
+      "text": "Building I houses facilities mainly related to the School of Policy Studies and the Graduate School of Policy Studies.",
+      "status": "provisional"
+    },
+    "guide.study.places.policy.2.see": {
+      "ja": "Ⅰ号館の前のようす",
+      "text": "In front of Building I",
+      "status": "provisional"
+    },
+    "guide.study.places.policy.2.arrive": {
+      "ja": "Ⅰ号館前に到着！建物の情報マークも見てみよう。",
+      "text": "You've arrived in front of Building I! Check the building's information mark too.",
+      "status": "provisional"
+    },
+    "guide.study.places.policy.3.title": {
+      "ja": "Ⅲ号館",
+      "text": "Building III",
+      "status": "official"
+    },
+    "guide.study.places.policy.3.text": {
+      "ja": "総合政策学部のメディア情報分野に関連するゼミ・演習活動などに利用されている建物です。",
+      "text": "A building used for seminars and practical work related to the media and information field of the School of Policy Studies.",
+      "status": "provisional"
+    },
+    "guide.study.places.policy.3.see": {
+      "ja": "Ⅲ号館の前のようす",
+      "text": "In front of Building III",
+      "status": "provisional"
+    },
+    "guide.study.places.policy.3.arrive": {
+      "ja": "Ⅲ号館前に到着！ここからゼミ室にも行けるよ。",
+      "text": "You've arrived in front of Building III! You can go to the seminar room from here too.",
+      "status": "provisional"
+    },
+    "guide.study.places.science.0.title": {
+      "ja": "Ⅳ号館",
+      "text": "Building IV",
+      "status": "official"
+    },
+    "guide.study.places.science.0.text": {
+      "ja": "主に理学部・工学部・生命環境学部の学生が実験や研究に利用する建物です。",
+      "text": "A building used mainly by students of the Schools of Science, Engineering, and Biological and Environmental Sciences for experiments and research.",
+      "status": "provisional"
+    },
+    "guide.study.places.science.0.see": {
+      "ja": "Ⅳ号館の前のようす",
+      "text": "In front of Building IV",
+      "status": "provisional"
+    },
+    "guide.study.places.science.0.arrive": {
+      "ja": "Ⅳ号館前に到着！建物の情報マークも見てみよう。",
+      "text": "You've arrived in front of Building IV! Check the building's information mark too.",
+      "status": "provisional"
+    },
+    "guide.study.places.science.1.title": {
+      "ja": "Ⅴ号館",
+      "text": "Building V",
+      "status": "official"
+    },
+    "guide.study.places.science.1.text": {
+      "ja": "理学部・工学部・生命環境学部に関連する研究室や実験施設がある建物です。",
+      "text": "A building with research rooms and lab facilities related to the Schools of Science, Engineering, and Biological and Environmental Sciences.",
+      "status": "provisional"
+    },
+    "guide.study.places.science.1.see": {
+      "ja": "Ⅴ号館の前のようす",
+      "text": "In front of Building V",
+      "status": "provisional"
+    },
+    "guide.study.places.science.1.arrive": {
+      "ja": "Ⅴ号館前に到着！建物の情報マークも見てみよう。",
+      "text": "You've arrived in front of Building V! Check the building's information mark too.",
+      "status": "provisional"
+    },
+    "guide.study.places.science.2.title": {
+      "ja": "Ⅷ号館",
+      "text": "Building VIII",
+      "status": "provisional"
+    },
+    "guide.study.places.science.2.text": {
+      "ja": "屋上に、理学部の宇宙研究に関連する施設として整備された天体観測ドームがあります。",
+      "text": "On the roof is an astronomical observation dome, set up as a facility related to space research in the School of Science.",
+      "status": "provisional"
+    },
+    "guide.study.places.science.2.see": {
+      "ja": "Ⅷ号館の前のようす",
+      "text": "In front of Building VIII",
+      "status": "provisional"
+    },
+    "guide.study.places.science.2.arrive": {
+      "ja": "Ⅷ号館前に到着！建物の情報マークも見てみよう。",
+      "text": "You've arrived in front of Building VIII! Check the building's information mark too.",
+      "status": "provisional"
+    },
+    "guide.study.places.engineering.0.title": {
+      "ja": "Ⅳ号館",
+      "text": "Building IV",
+      "status": "official"
+    },
+    "guide.study.places.engineering.0.text": {
+      "ja": "主に理学部・工学部・生命環境学部の学生が実験や研究に利用する建物です。",
+      "text": "A building used mainly by students of the Schools of Science, Engineering, and Biological and Environmental Sciences for experiments and research.",
+      "status": "provisional"
+    },
+    "guide.study.places.engineering.0.see": {
+      "ja": "Ⅳ号館の前のようす",
+      "text": "In front of Building IV",
+      "status": "provisional"
+    },
+    "guide.study.places.engineering.0.arrive": {
+      "ja": "Ⅳ号館前に到着！建物の情報マークも見てみよう。",
+      "text": "You've arrived in front of Building IV! Check the building's information mark too.",
+      "status": "provisional"
+    },
+    "guide.study.places.engineering.1.title": {
+      "ja": "Ⅴ号館",
+      "text": "Building V",
+      "status": "official"
+    },
+    "guide.study.places.engineering.1.text": {
+      "ja": "理学部・工学部・生命環境学部に関連する研究室や実験施設がある建物です。",
+      "text": "A building with research rooms and lab facilities related to the Schools of Science, Engineering, and Biological and Environmental Sciences.",
+      "status": "provisional"
+    },
+    "guide.study.places.engineering.1.see": {
+      "ja": "Ⅴ号館の前のようす",
+      "text": "In front of Building V",
+      "status": "provisional"
+    },
+    "guide.study.places.engineering.1.arrive": {
+      "ja": "Ⅴ号館前に到着！建物の情報マークも見てみよう。",
+      "text": "You've arrived in front of Building V! Check the building's information mark too.",
+      "status": "provisional"
+    },
+    "guide.study.places.engineering.2.title": {
+      "ja": "Ⅶ号館",
+      "text": "Building VII",
+      "status": "provisional"
+    },
+    "guide.study.places.engineering.2.text": {
+      "ja": "主に工学部・生命環境学部の学生が実験や研究に利用する建物です。",
+      "text": "A building used mainly by students of the Schools of Engineering and Biological and Environmental Sciences for experiments and research.",
+      "status": "provisional"
+    },
+    "guide.study.places.engineering.2.see": {
+      "ja": "Ⅶ号館の前のようす",
+      "text": "In front of Building VII",
+      "status": "provisional"
+    },
+    "guide.study.places.engineering.2.arrive": {
+      "ja": "Ⅶ号館前に到着！建物の情報マークも見てみよう。",
+      "text": "You've arrived in front of Building VII! Check the building's information mark too.",
+      "status": "provisional"
+    },
+    "guide.study.places.bes.0.title": {
+      "ja": "Ⅳ号館",
+      "text": "Building IV",
+      "status": "official"
+    },
+    "guide.study.places.bes.0.text": {
+      "ja": "主に理学部・工学部・生命環境学部の学生が実験や研究に利用する建物です。",
+      "text": "A building used mainly by students of the Schools of Science, Engineering, and Biological and Environmental Sciences for experiments and research.",
+      "status": "provisional"
+    },
+    "guide.study.places.bes.0.see": {
+      "ja": "Ⅳ号館の前のようす",
+      "text": "In front of Building IV",
+      "status": "provisional"
+    },
+    "guide.study.places.bes.0.arrive": {
+      "ja": "Ⅳ号館前に到着！建物の情報マークも見てみよう。",
+      "text": "You've arrived in front of Building IV! Check the building's information mark too.",
+      "status": "provisional"
+    },
+    "guide.study.places.bes.1.title": {
+      "ja": "Ⅴ号館",
+      "text": "Building V",
+      "status": "official"
+    },
+    "guide.study.places.bes.1.text": {
+      "ja": "理学部・工学部・生命環境学部に関連する研究室や実験施設がある建物です。",
+      "text": "A building with research rooms and lab facilities related to the Schools of Science, Engineering, and Biological and Environmental Sciences.",
+      "status": "provisional"
+    },
+    "guide.study.places.bes.1.see": {
+      "ja": "Ⅴ号館の前のようす",
+      "text": "In front of Building V",
+      "status": "provisional"
+    },
+    "guide.study.places.bes.1.arrive": {
+      "ja": "Ⅴ号館前に到着！建物の情報マークも見てみよう。",
+      "text": "You've arrived in front of Building V! Check the building's information mark too.",
+      "status": "provisional"
+    },
+    "guide.study.places.bes.2.title": {
+      "ja": "Ⅶ号館",
+      "text": "Building VII",
+      "status": "provisional"
+    },
+    "guide.study.places.bes.2.text": {
+      "ja": "主に工学部・生命環境学部の学生が実験や研究に利用する建物です。",
+      "text": "A building used mainly by students of the Schools of Engineering and Biological and Environmental Sciences for experiments and research.",
+      "status": "provisional"
+    },
+    "guide.study.places.bes.2.see": {
+      "ja": "Ⅶ号館の前のようす",
+      "text": "In front of Building VII",
+      "status": "provisional"
+    },
+    "guide.study.places.bes.2.arrive": {
+      "ja": "Ⅶ号館前に到着！建物の情報マークも見てみよう。",
+      "text": "You've arrived in front of Building VII! Check the building's information mark too.",
+      "status": "provisional"
+    },
+    "guide.study.places.architecture.0.title": {
+      "ja": "Ⅲ号館",
+      "text": "Building III",
+      "status": "official"
+    },
+    "guide.study.places.architecture.0.text": {
+      "ja": "1階のデザインスタジオでは、建築学部の学生が設計演習や建築模型の制作などに取り組んでいます。",
+      "text": "In the design studio on the 1st floor, School of Architecture students work on design exercises and architectural models.",
+      "status": "provisional"
+    },
+    "guide.study.places.architecture.0.see": {
+      "ja": "Ⅲ号館の前のようす",
+      "text": "In front of Building III",
+      "status": "provisional"
+    },
+    "guide.study.places.architecture.0.arrive": {
+      "ja": "Ⅲ号館前に到着！建物の情報マークも見てみよう。",
+      "text": "You've arrived in front of Building III! Check the building's information mark too.",
+      "status": "provisional"
+    },
+    "guide.study.places.architecture.1.title": {
+      "ja": "Ⅱ号館101号室",
+      "text": "Building II, Room 101",
+      "status": "provisional"
+    },
+    "guide.study.places.architecture.1.text": {
+      "ja": "Ⅱ号館は、主に総合政策学部や建築学部の学生が利用する講義棟です。",
+      "text": "Building II is a lecture building used mainly by students of the School of Policy Studies and the School of Architecture.",
+      "status": "provisional"
+    },
+    "guide.study.places.architecture.1.see": {
+      "ja": "講義室の中のようす",
+      "text": "Inside the lecture room",
+      "status": "provisional"
+    },
+    "guide.study.places.architecture.1.arrive": {
+      "ja": "Ⅱ号館101号室に到着！講義室のようすを見てみよう。",
+      "text": "You've arrived at Building II, Room 101! Have a look at the lecture room.",
+      "status": "provisional"
+    },
+    "guide.study.places.architecture.2.title": {
+      "ja": "Ⅰ号館",
+      "text": "Building I",
+      "status": "official"
+    },
+    "guide.study.places.architecture.2.text": {
+      "ja": "館内には講義室があり、総合政策学部や建築学部の学生などが授業で利用しています。",
+      "text": "It has lecture rooms used for classes by students of the School of Policy Studies, the School of Architecture and others.",
+      "status": "provisional"
+    },
+    "guide.study.places.architecture.2.see": {
+      "ja": "Ⅰ号館の前のようす",
+      "text": "In front of Building I",
+      "status": "provisional"
+    },
+    "guide.study.places.architecture.2.arrive": {
+      "ja": "Ⅰ号館前に到着！建物の情報マークも見てみよう。",
+      "text": "You've arrived in front of Building I! Check the building's information mark too.",
+      "status": "provisional"
+    },
+    "guide.life.title": {
+      "ja": "大学生って、普段何をしている？",
+      "text": "What do university students usually do?",
+      "status": "provisional"
+    },
+    "guide.life.subtitle": {
+      "ja": "気になる学生生活を選んでみよう！",
+      "text": "Pick the part of student life you're curious about!",
+      "status": "provisional"
+    },
+    "guide.life.categories.food.title": {
+      "ja": "大学生はどこでご飯を食べる？",
+      "text": "Where do students eat?",
+      "status": "provisional"
+    },
+    "guide.life.categories.food.text": {
+      "ja": "KSCの食堂やカフェを見に行ってみよう！",
+      "text": "Go and see KSC's cafeterias and café!",
+      "status": "provisional"
+    },
+    "guide.life.categories.food.lead": {
+      "ja": "KSCの食堂を見に行ってみよう！",
+      "text": "Go and see KSC's cafeterias!",
+      "status": "provisional"
+    },
+    "guide.life.categories.food.places.0.title": {
+      "ja": "第一厚生棟",
+      "text": "Student Hall I",
+      "status": "provisional"
+    },
+    "guide.life.categories.food.places.0.text": {
+      "ja": "1階に食堂「Lunch Box」とカフェ「CRESCENT cafe」、2階に大学生協の購買店舗「Toy Box」があります。",
+      "text": "The cafeteria \"Lunch Box\" and \"CRESCENT cafe\" are on the 1st floor, and the university co-op store \"Toy Box\" is on the 2nd floor.",
+      "status": "provisional"
+    },
+    "guide.life.categories.food.places.0.see": {
+      "ja": "Toy Box（生協）のようす",
+      "text": "Inside Toy Box (co-op store)",
+      "status": "provisional"
+    },
+    "guide.life.categories.food.places.0.arrive": {
+      "ja": "第一厚生棟に到着！Lunch BoxやCRESCENT cafeの情報も見てみよう。",
+      "text": "You've arrived at Student Hall I! Check the information on Lunch Box and CRESCENT cafe too.",
+      "status": "provisional"
+    },
+    "guide.life.categories.food.places.1.title": {
+      "ja": "第二厚生棟",
+      "text": "Student Hall II",
+      "status": "official"
+    },
+    "guide.life.categories.food.places.1.text": {
+      "ja": "大学生協が運営する食堂「Fresh Box」があります。",
+      "text": "It has \"Fresh Box,\" a cafeteria run by the university co-op.",
+      "status": "provisional"
+    },
+    "guide.life.categories.food.places.1.see": {
+      "ja": "第二厚生棟と食堂のようす",
+      "text": "Student Hall II and its cafeteria",
+      "status": "provisional"
+    },
+    "guide.life.categories.food.places.1.arrive": {
+      "ja": "第二厚生棟に到着！Fresh Boxをのぞいてみよう。",
+      "text": "You've arrived at Student Hall II! Take a peek at Fresh Box.",
+      "status": "provisional"
+    },
+    "guide.life.categories.study.title": {
+      "ja": "授業の合間は何をしている？",
+      "text": "What do students do between classes?",
+      "status": "provisional"
+    },
+    "guide.life.categories.study.text": {
+      "ja": "学生が勉強したり、友人と交流したりする場所をのぞいてみよう！",
+      "text": "Take a peek at places where students study and spend time with friends!",
+      "status": "provisional"
+    },
+    "guide.life.categories.study.lead": {
+      "ja": "自習やグループワーク、学生のプロジェクトの場所を見てみよう！",
+      "text": "See the places for self-study, group work and student projects!",
+      "status": "provisional"
+    },
+    "guide.life.categories.study.places.0.title": {
+      "ja": "アカデミックコモンズ 1階",
+      "text": "Academic Commons 1F",
+      "status": "provisional"
+    },
+    "guide.life.categories.study.places.0.text": {
+      "ja": "共同学習スペースやラウンジ、アカデミックコモンズ・プロジェクトなどを紹介しています。",
+      "text": "Introduces the collaborative learning spaces, lounge, Academic Commons Projects and more.",
+      "status": "provisional"
+    },
+    "guide.life.categories.study.places.0.see": {
+      "ja": "アクティブラーニングゾーンのようす",
+      "text": "The active learning zone",
+      "status": "provisional"
+    },
+    "guide.life.categories.study.places.0.arrive": {
+      "ja": "アカデミックコモンズに到着！学生の学び方をのぞいてみよう。",
+      "text": "You've arrived at the Academic Commons! See how students learn.",
+      "status": "provisional"
+    },
+    "guide.life.categories.study.places.1.title": {
+      "ja": "アカデミックコモンズ 2階",
+      "text": "Academic Commons 2F",
+      "status": "provisional"
+    },
+    "guide.life.categories.study.places.1.text": {
+      "ja": "打ち合わせやグループでの共同作業に使えるスペースと、学生生活を支える窓口があります。",
+      "text": "It has spaces for meetings and group work, and service counters that support student life.",
+      "status": "provisional"
+    },
+    "guide.life.categories.study.places.1.see": {
+      "ja": "2階のようす",
+      "text": "The 2nd floor",
+      "status": "provisional"
+    },
+    "guide.life.categories.study.places.1.arrive": {
+      "ja": "アカデミックコモンズ2階に到着！",
+      "text": "You've arrived at the 2nd floor of the Academic Commons!",
+      "status": "provisional"
+    },
+    "guide.life.categories.study.places.2.title": {
+      "ja": "図書室（図書メディア館）",
+      "text": "Library (Library & Media Center)",
+      "status": "provisional"
+    },
+    "guide.life.categories.study.places.2.text": {
+      "ja": "約25万冊の図書と528席の閲覧席を備えた学習・研究施設です。",
+      "text": "A study and research facility with about 250,000 books and 528 reading seats.",
+      "status": "provisional"
+    },
+    "guide.life.categories.study.places.2.see": {
+      "ja": "図書室のようす",
+      "text": "Inside the library",
+      "status": "provisional"
+    },
+    "guide.life.categories.study.places.2.arrive": {
+      "ja": "図書室に到着！フロアごとの情報も見てみよう。",
+      "text": "You've arrived at the library! Check the information for each floor too.",
+      "status": "provisional"
+    },
+    "guide.life.categories.clubs.title": {
+      "ja": "サークルや部活動が気になる！",
+      "text": "I'm curious about clubs and circles!",
+      "status": "provisional"
+    },
+    "guide.life.categories.clubs.text": {
+      "ja": "大学にはどんなクラブやサークルがあるんだろう？",
+      "text": "What clubs and circles does the university have?",
+      "status": "provisional"
+    },
+    "guide.life.categories.clubs.lead": {
+      "ja": "部活・サークルや学生団体の情報を見てみよう！",
+      "text": "See information on clubs, circles and student groups!",
+      "status": "provisional"
+    },
+    "guide.life.categories.clubs.places.0.title": {
+      "ja": "体育館",
+      "text": "Gymnasium",
+      "status": "official"
+    },
+    "guide.life.categories.clubs.places.0.text": {
+      "ja": "体育の授業や体育会・サークル活動などに利用されている施設です。",
+      "text": "A facility used for physical education classes and for athletic club and circle activities.",
+      "status": "provisional"
+    },
+    "guide.life.categories.clubs.places.0.see": {
+      "ja": "体育館の前と中のようす",
+      "text": "Outside and inside the gymnasium",
+      "status": "provisional"
+    },
+    "guide.life.categories.clubs.places.0.arrive": {
+      "ja": "体育館に到着！中のようすも見てみよう。",
+      "text": "You've arrived at the gymnasium! Have a look inside too.",
+      "status": "provisional"
+    },
+    "guide.life.categories.clubs.places.1.title": {
+      "ja": "コモンズ前",
+      "text": "In front of Academic Commons",
+      "status": "provisional"
+    },
+    "guide.life.categories.clubs.places.1.text": {
+      "ja": "部活・サークル、その他の学生団体、新月祭の情報マークがある場所です。",
+      "text": "This spot has information marks for clubs & circles, other student groups and the Shingetsu Festival.",
+      "status": "provisional"
+    },
+    "guide.life.categories.clubs.places.1.see": {
+      "ja": "アカデミックコモンズの前のようす",
+      "text": "In front of the Academic Commons",
+      "status": "provisional"
+    },
+    "guide.life.categories.clubs.places.1.arrive": {
+      "ja": "コモンズ前に到着！浮かんでいるマークを押してみよう。",
+      "text": "You've arrived in front of the Commons! Press the floating marks.",
+      "status": "provisional"
+    },
+    "guide.life.categories.clubs.links.0.label": {
+      "ja": "部活・サークルを見てみる",
+      "text": "See clubs & circles",
+      "status": "provisional"
+    },
+    "guide.life.categories.clubs.links.1.label": {
+      "ja": "その他の学生団体を見てみる",
+      "text": "See other student groups",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.title": {
+      "ja": "大学のイベントを知りたい！",
+      "text": "I want to know about university events!",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.text": {
+      "ja": "大学祭やオープンキャンパスでは、どんなことが行われているんだろう？",
+      "text": "What happens at the university festival and open campus?",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.lead": {
+      "ja": "イベントが開かれた場所を見に行ってみよう！",
+      "text": "Go and see places where events have been held!",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.places.0.title": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Building VI, Room 101",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.places.0.text": {
+      "ja": "講演会やオープンキャンパス、チャペルアワーなどに使われてきた大教室です。",
+      "text": "A large lecture hall that has been used for lectures, open campus events, chapel hours and more.",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.places.0.see": {
+      "ja": "101教室の中のようす",
+      "text": "Inside Room 101",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.places.0.arrive": {
+      "ja": "Ⅵ号館101教室に到着！浮かんでいる雲を押してみよう。",
+      "text": "You've arrived at Building VI, Room 101! Press the floating clouds.",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.places.1.title": {
+      "ja": "体育館",
+      "text": "Gymnasium",
+      "status": "official"
+    },
+    "guide.life.categories.events.places.1.text": {
+      "ja": "2026年の新月祭では、ドッジボール大会や縁日などの会場として公式プログラムに掲載されました。",
+      "text": "In the official program of the 2026 Shingetsu Festival, it was listed as the venue for a dodgeball tournament, festival stalls and more.",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.places.1.see": {
+      "ja": "体育館の前と中のようす",
+      "text": "Outside and inside the gymnasium",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.places.1.arrive": {
+      "ja": "体育館に到着！イベントでの使われ方も見てみよう。",
+      "text": "You've arrived at the gymnasium! See how it is used for events too.",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.places.2.title": {
+      "ja": "アカデミックコモンズ",
+      "text": "Academic Commons",
+      "status": "official"
+    },
+    "guide.life.categories.events.places.2.text": {
+      "ja": "2025年のオープンキャンパスでは、テント体験やプロジェクションマッピングの企画が行われました。",
+      "text": "At the 2025 open campus, a tent experience and a projection mapping event were held here.",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.places.2.see": {
+      "ja": "アクティブラーニングゾーンのようす",
+      "text": "The active learning zone",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.places.2.arrive": {
+      "ja": "アカデミックコモンズに到着！テントやプロジェクトの紹介も見てみよう。",
+      "text": "You've arrived at the Academic Commons! Check the tent and project information too.",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.places.3.title": {
+      "ja": "コモンズ前",
+      "text": "In front of Academic Commons",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.places.3.text": {
+      "ja": "新月祭の情報マークがある場所です。",
+      "text": "This spot has the Shingetsu Festival information mark.",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.places.3.see": {
+      "ja": "アカデミックコモンズの前のようす",
+      "text": "In front of the Academic Commons",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.places.3.arrive": {
+      "ja": "コモンズ前に到着！「新月祭」のマークを押してみよう。",
+      "text": "You've arrived in front of the Commons! Press the \"Shingetsu Festival\" mark.",
+      "status": "provisional"
+    },
+    "guide.life.categories.events.links.0.label": {
+      "ja": "新月祭をのぞいてみる",
+      "text": "Take a look at the Shingetsu Festival",
+      "status": "provisional"
+    },
+    "guide.next.studentHall1.text": {
+      "ja": "もうひとつの食堂も見てみる？",
+      "text": "Want to see the other cafeteria too?",
+      "status": "provisional"
+    },
+    "guide.next.studentHall1.button": {
+      "ja": "第二厚生棟へ",
+      "text": "To Student Hall II",
+      "status": "provisional"
+    },
+    "guide.next.studentHall2.text": {
+      "ja": "もうひとつの食堂も見てみる？",
+      "text": "Want to see the other cafeteria too?",
+      "status": "provisional"
+    },
+    "guide.next.studentHall2.button": {
+      "ja": "第一厚生棟へ",
+      "text": "To Student Hall I",
+      "status": "provisional"
+    },
+    "guide.next.room101.text": {
+      "ja": "少人数での授業や研究も気になる？",
+      "text": "Curious about small-group classes and research?",
+      "status": "provisional"
+    },
+    "guide.next.room101.button": {
+      "ja": "ゼミ室をのぞいてみる",
+      "text": "Peek into a seminar room",
+      "status": "provisional"
+    },
+    "guide.next.academicCommons.text": {
+      "ja": "大学生はどこでご飯を食べるんだろう？",
+      "text": "Where do university students eat?",
+      "status": "provisional"
+    },
+    "guide.next.academicCommons.button": {
+      "ja": "食堂を見に行く",
+      "text": "Go see the cafeterias",
+      "status": "provisional"
+    },
+    "guide.next.gym.text": {
+      "ja": "どんなサークルや部活動があるの？",
+      "text": "What clubs and circles are there?",
+      "status": "provisional"
+    },
+    "guide.next.gym.button": {
+      "ja": "部活・サークルを見てみる",
+      "text": "See clubs & circles",
       "status": "provisional"
     },
     "spots.p01.name": {

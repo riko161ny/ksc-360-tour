@@ -308,6 +308,9 @@
     if (!spot) {
       return;
     }
+    if (window.TourGuide && spot !== currentSpot && currentSpot) {
+      window.TourGuide.close();
+    }
     currentSpot = spot;
     window.TourPanel.close();
     var spotFacility = facilities[spot.config.facility];
@@ -345,13 +348,21 @@
       if (editMode) {
         editReadoutElement.hidden = spot.state !== 'ready';
       }
+      if (pendingArrival && pendingArrival.id === spot.id) {
+        var arrived = pendingArrival.callback;
+        pendingArrival = null;
+        if (arrived) { arrived(); }
+      }
       visited[spot.id] = true;
       saveVisited();
       map.setVisited(visited);
       updateThumbnails(spot);
       if (!firstShown) {
         firstShown = true;
-        if (!readStorage(STORAGE_HELP)) {
+        if (guideStart && window.TourGuide && spot.id === config.guide.startSpot && spot.state === 'ready') {
+          // 地点の指定がないトップページ：正門の歓迎とガイドを出す（操作方法は ? ボタンでいつでも見られる）
+          window.TourGuide.startWelcome();
+        } else if (!readStorage(STORAGE_HELP)) {
           showHelp();
         }
       }
@@ -383,6 +394,7 @@
     if (currentSpot) { updateSpotTexts(currentSpot); }
     if (!loadingElement.classList.contains('hidden')) { loadingTextElement.textContent = t('loading.text'); }
     window.TourPanel.refresh();
+    if (window.TourGuide) { window.TourGuide.refresh(); }
   }
 
   function updateHeading() {
@@ -818,6 +830,58 @@
   if (i18n) {
     i18n.onChange(applyLanguage);
     i18n.start();
+  }
+
+  // 探索ガイド（js/guide.js）。URL に地点の指定がないときだけ、正門から歓迎の演出を始める。
+  var pendingArrival = null;
+  var linkHighlightTimer = null;
+  var guideStart = !!(config.guide && window.TourGuide && !spotIdFromHash() && findSpotById(config.guide.startSpot));
+  if (window.TourGuide) {
+    window.TourGuide.init({
+      hotspotContainer: function(id) {
+        var spot = findSpotById(id);
+        return spot && spot.scene ? spot.scene.hotspotContainer() : null;
+      },
+      currentHotspotContainer: function() {
+        return currentSpot && currentSpot.scene ? currentSpot.scene.hotspotContainer() : null;
+      },
+      currentView: function() {
+        if (!currentSpot || !currentSpot.view) { return null; }
+        return { yaw: currentSpot.view.yaw(), pitch: currentSpot.view.pitch(), fov: currentSpot.view.fov() };
+      },
+      markHelpSeen: function() { writeStorage(STORAGE_HELP, '1'); },
+      closePanel: function() { window.TourPanel.close(); },
+      hasSpot: function(id) { return !!findSpotById(id); },
+      goTo: function(id, onArrive) {
+        var spot = findSpotById(id);
+        if (!spot) { return; }
+        if (spot === currentSpot) {
+          if (onArrive) { onArrive(); }
+          return;
+        }
+        pendingArrival = { id: id, callback: onArrive };
+        switchSpot(spot);
+      },
+      openFacility: function(key) {
+        if (facilities[key]) { window.TourPanel.open(facilities[key]); }
+      },
+      openFaculty: function(id) {
+        window.TourPanel.open(footer.faculties || { name: t('footer.faculties') }, { faculty: id });
+      },
+      highlightLinks: function() {
+        var links = document.querySelectorAll('.link-hotspot');
+        Array.prototype.forEach.call(links, function(link) { link.classList.add('link-highlight'); });
+        clearTimeout(linkHighlightTimer);
+        linkHighlightTimer = setTimeout(function() {
+          Array.prototype.forEach.call(links, function(link) { link.classList.remove('link-highlight'); });
+        }, 6000);
+      }
+    });
+    document.querySelector('#guideButton').addEventListener('click', function() {
+      window.TourGuide.openChange();
+    });
+  } else {
+    document.querySelector('#guideButton').hidden = true;
   }
 
   // Display the initial spot: URL hash, then config.startSpot, then the first spot.

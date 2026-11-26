@@ -30,6 +30,8 @@ TourI18n.register("ja", {
     "footer.events.short": "イベント",
     "footer.clubs": "サークル・部活情報",
     "footer.clubs.short": "サークル",
+    "footer.guide": "探し方を変える",
+    "footer.guide.short": "探し方",
     "view.left": "左を向く",
     "view.right": "右を向く",
     "view.up": "上を向く",

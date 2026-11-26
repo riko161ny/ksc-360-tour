@@ -131,6 +131,9 @@
         bodyElement.appendChild(videoSection);
       }
     }
+    // 探索ガイドの「次はここを見てみよう！」（js/guide.js。設定がないカードには出ません）
+    var guideNext = window.TourGuide && window.TourGuide.nextFor(facility);
+    if (guideNext) { bodyElement.appendChild(guideNext); }
     var related = (facility.activities || []).map(resolveActivity).filter(Boolean);
     if (related.length) {
       var relatedSection = el('div', 'info-section');
