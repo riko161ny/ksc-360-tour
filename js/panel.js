@@ -60,6 +60,20 @@
     if (facility.intro) {
       bodyElement.appendChild(createIntro(facility.intro));
     }
+    // eventCards: [{ name, period, text, note, buttons }] — フッター「KSCのイベント」のカード一覧
+    if (facility.eventCards && facility.eventCards.length) {
+      var evGrid = el('div', 'event-guide');
+      facility.eventCards.forEach(function(card) {
+        var c = el('article', 'event-guide-card' + (card.feature ? ' feature' : ''));
+        if (card.period) { c.appendChild(el('span', 'event-guide-period', card.period)); }
+        c.appendChild(el('h3', 'event-guide-name', card.name || ''));
+        if (card.text) { appendParagraphs(c, card.text); }
+        if (card.note) { appendNotes(c, card.note); }
+        appendButtons(c, card.buttons);
+        evGrid.appendChild(c);
+      });
+      bodyElement.appendChild(evGrid);
+    }
     (facility.cards || []).forEach(function(card) {
       bodyElement.appendChild(createGuideCard(card));
     });
@@ -243,7 +257,11 @@
     } else if (section.fold) {
       var details = el('details', 'info-fold');
       if (section.fold === 'open') { details.open = true; }
-      details.appendChild(el('summary', 'info-fold-title', section.title || ''));
+      var summary = el('summary', 'info-fold-title');
+      summary.appendChild(el('span', 'info-fold-name', section.title || ''));
+      // subtitle: 閉じているときも見える短い紹介
+      if (section.subtitle) { summary.appendChild(el('span', 'info-fold-sub', section.subtitle)); }
+      details.appendChild(summary);
       box = el('div', 'info-fold-body');
       details.appendChild(box);
       outer.appendChild(details);
@@ -251,7 +269,7 @@
       box.appendChild(el('h3', 'info-heading', section.title));
     }
     // subtitle: a short line under the heading.
-    if (section.subtitle && !ev) { box.appendChild(el('p', 'info-subtitle', section.subtitle)); }
+    if (section.subtitle && !ev && !section.fold) { box.appendChild(el('p', 'info-subtitle', section.subtitle)); }
     if (section.highlight) { box.appendChild(el('p', 'info-highlight', section.highlight)); }
     // timeline: [{ label, time, current }] shows a short time line (current = the highlighted slot).
     if (section.timeline && section.timeline.length) {
@@ -266,8 +284,14 @@
     }
     // figureAfterRows: true puts the photo below the text and table instead of above them.
     if (!ev && !section.figureAfterRows && section.figure && section.figure.src) { box.appendChild(createFigure(section.figure)); }
-    if (section.chips && section.chips.length) { box.appendChild(createChips(section.chips)); }
+    if (section.chips && section.chips.length && !section.chipsTitle) { box.appendChild(createChips(section.chips)); }
     if (section.text) { appendParagraphs(box, section.text); }
+    // chipsTitle: 本文の下に、小見出し付きでチップを並べる
+    if (section.chips && section.chips.length && section.chipsTitle) {
+      box.appendChild(el('h4', 'info-mini-heading', section.chipsTitle));
+      box.appendChild(createChips(section.chips));
+    }
+    if (section.itemsTitle && section.items && section.items.length) { box.appendChild(el('h4', 'info-mini-heading', section.itemsTitle)); }
     // video: { youtube, title, caption } embeds a video in this section.
     if (section.video) {
       var secVideo = createVideo(section.video);
@@ -791,9 +815,9 @@
     if (intro.heading) {
       box.appendChild(el('h3', 'guide-intro-heading' + (intro.pop ? ' pop3d' : ''), intro.heading));
     }
-    if (intro.text) {
-      box.appendChild(el('p', 'guide-text', intro.text));
-    }
+    (Array.isArray(intro.text) ? intro.text : intro.text ? [intro.text] : []).forEach(function(text) {
+      box.appendChild(el('p', 'guide-text', text));
+    });
     return box;
   }
 
@@ -886,6 +910,23 @@
     }
     var actions = el('div', 'guide-actions');
     buttons.forEach(function(link) {
+      // { spot: id, openFacility: key, label }: moves to that 360° scene (and then opens the card). Only scenes that exist.
+      if (link.spot) {
+        if (!window.TourNav || !window.TourNav.has(link.spot)) { return; }
+        var go = el('button', 'guide-button' + (link.outline ? ' outline' : ''), link.label || '');
+        go.type = 'button';
+        go.addEventListener('click', function() { window.TourNav.go(link.spot, link.openFacility); });
+        actions.appendChild(go);
+        return;
+      }
+      // { closePanel: true, label }: closes this panel and returns to the current scene.
+      if (link.closePanel) {
+        var back = el('button', 'guide-button outline', link.label || '');
+        back.type = 'button';
+        back.addEventListener('click', function() { close(); });
+        actions.appendChild(back);
+        return;
+      }
       // { openFacility: key, label }: opens another card in this tour without moving the 360° view.
       if (link.openFacility) {
         var target = window.TOUR_CONFIG && window.TOUR_CONFIG.facilities && window.TOUR_CONFIG.facilities[link.openFacility];

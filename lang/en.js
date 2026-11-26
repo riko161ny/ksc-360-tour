@@ -1374,13 +1374,238 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "footer.events.name": {
-      "ja": "KSCイベント情報",
+      "ja": "KSCのイベント",
       "text": "KSC Events",
       "status": "provisional"
     },
-    "footer.events.placeholder": {
-      "ja": "内容は準備中です。",
-      "text": "Content coming soon.",
+    "footer.events.intro.heading": {
+      "ja": "神戸三田キャンパスの1年をのぞいてみよう！",
+      "text": "Take a look at a year at Kobe Sanda Campus!",
+      "status": "provisional"
+    },
+    "footer.events.intro.text.0": {
+      "ja": "神戸三田キャンパスでは、大学祭やオープンキャンパス、研究発表会、国際交流イベントなど、さまざまな行事が開催されています。",
+      "text": "Kobe Sanda Campus hosts many events, including the university festival, open campus, research presentations and international exchange events.",
+      "status": "provisional"
+    },
+    "footer.events.intro.text.1": {
+      "ja": "学生が企画・運営するイベントもあり、日頃の学びや課外活動の成果を発表する機会にもなっています。",
+      "text": "Some events are planned and run by students, giving them a chance to present what they have achieved in their studies and extracurricular activities.",
+      "status": "provisional"
+    },
+    "footer.events.intro.text.2": {
+      "ja": "ここでは、KSCの主なイベントを紹介します。",
+      "text": "Here are the main events at KSC.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.0.name": {
+      "ja": "オープンキャンパス",
+      "text": "Open campus",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.0.period": {
+      "ja": "主に夏",
+      "text": "Mainly summer",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.0.text.0": {
+      "ja": "高校生や保護者を対象に、大学での学びやキャンパスライフを紹介するイベントです。",
+      "text": "An event for high school students and their parents that introduces university studies and campus life.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.0.text.1": {
+      "ja": "学部紹介や模擬講義、研究施設の見学、キャンパスツアーなどが行われます。",
+      "text": "It includes school introductions, sample lectures, research facility visits and campus tours.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.0.text.2": {
+      "ja": "2026年8月8日のKSCオープンキャンパスには、延べ5,300人を超える高校生や保護者が来場しました。",
+      "text": "The KSC open campus on August 8, 2026 welcomed a total of more than 5,300 high school students and parents.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.0.buttons.0.label": {
+      "ja": "オープンキャンパスについて詳しく見る",
+      "text": "More about the open campus",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.name": {
+      "ja": "大学祭「新月祭」",
+      "text": "University festival \"Shingetsu Festival\"",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.period": {
+      "ja": "秋",
+      "text": "Autumn",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.text.0": {
+      "ja": "新月祭は、学生が主体となって企画・運営する関西学院大学の大学祭です。",
+      "text": "The Shingetsu Festival is Kwansei Gakuin University's festival, planned and run mainly by students.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.text.1": {
+      "ja": "神戸三田キャンパスでは、模擬店や学生団体のステージ、さまざまな体験企画などが行われます。",
+      "text": "At Kobe Sanda Campus, there are food stalls, stage performances by student groups and various hands-on programs.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.text.2": {
+      "ja": "2026年は10月24日・25日に開催されました。",
+      "text": "In 2026, it was held on October 24 and 25.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.note": {
+      "ja": "模擬店や公演などの詳しい内容は、アカデミックコモンズ前の「新月祭」カードで紹介しています。",
+      "text": "Details such as stalls and performances are in the \"Shingetsu Festival\" card in front of the Academic Commons.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.buttons.0.label": {
+      "ja": "新月祭について詳しく見る",
+      "text": "More about the Shingetsu Festival",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.buttons.1.label": {
+      "ja": "新月祭の会場を見に行く",
+      "text": "Go see the festival venue",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.2.name": {
+      "ja": "リサーチ・フェア",
+      "text": "Research Fair",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.2.period": {
+      "ja": "秋",
+      "text": "Autumn",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.2.text.0": {
+      "ja": "総合政策学部・総合政策研究科では、学生が研究成果を発表する「リサーチ・フェア」を開催しています。",
+      "text": "The School and Graduate School of Policy Studies hold the \"Research Fair,\" where students present their research results.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.2.text.1": {
+      "ja": "1998年から続く行事で、研究発表を通じて参加者同士が意見を交換する機会となっています。",
+      "text": "Held since 1998, it is a chance for participants to exchange views through research presentations.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.2.text.2": {
+      "ja": "2026年11月13日・14日には、口頭発表やポスター発表など、計96件の発表が行われました。",
+      "text": "On November 13 and 14, 2026, a total of 96 presentations, including oral and poster presentations, were given.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.2.buttons.0.label": {
+      "ja": "リサーチ・フェアについて詳しく見る",
+      "text": "Learn more about the Research Fair",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.3.period": {
+      "ja": "年度によって異なる",
+      "text": "Varies by year",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.3.text.0": {
+      "ja": "高校生が取り組んでいる課題研究を発表し、大学教員や他校の生徒と意見を交換するイベントです。",
+      "text": "An event where high school students present their research projects and exchange views with university faculty and students from other schools.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.3.text.1": {
+      "ja": "2017年から開催されており、高校生が研究への理解を深める機会となっています。",
+      "text": "Held since 2017, it helps high school students deepen their understanding of research.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.3.text.2": {
+      "ja": "2026年度は11月28日にオンラインで開催される予定です。",
+      "text": "In the 2026 academic year, it is scheduled to be held online on November 28.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.3.buttons.0.label": {
+      "ja": "SCI-TECH RESEARCH FORUMを見る",
+      "text": "See SCI-TECH RESEARCH FORUM",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.4.name": {
+      "ja": "コーヒーアワー",
+      "text": "Coffee Hour",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.4.period": {
+      "ja": "開催年度・日程による",
+      "text": "Depends on the year and schedule",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.4.text.0": {
+      "ja": "コーヒーアワーは、留学生と在学生が飲み物やお菓子を囲みながら交流する国際交流イベントです。",
+      "text": "Coffee Hour is an international exchange event where international and local students mingle over drinks and snacks.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.4.text.1": {
+      "ja": "2026年10月13日には、神戸三田キャンパスのSky Gardenを会場として開催が案内されました。",
+      "text": "On October 13, 2026, it was announced to be held at Sky Garden on Kobe Sanda Campus.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.4.text.2": {
+      "ja": "留学生と日本人学生が交流する機会として企画されています。",
+      "text": "It is organized as an opportunity for international and Japanese students to interact.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.4.buttons.0.label": {
+      "ja": "コーヒーアワーについて見る",
+      "text": "About Coffee Hour",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.5.name": {
+      "ja": "クリスマス行事",
+      "text": "Christmas events",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.5.period": {
+      "ja": "11月下旬〜12月",
+      "text": "Late November to December",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.5.text.0": {
+      "ja": "関西学院大学では、クリスマスの時期にツリー点灯式や礼拝などの行事が行われます。",
+      "text": "At Kwansei Gakuin University, events such as a tree lighting ceremony and services are held during the Christmas season.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.5.text.1": {
+      "ja": "神戸三田キャンパスでも、アカデミックコモンズ前のクリスマスツリー点灯式や、ランバス記念礼拝堂でのクリスマス礼拝が企画されています。",
+      "text": "At Kobe Sanda Campus too, a Christmas tree lighting in front of the Academic Commons and a Christmas service at the Lambuth Memorial Chapel are planned.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.5.text.2": {
+      "ja": "2026年のツリー点灯式は、11月30日にアカデミックコモンズ前広場で開催予定です。",
+      "text": "The 2026 tree lighting is scheduled for November 30 at the plaza in front of the Academic Commons.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.5.buttons.0.label": {
+      "ja": "クリスマス行事について見る",
+      "text": "About the Christmas events",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.6.name": {
+      "ja": "入学式・新入生オリエンテーション",
+      "text": "Entrance ceremony and new student orientation",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.6.period": {
+      "ja": "4月",
+      "text": "April",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.6.text.0": {
+      "ja": "春には、新入生を迎える入学式やオリエンテーションが行われます。",
+      "text": "In spring, an entrance ceremony and orientation are held to welcome new students.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.6.text.1": {
+      "ja": "入学式は西宮上ケ原キャンパスで実施され、オリエンテーションでは大学生活や履修に関する案内などが行われます。",
+      "text": "The entrance ceremony is held at Nishinomiya-Uegahara Campus, and the orientation gives guidance on university life and course registration.",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.6.buttons.0.label": {
+      "ja": "KSCの行事を見る（大学公式）",
+      "text": "See KSC events (official university site)",
       "status": "provisional"
     },
     "facilities.bus.name": {
@@ -1399,8 +1624,8 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "facilities.shingetsusai.name": {
-      "ja": "新月祭をのぞいてみよう！",
-      "text": "Take a look at the Shingetsu Festival!",
+      "ja": "大学祭「新月祭」",
+      "text": "University festival \"Shingetsu Festival\"",
       "status": "provisional"
     },
     "facilities.shingetsusai.hotspot.text": {
@@ -1419,63 +1644,458 @@ TourI18n.register("en", {
       "status": "provisional"
     },
     "facilities.shingetsusai.intro.heading": {
-      "ja": "大学祭「新月祭」",
-      "text": "University festival \"Shingetsu Festival\"",
+      "ja": "学生がつくる、関西学院大学の大学祭",
+      "text": "Kwansei Gakuin University's festival, made by students",
       "status": "provisional"
     },
-    "facilities.shingetsusai.intro.text": {
-      "ja": "学生が主体となって企画・運営する大学祭。模擬店や学生団体による企画などが行われています。",
-      "text": "A university festival planned and run by students, with food stalls and events organized by student groups.",
+    "facilities.shingetsusai.intro.text.0": {
+      "ja": "新月祭は、関西学院大学の大学祭総部新月祭実行委員会が企画・運営する大学祭です。",
+      "text": "The Shingetsu Festival is a university festival planned and run by the Shingetsu Festival Executive Committee of Kwansei Gakuin University.",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.0.title": {
-      "ja": "どんな企画があるの？",
-      "text": "What kind of events are there?",
+    "facilities.shingetsusai.intro.text.1": {
+      "ja": "神戸三田・西宮上ケ原・西宮聖和の3キャンパスで開催され、学生が日頃の活動や研究の成果を発表する場となっています。",
+      "text": "It is held on three campuses, Kobe Sanda, Nishinomiya-Uegahara and Nishinomiya-Seiwa, and is a place for students to present the results of their activities and research.",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.0.text": {
-      "ja": "2026年の神戸三田キャンパスで開催された企画を紹介しています。",
-      "text": "Introducing events held at Kobe Sanda Campus in 2026.",
+    "facilities.shingetsusai.intro.text.2": {
+      "ja": "神戸三田キャンパスでは、模擬店や学生団体の公演、体験企画など、さまざまな催しが実施されています。",
+      "text": "At Kobe Sanda Campus, there are many programs such as food stalls, performances by student groups and hands-on events.",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.0.chips.0": {
-      "ja": "軽音サークル Deep Stream の芝生ライブ",
-      "text": "Lawn concert by the light music circle Deep Stream",
+    "facilities.shingetsusai.sections.0.title": {
+      "ja": "2026年の基本情報",
+      "text": "2026 basic information",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.0.chips.1": {
-      "ja": "ダンスサークル Ney-Kid の公演",
-      "text": "Performance by the dance circle Ney-Kid",
+    "facilities.shingetsusai.sections.0.rows.0.0": {
+      "ja": "開催日",
+      "text": "Date",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.0.chips.2": {
-      "ja": "よさこいサークル 炎流 の演舞",
-      "text": "Yosakoi dance by the yosakoi circle Enryu (炎流)",
+    "facilities.shingetsusai.sections.0.rows.0.1": {
+      "ja": "2026年10月24日（土）・25日（日）",
+      "text": "Sat, October 24 and Sun, October 25, 2026",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.0.chips.3": {
-      "ja": "フラダンスサークル Mahalo のステージ",
-      "text": "Stage by the hula dance circle Mahalo",
+    "facilities.shingetsusai.sections.0.rows.1.0": {
+      "ja": "24日の開催時間",
+      "text": "Hours on the 24th",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.0.buttons.0.label": {
-      "ja": "2026年の企画を見る",
-      "text": "See the 2026 events",
+    "facilities.shingetsusai.sections.0.rows.2.0": {
+      "ja": "25日の開催時間",
+      "text": "Hours on the 25th",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.1.title": {
-      "ja": "実際の雰囲気を見てみよう！",
-      "text": "See what it is really like!",
+    "facilities.shingetsusai.sections.0.rows.3.0": {
+      "ja": "会場",
+      "text": "Venue",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.1.text": {
-      "ja": "新月祭の開催風景を紹介しています。",
-      "text": "Scenes from the Shingetsu Festival.",
+    "facilities.shingetsusai.sections.0.rows.3.1": {
+      "ja": "関西学院大学神戸三田キャンパス",
+      "text": "Kwansei Gakuin University Kobe Sanda Campus",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.1.buttons.0.label": {
-      "ja": "開催の様子を見る",
-      "text": "See the festival",
+    "facilities.shingetsusai.sections.0.rows.4.0": {
+      "ja": "キャッチコピー",
+      "text": "Catchphrase",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.0.rows.4.1": {
+      "ja": "満月にはない輝きをこの新月から",
+      "text": "A shine the full moon doesn't have, from this new moon (満月にはない輝きをこの新月から)",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.0.rows.5.0": {
+      "ja": "主催・運営",
+      "text": "Organizer",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.0.rows.5.1": {
+      "ja": "大学祭総部新月祭実行委員会",
+      "text": "Shingetsu Festival Executive Committee",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.0.note.0": {
+      "ja": "2026年の開催情報です。翌年度以降の開催日時は変更される可能性があります。",
+      "text": "This is information for 2026. Dates and times may change in later years.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.0.note.1": {
+      "ja": "この場所の360度写真はふだんのアカデミックコモンズ前のようすで、新月祭当日の写真ではありません。",
+      "text": "The 360° photo here shows the usual view in front of the Academic Commons, not the festival day.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.title": {
+      "ja": "キャンパスに並ぶ模擬店",
+      "text": "Food stalls across the campus",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.subtitle": {
+      "ja": "2026年は4つのエリアに27店舗。アカデミックコモンズ前も会場の一つでした。",
+      "text": "27 stalls in 4 areas in 2026. The front of the Academic Commons was one of the venues.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.text.0": {
+      "ja": "新月祭では、学生団体やサークルなどによる模擬店が出店します。",
+      "text": "At the Shingetsu Festival, student groups and circles run food stalls.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.text.1": {
+      "ja": "2026年の神戸三田キャンパスでは、4つのエリアに合計27店舗の模擬店が公式プログラムに掲載されました。",
+      "text": "In 2026, the official program listed a total of 27 stalls in 4 areas at Kobe Sanda Campus.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.text.2": {
+      "ja": "アカデミックコモンズ前もその会場の一つで、SCSやMainsなどの学生団体による出店が案内されました。",
+      "text": "The front of the Academic Commons was one of these areas, with stalls by student groups such as SCS and Mains.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.chipsTitle": {
+      "ja": "2026年の模擬店エリア",
+      "text": "2026 stall areas",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.chips.0": {
+      "ja": "アカデミックコモンズ前",
+      "text": "In front of the Academic Commons",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.chips.1": {
+      "ja": "第一厚生棟前",
+      "text": "In front of Student Hall I",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.chips.2": {
+      "ja": "Ⅰ・Ⅱ号館前",
+      "text": "In front of Buildings I and II",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.chips.3": {
+      "ja": "正門前",
+      "text": "Main Gate",
+      "status": "official"
+    },
+    "facilities.shingetsusai.sections.1.itemsTitle": {
+      "ja": "アカデミックコモンズ前の出店例（2026年）",
+      "text": "Stalls in front of the Academic Commons (2026)",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.items.0.text": {
+      "ja": "パリパリチーズを販売する企画「PariPari」。",
+      "text": "\"PariPari,\" selling crispy cheese.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.items.1.text": {
+      "ja": "トルコアイスなどを販売する企画「Mainsの伸びーる！？」。",
+      "text": "\"Mainsの伸びーる！？,\" selling Turkish ice cream and more.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.items.2.name": {
+      "ja": "生命医科",
+      "text": "Seimei Ika (life and medical sciences students)",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.items.2.text": {
+      "ja": "スモアを販売する「ミカヅキモカフェ」。",
+      "text": "\"Mikazukimo Cafe,\" selling s'mores.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.note": {
+      "ja": "上の店舗とメニューは、2026年の公式プログラムに掲載されたアカデミックコモンズ前の出店例です。毎年同じ店舗が出店するわけではありません。",
+      "text": "These stalls and menus are examples listed in the 2026 official program for the front of the Academic Commons. The same stalls are not there every year.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.buttons.0.label": {
+      "ja": "2026年の模擬店をもっと見る",
+      "text": "See more 2026 stalls",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.buttons.1.label": {
+      "ja": "2026年の会場マップを見る（公式）",
+      "text": "See the 2026 venue map (official)",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.title": {
+      "ja": "学生たちのパフォーマンス",
+      "text": "Student performances",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.subtitle": {
+      "ja": "よさこい、ダンス、音楽などの公演が公式プログラムに掲載されました。",
+      "text": "Yosakoi, dance, music and other performances were listed in the official program.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.text.0": {
+      "ja": "新月祭では、日頃から活動している学生団体やサークルによる公演も企画されています。",
+      "text": "The Shingetsu Festival also features performances by student groups and circles that are active throughout the year.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.text.1": {
+      "ja": "2026年の公式プログラムには、よさこい、ダンス、音楽などの公演が掲載されました。",
+      "text": "The 2026 official program listed yosakoi, dance, music and other performances.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.0.name": {
+      "ja": "関学よさこい連「炎流」",
+      "text": "Kangaku Yosakoi Team “Enryu (炎流)”",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.0.sub": {
+      "ja": "よさこい｜陸上競技場（雨天時は体育館）",
+      "text": "Yosakoi | Athletic field (gymnasium if it rains)",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.0.text.0": {
+      "ja": "神戸三田キャンパスを拠点に活動するよさこいサークルです。",
+      "text": "A yosakoi circle based at Kobe Sanda Campus.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.0.text.1": {
+      "ja": "2026年の新月祭では、陸上競技場を会場とする演舞が公式プログラムに掲載されました。雨天時の会場には体育館が指定されていました。",
+      "text": "For the 2026 festival, a performance at the athletic field was listed in the official program. The gymnasium was named as the venue in case of rain.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.1.sub": {
+      "ja": "ダンス｜第二厚生棟2階食堂",
+      "text": "Dance | Student Hall II, 2nd-floor cafeteria",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.1.text.0": {
+      "ja": "ダンスサークル「Ney-Kid」は、第二厚生棟2階食堂を会場として、2日間の新月祭公演を企画しました。",
+      "text": "The dance circle \"Ney-Kid\" planned two days of festival performances in the 2nd-floor cafeteria of Student Hall II.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.1.text.1": {
+      "ja": "さまざまなジャンルのダンスやバンドセッションなどが公式プログラムに掲載されました。",
+      "text": "Dances in various genres and band sessions were listed in the official program.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.2.sub": {
+      "ja": "音楽｜第三厚生棟前の芝生",
+      "text": "Music | Lawn in front of Student Hall III",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.2.text": {
+      "ja": "音楽活動を行う学生団体「Deep Stream」は、第三厚生棟前の芝生を会場とするライブを企画しました。",
+      "text": "The music group \"Deep Stream\" planned a live show on the lawn in front of Student Hall III.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.3.name": {
+      "ja": "関西学院室内合奏団",
+      "text": "Kwansei Gakuin Chamber Ensemble",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.3.sub": {
+      "ja": "管弦楽｜ランバス記念礼拝堂",
+      "text": "Orchestra | Lambuth Memorial Chapel",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.3.text.0": {
+      "ja": "2026年には、ランバス記念礼拝堂で「Autumn Concert 2026」が企画されました。",
+      "text": "In 2026, \"Autumn Concert 2026\" was planned at the Lambuth Memorial Chapel.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.3.text.1": {
+      "ja": "ポップスからクラシックまでの管弦楽アンサンブルが紹介されています。",
+      "text": "It was introduced as an orchestral ensemble playing everything from pop to classical music.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.buttons.0.label": {
+      "ja": "陸上競技場を見に行く",
+      "text": "Go see the athletic field",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.buttons.1.label": {
+      "ja": "体育館を見に行く",
+      "text": "Go see the gymnasium",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.buttons.2.label": {
+      "ja": "第二厚生棟を見に行く",
+      "text": "Go see Student Hall II",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.buttons.3.label": {
+      "ja": "ランバス記念礼拝堂を見に行く",
+      "text": "Go see the Lambuth Memorial Chapel",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.title": {
+      "ja": "見るだけじゃない、参加できる企画も",
+      "text": "Not just to watch: programs you can join",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.subtitle": {
+      "ja": "ワークショップやスポーツ企画、フリーマーケットなど。",
+      "text": "Workshops, sports events, flea markets and more.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.text.0": {
+      "ja": "新月祭には、ステージを見るだけでなく、来場者が参加できる体験型の企画もあります。",
+      "text": "Besides watching the stage, visitors can also join hands-on programs at the festival.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.text.1": {
+      "ja": "2026年には、学生団体によるワークショップやスポーツ企画、フリーマーケットなどが公式プログラムに掲載されました。",
+      "text": "In 2026, workshops, sports events and flea markets by student groups were listed in the official program.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.items.0.name": {
+      "ja": "ドッジボール大会・縁日",
+      "text": "Dodgeball tournament and festival games",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.items.0.text": {
+      "ja": "体育館を会場として、ドッジボールや射的などの企画が案内されました。",
+      "text": "Programs such as dodgeball and shooting games were announced at the gymnasium.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.items.1.text": {
+      "ja": "古着や手作り小物の販売、ハンドメイドワークショップなどを企画しました。",
+      "text": "They planned sales of second-hand clothes and handmade goods, and handmade workshops.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.items.2.text": {
+      "ja": "ビーズなどを使用した、オリジナルしおり作りの体験企画を実施する予定として案内されました。",
+      "text": "A hands-on program for making original bookmarks with beads and other parts was announced.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.note": {
+      "ja": "2026年の公式プログラムに掲載された企画内容です。",
+      "text": "These are programs listed in the 2026 official program.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.buttons.0.label": {
+      "ja": "体育館を見に行く",
+      "text": "Go see the gymnasium",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.title": {
+      "ja": "ゲストを招いた特別企画",
+      "text": "Special programs with guests",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.subtitle": {
+      "ja": "2026年はⅥ号館101教室でROLAND氏のトークショー。",
+      "text": "In 2026, a talk show by ROLAND in Building VI, Room 101.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.text.0": {
+      "ja": "新月祭では、学生団体による企画に加えて、ゲストを招いたトークショーやお笑いライブなども企画されています。",
+      "text": "Besides programs by student groups, the festival also plans talk shows and comedy shows with guests.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.text.1": {
+      "ja": "2026年の神戸三田キャンパスでは、Ⅵ号館101教室を会場とするROLAND氏のトークショーが公式プログラムに掲載されました。",
+      "text": "At Kobe Sanda Campus in 2026, a talk show by ROLAND in Building VI, Room 101 was listed in the official program.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.rows.0.0": {
+      "ja": "ゲスト",
+      "text": "Guest",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.rows.0.1": {
+      "ja": "ROLAND氏",
+      "text": "ROLAND",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.rows.1.0": {
+      "ja": "開催予定日",
+      "text": "Scheduled date",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.rows.1.1": {
+      "ja": "2026年10月25日",
+      "text": "October 25, 2026",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.rows.2.0": {
+      "ja": "会場",
+      "text": "Venue",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.rows.2.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Building VI, Room 101",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.buttons.0.label": {
+      "ja": "Ⅵ号館101教室を見に行く",
+      "text": "Go see Building VI, Room 101",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.5.title": {
+      "ja": "学生がつくる大学祭",
+      "text": "A festival made by students",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.5.subtitle": {
+      "ja": "新月祭を企画・運営しているのは、実行委員会の学生です。",
+      "text": "The festival is planned and run by the students of the executive committee.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.5.text.0": {
+      "ja": "新月祭は、大学祭総部新月祭実行委員会に所属する学生によって企画・運営されています。",
+      "text": "The Shingetsu Festival is planned and run by students who belong to the Shingetsu Festival Executive Committee.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.5.text.1": {
+      "ja": "実行委員会では、企画の立案や広報、会場運営など、大学祭を開催するためのさまざまな活動が行われています。",
+      "text": "The committee carries out many tasks needed to hold the festival, such as planning, publicity and venue management.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.5.text.2": {
+      "ja": "2026年の大学公式発表では、3キャンパス全体で過去最多となる約1,500人の実行委員が運営に携わると紹介されました。",
+      "text": "The university's official 2026 announcement said that about 1,500 committee members across the three campuses, the largest number ever, would run the festival.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.5.note": {
+      "ja": "約1,500人は3キャンパス全体の人数です。",
+      "text": "About 1,500 is the total for all three campuses.",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.5.buttons.0.label": {
+      "ja": "大学公式の発表を見る",
+      "text": "See the university's announcement",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.6.title": {
+      "ja": "もっと知りたいときは",
+      "text": "Want to know more?",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.6.buttons.0.label": {
+      "ja": "新月祭の公式サイトを見る",
+      "text": "Visit the Shingetsu Festival official site",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.6.buttons.1.label": {
+      "ja": "2026年の企画一覧を見る",
+      "text": "See the 2026 program list",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.6.buttons.2.label": {
+      "ja": "2026年の模擬店を見る",
+      "text": "See the 2026 stalls",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.6.buttons.3.label": {
+      "ja": "新月祭の開催の様子を見る",
+      "text": "See scenes from the festival",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.6.buttons.4.label": {
+      "ja": "キャンパスの探索に戻る",
+      "text": "Back to exploring the campus",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.source": {
+      "ja": "新月祭2026公式サイト（トップ・KSC模擬店・KSC一般企画）、関西学院大学ニュース（2026年10月16日）をもとにまとめています。",
+      "text": "Based on the Shingetsu Festival 2026 official site (top page, KSC stalls, KSC general programs) and Kwansei Gakuin University news (October 16, 2026).",
       "status": "provisional"
     },
     "facilities.circles.name": {

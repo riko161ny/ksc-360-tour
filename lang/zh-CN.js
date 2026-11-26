@@ -1374,13 +1374,238 @@ TourI18n.register("zh-CN", {
       "status": "provisional"
     },
     "footer.events.name": {
-      "ja": "KSCイベント情報",
-      "text": "KSC活动信息",
+      "ja": "KSCのイベント",
+      "text": "KSC活动",
       "status": "provisional"
     },
-    "footer.events.placeholder": {
-      "ja": "内容は準備中です。",
-      "text": "内容正在准备中。",
+    "footer.events.intro.heading": {
+      "ja": "神戸三田キャンパスの1年をのぞいてみよう！",
+      "text": "来看看神户三田校区的一年吧！",
+      "status": "provisional"
+    },
+    "footer.events.intro.text.0": {
+      "ja": "神戸三田キャンパスでは、大学祭やオープンキャンパス、研究発表会、国際交流イベントなど、さまざまな行事が開催されています。",
+      "text": "神户三田校区举办大学节、开放校园日、研究发表会、国际交流活动等各种活动。",
+      "status": "provisional"
+    },
+    "footer.events.intro.text.1": {
+      "ja": "学生が企画・運営するイベントもあり、日頃の学びや課外活動の成果を発表する機会にもなっています。",
+      "text": "也有由学生策划和运营的活动，是展示日常学习和课外活动成果的机会。",
+      "status": "provisional"
+    },
+    "footer.events.intro.text.2": {
+      "ja": "ここでは、KSCの主なイベントを紹介します。",
+      "text": "这里介绍KSC的主要活动。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.0.name": {
+      "ja": "オープンキャンパス",
+      "text": "开放校园日",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.0.period": {
+      "ja": "主に夏",
+      "text": "主要在夏季",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.0.text.0": {
+      "ja": "高校生や保護者を対象に、大学での学びやキャンパスライフを紹介するイベントです。",
+      "text": "面向高中生及家长，介绍大学学习和校园生活的活动。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.0.text.1": {
+      "ja": "学部紹介や模擬講義、研究施設の見学、キャンパスツアーなどが行われます。",
+      "text": "有学部介绍、模拟讲课、研究设施参观和校园参观等。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.0.text.2": {
+      "ja": "2026年8月8日のKSCオープンキャンパスには、延べ5,300人を超える高校生や保護者が来場しました。",
+      "text": "2026年8月8日的KSC开放校园日，共有超过5,300人次的高中生和家长到场。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.0.buttons.0.label": {
+      "ja": "オープンキャンパスについて詳しく見る",
+      "text": "详细了解开放校园日",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.name": {
+      "ja": "大学祭「新月祭」",
+      "text": "大学节“新月祭”",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.period": {
+      "ja": "秋",
+      "text": "秋季",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.text.0": {
+      "ja": "新月祭は、学生が主体となって企画・運営する関西学院大学の大学祭です。",
+      "text": "新月祭是以学生为主体策划和运营的关西学院大学大学节。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.text.1": {
+      "ja": "神戸三田キャンパスでは、模擬店や学生団体のステージ、さまざまな体験企画などが行われます。",
+      "text": "在神户三田校区，有模拟摊位、学生团体的舞台表演和各种体验企划等。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.text.2": {
+      "ja": "2026年は10月24日・25日に開催されました。",
+      "text": "2026年于10月24日、25日举办。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.note": {
+      "ja": "模擬店や公演などの詳しい内容は、アカデミックコモンズ前の「新月祭」カードで紹介しています。",
+      "text": "模拟摊位和表演等详细内容，在学术共享空间前的“新月祭”卡片中介绍。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.buttons.0.label": {
+      "ja": "新月祭について詳しく見る",
+      "text": "详细了解新月祭",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.1.buttons.1.label": {
+      "ja": "新月祭の会場を見に行く",
+      "text": "去看看新月祭的会场",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.2.name": {
+      "ja": "リサーチ・フェア",
+      "text": "研究发表会（Research Fair）",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.2.period": {
+      "ja": "秋",
+      "text": "秋季",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.2.text.0": {
+      "ja": "総合政策学部・総合政策研究科では、学生が研究成果を発表する「リサーチ・フェア」を開催しています。",
+      "text": "综合政策系和综合政策研究科举办学生发表研究成果的“研究展（Research Fair）”。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.2.text.1": {
+      "ja": "1998年から続く行事で、研究発表を通じて参加者同士が意見を交換する機会となっています。",
+      "text": "这是自1998年延续至今的活动，参与者通过研究发表交流意见。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.2.text.2": {
+      "ja": "2026年11月13日・14日には、口頭発表やポスター発表など、計96件の発表が行われました。",
+      "text": "2026年11月13日、14日，共进行了口头发表和海报发表等96项发表。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.2.buttons.0.label": {
+      "ja": "リサーチ・フェアについて詳しく見る",
+      "text": "详细了解研究展会",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.3.period": {
+      "ja": "年度によって異なる",
+      "text": "因年度而异",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.3.text.0": {
+      "ja": "高校生が取り組んでいる課題研究を発表し、大学教員や他校の生徒と意見を交換するイベントです。",
+      "text": "高中生发表自己正在进行的课题研究，并与大学教师和其他学校学生交流意见的活动。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.3.text.1": {
+      "ja": "2017年から開催されており、高校生が研究への理解を深める機会となっています。",
+      "text": "自2017年开始举办，是高中生加深对研究理解的机会。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.3.text.2": {
+      "ja": "2026年度は11月28日にオンラインで開催される予定です。",
+      "text": "2026年度预定于11月28日在线举办。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.3.buttons.0.label": {
+      "ja": "SCI-TECH RESEARCH FORUMを見る",
+      "text": "查看SCI-TECH RESEARCH FORUM",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.4.name": {
+      "ja": "コーヒーアワー",
+      "text": "咖啡时间（Coffee Hour）",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.4.period": {
+      "ja": "開催年度・日程による",
+      "text": "视年度和日程而定",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.4.text.0": {
+      "ja": "コーヒーアワーは、留学生と在学生が飲み物やお菓子を囲みながら交流する国際交流イベントです。",
+      "text": "咖啡时间是留学生和在校生围坐享用饮料和点心、进行交流的国际交流活动。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.4.text.1": {
+      "ja": "2026年10月13日には、神戸三田キャンパスのSky Gardenを会場として開催が案内されました。",
+      "text": "2026年10月13日，以神户三田校区的Sky Garden为会场举办的消息被公布。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.4.text.2": {
+      "ja": "留学生と日本人学生が交流する機会として企画されています。",
+      "text": "作为留学生与日本学生交流的机会而策划。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.4.buttons.0.label": {
+      "ja": "コーヒーアワーについて見る",
+      "text": "了解咖啡时间",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.5.name": {
+      "ja": "クリスマス行事",
+      "text": "圣诞节活动",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.5.period": {
+      "ja": "11月下旬〜12月",
+      "text": "11月下旬〜12月",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.5.text.0": {
+      "ja": "関西学院大学では、クリスマスの時期にツリー点灯式や礼拝などの行事が行われます。",
+      "text": "关西学院大学在圣诞节期间会举行圣诞树点灯仪式和礼拜等活动。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.5.text.1": {
+      "ja": "神戸三田キャンパスでも、アカデミックコモンズ前のクリスマスツリー点灯式や、ランバス記念礼拝堂でのクリスマス礼拝が企画されています。",
+      "text": "神户三田校区也策划了学术共享空间前的圣诞树点灯仪式和兰巴斯纪念礼拜堂的圣诞礼拜。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.5.text.2": {
+      "ja": "2026年のツリー点灯式は、11月30日にアカデミックコモンズ前広場で開催予定です。",
+      "text": "2026年的圣诞树点灯仪式预定于11月30日在学术共享空间前广场举行。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.5.buttons.0.label": {
+      "ja": "クリスマス行事について見る",
+      "text": "了解圣诞节活动",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.6.name": {
+      "ja": "入学式・新入生オリエンテーション",
+      "text": "入学典礼・新生说明会",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.6.period": {
+      "ja": "4月",
+      "text": "4月",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.6.text.0": {
+      "ja": "春には、新入生を迎える入学式やオリエンテーションが行われます。",
+      "text": "春季会举行迎接新生的入学典礼和说明会。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.6.text.1": {
+      "ja": "入学式は西宮上ケ原キャンパスで実施され、オリエンテーションでは大学生活や履修に関する案内などが行われます。",
+      "text": "入学典礼在西宫上原校区举行，说明会上会介绍大学生活和选课等事项。",
+      "status": "provisional"
+    },
+    "footer.events.eventCards.6.buttons.0.label": {
+      "ja": "KSCの行事を見る（大学公式）",
+      "text": "查看KSC活动（大学官方）",
       "status": "provisional"
     },
     "facilities.bus.name": {
@@ -1399,8 +1624,8 @@ TourI18n.register("zh-CN", {
       "status": "provisional"
     },
     "facilities.shingetsusai.name": {
-      "ja": "新月祭をのぞいてみよう！",
-      "text": "来看看新月祭吧！",
+      "ja": "大学祭「新月祭」",
+      "text": "大学节“新月祭”",
       "status": "provisional"
     },
     "facilities.shingetsusai.hotspot.text": {
@@ -1419,63 +1644,458 @@ TourI18n.register("zh-CN", {
       "status": "provisional"
     },
     "facilities.shingetsusai.intro.heading": {
-      "ja": "大学祭「新月祭」",
-      "text": "大学节“新月祭”",
+      "ja": "学生がつくる、関西学院大学の大学祭",
+      "text": "学生打造的关西学院大学大学节",
       "status": "provisional"
     },
-    "facilities.shingetsusai.intro.text": {
-      "ja": "学生が主体となって企画・運営する大学祭。模擬店や学生団体による企画などが行われています。",
-      "text": "由学生主导策划和运营的大学文化节，有模拟摊位和学生团体举办的各种活动。",
+    "facilities.shingetsusai.intro.text.0": {
+      "ja": "新月祭は、関西学院大学の大学祭総部新月祭実行委員会が企画・運営する大学祭です。",
+      "text": "新月祭是由关西学院大学大学节总部新月祭执行委员会策划和运营的大学节。",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.0.title": {
-      "ja": "どんな企画があるの？",
-      "text": "都有哪些活动？",
+    "facilities.shingetsusai.intro.text.1": {
+      "ja": "神戸三田・西宮上ケ原・西宮聖和の3キャンパスで開催され、学生が日頃の活動や研究の成果を発表する場となっています。",
+      "text": "在神户三田、西宫上原、西宫圣和3个校区举办，是学生发表日常活动和研究成果的场所。",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.0.text": {
-      "ja": "2026年の神戸三田キャンパスで開催された企画を紹介しています。",
-      "text": "介绍2026年在神户三田校区举办的活动。",
+    "facilities.shingetsusai.intro.text.2": {
+      "ja": "神戸三田キャンパスでは、模擬店や学生団体の公演、体験企画など、さまざまな催しが実施されています。",
+      "text": "在神户三田校区，有模拟摊位、学生团体的表演和体验企划等各种活动。",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.0.chips.0": {
-      "ja": "軽音サークル Deep Stream の芝生ライブ",
-      "text": "轻音乐社团 Deep Stream 的草坪演出",
+    "facilities.shingetsusai.sections.0.title": {
+      "ja": "2026年の基本情報",
+      "text": "2026年基本信息",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.0.chips.1": {
-      "ja": "ダンスサークル Ney-Kid の公演",
-      "text": "舞蹈社团 Ney-Kid 的公演",
+    "facilities.shingetsusai.sections.0.rows.0.0": {
+      "ja": "開催日",
+      "text": "举办日期",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.0.chips.2": {
-      "ja": "よさこいサークル 炎流 の演舞",
-      "text": "YOSAKOI社团“炎流”的表演",
+    "facilities.shingetsusai.sections.0.rows.0.1": {
+      "ja": "2026年10月24日（土）・25日（日）",
+      "text": "2026年10月24日（周六）・25日（周日）",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.0.chips.3": {
-      "ja": "フラダンスサークル Mahalo のステージ",
-      "text": "草裙舞社团 Mahalo 的舞台表演",
+    "facilities.shingetsusai.sections.0.rows.1.0": {
+      "ja": "24日の開催時間",
+      "text": "24日开放时间",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.0.buttons.0.label": {
-      "ja": "2026年の企画を見る",
-      "text": "查看2026年的活动",
+    "facilities.shingetsusai.sections.0.rows.2.0": {
+      "ja": "25日の開催時間",
+      "text": "25日开放时间",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.1.title": {
-      "ja": "実際の雰囲気を見てみよう！",
-      "text": "感受一下现场氛围吧！",
+    "facilities.shingetsusai.sections.0.rows.3.0": {
+      "ja": "会場",
+      "text": "会场",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.1.text": {
-      "ja": "新月祭の開催風景を紹介しています。",
-      "text": "介绍新月祭的举办场景。",
+    "facilities.shingetsusai.sections.0.rows.3.1": {
+      "ja": "関西学院大学神戸三田キャンパス",
+      "text": "关西学院大学神户三田校区",
       "status": "provisional"
     },
-    "facilities.shingetsusai.cards.1.buttons.0.label": {
-      "ja": "開催の様子を見る",
-      "text": "查看举办情况",
+    "facilities.shingetsusai.sections.0.rows.4.0": {
+      "ja": "キャッチコピー",
+      "text": "宣传语",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.0.rows.4.1": {
+      "ja": "満月にはない輝きをこの新月から",
+      "text": "满月所没有的光辉，从这新月而来（満月にはない輝きをこの新月から）",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.0.rows.5.0": {
+      "ja": "主催・運営",
+      "text": "主办・运营",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.0.rows.5.1": {
+      "ja": "大学祭総部新月祭実行委員会",
+      "text": "大学节总部新月祭执行委员会",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.0.note.0": {
+      "ja": "2026年の開催情報です。翌年度以降の開催日時は変更される可能性があります。",
+      "text": "这是2026年的举办信息。之后年度的举办日期和时间可能会变更。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.0.note.1": {
+      "ja": "この場所の360度写真はふだんのアカデミックコモンズ前のようすで、新月祭当日の写真ではありません。",
+      "text": "这里的360度照片是平时学术共享空间前的样子，不是新月祭当天的照片。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.title": {
+      "ja": "キャンパスに並ぶ模擬店",
+      "text": "校园里林立的模拟摊位",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.subtitle": {
+      "ja": "2026年は4つのエリアに27店舗。アカデミックコモンズ前も会場の一つでした。",
+      "text": "2026年在4个区域共有27个摊位，学术共享空间前也是会场之一。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.text.0": {
+      "ja": "新月祭では、学生団体やサークルなどによる模擬店が出店します。",
+      "text": "新月祭上，学生团体和社团等会开设模拟摊位。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.text.1": {
+      "ja": "2026年の神戸三田キャンパスでは、4つのエリアに合計27店舗の模擬店が公式プログラムに掲載されました。",
+      "text": "2026年，神户三田校区4个区域共27个模拟摊位被列入官方节目单。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.text.2": {
+      "ja": "アカデミックコモンズ前もその会場の一つで、SCSやMainsなどの学生団体による出店が案内されました。",
+      "text": "学术共享空间前也是会场之一，公布了SCS和Mains等学生团体的出摊信息。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.chipsTitle": {
+      "ja": "2026年の模擬店エリア",
+      "text": "2026年模拟摊位区域",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.chips.0": {
+      "ja": "アカデミックコモンズ前",
+      "text": "学术共享空间前",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.chips.1": {
+      "ja": "第一厚生棟前",
+      "text": "第一厚生楼前",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.chips.2": {
+      "ja": "Ⅰ・Ⅱ号館前",
+      "text": "Ⅰ・Ⅱ号馆前",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.chips.3": {
+      "ja": "正門前",
+      "text": "正门前",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.itemsTitle": {
+      "ja": "アカデミックコモンズ前の出店例（2026年）",
+      "text": "学术共享空间前的摊位示例（2026年）",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.items.0.text": {
+      "ja": "パリパリチーズを販売する企画「PariPari」。",
+      "text": "售卖脆脆芝士的企划“PariPari”。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.items.1.text": {
+      "ja": "トルコアイスなどを販売する企画「Mainsの伸びーる！？」。",
+      "text": "售卖土耳其冰淇淋等的企划“Mainsの伸びーる！？”。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.items.2.name": {
+      "ja": "生命医科",
+      "text": "生命医科",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.items.2.text": {
+      "ja": "スモアを販売する「ミカヅキモカフェ」。",
+      "text": "售卖烤棉花糖夹心饼（S'more）的“ミカヅキモカフェ”。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.note": {
+      "ja": "上の店舗とメニューは、2026年の公式プログラムに掲載されたアカデミックコモンズ前の出店例です。毎年同じ店舗が出店するわけではありません。",
+      "text": "以上摊位和菜单是2026年官方节目单中学术共享空间前的出摊示例，并非每年都有相同的摊位。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.buttons.0.label": {
+      "ja": "2026年の模擬店をもっと見る",
+      "text": "查看更多2026年模拟摊位",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.1.buttons.1.label": {
+      "ja": "2026年の会場マップを見る（公式）",
+      "text": "查看2026年会场地图（官方）",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.title": {
+      "ja": "学生たちのパフォーマンス",
+      "text": "学生们的表演",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.subtitle": {
+      "ja": "よさこい、ダンス、音楽などの公演が公式プログラムに掲載されました。",
+      "text": "YOSAKOI、舞蹈、音乐等表演被列入官方节目单。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.text.0": {
+      "ja": "新月祭では、日頃から活動している学生団体やサークルによる公演も企画されています。",
+      "text": "新月祭也策划了平时活动的学生团体和社团的表演。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.text.1": {
+      "ja": "2026年の公式プログラムには、よさこい、ダンス、音楽などの公演が掲載されました。",
+      "text": "2026年的官方节目单中列有YOSAKOI、舞蹈、音乐等表演。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.0.name": {
+      "ja": "関学よさこい連「炎流」",
+      "text": "关学YOSAKOI连“炎流”",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.0.sub": {
+      "ja": "よさこい｜陸上競技場（雨天時は体育館）",
+      "text": "YOSAKOI｜田径场（雨天时在体育馆）",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.0.text.0": {
+      "ja": "神戸三田キャンパスを拠点に活動するよさこいサークルです。",
+      "text": "以神户三田校区为据点活动的YOSAKOI社团。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.0.text.1": {
+      "ja": "2026年の新月祭では、陸上競技場を会場とする演舞が公式プログラムに掲載されました。雨天時の会場には体育館が指定されていました。",
+      "text": "2026年新月祭的官方节目单中，列有在田径场进行的表演。雨天时的会场指定为体育馆。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.1.sub": {
+      "ja": "ダンス｜第二厚生棟2階食堂",
+      "text": "舞蹈｜第二福利楼2楼食堂",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.1.text.0": {
+      "ja": "ダンスサークル「Ney-Kid」は、第二厚生棟2階食堂を会場として、2日間の新月祭公演を企画しました。",
+      "text": "舞蹈社团“Ney-Kid”以第二福利楼2楼食堂为会场，策划了为期2天的新月祭公演。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.1.text.1": {
+      "ja": "さまざまなジャンルのダンスやバンドセッションなどが公式プログラムに掲載されました。",
+      "text": "各种类型的舞蹈和乐队合奏等被列入官方节目单。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.2.sub": {
+      "ja": "音楽｜第三厚生棟前の芝生",
+      "text": "音乐｜第三厚生楼前的草坪",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.2.text": {
+      "ja": "音楽活動を行う学生団体「Deep Stream」は、第三厚生棟前の芝生を会場とするライブを企画しました。",
+      "text": "从事音乐活动的学生团体“Deep Stream”策划了以第三厚生楼前草坪为会场的现场演出。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.3.name": {
+      "ja": "関西学院室内合奏団",
+      "text": "关西学院室内合奏团",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.3.sub": {
+      "ja": "管弦楽｜ランバス記念礼拝堂",
+      "text": "管弦乐｜兰巴斯纪念礼拜堂",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.3.text.0": {
+      "ja": "2026年には、ランバス記念礼拝堂で「Autumn Concert 2026」が企画されました。",
+      "text": "2026年在兰巴斯纪念礼拜堂策划了“Autumn Concert 2026”。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.items.3.text.1": {
+      "ja": "ポップスからクラシックまでの管弦楽アンサンブルが紹介されています。",
+      "text": "介绍了从流行音乐到古典音乐的管弦乐合奏。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.buttons.0.label": {
+      "ja": "陸上競技場を見に行く",
+      "text": "去看看田径场",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.buttons.1.label": {
+      "ja": "体育館を見に行く",
+      "text": "去看看体育馆",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.buttons.2.label": {
+      "ja": "第二厚生棟を見に行く",
+      "text": "去看看第二福利楼",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.2.buttons.3.label": {
+      "ja": "ランバス記念礼拝堂を見に行く",
+      "text": "去看看兰巴斯纪念礼拜堂",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.title": {
+      "ja": "見るだけじゃない、参加できる企画も",
+      "text": "不只是观看，也有可以参加的企划",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.subtitle": {
+      "ja": "ワークショップやスポーツ企画、フリーマーケットなど。",
+      "text": "工作坊、体育企划、跳蚤市场等。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.text.0": {
+      "ja": "新月祭には、ステージを見るだけでなく、来場者が参加できる体験型の企画もあります。",
+      "text": "新月祭不只是观看舞台，还有来访者可以参与的体验型企划。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.text.1": {
+      "ja": "2026年には、学生団体によるワークショップやスポーツ企画、フリーマーケットなどが公式プログラムに掲載されました。",
+      "text": "2026年，学生团体的工作坊、体育企划、跳蚤市场等被列入官方节目单。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.items.0.name": {
+      "ja": "ドッジボール大会・縁日",
+      "text": "躲避球大赛・庙会",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.items.0.text": {
+      "ja": "体育館を会場として、ドッジボールや射的などの企画が案内されました。",
+      "text": "公布了以体育馆为会场的躲避球和射击游戏等企划。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.items.1.text": {
+      "ja": "古着や手作り小物の販売、ハンドメイドワークショップなどを企画しました。",
+      "text": "策划了二手衣物和手工小物的售卖以及手工工作坊等。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.items.2.text": {
+      "ja": "ビーズなどを使用した、オリジナルしおり作りの体験企画を実施する予定として案内されました。",
+      "text": "公布了使用串珠等制作原创书签的体验企划。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.note": {
+      "ja": "2026年の公式プログラムに掲載された企画内容です。",
+      "text": "以上为2026年官方节目单中列出的企划内容。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.3.buttons.0.label": {
+      "ja": "体育館を見に行く",
+      "text": "去看看体育馆",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.title": {
+      "ja": "ゲストを招いた特別企画",
+      "text": "邀请嘉宾的特别企划",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.subtitle": {
+      "ja": "2026年はⅥ号館101教室でROLAND氏のトークショー。",
+      "text": "2026年在Ⅵ号馆101教室举办ROLAND的脱口秀。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.text.0": {
+      "ja": "新月祭では、学生団体による企画に加えて、ゲストを招いたトークショーやお笑いライブなども企画されています。",
+      "text": "新月祭除了学生团体的企划外，还策划了邀请嘉宾的脱口秀和搞笑演出等。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.text.1": {
+      "ja": "2026年の神戸三田キャンパスでは、Ⅵ号館101教室を会場とするROLAND氏のトークショーが公式プログラムに掲載されました。",
+      "text": "2026年神户三田校区的官方节目单中，列有以Ⅵ号馆101教室为会场的ROLAND脱口秀。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.rows.0.0": {
+      "ja": "ゲスト",
+      "text": "嘉宾",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.rows.0.1": {
+      "ja": "ROLAND氏",
+      "text": "ROLAND",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.rows.1.0": {
+      "ja": "開催予定日",
+      "text": "预定日期",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.rows.1.1": {
+      "ja": "2026年10月25日",
+      "text": "2026年10月25日",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.rows.2.0": {
+      "ja": "会場",
+      "text": "会场",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.rows.2.1": {
+      "ja": "Ⅵ号館101教室",
+      "text": "Ⅵ号馆101教室",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.4.buttons.0.label": {
+      "ja": "Ⅵ号館101教室を見に行く",
+      "text": "去看看Ⅵ号馆101教室",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.5.title": {
+      "ja": "学生がつくる大学祭",
+      "text": "学生打造的大学节",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.5.subtitle": {
+      "ja": "新月祭を企画・運営しているのは、実行委員会の学生です。",
+      "text": "策划和运营新月祭的是执行委员会的学生。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.5.text.0": {
+      "ja": "新月祭は、大学祭総部新月祭実行委員会に所属する学生によって企画・運営されています。",
+      "text": "新月祭由隶属于大学节总部新月祭执行委员会的学生策划和运营。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.5.text.1": {
+      "ja": "実行委員会では、企画の立案や広報、会場運営など、大学祭を開催するためのさまざまな活動が行われています。",
+      "text": "执行委员会开展企划立案、宣传、会场运营等举办大学节所需的各种活动。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.5.text.2": {
+      "ja": "2026年の大学公式発表では、3キャンパス全体で過去最多となる約1,500人の実行委員が運営に携わると紹介されました。",
+      "text": "2026年大学官方发布中介绍，3个校区共有历来最多的约1,500名执行委员参与运营。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.5.note": {
+      "ja": "約1,500人は3キャンパス全体の人数です。",
+      "text": "约1,500人是3个校区的总人数。",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.5.buttons.0.label": {
+      "ja": "大学公式の発表を見る",
+      "text": "查看大学官方发布",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.6.title": {
+      "ja": "もっと知りたいときは",
+      "text": "想了解更多时",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.6.buttons.0.label": {
+      "ja": "新月祭の公式サイトを見る",
+      "text": "查看新月祭官方网站",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.6.buttons.1.label": {
+      "ja": "2026年の企画一覧を見る",
+      "text": "查看2026年企划一览",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.6.buttons.2.label": {
+      "ja": "2026年の模擬店を見る",
+      "text": "查看2026年模拟摊位",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.6.buttons.3.label": {
+      "ja": "新月祭の開催の様子を見る",
+      "text": "查看新月祭举办的情景",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.sections.6.buttons.4.label": {
+      "ja": "キャンパスの探索に戻る",
+      "text": "返回校园探索",
+      "status": "provisional"
+    },
+    "facilities.shingetsusai.source": {
+      "ja": "新月祭2026公式サイト（トップ・KSC模擬店・KSC一般企画）、関西学院大学ニュース（2026年10月16日）をもとにまとめています。",
+      "text": "根据新月祭2026官方网站（首页、KSC模拟摊位、KSC一般企划）和关西学院大学新闻（2026年10月16日）整理。",
       "status": "provisional"
     },
     "facilities.circles.name": {

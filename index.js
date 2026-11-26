@@ -884,6 +884,25 @@
     document.querySelector('#guideButton').hidden = true;
   }
 
+  // 情報パネルのボタンから別の地点へ移動し、着いたらカードを開く（例：KSCのイベント → コモンズ前の新月祭）
+  window.TourNav = {
+    has: function(id) { return !!findSpotById(id); },
+    go: function(id, facilityKey) {
+      var spot = findSpotById(id);
+      if (!spot) { return; }
+      var openCard = function() {
+        if (facilityKey && facilities[facilityKey]) { window.TourPanel.open(facilities[facilityKey]); }
+      };
+      if (spot === currentSpot) {
+        window.TourPanel.close();
+        openCard();
+        return;
+      }
+      pendingArrival = { id: id, callback: openCard };
+      switchSpot(spot);
+    }
+  };
+
   // Display the initial spot: URL hash, then config.startSpot, then the first spot.
   switchSpot(findSpotById(spotIdFromHash()) || findSpotById(config.startSpot) || spots[0]);
 
